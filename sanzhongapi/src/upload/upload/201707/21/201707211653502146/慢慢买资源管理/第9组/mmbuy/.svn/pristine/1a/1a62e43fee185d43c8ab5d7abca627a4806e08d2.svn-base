@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel='stylesheet' href='fonts/style.css' />
+    <link rel='stylesheet' href='css/index/index.css' />
+    <!--<link rel='stylesheet' href='css/base.css' />-->
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon' />
+</head>
+
+<body>
+    <div class="views">
+        <!--头部-->
+        <header class="clearfix">
+            <div class="logo pull-left">
+                <a href="index.html" class="header">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="app-download pull-right">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+
+        </header>
+        <!--搜索框-->
+        <div class="searchBox">
+            <input type="text" placeholder="请输入你想比价的产品" aria-describedby="basic-addon2">
+            <span class="search_btn">搜索</span>
+        </div>
+
+        <!--菜单栏-->
+        <div class="menu">
+            <ul id="menu_list" class="clearfix">
+
+            </ul>
+        </div>
+
+        <!--超值推荐-->
+        <div class="tjzk">
+            <h3>超值推荐折扣</h3>
+            <i class="tjzk_arrow icon-arrow-right"></i>
+        </div>
+        <!--推荐列表-->
+        <div class="tjzk_list">
+            <ul id="tjzk_list" class="">
+                <!--<li>
+                    <a href="javascript:;">
+                        <img src="images/tjlist.gif" alt="">
+                        <div class="tjzk_text">
+                            <div class="title">
+                                【实时更新】午后晒图更新（在自己对应的区域找哦） 
+                                <span>又一位大神出炉啦！三条都符合哦~</span>
+                            </div>
+                            <div class="other clearfix">
+                                <span class="mall pull-left">慢慢买 | 07-13 18:20</span>
+                                <span class="comment pull-right"><i class="icon-pinglun"></i> 334</span>
+                            </div>
+                        </div>
+                    </a>
+
+                </li>-->
+            </ul>
+            <div class="tjzk_more">
+                <a href="javescript:;">更多优惠信息 »</a>
+            </div>
+        </div>
+
+        <!--品牌-->
+        <div class="tjzk">
+            <h3>品牌排行</h3>
+            <i class="tjzk_arrow icon-arrow-right"></i>
+        </div>
+
+        <!--登录注册-->
+        <div class="foot_bar">
+            <ul class="clearfix">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="javascript:;">注册</a></li>
+                <li id="top"><a href="javascript:;"><i class="icon-top"></i>返回顶部</a></li>
+            </ul>
+        </div>
+        <footer>
+            <div class="foot_top">
+                <a href="javascript:;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                 -- 掌上比价平台
+            </div>
+            <div class="foot_bottom">m.manmanbuy.com</div>
+        </footer>
+
+
+
+    </div>
+
+    <script type="text/html" id="menu_tpl">
+        {{each result as v i}} {{if i>7}}
+        <li class="pull-left menu_hide">
+            <a href="{{v.titlehref}}">
+                {{#v.img}}
+                <p>{{v.name}}</p>
+            </a>
+        </li>
+        {{else}}
+        <li class="pull-left">
+            <a href="{{v.titlehref}}">
+                {{#v.img}}
+                <p>{{v.name}}</p>
+            </a>
+        </li>
+        {{/if}} {{/each}}
+    </script>
+
+
+    <script type="text/html" id="tjzk_tpl">
+        {{each result as v i}}
+        <li>
+            <a href="javascript:;">
+                <!--<img src="images/tjlist.gif" alt="">-->
+                {{#v.productImgSm}}
+                <div class="tjzk_text">
+                    <div class="title">
+                        {{v.productName}} 
+                        <span>{{v.productTips}}</span>
+                    </div>
+                    <div class="other clearfix">
+                        <span class="mall pull-left">{{v.productFrom}} | {{v.productTime}}</span>
+                        <span class="comment pull-right"><i class="icon-pinglun"></i> {{v.productComCount}}</span>
+                    </div>
+                </div>
+             </a>
+        </li>
+        {{/each}}
+    </script>
+
+
+    <script src='lib/jquery/jquery.js'></script>
+    <script src='lib/artTemplate/template.js'></script>
+    <script src='js/index.js'></script>
+</body>
+
+</html>

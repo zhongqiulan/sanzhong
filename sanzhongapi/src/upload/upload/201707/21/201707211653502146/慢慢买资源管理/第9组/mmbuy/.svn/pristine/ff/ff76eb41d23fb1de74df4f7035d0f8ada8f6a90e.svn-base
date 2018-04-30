@@ -1,0 +1,21 @@
+$(function(){
+    //产品列表请求
+    $.ajax({
+        url: config.getUrl('/api/getbrandproductlist'),
+        dataType: 'JSON',
+        type: 'get',
+        data: {
+            brandtitleid: o.queryString().id,
+        },
+        success: function(data){
+            console.log(data);
+            var tplHtml = template('temp_product_list',data);
+            $('.syn ul').html(tplHtml);
+        },
+        error: function(error){
+            console.log('请求错误');
+        }
+    });
+
+    //点击商品，跳转到商品详情和评论列表
+});

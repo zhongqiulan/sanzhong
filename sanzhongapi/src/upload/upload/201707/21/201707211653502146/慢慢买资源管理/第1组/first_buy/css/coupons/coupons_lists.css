@@ -1,0 +1,209 @@
+.view .mask {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 999;
+  display: none;
+}
+.view .mask > img {
+  height: 160px;
+  width: 200px;
+  margin: 0 auto;
+  margin-top: 50%;
+  transform: translateY(80px);
+}
+.view .mask > .glyphicon-menu-left {
+  left: 45px;
+}
+.view .mask > .glyphicon-menu-right {
+  right: 45px;
+}
+.view .mask > .glyphicon-menu-right,
+.view .mask .glyphicon-menu-left {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  font-size: 35px;
+  color: #aaa;
+  transform: translateY(350px);
+}
+.view > #header {
+  height: 44px;
+  width: 100%;
+  background-color: #f4483e;
+  position: relative;
+}
+.view > #header a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+}
+.view > #header > h1 {
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+}
+.view > #header > .icon-back {
+  position: absolute;
+  font-size: 18px;
+  left: 10px;
+  line-height: 44px;
+  top: 0;
+  color: #fff;
+}
+.view > #header > .app_download > a > img {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 5px;
+  right: 20px;
+}
+.view #main {
+  font-size: 12px;
+  text-align: center;
+  color: #999;
+  margin: 8px 0px;
+}
+.view #main .s_title {
+  width: 100%;
+}
+.view #main > .quan-box {
+  background-color: #EAEAEA;
+  text-align: left;
+}
+.view #main > .quan-box > .quan-list {
+  background-color: #FFF;
+}
+.view #main > .quan-box > .quan-list > ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.view #main > .quan-box > .quan-list > ul > li {
+  border-bottom: 1px solid #e7e7e7;
+  list-style: none;
+  position: relative;
+  padding: 10px;
+  box-sizing: border-box;
+}
+.view #main > .quan-box > .quan-list > ul > li > a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  padding: 10px;
+  text-decoration: none;
+  color: #5a5a5a;
+  padding-left: 100px;
+  box-sizing: border-box;
+  position: relative;
+}
+.view #main > .quan-box > .quan-list > ul > li > a > .pic {
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 100px;
+  height: 80px;
+  overflow: hidden;
+  margin-right: 10px;
+}
+.view #main > .quan-box > .quan-list > ul > li > a > .pic > img {
+  max-width: 100px;
+}
+.view #main > .quan-box > .quan-list > ul > li > a > .info {
+  padding-right: 30px;
+  overflow: hidden;
+}
+.view #main > .quan-box > .quan-list > ul > li > a > .info > .tit h3 {
+  margin: 0;
+  padding: 0;
+  text-align: justify;
+  font-size: 14px;
+  font-weight: normal;
+  color: #333;
+  line-height: 20px;
+}
+.view #main > .quan-box > .quan-list > ul > li > a > .info > .tit h2 {
+  font-size: 100%;
+}
+.view #main > .quan-box > .quan-list > ul > li > a > .info > .tit h2 em {
+  font-weight: bold;
+  font-size: 14px;
+}
+.view #main > .quan-box > .quan-list > ul > li > a > .info > .time {
+  font-size: 12px;
+  color: #EE7700;
+  margin-top: 10px;
+}
+.view #main > .nav {
+  height: 36px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  margin-top: 20px;
+  margin-bottom: 104px;
+  font-size: 14px;
+  text-align: left;
+}
+.view #main > .nav > a {
+  color: #000;
+  display: inline;
+}
+.view #footer {
+  background-color: #efefef;
+  width: 100%;
+  position: fixed;
+  margin-top: 25px;
+  bottom: 0;
+}
+.view #footer > .checkin .row > div {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #c5c5c5;
+}
+.view #footer > .checkin .row > div > a {
+  color: #000;
+}
+.view #footer > .checkin .row > div > a > img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 2px;
+  border: none;
+  display: inline;
+}
+.view #footer > .bottom {
+  background: #efefef;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 0;
+  color: #666;
+}
+.view #footer > .bottom > a {
+  color: #7c667c;
+}
+.view #footer > .bottom > .app > .app_download {
+  color: #f00;
+}
+.view #footer > .bottom > .app > a {
+  display: inline;
+  color: #000;
+}
+.view #footer > .bottom > .app > .grey {
+  color: #676767;
+}

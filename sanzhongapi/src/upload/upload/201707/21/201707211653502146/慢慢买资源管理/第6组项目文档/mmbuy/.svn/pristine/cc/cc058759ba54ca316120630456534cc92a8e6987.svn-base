@@ -1,0 +1,95 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+ul {
+  list-style: none;
+}
+.save_header {
+  background: #ff841d;
+  height: 45px;
+  position: relative;
+  color: #f6f6f6;
+}
+.save_header i {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  padding: 15px;
+}
+.save_header h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  font-size: 18x;
+  line-height: 45px;
+}
+.save_header a img {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 30px;
+}
+.save_menu ul {
+  margin-bottom: 0px;
+}
+.save_menu ul li {
+  height: 100%;
+  padding: 10px;
+  border-bottom: 1px solid #ebebeb;
+}
+.save_menu ul li .menu_media .menu_left img {
+  width: 100px;
+}
+.save_menu ul li .menu_media .menu_body span {
+  font-size: 12px;
+  color: #a1a1a1;
+}
+.save_menu ul li .menu_media .menu_body h4 {
+  padding-bottom: 30px;
+}
+.save_menu ul li .menu_media .menu_body h4 span {
+  color: red;
+  font-size: 18px;
+}
+.save_btn .save_button_btn {
+  background: #ebebeb;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+.save_btn .save_button_btn .btn {
+  padding: 5px 15px ;
+  background: #ccc;
+  border: 1px solid #a1a1a1;
+}
+.save_btn .save_button_btn select {
+  margin: 0 auto;
+  height: 33px;
+  width: 70px;
+}
+.save_footed .index_save {
+  height: 36px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  line-height: 36px;
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  padding-left: 8px;
+  font-size: 14px;
+}
+.save_footed .whileLine {
+  height: 30px;
+  background: #ebebeb;
+  border-bottom: 1px solid #f6f6f6;
+}
+.save_fixed {
+  position: relative;
+}
+.save_fixed a {
+  position: fixed;
+  bottom: 80px;
+  right: 0px;
+}
+.save_fixed a img {
+  width: 60px;
+}

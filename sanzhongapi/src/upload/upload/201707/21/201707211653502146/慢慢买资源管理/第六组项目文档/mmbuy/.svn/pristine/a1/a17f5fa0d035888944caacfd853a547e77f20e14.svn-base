@@ -1,0 +1,312 @@
+/*
+  author:kuanglq
+  date:2017-7-18
+*/
+/*初始化*/
+* {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  color: #000;
+  text-decoration: none;
+}
+input,
+select,
+option,
+textarea {
+  outline: none;
+}
+.clearfix:before,
+.clearfix:after {
+  /*清除浮动，最好最标准的写法*/
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+  /*IE/7/6*/
+  /*兼容IE6下的写法*/
+}
+/* 头部样式 */
+.navbar {
+  border: none;
+  margin-bottom: 0;
+}
+.container-fluid {
+  height: 50px;
+  background-color: #ff841d;
+}
+.container-fluid .navbar-header {
+  padding-left: 10px;
+}
+.container-fluid .glyphicon {
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+}
+.container-fluid .gsshopHead {
+  font-size: 20px;
+  font-weight: bold;
+  display: inline-block;
+  color: #fff;
+  margin-left: 40%;
+  line-height: 50px;
+}
+/* 商品导航栏部分 */
+.gsshopnav-filter {
+  box-sizing: border-box;
+  border-bottom: 1px solid #ccc;
+  height: 37px;
+  width: 100%;
+  position: relative;
+  text-align: center;
+  line-height: 37px;
+}
+.gsshopnav-filter .left-tab {
+  margin-right: 50px;
+  padding-left: 10px;
+}
+.gsshopnav-filter .left-tab > div {
+  height: 37px;
+  padding: 0px 0px 0px 0px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #5a5a5a;
+  position: relative;
+}
+.gsshopnav-filter .left-tab > div > .glyphicon {
+  font-size: 10px;
+  color: #5a5a5a;
+  margin-left: 3px;
+}
+.gsshopnav-filter .left-tab > div > .glyphicon-triangle-top {
+  position: absolute;
+  top: 2px;
+  right: 1px;
+  display: none;
+}
+.gsshopnav-filter .right-search {
+  box-sizing: border-box;
+  border-left: 1px solid #ccc;
+  width: 50px;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.gsshopnav-filter .right-search > .icon-sousuomulu {
+  display: block;
+  width: 100%;
+  height: 100%;
+  font-size: 22px;
+  color: #5a5a5a;
+}
+.gsshopnav-filter .right-search > .icon-cha {
+  font-size: 20px;
+  position: absolute;
+  top: 0;
+  left: 15px;
+  display: none;
+}
+/*
+  各种下拉之商店
+*/
+#nav_sort {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  width: 100%;
+  top: 88px;
+  left: 0;
+  background: #fff;
+  margin-bottom: 0px;
+}
+#nav_sort > li {
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+}
+#nav_sort > li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  color: #5a5a5a;
+}
+/* 各种下拉之区域 */
+#nav_place {
+  position: absolute;
+  z-index: 999;
+  display: block;
+  width: 100%;
+  top: 88px;
+  left: 0;
+  background: #fff;
+  margin-bottom: 0px;
+}
+#nav_place li {
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #dadada;
+}
+#nav_place li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  color: #5a5a5a;
+}
+/* 各种下拉之价格 */
+.nav-cat {
+  display: none;
+}
+.nav-cat > ul li {
+  height: 40px;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.nav-cat > ul li > a {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  width: 100%;
+  padding: 0 10px;
+  color: #5a5a5a;
+}
+/* 各种下拉之 搜索框 */
+.navsearch {
+  width: 100%;
+  display: none;
+  background-color: #f7f7f7;
+}
+.navsearch .sreach {
+  padding: 10px 10px;
+}
+.navsearch .sreach .inptext {
+  outline-style: none;
+  border-radius: 0;
+}
+.navsearch .sreach .input-group-addon {
+  border-radius: 0;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  font-size: 16px;
+  padding: 6px 3px;
+}
+.navsearch .paixu {
+  margin-top: 20px;
+  font-size: 14px;
+  border-bottom: 1px solid #ccc;
+}
+.navsearch .paixu .t {
+  padding-left: 10px;
+}
+.navsearch .paixu .c {
+  padding: 10px;
+}
+.navsearch .paixu .c > ul {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 100%;
+}
+.navsearch .paixu .c > ul li {
+  width: 25%;
+  border: 1px solid #ccc;
+  height: 30px;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 30px;
+  padding: 0px 0px;
+}
+.navsearch .paixu .c > ul li + li {
+  margin-left: 3px;
+}
+.navsearch .paixu .c > ul li > a {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+.navsearch .fenlei {
+  margin-top: 20px;
+  font-size: 14px;
+}
+.navsearch .fenlei .t {
+  padding-left: 10px;
+}
+.navsearch .fenlei .c {
+  padding: 10px;
+}
+.navsearch .fenlei .c > ul {
+  box-sizing: border-box;
+  padding: 0 10px;
+  width: 100%;
+}
+.navsearch .fenlei .c > ul li {
+  border: 1px solid #ccc;
+  height: 30px;
+  text-align: center;
+  border-radius: 3px;
+  line-height: 30px;
+  padding: 0px 0px;
+}
+.navsearch .fenlei .c > ul li + li {
+  margin-left: 3px;
+}
+.navsearch .fenlei .c > ul li > a {
+  display: inline-block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+}
+/* 商品展示部分 */
+.gsshopnav-show {
+  background-color: #f1f1f1;
+  padding: 5px 6px;
+}
+.gsshopnav-show > ul > li {
+  padding-right: 5px;
+  padding-left: 5px;
+  margin: 5px 0px;
+}
+.gsshopnav-show > ul > li > a {
+  background-color: #fff;
+  display: block;
+  height: 100%;
+}
+.gsshopnav-show > ul > li > a > img {
+  width: 100%;
+}
+.gsshopnav-show > ul > li > a .show-title {
+  color: #333;
+  word-break: break-all;
+  padding: 0 6px;
+  height: 14px;
+  overflow: hidden;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 14px;
+  text-align: left;
+  margin-top: 6px;
+}
+.gsshopnav-show > ul > li > a > p {
+  color: #f8601d;
+  margin-bottom: 0;
+  padding: 5px;
+}
+.gsshopnav-show > ul > li > a > p > .price {
+  font-size: 20px;
+}

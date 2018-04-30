@@ -1,0 +1,15 @@
+$(function () {
+  var url = config.getUrl('/api/getbrandtitle');
+  // console.log(url);
+  $.ajax({
+    url:url,
+    dataType:'JSON',
+    type:'get',
+     success:function(data){
+              var htmlStr = template('bz_list_tpl',data);
+              console.log(htmlStr);
+              
+              $('.bz_brans').html(htmlStr);
+        }
+  })
+})//入口

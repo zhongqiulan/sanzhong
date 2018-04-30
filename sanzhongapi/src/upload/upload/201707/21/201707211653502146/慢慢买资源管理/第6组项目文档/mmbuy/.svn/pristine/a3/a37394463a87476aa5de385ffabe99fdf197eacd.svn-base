@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+ul{
+    list-style: none;
+}
+.save_view{
+    
+}
+.save_header{ 
+    background: #ff841d;
+    height: 45px;
+    position: relative;
+    color: #f6f6f6;
+    i{
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        padding:15px;
+    }
+    h4{
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        font-size: 18x;
+        line-height: 45px;
+    }
+    a{
+        img{
+        position: absolute;
+        top:10px;
+        right:15px;
+        width: 30px;
+    }
+    }
+}
+// 下面是ajax请求的数据
+.save_menu{
+    ul{
+        //  height:128px;
+        margin-bottom: 0px;
+       li{
+           height:100%;
+           padding: 10px;
+           border-bottom: 1px solid #ebebeb;
+        //    左边图片
+        .menu_media{
+             .menu_left{
+                   img{
+                       width: 100px;
+                   }
+              }
+            //   右边内容
+            .menu_body{
+                span{
+                  font-size: 12px;
+                  color:#a1a1a1;  
+                }
+                h4{
+                    
+                    padding-bottom: 30px;
+                    span{
+                    color:red;
+                    font-size: 18px;
+                }
+                }
+                
+              }
+        }
+    }
+  
+
+    }
+}
+.save_btn{
+      .save_button_btn{
+        background: #ebebeb;
+        padding: 20px;
+        width: 100%;
+        text-align: center;
+        .btn{
+        padding: 5px 15px ;
+        background: #ccc;
+        border: 1px solid #a1a1a1;
+    }
+    select{
+        margin: 0 auto;
+        height: 33px;
+        width: 70px;
+    }
+    
+    }
+    
+}
+
+
+
+// 底部
+.save_footed{
+    .index_save{
+        height: 36px;
+        background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+        line-height: 36px;
+        border-top: solid 1px #ebebeb;
+        border-bottom: 1px solid #ccc;
+        padding-left: 8px; 
+        font-size: 14px;
+    }
+    .whileLine{
+        height: 30px;
+        background: #ebebeb;
+        border-bottom: 1px solid #f6f6f6;
+    }
+
+}
+// 4.右侧固定图片
+.save_fixed{
+    position: relative;
+    a{
+        position: fixed;
+        bottom: 80px;
+        right:0px;
+        img{
+            width: 60px;
+        }
+    }
+}

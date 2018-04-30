@@ -1,0 +1,92 @@
+header {
+  color: #fff;
+  background: #e4393c;
+  position: relative;
+}
+header h2 {
+  margin: 0;
+  padding: 10px 50px;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+}
+header .prev {
+  position: absolute;
+  left: 0;
+  font-size: 22px;
+  text-align: center;
+}
+header .prev a {
+  width: 50px;
+  height: 44px;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+header .prev a span {
+  color: #fff;
+}
+header .download {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .download a {
+  width: 50px;
+  height: 44px;
+  display: block;
+}
+header .download a img {
+  width: 34px;
+  margin-top: 7px;
+}
+.info {
+  padding-top: 15px;
+}
+.info .info_ul {
+  padding: 0;
+  padding-left: 3px;
+  list-style: none;
+}
+.info .info_ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+.info .info_ul li a {
+  color: #5f5f5f;
+  text-decoration: none;
+}
+.info .info_ul li a .media .media-left img {
+  width: 100px;
+  height: 80px;
+}
+.info .info_ul li a .media .media-body .Name {
+  margin: 0;
+}
+.info .info_ul li a .media .media-body .time {
+  color: #f19335;
+  padding-top: 10px;
+}
+.modal .modal-content {
+  margin-top: 50%;
+  transform: translate(-50%, 30%);
+  margin-left: 50%;
+  width: 50%;
+}
+.modal .modal-content .carousel .carousel-control {
+  width: 0;
+}
+.modal .modal-content .carousel .carousel-control span {
+  font-size: 30px;
+  background: rgba(0, 0, 0, 0.8);
+  width: 35px;
+  height: 50px;
+  line-height: 50px;
+  transform: translateY(-50%);
+}
+.modal .modal-content .carousel .carousel-control .glyphicon-chevron-right {
+  margin-right: -38px;
+}
+.modal .modal-content .carousel .carousel-control .glyphicon-chevron-left {
+  margin-left: -38px;
+}

@@ -1,0 +1,269 @@
+//慢慢买首页头部
+.navbar{
+      background-color: #ff841d;
+        margin-bottom: 10px;
+        .navbar-brand{
+             width: 80%;
+            img{
+             width: 187px;
+        }
+        } 
+        .app-donwload img {
+        height: 34px;
+        margin-top: 8px;
+    }
+
+}
+
+
+//慢慢买index的搜索栏
+    #index_search {
+          width: 100%;
+        position: relative;
+        margin-bottom: 1px;
+           .input_text{
+                width: 90%;
+                height: 30px;
+                border-radius: 20px;
+                border: 0;
+                margin-left: 5px;
+                padding-left: 30px;
+                outline: none;
+                background-color: #f1f1f1;
+            }
+            .input_subimt{
+                 width: 60px;
+                height: 30px;
+                border-radius: 20px;
+                padding-left: 10px;
+                margin-right: 10px;
+                background-color: #ff841d;
+                color: #fff;
+                position: absolute;
+                right: 0;
+                top: 0;
+                border: 0;
+            }
+    }
+    
+ //线
+    .line{
+         width: 100%;
+        height: 1px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        background-color: #aaa;
+    }
+
+    //菜单栏
+    .index_list{
+        #index_list_ul{
+            list-style: none;
+            padding-left: 0;
+                li{
+                     width: 25%;
+                     
+                     a{
+                           display: block;
+                            margin-left: 10%;
+                            text-align: center;
+                            color:#5a5a5a;
+                             img{
+                                 width: 50px;
+                                 
+                                }
+                     }
+                    
+                }
+                .collapse{
+
+                    li{
+                         width: 25%;
+                          a{
+                           display: block;
+                            margin-left: 10%;
+                            text-align: center;
+                            color:#5a5a5a;
+                             img{
+                                 width: 50px;
+                                 
+                                }
+                     }
+                    }
+                }
+        }
+    }
+
+    // 超值折扣标题
+    .index_count{
+        width: 100%;
+        background-color: #ff841d;
+        span{
+            font-size: 20px;
+            color: #fff;
+            margin-left: 20px;
+            font-weight: 600;
+        }
+        img{
+            width: 20px;
+            height: 20px;
+            margin-top: 5px;
+            margin-right: 5px;
+        }
+    }
+
+    //超值折扣内容
+    .discount{
+           width: 100%;
+            background-color: #fff;
+            .discount_ul{    
+                list-style: none;
+                padding-left: 0px;
+                
+                    li{
+                         padding: 10px 0;
+                         border-bottom: 1px solid #ccc;  
+                        .clickli{
+                            text-decoration:none;
+                            width: 100%;
+                           display: block;
+                         .discount_img{
+                                    img{                              
+                                            width: 100px;
+                                            height: 100px;
+                                      }
+                                    }
+                        .discount_content{
+                             padding-left: 110px;
+
+                             .discount_title{
+                                        min-height: 50px;
+                                        word-break: break-all;
+                                        text-align: left;
+                                        color: black;
+                                        span{
+                                            color: #ff6c00;
+                                        }
+                             }
+
+                             .discount_message{
+                                 margin-top: 20px;
+                                    span{
+                                        font-size: 12px;
+                                        color: #ccc;
+                                        i{
+                                            font-size: 12px;
+                                        }
+                                    }
+
+                             }
+
+
+                        }
+
+
+                    }    
+                }//li
+                
+            }    
+                 
+            .discount_more{
+                padding-bottom: 10px;
+                a{
+                    display: block;
+                    width: 90%;
+                    line-height: 26px;
+                    text-align: center;
+                    border: 1px solid #ccc;
+                    margin: 0 auto;
+                    background-color: #f8f8f8;
+                    color: #5a5a5a;
+                    font-size: 12px;
+                }
+             
+        }
+    }
+
+    //品牌排序
+        .index_bottom{
+            background-color: #f2f2f2;
+            .index_bottom_head{
+                 background-color: #ff841d;
+                font-size: 20px;
+                color: #fff;
+                    span{
+                        font-size: 20px;
+                        color: #fff;
+                        margin-left: 20px;
+                        font-weight: 600;
+                    }
+                    a{
+                        
+                        img{
+                            width: 20px;
+                            height: 20px;
+                            margin-top: 5px;
+                            margin-right: 5px;
+                        }
+                    }
+            }
+            .container{
+                     width: 100%;
+                    padding: 10px 0 0 0;
+                    text-align: center;
+                    div{
+                        border: 1px solid #ccc;
+                        border-left: 0px;
+                        padding: 0px;
+                        a{
+                             color: #333333;
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+            }
+            .index_bottom_footer{
+                    text-align: center;
+                    padding: 10px 0;
+                    p{
+                         margin: 0px;
+                          .appdownload{
+                            color: red;
+                            a{
+                                color: #5a5a5a;
+                            }
+                        }
+                    }
+                   
+            }
+        }
+
+
+    //app固定图片
+        .img_fixed{
+             position: fixed;
+                bottom: 0px;
+                right: 0px;
+              .img_fixed_img{
+                  img{
+                        width: 50px;
+                        height: 50px;
+                  }
+              } 
+              #back_top{
+                   visibility: hidden;
+                    width: 40px;
+                    height: 40px;
+                    background-color: #fff;
+                    border-radius: 50%;
+                    margin-left: 5px;
+                  a{
+
+                     i{
+                         margin-left: 5px;
+                        font-size: 216%;
+                        color: #ccc;
+                     } 
+                  }
+              }
+        }

@@ -1,0 +1,147 @@
+.views header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff841d;
+}
+.views header .logo {
+  padding: 12px;
+}
+.views header .logo img {
+  max-height: 25px;
+}
+.views header .app-download {
+  padding: 7px;
+}
+.views header .app-download img {
+  max-height: 34px;
+}
+.views .searchBox {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.views .searchBox input {
+  padding: 0;
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  border: none;
+  padding-left: 20px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  position: absolute;
+}
+.views .searchBox .search_btn {
+  width: 66px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ff841d;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+
+#container #logo {
+  height: 30px;
+  background-color: #ff841d;
+}
+#container #shousuo {
+  height: 30px;
+  background-color: green;
+}
+#container #mmbuy_list {
+  border-radius: 10px;
+  background-color: #f2f2f2;
+  width: 100%;
+  padding-top: 5px;
+}
+#container #mmbuy_list .btn {
+  border-radius: 0;
+  border: 0;
+}
+#container #mmbuy_list .family_electric {
+  border: 1px solid #ccc;
+  margin-top: 0px;
+  margin-left: 5px;
+  width: 98%;
+  background-color: #ebebeb;
+}
+#container #mmbuy_list .family_electric p {
+  text-align: left;
+  font-size: 18px;
+  color: #000;
+  font-weight: 700;
+  position: relative;
+}
+#container #mmbuy_list .family_electric .glyphicon {
+  position: absolute;
+  right: 10px;
+}
+#container #mmbuy_list .well {
+  width: 98%;
+  margin-left: 5px;
+  background-color: #f9f9f9;
+  border-bottom: 2px solid #ccc;
+  padding: 0;
+}
+#container #mmbuy_list .well .row div {
+  margin-top: 0;
+  padding-top: 0;
+  padding: 10px;
+  text-align: center;
+}
+#container #mmbuy_list .well .row .col-xs-4 {
+  border: 1px solid #ccc;
+}
+#container #mmbuy_list a {
+  padding: 0;
+}
+#foot_promptly {
+  background-color: #faf8f5;
+  height: 50px;
+  margin-top: 10px;
+}
+#foot_promptly a {
+  float: left;
+}
+#foot_promptly a img {
+  float: left;
+  width: 50%;
+  margin-left: 10px;
+  margin-top: 10px;
+}
+#foot_promptly .man {
+  float: left;
+  padding-top: 10px;
+  margin-left: 10px;
+}
+#foot_promptly .buy {
+  margin-left: 100px;
+  color: #ff841d;
+  font-size: 20px;
+  width: 60px;
+  position: absolute;
+}
+#foot_promptly .history {
+  position: relative;
+  left: 25px;
+  top: 5px;
+  margin-left: 0px;
+  color: #ff841d;
+  font-size: 17px;
+}
+#foot_promptly .promptly_open {
+  position: relative;
+  right: -450px;
+  top: -40px;
+  color: #ff841d;
+}

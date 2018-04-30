@@ -1,0 +1,93 @@
+@import "base.less";
+
+/*导航*/
+
+.nav{
+    width: 100%;
+    height: 40px;
+    background-color: #f1f1f1;
+    ul{
+        li{
+            float:left;
+            line-height: 40px;
+            a{
+                text-decoration: none;
+                &:active{
+                    color: inherit;
+                }
+            }
+             
+        }
+    }
+    button{
+        float:right;
+        margin-right:10px;
+        padding-left:10px;
+        padding-right:10px;
+        border-radius: 5px;
+        font-size: 13px;
+        outline: none;
+        border:none;
+        border:1px solid #ccc;
+
+
+    }
+}
+
+/*商品列表*/
+
+.product_list{
+    padding-top: 15px;
+    .media{
+        margin-bottom:15px;
+    .media-left{
+        >a{
+            img{
+                width: 80px;
+                height: 80px;
+            }
+        }
+    }
+    .media-body{
+       
+        >h4{
+            font-size: 18px;
+            margin-bottom:10px;
+        }
+        >span{
+            color:red;
+            font-size: 15px;
+        }
+        .tell_money{
+            position: relative;
+            p{
+                color:#ccc;
+                margin:0;
+            }
+            .tell_write{
+                position: absolute;
+                top: 0;
+                right:0;
+                color:#ccc;
+            }
+        }
+     }
+    }
+    
+}
+
+
+/*翻页*/
+
+.flip{
+    width: 100%;
+    margin-bottom: 15px;
+    .previous,.flip_set,.btnNext{
+        width: 33.33%;
+        float: left;
+        text-align: center;
+        outline: none;
+        border-color:#ccc;
+    }
+    
+}

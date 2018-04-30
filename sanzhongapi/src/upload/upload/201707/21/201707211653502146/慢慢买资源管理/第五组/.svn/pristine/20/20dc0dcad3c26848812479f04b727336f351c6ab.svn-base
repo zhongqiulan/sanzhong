@@ -1,0 +1,202 @@
+body {
+  width: 100%;
+  background-color: #f7f7f7;
+  overflow-x: hidden;
+}
+.header-wrap {
+  background-color: #f4483e;
+  width: 100%;
+  height: 0.8rem;
+  position: fixed;
+  z-index: 999;
+}
+.header-wrap header {
+  display: flex;
+}
+.header-wrap header .back a {
+  display: flex;
+  width: 0.8rem;
+  height: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.header-wrap header .back a i {
+  font-size: 0.4rem;
+}
+.header-wrap header .h-title {
+  flex: 1;
+  font-size: 0.35rem;
+  line-height: 0.8rem;
+  color: #fff;
+  text-align: center;
+}
+.header-wrap header .app-download {
+  padding-right: 0.1rem;
+}
+.header-wrap header .app-download span {
+  display: block;
+  height: 0.8rem;
+  width: 0.6rem;
+  background: url('../images/header_app.png') no-repeat center center;
+  background-size: 0.6rem;
+}
+.navs {
+  padding-top: 0.8rem;
+  background-color: #fff;
+}
+.navs ul li {
+  float: left;
+  padding: 0.2rem 0;
+  margin: 0 0.2rem;
+}
+.navs ul li a {
+  font-size: 0.25rem;
+  color: #000;
+}
+.navs ul li.active {
+  color: #f4483e;
+  border-bottom: 2px solid #f4483e;
+}
+.list-wrap .list li {
+  height: 2.3rem;
+  margin-top: 0.1rem;
+  padding: 0.1rem;
+  background-color: #fff;
+  display: flex;
+}
+.list-wrap .list li .img-wrap {
+  width: 2.3rem;
+  height: 2.3rem;
+}
+.list-wrap .list li .img-wrap img {
+  width: 100%;
+}
+.list-wrap .list li .content-wrap {
+  flex: 1;
+  margin-left: 0.1rem;
+  font-size: 0.25rem;
+}
+.list-wrap .list li .content-wrap h4 {
+  font-size: 0.28rem;
+  height: 0.60rem;
+}
+.list-wrap .list li .content-wrap .money {
+  color: red;
+  font-size: 0.4rem;
+  margin-top: 0.1rem;
+}
+.list-wrap .list li .content-wrap .money em {
+  font-size: 0.2rem;
+  margin: 0 0.1rem;
+  vertical-align: middle;
+}
+.list-wrap .list li .content-wrap .money i {
+  font-size: 0.3rem;
+}
+.list-wrap .list li .content-wrap .money del {
+  font-size: 0.2rem;
+  color: #333;
+  margin-left: 0.2rem;
+  vertical-align: middle;
+}
+.list-wrap .list li .content-wrap .progress {
+  margin-top: 0.1rem;
+}
+.list-wrap .list li .content-wrap .progress i {
+  display: inline-block;
+  width: 1.8rem;
+  height: 0.26rem;
+  background-color: #ffb7b7;
+  border: 1px solid #fc353a;
+  border-radius: 12px;
+  text-align: center;
+  color: #fff;
+  line-height: 0.26rem;
+}
+.list-wrap .list li .content-wrap .progress b {
+  margin-left: 0.1rem;
+  color: red;
+  font-size: 0.2rem;
+  line-height: 0.26rem;
+}
+.list-wrap .list li .content-wrap .bottom {
+  margin-top: 0.2rem;
+  font-size: 0.2rem;
+}
+.list-wrap .list li .content-wrap .bottom .coupon {
+  float: left;
+  padding: 0.04rem;
+  color: #f4483e;
+  border: 1px dashed #f4483e;
+  vertical-align: middle;
+}
+.list-wrap .list li .content-wrap .bottom > a {
+  float: right;
+  color: #fff;
+  padding: 0.02rem 0.06rem;
+  background-color: #ff5e5d;
+  border-radius: 3px;
+  height: 0.4rem;
+  line-height: 0.4rem;
+}
+.b-tool {
+  margin-top: 0.2rem;
+  background-color: #efefef;
+}
+.b-tool .top {
+  font-size: 0.28rem;
+}
+.b-tool .top ul {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+.b-tool .top ul li {
+  flex-grow: 1;
+  border: 1px solid #e0e0e0;
+  padding: 0.1rem 0;
+}
+.b-tool .top ul li.to-top {
+  flex-grow: 1.1;
+}
+.b-tool .top ul li.to-top i.iconfont {
+  color: #666;
+  font-size: 0.28rem;
+}
+.b-tool .bottom {
+  font-size: 0.22rem;
+  padding: 0.1rem 0 0.3rem;
+}
+.b-tool .bottom p {
+  text-align: center;
+}
+.b-tool .bottom p a {
+  display: inline;
+}
+.b-tool .bottom p > span:nth-of-type(1) {
+  color: red;
+}
+.b-tool .bottom p > span:nth-of-type(2) {
+  color: #666;
+}
+.b-tool .bottom > p:nth-of-type(2) {
+  color: #666;
+}
+.to-top-btn {
+  display: none;
+}
+.to-top-btn a {
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  color: #ccc;
+  font-size: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买_比价搜索-产品详情</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/category/category-list.css">
+    <link rel="stylesheet" href="/views/category/font/font/iconfont.css">
+</head>
+
+<body id="dingbu">
+    <div class="cate-list">
+        <!--logo模块-->
+        <div class="top">
+            <!--顶部logo区域-->
+            <div class="top">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header pull-left">
+                        <a class="navbar-brand" href="#"><img src="/views/public/images/header_logo.png" alt=""></a>
+                    </div>
+                    <div class="pull-right">
+                        <a href=""><img src="/views/public/images/header_app.png" alt=""></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--搜索模块-->
+        <div class="search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+
+        <div class="bigbox">
+            <!--产品展示qu-->
+            <div class="cpzs">
+                <!--产品展示的小导航-->
+
+            </div>
+
+            <div class="cp-tab">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active col-xs-4">
+                            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">比价购买</a>
+                            <span class="caret"></span>
+                        </li>
+                        <li role="presentation" class='col-xs-4'>
+                            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">产品参数</a>
+                            <span class="caret"></span>
+                        </li>
+                        <li role="presentation" class='col-xs-4' id="propj">
+                            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">产品评价</a>
+                            <span class="caret"></span>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">暂无评价功能</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <!--客户评价对应的模块-->
+                            <div class="evaluate">
+                                <!--评价分类的盒子-->
+                                <div class="pjfl">
+                                    <ul class="clearfix">
+                                        <li class="col-xs-4"><a href="comment.aspx?PageID=1&amp;id=534573#pl" class="active">全部</a></li>
+                                        <li class="col-xs-4"><a href="comment.aspx?PageID=1&amp;id=534573&amp;fs=5#pl">值得购买</a></li>
+                                        <li class="col-xs-4"><a href="comment.aspx?PageID=1&amp;id=534573&amp;fs=1#pl">不值得购买</a></li>
+                                    </ul>
+                                </div>
+                                <!--评价的具体内容-->
+                                <div class="pj-content">
+
+
+                                </div>
+                                <div class="jzgd">点击加载更多评价</div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+
+
+        <!--footer模块-->
+         <?php include '/views/common/footer.html' ?>
+    </div>
+    </div>
+</body>
+
+</html>
+<?php include '/views/common/script.html' ?>
+<script>
+    require(['js/category/category_details']);
+
+</script>
+
+<script type="text/dtpl" id='tpl'>
+    <div class="cpzs-nav">
+        <ul class="clearfix">
+            <li> <a href="/category">首页</a></li>
+            <li>&gt;</li>
+            <li><a href="/category/category_Prolist?categoryid={{categoryId}}&category={{cpname}}&categoryId={{categoryId}}">{{cpname}}</a></li>
+            <li>&gt;</li>
+            <li><a href="/category/category_Prolist?">{{productNa}}</a></li>
+        </ul>
+    </div>
+    <div class="cp-content">
+        <div class="pic">
+            <!--商品图片-->
+            <div class="spimg">
+                {{#productImg}}
+            </div>
+            <!--收藏按钮-->
+            <img class="scbtn" src="http://www.zuyushop.com/wap/images/sc.jpg"></img>
+        </div>
+        <div class="text-ms">{{productName}}</div>
+        <div class="other clearfix">
+            <span>当前最低价<em>¥</em>499999</span>
+            <b class="pull-right">优选评论{{categoryId}}条</b>
+        </div>
+    </div>
+    <!--{{#bjShop}}-->
+</script>
+
+<script type="text/tpl" id="jsop">
+    <div>
+        {{#bjShop}}
+    </div>
+</script>
+
+<script type="text/tpel" id="propjt">
+    <ul>
+        {{each result as v}}
+        <li>
+            <div class="user-info clearfix">
+                <div class="user-name row">
+                    <p class="name col-xs-6">{{v.comName}}</p>
+                    <p class="date col-xs-6" id="date">{{v.comTime}}</p>
+                </div>
+                <div class="pj-data row">
+                    <div class="star col-xs-4">
+                        <span class="glyphicon glyphicon-star"></span>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </div>
+                    <span class="shangcheng col-xs-8">{{v.comFrom}}</span>
+                </div>
+            </div>
+            <div class="content">
+                {{v.comContent}}
+                <i class="huif">回复</i>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>

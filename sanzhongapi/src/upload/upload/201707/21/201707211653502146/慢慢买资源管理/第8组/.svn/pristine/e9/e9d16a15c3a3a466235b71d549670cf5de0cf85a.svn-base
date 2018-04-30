@@ -1,0 +1,90 @@
+html {
+    // font-size: 100px;
+    body {
+        width: 100%;
+        header {
+            height: 40px;
+            line-height: 40px;
+            background-color: red;
+            width: 100%;
+            .container-fluid {
+                height: 40px;
+                .row {
+                    .icon-fanhui {}
+                    .inlandD {
+                        text-align: center;
+                        color: #fff;
+                    }
+                    .app_donwload {
+                        color: #fff;
+                        background: url('../images/header_app.png') no-repeat;
+                        width: 32px;
+                        height: 32px;
+                        background-size: 32px;
+                        position: absolute;
+                        right: 5px;
+                        top: 3px;
+                    }
+                }
+            }
+        }
+        .main {
+            li {
+                width: 50%;
+                float: left;
+                a {
+                    img {}
+                    p:nth-of-type(2) {
+                        color: red;
+                    }
+                }
+            }
+        }
+        footer {
+            overflow: hidden;
+            .navbar {
+                height: 100px;
+                margin: 0;
+                background-color: #efefef;
+                .row {
+                    div {
+                        border-top: 1px solid #cbcbcb;
+                        border-bottom: 1px solid #cbcbcb;
+                        height: 35px;
+                        line-height: 35px;
+                        text-align: center;
+                        a {
+                            color: black;
+                            font-size: 14px;
+                            span {
+                                color: #747474;
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                    div:nth-of-type(2) {
+                        border-left: 1px solid #cbcbcb;
+                        border-right: 1px solid #cbcbcb;
+                    }
+                }
+                div.app-updown {
+                    text-align: center;
+                    padding-top: 5px;
+                    font-size: 12px;
+                    a {
+                        color: red;
+                    }
+                    span:first-of-type {
+                        color: black;
+                    }
+                    span:last-of-type {
+                        color: #7b7b7b;
+                    }
+                    p {
+                        color: #7b7b7b;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,14 @@
+<div class="header">
+    <div class="logo">
+        <div class="fl">
+            <a href=""><img src="/images/header_logo.png" alt=""></a>
+        </div>
+        <div class="fr">
+            <a href=""><img src="/images/header_app.png" alt=""></a>
+        </div>
+    </div>
+    <div class="search clearfix">
+        <input type="text" class="input" placeholder="请输入你想比价的商品">
+        <span class="input-text">搜索</span>
+    </div>
+</div>

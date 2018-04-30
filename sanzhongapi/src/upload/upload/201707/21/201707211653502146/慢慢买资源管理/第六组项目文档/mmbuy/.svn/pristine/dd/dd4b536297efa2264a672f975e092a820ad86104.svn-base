@@ -1,0 +1,20 @@
+define(['jquery','template','bootstrap'],function($,template,bt){
+  
+   
+    $.ajax({
+        url:'http://139.199.192.48:9090/api/getmoneyctrl',
+        data:{},
+        success:function(info){
+            console.log(info);
+            var id =Math.ceil(Object.totalCount/Object.pagesize);
+            info.pageid=id;
+            console.log(info.pageid)
+            var htmlStr= template('save_menu_tpl',info);
+            $('#save_menu_ul').html(htmlStr);
+        }
+    })
+    $(".save_menu_ul").on("click",".pull-right",function(){
+        alert("123")
+    })
+    
+})

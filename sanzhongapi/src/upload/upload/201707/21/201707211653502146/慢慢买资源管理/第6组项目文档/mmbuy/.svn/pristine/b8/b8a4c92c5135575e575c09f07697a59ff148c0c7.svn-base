@@ -1,0 +1,26 @@
+.goods_navs ol.breadcrumb {
+  padding: 0px 15px;
+  margin-top: 10px;
+  height: 40px;
+  line-height: 40px;
+}
+.goods_navs ol.breadcrumb > li + li:before {
+  content: '';
+}
+.goods_navs ol.breadcrumb li {
+  float: left;
+}
+.goods_navs ol.breadcrumb li .btn-group-lg > .btn,
+.goods_navs ol.breadcrumb li .btn-lg {
+  padding: 3px 12px;
+  font-size: 14px;
+}
+.goods_list a {
+  text-decoration: none;
+}
+.goods_list a:hover {
+  color: #000;
+}
+.goods_list .goods_list_price {
+  color: red;
+}

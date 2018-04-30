@@ -1,0 +1,30 @@
+/**
+ * 渲染页面
+ */
+var search = location.search;
+getProduct();
+function getProduct() {
+    $.ajax({
+        url: config.getUrl("/api/getproduct") + search,
+        type: 'get',
+        success: function (data) {  
+            var htmlStr = template("titleTpl",data);
+            $(".content").html(htmlStr);
+        }
+    })
+}
+
+/**
+ * 评论模块渲染
+ */
+getEvaluation();
+function getEvaluation() {
+    $.ajax({
+        url: config.getUrl('/api/getproductcom') + search,
+        type: 'get',
+        success:function (data) {
+            var htmlStr = template("evaluationTpl", data);
+            $('.evaluation .info').html(htmlStr);
+        }
+    })
+}

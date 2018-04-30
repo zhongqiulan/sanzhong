@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>肯德基优惠券--慢慢买</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/views/public/css/coupon/coupon.css">
+</head>
+
+<body id="dingbu">
+    <div class="quan">
+        <div class="view">
+            <header>
+                <!--<span class="glyphicon glyphicon-menu-left goBack"></span>
+                <h1>肯德基优惠券</h1>
+                <a href="###"><img src="/views/public/images/header_app.png" alt=""></a>-->
+            </header>
+            <div class="content">
+                <div class="top">--点餐前出示手机中的优惠券，即可享受优惠--</div>
+                <div class="quan-box">
+                    <ul class="contain">
+                        <!--<li class="clearfix">
+                            <a href="" title="两人小食组 香辣鸡翅2块+黄金鸡块5块+薯条(中)+原味圣代(草莓酱">
+                                <div class="pic">
+                                    <img src="/views/public/uploads/kfc-5ikfc-71_p23.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="title"> 两人小食组 香辣鸡翅2块+黄金鸡块5块+薯条(中)+原味圣代(草莓酱/巧克力酱) 2017年7月凭肯德基优惠券</div>
+                                    <p><strong>&yen 30.5</strong></p>
+                                    <p class="time">有限期至7月31日</p>
+                                </div>
+                                <div class="right">
+                                    <img src="/views/public/images/arrow-right.svg" width="" height=""></img>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="clearfix">
+                            <a href="">
+                                <div class="pic">
+                                    <img src="/views/public/uploads/kfc-5ikfc-71_p23.jpg" alt="">
+                                </div>
+                                <div class="info">
+                                    <div class="title"> 两人小食组 香辣鸡翅2块+黄金鸡块5块+薯条(中)+原味圣代(草莓酱/巧克力酱) 2017年7月凭肯德基优惠券</div>
+                                    <p><strong>&yen 30.5</strong></p>
+                                    <p class="time">有限期至7月31日</p>
+                                </div>
+                                <div class="right">
+                                    <img src="/views/public/images/arrow-right.svg" width="" height=""></img>
+                                </div>
+                            </a>
+                        </li>-->
+                    </ul>
+                </div>
+            </div>
+
+            <div class="back">
+                <div class="youhui">
+                    <!--<a href="/">首页</a> >
+                    <a href="/coupon/coupon">优惠券</a> >
+                    <a href="">肯德基优惠券</a>-->
+                </div>
+            </div>
+
+            <?php include '/views/common/footer.html' ?>
+            <div class="fix">
+                <img src="/views/public/uploads/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt="">
+            </div>
+        </div>
+        <div class="cover">
+            <div class="box">
+                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <!-- Wrapper for slides -->
+                    <div class="carousel-inner" role="listbox">
+
+                    </div>
+
+                    <!-- Controls -->
+                    <a class="arows left carousel-control glyphicon glyphicon-menu-left" href="#carousel-example-generic" role="button" data-slide="prev">
+                    </a>
+                    <a class="arows right carousel-control glyphicon glyphicon-menu-right" href="#carousel-example-generic" role="button" data-slide="next">
+                    </a>
+                </div>
+            </div>
+
+        </div>
+        
+    </div>
+</body>
+
+<?php include '/views/common/script.html' ?>
+<script>
+    require(['js/coupon/coupon']);
+</script>
+<script id="info" type="text/html">
+    {{each result as val i}}
+    <li>
+        <a href="###" title="{{val.couponProductName}}" class="clearfix">
+            <div class="pic">
+                <!--{{val.couponProductImg}}-->
+                {{#val.couponProductImg}}
+            </div>
+            <div class="info">
+                <div class="title">{{val.couponProductName}}</div>
+                <div><strong>&yen 30.5</strong></div>
+                <p class="time">{{val.couponProductTime}}</p>
+            </div>
+            <div class="right">
+                <img src="/views/public/images/arrow-right.svg" width="" height=""></img>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--模态框轮播图-->
+<script id="mod" type="text/html">
+    {{each result as val i}}
+    <div class="item">
+        {{#val.couponProductImg}}
+    </div>
+    {{/each}}
+</script>
+
+
+<!--头部渲染-->
+<script id="head" type="text/html">
+    <span class="glyphicon glyphicon-menu-left goBack"></span>
+    <h1>{{name}}优惠券</h1>
+    <a href="###"><img src="/views/public/images/header_app.png" alt=""></a>
+</script>
+
+<!--底部back-->
+<script id="back" type="text/html">
+    <a href="/">首页</a> >
+    <a href="/coupon/coupon">优惠券</a> >
+    <a href="">{{name}}优惠券</a>
+</script>
+
+</html>

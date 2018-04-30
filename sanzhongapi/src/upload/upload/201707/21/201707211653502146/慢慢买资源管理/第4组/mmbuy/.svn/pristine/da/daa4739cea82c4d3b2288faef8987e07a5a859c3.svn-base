@@ -1,0 +1,26 @@
+// console.log(location.search);
+var couponId = location.search;
+var couponId = couponId.slice(1);
+// console.log(couponId);
+var arr = couponId.split("&");
+// console.log(arr);
+var obj = {};
+for(var i = 0;i<arr.length; i++){
+    var tempArr = arr[i].split("=");
+    obj[tempArr[0]] = tempArr[1];
+}
+// console.log(obj);
+var id= obj.couponId;
+$.ajax({
+    url: "http://139.199.192.48:9090/api/getcouponproduct",
+    type: "get",
+    dataType: "json",
+    data: {
+        couponid: id
+    },
+    success: function(info){
+        console.log(info);
+        var htmlStr = template("couponproduct",info);
+        $("#product-content").html(htmlStr);
+    }
+})

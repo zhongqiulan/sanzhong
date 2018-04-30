@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>品牌大全</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/brandTitle/brandTitle.css">
+</head>
+<body>
+    <div class="brand">
+        <!--********************************************头部********************************************-->
+        <header class="clearfix">
+            <img class="logo pull-left" src="../images/header_logo.png" alt="">
+            <a class="app pull-right" href="#">
+                <img src="../images/header_app.png" alt="">
+            </a>   
+        </header>
+
+
+        <!--********************************************搜索框********************************************-->
+        <div class="search">
+            <input type="text" value="" class="pull-left" placeholder="请输入你想比价的商品">
+            <input type="button" value="搜索" class="pull-right">
+        </div>
+
+
+        <!--********************************************内容********************************************-->
+        <div class="content">
+            <div class="content_header clearfix">
+                <a href="brandTitle.html" class="pull-left">首页</a>
+                <span class="pull-left">></span>
+                <a href="#" class="pull-left">品牌大全</a>
+            </div>
+            <div class="title">
+                热门品牌排行
+            </div>
+            <div class="hot">
+                <ul>
+                    
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/artTemplate/template.js"></script>
+    <script src="../js/brandTitle/brandTitle.js"></script>
+</body>
+</html>
+
+
+<!--********************************************列表模板********************************************-->
+<script type="text/template" id="host_tpl"> 
+        {{each result as v i}}
+        <li><a href="brandTitle_list.html?brandtitleid={{v.brandTitleId}}&brandTitle={{v.brandTitle}}">
+            <span>{{v.brandTitle}}</span>
+            <i class="glyphicon glyphicon-chevron-down pull-right"></i>
+        </a></li>
+        {{/each}}
+</script>

@@ -1,0 +1,78 @@
+@import "../common/base.less";
+body {
+    background-color: #f3f3f3;
+}
+
+.koubei-bread {
+    p {
+        height: 40px;
+        line-height: 40px;
+        font-size: 15px;
+        background-color: #f1f1f1;
+        border-top: 1px solid #d6d6d6;
+        border-bottom: 1px solid #d6d6d6;
+        box-shadow: 1px 0px 1px #d6d6d6;
+        padding-left: 10px;
+        span {
+            font-weight: bold;
+        }
+    }
+}
+
+.koubei-title {
+    height: 40px;
+    line-height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #874604;
+    padding-left: 10px;
+    border-bottom: 1px solid #d6d6d6;
+    box-shadow: 1px 0px 1px #d6d6d6;
+}
+
+.koubei-main {
+    padding: 10px;
+    .koubei-comment {
+        .product-info {
+            img {
+                width: 80px;
+                float: left;
+            }
+            p{
+               padding-left: 90px;
+               color: #9f9f9f;
+               line-height: 22px;
+            }
+        }
+        .comment-content{
+            background-color: #f8f8f8;
+            padding:10px;
+            margin-top: 10px;
+            .top{
+                .star{
+                    font-size: 18px;
+                    vertical-align: top;
+                    color: #ff9000;
+                }
+                .name{
+                    color: #677d23;
+                }
+                .time{
+                    color: #a1a1a1;
+                    float:right;
+                }
+            }
+            .text{
+                font-size: 15px;
+                color: #000;
+                line-height: 22px;
+                margin-top: 10px;
+            }
+            &:after{
+                content: "";
+                border-width: 10px 10px 10px 10px;
+
+            }
+        }
+    }
+}

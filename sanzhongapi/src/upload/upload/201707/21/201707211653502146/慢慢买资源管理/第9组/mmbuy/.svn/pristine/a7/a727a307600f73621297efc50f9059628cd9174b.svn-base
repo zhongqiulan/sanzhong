@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>比价搜索</title>
+  <link rel="stylesheet" type="" href="../../lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="" href="../../css/base.css">
+  <link rel="stylesheet" type="" href="../../css/listclass/listclass.css">
+</head>
+<body>
+  <div id="container">
+    <div class="views">
+      <!-- 广告  -->
+        <div class="appbanner" id="Div1">
+            <div class="applogo pull-left"><img src="../../images/logo.png"></div>
+            <div class="tit pull-left">
+                慢慢买比价客户端
+                <div class="subtit">
+                    <p>掌控价格不再买贵</p>
+                    <p>500万人正在使用</p>
+                </div>
+            </div>
+            <div class="btn pull-right">
+                <a href="javascript:;" class="a-close">x</a>
+                <a href="javascript:;"  class="a-install">立即安装</a>
+            </div>
+        </div>
+
+      <!--头部-->
+      <header class="clearfix">
+        <div class="logo pull-left">
+          <a href="../../index.html" class="header">
+                    <img src="../../images/header_logo.png" alt="">
+                </a>
+        </div>
+        <div class="app-download pull-right">
+          <a href="javascript:;">
+                    <img src="../../images/header_app.png" alt="">
+                </a>
+        </div>
+      </header>
+      <!--搜索框-->
+      <div class="searchBox">
+        <input type="text" placeholder="请输入你想比价的产品" aria-describedby="basic-addon2">
+        <span class="search_btn">搜索</span>
+      </div>
+      <!-- 下拉菜单  -->
+      <div id="mmbuy_list">
+      </div>
+    </div>
+    <!-- container -->
+
+    <!--登录注册-->
+    <div class="bg_color">
+      <div class="foot_bar">
+        <ul class="clearfix">
+          <li><a href="../../login.html">登录</a></li>
+          <li><a href="../../login.html">注册</a></li>
+          <li id="top" class="f_top"><a href="#"><i class="icon-top"></i>返回顶部</a></li>
+        </ul>
+      </div>
+      <footer>
+        <div class="foot_top">
+          <a href="javascript:;">手机APP下载</a>
+          <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+        </div>
+        <div class="foot_bottom">m.manmanbuy.com</div>
+      </footer>
+
+      <!-- <div class="_fix">
+
+        <div id='foot_promptly' class="clearfix">
+          <div class="left">
+            <a href="javascript:;"><img src="../../images/listclass/1.png" alt=""></a>
+            <div class="man">慢</div>
+            <p class="buy">慢慢买</p><br/>
+            <p class="history">全网比价,查看历史价格</p>
+          </div>
+          <div class="right">
+            <div class="promptly_open">立即打开</div>
+          </div>
+
+        </div> -->
+
+      </div>
+    </div>
+    <div class="_fix">
+
+        <div id='foot_promptly' class="clearfix">
+          <div class="left">
+            <a href="javascript:;" class="close_btn"><img src="../../images/listclass/1.png" alt=""></a>
+            <div class="man">慢</div>
+            <p class="buy">慢慢买</p><br/>
+            <p class="history">全网比价,查看历史价格</p>
+          </div>
+          <div class="right">
+            <div class="promptly_open">立即打开</div>
+          </div>
+
+        </div>
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../lib/artTemplate/template.js"></script>
+    <script src="../../js/listclass/listclass.js"></script>
+
+    <script type="text/template" id="listclass_tpl">
+      {{each result as v i}}
+      <!-- <input type="hidden" name="titleId"  value="{{v.titleId}}">  -->
+      <a class="btn btn-primary family_electric bottom_line" role="button" data-id="{{v.titleId}}" data-toggle="collapse" href="#collapseExample{{i}}"
+        aria-expanded="false" aria-controls="collapseExample{{i}}">
+        <p>{{v.title}} <span class="glyphicon glyphicon-menu-down"></span></p>
+      </a>
+      <div class="collapse" id="collapseExample{{i}}">
+        <div class="well">
+          <div class="row container" id="id{{v.titleId}}">
+            <!-- container -->
+            <!-- <div class="col-xs-4">冰箱</div> -->
+          </div>
+        </div>
+      </div>
+      {{/each}}
+    </script>
+    <!--  模板2  -->
+    <script type="text/template" id="info_tpl">
+      {{ each result as v i }}
+      <div class="col-xs-4"><a href="./prolist.html?categoryId={{v.categoryId}}">{{v.category}}</a></div>
+      {{/each}}
+    </script>
+</body>
+
+</html>

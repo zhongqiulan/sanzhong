@@ -1,0 +1,236 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  /* a标签点击高亮  */
+}
+html {
+  font-size: 62.5%;
+}
+@media only screen and (min-width: 481px) {
+  html {
+    font-size: 94%!important;
+  }
+}
+@media only screen and (min-width: 561px) {
+  html {
+    font-size: 109%!important;
+  }
+}
+@media only screen and (min-width: 641px) {
+  html {
+    font-size: 125%!important;
+  }
+}
+p {
+  font-size: 14px;
+  font-size: 1.4rem;
+}
+ul {
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.mmm_top {
+  height: 51px;
+  width: 100%;
+  background-color: #ff841d;
+}
+.mmm_top .top_conten {
+  height: 100%;
+}
+.mmm_top .top_conten > a {
+  display: block;
+  height: 100%;
+  position: relative;
+}
+.mmm_top .top_conten > a .top_img_left {
+  display: inline-block;
+  width: 185.5px;
+  height: 25px;
+  background: url("../images/header_logo.png") 0px 0px;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  left: 18px;
+  transform: translateY(-50%);
+}
+.mmm_top .top_conten > a .top_img_right {
+  display: inline-block;
+  width: 34px;
+  height: 34px;
+  background: url("../images/header_app.png") 0px 0px;
+  background-size: 100%;
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+}
+.mmm_search {
+  width: 100%;
+  height: 51px;
+  position: relative;
+  padding: 10px;
+}
+.mmm_search .mmm_conten {
+  position: relative;
+  width: 100%;
+  padding-right: 65px;
+}
+.mmm_search .mmm_conten span:nth-of-type(1) {
+  display: inline-block;
+  width: 100%;
+}
+.mmm_search .mmm_conten span:nth-of-type(1) input {
+  display: inline-block;
+  border: 1px solid #f1f1f1;
+  height: 28px;
+  border-radius: 10px;
+  padding-left: 10px;
+  background-color: #f1f1f1;
+}
+.mmm_search .mmm_conten span:nth-of-type(2) {
+  display: inline-block;
+  padding: 2px 10px;
+  background-color: #ff841d;
+  border-radius: 10px;
+  position: absolute;
+  top: 50%;
+  right: 0px;
+  transform: translateY(-50%);
+}
+.mmm_search .mmm_conten span:nth-of-type(2) a {
+  display: inline-block;
+  color: #fff;
+}
+/*尾部*/
+.mmm_bottom ul li:nth-of-type(1) {
+  width: 100%;
+  height: 32px;
+  background-color: #ccc;
+}
+.mmm_bottom ul li:nth-of-type(2) a {
+  float: left;
+  width: 33.33%;
+  line-height: 32px;
+  text-align: center;
+  border: 1px solid #8fb4d7;
+}
+.mmm_bottom ul li:nth-of-type(2) a:nth-of-type(1) {
+  border-left: none;
+}
+.mmm_bottom ul li:nth-of-type(2) a:nth-of-type(2) {
+  border-right: none;
+}
+.mmm_bottom ul .hehe {
+  display: block;
+  margin: 0 auto;
+}
+.mmm_bottom ul .hehe p {
+  text-align: center;
+  margin-top: 10px;
+}
+.mmm_bottom ul .hehe p span:nth-of-type(1) {
+  color: red;
+}
+.mmm_bottom ul .hehe p span:nth-of-type(2) {
+  font-weight: 700;
+}
+.mmm_bottom ul .hehe h4 {
+  text-align: center;
+}
+/*导航*/
+.nav {
+  width: 100%;
+  height: 40px;
+  background-color: #f1f1f1;
+}
+.nav ul li {
+  float: left;
+  line-height: 40px;
+}
+.nav ul li a {
+  text-decoration: none;
+}
+.nav ul li a:active {
+  color: inherit;
+}
+.nav button {
+  float: right;
+  margin-right: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  outline: none;
+  border: none;
+  border: 1px solid #ccc;
+}
+/*商品列表*/
+.product_list {
+  padding-top: 15px;
+}
+.product_list .media {
+  margin-bottom: 15px;
+}
+.product_list .media .media-left > a img {
+  width: 80px;
+  height: 80px;
+}
+.product_list .media .media-body > h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.product_list .media .media-body > span {
+  color: red;
+  font-size: 15px;
+}
+.product_list .media .media-body .tell_money {
+  position: relative;
+}
+.product_list .media .media-body .tell_money p {
+  color: #ccc;
+  margin: 0;
+}
+.product_list .media .media-body .tell_money .tell_write {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #ccc;
+}
+/*翻页*/
+.flip {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.flip .previous,
+.flip .flip_set,
+.flip .btnNext {
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  outline: none;
+  border-color: #ccc;
+}

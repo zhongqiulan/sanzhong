@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/brand/list.css">
+
+</head>
+
+<body>
+    <!--头部-->
+
+    <head>
+        <!--慢慢买首页头部-->
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header header-logo pull-left">
+                    <a class="navbar-brand" href="#"><img src="/imgs/header_logo.png" alt=""></a>
+                </div>
+
+                <div class="navbar-right app-donwload pull-right">
+                    <img src="/imgs/header_app.png" alt="">
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </head>
+    <main>
+        <div class="link">
+            <a href="javascript:;">首页</a> &nbsp;>&nbsp;
+            <a href="/pages/brand/brand.html">品牌大全</a>&nbsp;>&nbsp;
+            <a href="javascript:;" class="list_title"></a>
+        </div>
+        <div class="ten">
+            <h3></h3>
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <i>1</i>
+                        <div>d百百</div>
+                        <p>dfefjefkf</p>
+                        <em>></em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sale">
+            <h3></h3>
+            <ul>
+                <li data-id="{{v.productId}}">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="..." alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p class="price">￥32322 <span></span></p>
+                            <p class="info">
+                                <span>挖人</span>
+                                <span>评论</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="comment"></div>
+    </main>
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/js/config/config.js"></script>
+    <script src="/libs/artTemplate/template.js"></script>
+    <script src="/js/brand/list.js"></script>
+</body>
+
+<script type="text/template" id="ten_tpl">
+    <h3></h3>
+    {{each result as v i}}
+    <ul>
+        <li data-id="{{v.brandId}}">
+            <a href="javascript:;">
+                        <i class="top{{i+1}}">{{i+1}}</i>
+                        <div>{{v.brandName}}</div>
+                        <p>{{v.brandInfo}}</p>
+                        <em>></em>
+                    </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script type="text/template" id="sale_tpl">
+    <h3></h3>
+    <ul>
+        {{each result as v i}}
+        <li data-id="{{v.productId}}">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        {{#v.productImg}}
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{v.productName}}</h4>
+                    <p class="price">{{v.productPrice}}<span></span></p>
+                    <p class="info">
+                        <span>{{v.productQuote}}</span>&nbsp;
+                        <span>{{v.productCom}}</span>
+                    </p>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+</html>

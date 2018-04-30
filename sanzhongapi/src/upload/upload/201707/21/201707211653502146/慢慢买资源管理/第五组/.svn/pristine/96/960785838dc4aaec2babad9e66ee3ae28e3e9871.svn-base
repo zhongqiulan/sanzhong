@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>没钱，也不卖身</title>
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+<!--头部-->
+<div class="mmm_top">
+    <div class="top_conten">
+        <a href="javascript:;">
+            <span class="top_img_left"></span>
+            <span class="top_img_right"></span>
+        </a>
+    </div>
+</div>
+
+<!--搜索框-->
+<div class="mmm_search clearfix">
+    <div class="mmm_conten">
+            <span>
+            <input type="text" placeholder="请输入你想比较的商品">
+       </span>
+        <span>
+         <a href="javascript:;">按钮</a>
+       </span>
+    </div>
+</div>
+
+<div class="hengxian">
+
+</div>
+
+
+<div class="mmm_list clearfix hidden1">
+    <ul>
+        <!--<li>-->
+        <!--<a href="#">-->
+
+        <!--&lt;!&ndash;<img src="./images/ic_cu (1).png" alt="">&ndash;&gt;-->
+
+        <!--<p>比价搜索</p>-->
+        <!--</a>-->
+        <!--</li>-->
+    </ul>
+</div>
+
+
+<div class="hengxian2"></div>
+<div class="tuijian clearfix">
+    <a href="#">
+        <p>超值折扣推荐</p>
+    </a>
+    <a href="#"><span class="glyphicon glyphicon-time"></span></a>
+</div>
+<!--商品列表-->
+<div class="product_list clearfix">
+    <ul>
+        <li>
+            <a href="#">
+
+                <img src="./images/ic_pp.png" alt="">
+
+                <span>
+                   <p>移动端凑单品:海天  鲜味 生抽 1.28L</p>
+                    <p>10.9元</p>
+              
+            
+                     <p>京东商城|10-25 14:10</p>
+                     <p>10-5 14：10</p>
+                    <span class="dsb">
+                         <span class="glyphicon-random
+glyphicon glyphicon-comment"></span>
+                    <p>1</p>
+                    </span>
+           </span>
+            </a>
+        </li>
+    </ul>
+
+</div>
+<div class="gengduo">
+    <a href="#">更多优惠信息</a>
+</div>
+
+
+<div class="tuijian clearfix">
+    <a href="#">
+        <p>品牌排行</p>
+    </a>
+    <a href="#"><span class="glyphicon glyphicon-time"></span></a>
+</div>
+<!--底部-->
+<div class="mmm_bottom clearfix">
+    <ul>
+        <li></li>
+        <li class="clearfix">
+            <a href="#">登录</a>
+            <a href="#">注册</a>
+            <a href="#"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a>
+        </li>
+        <li class="clearfix hehe">
+
+            <p>
+                <span>手机APP下载</span>
+                <span>慢慢买手机版--</span>
+                <span>掌上比价平台</span>
+            </p>
+            <h4>m.manmanbuy.com</h4>
+        </li>
+    </ul>
+
+</div>
+
+<!--1-7模板-->
+<script id="mmm_list" type="text/html">
+    <ul>
+        {{each result as value i}}
+        {{if i>7 }}
+        <!--<li>-->
+        <!--<a href="#">-->
+        <!--{{#value.img}}-->
+        <!--<p>{{value.name}}</p>-->
+        <!--</a>-->
+        <!--</li>-->
+        {{else}}
+        <li>
+            <a href="./pages/{{value.titlehref}}">
+                {{#value.img}}
+                <p>{{value.name}}</p>
+            </a>
+        </li>
+        {{/if}}
+        {{/each}}
+    </ul>
+</script>
+<!--s所有模板-->
+<script id="mmm_listAll" type="text/html">
+
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a href="./pages/{{value.titlehref}}">
+                {{#value.img}}
+                <p>{{value.name}}</p>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+
+
+</script>
+<script id="product_list" type="text/html">
+    <ul>
+        {{each result as value i}}
+        <li>
+            <a href="#">
+                {{#value.productImg2}}
+                <span>
+                        <p>{{value.productName}}</p>
+                        <p>{{value.productPinkage}}</p>
+                        <p>{{value.productFrom}}</p>
+                        <p>{{value.productTime}}</p>
+                        <span class="dsb">
+                            <span class="glyphicon-random glyphicon glyphicon-comment"></span>
+                            <p>{{value.productComCount}}</p>
+                        </span>
+                    </span>
+            </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script src="./libs/jquery/jquery.js"></script>
+<script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="./js/index.js"></script>
+<!--<script src="../libs/less/less.js">v</script>-->
+<script src="./libs/artTemplate/template.js"></script>
+</body>
+
+</html>

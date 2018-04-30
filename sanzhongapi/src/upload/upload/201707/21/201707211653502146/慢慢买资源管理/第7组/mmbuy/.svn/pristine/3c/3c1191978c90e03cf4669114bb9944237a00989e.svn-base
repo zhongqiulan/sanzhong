@@ -1,0 +1,27 @@
+
+
+var search = location.search;
+$.ajax({
+    url: "http://139.199.192.48:9090/api/getdiscountproduct" + search,
+    dataType: "json",
+    success: function (data) {
+        var htmls = template("com_info", data);
+        $(".main").html(htmls);
+    }
+})
+
+// 评论
+var txt = "";
+$(".main").on("click", ".tjdp", function () {
+    txt = $("textarea").val();
+    var data = {
+        img: "http://bbs.manmanbuy.com/images/face/none.gif",
+        name: "窜天猴",
+        time: "2222/2/33 14:66:80",
+        infos: txt
+    }
+    alert("搞定,走你~");
+    var htmls = template("tips_eva", data);
+    console.log(htmls);
+    $(".list ul").append(htmls);
+})

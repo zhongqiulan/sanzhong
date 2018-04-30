@@ -1,0 +1,62 @@
+.view .container-fluid {
+  padding: 0;
+}
+.view .container-fluid .goods_details h4 {
+  font-size: 14px;
+  text-align: center;
+  padding: 0 30px;
+  line-height: 16px;
+}
+.view .container-fluid .goods_details img {
+  margin: 0 auto;
+  display: block;
+}
+.view .container-fluid .goods_details .row div {
+  border: 1px solid #DB7F12;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 12px;
+  background-color: #FFC31E;
+  color: #fff;
+}
+.view .container-fluid .goods_details .row div:nth-of-type(1) {
+  background-color: #FF9B19;
+}
+.view .container-fluid .goods_details table {
+  margin: 10px 0;
+  margin-bottom: 6px;
+}
+.view .container-fluid .goods_details table tr:nth-of-type(1) td {
+  color: red;
+}
+.view .container-fluid .goods_details table tr:nth-of-type(1) td:nth-of-type(1) {
+  width: 20px;
+  vertical-align: bottom;
+}
+.view .container-fluid .goods_details table tr:nth-of-type(1) td:nth-of-type(3) {
+  text-align: right;
+  padding-right: 20px;
+}
+.view .container-fluid .goods_details .matters {
+  color: #909090;
+  font-size: 12px;
+  border-top: 1px solid #ccc;
+  padding-top: 8px;
+}
+.view .container-fluid .evaluate h4 {
+  text-align: center;
+  background-color: #ccc;
+  font-size: 14px;
+  padding: 10px;
+}
+.view .container-fluid .evaluate .content {
+  font-size: 12px;
+}
+.view .container-fluid .evaluate .content .title {
+  height: 40px;
+  color: #909090;
+}
+.view .container-fluid .evaluate .content .title div {
+  height: 20px;
+}

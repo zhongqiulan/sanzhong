@@ -1,0 +1,9 @@
+.goods_list_nav {
+    ul {
+        list-style:none;
+       
+        li {
+            float:left;
+        }
+    }
+}

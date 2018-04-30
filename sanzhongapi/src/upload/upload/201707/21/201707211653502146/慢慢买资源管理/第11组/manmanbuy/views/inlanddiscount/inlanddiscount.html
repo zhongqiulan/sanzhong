@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>省钱快曝 -- 慢慢买</title>
+    <link rel="stylesheet" href="/views/public/css/base/base.css">
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/inlanddiscount/inlanddiscount.css">
+</head>
+
+<body>
+    <div class="hdh" id="top">
+        <!-- 头部导航栏 -->
+        <div class="top">
+            <nav class="navbar navbar-default clearfix">
+                <div class="container row clearfix">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header col-xs-2">
+                        <a class="navbar-brand" href="/"><span class="glyphicon glyphicon-chevron-left"></span></a>
+                    </div>
+                    <div class="form-group col-xs-8">
+                        <h1>国内折扣</h1>
+                    </div>
+                    <div class="pull-right col-xs-2">
+                        <a href=""><img src="/views/public/images/header_app.png" alt=""></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--折扣商品列表  -->
+        <div class="main">
+            <div class="list">
+                <div class="loading">
+                    <ul class="discount-list">
+                        <!--  <li class="border-img">
+                            <a href="#">
+                                <div class="img"><img src="../public/images/01.jpg" alt=""></div>
+                                <div class="title">西域美农新疆特产五星和田枣250g*2</div>
+                                <div class="Price">19.8元(5件99元)</div>
+                                <div class="info">
+                                    <div class="mall">京东商城 | 10-22 13:28</div>
+                                </div>
+                            </a>
+                        </li> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+
+        <footer>
+            <div class="menu">
+                <ul class="clearfix">
+                    <li><a href="###">登录</a></li>
+                    <li><a href="###">注册</a></li>
+                    <li>
+                        <a href="#top">
+                            <img src="/views/public/uploads/top.jpg" alt="">返回顶部
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="xinxi">
+                <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+        <div class="mmb-app">
+            <a href="javascript:;">
+            <img src="/views/public/uploads/moneyctrl/mmb-app.png" alt="">
+        </a>
+        </div>
+    </div>
+</body>
+<!--  
+<script src="/views/public/assets/artTemplate/template.js"></script>
+<script src="/views/public/assets/jquery/jquery.js"></script>
+<script src="/views/public/assets/bootstrap/js/bootstrap.js"></script>
+<script src="/views/public/js/inlanddiscount/inlanddiscount.js"></script> -->
+<?php include '/views/common/script.html' ?>
+<script>
+    require(['js/inlanddiscount/inlanddiscount']);
+
+</script>
+<script type="text/html" id="discountProductTmp">
+    {{each result as value i}}
+    <li class="border-img "  data-id="{{value.productId}}">
+        <a href="javascript:;" title="">
+            <div class="img">{{#value.productImg}}</div>
+            <div class="title">{{value.productName}}</div>
+            <div class="subtit">{{value.productPrice}}</div>
+            <div class="info">
+                <div class="mall">{{value.productFrom}} | {{value.productTime}}</div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</html>

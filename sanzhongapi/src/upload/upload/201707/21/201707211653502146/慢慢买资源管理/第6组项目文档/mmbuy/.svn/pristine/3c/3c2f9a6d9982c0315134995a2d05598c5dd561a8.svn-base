@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册--慢慢买比价网</title>
+    <?php include '/views/common/css.html' ?>
+    <link rel="stylesheet" type="" href="/views/public/css/login.css">
+</head>
+
+<body>
+    <div class="view">
+
+        <!--头部-->
+        <?php include '/views/common/head.html'?>
+        
+        <div class="login_input">
+            <input type="text" class="uname uinp" name="userName" placeholder="请输入用户名">
+            <input type="password" class="upass uinp" name="userPass" placeholder="密码(6-20个字符)">
+            <input type="password" class="phone uinp" name="userPhone" placeholder="输入手机号">
+            <span id="wssp">123</span><input type="text" class="#wssrk"><input type="button" value="获取短信验证码" class="wsdxk">
+            <input type="password" class="duanxin uinp" name="userdx" placeholder="输入短信验证码">
+            <input type="password" class="email uinp" name="useremail" placeholder="邮箱">
+            <button type="submit" class="login_uinp uinp">注&nbsp;&nbsp;册</button>
+        </div>
+        <div class="login_check">
+            <input type="checkbox" class="check_radio">
+            <span>一个月内自动登录</span>
+            <p>忘记密码 : 请登录www.manmanbuy.com找回</p>
+        </div>
+        <!--底部-->
+        <div class="footer">   
+            <div class="tool">
+                <ul class="clearfix">
+                    <li>登陆</li>
+                    <li>注册</li>
+                    <li><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</li>
+                </ul>
+                <div class="mmurl">
+                    <span>手机APP下载</span> 慢慢买手机版--掌上比价平台
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </div>
+        </div>
+        <!--最底部的隐藏按钮-->
+        <div class="login_foot">
+            <span class="glyphicon glyphicon-remove login_span"></span>
+            <img src="/images/mc.png" >
+            <p class="p1">慢慢买</p>
+            <p class="p2">全网比价,查历史价格</p>
+            <a href="#" class="pull-right">立即打开</a>
+
+        </div>
+
+    </div>
+    <?php include '/views/common/script.html' ?>
+</body>
+
+<script>
+    require(['js/login']);
+</script>
+</html>

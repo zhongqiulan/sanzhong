@@ -1,0 +1,16 @@
+~function(){
+    var id=o.queryString().brandTitleId;
+    console.log(id);
+    
+    $.ajax({
+        url:config.getUrl('/api/getbrand'),
+        data:{
+            brandtitleid:id
+        },
+        type:"get",
+        success:function(data){
+            console.log(data);
+            
+        }
+    })
+}()

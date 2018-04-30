@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+    <link rel='stylesheet' href='../js/assets/bootstrap.3.3.7/content/Content/bootstrap.css'>
+    <link rel='stylesheet' href='../css/base/base.css'>
+    <link rel='stylesheet' href='../css/detailed/detailed.css'>
+    <link rel='stylesheet' href='../icon/iconfont.css'>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a  href="./discount.html" class="icon iconfont icon-fanhui"></a>
+                </div>
+                <div class="col-xs-4 inlandL">
+                    <p class="inlandD">国内折扣</p>
+                </div>
+                <div class="col-xs-4">
+                    <a class="app_donwload"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="detailed_main">
+        <!-- 商品详情模板 -->
+    </div>
+
+    <!-- 购买 -->
+    <img src="../image/20170719083318_4525.png" alt="">
+    <a href="" class="detailed_buy">前往购买</a>
+
+    <div class="detailed_c_c">
+        <p class="detailed_comments">发表评论</p>
+
+        <textarea></textarea>
+        <button type="">发表</button>
+    </div>
+    <!-- 底部 -->
+    <footer>
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <div class="row">
+                    <div class="login col-sm-4 col-xs-4"><a href="javascript:;">登录</a></div>
+                    <div class="register col-sm-4 col-xs-4"><a href="javascript:;">注册</a></div>
+                    <div class="to-top col-sm-4 col-xs-4"><a href="javascript:;"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+            <div class="app-updown">
+                <a href="javascript:;">手机APP下载</a>
+                <span>慢慢买手机版</span><span> - 掌上比价平台</span>
+                <p>m.mammambuy.com</p>
+            </div>
+        </nav>
+    </footer>
+
+
+    <!-- 模板 -->
+    <script type="text/template" id="detailed">
+        {{each result as v i}}
+        <input type="hidden" name="v.productId" value="{{v.productId}}">
+        <h5>{{v.productName}}</h5>
+        <p class="price">{{v.productPrice}}</p>
+        <p class="startTime">
+            <span class="pull-left">{{v.productFrom}}</span>
+            <span>{{v.productTime}}</span>
+            <span>{{v.productTips}}</span>
+        </p>
+        <div class="info clearfix">
+            <span class="pull-left">
+                    {{v.productInfo}}
+                </span>
+            <span class="pull-right">
+                    {{#v.productImg}}
+                </span>
+        </div>
+        <p>{{v.productInfo}}</p>
+        {{#v.productImg}} {{/each}}
+    </script>
+    <script src="../js/assets/jquery-1.12.4.js"></script>
+    <script src="../js/assets/bootstrap.3.3.7/content/Scripts/bootstrap.js"></script>
+    <script src="../js/assets/template.js"></script>
+    <script src="../js/until/untl.js"></script>
+    <script src="../js/detailed/detailed.js"></script>
+</body>
+
+</html>

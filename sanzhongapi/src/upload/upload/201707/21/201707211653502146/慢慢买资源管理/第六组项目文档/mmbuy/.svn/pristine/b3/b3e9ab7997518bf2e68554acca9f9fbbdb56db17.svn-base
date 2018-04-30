@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="./public/css/index.css">
+    <link rel="stylesheet" type="text/css" href="./public/assets/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="view">
+        <!-- 头部 -->
+        <div class="header">
+        </div>
+        <!-- 导航栏 -->
+        <div class="nav">
+        </div>
+        <!-- 超值折扣推荐 -->
+        <div class="discount">
+            <!-- 折扣标题 -->
+            <div class="discount_title"></div>
+            <!-- 折扣内容 -->
+            <div class="discount_contnet"></div>
+        </div>
+    </div>
+</body>
+</html>

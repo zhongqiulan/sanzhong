@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>海淘折扣</title>
+
+
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/overseasShopping/products.css">
+</head>
+<body>
+<div class="layout">
+    <!--头部-->
+    <div id="coupon">
+        <div class="container-fluid">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            <h3>海淘折扣</h3>
+
+            <a href="" class="app-download">
+                <img src="../../images/header_app.png">
+            </a>
+
+
+        </div>
+    </div>
+    <!--页面主体-->
+    <div id="content">
+
+        <div class="container">
+            <script id="detail" type="text/html">
+                <h3>{{productName}}</h3>
+                <h4 class="price">{{productPinkage}}</h4>
+                <h5>
+                    <span>{{productForm}}</span>
+                    <span>{{productTime}}</span>
+                    <span>{{productTips}}</span>
+                </h5>
+
+                <!--媒体对象-->
+                <div class="media">
+
+                    <div class="media-body">
+                        <h4 class="media-heading">{{productInfo}}</h4>
+                        <h4 class="media-heading">{{productInfo1}}</h4>
+                    </div>
+                    <div class="media-right">
+                        <a href="#">
+                            {{#productImg2}}
+                        </a>
+                    </div>
+                    <div class="bigImg">
+                        {{#productImgLg}}
+                    </div>
+                </div>
+                <button class="btn btn-block"><i class="glyphicon glyphicon-shopping-cart"></i>前往购买</button>
+                {{#productComment}}
+                <!--面包屑导航-->
+                <div id="Breadcrumbs">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class="span6">
+                                <ul class="breadcrumb">
+                                    <li>
+                                        <a href="#" class="backIndex">首页</a> <span class="divider">></span>
+                                    </li>
+                                    <li>
+                                        <a href="#">省钱控</a> <span class="divider">></span>
+                                    </li>
+                                    <li class="active">{{productName}}</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </script>
+        </div>
+
+    </div>
+    <!--app下载-->
+    <div class="app clearfix">
+        <div class="appLogo pull-left">
+            <img src="../../images/logo.png" alt="">
+        </div>
+        <div class="title pull-left">
+            <h4>慢慢买APP</h4>
+            <P>专注全网比价，每一次购物都在为你省钱！</P>
+        </div>
+        <div class="openApp pull-left">
+            <button class="btn btn-default">立即打开</button>
+        </div>
+
+    </div>
+    <!--底部-->
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4"><a href="" class="login">登录</a></div>
+                <div class="col-xs-4"><a href="" class="register">注册</a></div>
+                <div class="col-xs-4"><a href="" class="backTop"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--底部固定栏-->
+    <div class="bottom clearfix navbar-fixed-bottom">
+        <div class="comment col-xs-4">
+            <a href="">
+                <i class="glyphicon glyphicon-edit"></i>
+                <h5>评论</h5>
+            </a>
+        </div>
+        <div class="goBuy col-xs-8">
+            <a href=""><p><i class="glyphicon glyphicon-shopping-cart"></i>前往购买</p></a>
+        </div>
+    </div>
+    <div class="mmbuyLogo">
+        <a href=""><img src="../../images/mmbuylogo.png" alt=""></a>
+    </div>
+
+</div>
+</body>
+<script src="../../lib/jquery/jquery.js"></script>
+<script src="../../lib/artTemplate/template.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/overseasShopping/products.js"></script>
+</html>

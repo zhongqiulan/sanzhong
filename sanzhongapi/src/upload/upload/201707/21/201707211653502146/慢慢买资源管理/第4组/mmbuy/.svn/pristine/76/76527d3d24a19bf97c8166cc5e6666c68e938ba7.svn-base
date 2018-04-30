@@ -1,0 +1,196 @@
+@import "header.css";
+main {
+  background-color: #f2f2f2;
+}
+main .contents {
+  padding: 4px;
+  background-color: #fff;
+}
+main .productPinkage {
+  color: #ff7007;
+}
+main .from {
+  color: #ccc;
+  margin-top: 20px;
+  font-size: 12px;
+}
+main .from a {
+  color: #ccc;
+}
+main .info .imgsm {
+  float: right;
+}
+main .info .imgsm img {
+  width: 120px;
+}
+main .info .imglg {
+  text-align: center;
+}
+main center ul {
+  width: 118px;
+  box-shadow: 2px 2px 2px #ccc, -1px -1px 2px #ccc;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+main center ul li {
+  height: 21px;
+  font-size: 12px;
+  padding: 0 10px;
+  border-bottom: 2px dotted #ccc;
+}
+main center ul li span {
+  position: relative;
+  display: block;
+  text-align: left;
+}
+main center ul li strong {
+  position: absolute;
+  right: 0;
+  text-align: right;
+  color: #ff9000;
+}
+main button {
+  text-align: center;
+  margin: 20px 5%;
+  width: 90%;
+  background-color: #ff9000;
+  color: #fff;
+  height: 40px;
+  border-radius: 5px;
+  border-style: none;
+}
+main .cu-content-pl .tit {
+  padding-top: 10px;
+  border-top: 1px solid #ccc;
+}
+main .cu-content-pl .reply {
+  padding: 2px;
+  margin: -2px;
+}
+main .cu-content-pl .reply textarea {
+  width: 100%;
+  border: 1px solid #eceae8;
+}
+main .cu-content-pl .reply .ctrl {
+  position: relative;
+  height: 35px;
+  top: -6px;
+  border: 1px solid #eceae8;
+}
+main .cu-content-pl .reply .ctrl input {
+  position: absolute;
+  right: 3px;
+  bottom: 2px;
+  height: 30px;
+  width: 90px;
+  background-color: #ff841d;
+  color: #fff;
+}
+main .cu-content-pl .list li {
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  padding: 15px 2px;
+}
+main .cu-content-pl .list li .userimg {
+  width: 40px;
+  position: absolute;
+}
+main .cu-content-pl .list li .userimg img {
+  width: 40px;
+  height: 40px;
+}
+main .cu-content-pl .list li .con {
+  width: 100%;
+  padding-left: 50px;
+}
+main .cu-content-pl .list li .con .username {
+  float: left;
+  color: #00f;
+}
+main .cu-content-pl .list li .con .time {
+  float: right;
+  font-size: 12px;
+  color: #a2a2a2;
+}
+main .cu-content-pl .list li .con .yinyong {
+  border: 1px solid #ccc;
+  padding: 4px;
+}
+main .cu-content-pl .list li .con .yinyong span {
+  display: block;
+}
+main .last-page {
+  padding: 10px 0;
+  background: #f2f2f2;
+  text-align: center;
+}
+main .last-page span {
+  display: block;
+  background: #f8f8f8;
+}
+main .link {
+  height: 36px;
+  line-height: 16px;
+  padding: 10px;
+  overflow: hidden;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+}
+main .link a {
+  display: inline-block;
+}
+.bottom {
+  background-color: #f2f2f2;
+}
+.bottom li {
+  float: left;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 33%;
+  height: 35px;
+}
+.bottom li a {
+  line-height: 35px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: #747474;
+}
+.bottom .middle {
+  border: 1px solid #ccc;
+}
+.bottom div {
+  height: 60px;
+  text-align: center;
+}
+.bottom div a {
+  color: #f00;
+}
+.fix {
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  text-align: center;
+}
+.fix .comment {
+  width: 20%;
+  height: 44px;
+  background-color: #fff;
+  line-height: 22px;
+}
+.fix .comment span {
+  color: #a1a0a7;
+  height: 22px;
+  display: block;
+}
+.fix .comment .icon-comment2 {
+  font-size: 20px;
+}
+.fix .buy {
+  width: 80%;
+  background-color: #ff9000;
+  height: 44px;
+  line-height: 44px;
+}
+.fix .buy span {
+  color: #fff;
+}

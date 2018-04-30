@@ -1,0 +1,18 @@
+//点击当前的商品,显示当前商品对应的详情页
+var search = location.search;
+var id = search.split('=')[1];
+$.ajax({
+    url: 'http://139.199.192.48:9090/api/getmoneyctrlproduct?' + id,
+    // url: 'http://192.168.50.2:9090/api/getmoneyctrlproduct?' + id,
+    type: 'get',
+    dataType: 'JSON',
+    data: {
+        productid: id
+    },
+    success: function (info) {
+        console.log(info)
+        var htmlStr = template('pro_center_tpl', info);
+        $('#main').html(htmlStr);
+    }
+})
+

@@ -1,0 +1,259 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+header {
+  position: relative;
+  height: 44px;
+  width: 100%;
+  background-color: #c91523;
+}
+header .head_title {
+  text-align: center;
+  color: #fff;
+  font: 18px/44px "Microsoft Yahei";
+}
+header .head_back {
+  width: 50px;
+  height: 100%;
+  color: #fff;
+  font-size: 25px;
+  position: absolute;
+  left: 10px;
+  top: 10px;
+}
+header .head_download img {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+}
+.nav_list {
+  overflow: hidden;
+}
+.nav-tabs {
+  width: 245%;
+  height: 38px;
+  overflow: hidden;
+  position: relative;
+}
+.nav-tabs li {
+  width: 8%;
+  height: 38px;
+  line-height: 36px;
+  padding: 0;
+  margin: 0;
+  font-size: 12px;
+  text-align: center;
+}
+.nav-tabs li a {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 38px;
+  padding: 0;
+  border: none;
+  margin: 0;
+  border-radius: 0;
+}
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover {
+  border: none;
+  color: red;
+}
+.tab-content {
+  margin-top: 5px;
+}
+.tab-content li {
+  position: relative;
+  width: 100%;
+  padding-top: 10px;
+}
+.tab-content li .shopPic {
+  width: 40%;
+  float: left;
+}
+.tab-content li .shopInfo {
+  width: 58%;
+  float: right;
+  position: relative;
+}
+.tab-content li .shopInfo .shopInfo_head {
+  padding-top: 5px;
+}
+.tab-content li .shopInfo .shopInfo_middle {
+  color: red;
+}
+.tab-content li .shopInfo .shopInfo_foot .bar {
+  font-size: 12px;
+  text-align: center;
+  width: 110px;
+  height: 36px;
+  line-height: 36px;
+  border: 1px dashed red;
+}
+.tab-content li .shopInfo .shopInfo_foot .bar i em,
+.tab-content li .shopInfo .shopInfo_foot .bar i span
+ {
+  font-style: normal;
+}
+.tab-content li .shopInfo .shopInfo_foot .xiadan {
+  text-align: center;
+  line-height: 35px;
+  width: 70px;
+  height: 35px;
+  background-color: #FF5E5D;
+  position: absolute;
+  right: 5px;
+  bottom: 20px;
+  border-radius: 5px;
+}
+.tab-content li .shopInfo .shopInfo_foot .xiadan :link {
+  color: #fff;
+  text-decoration: none;
+}
+.tab-content li .shopInfo .shopInfo_foot .xiadan :visited {
+  color: #fff;
+  text-decoration: none;
+}
+.buttom_info .footer {
+  width: 100%;
+}
+.buttom_info .footer li {
+  float: left;
+  width: 33%;
+  vertical-align: middle;
+  border: 1px solid #fff;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+.buttom_info .footer li i {
+  width: 16px;
+  height: 10px;
+  float: left;
+  margin-left: 20px;
+  margin-right: -20px;
+  margin-top: 2px;
+}
+.buttom_info .footer .app_info {
+  padding-top: 30px;
+  text-align: center;
+}
+.buttom_info .footer .app_info span:nth-of-type(1) {
+  color: red;
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+input {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+}
+ul {
+  list-style: none;
+}
+img {
+  width: 100%;
+  display: block;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  height: 0;
+  clear: both;
+}
+
+
+/*动态生成部分*/
+
+.tab-pane .shopList .shopInfo_middle {
+
+}
+.tab-pane .shopList .shopInfo_middle i {
+  font-style: normal;
+}
+.tab-pane .shopList .shopInfo_middle em {
+  font-style: normal;
+}
+.tab-pane .shopList .shopInfo_middle del {
+  color: #aaa;
+  margin-left: 20px;
+}
+
+nav {
+  width: 100%;
+  height: 44px;
+  line-height: 44px;
+  background-color:#f4483e;
+  position: relative;
+}
+nav .glyphicon-menu-left {
+  position: absolute;
+  display: block;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-size: 22px;
+}
+nav ::before {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+nav h1 {
+  text-align: center;
+  font-size: 22px;
+  height: 44px;
+  line-height: 44px;
+  color: #fff;
+  font-weight: 900;
+  margin: 0;
+  padding: 0;
+}
+nav img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 34px;
+  height: 34px;
+  margin-top: 6px;
+  margin-right: 3px;
+}

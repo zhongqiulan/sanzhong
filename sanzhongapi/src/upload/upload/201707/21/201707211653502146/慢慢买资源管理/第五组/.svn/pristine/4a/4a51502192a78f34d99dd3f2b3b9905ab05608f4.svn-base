@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    <link rel="stylesheet" href="../fonts/baochaijia/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/baicaijia.css">
+    <!--<script>
+        !function(doc,win){
+            var html = doc.documentElement,
+                ev = 'orientationchange' in window ? 'orientationchange' : 'resize',
+                change = function (){
+                    var width = html.clientWidth;
+                    if(!width) return;
+
+                    if(width > 640){
+                        width = 640;
+                    }
+                    html.style.fontSize =  width/640*100 + 'px';
+                }
+
+            win.addEventListener(ev,change,false);
+            document.addEventListener('DOMContentLoaded',change,false);
+        }(document,window);
+    </script>-->
+    <script>
+        !function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);
+		flex(100, 1); 
+    </script>
+</head>
+<body id="top">
+    
+    <div class="header-wrap">
+        <header class="clearfix">
+            <div class="back fl">
+                <a href="javascript:;">
+                    <i class="iconfont icon-houtui"></i>
+                </a>
+            </div>
+            <div class="h-title fl">
+                <h2>白菜价 - 淘宝内部券</h2>
+            </div>
+            <div class="app-download fl">
+                <a href="javascript:;">
+                    <span></span>
+                </a>
+            </div>
+        </header>
+    </div>
+
+    <div class="navs">
+        <ul id="navs-list" class="clearfix">
+            
+        </ul>
+    </div>
+
+    <div class="list-wrap">
+        <ul class="list" id="list">
+        </ul>
+    </div>
+
+    <div class="b-tool">
+        <div class="top">
+            <ul class="clearfix">
+                <li><a href="javascript:;">登陆</a></li>
+                <li><a href="javascript:;">注册</a></li>
+                <li class="to-top"><a href="javascript:;" ><i class="iconfont icon-shangshengxiajiangjiantou"></i>返回顶部</a></li>
+            </ul>
+        </div>
+        <div class="bottom">
+            <p>
+                <a href="javascript:;">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span>--掌上比价平台</span>
+            </p>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <div class="to-top-btn">
+        <a href="javascript:;" class="iconfont icon-huidaodingbu"></a>
+    </div>
+
+    <script src="../libs/jquery/jquery-1.7.2.min.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/bcj.js"></script>
+
+    <script type="text/template" id="tpl-tab-list">
+        {{each result as v i}}
+        <li>
+            <a href="javascript:;" data-id="{{v.titleId}}">{{v.title}}</a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script type="text/template" id="tpl-list">
+        {{each result as v i}}    
+        <li class="clearfix" data-pro-id="{{v.productId}}">
+            <div class="img-wrap">
+                {{#v.productImg}}
+            </div>
+            <div class="content-wrap">
+                <h4 class="content-title">{{#v.productName}}</h4>
+                <div class="money">
+                    {{#v.productPrice}}
+                    <!--<span>券后:</span><span class="discount"> ¥7.9</span>
+                    <span class="original">¥17.9</span>-->
+                </div>
+                <div class="progress clearfix">
+                    {{#v.productCouponRemain}}
+                    <!--<div class="progress-bar">1%</div>
+                    <span>已领82张</span>-->
+                </div>
+                <div class="bottom clearfix">
+                    <div class="coupon">
+                        {{#v.productCoupon}}
+                    </div>
+                    <a class="buy-link">
+                        {{#v.productHref}}
+                    </a>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </script>
+</body>
+</html>

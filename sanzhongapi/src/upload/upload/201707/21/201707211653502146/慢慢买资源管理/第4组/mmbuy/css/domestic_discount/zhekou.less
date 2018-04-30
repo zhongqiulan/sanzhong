@@ -1,0 +1,192 @@
+header {
+    height: 44px;
+    line-height: 44px;
+    background-color: #ff841d;
+    color: #fff;
+    position: relative;
+    h2 {
+        padding: 0 60px;
+        line-height: 44px;
+        font-size: 20px;
+        margin:0;
+        text-align: center;
+    }
+    .back,
+    .app {
+        position: absolute;
+        width: 50px;
+        height: 44px;
+        top: 0;
+    }
+    .back {
+        left: 5px;
+        a{
+        color:#fff;
+        font-size: 20px;
+        top: 5px;
+        }
+    }
+    .app {
+        right: 5px;
+        img {
+            height: 34px;
+        }
+    }
+}
+
+.main{
+    background: #efefef;
+    ul{
+        padding:0;
+        margin:0;
+        li{
+            list-style: none;
+            float: left;
+            // display: inline-block;
+            width: 50%;
+            height: 250px;
+            border: 1px solid #eeeeee;
+            border-top-width: 0;
+            text-align: center;
+            a{
+                display: block;
+                width: 100%;
+                height: 250px;
+                position: relative;
+                .img{
+                    width: 140px;
+                    height: 140px;
+                    margin: 10px auto;
+                    img{
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+                .title{
+                    height: 20px;
+                    overflow: hidden;
+                    padding:0 8px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color:#333333;
+                    text-align-last: left;
+                    position: absolute;
+                    bottom: 60px;
+                }
+                .subtit{
+                    height: 20px;
+                    overflow: hidden;
+                    color:#ff6c00;
+                    text-align-last: left;
+                    height: 18px;
+                    line-height: 18px;
+                    padding:0 8px;
+                    position: absolute;
+                    bottom: 40px;
+                }
+                .info{
+                    position:absolute;
+                    bottom: 20px;
+                    font-size: 12px;
+                    color:#a1a1a1;
+                    text-align: left;
+                    padding:0 8px;
+                }
+            }
+        }
+    }
+}
+
+
+// 底部导航栏及其他
+.bottom{
+    background-color: #ebebeb;
+    height: 35px;
+    width: 100%;
+    float:left;
+    border-top:#eeeeee;
+    .bottom-nav{
+        margin-top: 20px;
+        height: 35px;
+        width: 100%;
+        border-top: 1px solid #c4c4c4;
+        border-bottom:1px solid #c4c4c4;
+        background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+        a{
+            display: block;
+            height: 35px;
+            width: 40px;
+            line-height: 35px;
+            float:left;
+            padding-left:10px;
+            color:#000;
+        }
+        span{
+            float:left;
+            display: block;
+            height: 35px;
+            width: 100px;
+            line-height: 35px;
+        }
+    }
+    .login{
+        background: #ebebeb;
+        width: 100%;
+        padding-top: 25px;
+        .bottom-login{
+            float: left;
+            height: 35px;
+            width: 33.33%;
+            background-color: #ebebeb;
+            a{
+                display: inline-block;
+                width: 100%;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                border:1px solid #cccccc;
+                border-right: none;
+            }
+        }
+    }
+}
+
+#footer {
+    background: #efefef;
+    padding-top: 20px;
+    >.foot_top {
+        background: #efefef;
+        border-top: 1px solid #c4c4c4;
+        border-bottom: 1px solid #c4c4c4;
+        height: 34px;
+        line-height: 34px;
+        // margin-top: 20px;
+        clear: both;
+        >a {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            float: left;
+            font-size: 14px;
+            border-right: 1px solid #c4c4c4;
+            text-align: center;
+            width: 30%;
+            >img {
+                vertical-align: middle;
+                margin-top: -5px;
+                margin-right: 2px;
+            }
+        }
+    }
+    >.foot_bottom {
+        background: #efefef;
+        text-align: center;
+        font-size: 12px;
+        padding: 13px 0;
+        color: #666;
+        >p {
+            margin: 0;
+        }
+    }
+}

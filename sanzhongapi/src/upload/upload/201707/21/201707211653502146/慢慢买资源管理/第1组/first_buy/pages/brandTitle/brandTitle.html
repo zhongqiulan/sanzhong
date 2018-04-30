@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+    <title>品牌大全页面</title>
+    <?php include '/common/css.html' ?>
+    <link rel='stylesheet' type='text/css' href='/css/brandTitle/brandTitle.css' />
+
+</head>
+
+<body>
+
+    <!--顶部-->
+    <header class="top">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <a class="navbar_logo" href="/index"><img src="/images/header_logo.png" alt=""></a>
+            </div>
+            <div class="navbar-right app_donwload pull-right">
+                <img src="/images/header_app.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- 搜索框 -->
+    <div class="search_tool">
+        <input type="text" placeholder="请输入你想比价的商品">
+        <button type="text" class="search_btn pull-right" id="search_btn">搜索</button>
+    </div>
+    <!--指引-->
+    <div class="linkTo">
+        <a href="/index">首页</a> &gt; <a href="/brandTitle/brandTitle" class="f12">
+            品牌大全</a>
+    </div>
+    <!--热门品牌排行-->
+    <div class="hotBrandList">
+        <div class="hbTips">热门品牌排行</div>
+        <div class="brandTitle">
+            <div class="small-shade">
+                <img src="/images/loading.gif" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="checkin">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-4"><a href="#">登录</a></div>
+                    <div class="col-sm-4 col-xs-4"><a href="#">注册</a></div>
+                    <div class="col-sm-4 col-xs-4"><a href="#top"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bbottom">
+            <div class='app'>
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span class="grey">--掌上比价平台</span>
+            </div>
+            <a href="/index">m.manmanbuy.com</a>
+        </div>
+    </div>
+</body>
+<?php include '/common/script.html' ?>
+<script type="text/template" id="brandList_tpl">
+    {{each result as v i}}
+    <div class="brand" data-id="{{v.brandTitleId}}">
+        <a href="/pages/brandTitle/getbrand?brandTitleId={{v.brandTitleId}}&brandTit={{v.brandTitle}}">{{v.brandTitle}}<span class="glyphicon glyphicon-menu-right pull-right"></span></a>
+    </div>
+    {{/each}}
+</script>
+<script>
+    require(['brandTitle']);
+</script>
+
+</html>

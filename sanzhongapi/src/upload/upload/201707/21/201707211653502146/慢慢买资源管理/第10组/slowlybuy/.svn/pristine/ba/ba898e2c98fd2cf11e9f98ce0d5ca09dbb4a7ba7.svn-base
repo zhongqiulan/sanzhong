@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>商城导航 -- 慢慢买</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-theme.css">
+    <!--商城导航的css文件-->
+    <link rel="stylesheet" href="../css/store-nav.css">
+</head>
+
+<body>
+    <!--头部-->
+    <div class="header">
+        <div class="back "><a href="#" class="glyphicon glyphicon-menu-left"></a>
+        </div>
+        <h1>商场导航</h1>
+        <div class="app-download">
+            <a href="#"></a>
+        </div>
+
+    </div>
+    <!--主体-->
+    <div class="content">
+    </div>
+
+    <!--底部导航-->
+    <div class="footer-nav">
+        <a href="#">首页</a>
+        <span class="glyphicon glyphicon-menu-left"></span>
+        <a href="#">商城导航</a>
+    </div>
+
+    <div class="floatge">
+        <img src="../images/mmbuy-download.png" alt="">
+    </div>
+    <script id="tpl" type="text/html">
+      {{each result as v}}
+        <div class="box">
+            <a href={{v.navHref}} title={{v.navTitle}} target="_blank" >
+                    <img src={{v.navImg}} alt={{v.navTitle}}>
+                    <span>{{v.navTitle}}</span>
+                </a>
+        </div>
+       {{/each}}
+    </script>
+</body>
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../lib/template/template.js"></script>
+<script src="../js/store-nav.js"></script>
+</html>

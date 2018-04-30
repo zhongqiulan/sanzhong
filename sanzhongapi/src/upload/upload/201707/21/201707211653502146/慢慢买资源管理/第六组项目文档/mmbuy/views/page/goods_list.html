@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <?php include '/views/common/css.html' ?>
+    <link rel="stylesheet" href="/views/public/css/goods_list.css">
+    <link rel="stylesheet" href="/views/public/css/paging.css"> 
+    <link rel="stylesheet" href="/views/public/css/category.css">
+</head>
+
+<body>
+    <div class="view">
+        <?php include '/views/common/head.html' ?>
+        <!--导航路径-->
+        <div class="goods_navs">
+            
+        </div>
+
+
+
+        <!--商品列表-->
+        <div class="goods_list">
+
+
+        </div>
+
+        <!--翻页-->
+        <?php include '/views/page/paging.html' ?>
+        <!--底部-->
+        <?php include '/views/common/foot.html' ?>
+    </div>
+
+    <?php include '/views/common/script.html' ?>
+    <script type="text/template" id="goods_navs_tpl">
+        <ol class="breadcrumb">
+                <li><a href="http://www.mmbuy.com">首页 ></a></li>
+                <li><a href="/views/page/category">全部分类 ></a></li>
+                <li class="active">{{category}} ></li>
+                <li class="pull-right"><button type="button" class="btn btn-default btn-lg active">筛选</button></li>
+        </ol>
+    </script>
+    <script type="text/template" id="goods_list_tpl">
+    {{each result as v i}}
+        <div class="singleGoods">
+            <a href="/views/page/goodsDetails?category={{v.category}}&productid={{v.productId}}&categoryId={{v.categoryId}}">
+                <div class="media">
+
+                <div class="media-left media-middle">
+                       {{#v.productImg}}
+                </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{v.productName}}</h4>
+                        <p class="goods_list_price">{{v.productPrice}}</p>
+                        <p class="goods_list_comment">
+                            {{v.productQuote}}
+                            {{v.productCom}}
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        
+    {{/each}}
+    </script>
+    <script>
+        require(['js/goods_list']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+body {
+  background: #efefef;
+}
+header {
+  color: #fff;
+  background: #ff841d;
+  position: relative;
+}
+header h2 {
+  margin: 0;
+  padding: 10px 50px;
+  width: 100%;
+  font-size: 22px;
+  text-align: center;
+}
+header .prev {
+  position: absolute;
+  left: 0;
+  font-size: 22px;
+  text-align: center;
+}
+header .prev a {
+  width: 50px;
+  height: 44px;
+  display: block;
+  box-sizing: border-box;
+  padding-top: 8px;
+}
+header .prev a span {
+  color: #fff;
+}
+header .download {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+header .download a {
+  width: 50px;
+  height: 44px;
+  display: block;
+}
+header .download a img {
+  width: 34px;
+  margin-top: 7px;
+}
+.dropdown_box {
+  background: #fff;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+  text-align: center;
+}
+.dropdown_box .container-fluid {
+  height: 40px;
+  line-height: 40px;
+  padding: 0;
+}
+.dropdown_box .container-fluid div button {
+  border: none;
+}
+.dropdown_box .container-fluid div ul {
+  width: 100%;
+  position: fixed;
+  top: 82px;
+}
+.dropdown_box .container-fluid button#dropdownMenu1.dropdown-toggle.btn.btn-default:hover {
+  background: #fff;
+}
+.dropdown_box .container-fluid .open {
+  border: none;
+}
+.product .container-fluid {
+  padding: 0;
+}
+.product .container-fluid .col-xs-6 {
+  padding: 5px;
+}
+.product .container-fluid .col-xs-6 .container-box {
+  background: #fff;
+  border: 1px solid #ccc;
+}
+.product .container-fluid .col-xs-6 .container-box a {
+  display: block;
+  padding: 5px;
+  text-align: center;
+}
+.product .container-fluid .col-xs-6 .container-box a img {
+  width: 100%;
+}
+.product .container-fluid .col-xs-6 .container-box p {
+  font-size: 14px;
+  padding-left: 10px;
+}
+.product .container-fluid .col-xs-6 .container-box h3 {
+  color: #ff841d;
+  padding-left: 10px;
+  margin-top: 15px;
+}
+.product .container-fluid .col-xs-6 .container-box h3 span {
+  font-size: 14px;
+}

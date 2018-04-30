@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!--默认视口  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>凑单页面</title>
+    <link rel="stylesheet" href="coudang/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="coudang/lib/fonts/style.css">
+    <link rel="stylesheet" href="coudang/css/base.css">
+    <link rel="stylesheet" href="coudang/css/index.css">
+</head>
+
+<body>
+    <div id="layout">
+        <!--凑单头部  -->
+        <header id="skiphop_tap">
+            <div class="col-xs-4 banck"><a href="#"></a></div>
+            <p class="col-xs-4 cout">凑单品</p>
+            <div class="col-xs-4 logo"><a href="#"><img src="coudang/images/header_app.png" alt=""></a></div>
+        </header>
+        <!-- 条件选项  -->
+        <div class='container'>
+            <!--1  -->
+            <div class="jds col-xs-3 shoop ">
+                <div class="jds_l shoop_" data-type='jd_ul' id="board">京东<span class="caret"></div>
+                <ul class="jd_ul hots" data-type='jd_ul' id="board">
+                    <li data-type='0'>京东</li>
+                    <li data-type='1'>一号店</li>
+                    <li data-type='2'>天猫超市</li>
+                </ul>
+            </div>
+            <!--2  -->
+            <div class="where jds col-xs-3">
+                <div class="jds_l area_" data-type="where_ul">地区<span class="caret"></span><i class="sjx"></i></div>
+                <ul class="where_ul hots" data-type=2 id="board_one">
+                    <li data-type='0'>华中</li>
+                    <li data-type='1'>华南</li>
+                    <li data-type='2'>华北</li>
+                </ul>
+                </select>
+
+                </form>
+            </div>
+            <!--3 -->
+            <div class="much jds col-xs-3 ">
+                <div class="jds_l jds_lj" data-type="much_ul" id="board_two">全部价钱<span class="caret"></i></div>
+                <ul class="much_ul" data-type='much_ul' id="board_two">
+
+                </ul>
+            </div>
+            <!--4  -->
+            <div class="searcher col-xs-3">
+                <i class="icon-sug"></i>
+
+
+            </div>
+
+        </div>
+
+        <!--主体  -->
+        <!-- jd  -->
+        <div id="buy_main">
+            <!-- 1  -->
+            <ul>
+                <li class="col-xs-6 col-sm-6">
+                    <a href="">
+                        <div class="image_s"><img src="coudang/images/ic_cu.png" width="100%" alt=""></div>
+                        <div class="title">北京联通36元沃游特权卡含6.5G月流量+激活到账50元话费手机号卡流量卡</div>
+                        <div class="money"><em>￥</em>12</div>
+                        <span>去凑单</span>
+                    </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-6">
+                        <a href="">
+
+                            <div class="image_s"><img src="coudang/images/ic_cu.png" width="100%" alt=""></div>
+                            <div class="title">北京联通36元沃游特权卡含6.5G月流量+激活到账50元话费手机号卡流量卡</div>
+                            <div class="money"><em>￥</em>12</div>
+                            <span>去凑单</span>
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-6">
+                        <a href="">
+
+                            <div class="image_s"><img src="coudang/images/ic_cu.png" width="100%" alt=""></div>
+                            <div class="title">北京联通36元沃游特权卡含6.5G月流量+激活到账50元话费手机号卡流量卡</div>
+                            <div class="money"><em>￥</em>12</div>
+                            <span>去凑单</span>
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-6">
+                        <a href="">
+
+                            <div class="image_s"><img src="coudang/images/ic_cu.png" width="100%" alt=""></div>
+                            <div class="title">北京联通36元沃游特权卡含6.5G月流量+激活到账50元话费手机号卡流量卡</div>
+                            <div class="money"><em>￥</em>12</div>
+                            <span>去凑单</span>
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-6">
+                        <a href="">
+
+                            <div class="image_s"><img src="coudang/images/ic_cu.png" width="100%" alt=""></div>
+                            <div class="title">北京联通36元沃游特权卡含6.5G月流量+激活到账50元话费手机号卡流量卡</div>
+                            <div class="money"><em>￥</em>12</div>
+                            <span>去凑单</span>
+                        </a>
+                    </li>
+                    <li class="col-xs-6 col-sm-6">
+                        <a href="">
+
+                            <div class="image_s"><img src="coudang/images/ic_cu.png" width="100%" alt=""></div>
+                            <div class="title">北京联通36元沃游特权卡含6.5G月流量+激活到账50元话费手机号卡流量卡</div>
+                            <div class="money"><em>￥</em>12</div>
+                            <span>去凑单</span>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+            <!--   结束   -->
+
+            <script type="text/html" id="shopListTemp">
+                      <ul>
+                    {{each result as value i}}
+                    <li class="col-xs-6 col-sm-6">
+                        <a href="{{value.shopId}}">
+                            <div class="image_s"><img src="{{value.productImg}}" width="96%" alt=""></div>
+                            <div class="title">{{value.productName}}</div>
+                            <div class="money">{{value.productPrice}}</div>
+                            <a href="{{}}"><span>去凑单</span></a>
+                        </a>
+                    </li>
+                {{/each}}
+                </ul>
+            </script>
+
+            <!-- tab 京东  -->
+     <script type="text/html" id="shopTemp">
+         {{each result as value i}} 
+      
+            <li data-type='{{value.shopId}}'>{{value.shopName}}</li>
+      
+     {{/each}} 
+    </script>
+    <!--地区  -->
+    <script type="text/html" id="whereList">
+      
+            {{each result as value i}}
+            <li data-type='{{value.areaId}}'>{{value.areaName}}</li>
+           
+            {{/each}}
+       
+    </script>
+
+    <script src="coudang/lib/jquery/jquery.js"></script>
+    <script src="coudang/lib/bootstrap/js/bootstrap.js"></script>
+    <script src="coudang/lib/jquery/template.js"></script>
+    <script src="coudang/js/index.js"></script>
+    <script src="coudang/js/shoop/data.js"></script>
+</body>
+
+</html>

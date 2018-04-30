@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买比价网--手机版</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/brandTitle.css"/>
+    <link rel="stylesheet" href="../css/brandDetails.css"/>
+</head>
+<body>
+
+<div class="layout">
+    <!-- 顶部logo区域 -->
+    <div class="topLogo">
+        <h1 class="logo"><a href="../index.html"><img src="../images/header_logo.png" alt=""/></a></h1>
+        <div class="download"> <a href="javascript;;"><img src="../images/header_app.png" alt=""> </a></div>
+    </div>
+    <!-- 搜索通栏区域 -->
+    <div class="search">
+        <input type="text" class="txt" placeholder="请输入你想比价的商品"/>
+        <input type="button" class="btnsearch" value="搜索"/>
+    </div>
+
+    <!--导航条跳转-->
+    <div class="datainfo">
+
+    </div>
+
+    <!--销量排行-->
+    <div class="Sales_volume">
+
+
+
+    </div>
+
+
+    <!--评论排行-->
+    <div class="comment">
+
+    </div>
+
+
+
+
+    <!-- 底部功能区域 -->
+    <div class="bottom_info">
+        <div class="title"><a href="javascript:;">品牌排行 <i><img src="../images/more.png" alt=""/></i> </a></div>
+        <div class="footer">
+            <ul class="clearfix">
+                <li><a href="javascript:;">登录</a></li>
+                <li><a href="javascript:;">注册</a></li>
+                <li><a href="#"><i><img src="../images/top.jpg" alt=""/></i>返回顶部</a></li>
+            </ul>
+            <p class="app-info">
+                <a href="javascript:;">
+                    <span class="red-app">手机APP下载</span>
+                    <span>慢慢买手机版--掌上手机平台</span> <br/>
+                    <span>m.manmanbuy.com.</span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+
+<script type="text/html" id="tmpl_rkList">
+
+    <div class="nav">
+        <a href="../index.html">首页 &gt;</a>
+        <a href="./brandTitle.html">品牌大全 &gt;</a>
+        <span>  {{title}}哪个牌子好 </span>
+    </div>
+
+    <!--热门品牌排行-->
+
+    <div class="Ranking">
+        <h3 class="cellBatter">{{title}}哪个牌子好</h3>
+        <!--排行榜-->
+        <ul class="rankingList">
+            {{each result as v i}}
+            <li>
+                <div class="media">
+                    <a href="./brandDetailsRk.html?brandTitleId={{ v.brandTitleId }}">
+                    <div class="media-left media-middle left-media">
+                        <span class="const bg-red"> {{i+1}} </span>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{v.brandName}}</h4>
+                        <p> {{v.brandInfo}} </p>
+                    </div>
+                    </a>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+
+    </div>
+</script>
+
+<script type="text/html" id="tmpl_saves">
+    <h4 class="title-h4">{{title}}产品销量排行</h4>
+    <ul>
+        {{each result as v i}}
+        <li>
+            <div class="media">
+                <a href="#">
+                <div class="media-left media-middle">
+                    {{#v.productImg}}
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{v.productName}}</h4>
+                    <div class="clearfix">
+                        <em class="pull-left">{{v.productPrice}}</em>
+                        <span class="pull-right starts"></span>
+                    </div>
+                    <p>{{v.productQuote}}</p>
+                </div>
+                </a>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+
+</script>
+
+<!--评论模块-->
+
+<script type="text/html" id="tmpl_comment">
+
+    <h3 class="cellBatter">{{title}}最有用的用户评论</h3>
+    <ul>
+        {{each result as v i}}
+        <li>
+            <div class="top-title">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/Thumb_2016120016544872739.jpg" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{v.comFrom}}</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="bot-content">
+                <div class="line clearfix">
+                    <em class="pull-left">{{v.comName}}</em> <span class="starts pull-left"></span> <span class="pull-right">{{v.comTime}}</span>
+                </div>
+                <div class="con">
+                   {{v.comContent}}
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+
+
+</script>
+
+
+<script src="../libs/jquery/jquery.js"></script>
+<script src="../libs/bootstrap/js/bootstrap.js"></script>
+<script src="../js/template.js"></script>
+<script src="../js/jquery.cookie.js"></script>
+<script src="../js/brandTitle.js"></script>
+<script src="../js/brandDetails.js"></script>
+</body>
+</html>

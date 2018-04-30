@@ -1,0 +1,244 @@
+.head {
+  background-color: #fff;
+}
+.head .navbar {
+  margin-bottom: 0;
+}
+.head .navbar .container-fluid {
+  background-color: #ff841d;
+  height: 50px;
+}
+.head .navbar .container-fluid .navbar-header a img {
+  height: 25px;
+}
+.head .navbar .container-fluid .download img {
+  height: 34px;
+  margin-top: 8px;
+}
+.zyzsreach .input-group {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+}
+.zyzsreach .input-group input {
+  border-radius: 50px;
+  width: 94%;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  outline-color: none;
+  border-color: none;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+.zyzsreach .input-group span {
+  width: 63px;
+  border-radius: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  height: 34px;
+  background-color: #ff841d;
+  font-size: 16px;
+  color: #fff;
+  line-height: 19px;
+}
+.bg-w {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 10px;
+}
+.zyz_menu{
+  background-color: #fff;
+}
+.zyz_menu .mt15 {
+    margin-top: 15px;
+}
+
+.zyz_menu .menu .thumbnail {
+    border: none;
+}
+
+.zyz_menu .menu .thumbnail img {
+    width: 70px;
+}
+
+.zyz_menu .menu .col-xs-3 {
+    margin: 0;
+    padding: 0;
+}
+
+.zyz_menu .menu .caption {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.zyz_menu .menu .col-xs-3 p {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+/*超级折扣*/
+.cjzk {
+  height: 35px;
+  background-color: #ffa126;
+}
+.cjzk i{
+  float: left;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  text-align:center;
+  line-height: 32px; 
+  font-family: "华文琥珀";
+  margin-left: 15px;
+}
+.cjzk span{
+  display: block;
+  width: 35px;
+  height: 28px;
+  background: url('../images/more.png') no-repeat;
+  background-size:70%; 
+  margin-top: 3.5px;
+  float: right;
+}
+.zyzdiscount a{
+  text-decoration: none;
+  /*color: #fff;*/
+}
+.zyzdiscount a:visited,a:focus{
+  color: transparent  !important; 
+}
+.zyzdiscount{
+  position: relative;
+  background-color: #fff;
+}
+.zyzdiscount ul{
+  padding-left: 1%;
+}
+.zyzdiscount ul li{
+    padding: 14px 8px;
+    position: relative;
+}
+.zyzdiscount .discount_left img{
+  width: 100px;
+  height: 100px
+ 
+}
+.zyzdiscount .discount_right .title {
+  font-size: 10px;
+  font-weight: 700px;
+  color: #ff9900;
+  height: 52px;
+  overflow: hidden;
+}
+.zyzdiscount .discount_right{ 
+  height: 100px;
+  margin-left: 110px;
+  overflow: hidden;
+}
+.zyzdiscount .discount_left{
+  width: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  float:left;
+  margin-right: 4%;
+   margin-top:10px;
+}
+.zyzdiscount .discount_right .other span{
+  position: absolute;
+  bottom: 35px;
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.zyzdiscount .discount_right .other span + span{
+  position: absolute;
+  bottom: 35px;
+  right: 27px;
+  font-size: 12px;
+  color: #a1a1a1;
+}
+/*尾部*/
+.footer{
+  margin-bottom: 15px;
+}
+.footer .footertop a {
+    width: 33.33%;
+    display: block;
+    float: left;
+    border-right: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    font-size: 16px;
+    /*font-weight: 700;*/
+}
+.footer .footercenter {
+    border-top: 1px solid #ccc;
+    padding: 20px;
+    height: 60px;
+    text-align: center;
+}
+
+.footer .footercenter a {
+    display: inline-block;
+    text-decoration: none; 
+}
+a:focus,a:hover{
+    text-decoration: none;
+    color: #000;
+}
+.footer .footercenter a:nth-of-type(1) {
+    color: red;
+}
+
+
+.footer .footercenter a:nth-of-type(2) {
+    color: #000;
+}
+
+/*更多优惠信息*/
+.gdyhxx{
+  width: 100%;
+  margin-bottom: 21px;
+}
+.gdyhxx a{
+  display: block;
+  line-height: 30px;
+  text-align: center;
+  text-decoration: none;
+  height: 30px;
+  margin: 10px;
+    border-radius: 8px;
+  background-color: #F4F4F4;
+  /*background-color: red;*/
+  border:1px solid #dddddd;
+
+}
+.gdyhxx a:focus{
+  color: #000 !important;
+  text-decoration: none;
+}
+
+/*慢字*/
+.appdown img{
+  height: 67px;
+  width: 60px;
+}
+.back {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff ;
+  border: 1px solid #ccc;
+}
+.back img{
+  position: absolute;
+  left: 14px;
+  top: 11px;  
+}

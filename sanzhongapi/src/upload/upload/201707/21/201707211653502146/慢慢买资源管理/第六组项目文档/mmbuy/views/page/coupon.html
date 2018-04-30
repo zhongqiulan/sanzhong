@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php include '/views/common/css.html' ?>
+    <link rel="stylesheet" href="/views/public/css/coupons.css">
+    <title>优惠券</title>
+</head>
+
+<body>
+    <!--页面头部-->
+    <div class="headers">
+        <div>
+            <a href="/index">
+                &lt;
+            </a>
+            <h3 id="tit">优惠券</h3>
+            <a href="javascript:;" class="app">
+                <img src="/views/public/image/init-imgs/header_app.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!--页面的主体-->
+    <div class="main clearfix">
+
+    </div>
+
+    <!--页面底部-->
+    <div class="login clearfloat">
+        <p class="clearfloat">
+            <span class="s1">登录</span><span class="s2">注册</span><span class="s3"><i></i>回到顶部</span>
+        </p>
+    </div>
+    <p class="p1"><span class="s4">手机APP下载</span>慢慢买手机版--掌上平台</p>
+    <p class="p2">m.manmanbuy.com</p>
+    </div>
+
+    <?php include '/views/common/script.html'?>
+</body>
+
+<script type="text/template" id="cou_tpl">
+    {{each result as v i}}
+    <div class="merchants">
+        <a href="{{v.couponLink}}?couponId={{v.couponId}}"><img src="{{v.couponImg}}" alt="">{{v.couponTitle}}</a>
+    </div>
+    {{/each}}
+</script>
+<script>
+    require(['js/coupons']);
+</script>
+
+</html>

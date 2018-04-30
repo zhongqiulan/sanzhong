@@ -1,0 +1,96 @@
+em {
+  font-style: normal;
+}
+dl {
+  margin: 0;
+  padding: 0;
+}
+.main .introduce {
+  border-top: 1px solid transparent;
+  background-color: #f2f2f2;
+}
+.main .introduce h2 {
+  margin: 10px;
+  padding-left: 10px;
+  font-size: 18px;
+}
+.main .introduce .description {
+  font-size: 12px;
+  line-height: 20px;
+  color: #666;
+  margin: 10px;
+  padding: 10px;
+  background-color: #fff;
+}
+.main .introduce .rec {
+  margin: 10px;
+  padding: 10px;
+  background-color: #f7f7f7;
+  font-size: 12px;
+  color: #999;
+  text-align: left;
+}
+.main .product-content .reorder {
+  border-bottom: 1px solid #ccc;
+  border: none;
+}
+.main .product-content .reorder li {
+  width: 25%;
+}
+.main .product-content .reorder li a {
+  margin-right: 0;
+  color: #5a5a5a;
+  text-align: center;
+  border: none;
+}
+.main .product-content .reorder li a.on {
+  color: #ed0000;
+}
+.main .product-content .product-list li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.main .product-content .product-list li .pic {
+  float: left;
+  margin-right: 10px;
+  width: 100px;
+  height: 100px;
+}
+.main .product-content .product-list li .info h4 {
+  color: #333333;
+  font-size: 14px;
+  line-height: 22px;
+  min-height: 44px;
+}
+.main .product-content .product-list li .info .price {
+  height: 25px;
+  margin-top: 4px;
+}
+.main .product-content .product-list li .info .price em {
+  font-size: 18px;
+  color: #ea3900;
+  vertical-align: middle;
+  float: left;
+}
+.main .product-content .product-list li .info .other {
+  font-size: 12px;
+  color: #999999;
+}
+.main .product-content .product-list li .info .other .com {
+  float: right;
+}
+.main .link {
+  padding-left: 10px;
+  padding-top: 25px;
+  background-color: #f1f1f1;
+}
+.main .link dt h4 {
+  font-size: 16px;
+  color: #000;
+  line-height: 24px;
+}
+.main .link dd {
+  font-size: 12px;
+  color: #555;
+  line-height: 24px;
+}

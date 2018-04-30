@@ -1,0 +1,155 @@
+@import '../base.css';
+.view {
+    main {
+        .title {
+            border-top: 1px solid #ccc;
+            position: relative;
+            .left {
+                height: 40px;
+                line-height: 40px;
+                padding-left: 5px;
+                a {
+                    height: 100%;
+                    display: inline-block;
+                    color: #000;
+                    text-decoration: none;
+                }
+            }
+            .right {
+                position: absolute;
+                top: 50%;
+                right: 0;
+                transform: translate(-50%, -50%);
+                padding: 2px 4px;
+                background-color: #ccc;
+                border: 1px solid #ccc;
+                border-radius: 5px;
+            }
+        }
+        .content {
+            background-color: #fff;
+            .content-title {
+                text-align: center;
+                padding: 10px 20px;
+                position: relative;
+                >div {
+                    width: 100%;
+                    height: 40px;
+                    padding: 0 40px;
+                    overflow: hidden;
+                }
+                i {
+                    display: block;
+                    position: absolute;
+                    bottom: 30px;
+                    right: 20px;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    border-radius: 50%;
+                    background-color: #8bc800;
+                    color: #fff;
+                    line-height: 40px;
+                    font-size: 12px;
+                }
+            }
+            .parity {
+                width: 100%;
+                >ul {
+                    padding: 0;
+                    text-align: center;
+                    >li {
+                        padding: 0;
+                        margin: 0;
+                        height: 40px;
+                        line-height: 40px;
+                        border: 1px solid #c14d00;
+                        border-left: none;
+                        background-color: #ffbd08;
+                        color: #fff;
+                        &.active {
+                            background-color: #ff950c;
+                            position: relative;
+                            &:after {
+                                content: "";
+                                width: 16px;
+                                height: 6px;
+                                position: absolute;
+                                bottom: -6px;
+                                right: 50%;
+                                z-index: 100;
+                                transform: translateX(50%);
+                                background-image: url("../../images/tab_ar.png");
+                                background-position: 0 6px;
+                            }
+                        }
+                        a {
+                            margin: 0;
+                            padding: 0;
+                            padding-top: 8px;
+                            text-align: center;
+                            background-color: inherit;
+                        }
+                    }
+                }
+                .tab-content {
+                    padding: 5px 10px;
+                    color: #f00;
+                }
+                .parity-info {
+                    padding: 5px 10px;
+                    color: #ccc;
+                    font-size: 12px;
+                }
+            }
+        }
+        .evaluation {
+            background-color: #fff;
+            >h3 {
+                background-color: #dbdbdb;
+                height: 40px;
+                line-height: 40px;
+                text-align: center;
+                font-size: 16px;
+            }
+            .info {
+                padding: 5px 10px;
+                .info-title {
+                    height: 40px;
+                    color: #ccc;
+                    font-size: 13px;
+                    text-align: right;
+                    .pull-left {
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                    .pull-right {
+                        line-height: 20px;
+                    }
+                }
+                .info-content{
+                    border-bottom: 1px solid #ccc;
+                    padding: 5px 0;
+                }
+            }
+        }
+    }
+    .more {
+        width: 100%;
+        height: 60px;
+        background-color: #fff;
+        text-align: center;
+        button {
+            width: 80%;
+            height: 40px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+    }
+}
+
+body,
+a {
+    font-family: "微软雅黑";
+}

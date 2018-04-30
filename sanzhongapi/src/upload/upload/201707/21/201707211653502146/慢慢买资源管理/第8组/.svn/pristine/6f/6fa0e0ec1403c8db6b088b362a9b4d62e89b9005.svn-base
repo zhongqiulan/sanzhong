@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../lib/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/inde.css">
+</head>
+
+<body>
+    <!-- 公共的导航栏 -->
+    <nav class="navbar navbar-default" id="nav_conten">
+        <div class="container-fluid">
+            <div class="navbar-header nav_img">
+                <a href="" class="nvim"><span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span></a>
+            </div>
+            <div class="fo_title  ">
+                凑单品
+            </div>
+            <div class="navbar-right app-donwload pull-right">
+                <img src="../image/upload/header_app.png" alt="">
+            </div>
+
+            <div class="collapse navbar-collapse load_img  pull-right col-xs-12" id="bs-example-navbar-collapse-1">
+                <img src="../image/upload/header_app.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!-- 下拉数据的列表 -->
+    <!-- Single button -->
+    <!-- id="dropdownMenu1"   aria-haspopup="true" aria-expanded="true" -->
+    <div class="shop_nav">
+        <div class="dropdown  jd_mle">
+
+        </div>
+        <div class="dropdown  jd_add">
+
+
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-default dropdown-toggle jd_btn" type="button" id="dropdownMenu1" data-toggle="dropdown">
+                全部价格
+                    <span class="caret"></span>
+                </button>
+
+        </div>
+        <div class="comet">
+            <span class="glyphicon glyphicon-align-left"></span>
+        </div>
+    </div>
+    <!-- 商品列表的栏目 -->
+    <div class="shop_list  shl_lis">
+        <!-- <div  class="col-sm-6  col-xs-6"><a href="javascript:;">
+                       <img src="image/upload/haitao.png" alt="">
+                     <p> 京东超 </p>
+                       <del>$89</del>  
+                       <span><a href="javasctpt:;">去凑单</a></span> 
+                </a></div>  -->
+        <!-- <div  class="col-sm-6  col-xs-6"><a href="javascript:;">
+                       <img src="image/upload/haitao.png" alt="">
+                     <p> 京东超 </p>
+                       <del>$89</del>  
+                       <span><a href="javasctpt:;">去凑单</a></span> 
+                </a></div>  -->
+    </div>
+</body>
+<script src="../lib/assets/jquery/jquery.min.js"></script>
+<script src="../lib/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../lib/assets/artTemplate/template.js">
+
+</script>
+<script type="text/template" id="jd_html">
+    <button class="btn btn-default dropdown-toggle  jd_btn" type="button" data-toggle="dropdown" aria-expanded="true">
+                    {{title}} 
+                    <span class="caret"></span> 
+      </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        {{each result as sl i}}
+        <li data-sid="{{sl.shopId}}"><a href="#">{{sl.shopName}}</a></li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="jd_addls">
+    <button class="btn btn-default dropdown-toggle jd_btn " type="button" id="dropdownMenu1" data-toggle="dropdown">
+                    华北
+                 <span class="caret"></span>
+       </button>
+    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+        {{each result as slm i}}
+        <li data-aid="{{slm.areaId}}"><a href="#">{{slm.areaName}}</a></li>
+
+        {{/each}}
+</script>
+
+<script type="text/template" id="pls_mt">
+
+    <div class="shop_lis row">
+        {{each result as la n}}
+        <div class="col-sm-6 col-xs-6   shlo"><a href="javascript:;">
+                      <img src="{{la.productImg}}" alt="">
+                       <p> {{la.productName}} </p>     
+                       <del>{{la.productPrice}}</del>  
+                       <span>{{tlmer}}</span> 
+                </a>
+        </div>
+        {{/each}}
+
+    </div>
+
+</script>
+<!-- <script type="text/template" id="shop_ls"> 
+
+</script>  -->
+<script src="../js/until/untl.js"></script>
+<!-- <script  src="./js/nav.js"></script>  -->
+<!-- <script src="./js/add.js"></script>  -->
+<script src="../js/inde.js"></script>
+
+</html>

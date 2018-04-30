@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>优惠券列表</title>
+    <link rel="stylesheet" href="/views/js/assets/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="/views/css/coupon/couponproduct.css"/>
+</head>
+<body>
+    <div id="view">
+        <!-- 头部-->
+        <header id="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid clearfix">
+                    <div class="navbar-header header-logo pull-left">
+                        <a class="navbar-brand" href="/views/dashboard/coupon">
+                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div  class="header-text pull-left">
+                        <div id="title"></div>
+                    </div>
+                    <div class="navbar-right app-donwload pull-right">
+                        <img src="/views/images/header_app.png" alt="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- 提示-->
+        <div class="hint">--点餐前出示手机中的优惠券，即可享受优惠--</div>
+        <!-- 优惠产品列表-->
+        <div class="coupon-list">
+            <div class="row">
+
+            </div>
+        </div>
+        <!-- 路劲导航-->
+        <section id="coupon-nav">
+            <ul class="clearfix">
+                <li><a href="/views/dashboard/index">首页</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="/views/dashboard/coupon">优惠券</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li ><a class="linkBtn" href="/views/dashboard/couponproduct"></a></li>
+            </ul>
+        </section>
+        <!-- 底部-->
+        <footer id="footer">
+            <!-- 底部导航栏-->
+            <div class="footer-nav clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#">
+                    <span class="glyphicon glyphicon-arrow-up"></span>
+                    返回顶部
+                </a>
+            </div>
+            <!-- 底部连接工具区域-->
+            <div class="footer-link">
+                <p>
+                    <a class="link-app" href="#">手机app下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    --掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+    </div>
+    <!-- 遮罩层-->
+    <div class="product-mask">
+
+    </div>
+
+    <!-- 模板-->
+    <script type="text/template" id="product_tpl">
+        {{each result as v i}}
+        <div class="col-sm-6 col-md-4">
+            <div data-img="{{v.couponProductImg}}" class="thumbnail clearfix">
+                <a href="#">
+                    {{#v.couponProductImg}}
+                    <div class="caption">
+                        <h3>{{v.couponProductName}}</h3>
+                        <p>{{v.couponProductPrice}}</p>
+                        <p class="product-time">{{v.couponProductTime}}</p>
+                    </div>
+                    <div class="icon-btn glyphicon glyphicon-menu-right"></div>
+                </a>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <!-- 遮罩层模板-->
+    <!--<script type="text/template" id="mask_tpl">-->
+        <!--{{#couponProductImg}}-->
+    <!--</script>-->
+    <script src="/views/js/assets/jquery/jquery.min.js"></script>
+    <script src="/views/js/assets/bootstrap/js/bootstrap.js"></script>
+    <script src="/views/js/assets/artTemplate/template.js"></script>
+    <script src="/views/js/coupon/couponproduct.js"></script>
+</body>
+</html>

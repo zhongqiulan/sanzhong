@@ -1,0 +1,29 @@
+define(['jquery','template','utils'],function($,template,obj){
+    var id = obj.queryString().categoryId; //商品id
+    var category = decodeURIComponent(obj.queryString().category); //获取商品名
+    console.log(category);
+    $.ajax({
+        url:'http://139.199.192.48:9090/api/getproductlist',
+        // url:'http://192.168.50.2:9090/api/getproductlist',
+        data:{
+            categoryid:id,
+            pageid:1
+        },
+        success:function(info) {
+            
+            //渲染导航路径
+            for(var i = 0;i<info.result.length;i++) {
+                info.result[i].category = category;
+            }
+
+            var navStr = template('goods_navs_tpl',{category:category});
+            $('.goods_navs').append(navStr);
+            console.log(info);
+            
+            //渲染商品列表
+            var str = template('goods_list_tpl',info);
+            $('.goods_list').html(str);
+        }
+
+    })
+})

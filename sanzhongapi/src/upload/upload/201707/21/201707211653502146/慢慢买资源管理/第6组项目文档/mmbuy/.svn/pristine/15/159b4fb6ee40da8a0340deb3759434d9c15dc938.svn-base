@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="" href="../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/brand/criticism.css">
+</head>
+<body>
+     <header>
+        <h1>
+            <a href="javascript:;"></a>
+            <span></span>
+        </h1>
+
+        <div class="zyzsreach">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">搜索</span>
+            </div>
+        </div>
+    </header>
+
+       <div class="criticism_all">
+            <div class="criticism_top">
+                优选网友评价
+            </div>
+            <div class="criticism_bottom">
+                <span class="name">wwww</span>
+                <span class="time">2015/11/16</span>
+                <span class="star"></span>
+                <span class="buy_from">购买自:京东商城</span>
+                <div class="content">家里以前有一台海信电视用了12年</div>
+                <a href='javascript:;'>
+                    <div class="replay">回复</div>
+                </a>
+                
+            </div>
+       </div>
+
+</body>
+
+    <script src="../public/assets/jquery/jquery.min.js"></script>
+    <script src="../public/assets/artTemplate/template.js"></script>
+  
+
+     <script src="../public/js/brand/criticism.js"></script>
+</html>

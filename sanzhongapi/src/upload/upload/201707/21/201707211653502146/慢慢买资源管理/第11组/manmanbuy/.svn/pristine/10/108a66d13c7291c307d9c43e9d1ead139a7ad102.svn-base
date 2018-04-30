@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/views/public/css/index/index.css">
+</head>
+
+<body>
+    <div class="qinrongze">
+        <!-- 头部 -->
+        <div class="header1 clearfix1 .col-xs-10">
+            <div class="fl logo">
+                <a href="#" title="慢慢买比价网--手机版">
+                    <img src="/images/header_logo.png" alt="慢慢买比价网--手机版"></a>
+            </div>
+            <div class="fr appdown .col-xs-2">
+                <a href="#" title="慢慢买比价网--手机版">
+                    <img src="/images/header_app.png" alt="慢慢买比价网--手机版"></a>
+            </div>
+        </div>
+
+        <!-- 搜索框 -->
+        <div class="search1">
+            <div class="input-group">
+                <input type="text" class="form-control .col-xs-10" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+                <span class="input-group-addon .col-xs-2" id="basic-addon2">搜索</span>
+            </div>
+        </div>
+        <!-- 首页表单 -->
+        <div class="aspnetForm">
+            <!-- 菜单按钮 -->
+            <div class="row menu mt15">
+            </div>
+
+            <!-- 超值折扣推荐 -->
+            <a href="javascript:;">
+                <div class="czzktj">
+                    <span>超值折扣推荐</span>
+                    <img src="/images/more.png" alt="#">
+                </div>
+            </a>
+            <!-- 数据商品列表 -->
+            <div class="list">
+                <ul class="cu-list">
+
+                </ul>
+            </div>
+            <!-- 更多优惠信息 -->
+            <div class="more-bar">
+                <div class="a-button">
+                    <a href="">更多优惠信息>></a></div>
+            </div>
+
+        </div>
+        <!-- 底部 -->
+        <footer>
+
+            <!-- 品牌排行 -->
+            <a href="javascript:;">
+                <div class="ppph">
+                    <span>品牌排行</span>
+                    <img src="/images/more.png" alt="#">
+                </div>
+            </a>
+            <div class="menu-footer">
+                <ul class="clearfix">
+                    <li><a href="###">登录</a></li>
+                    <li><a href="###">注册</a></li>
+                    <li><a href="#top">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="xinxi">
+                <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+        <!-- 菜单按钮渲染 -->
+
+        <script type='text/template' id='temp'>
+            {{each result as value i}} {{if i
+            <7}} <div class="col-xs-3">
+                <div class="thumbnail">
+                    <a href="{{value.href}}">
+                    {{#value.img}}
+                    <div class="caption">
+                        <p>{{ value.name }}</p>
+                    </div>
+                    </a>
+                </div>
+    </div>
+    {{/if}} {{/each}} {{ each result as value i }} {{ if i ==7 }}
+    <div id="collapse1" class="col-xs-3" data-toggle="collapse" data-target="#collapseExample">
+        <div class="thumbnail">
+            <a href="{{value.href}}">
+                    {{#value.img}}
+                    <div class="caption">
+                        <p>{{ value.name }}</p>
+                    </div>
+                    </a>
+        </div>
+    </div>
+    {{/if}} {{/each}}
+
+    <div class="collapse" id="collapseExample">
+        <div class="well">
+            {{ each result as value i }} {{if i> 7}}
+            <div class="col-xs-3">
+                <div class="thumbnail">
+                    <a href="{{value.href}}">
+                    {{#value.img}}
+                    <div class="caption">
+                        <p>{{ value.name }}</p>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            {{/if}} {{/each}}
+        </div>
+    </div>
+
+    </script>
+
+    <!-- 商品数据渲染 -->
+    <script type='text/template' id='temp1'>
+        {{each result as value i}}
+        <li>
+            <a href="javascript:;">
+                <div class="pic">
+                    {{#value.productImgSm}}
+                </div>
+                <div class="clearfix info ">
+                    <div class="title">
+                        {{value.productName}}<span>{{value.productPinkage}}</span>
+                    </div>
+                    <div class="br-none">
+                        <br>
+                    </div>
+                    <div class="other">
+                        <span class="mall">{{value.productFrom}} | {{value.productTime}}</span>
+                        <span class="comment"><img src="/images/2b4747b77226904583a1c00de526dfb8.png"></img>358</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <?php include "/views/common/script.html" ?>
+    <script>
+        require([
+            "js/index/index"
+        ])
+    </script>
+</body>
+
+</html>

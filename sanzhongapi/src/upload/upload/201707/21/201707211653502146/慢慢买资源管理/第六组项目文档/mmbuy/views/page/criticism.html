@@ -1,0 +1,122 @@
+<!--
+     author:郑伟雄
+      data:2017/7/19;
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+  <?php include "/views/common/css.html"?>
+    <link rel="stylesheet" href="/views/public/css/brand/criticism.css">
+</head>
+
+<body>
+    <header>
+        <h1>
+            <a href="javascript:;"></a>
+            <span></span>
+        </h1>
+        <div class="search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">搜索</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="nav">
+            <a href="/index">首页</a>
+            <span class="glyphicon glyphicon-menu-right"></span>
+            <a href="/brandTitle">品牌大全</a>
+            <span class="glyphicon glyphicon-menu-right"></span>
+            <a id="lastA" href="javascript:;"></a>
+        </div>
+
+        <div class="comment">
+            <h4>优选网友评价</h4>
+            <ul class="content">
+                <!--<li>
+                    <p class="clearfix">
+                        <span class="pull-left"> a***4</span>
+                        <i class="pull-right">2016/7/5</i>
+                    </p>
+                    <div class="shangcheng clearfix">
+                        <div class="star pull-left">
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                        </div>
+                        <div class="from  pull-right">选自京东商城</div>
+                    </div>
+                    <div class="describe">经过这么长时间的观看，挺不错的，屏幕很赞！没有漏光，没有坏点，显示效果很自然，本机使用网络，有线或外接所有端口操作都很流畅，方便，色彩和清晰度都非常好，如果你看新闻，娱乐节目或是追电视剧，性价比很高。电视的操作顺畅，拥有丰富的软件应用和网络影视资源,外观设计高档时尚，功能也比较丰富，高清解码，互联网，体感游戏，节能技术。价格实惠！还是IPS硬屏技术！节能省电，呈现动态画面很棒！响应速度快，用U*播放高清影片一点也不卡，质量、色彩各方面都很好。物流也很快，送货上门。</div>
+                    <a href="javascript:;">回复</a>
+
+                </li>-->
+            </ul>
+        </div>
+    </div>
+
+     <div class="footer">
+            <div class="more-info">
+                <a href='#'>更多优惠信息>></a>
+
+            </div>
+            <div class="brand-reco  clearfix">
+                <h3>品牌排行</h3>
+                <a href="javascript:void(0);"><img src="/images/more.png" alt=""></a>
+            </div>
+            <div class="tool">
+                <ul class="clearfix">
+                    <li>登陆</li>
+                    <li>注册</li>
+                    <li id="top"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</li>
+                </ul>
+                <div class="mmurl">
+                    <span>手机APP下载</span> 慢慢买手机版--掌上比价平台
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </div>
+        </div>
+
+        
+   <?php include "/views/common/script.html"?>
+
+
+    <script type="text/template" id="tpl_comment">
+        {{each result as v i}}
+        <li>
+            <p class="clearfix">
+                <span class="pull-left"> {{v.comName}}</span>
+                <span class="pull-right time" >{{v.comTime}}</span>
+            </p>
+            <div class="shangcheng clearfix">
+                <div class="star pull-left">
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </div>
+                <div class="from  pull-right">{{v.comFrom}}</div>
+            </div>
+            <div class="describe">{{v.comContent}}</div>
+            <a href="javascript:;">回复</a>
+
+        </li>
+
+        {{/each}}
+    </script>
+     <script>
+      require(['js/brand/criticism'])
+    </script>
+</body>
+
+</html>

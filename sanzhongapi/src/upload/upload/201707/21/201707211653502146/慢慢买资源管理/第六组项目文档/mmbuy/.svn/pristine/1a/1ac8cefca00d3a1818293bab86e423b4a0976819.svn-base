@@ -1,0 +1,14 @@
+define(['jquery','template'],function ($,template) {
+    // $(".nav a").eq(7).on("click",function () {
+    //         console.log(123);
+    // });
+    $.ajax({
+        url:"http://139.199.192.48:9090/api/getindexmenu",
+        type:"get",
+        success:function (info) {
+            // console.log(info);
+            var htmlStr=template("nav",info);
+            $(".nav").html(htmlStr);
+        }
+    })
+})

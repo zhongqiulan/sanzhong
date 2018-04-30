@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>品牌大全列表</title>
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/fptv.css">
+</head>
+<body>
+    <div class="fptv_all">
+            <div class="brand_tv">
+                 海信电视机
+              </div>  
+        <div class="brand_introduce">
+             海信（Hisense）是海信集团旗下自有品牌，于1969年在青岛成立。目前海信品牌产品线涵盖手机电视机、冰箱、空调、酒柜、冷柜、通讯产品等。
+        </div>
+        <div class="brand_nav">
+          以下是海信电视机全网热卖的商品推荐
+        </div>
+    </div>
+</body>
+</html>

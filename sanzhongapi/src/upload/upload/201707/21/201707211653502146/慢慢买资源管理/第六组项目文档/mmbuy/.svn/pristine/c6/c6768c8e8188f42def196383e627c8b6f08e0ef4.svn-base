@@ -1,0 +1,23 @@
+// 请求商品内容
+
+
+define(["jquery", "template"], function ($, template) {
+    $.ajax({
+        url: "http://139.199.192.48:9090/api/getinlanddiscount",
+        dataType: "Json",
+        success: function (info) {
+            var htmlStr = template("produce_temp", info);
+            $(".produce_box").html(htmlStr);
+
+
+
+            //注册点击事件
+             $(".produce_box").on("click","#detail",function () { 
+                 //获取id
+                 var id=$(this).attr("data-id");
+                 //跳转
+                 location.href="/produceDetail?productId="+id;
+              })
+        }
+    })
+})

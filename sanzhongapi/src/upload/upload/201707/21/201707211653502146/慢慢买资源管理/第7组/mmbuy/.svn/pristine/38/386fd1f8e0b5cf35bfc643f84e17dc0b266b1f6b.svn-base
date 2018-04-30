@@ -1,0 +1,222 @@
+/*导航条*/
+body {
+  background-color: #f7f7f7;
+  font-family: "微软雅黑";
+}
+.baiNav .navbar {
+  background-color: #e4393c;
+  margin: 0;
+}
+.baiNav .navbar .baiNav-er {
+  padding: 0;
+}
+.baiNav .navbar .baiNav-er .headText {
+  line-height: 50px;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.baiNav .navbar .baiNav-er .headText .headArrows {
+  margin: 0;
+  position: absolute;
+  left: 24px;
+}
+.baiNav .navbar .baiNav-er .headText .headArrows span {
+  line-height: 50px;
+  font-size: 28px;
+}
+.baiNav .navbar .baiNav-er .headText span {
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+}
+.baiNav .navbar .baiNav-er .headApp {
+  margin: 0;
+  position: absolute;
+  right: 20px;
+}
+.baiNav .navbar .baiNav-er .headApp img {
+  width: 34px;
+}
+/*tab栏*/
+.baiTab {
+  position: relative;
+  overflow: hidden;
+}
+.baiTab .top-box {
+  width: 1000%;
+  background-color: #fff;
+}
+.baiTab .top-box .top-menu {
+  padding-left: 0;
+}
+.baiTab .top-box .top-menu li {
+  width: auto;
+  height: 44px;
+  line-height: 44px;
+  display: inline-block;
+  font-size: 14px;
+  padding: 0 11px 0;
+}
+.baiTab .top-box .top-menu li:hover {
+  cursor: pointer;
+}
+.baiTab .searchB {
+  position: absolute;
+  right: 0;
+  top: -2px;
+}
+.baiTab .searchB span {
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  background-color: #f7f7f7;
+  border-left: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  font-size: 30px;
+  font-weight: 100;
+  color: #ccc;
+  text-align: center;
+  padding-top: 8px;
+}
+.baiTab .search {
+  display: none;
+  position: relative;
+  height: 55px;
+  width: 100%;
+  background-color: #f7f7f7;
+  box-sizing: border-box;
+}
+.baiTab .search span.sc_sp {
+  position: absolute;
+  top: 20px;
+  left: 16px;
+  z-index: 999;
+  font-size: 18px;
+  color: #bbb;
+}
+.baiTab .search .sc_ipt {
+  padding: 10px 0 13px 10px;
+}
+.baiTab .search .sc_ipt input {
+  padding-left: 30px;
+  outline-style: none;
+  border: none;
+}
+.baiTab .search .sc_ipt span {
+  outline-style: none;
+  border: none;
+  background-color: #f7f7f7;
+}
+/*商品列表*/
+.commonList {
+  margin-top: 10px;
+  height: 150px;
+  width: 100%;
+  padding-top: 10px;
+  background-color: #fff;
+  color: #000;
+}
+.commonList .cn_img {
+  float: left;
+  padding-left: 5px;
+}
+.commonList .cn_img img {
+  width: 129px;
+}
+.commonList .cn_text {
+  margin-left: 142px;
+}
+.commonList .cn_text .text_top .t {
+  font-size: 14px;
+}
+.commonList .cn_text .text_top .pr {
+  padding-top: 14px;
+  color: #fc353a;
+  font-size: 18px;
+}
+.commonList .cn_text .text_top .pr i {
+  font-size: 16px;
+}
+.commonList .cn_text .text_top .pr em {
+  font-size: 12px;
+}
+.commonList .cn_text .text_top .pr span {
+  font-size: 20px;
+  font-weight: 900;
+}
+.commonList .cn_text .text_top .pr del {
+  font-size: 12px;
+  padding-left: 5px;
+  color: #aaa;
+}
+.commonList .cn_text .text_bottom {
+  padding-top: 8px;
+}
+.commonList .cn_text .text_bottom .top {
+  position: relative;
+}
+.commonList .cn_text .text_bottom .top .yhq {
+  display: inline-block;
+  border: 1px dashed #e4393c;
+  color: #e4393c;
+  padding: 5px;
+}
+.commonList .cn_text .text_bottom .top .yhq a {
+  color: #e4393c;
+}
+.commonList .cn_text .text_bottom .top .lqxd {
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #ff5e5d;
+  width: 65px;
+  height: 32px;
+  margin-right: 5px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 32px;
+}
+.commonList .cn_text .text_bottom .top .lqxd a {
+  color: #fff;
+}
+.commonList .cn_text .text_bottom .bottom {
+  padding-top: 10px;
+}
+.commonList .cn_text .text_bottom .bottom .lq {
+  color: #666;
+}
+.footer {
+  margin-top: 10px;
+  background-color: #eeeeee;
+  overflow: hidden;
+}
+.footer .footertop a {
+  width: 33%;
+  display: block;
+  float: left;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .footercenter {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  height: 60px;
+  text-align: center;
+}
+.footer .footercenter a:nth-of-type(1) {
+  color: red;
+}
+.footer .footercenter a:nth-of-type(2) {
+  color: #000;
+}

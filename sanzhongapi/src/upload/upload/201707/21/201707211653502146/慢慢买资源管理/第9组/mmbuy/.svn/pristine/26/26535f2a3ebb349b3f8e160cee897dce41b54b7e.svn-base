@@ -1,0 +1,135 @@
+@color: #ff841d;
+a {
+  color: #5a5a5a;
+}
+
+//.layout {
+//  background-color: red;
+//}
+
+#topTitle {
+  height: 44px;
+  background-color: @color;
+  position: relative;
+  h3 {
+    text-align: center;
+    color: #ffffff;
+    line-height: 44px;
+    margin: 0;
+    font-size: 20px;
+  }
+  i {
+    position: absolute;
+    top: 0;
+  }
+  .glyphicon-chevron-left {
+    color: #ffffff;
+    font-size: 28px;
+    line-height: 44px;
+    left: 10px;
+    cursor: pointer;
+
+  }
+}
+
+//下拉菜单导航
+#tabs {
+  height: 38px;
+  background-color: #ffffff;
+  .nav {
+    position: relative;
+    //border-bottom: 1px solid #ccc;
+    li {
+      padding: 0;
+      a {
+        text-align: center;
+      }
+    }
+    .search {
+
+      right: 0;
+      position: absolute;
+      border-left: 1px solid #ccc;
+      s{
+        width: 40px;
+        height: 20px;
+        text-align: center;
+        padding-top: 10px;
+        font-size: 20px;
+        color: #5a5a5a;
+        text-decoration: none;
+      }
+    }
+  }
+  //下拉列表
+  .list-group {
+    a {
+      display: block;
+      text-decoration: none;
+      &:active {
+        text-decoration: none;
+      }
+      color: #5a5a5a;
+    }
+    li {
+      position: relative;
+      i {
+        color: @color;
+        position: absolute;
+        right: 30px;
+        top: 5px;
+        font-size: 22px;
+      }
+    }
+
+  }
+
+}
+
+#page_details {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  li {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding-left: 0;
+    padding-right: 10px;
+
+    a {
+      display: block;
+      background-color: #ffffff;
+    }
+    p {
+      text-align: left;
+    }
+  }
+}
+
+.details {
+
+  background-color: #f1f1f1;
+  padding: 15px 0;
+  padding-left: 10px;
+
+  #page_details {
+    li {
+      img {
+        max-width: 100%;
+      }
+      p.productName {
+        font-size: 12px;
+        height: 14px;
+        line-height: 14px;
+        padding: 0 6px;
+        color: #333333;
+      }
+      p.price {
+        margin-top: 20px;
+        color: #f8601d;
+        font-size: 20px;
+      }
+    }
+  }
+
+}

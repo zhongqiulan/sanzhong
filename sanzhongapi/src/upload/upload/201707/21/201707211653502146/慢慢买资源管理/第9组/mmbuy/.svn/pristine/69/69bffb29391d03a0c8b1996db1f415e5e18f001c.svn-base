@@ -1,0 +1,128 @@
+.navbar {
+  height: 40px;
+  margin-bottom: 0;
+  background-color: #f4483e;
+  position: relative;
+}
+.navbar .navbar-header .navbar-brand {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+.navbar .navbar-center {
+  font-size: 26px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.navbar .navbar-center span {
+  height: 40px;
+  color: #fff;
+}
+.navbar .app-donwload {
+  margin-top: 5px;
+}
+.navbar .app-donwload img {
+  width: 40px;
+  height: 40px;
+}
+.dealcre {
+  color: #999;
+  text-align: center;
+}
+.coupon_list a {
+  color: #000;
+  line-height: center;
+  border-bottom: 1px solid #ccc;
+  text-decoration: none;
+}
+.coupon_list a img {
+  width: 100px;
+  height: 80px;
+}
+.coupon_list a h4 {
+  margin: 5px 0;
+}
+.coupon_list a p {
+  margin: 5px 0;
+  color: #f5b26f;
+}
+.coupon_list a .media-right span {
+  margin-top: 25px;
+  font-size: 20px;
+  color: #999;
+}
+.coupon_list a .media-right span :before {
+  height: 40px;
+}
+.modal .modal-dialog {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  left: 0;
+}
+.modal .modal-dialog #carousel-example-generic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.modal .modal-dialog #carousel-example-generic #carleft,
+.modal .modal-dialog #carousel-example-generic #carright {
+  width: 60px;
+  height: 160px;
+  position: absolute;
+}
+.modal .modal-dialog #carousel-example-generic #carleft {
+  left: -50%;
+}
+.modal .modal-dialog #carousel-example-generic #carright {
+  right: -50%;
+}
+.nav {
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 8px;
+  border-top: 1px solid #ebebeb;
+  border-bottom: 1px solid #ccc;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+}
+.nav a {
+  color: #5a5a5a;
+  display: inline;
+}
+.foot_bar {
+  width: 100%;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 10px;
+  text-align: center;
+  background-color: #efefef;
+}
+.foot_bar ul li {
+  float: left;
+  width: 33.33%;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.foot_bar ul li + li {
+  border-left: 1px solid #ccc;
+}
+.foot_bar ul li .icon-top {
+  font-size: 15px;
+}
+footer {
+  width: 100%;
+  text-align: center;
+  color: #5a5a5a;
+  font-size: 12px;
+  padding: 15px 0;
+  background-color: #efefef;
+}
+footer .foot_top a {
+  color: red;
+  display: inline-block;
+}

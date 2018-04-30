@@ -1,0 +1,52 @@
+define(['jquery','template','bootstrap'],function($,template,bt){
+//   点击向左图标,跳转到index页面
+    $('.save_header>i').on("click",function(){
+        location.href="/index"
+    })
+
+
+   var id = 1;
+    $.ajax({
+        url:'http://139.199.192.48:9090/api/getmoneyctrl',
+        data:{},
+        success:function(info){
+            // console.log(info);
+            id =Math.ceil(info.totalCount/info.pagesize);
+
+            info.pageid=id;
+            // console.log(info.pageid)
+            var htmlStr= template('save_menu_tpl',info);   
+            $('#save_menu_ul').html(htmlStr);
+            // 这里是渲染select 跳转页面标签
+           var html='';
+           for(var i=1;i<=id;i++){
+               html +=' <option>'+i+'/'+id+'</option>';
+           }
+           $("#save_select").append(html);
+           
+
+        //    $("#save_menu_ul").on("touchstart",".save_a",function(){
+        //        var btnid= $(this).parent().attr('data-id');
+        //        console.log(btnid)   
+        //     $.ajax({
+        //        url:'http://139.199.192.48:9090/api/getmoneyctrlproduct',
+        //        data:{productId:btnid},
+        //        success:function(inFo){
+        //            console.log(inFo);
+        //         location.href="/produceDetail?productId="+inFo.productId;
+        //        }
+        //     })
+        //    })
+
+
+        //    下一页的功能
+        // $(".save_button_btn>.pull-right").on("click",function(){
+          
+        // })
+           
+            
+        }
+    })
+    
+
+})

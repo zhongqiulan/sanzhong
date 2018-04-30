@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>支付</title>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <style>
+        .in-order {
+            padding: 10rem 0 .24rem;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .in-countdown {
+            color: #8E8D8E;
+            font-size: 1rem;
+            line-height: 1;
+        }
+
+        .in-order-fee {
+            margin-top: 3rem;
+            line-height: 1;
+            font-family: DIN, "DINAlternate-Bold", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 2rem;
+            color: #4A494B;
+            letter-spacing: -0.44px;
+        }
+
+        /**
+        .hairline .box {
+            border-width: .5px 0;
+        }
+
+        .in-pay-method {
+            background-color: transparent;
+        }
+
+        .box {
+            border: none;
+            margin: .3rem 0;
+        }
+
+        .in-pay-type-wrapper {
+            background: #fff;
+        }
+
+        .hairline .cell,
+        .hairline .cell-access {
+            border-width: .5px;
+        }
+
+        .in-pay-type {
+            min-height: 60px;
+        }
+
+        .cell-access {
+            padding: 0 .3rem;
+            user-select: none;
+            display: flex;
+            position: relative;
+            -webkit-box-align: center;
+            align-items: center;
+            background-color: white;
+        }
+
+        .cell-icon {
+            width: .6rem;
+            height: .4rem;
+            text-align: center;
+            margin-right: .3rem;
+        }
+
+        .cell-left {
+            -webkit-box-flex: 1;
+            flex: 1;
+            margin: 0;
+            padding: 0.18rem 0;
+        }
+
+        .checkbox {
+            display: flex;
+            position: relative;
+        }
+
+        .checkbox input {
+            margin: 0;
+            opacity: 0;
+            z-index: 1;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            position: absolute;
+        }
+
+        .checkbox input:checked+.icon-success {
+            border-color: #31BCAD;
+            background-color: #31BCAD;
+        }
+
+        .checkbox-round .icon-success {
+            border-radius: 50%;
+            background-clip: padding-box;
+        }
+
+        .checkbox .icon-success {
+            display: block;
+            position: relative;
+            font-weight: bold;
+            text-align: center;
+            width: 0.48rem;
+            height: 0.48rem;
+            color: white;
+            font-size: 0.24rem;
+            line-height: 0.4rem;
+            border: 1px solid #E9E8EA;
+        }
+
+        .icon-success::before {
+            content: "\FA07";
+        }
+
+        [class*='icon-']::before {
+            display: inline-block;
+        }
+
+        .in-pay-type-wrapper:nth-child(n+2) .in-pay-type:before {
+            content: '';
+            position: absolute;
+            left: .3rem;
+            right: .3rem;
+            top: 0;
+            height: 0;
+            border-bottom: 1px solid #E9E8EA;
+            -webkit-transform: scaleY(0.5);
+            transform: scaleY(0.5);
+        }
+        **/
+
+        .in-confirm-btn-fixed {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            border-radius: 0;
+        }
+
+        .in-confirm-btn {
+            font-size: 1rem;
+            height: 3.5rem;
+            width: 100%;
+            background-image: -webkit-linear-gradient(225deg, #27A9B0 0%, #31BCAD 100%);
+            background-image: linear-gradient(-135deg, #27A9B0 0%, #31BCAD 100%);
+            border: none;
+            border-radius: 0.06rem;
+        }
+
+        .btn-submit {
+            font-size: 18px;
+        }
+
+        .btn {
+            text-align: center;
+            vertical-align: middle;
+            padding: 0 0.4rem;
+            color: white;
+            background-clip: padding-box;
+            background-color: #31BCAD;
+            line-height: 0.96rem;
+            border: 1px solid #31BCAD;
+            border-radius: 0.06rem;
+        }
+
+        .in-need-pay-money {
+            font-size: 2.5rem;
+            margin-left: .2rem;
+            font-family: DIN, "DINAlternate-Bold", "PingFang SC", "Helvetica Neue", Helvetica, Arial, sans-serif
+        }
+    </style>
+</head>
+
+<body>
+    <div class="in-order">
+        <div class="in-countdown" style="display: block;">
+            <span class="in-clock">您的订单需支付</span>
+        </div>
+        <div class="in-order-fee">
+            <span class="in-order-fee-unit">¥</span> ${payMoney}
+        </div>
+    </div>
+
+    <button onclick="goToPay()" class="btn btn-submit in-confirm-btn in-confirm-btn-fixed">
+        <span class="in-need-pay-text">确认支付</span>
+        <span class="in-need-pay-symbol">¥</span>
+        <span class="in-need-pay-money">${payMoney}</span>
+    </button>
+</body>
+<script>
+    function goToPay() {
+        console.log("---goToPay---")
+        //生产环境 
+        var url = "http://39.108.135.214:8899/site/validate/pay/getAlipayURL/${order_id}"
+        $.get(url, function (result) {
+            window.open(result,"_self")
+        });
+    }
+</script>
+
+</html>

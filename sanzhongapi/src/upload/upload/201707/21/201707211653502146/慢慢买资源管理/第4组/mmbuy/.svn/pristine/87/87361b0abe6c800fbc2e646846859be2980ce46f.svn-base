@@ -1,0 +1,154 @@
+* {
+  font-size: 14px;
+  text-align: center;
+}
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+.layout {
+  width: 100%;
+}
+.layout header {
+  background-color: #e4393c;
+  height: 44px;
+  color: #FFF;
+  position: relative;
+  line-height: 44px;
+  padding: 0 10px;
+}
+.layout header a {
+  color: #FFF;
+  position: absolute;
+  font-size: 20px;
+}
+.layout header h2 {
+  font-size: 20px;
+  display: inline-block;
+  line-height: 20px;
+}
+.layout .bcj_head {
+  position: relative;
+  width: 100%;
+  height: 36px;
+  line-height: 36px;
+}
+.layout .bcj_head .bcj_ul {
+  overflow: hidden;
+  width: 100%;
+  padding-right: 38px;
+}
+.layout .bcj_head .bcj_ul ul {
+  margin-left: -15px;
+}
+.layout .bcj_head .bcj_ul ul li {
+  display: inline-block;
+  margin: 0 12px;
+}
+.layout .bcj_head .searchBtn {
+  position: absolute;
+  height: 38px;
+  width: 38px;
+  right: 0;
+  top: 0;
+  border-left: 1px solid #e6e6e6;
+  background-color: #fbfbfb;
+}
+.layout .bcj_head .searchBtn .icon-search {
+  font-size: 22px;
+  line-height: 38px;
+}
+.layout .nav_discount {
+  width: 100%;
+  background-color: #fbfbfb;
+}
+.layout .nav_discount img {
+  width: 100%;
+  margin: 10px 0;
+}
+.layout .img_loading {
+  position: relative;
+  height: 70px;
+}
+.layout .img_loading img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -16px;
+  margin-left: -16px;
+  width: 32px;
+  height: 32px;
+}
+.layout .list_bottom {
+  text-align: left;
+  padding-left: 10px;
+  height: 38px;
+  line-height: 38px;
+  background-color: #ebebeb;
+  border-bottom: solid 1px #ebebeb;
+  border-top: solid 1px #ccc;
+  margin-top: 20px;
+}
+.layout .list_bottom > a {
+  display: inline-block;
+}
+.layout .app_adv {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  background-color: #434343;
+  padding: 10px;
+  margin-top: 20px;
+}
+.layout .app_adv img {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 64px;
+  height: 64px;
+}
+.layout .app_adv .app_text {
+  position: absolute;
+  top: 10px;
+  left: 84px;
+}
+.layout .app_adv .app_text h4 {
+  text-align: left;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: normal;
+  height: 36px;
+  line-height: 36px;
+}
+.layout .app_adv .app_text p {
+  text-align: left;
+  color: #fee6c2;
+}
+.layout .app_adv .app_button {
+  right: 10px;
+  top: 10px;
+  position: absolute;
+  background: #6db110;
+  height: 30px;
+  width: 80px;
+  line-height: 30px;
+  border-radius: 4px;
+}
+.layout .app_adv .app_button a {
+  color: #FFF;
+}
+.bcj_list_ul .ad_pic {
+  float: left;
+  width: 135px;
+  height: 130px;
+}
+.bcj_list_ul .ad_pic img {
+  width: 130px;
+  height: 130px;
+}
+.bcj_list_ul li {
+  height: 150px;
+  width: 100%;
+}

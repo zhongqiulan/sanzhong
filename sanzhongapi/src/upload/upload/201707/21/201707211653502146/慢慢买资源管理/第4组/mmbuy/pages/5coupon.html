@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel='stylesheet' type='text/css' href='../libs/bootstrap/css/bootstrap.min.css' />
+    <link rel="stylesheet" type='text/css' href="../css/coupon/coupon.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mmb-coupon">
+        <!--优惠券头部-->
+        <div class="coupon-head">
+            <span class="head-back glyphicon glyphicon-menu-left"></span>
+            <h4>优惠券</h4>
+            <span class="head-app"></span>
+        </div>
+        <!--优惠券内容-->
+        <div class="coupon-content">
+            <ul class="clearfix coupon_content">
+                <!--<li>
+                    <a href="javascript:;">
+                        <img src="../imgs/haitao.png" alt="">
+                        <p>肯德基</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../imgs/haitao.png" alt="">
+                        <p>肯德基</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../imgs/haitao.png" alt="">
+                        <p>肯德基</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="javascript:;">
+                        <img src="../imgs/haitao.png" alt="">
+                        <p>肯德基</p>
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+    </div>
+</body>
+
+</html>
+<script type="text/template" id="coupon_tpl">
+    {{each result as v i}}
+    <li>
+        <a href="{{v.couponLink}}?couponId={{v.couponId}}">
+            <img src="{{v.couponImg}}" alt="">
+            <p>{{v.couponTitle}}</p>
+        </a>
+    </li>
+    {{/each}}
+</script>
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="../libs/artTemplate/template.js"></script>
+<script src="../libs/jquery-cookie/jquery.cookie.js"></script>
+<script src="../js/coupon/coupon.js"></script>

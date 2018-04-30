@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+    <title>Document</title>
+    <link rel='stylesheet' href='../libs/bootstrap/css/bootstrap.css' />
+    <link rel='stylesheet' href='../css/parity_list.css' />
+</head>
+
+<body>
+    <!--头部-->
+    <div class="mmm_top">
+        <div class="top_conten">
+            <a href="javascript:;">
+                <span class="top_img_left"></span>
+                <span class="top_img_right"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--搜索框-->
+    <div class="mmm_search clearfix">
+        <div class="mmm_conten">
+            <span>
+            <input type="text" placeholder="请输入你想比较的商品">
+       </span>
+            <span>
+         <a href="javascript:;">按钮</a>
+       </span>
+        </div>
+    </div>
+
+    <!--导航-->
+    <div class="nav">
+        <ul id="nav_list">
+            <!--  <li> <a href='javascript:;'>首页></a></li>
+            <li> <a href='javascript:;'>分类列表></a></li>
+            <li> <a href='javascript:;'>电视</a></li>-->
+
+        </ul>
+        <button>筛选</button>
+    </div>
+
+    <!--商品列表-->
+    <div class="product_list">
+
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="../images/product.jpg"  alt="...">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">夏普(SHARP)LCD-70SU665A 70英寸 4K 超清智能液晶电视</h4>
+                <span>¥4399</span>
+                <div class="tell_money">
+                    <p>9商城报价</p>
+                    <div class="tell_write">评论</div>
+                </div>
+            </div>
+        </div>
+        <!--翻页-->
+        <div class="flip clearfix">
+            <div class="previous">
+                <button class="pre">上一页</button>
+            </div>
+            <div class="flip_set">
+                <select name="" id="flip_opt">
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+            </div>
+
+            <div class="btnNext">
+                <button class="next">下一页</button>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+
+
+
+
+
+    <!--底部-->
+    <div class="mmm_bottom clearfix">
+        <ul>
+            <li></li>
+            <li class="clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a>
+            </li>
+            <li class="clearfix hehe">
+
+                <p>
+                    <span>手机APP下载</span>
+                    <span>慢慢买手机版--</span>
+                    <span>掌上比价平台</span>
+                </p>
+                <h4>m.manmanbuy.com</h4>
+            </li>
+        </ul>
+
+    </div>
+    <script src="../libs/jquery/jquery.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/parity_list.js"></script>
+    <!--导航列表渲染模板-->
+    <script type="text/html" id="navs_tpl">
+        <li> <a href='javascript:;'>首页></a></li>
+        {{each result as v i}}
+        <li> <a href='./parity_search.html?categoryId={{v.categoryId}}'>分类列表></a></li>
+        
+        <li> <a href='javascript:;'>{{v.category}}</a></li>
+        {{/each}}
+    </script>
+    <!--商品列表渲染模板-->
+    <script type="text/html" id="product_list_tpl">
+        {{each result as v i}}
+        <div class="media">
+            <div class="media-left">
+                <a href="parity_info.html?productId={{v.productId}}">
+                    {{#v.productImg}}
+                </a>
+            </div>
+            <div class="media-body">
+                <a href='parity_info.html?productid={{v.productId}}'>
+                    <h4 class="media-heading">{{v.productName}}</h4>
+                </a>
+                <span>{{v.productPrice}}</span>
+                <div class="tell_money">
+                    <p>{{v.productQuote}}</p>
+                    <div class="tell_write">{{v.productCom}}</div>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+
+
+        <div class="flip clearfix">
+            <div class="previous">
+                <button id="prve">上一页</button>
+            </div>
+            <div class="flip_set">
+                <select name="" id="flip_opt" data-pages="{{page}}" data-index="{{pageid}}">
+                {{each pageFlip as value i}}
+                <option value="{{value}}" class = "select_opt" {{if pageid==value}}selected{{/if}}>{{value}}</option>
+                {{/each}}
+            </select>
+            </div>
+
+            <div class="btnNext">
+                <button id="next">下一页</button>
+            </div>
+        </div>
+    </script>
+    <!--翻页徐然模板-->
+
+
+</body>
+
+</html>

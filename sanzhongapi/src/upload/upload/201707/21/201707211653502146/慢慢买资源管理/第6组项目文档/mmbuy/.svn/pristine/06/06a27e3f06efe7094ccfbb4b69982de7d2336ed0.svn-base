@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!--<link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">-->
+    <?php include '/views/common/css.html' ?>
+ 
+</head>
+
+<body>
+      <div class="view">
+    <?php include '/views/common/head.html' ?>
+    <!--<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+        <div class="panel panel-default">
+            <div class="panel-heading" role="tab" id="headingOne">
+                <h4 class="panel-title">
+                    <a href="javascript:;">大家电</a>
+                    <a class="glyphicon glyphicon-menu-down pull-right collapse-arrow"  role="button"  data-parent="#accordion"
+                        href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+
+                    </a>
+                </h4>
+            </div>
+            <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-xs-4">平板电视</div>
+                        <div class="col-xs-4">空调</div>
+                        <div class="col-xs-4">家庭影院</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+    </div>-->
+    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+    </div>
+    <?php include '/views/common/foot.html' ?>
+      </div>
+</body>
+
+<?php include '/views/common/script.html' ?>
+
+<!--分页标题模板-->
+<script type="text/template" id="classify_title_tpl">
+    {{each result as v i}}
+
+    <div class="panel panel-default"  data-id="{{v.titleId+1}}">
+        <div class="panel-heading" role="tab" id="headingOne">
+            <h4 class="panel-title">
+                <a href="javascript:;">{{v.title}}</a>
+                <a class="glyphicon glyphicon-menu-down pull-right collapse-arrow collapse{{i+1}}" role="button" data-parent="#accordion"
+                    href="#collapse{{i+1}}" aria-expanded="false" aria-controls="collapse{{i+1}}">
+
+                    </a>
+            </h4>
+        </div>
+        <div id="collapse{{i+1}}" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <div class="row">
+                </div>
+
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<!--分页列表-->
+<script type="text/template" id="getcategory_tpl">
+    {{each result as v i}}
+   
+            <div class="col-xs-4">{{v.category}}</div>
+ 
+   {{/each}} 
+
+</script>
+<script>
+    require(['js/paritySearch/classify']);
+
+</script>
+
+</html>

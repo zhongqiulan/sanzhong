@@ -1,0 +1,63 @@
+@import "bass.less";
+.Compare-price {
+    overflow: hidden;
+    background-color: #ebebeb;
+    #accordion {
+        margin: 5px;
+        border:1px solid #ccc;
+        border-radius: 5px;
+        overflow: hidden;
+        .panel {
+            border: none;
+            border-bottom: 1px solid #ccc;
+            margin-top: 0;
+            // 子标题
+            .panel-heading {
+                background-color: #ebebeb;
+                padding: 0;
+                margin: 0;
+                h4 {
+                    // height: 40px;
+                    a {
+                        color: #333;
+                        font:900 16px "微软雅黑";
+                        padding-left: 10px;
+                        height: 40px;
+                        line-height: 40px;
+                        display: block;
+                        &:focus {
+                            text-decoration: none;
+                        }
+                        span {
+                            display: block;
+                            height: 40px;
+                            line-height: 40px;
+                            padding-right: 10px;
+                            float: right;
+                            color: #929292;
+                        }
+                    }
+                }
+            }
+            // 子标题下的分类
+            .clasify_title{
+               .panel-body{
+                   background: #f9f9f9;
+                   padding: 0;
+                   div{
+                       margin: 0;
+                       padding: 0;
+                       text-align: center;
+                       height: 40px;
+                       line-height: 40px;
+                       border-right:1px solid #ccc;
+                       border-bottom:1px solid #ccc;
+                       a{
+                           color: #333;
+                       }
+                   }
+               } 
+            }
+        }
+    }
+}

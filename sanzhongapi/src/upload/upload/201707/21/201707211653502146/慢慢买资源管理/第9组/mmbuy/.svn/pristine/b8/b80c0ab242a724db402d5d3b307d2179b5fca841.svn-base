@@ -1,0 +1,109 @@
+@import 'common.less';
+.tit-introduce{
+  h3{
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 10px; 
+  }
+  .price{
+    font-size: 15px;
+    color: #ff6c00;
+    font-weight: bold;
+    margin-top: 10px;
+  } 
+  .Source{
+    font-size: 12px;
+    color: #999999;
+    line-height: 24px;
+    margin: 10px 0;
+  } 
+  .introduce{
+    margin-top: 6px;
+    
+    .pic{
+      width: 140px;
+      float: right;
+      padding:0;
+    }
+    .thumbnail{
+      border: none;
+      padding: 0;
+      img{
+        width: 140px;
+        height: 140px;
+        // text-align: left;
+        display: inline-block;
+      }
+      
+    }
+    p{
+        margin-left: 15px;
+        margin-right: 15px;
+      }
+    .content{
+      font-size: 16px;
+      line-height: 24px;
+      color: #606060;
+    }
+  }
+   // 前往购买
+   .gobuy{
+    .btn{
+      background-color: #FF9000;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      color: #fff;
+    }
+  }
+}
+  
+.tit-comment{
+  border-top: 1px solid #ccc;
+  //评论
+  .comment,.new-comment{
+    font-size: 16px;
+    margin-top: 8px;
+    margin-bottom: 8px;
+  } 
+  .comment-area{
+    border: 1px solid #ccc;
+    textarea{ 
+      width: 100%;
+      height: 68px;
+      display: block;
+      border:none; 
+      resize: none;
+      outline: none;
+    }
+  }
+  .go-comment{
+    background-color: #FF9000;
+    border-radius: 0; 
+    color: #fff;
+  }
+  .go-comment:visited{
+    background-color: #FF9000;
+  }
+}
+/*导航链*/
+  .nav-chain{
+    font-size: 14px;
+    ;
+    background-color: #ebebeb;
+    margin-top: 20px;
+    height: 36px;
+    border-bottom: 1px solid #ccc;
+    padding: 0 15px;
+    a{
+      display: inline-block;
+        vertical-align: middle;
+        line-height: 36px;
+      &:last-child{
+        float: none;
+        width: 100px;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+      }
+    }
+  }

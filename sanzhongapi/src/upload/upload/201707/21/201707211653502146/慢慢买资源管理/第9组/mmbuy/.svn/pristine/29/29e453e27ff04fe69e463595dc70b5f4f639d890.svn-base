@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>详细信息</title>
+  <link rel="stylesheet" type="" href="../../lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="" href="../../css/base.css">
+  <link rel="stylesheet" type="" href="../../css/listclass/listclass.css">
+  <link rel="stylesheet" type="" href="../../css/listclass/prolist.css">
+</head>
+<body>
+  <div id="container">
+    <div class="views">
+
+      <!--头部-->
+      <header class="clearfix">
+        <div class="logo pull-left">
+          <a href="javascript:;" class="header">
+                    <img src="../../images/header_logo.png" alt="">
+                </a>
+        </div>
+        <div class="app-download pull-right">
+          <a href="javascript:;">
+                    <img src="../../images/header_app.png" alt="">
+                </a>
+        </div>
+      </header>
+      <!--搜索框-->
+      <div class="searchBox">
+        <input type="text" placeholder="请输入你想比价的产品" aria-describedby="basic-addon2">
+        <span class="search_btn">搜索</span>
+      </div>
+      <!-- 主体 -->
+      <div id="content">
+        <div class="info_top">
+          <!--<ul>
+            <li>首页></li>
+            <li>平板电视></li>
+            <li>夏普 70SU665A</li>
+          </ul>-->
+        </div>
+
+        <!-- Nav tabs -->
+        <!--<div class="nav_tab">
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">综合</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">销量</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">价格</a></li>
+            <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab" class="glyphicon glyphicon-filter">筛选</a></li>
+          </ul>
+        </div>-->
+        <!-- Tab panes -->
+        <div class="tab_panes">
+          <ul class="tab-content" id="tab_content">
+            <!--<li role="tabpanel" class="tab-pane active" id="home">
+              <a href=""><img src="../../images/ic_kb.png" alt=""></a>
+              <div class="tab_info">
+                <div class="current_info">夏普(SHARP) LCD-70SU665A 70英寸 4K超高清智能液晶电视</div>
+                <div class="current_price">￥4399</div>
+                <div class="other_price">
+                  <span class="left">9商城报价</span>
+                  <span class="right">有3196人评论</span>
+                </div>
+              </div>
+            </li>
+             <li role="tabpanel" class="tab-pane" id="profile">2</li>
+            <li role="tabpanel" class="tab-pane" id="messages">3</li>
+            <li role="tabpanel" class="tab-pane" id="settings">4</li> 
+          </ul> -->
+        </div>
+        <div id="list_page">
+          <ul class="list_btn clearfix">
+            <li><button type="" class="prev"><a href="javascript:;">上一页</a></button></li>
+            <li>
+              <select class="sel">
+                <option name="" value="" class="opt"></option>
+                <option name="" value="1">1</option>
+              </select>
+            </li>
+            <li><button type="" class="next"><a href="javascript:;">下一页</a></button></li>
+          </ul>
+          <div class="list_href">
+            <p>相关链接</p>
+            <span>电视机十大品牌<br/></span>
+            <span>电视机口碑大全</span>
+          </div>
+          <!--登录注册-->
+          <div class="foot_bar">
+            <ul class="clearfix">
+              <li><a href="login.html">登录</a></li>
+              <li><a href="javascript:;">注册</a></li>
+              <li><a href="#"><b class="glyphicon glyphicon-arrow-up"></b>返回顶部</a></li>
+            </ul>
+          </div>
+          <footer>
+            <div class="foot_top">
+              <a href="javascript:;">手机APP下载</a>
+              <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+            </div>
+            <div class="foot_bottom">m.manmanbuy.com</div>
+          </footer>
+          <!--</div>-->
+        </div>
+      </div>
+    </div>
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../lib/artTemplate/template.js"></script>
+    <script src="../../js/listclass/prolist.js"></script>
+
+    <script type="text/template" id="prolist_tpl">
+      {{each result as v i}}
+      <li role="tabpanel" class="tab-pane active clearfix" id="home" data-page="">
+        <a href="" class="left_img">{{#v.productImg}}</a>
+        <div class="tab_info">
+          <a href="./bijia.html?productid={{v.productId}}">
+            <div class="current_info">{{v.productName}}</div>
+            <div class="current_price">{{v.productPrice}}</div>
+            <div class="other_price">
+              <span class="left">{{v.productQuote}}</span>
+              <span class="right">{{v.productCom}}</span>
+            </div>
+          </a>
+        </div>
+      </li>
+      {{/each}}
+    </script>
+
+
+    <script type="text/template" id="info_top_tpl">
+      <ul>
+        <li>首页></li>
+        <li>全部分类></li>
+        <li>{{category}}</li>
+      </ul>
+    </script>
+
+    <script type="text/template" id="list_btn_tpl">
+
+      <select>
+        <option name="" value=""></option>
+        <option name="" value=""></option>
+      </select>
+    </script>
+
+
+</body>
+
+</html>

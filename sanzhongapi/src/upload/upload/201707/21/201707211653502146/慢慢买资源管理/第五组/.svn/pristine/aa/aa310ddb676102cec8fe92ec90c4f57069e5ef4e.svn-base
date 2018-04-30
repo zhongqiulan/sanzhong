@@ -1,0 +1,60 @@
+function mmm_list() {
+    $.ajax({
+        url: "http://139.199.192.48:9090/api/getindexmenu",
+        success: function (data) {
+            // console.log(data);
+            var html = template("mmm_list", data);
+            // console.log(html);
+            $(".mmm_list").html(html);
+
+        }
+    })
+}
+mmm_list();
+
+function product_list() {
+    $.ajax({
+        url: "http://139.199.192.48:9090/api/getmoneyctrl",
+        success: function (data) {
+            // console.log(data);
+            var html = template("product_list", data);
+            // console.log(html)
+            $(".product_list").html(html);
+        }
+    })
+}
+product_list();
+
+
+// 点击加载更多
+window.onload=function(){
+    function too() {
+
+        $(".mmm_list").on("click","ul>li>a:eq(7)",function(){
+       // console.log($(".mmm_list"))
+
+                 $(".mmm_list").css("overflow","auto");
+                 $(".mmm_list").animate({height:"100%"},1000);
+                 $(".mmm_list").addClass("show");
+                 $(".mmm_list").removeClass("hidden1");
+
+
+
+
+
+        })
+
+
+
+    }
+    too()
+
+    function xx(){
+
+        $(".mmm_list").on("click","ul>li>a:eq(5)",function(){
+               location.href="./pages/coupon.html"
+        })
+    }
+    xx()
+
+}

@@ -1,0 +1,53 @@
+var id='';
+$.ajax({
+  url: 'http://192.168.50.2:9090/api/getcategorytitle',
+  type: 'get',
+  success: function (info) {
+    // console.log(info);
+    // var id = info.result[1]._id;
+    // console.log(id);
+    var htmlStr = template('listclass_tpl', info);
+    // console.log(htmlStr);
+    $('#mmbuy_list').html(htmlStr);
+  },
+});
+
+$('#mmbuy_list').on('click','.family_electric',function(){
+  var id = $(this).attr('data-id');
+  var _this=$(this);
+  // console.log(id);
+ $.ajax({
+  url: 'http://192.168.50.2:9090/api/getcategory',
+  type: 'get',
+  data:{
+    titleid:Number(id),
+  },
+  success: function (info_2) {
+    console.log(info_2);
+    var htmlStr2 = template('info_tpl', info_2);
+    // console.log(htmlStr2);
+    $('#id'+id).html(htmlStr2);
+      // $('.family_electric span').toggleClass('.glyphicon glyphicon-menu-up');
+      //next与children混淆
+     _this.children().children("span").toggleClass('glyphicon-menu-up glyphicon-menu-down');
+
+    // _this.next().sibling().removeclass('.in');
+    // _this.siblings("a").
+    console.log();
+    
+    if(_this.children().children("span").attr("class").indexOf("glyphicon-menu-up")!=-1){
+      console.log('2');
+      
+      _this.siblings("a").addClass("collapsed");
+      _this.siblings("a").attr("aria-expanded","false")
+      // _this.parent().children(".collapse").addClass("in");
+      //  _this.children().children("span").toggleClass('glyphicon-menu-up glyphicon-menu-down');
+      // _this.siblings("a").classLIST
+    }else{
+      console.log('1');
+    }
+    _this.parent().children(".collapse").removeClass("in");
+  }
+});
+
+});

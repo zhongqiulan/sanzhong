@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/coudan/coudan.css">
+    <link rel="stylesheet" href="/views/public/css/coudan/font.css">
+
+</head>
+
+<body id="dingbu">
+    <div class="coudan">
+        <!--头部-->
+        <header>
+            <a href="javascript:;" class="arrow"><span class="glyphicon glyphicon-menu-left"></span></a>
+            <h1>凑单品</h1>
+            <a href="javascript:;" class="header_app"><img src="/views/public/images/header_app.png" alt=""></a>
+        </header>
+        <!--主题内容-->
+        <div class="coudan-header-content">
+            <!--导航-->
+            <div class="nav">
+                <div class="nav_left">
+                    <ul>
+                        <li><a href="javascript:;">京东<span class="icon-c"></span></a></li>
+                        <li><a href="javascript:;">华北<span class="icon-c"></span></a></li>
+                        <li><a href="javascript:;">1元<span class="icon-c"></span></a></li>
+                    </ul>
+                </div>
+                <div class="nav_search"><i class="icon-icon-cha"></i></div>
+            </div>
+            <!--下拉菜单-->
+            <div class="popbox popsort">
+                <ul>
+                   
+                </ul>
+            </div>
+            <div class="popbox poparea">
+               
+            </div>
+            <div class="popbox popprice">
+                <ul>
+                    <li><a href="javascript:;">全部价格<span class="icon-e"></span></a></li>
+                    <li><a href="javascript:;">1-3元<span></span></a></li>
+                    <li><a href="javascript:;">3-5元<span></span></a></li>
+                    <li><a href="javascript:;">5-10元<span></span></a></li>
+                    <li><a href="javascript:;">10-15元<span></span></a></li>
+                    <li><a href="javascript:;">15元以上<span></span></a></li>
+                </ul>
+            </div>
+            <div class="popbox popsearch">
+                <div class="input-group coudanSearch">
+                    <input type="text" class="form-control" placeholder="搜索您想要的凑单品" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">搜索</span>
+                    <span class="fadajing glyphicon glyphicon-search"></span>
+                </div>
+
+                <div class="sort select">
+                    <p>排序</p>
+                    <div class="list container-fluid">
+                        <ul class="row">
+                            <li class="col-xs-3"><a href="javascript:;">销量</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">价格↑</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">价格↓</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="category select">
+                    <p>分类</p>
+                    <div class="list container-fluid">
+                        <ul class="row">
+                            <li class="col-xs-3"><a href="javascript:;">全部</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">家具</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">数码</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">办公</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">个护</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">食品</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">母婴</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">服饰</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="coudan-body-content">
+           
+        </div>
+
+        <!--底部-->
+         <?php include "/views/common/footer.html" ?>
+    </div>
+    <?php include "/views/common/script.html" ?>
+
+    <script id="popsort_tmp" type="text/html">
+        <ul>
+            {{each result as v i}}
+            <li><a href="javascript:;" data-shopId="{{v.shopId}}">{{v.shopName}}<span></span></a></li>
+            {{/each}}
+        </ul>
+    </script>
+     <script id="poparea_tmp" type="text/html">
+        <ul>
+            {{each result as v i}}
+            <li><a href="javascript:;" data-areaId="{{v.areaId}}">{{v.areaName}}<span></span></a></li>
+            {{/each}}
+        </ul>
+    </script>
+    <script id="body_tmp" type="text/html">
+         <ul class="clearfix">
+             {{each result as v i}}
+                <li>
+                    <a href="javascript:;">
+                        <img src="{{v.productImg}}" alt="">
+                        <p>{{v.productName}}</p>
+                        <p class="money">{{v.productPrice}}</p>
+                    </a>
+                </li>
+                {{/each}}
+            </ul>
+    </script>
+    <script>
+        require(["js/coudan/coudan"])
+    </script>
+</body>
+
+</html>

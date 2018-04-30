@@ -1,0 +1,145 @@
+// 头部部分开始
+body {
+    background-color: rgb(242, 242, 242) !important;
+}
+
+#head {
+    background-color: #ff841d;
+    .headLogo {
+        position: relative;
+        >a {
+            display: block;
+            line-height: 0rem;
+            padding: .1rem;
+            padding-right: .6rem;
+            padding-left: .2rem;
+            img {
+                height: .5rem;
+            }
+        }
+        a.headApp {
+            position: absolute;
+            right: .1rem;
+            top: .1rem;
+            padding: 0;
+        }
+    }
+} // 输入框
+.sreach {
+    background-color: rgb(241, 241, 241);
+    padding-bottom: 10px;
+    padding-top: 20px;
+    input {
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        width: 107% !important;
+        color: #ccc;
+        font-weight: 700;
+    }
+    span {
+        border-radius: 20px !important;
+        position: relative;
+        z-index: 4;
+        background-color: #ff841d;
+        color: #fff;
+    }
+}
+
+// 表单验证板块
+.service {
+    form {
+        input {
+            width: 90%;
+            height: 36px;
+            margin: 8px auto;
+            display: block;
+            font: normal 16px "Microsoft-yahei";
+            color: #ccc;
+        }
+        #reg_button{
+            width: 90%;
+            height: 36px;
+            margin: 8px auto;
+            display: block;
+            font: normal 16px "Microsoft-yahei";
+            color: #ccc;
+            background-color: rgb(255, 159, 34);
+            border:none;
+            border-radius: 5px;
+        }
+        >span{
+            display: block;
+            text-align: left;
+            padding-left:25px;
+            font-size: 14px;
+        }
+        .data {
+            margin: 8px auto;
+            width: 90%;
+            span{
+                line-height: 38px;
+                text-align: center;
+                float:left;
+                margin-bottom: 10px;
+                margin-right:5px;
+            }
+            .random {
+                display: inline-block;
+                border: 1px solid #ccc;
+                width: 66px;
+                height: 38px;
+                font-family:Arial,Helvetica,sans-serif;
+                font-size: 24px;
+                color:greenyellow;
+            }
+            .verify{
+                display: inline-block;
+                width: 100px;
+                height: 38px;
+                border: 1px solid #ccc;
+                font-family:"微软雅黑","黑体","宋体";
+                font-size: 16px;
+                i{
+                  opacity: 0;
+                  color:gold;
+                }
+            }
+            .obtain{
+                display: inline-block;
+                width: 150px;
+                height: 38px;
+                border: 1px solid #ccc;
+                font-family:Arial, Helvetica, sans-serif; 
+                font-size: 14px;
+                border-radius: 5px;
+            }
+        }
+    }
+} //底部区域
+#footer {
+    background-color: #f1f1f1;
+    font-size: .24rem;
+    text-align: center;
+    padding-top: .4rem;
+    ul {
+        text-align: center;
+        li {
+            border-top: .01rem solid #ccc;
+            border-bottom: .01rem solid #ccc;
+            a {
+                display: block;
+                padding: .12rem 0;
+            }
+        }
+        li:nth-of-type(2) {
+            border-left: .01rem solid #ccc;
+            border-right: .01rem solid #ccc;
+        }
+    }
+    >p {
+        padding-top: 15px;
+        >a:first-of-type {
+            color: red;
+        }
+    }
+}

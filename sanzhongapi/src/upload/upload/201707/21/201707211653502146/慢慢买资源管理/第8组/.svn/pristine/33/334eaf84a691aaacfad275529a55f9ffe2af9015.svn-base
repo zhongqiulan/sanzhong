@@ -1,0 +1,262 @@
+@import "init.css";
+@import "font-icon.css";
+header {
+  position: relative;
+  width: 100%;
+  height: 44px;
+  padding: 0 50px;
+  background-color: #ff841d;
+}
+header .logo {
+  position: absolute;
+  width: 200px;
+  height: 44px;
+  top: 0;
+  left: 0;
+  background-image: url('../../images/header_logo.png');
+  background-size: 182px 25px;
+  background-repeat: no-repeat;
+  background-position: 8px 10px;
+}
+header .AppDownLoad {
+  position: absolute;
+  width: 50px;
+  height: 44px;
+  top: 0;
+  right: 0;
+  background-image: url('../../images/header_app.png');
+  background-size: 34px 34px;
+  background-repeat: no-repeat;
+  background-position: 8px 6px;
+}
+.search {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.search .form-group {
+  float: left;
+  width: 78%;
+  margin-right: 5px;
+  margin-bottom: 0px;
+}
+.search .form-group input {
+  border-radius: 20px;
+  background-color: #f1f1f1;
+}
+.search .btn {
+  border-radius: 20px;
+  padding: 6px 20px;
+  background-color: #ff841d;
+  color: white;
+}
+nav {
+  width: 100%;
+  height: 38px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  padding-left: 10px;
+  margin-bottom: 10px;
+}
+nav a {
+  line-height: 38px;
+  font-size: 13px;
+  margin-right: 3px;
+}
+nav a:visited {
+  text-decoration: none;
+}
+nav a:active {
+  text-decoration: none;
+}
+nav #backBtn {
+  float: right;
+  width: 40px;
+  height: 25px;
+  margin: 5px 10px 0 0;
+  border: 1px solid #ccc;
+  font-size: 15px;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 25px;
+}
+.tradeList h2 {
+  color: #a27343;
+  height: 38px;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  background-color: #eeeeee;
+  margin-bottom: 10px;
+}
+.tradeList ul {
+  margin-bottom: 10px;
+}
+.tradeList ul .Top10 {
+  width: 100%;
+  color: black;
+  font-weight: 600;
+  line-height: 28px;
+  padding: 5px;
+  padding-left: 10px;
+  border-top: 1px solid #ccc;
+  background-color: #ededed;
+}
+.tradeList ul .Top10 i {
+  float: right;
+  font-weight: 100;
+}
+.tradeList ul .TopList {
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+.tradeList ul .TopList .media {
+  margin-top: 0;
+  padding: 10px 0;
+}
+.tradeList ul .TopList .media .media-left span {
+  width: 18px;
+  height: 18px;
+  background-color: #c9c9c9;
+  margin-left: 10px;
+  color: white;
+  text-align: center;
+}
+.tradeList ul .TopList .media .media-left span.red {
+  background-color: #f10e0f;
+}
+.tradeList ul .TopList .media .media-left span.yellow {
+  background-color: #ff9314;
+}
+.tradeList ul .TopList .media .media-left span.green {
+  background-color: #8adf5b;
+}
+.tradeList ul .TopList .media .media-body {
+  color: #b6b6b6;
+}
+.tradeList ul .TopList .media .media-body h4 {
+  color: #393939;
+  font-weight: 600;
+  padding-top: 3px;
+}
+.tradeList ul .TopList .media .media-body i {
+  float: right;
+  margin: -10px 5px 0 0;
+  font-size: 20px;
+  font-weight: 100;
+}
+.tradeList ul .TopInfo {
+  border-top: 1px solid #ccc;
+  padding: 3px 0;
+}
+.tradeList ul .TopInfo .media .media-left {
+  width: 30%;
+}
+.tradeList ul .TopInfo .media .media-left img {
+  width: 100%;
+}
+.tradeList ul .TopInfo .media .media-body h4 {
+  font-size: 15px;
+  color: #6f6f6f;
+  line-height: 23px;
+}
+.tradeList ul .TopInfo .media .media-body span {
+  display: inline-block;
+  padding: 4px 0px;
+  font-size: 16px;
+  color: red;
+}
+.tradeList ul .TopInfo .media .media-body p span {
+  font-size: 12px;
+  margin-right: 5px;
+  color: #b6b6b6;
+}
+.tradeList ul .comment .media .media-left {
+  width: 30%;
+}
+.tradeList ul .comment .media .media-left img {
+  width: 100%;
+}
+.tradeList ul .comment .media .media-body h4 {
+  font-size: 15px;
+  color: #6f6f6f;
+  line-height: 23px;
+}
+.tradeList ul .comment .outerBox {
+  border: 1px solid #ccc;
+  margin: 15px 10px 10px 10px;
+}
+.tradeList ul .comment .outerBox .comment_con {
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+.tradeList ul .comment .outerBox .comment_con p {
+  margin: 5px 15px 5px 0px;
+  color: black;
+}
+.tradeList ul .comment .outerBox .comment_con p span:nth-of-type(2) {
+  float: right;
+}
+.tradeList ul .comment .outerBox .comment_con p:nth-of-type(2) {
+  text-align: right;
+}
+footer {
+  text-align: center;
+}
+footer #login {
+  width: 100%;
+  text-align: center;
+}
+footer #login i {
+  float: left;
+  height: 35px;
+  line-height: 35px;
+  width: 33.333%;
+  font-style: normal;
+  border: 1px solid #ccc;
+  border-left: none;
+  border-right: none;
+  box-sizing: border-box;
+  background-color: #efefef;
+}
+footer #login i:nth-of-type(2) {
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+}
+footer .copy {
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #ccc;
+  font-style: normal;
+  padding: 10px;
+  font-size: 12px;
+  color: #8b8b8b;
+  background-color: #efefef;
+}
+footer .copy span:nth-of-type(1) {
+  color: red;
+  font-weight: 600;
+}
+footer .copy span:nth-of-type(2) {
+  color: black;
+}
+.TopBtn {
+  position: fixed;
+  display: none;
+  bottom: 50px;
+  right: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  text-align: center;
+}
+.TopBtn span {
+  line-height: 40px;
+  font-size: 23px;
+  color: skyblue;
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css"> 
+    <link rel="stylesheet" href="../../css/fl/discount.css">
+</head>
+<body>
+    <nav>
+        <span class="glyphicon glyphicon-menu-left"></span>
+        <h1>海淘折扣</h1>
+         <img src="../../images/header_app.png" alt="">
+    </nav>
+    <div class="container" id="container">
+
+    </div>
+     <div class="blank">
+    </div>
+    <div class="container tool">
+        <div class="row">
+            <a href="javascript:;" class="col-xs-4 btn btn-sm">登录</a>
+            <a href="javascript:;" class="col-xs-4 btn btn-sm">注册</a>
+            <a href="#" class="col-xs-4 btn btn-sm" id="returnTop">返回顶部</a>
+        </div>
+    </div>
+
+ 
+       
+    <div class="footer">
+        <p>
+            <a href="javascript:;" class="app">手机APP下载</a>-<a href="javascript:;" class="cellphone">
+                慢慢买手机版</a> -- 掌上比价平台</p>
+        <p class="website">
+            m.manmanbuy.com 
+        </p>
+    </div>
+    
+    <script type="text/template" id="containerTemplate">
+        <!--文章模块  -->
+        <div class="mainText">
+            <h4 class="title"> {{productName}}</h4>
+            <h4>89元</h4>
+            <div class="info">
+                <span class="mall">{{productFrom}}</span>
+                <span class="addtime" style="margin-right: 4px;">{{productTime}}</span> <span class="author">{{productTips}}</span>
+                <span class="author"><a href="#">{{productComCount}}</a></span>
+            </div>
+            <div class="content">
+                {{#productImgSm}}
+                <p>{{productInfo}}</p>
+                <p>{{productInfo2}}</p>
+            </div>
+        </div>
+
+        <!--购买部分  -->
+        <div class="purchase">
+
+            <div class=" btn btn-lg goPurchase">前往购买</div>
+        </div>
+   
+        <div>
+            {{#productComment}}
+        </div>
+
+        <div class="href">
+            <a href="../../index.html">首页</a>
+            >
+            <a href="./saveMoney.html">省钱控</a>
+            >
+            <a href="#">国内折扣</a>
+        </div>
+    </script>
+
+    <script src="../../libs/jquery/jquery.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../../js/template.js"></script>
+    <script src="../../js/fl/discount.js"></script>
+</body>
+</html>

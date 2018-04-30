@@ -1,0 +1,116 @@
+body {
+  background-color: #f2f2f2 !important;
+}
+#head {
+  background-color: #ff841d;
+}
+#head .headLogo {
+  position: relative;
+}
+#head .headLogo > a {
+  display: block;
+  line-height: 0rem;
+  padding: .1rem;
+  padding-right: .6rem;
+  padding-left: .2rem;
+}
+#head .headLogo > a img {
+  height: .5rem;
+}
+#head .headLogo a.headApp {
+  position: absolute;
+  right: .1rem;
+  top: .1rem;
+  padding: 0;
+}
+.sreach {
+  background-color: #f1f1f1;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+.sreach input {
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
+  width: 107% !important;
+  color: #ccc;
+  font-weight: 700;
+}
+.sreach span {
+  border-radius: 20px !important;
+  position: relative;
+  z-index: 4;
+  background-color: #ff841d;
+  color: #fff;
+}
+.message form input {
+  display: block;
+  width: 90%;
+  height: 36px;
+  margin: 10px auto;
+  color: #ccc;
+  border: none;
+  font-weight: 600;
+  border: 1px solid #ccc;
+  font-weight: 'Microsoft-yahei';
+  font-size: 14px;
+}
+.message form .btnlogin {
+  display: block;
+  width: 90%;
+  height: 36px;
+  margin: 8px auto;
+  background-color: #ffa32c;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border: 1px solid #ccc;
+}
+.message form input[type='checkbox'] {
+  display: inline-block;
+  margin-left: 20px;
+  width: 15px;
+  height: 15px;
+  text-align: left;
+}
+.message form span {
+  color: #000;
+  font-weight: normal;
+  font-size: 14px;
+  vertical-align: middle;
+}
+.forget span {
+  display: block;
+  margin-top: 50px;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #ccc;
+  font: normal 14px 'Microsoft-yahei';
+}
+#footer {
+  background-color: #f1f1f1;
+  font-size: .24rem;
+  text-align: center;
+  padding-top: .4rem;
+}
+#footer ul {
+  text-align: center;
+}
+#footer ul li {
+  border-top: .01rem solid #ccc;
+  border-bottom: .01rem solid #ccc;
+}
+#footer ul li a {
+  display: block;
+  padding: .12rem 0;
+}
+#footer ul li:nth-of-type(2) {
+  border-left: .01rem solid #ccc;
+  border-right: .01rem solid #ccc;
+}
+#footer > p {
+  padding-top: 15px;
+}
+#footer > p > a:first-of-type {
+  color: red;
+}

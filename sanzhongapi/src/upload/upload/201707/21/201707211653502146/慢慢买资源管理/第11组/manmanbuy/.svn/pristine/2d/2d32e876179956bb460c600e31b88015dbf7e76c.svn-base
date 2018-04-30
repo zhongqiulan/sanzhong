@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>肯德基等优惠券--慢慢买</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/views/public/css/coupon/coupon.css">
+</head>
+<body id="dingbu">
+    <div class="couponindex">
+        <div class="view">
+            <header>
+                <span class="glyphicon glyphicon-menu-left goBack"></span>
+                <h1>优惠券</h1>
+                <a href="###"><img src="/views/public/images/header_app.png" alt=""></a>
+            </header>
+            <div class="content clearfix">
+                        <!--优惠券-->
+                            <!--<div class="ken">
+                                <img src="/views/public/uploads/kfc-5ikfc-71_p23.jpg" alt="">
+                                <p>肯德基</p>
+                            </div>
+
+                             <div class="ken">
+                                <img src="" alt="">
+                                <p>肯德基</p>
+                            </div>
+                            <div class="ken">
+                                <img src="" alt="">
+                                <p>肯德基</p>
+                            </div>-->
+                
+            </div>
+            <div class="back">
+                <div class="youhui">
+                    <a href="/">首页</a>
+                    >
+                    <a href="">优惠券</a>
+                </div>
+            </div>
+            <!--<footer>
+                <div class="menu">
+                    <ul class="clearfix">
+                        <li><a href="###">登录</a></li>
+                        <li><a href="###">注册</a></li>
+                        <li><a href="###"><img src="/views/public/uploads/top.jpg" alt="">返回顶部</a></li>
+                    </ul>
+                </div>
+                <div class="xinxi">
+                    <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </footer>-->
+            <?php include '/views/common/footer.html' ?>
+            <div class="fix">
+                <img src="/views/public/uploads/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt="">
+            </div>
+        </div>
+    </div>
+</body>
+<?php include '/views/common/script.html' ?>
+<script>
+    require(['js/coupon/cindex']);
+</script>
+
+<script id="info" type="text/html">
+                    {{each result as val i}}
+
+                            <div class="ken" data-id="{{val.couponId}}" data-name="{{val.couponTitle}}">
+                                <img src="{{val.couponImg?val.couponImg:'肯德基'}}" alt="">
+                                <p>{{val.couponTitle}}</p>
+                            </div>
+    
+                    {{/each}}
+</script>
+</html>

@@ -1,0 +1,257 @@
+    .fl {
+        float: left;
+    }
+
+    .fr {
+        float: right;
+    }
+
+    .qinrongze {
+        // 头部
+        .header1 {
+            height: 50px;
+            width: 100%;
+            background-color: #ff841d;
+            border-bottom: 1px solid #e6e6e6;
+            .logo {
+                margin-left: 5px;
+                padding: 12px; // width: 77.4%;
+                a {
+                    display: block;
+                    height: 100%;
+                    img {
+                        height: 25px;
+                    }
+                }
+            }
+            .appdown {
+                // width: 12.6%;
+                height: 100%;
+                padding: 7px;
+                a {
+                    text-decoration: none;
+                    img {
+                        height: 34px;
+                    }
+                }
+            }
+        } // 搜索框
+        .search1 {
+            border-bottom: 1px solid #e6e6e6;
+            height: 51px;
+            padding: 10px;
+            input {
+                border-radius: 15px;
+                border: none;
+                background-color: #f1f1f1;
+                font-size: 16px;
+                height: 30px;
+                padding-left: 20px;
+            }
+            span {
+                border-radius: 15px;
+                background-color: #ff841d;
+                color: white;
+                font-size: 16px;
+            }
+        } // 首页表单
+        .aspnetForm {
+            font-style: normal; //    菜单按钮
+            .menu {
+                margin-top: 14px;
+                background-color: white;
+                padding: 6px 0px;
+                // height: 200px;
+                .col-xs-3 {
+                    padding: 0;
+                    .thumbnail {
+                        width: 100%;
+                        height: 70px;
+                        border-style: none;
+                        text-align: center;
+                        img {
+                            height: 50px;
+                            width: 50px;
+                        }
+                    }
+                }
+            } // 超值折扣推荐
+            .czzktj {
+                height: 35px;
+                width: 100%;
+                background-color: #ff9000;
+                background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+                span {
+                    color: white;
+                    float: left;
+                    font-weight: bolder;
+                    font-size: 18px;
+                    padding-left: 7px;
+                    line-height: 35px;
+                }
+                img {
+                    float: right;
+                    line-height: 35px;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 8px;
+                    margin-right: 9px;
+                }
+            } //  数据商品列表 
+            .list {
+                width: 100%;
+                background-color: #ffffff;
+                text-align: left;
+                font-size: 14px;
+                margin: 0 auto;
+                .cu-list {
+                    padding: 10px 5px;
+                    list-style: none;
+                    a {
+                        display: block;
+                        width: 100%;
+                        .pic {
+                            margin-right: 3px;
+                            width: 100px;
+                            height: 100px;
+                            float: left;
+                            img {
+                                display: block;
+                                width: 100px;
+                                height: 100px;
+                            }
+                        }
+                        .info {
+                            padding-left: 100px;
+                            display: block;
+                            color: black;
+                            .br-none {
+                                color: white;
+                            }
+                            span {
+                                color: #ff6c00;
+                            }
+                            .other {
+                                span {
+                                    color: gray;
+                                }
+                                .mall {
+                                    font-size: 12px;
+                                    float: left;
+                                }
+                                .comment {
+                                    float: right;
+                                    padding-right: 5px;
+                                    img {
+                                        margin-top: -3px;
+                                    }
+                                    i {
+                                        color: gray;
+                                        font-size: 12px;
+                                        float: right;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .more-bar {
+                display: block;
+                background: black;
+                text-align: center;
+                width: 100%;
+                height: 45px;
+                background: #f4f4f4;
+                .a-button {
+                    margin-top: 10px;
+                    padding: 0 15px;
+                    margin-bottom: 10px;
+                    position: relative; //  margin: 0 auto;
+                    a {
+                        position: absolute;
+                        top: 10px; // line-height: 20px;
+                        border: 1px solid #f4f4f4;
+                        display: block;
+                        width: 80%;
+                        color: gray;
+                        border-radius: 12px;
+                        margin-left: 40px;
+                        background: white;
+                    }
+                }
+            }
+        }
+        footer {
+            // 品牌排行
+            .ppph {
+                float: left;
+                margin: 10px 0;
+                height: 35px;
+                width: 100%;
+                background-color: #ff9000;
+                background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+                span {
+                    color: white;
+                    float: left;
+                    font-weight: bolder;
+                    font-size: 18px;
+                    padding-left: 7px;
+                    line-height: 35px;
+                }
+                img {
+                    float: right;
+                    line-height: 35px;
+                    width: 20px;
+                    height: 20px;
+                    margin-top: 8px;
+                    margin-right: 9px;
+                }
+            } // 底部
+            position: relative;
+            background: #efefef;
+            .menu-footer {
+                ul {
+                    padding: 0;
+                    margin: 0;
+                    list-style: none;
+                }
+                li {
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    border-bottom: 1px solid #c4c4c4;
+                    border-top: 1px solid #c4c4c4;
+                    float: left;
+                    width: 33.3%;
+                    &:nth-of-type(2) {
+                        border: 1px solid #c4c4c4;
+                    }
+                    a {
+                        display: block;
+                        color: #000;
+                    }
+                }
+            }
+            .xinxi {
+                font-size: 12px;
+                text-align: center;
+                padding: 15px 0;
+                p {
+                    margin: 0;
+                    color: #747474;
+                    a {
+                        &:nth-of-type(1) {
+                            color: red;
+                        }
+                        &:nth-of-type(2) {
+                            color: #000;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .well{
+        padding: 0;
+    }

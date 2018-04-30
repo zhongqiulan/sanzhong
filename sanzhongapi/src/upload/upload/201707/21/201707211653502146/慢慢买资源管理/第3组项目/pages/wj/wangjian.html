@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="../../css/wj/wj_base.css"/>    
+    <link rel="stylesheet" href="../../css/wj/wj_index.css"/>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../../css/wj/head.css">
+</head>
+<body>
+<div class="view">
+    <!--头部-->
+    <div class="header">
+        <div class="head_left">
+                <a style="color:white" href="javascript:;"><span class="glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <h1>凑单品</h1>
+        <div class="head_right"></div>
+    </div>
+    <!-- 按钮式下拉菜单 -->
+    <div class="xiala_menu">
+        <div class="hd">
+            <div class="filter">
+                <ul class="clearfix">
+                    <li class="tab_item" id="num1"><a href="javascript:;"><span>京东</span><i></i></a></li>
+                    <li class="tab_item" id="num2"><a href="javascript:;"><span>华北</span><i></i></a></li>
+                    <li class="tab_item"><a href="javascript:;">全部价格<i></i></a></li>
+                    <li class="tab_item"><a href="javascript:;"><i></i></a></li>
+                </ul>
+            </div>           
+        </div>
+        <!--各种下拉--> 
+        <div class="popbox dianpu abtn">
+            <ul class="shopname">
+                <!--<li><a href="javascript:;">京东</a> </li>-->           
+            </ul>
+        </div>
+        <div class="popbox quyu abtn">
+            <ul class="areaName">
+                <!--<li><a href="javascript:;">华北（北京、山西等）</a></li>-->
+            </ul>
+        </div>              
+        <div class="popbox">
+            <ul>
+                <li><a href="javascript:;">全部价格</a></li>
+                <li><a href="javascript:;">1-3元</a></li>
+                <li><a href="javascript:;">3-5元</a></li>
+                <li><a href="javascript:;">5-10元</a></li>
+                <li><a href="javascript:;">10-15元</a></li>     
+                <li><a href="javascript:;">15元以上</a></li>     
+            </ul>
+        </div>
+        <div class="popbox popsearch ">
+            <div class="shang">
+                <input type="text" placeholder="搜索您想要的凑单品">
+                <span class="aa">搜索</span>
+                <span class="bb"></span>
+            </div>
+            <div class="zhong on">
+                <p>排序</p>
+                <ul class="zhong_ul clearfix">
+                    <li><a class="morense" href="javascript:;">销量</a></li>
+                    <li><a href="javascript:;">价格↑</a></li>
+                    <li><a href="javascript:;">价格↓</a></li>
+                </ul>
+            </div>
+            <div class="zhong on">
+                <p>分类</p>
+                <ul class="zhong_ul clearfix">
+                    <li><a class="morense" href="javascript:;">全部</a></li>
+                    <li><a href="javascript:;">家居</a></li>
+                    <li><a href="javascript:;">数码</a></li>
+                    <li><a href="javascript:;">办公</a></li>
+                    <li><a href="javascript:;">个护</a></li>
+                    <li><a href="javascript:;">食品</a></li>
+                    <li><a href="javascript:;">母婴</a></li>
+                    <li><a href="javascript:;">服饰</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--主要内容-->
+        <div class="bd">
+            <ul class="clearfix product">
+                <!--<li><a href="javascript:;">
+                    <img src="images/pic1.jpg" alt="">
+                    <p>钱江 美味榨菜 60g/袋 酱菜榨菜下饭菜 杭州特产</p>
+                    <em>￥</em><span>0.01</span>
+                </a></li>               -->
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="bottom_info">
+            <div class="footer">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="javascript:;" id="top"><i><img src="../../images/top.jpg" alt=""/></i>返回顶部</a></li>
+                </ul>
+                <p class="app-info">
+                    <a href="javascript:;">
+                        <span class="red-app">手机APP下载</span>
+                        <span>慢慢买手机版--掌上手机平台</span> <br/>
+                        <span>m.manmanbuy.com.</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+</body>
+<script src="../../libs/jquery/jquery.js"></script>
+<script src="../../libs/bootstrap/js/bootstrap.js"></script>
+<script src="../../js/template.js"></script>
+<script src="../../js/wj/wj_index.js"></script>
+<script src="../../js/public.js"></script>
+<!--商品店铺-->
+<script type="text/template" id="dianpu">
+    {{each result as v i}}
+        <li data-id={{v.shopId}}><a href="javascript:;">{{v.shopName}}</a></li>
+    {{/each}}
+</script>
+<!--商品区域-->
+<script type="text/template" id="quyu">
+{{each result as v i}}
+    <li data-id={{v.areaId}}><a href="javascript:;">{{v.areaName}}</a></li>
+{{/each}}
+</script>
+<!--主要内容-->
+<script type="text/template" id="contentZY">
+{{each result as v i}}
+    <li data-id={{v.productId}}><a href="javascript:;">
+        <img src="{{v.productImg}}" alt="">
+        <p>{{v.productName}}</p>
+        <em>￥</em><span>{{v.productPrice}}</span>
+    </a></li>
+{{/each}}
+</script>
+
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/公共的.css">
+</head>
+<body>
+
+
+
+
+    <!--头部-->
+      <div class="mmm_top">
+        <div class="top_conten">
+            <a href="javascript:;">
+                <span class="top_img_left"></span>
+                <span class="top_img_right"></span>
+            </a>
+        </div>
+    </div>
+
+
+    <!--搜索框-->
+    <div class="mmm_search clearfix">
+        <div class="mmm_conten">
+            <span>
+            <input type="text" placeholder="请输入你想比较的商品">
+       </span>
+            <span>
+         <a href="javascript:;">按钮</a>
+       </span>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--底部-->
+        <div class="mmm_bottom clearfix">
+        <ul>
+            <li></li>
+            <li class="clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a>
+            </li>
+            <li class="clearfix hehe">
+             
+                <p>
+                    <span>手机APP下载</span>
+                    <span>慢慢买手机版--</span>
+                    <span>掌上比价平台</span>
+                </p>
+                <h4>m.manmanbuy.com</h4>
+            </li>
+        </ul>
+        
+    </div>
+</body>
+</html>

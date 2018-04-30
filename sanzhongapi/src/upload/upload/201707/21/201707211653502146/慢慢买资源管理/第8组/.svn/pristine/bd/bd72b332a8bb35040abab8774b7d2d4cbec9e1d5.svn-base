@@ -1,0 +1,139 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  margin-bottom: 10px;
+}
+.navbar .container-fluid {
+  background-color: #ff841d;
+}
+.navbar .container-fluid .header-logo a.navbar-brand img {
+  height: 25px;
+}
+.navbar .container-fluid .app-download img {
+  height: 34px;
+  margin: 8px;
+}
+.container {
+  margin-bottom: 10px;
+}
+.container .col-md-12 div.input-group {
+  width: 100%;
+}
+.container .col-md-12 input.form-control {
+  border-radius: 17px;
+  background-color: #f1f1f1;
+  width: 110%;
+}
+.container .col-md-12 span.input-group-addon {
+  position: relative;
+  border-radius: 17px;
+  background-color: #ff841d;
+  color: white;
+  width: 60px;
+  z-index: 2;
+}
+.main {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.main ol.breadcrumb {
+  margin: 0;
+}
+.main ul.commodity_title {
+  border-bottom: 1px solid #e3e3e3;
+}
+.main ul.commodity_title:after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+}
+.main ul.commodity_title > li {
+  float: left;
+  width: 25%;
+  height: 40px;
+  text-align: center;
+  line-height: 35px;
+  padding: 5px 0;
+}
+.main ul.commodity_list > li {
+  position: relative;
+  border-bottom: 1px solid #eeeeee;
+  padding: 10px 10px 10px 132px;
+}
+.main ul.commodity_list > li .left {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  height: 110px;
+  width: 128px;
+  line-height: 110px;
+  text-align: center;
+}
+.main ul.commodity_list > li .right {
+  height: 110px;
+  padding-top: 5px;
+}
+.main ul.commodity_list > li .right .name {
+  height: 40%;
+  font-size: 16px;
+}
+.main ul.commodity_list > li .right .price {
+  height: 25%;
+  font-size: 18px;
+  color: red;
+}
+.main ul.commodity_list > li .right .info a {
+  color: #cdcdcd;
+  float: left;
+}
+.main ul.commodity_list > li .right .info a + a {
+  float: right;
+}
+footer {
+  overflow: hidden;
+}
+footer .navbar {
+  height: 100px;
+  margin: 0;
+  background-color: #efefef;
+}
+footer .navbar .row div {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+footer .navbar .row div a {
+  color: black;
+  font-size: 14px;
+}
+footer .navbar .row div a span {
+  color: #747474;
+  font-size: 12px;
+}
+footer .navbar .row div:nth-of-type(2) {
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+}
+footer .navbar div.app-updown {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+footer .navbar div.app-updown a {
+  color: red;
+}
+footer .navbar div.app-updown span:first-of-type {
+  color: black;
+}
+footer .navbar div.app-updown span:last-of-type {
+  color: #7b7b7b;
+}
+footer .navbar div.app-updown p {
+  color: #7b7b7b;
+}

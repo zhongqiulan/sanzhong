@@ -1,0 +1,181 @@
+.views header {
+  width: 100%;
+  height: 50px;
+  background-color: #ff841d;
+}
+.views header .logo {
+  padding: 12px;
+}
+.views header .logo img {
+  max-height: 25px;
+}
+.views header .app-download {
+  padding: 7px;
+}
+.views header .app-download img {
+  max-height: 34px;
+}
+.views .searchBox {
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  font-size: 16px;
+  border-bottom: 1px solid #ccc;
+}
+.views .searchBox input {
+  padding: 0;
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  border: none;
+  padding-left: 20px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  position: absolute;
+}
+.views .searchBox .search_btn {
+  width: 66px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #ff841d;
+  border-radius: 15px;
+  color: #fff;
+  border: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+#content{
+   .info_top{
+    ul{
+      // background-color: #ebebeb;
+         background-color: #ccc;
+         width: 100%;
+         height: 30px;
+         line-height: 30px;
+      li{
+        float: left;
+      }
+    }
+  }
+  img{width: 10%}
+  .nav_tab{
+    .nav{
+      border: none;
+      .active{
+          a{
+          color: red;
+          }
+      }
+      a{
+        border: none;
+
+      }
+    }
+  }
+  .tab_panes{
+    .tab-content{
+      //文字环绕图片浮动
+      img{  
+        float: left;
+        //  position: absolute;
+      }
+      .left_img{
+         padding-left: 50px;
+      }
+     .tab_info{
+      //  width: 100%;
+      //  padding-left: 100px;
+       margin-left: 170px;
+      .current_info{
+       font-size: 16px;
+       padding: 5px;
+      }
+      .current_price{
+        color: red;
+        font-size: 17px;
+        padding: 3px;
+    
+      }
+      .other_price{
+        margin-top: 5px;
+        font-size: 12px;
+        color: #ccc;
+        .left{}
+        .right{
+         float: right;
+        }
+      }
+      }
+    }  
+  }
+  #list_page{
+    background-color: #f2f2f2;
+      margin-top:20px;
+      .list_btn{
+        li{
+          float:left;
+          width: 33.33%;
+        }
+          //&:nth-of-type{} 
+        button,select{
+          display: block;
+          width:70%;
+          padding: 7px;
+          // margin-left: 20px;
+          margin: 0 auto;
+        }
+      }
+     .list_href{
+       margin-left: 10px;
+      p{
+        font-size: 16px;
+      }
+      span{
+        font-size: 12px;
+        color: #ccc;
+      }
+     }
+     .foot_bar{
+        width: 100%;
+        height: 34px;
+        line-height: 34px;
+        margin-top: 10px;
+        text-align: center;
+        ul{
+            li{
+                float: left;
+                width: 33.33%;
+                border-top: 1px solid #ccc;
+                border-bottom: 1px solid #ccc;
+                &+li{
+                    border-left: 1px solid #ccc;
+                }
+                .icon-top{
+                    font-size: 15px;
+                }
+            }
+        }
+    }
+    footer{
+        width: 100%;
+        text-align: center;
+        color:#5a5a5a;
+        font-size: 12px;
+        padding: 15px 0;
+        .foot_top{
+            a{
+                display: inline-block;
+            }
+            a:nth-of-type(1){
+                color:red;
+            }
+        }
+    }
+}
+  
+}

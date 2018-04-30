@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>比价商品列表</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/wl/common.css">
+    <link rel="stylesheet" href="../../css/wl/list.css">
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+
+    
+        <!-- 顶部logo区域 -->
+        <div class="topLogo">
+           <h1 class="logo"><a href="../../index.html"><img src="../../images/header_logo.png" alt=""/></a></h1>
+           <div class="download"> <a href="#"><img src="../../images/header_app.png" alt=""> </a></div>
+        </div>
+        <!-- 搜索通栏区域 -->
+        <div class="search">
+            <input type="text" class="txt" placeholder="请输入你想比价的商品"/>
+            <input type="button" class="search-btn" value="搜索"/>
+        </div>
+
+
+<div class="maincontent">
+   <div class="navtable">
+    <ul class="navbar">
+        <li><a class="active_wl" href="#">综合</a></li>
+        <li><a href="#">销量</a></li>
+        <li><a href="#">价格</a></li>
+        <li id="choice_wl"><a href="#"><i class="icon"></i>筛选</a></li>
+    </ul>
+   </div>
+   <div class="navcontianer">
+    <!--<div class="pagenav">
+       <div class="media">
+         <div class="media-left">
+         <a href="#">
+           <img class="media-object" src="../images/ice.jpg" alt="海尔(Haier) BCD-160TMPQ 160升 双门冰箱">
+         </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">海尔(Haier) BCD-160TMPQ 160升 双门冰箱</h4>
+            <p><em>¥</em>998</p>
+            <div class="other">
+                <span>10商城报价</span>
+                <span>有5674人评论</span>
+            </div>
+        </div>
+       </div>
+       <div class="media">
+         <div class="media-left">
+         <a href="#">
+           <img class="media-object" src="../images/ice.jpg" alt="海尔(Haier) BCD-160TMPQ 160升 双门冰箱">
+         </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">海尔(Haier) BCD-160TMPQ 160升 双门冰箱</h4>
+            <p><em>¥</em>998</p>
+            <div class="other">
+                <span>10商城报价</span>
+                <span>有5674人评论</span>
+            </div>
+        </div>
+       </div>
+    </div>
+   <div class="bottom_wl">
+      <span>上一页</span>
+      <select name="" id="">
+            <option>1/16</option>
+            <option>2/16</option>
+      </select>
+      <span> 下一页</span>
+      <div class="linklist">
+          <p>相关链接</p>
+          <a href="#">海尔官网</a>
+          <a href="#">格力官网</a>
+      </div>
+   </div>-->
+   </div>
+</div>
+<!--侧边/////////////////////////////////-->
+<div class="asidecontent">
+</div>
+<div class="content">
+        <h4>筛选 <i class="close_wl glyphicon glyphicon-remove"></i></h4>
+        <!--具体的筛选分类-->
+        <div class="choice_row">
+            <div class="rowhead">
+                <span class="ppname">品牌</span>
+                <span class="allpp">全部品牌</span>
+                <span class="bottombtn glyphicon glyphicon-menu-down"></span>
+            </div>
+            <div class="rowbody">
+                <ul>
+                    <li><a href="">全部品牌</a></li>
+                    <li><a href="">海信</a></li>
+                    <li><a href="">长虹</a></li>
+                    <li><a href="">乐事</a></li>
+                    <li><a href="">创维</a></li>
+                    <li class="sixli"><a href="">TCL</a></li>
+                    <li><a href="">全部品牌</a></li>
+                    <li><a href="">海信</a></li>
+                    <li><a href="">长虹</a></li>
+                    <li><a href="">乐事</a></li>
+                    <li><a href="">创维</a></li>
+                    <li><a href="">TCL</a></li>
+                </ul>
+            </div>
+        </div>
+</div>
+    <div class="bottom_info">
+            <div class="footer">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="javascript:;" id="top"><i><img src="../../images/top.jpg" alt=""/></i>返回顶部</a></li>
+                </ul>
+                <p class="app-info">
+                    <a href="javascript:;">
+                        <span class="red-app">手机APP下载</span>
+                        <span>慢慢买手机版--掌上手机平台</span> <br/>
+                        <span>m.manmanbuy.com.</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+</body>
+<script src="../../libs/jquery/jquery.js"></script>
+<script src="../../libs/bootstrap/js/bootstrap.js"></script>
+<script src="../../libs/artTemplate/template.js"></script>
+<script src="../../libs/common/netcommon.js"></script>
+<script src="../../js/wl/list.js"></script>
+<!--列表模版/////////////////////////////////////////////////////////-->
+<script type="text/html" id="list_tpls">
+  <div class="pagenav">
+      {{each result as v i}}
+       <div class="media">
+         <a href="xiangqing.html?productid={{v.productId}}&categoryid={{v.categoryId}}">
+         <div class="media-left">
+             <span class="media-object">{{#v.productImg}}</span>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{v.productName}}</h4>
+            <p>{{v.productPrice}}</p>
+            <div class="other">
+                <span>{{v.productQuote}}</span>
+                <span>{{v.productCom}}</span>
+            </div>
+        </div>
+        </a>
+       </div>
+     {{/each}}
+    </div>
+   <div class="bottom_wl">
+      <span class="lastpage" onclick='lastpage()'>上一页</span>
+      <select name="" id="select"  >
+            {{each arrpage as v i}}
+            <!--{{i==currentpages-1?'selected':''}}-->
+            <option value={{i}} >{{v}}/{{allpage}}</option>
+            {{/each}}
+      </select>
+      <span class="nextpage" onclick="nextpage()"> 下一页</span>
+      <div class="linklist">
+          <p>相关链接</p>
+          <a href="#">海尔官网</a>
+          <a href="#">格力官网</a>
+      </div>
+   </div>
+</script>
+</html>

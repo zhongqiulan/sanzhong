@@ -1,0 +1,126 @@
+body {
+  overflow-x: hidden;
+}
+.head {
+  height: 44px;
+  line-height: 44px;
+  position: relative;
+  background-color: #e4393c;
+  margin: 0;
+}
+.head a {
+  display: block;
+  width: 50px;
+  height: 44px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.head .back {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.head h1 {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 44px;
+}
+.head .home {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.head .home img {
+  width: 60%;
+}
+.nav-tabs {
+  display: table;
+  height: 36px;
+  width: 200%;
+}
+.nav-tabs li {
+  height: 38px;
+  line-height: 36px;
+  width: 68px;
+}
+.tab-content .tab-pane .bc_goods_list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+.tab-content .tab-pane .bc_goods_list li {
+  padding: 10px 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  width: 100%;
+  position: relative;
+}
+.tab-content .tab-pane .bc_goods_list li .img {
+  position: absolute;
+  left: 0;
+  top: 10px;
+}
+.tab-content .tab-pane .bc_goods_list li .img img {
+  height: 130px;
+  width: 130px;
+}
+.tab-content .tab-pane .bc_goods_list li .text {
+  width: 100%;
+  padding-left: 140px;
+}
+.tab-content .tab-pane .bc_goods_list li .text .i {
+  height: 70px;
+}
+.tab-content .tab-pane .bc_goods_list li .text .i .pr {
+  margin-top: 10px;
+  vertical-align: middle;
+  font-style: normal;
+  color: red;
+  font-size: 20px;
+}
+.tab-content .tab-pane .bc_goods_list li .text .i .pr i {
+  font-style: normal;
+  font-size: 16px;
+  margin-right: 4px;
+}
+.tab-content .tab-pane .bc_goods_list li .text .i .pr em {
+  font-size: 12px;
+}
+.tab-content .tab-pane .bc_goods_list li .text .i .pr del {
+  color: #a8a8a8;
+  font-size: 12px;
+}
+.tab-content .tab-pane .bc_goods_list li .text .o {
+  height: 60px;
+}
+.tab-content .tab-pane .bc_goods_list li .text .o .b .q .togoquan {
+  border: 1px dotted #e4393c;
+  height: 26px;
+  line-height: 26px;
+  text-align: center;
+  display: block;
+  padding: 0px 5px;
+  font-size: 12px;
+  color: #e4393c;
+}
+.tab-content .tab-pane .bc_goods_list li .text .o .b .g .togobuy {
+  display: block;
+  width: 80px;
+  height: 38px;
+  color: #fff;
+  background-color: #e4393c;
+  padding: 0px 10px;
+  text-align: center;
+  line-height: 38px;
+  border-radius: 4px;
+}
+.tab-content .tab-pane .bc_goods_list li .text .o .bar {
+  font-size: 12px;
+  color: #666;
+}

@@ -1,0 +1,86 @@
+// 头部
+// 左边返回按钮
+body {
+    overflow-x: hidden;
+}
+
+.mmm_top {
+    .top_conten {
+        >a {
+            // display: inline-block;
+            .iconback {
+                color: #fff;
+                font-size: 20px; // line-height: 51px;
+            }
+        }
+        h4 {
+            font-size: 14px;
+            color: #fff;
+            margin-top: 0px;
+            position: absolute; // display: inline-block;
+            margin-left: 50%;
+            line-height: 51px;
+            font-size: 20px;
+            font-weight: 700;
+            transform: translateX(-50%);
+        }
+    }
+}
+
+.zhekou_content {
+    ul {
+        li {
+            border-right: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            width: 50%;
+            float: left;
+            padding-top: 20px;
+            padding-bottom: 10px;
+             :nth-of-type(3) {
+                clear: both;
+            }
+            a {
+                display: block;
+                width: 100%;
+                height: 100%;
+                text-decoration: none;
+                >img {
+                    width: 140px;
+                    height: 140px;
+                    margin: 0 auto;
+                }
+                .descripton {
+                    padding-left: 18px;
+                    .product_des {
+                        font-size: 14px;
+                        font-weight: 700;
+                        height: 36px;
+                        overflow: hidden;
+                        line-height: 18px;
+                        color: #333333;
+                    }
+                    p {
+                        height: 18px;
+                        line-height: 18px;
+                        overflow: hidden;
+                    }
+                    .price {
+                        color: #ff6c00;
+                        margin-top: -10px;
+                    }
+                    .bottom_des {
+                        color: #a1a1a1;
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+// loading部分
+.loading {
+    img {
+        width: 32px;
+        margin: 10px auto;
+    }
+}

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../fonts/font_baicaijia/iconfont.css">
+    <link rel="stylesheet" href="../../css/baicaijia/baicaijia.css">
+    <title>慢慢买-白菜价</title>
+</head>
+
+<body>
+    <div class="views">
+
+        <div class="head">
+            <div class="back">
+                <a href="../../index.html" class="iconfont icon-left-arrow"></a>
+            </div>
+            <h1>白菜价-淘宝内部券</h1>
+            <div class="home">
+                <a href="javascript:;">
+                <img src="../../images/header_app.png" alt="">
+            </a>
+            </div>
+        </div>
+        <div>
+
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist" id="bc_tit_ul">
+                <!-- <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation" ><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+            <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li> -->
+
+            </ul>
+
+            <!-- Tab panes -->
+            <div class="tab-content bc_goods_lists">
+
+            </div>
+        </div>
+
+        <div class="tjzk">
+            <h3>品牌排行</h3>
+            <i class="iconfont icon-xiangyou"></i>
+        </div>
+
+        <!--登录注册-->
+        <div class="foot_bar">
+            <ul class="clearfix">
+                <li><a href="login.html">登录</a></li>
+                <li><a href="javascript:;">注册</a></li>
+                <li id="top"><a href="javascript:;"><i class="icon-top"></i>返回顶部</a></li>
+            </ul>
+        </div>
+        <footer>
+            <div class="foot_top">
+                <a href="javascript:;">手机APP下载</a>
+                <a href="../../index.html">慢慢买手机版</a> -- 掌上比价平台
+            </div>
+            <div class="foot_bottom">m.manmanbuy.com</div>
+        </footer>
+
+        <a class="icon-top2" id="gotop" href="javascript:;"></a>
+    </div>
+
+
+
+
+
+</body>
+<script src="../../lib/jquery/jquery.js"></script>
+<script src="../../lib/artTemplate/template.js"></script>
+
+<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../../lib/iscroll/iscroll.js"></script>
+<script src="../../js/baicaijia/baicaijia.js"></script>
+
+</html>
+<script type="text/template" id="bc_tit_tpl">
+    {{each result as v i}}
+
+    <li role="presentation" data-id='{{v.titleId}}' class="bc_tit_li">
+        <a href="#nav{{v.titleId}}" aria-controls="settings" role="tab" data-toggle="tab">
+           {{v.title}}
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+
+<!--商品列表模板  -->
+<script type="text/template" id="bc_goods_tpl">
+    <div role="tabpanel" class="tab-pane active" id="nav{{result[0].titleId}}">
+        <ul class='bc_goods_list'>
+            {{each result as v i }}
+            <li>
+                <div class="img">
+                    {{#v.productImg}}
+                </div>
+                <div class="text">
+                    <div class="i">
+                        <div class="t">
+                            {{#v.productName}}
+                        </div>
+                        <div class="pr">
+                            {{#v.productPrice}}
+                        </div>
+                    </div>
+                    <div class="o">
+                        <div class="b clearfix">
+                            {{#v.productHref}} {{#v.productCoupon}}
+                        </div>
+                        {{#v.productCouponRemain}}
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+
+        </ul>
+    </div>
+
+</script>

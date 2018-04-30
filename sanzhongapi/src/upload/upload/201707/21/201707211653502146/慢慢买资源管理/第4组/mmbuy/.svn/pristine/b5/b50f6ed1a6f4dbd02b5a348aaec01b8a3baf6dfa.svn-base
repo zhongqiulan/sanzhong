@@ -1,0 +1,10 @@
+var config={
+    host:'139.199.192.48',
+    ports:':9090',
+    prefix:"http",
+    getUrl:function(api){
+        if("api".indexOf(api)!=0){
+
+        }
+    }
+}

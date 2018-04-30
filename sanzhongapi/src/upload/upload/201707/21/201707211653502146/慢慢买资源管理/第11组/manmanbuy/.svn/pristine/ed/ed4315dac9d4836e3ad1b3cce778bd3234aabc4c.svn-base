@@ -1,0 +1,13 @@
+<footer>
+    <div class="menu">
+        <ul class="clearfix">
+            <li><a href="###">登录</a></li>
+            <li><a href="###">注册</a></li>
+            <li><a href="#dingbu"><img src="/views/public/uploads/top.jpg" alt="">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="xinxi">
+        <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>

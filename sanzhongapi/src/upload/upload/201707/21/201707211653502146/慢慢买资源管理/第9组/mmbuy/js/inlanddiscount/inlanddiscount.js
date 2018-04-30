@@ -1,0 +1,20 @@
+  // 发送ajax加载内容
+  var url = config.getUrl('/api/getinlanddiscount');
+
+  function renderAjax() {
+    $.ajax({
+      url: url,
+      dataType: 'json',
+      type: 'get',
+      success: function (info) {
+        console.log(info);
+        var htmlStr = template('dis_content_tpl', info);
+        $('#dis_content').html(htmlStr);
+      }
+    });
+  }
+  renderAjax();
+
+  $('.return').on('click', function () {
+    history.back();
+  })

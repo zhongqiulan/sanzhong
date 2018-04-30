@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>商城导航 -- 慢慢买</title>
+    <link rel='stylesheet' type='text/css' href='/lib/bootstrap/css/bootstrap.css' />
+    <link rel="stylesheet" href="/css/shade/shade.css">
+    <link rel='stylesheet' type='text/css' href='/css/shopping-mall/shopping-mall.css' />
+</head>
+
+<body>
+
+    <div class="view">
+        <nav class="navbar">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4 col-sm-4">
+                        <a class="glyphicon glyphicon-chevron-left" href="/index"></a>
+                    </div>
+                    <div class="col-xs-4 col-md-4">商城导航</div>
+                    <div class="col-xs-4 col-md-4"><img class="pull-right" src="/images/header_app.png" alt=""></div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <div class="shopping-mall-navs">
+        <div class="sm-navs">
+            <span>首页</span>
+            <span>&gt;</span>
+            <span>商城导航</span>
+        </div>
+        <div class="sm-main clearfix">
+            <div class="small-shade">
+                <img src="/images/loading.gif" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="checkin">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-4"><a href="#">登录</a></div>
+                    <div class="col-sm-4 col-xs-4"><a href="#">注册</a></div>
+                    <div class="col-sm-4 col-xs-4"><a href="#top"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bbottom">
+            <div class='app'>
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span class="grey">--掌上比价平台</span>
+            </div>
+            <a href="#">m.manmanbuy.com</a>
+        </div>
+    </div>
+
+    <div class="mmbuy-download">
+        <a href="javascript:;"><img src="/images/coupons/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt=""></a>
+    </div>
+    <script type="text/template" id="sm-tpl">
+        {{each result as v i}}
+        <div class="col-xs-4">
+            <div>
+                <a href="{{v.navHref}}">
+                    <img src="{{v.navImg}}" alt=""> {{v.navTitle}}
+                </a>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <?php include '/common/script.html'; ?>
+    <script>
+        require(['js/shopping-mall/shopping-mall']);
+    </script>
+</body>
+
+</html>

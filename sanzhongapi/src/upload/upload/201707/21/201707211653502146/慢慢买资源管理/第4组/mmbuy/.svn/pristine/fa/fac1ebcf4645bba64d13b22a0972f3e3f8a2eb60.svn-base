@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type='text/css' href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href='../css/koubei/koubei.css' />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="koubei-bread">
+        <p>首页 <span>&gt; 什么牌子的平板电视好</span></p>
+    </div>
+    <div class="koubei-title">平板电视最新评论</div>
+    <div class="koubei-main">
+        <!--<div class="koubei-comment">
+            <div class="product-info clearfix">
+                <img src="../../imgs/haitao.png" alt="">
+                <p>康佳(KONKA) LED40S1 40英寸 全高清1080P HDR智能液晶电视</p>
+            </div>
+            <div class="comment-content">
+                <div class="top">
+                    <span class="name">j***3：</span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="time">2017/7/18</span>
+                </div>
+                <div class="text">
+                    师傅们服务很好，电视也非常清晰，不过就是等了7天才收到货，这就有点失望了
+                </div>
+            </div>
+        </div>-->
+    </div>
+
+</body>
+
+</html>
+<script type="text/template" id="koubei_tpl">
+    {{each result as v i}}
+    <div class="koubei-comment">
+        <div class="product-info clearfix">
+            <img src="../imgs/haitao.png" alt="">
+            <p>康佳(KONKA) LED40S1 40英寸 全高清1080P HDR智能液晶电视</p>
+        </div>
+        <div class="comment-content">
+            <div class="top">
+                <span class="name">{{v.comName}}：</span>
+                <span class="star glyphicon glyphicon-star"></span>
+                <span class="star glyphicon glyphicon-star"></span>
+                <span class="star glyphicon glyphicon-star"></span>
+                <span class="star glyphicon glyphicon-star"></span>
+                <span class="star glyphicon glyphicon-star"></span>
+                <span class="time">{{v.comTime}}</span>
+            </div>
+            <div class="text">
+                {{v.comContent}}
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="../libs/artTemplate/template.js"></script>
+<script src="../js/koubei/koubei.js"></script>

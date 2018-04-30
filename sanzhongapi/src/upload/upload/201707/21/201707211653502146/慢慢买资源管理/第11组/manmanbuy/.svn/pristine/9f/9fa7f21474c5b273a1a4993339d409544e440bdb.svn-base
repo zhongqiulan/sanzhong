@@ -1,0 +1,273 @@
+@import "../base/base.less";
+@color:#ff8b00;
+ul{
+    list-style: none;
+}
+
+.show{
+    display:block;
+}
+.coudan{
+    header{
+        height:44px;
+        background:@color;
+        color:#fff;
+        position:relative;
+        h1{
+            width:100%;
+            font-size:20px;
+            line-height: 44px;
+            padding:0px 50px;
+            margin-top:0;
+            margin-bottom:0;
+            text-align: center;
+        }
+        .arrow{
+            position:absolute;
+            left:0;
+            font-size:18px;
+            color:#fff;
+            padding:13px;
+        }
+        .header_app{
+            display: block;
+            position:absolute;
+            right:8px;
+            top:5px;
+            img{
+                 width:34px;
+            }
+           
+        }
+    }
+    .coudan-header-content{
+        position:relative;
+        .nav{
+            height:37px;
+            position: relative;
+            border-bottom:2px solid #eee;
+            .nav_left{
+                width:100%;
+                padding-right:40px;
+                ul{                  
+                    padding-left:0;
+                    margin-bottom: 0;
+                    
+                    li{
+                        float:left;
+                        width:33.33%;
+                        text-align: center;
+                        a{
+                            display: block;
+                            color:#000;
+                            width:100%;
+                           
+                            height:37px;
+                            line-height:37px;  
+                            font-size: 16px;
+                            color:#5a5a5a;                       
+                            span.icon-c,span.icon-d{
+                                font-size: 24px;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+            .nav_search{
+                position:absolute;
+                width:40px;
+                right:0;
+                font-size: 22px;
+                text-align: center;
+                line-height: 37px;
+                border-left:2px solid #eee;
+            }
+        }
+        .popbox{
+            display: none;
+            width:100%;
+            position:absolute;
+            top:37px;
+            left:0;
+            background: #fff;
+            box-shadow: 0px 3px 6px #dddddd;
+            ul{
+                padding-left:0px;
+                 
+                li{
+                    height:40px;
+                    line-height: 40px;
+                    padding-left:10px;
+                   border-top:1px solid #eee;
+                    a{
+                        display: block;
+                        height:40px;
+                        color:#5a5a5a;
+                        font-size: 16px;
+                         padding-right:50px;
+                         position:relative;
+                        span{
+                            position:absolute;
+                            right:10px;
+                            font-size: 30px;
+                            top:10px;
+
+                        }
+                    }
+                }
+            }
+        }
+
+        .popsearch{
+            display:none;
+            background: #f7f7f7;
+            padding:10px 0px;
+            .coudanSearch{
+                padding-left:10px;
+                padding-bottom:10px;
+                .form-control{
+                    padding-left:35px;
+                    border:none;
+                    border-radius: none;
+                    background: #fff;
+                }
+                .input-group-addon{
+                    border:none;
+                      border-radius: none;
+                      padding:6px;
+                      background: #f7f7f7;
+                      color:#000;
+                }
+                .fadajing{
+                    position:absolute;
+                    left:20px;
+                    font-size: 20px;
+                    color:#ccc;
+                    line-height: 34px;
+                    z-index:10;
+                }
+            }
+             
+             .sort{
+                 border-bottom: 1px solid #eaeaea;
+             }
+            .select{
+                p{
+                    padding-top:10px;
+                    padding-left:10px;
+                }
+                .list{
+                    height:40px;
+                    ul{
+                        padding-right:10px;
+                        li{
+                            border-top:none;
+                            text-align: center;                          
+                            padding-left:10px;
+                            padding-right:0px;
+
+                            a{
+                                 border:1px solid #eaeaea;
+                                 height:32px;
+                                 line-height: 32px;
+                                 border-radius:4px;
+                                 font-size: 12px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .coudan-body-content{
+        width:100%;
+        padding:6px;
+        background: #f1f1f1;
+        ul{
+            padding-left:0;
+            li{
+                float:left;
+                width:50%;
+                padding:5px;
+                // background:#fff;
+                a{
+                    width:100%;
+                    background:#fff;
+                    display:block;
+                    img{
+                        width:100%;
+                        // height:50%;
+                    }
+                    p{
+                        color:#000;
+                        font-size: 12px;
+                        margin-bottom: 0px;
+                        margin-top:5px;
+                        padding:0px 5px 0px;
+                        height:14px;
+                        overflow: hidden;
+                    }
+                    .money{
+                        font-size: 20px;
+                        color:@color;
+                       margin:6px 0;
+                       height:37px;
+                       
+                    }
+                }
+            }
+        }
+    }
+
+
+     footer{
+            background: #efefef;
+            // margin-top:30px;
+            .menu{
+                ul{
+                    padding:0;
+                    margin:0;
+                }
+                li{
+                    height: 35px;
+                    line-height: 35px;
+                    text-align: center;
+                    border-bottom: 1px solid #c4c4c4;
+                    border-top: 1px solid #c4c4c4;
+                    float: left;
+                    width: 33.3%;
+                    &:nth-of-type(2){
+                        border:1px solid #c4c4c4;
+                    }
+                    a{
+                        display: block;
+                        color: #000;
+                    }
+                    img{
+                        width: 15px;
+                        display: inline-block;
+                        margin-bottom: 6px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+            .xinxi{
+                font-size: 13px;
+                text-align: center;
+                padding:15px 0;
+                p{
+                    margin: 0;
+                    color:#747474;
+                    a{
+                         &:nth-of-type(1){
+                             color: red;
+                         }
+                         &:nth-of-type(2){
+                             color: #000;
+                         }
+                    }
+                }
+            }
+    }
+}

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>慢慢买</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    
+</head>
+
+<body>
+    <!--顶部logo-->
+    <div class="head_logo clearfix">
+        <div class="logo pull-left">
+            <a href='javascript:;'>
+                <img src="./images/header_logo.png" alt="logo">
+            </a>
+
+        </div>
+        <div class="appdown  pull-right">
+            <a href='javascript:;'>
+                <img src="./images/header_app.png" alt="app" class="pull-right" >
+           </a>
+        </div>
+    </div>
+    <!--搜索框-->
+    <div class="seek ">
+        <div class="searcText">
+            <input type="text" placeholder='你输入你想比价的商品'>
+        </div>
+        <div class="searcBtn">
+            <input type="submit" value="搜索">
+        </div>
+
+    </div>
+    <!--导航栏-->
+    <div class="navss ">
+        <div class="row clearfix  menu">
+            
+            <!--<div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+        
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+        
+       
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-xs-3 ">
+                <div class="thumbnail">
+                    <a href='javascript:;'>
+                           <img src="./images/ic_search.png" alt="">
+                        <div class="caption">
+                             比价搜索   
+                        </div>
+                    </a>
+                </div>
+            </div>
+        -->
+    </div>
+    <!--超值折扣推荐-->
+    <div class="rebate clearfix">
+
+        <div class="recom ">
+            <a href='javascript:;'>
+                    <span>超值折扣推荐</span>
+                    <img src="./images/more.png" alt="" class="col-xs-head">
+                </a>
+        </div>
+        <div class="recomdet">
+            <ul id="recomUl">
+                <!--<li class="clearfix">
+                    <a href='javascript:;'>
+                        <div class="brand_Img  ">
+                            <img src="./images/ic_cu.png" alt="" width="100">
+                        </div>
+                        <div class="img_text clearfix ">
+                            <div class="title">
+                                【实时更新】午后晒图更新（在自己对应的区域找哦）<span>又一位大神出炉啦！三条都符合哦~</span>
+                            </div>
+                            <div class="other clearfix">
+                                <span class="mall pull-left ">慢慢买 | 07-13 18:20</span>
+                                <span class="comment pull-right ">
+                                 <i class="icon-comment"></i>334
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>-->
+            </ul>
+        </div>
+
+
+    </div>
+
+
+    <!--底部-->
+    <div class="floor">
+        <!--更多优惠-->
+        <div class="fav">
+            <a href='javascript:;'>
+                更多优惠信息 »
+            </a>
+
+        </div>
+
+        <!--品牌排行-->
+        <div class="brand">
+            <a href='javascript:;'>
+                    <span>品牌排行</span>
+                    <img src="./images/more.png" alt="">
+                </a>
+        </div>
+
+
+        <!--功能栏-->
+        <div class="fn">
+            <a href='javascript:;'>登录</a>
+            <a href='javascript:;'>注册</a>
+            <a href='javascript:;'>返回顶部</a>
+        </div>
+
+        <div class="bottom">
+            <p>
+                <a href='javascript:;' id="colors">
+                    手机APP下载
+                </a>
+                <a href='javascript:;'>
+                    慢慢买手机版
+                </a>
+                --掌上比价平台
+            </p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
+
+<script src="./lib/jquery/jquery.js"></script>
+    <script src="./lib/bootstrap/js/bootstrap.js"></script>
+    <script src="./lib/template/template.js"></script>
+    <script src="./js/index.js"></script>
+
+
+<script type="text/template" id="menu_tpl">
+    {{each result as v }}
+    <div class="col-xs-3 single">
+                <div class="thumbnail">
+                    <a href="pages/{{v.titlehref}}" >
+                        
+                          {{#v.img}}
+                        <div class="caption">
+                            
+                             {{v.name}}   
+                        </div>
+                    </a>
+                </div>
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/template" id="recom_tpl">
+      {{each result as v }}
+    <li class="clearfix">
+                    <a href='javascript:;'>
+                        <div class="brand_Img  ">
+                           {{#v.productImg2}}
+                        </div>
+                        <div class="img_text clearfix ">
+                            <div class="title">
+                                {{v.productName}}<span>{{v.productPinkage}}</span>
+                            </div>
+                            <div class="other clearfix">
+                                <span class="mall pull-left ">{{v.productFrom}} | {{v.productTime}}</span>
+                                <span class="comment pull-right ">
+                                 <i class="icon-comment"></i>{{v.productComCount}}
+                                </span>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+        {{/each}}
+</script>

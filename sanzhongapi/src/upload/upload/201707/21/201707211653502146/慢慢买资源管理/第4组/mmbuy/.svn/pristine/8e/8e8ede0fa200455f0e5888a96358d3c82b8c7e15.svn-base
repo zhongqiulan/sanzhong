@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/getmoneyctrl/list.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <div class="back">
+            <a href="javascript:;" class="glyphicon glyphicon-menu-left" aria-hidden="true"></a>
+        </div>
+        <div class="title">
+            <h2>海淘折扣</h2>
+        </div>
+        <div class="app">
+            <img src="../imgs/header_app.png" alt="">
+        </div>
+    </header>
+    <main>
+
+    </main>
+
+    <script src="../libs/jquery/jquery.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../js/config/config.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/getmoneyctrl/list.js"></script>
+
+<script type="text/template" id="gmc_tpl">
+    <ul>
+    {{each result as v i}}
+        <li data-id="{{v.productId}}">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        {{#v.productImgSm}}
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{v.productName}}<span>{{v.productPinkage}}</span></h4>
+                    <div class="info">
+                        <div class="info-left pull-left">{{v.productFrom}}|{{v.productTime}}</div>
+                        <div class="info-right pull-right">
+                            <span class="icon-comment"></span>&nbsp;{{v.productComCount}}
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+        </ul>
+        <div class="page">
+            <button class="pull-left preBtn" >上一页</button>
+            <select name="pageid"id="">
+                {{each arr as v i}}
+                <option value="{{v+1}}" class="isBtn">{{v+1}}/{{count}}</option>
+                {{/each}}
+            </select>
+            <button class="pull-right nextBtn">下一页</button>
+        </div>
+        <div class="link">
+            <a href="javascript:;">首页</a>
+            &nbsp;>&nbsp;
+            <a href="javascript:;">省钱控</a>
+        </div>
+    </script>
+</body>
+
+</html>

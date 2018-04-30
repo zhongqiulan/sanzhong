@@ -1,0 +1,68 @@
+body {
+  overflow-x: hidden;
+}
+.mmm_top .top_conten > a .iconback {
+  color: #fff;
+  font-size: 20px;
+}
+.mmm_top .top_conten h4 {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 0px;
+  position: absolute;
+  margin-left: 50%;
+  line-height: 51px;
+  font-size: 20px;
+  font-weight: 700;
+  transform: translateX(-50%);
+}
+.zhekou_content ul li {
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  width: 50%;
+  float: left;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.zhekou_content ul li :nth-of-type(3) {
+  clear: both;
+}
+.zhekou_content ul li a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+}
+.zhekou_content ul li a > img {
+  width: 140px;
+  height: 140px;
+  margin: 0 auto;
+}
+.zhekou_content ul li a .descripton {
+  padding-left: 18px;
+}
+.zhekou_content ul li a .descripton .product_des {
+  font-size: 14px;
+  font-weight: 700;
+  height: 36px;
+  overflow: hidden;
+  line-height: 18px;
+  color: #333333;
+}
+.zhekou_content ul li a .descripton p {
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+}
+.zhekou_content ul li a .descripton .price {
+  color: #ff6c00;
+  margin-top: -10px;
+}
+.zhekou_content ul li a .descripton .bottom_des {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.loading img {
+  width: 32px;
+  margin: 10px auto;
+}

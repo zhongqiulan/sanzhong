@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no"ei>
+    <title>白菜价--淘宝内部优惠券</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/dxd/cabbage.css">
+    <link rel="SHORTCUT ICON" href="../../images/favicon.ico">
+</head>
+<body>
+    <div class="view">
+        <!--头部导航条-->
+          <nav>
+        <span class="glyphicon glyphicon-menu-left"></span>
+        <h1>白菜价--淘宝内部优惠</h1>
+         <img src="../../images/header_app.png" alt="">
+    </nav>
+
+        <!--商品列表-->
+        <div class="tabs " id="tabs">
+
+         <!-- Nav tabs -->
+        <div class="nav_list">
+            <ul class="nav nav-tabs " role="tablist">
+        
+            </ul>
+        </div>
+
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <!--渲染商品-->
+         <div role="tabpanel" class="tab-pane active" id="home">
+            <ul class="shopList">
+    
+            </ul>
+       </div>
+    </div>
+
+    <!--底部-->
+    <div class="buttom_info">
+        <div class="footer">
+            <ul>
+                <li>登录</li>
+                <li>注册</li>
+                <li><a href='#top'><i><img src="../../images/top.jpg" alt=""></i>注册信息</a></li>
+            </ul>
+            <p class="app_info">
+                <a href="javascript:;">
+                    <span class="red-app">手机APP下载</span>
+                    <span>慢慢买手机版--掌上手机平台</span> <br/>
+                    <span>m.manmanbuy.com.</span>
+                 </a>
+            </p>
+        </div>
+    </div>
+</div>
+</div>
+</body>
+<script src="../../libs/artTemplate/template.js"></script>
+<script src="../../libs/jquery/jquery.min.js"></script>
+<script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../libs/touch.js"></script>
+<script src="../../js/dxd/cabbage.js"></script>
+<script src="../../js/dxd/itcast.js"></script>
+<script src="../../libs/iscroll.js"></script>
+
+<!--tab栏切换-->
+<script>
+ $('#myTabs a').click(function (e) {
+  e.preventDefault()
+  $(this).tab('show')
+})
+
+$('.glyphicon').on('click',function(){
+    history.back();
+})
+
+</script>
+
+<!--渲染模板-->
+<script type="text/html" id="tpl_nav">
+    {{each result as v i}}
+         {{if i==0}}
+        <li role="presentation" class='active btnSave' index="{{v.titleId}}"><a  href="{{v.titleId}}" aria-controls="home" role="tab" data-toggle="tab"  data-type="{{v.productId}}">{{v.title}}</a></li>
+        {{else}}
+        <li role="presentation" class='btnSave' index="{{v.titleId}}" ><a href="{{v.titleId}}" aria-controls="home" role="tab" data-toggle="tab"  data-type="{{v.productId}}">{{v.title}}</a></li>
+          {{/if}}
+    {{/each}}
+</script>
+<!--商品模板-->
+<script type="text/html" id="tpl_media">
+    {{each result as v i}}
+         <li class="clearfix">
+              <div class="shop">
+                  <div class="shopPic full-left">
+                   {{#v.productImg}}
+              </div>
+               <div class="shopInfo full-right">
+                   <div class="shopInfo_head">
+                       {{#v.productName}}
+                   </div>
+                   <div class="shopInfo_middle">
+                       {{#v.productPrice}}
+                   </div>
+                   <div class="shopInfo_foot">
+                       <p>{{#v.productCoupon}}</p>
+                       <div class="xiadan">{{#v.productHref}}</div>
+                       <p>{{#v.productCouponRemain}}</p> 
+                   </div> 
+                 </div>
+              </div>
+         </li>
+    {{/each}}
+</script>
+</html>

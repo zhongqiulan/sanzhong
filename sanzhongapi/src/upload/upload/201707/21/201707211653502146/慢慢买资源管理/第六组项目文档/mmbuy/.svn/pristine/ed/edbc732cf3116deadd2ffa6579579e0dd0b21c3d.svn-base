@@ -1,0 +1,7 @@
+//返回顶部
+define(['jquery'],function ($) {
+    console.log($("body").scrollTop());
+    $("#top").on('click',function () {
+        $("body","html").animate({"scrollTop":0},500);
+    })
+})

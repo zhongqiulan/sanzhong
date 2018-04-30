@@ -1,0 +1,245 @@
+/**
+ * author:kuanglq
+ * date:2017-7-19
+ */
+
+
+define([
+  'jquery',
+  'template',
+  'cookie'
+], function ($, template, utils) {
+  $(function () {
+    /**
+     * 点击sort发送ajax请求获取店铺数据;
+     * 点击第一次获取数据,点击第二次隐藏菜单
+     */
+    // flag3 = true;
+    // var items = $(".tab-item");
+    // // var mains = $(".nav-main");
+    // items.on('click',function(){
+      
+    //   var index = $(this).index();
+    //   console.log(index);
+      
+    //   if(index==0){
+    //     // console.log(124);
+    //     // var index = $(this).index();
+    //     $.ajax({
+    //       url:'http://139.199.192.48:9090/api/getgsshop',
+    //       type:'get',
+    //       dataType:'JSON',
+    //       success:function(data){
+    //         console.log(data);
+    //         var htmlStr = template('nav_sort_tpl',data);
+    //         $('#nav_sort').html(htmlStr);
+    //         // $(".selected").removeClass("selected");
+    //     // $(".nav-palce").
+    //     $(this).siblings(".nav-place").css({"display":"none"});
+      
+    //       }
+    //     })//ajax
+    //    }else if(index==2){
+    //     //  $(".selected").removeClass("selected");
+    //     $.ajax({
+    //       url:'http://139.199.192.48:9090/api/getgsshoparea',
+    //       type:'get',
+    //       dataType:'JSON',
+    //       success:function(data){
+    //         console.log(data);
+    //         var htmlStr = template('nav_place_tpl',data);
+    //         $('#nav_place').html(htmlStr);
+    //         //  $(".nav-shop1").css({"display":"none"});
+    //         //  $(this).siblings(".nav-shop1").css({"display":"none"});
+          
+    //       }
+    //     })
+      //  }else if(index==4){
+      //    $(".selected").removeClass("selected");
+      //   // $('#nav_sort').css('display', 'none');
+      //   // $('#nav_place').css('display', 'none');
+      //   if (flag3) {
+      //     // $(".selected").removeClass("selected");
+      //     mains.eq(index).addClass("selected");
+      //     flag3 = false;
+      //     // $('.nav-cat').css('display', 'block');
+      //   } else {
+      //     // $('.nav-cat').css('display', 'none');
+      //     flag3 = true;
+      //   }
+      //  }
+
+
+      // })//点击事件
+      
+
+    //区域
+    //  items.on('click',function(){
+    // console.log(56);
+
+      // var index = $(this).index();
+      // $.ajax({
+      // url:'http://139.199.192.48:9090/api/getgsshoparea',
+      // type:'get',
+      // dataType:'JSON',
+      // success:function(data){
+      //   console.log(data);
+      //   var htmlStr = template('nav_place_tpl',data);
+      //   $('#nav_place').html(htmlStr);
+      // $(".selected").removeClass("selected");
+      // mains.eq(index).addClass("selected");
+      // }
+      // })
+    //  })
+
+
+
+    var flag = true;
+      $('.sort').on('click', function () {
+        //获取店铺id
+        var info = $(this).serialize();
+        $('#nav_place').css('display', 'none');
+          if (flag) {
+            flag = false;
+            $.ajax({
+              url: 'http://139.199.192.48:9090/api/getgsshop',
+              type: 'get',
+              dataType: 'JSON',
+              success: function (data) {
+              
+                var infoStr = JSON.stringify(data.result) ;//将对象转换成字符串
+                console.log(infoStr);
+                $.cookie('tcInfo',infoStr);
+                // console.log(data);
+                var htmlStr = template('nav_sort_tpl', data);
+                $('#nav_sort').html(htmlStr);
+                $('#nav_sort').css('display', 'block');
+              }
+            }) //ajax请求
+          } else {
+            $('#nav_sort').css('display', 'none');
+            flag = true;
+        }
+      }) //sort点击事件
+
+     
+
+    // /**
+    //  * 点击区域,显示区域列表
+    //  * 点击第一次获取数据,点击第二次隐藏菜单
+    //  */
+    var flag2 = true;
+    $('.place').on('click', function () {
+      $('#nav_sort').css('display', 'none');
+      if (flag2) {
+        flag2 = false;
+        $.ajax({
+          url: 'http://139.199.192.48:9090/api/getgsshoparea',
+          type: 'get',
+          dataType: 'JSON',
+          success: function (data) {
+            // console.log(data);
+            var htmlStr = template('nav_place_tpl', data);
+            $('#nav_place').html(htmlStr);
+            $('#nav_place').css('display', 'block');
+          }
+        }) //ajax请求
+      } else {
+        $('#nav_place').css('display', 'none');
+        flag2 = true;
+      }
+    }); //place点击事件
+
+
+    // /**
+    //  * 点击价格显示价格条,再次点击隐藏
+    //  */
+    // var flag3 = true;
+    // $('.price').on('click', function () {
+    //   $('#nav_sort').css('display', 'none');
+    //   $('#nav_place').css('display', 'none');
+    //   if (flag3) {
+    //     flag3 = false;
+    //     $('.nav-cat').css('display', 'block');
+    //   } else {
+    //     $('.nav-cat').css('display', 'none');
+    //     flag3 = true;
+    //   }
+    // }); //price点击事件
+
+
+
+    /**
+     * 获取店铺id和区域id
+     */
+
+    //动态添加点击事件
+    //默认发送ajax请求渲染到页面
+    $.ajax({
+      url: 'http://139.199.192.48:9090/api/getgsproduct',
+      data: {
+        shopid: 1,
+        areaid: 1
+      },
+      dataType: 'JSON',
+      success: function (data) {
+        console.log(data);
+        var htmlStr = template('product_tpl', data);
+        $('.product').html(htmlStr);
+      }
+    })
+
+    /*循环绑定点击事件*/
+    $('#nav_sort').on('click', '.getsortId', function () {
+      //店铺id
+      var sort_id = Number($(this).attr('data-id'));
+      var litext = $(this).attr("data-shopName");
+      $(".shopname").text(litext);
+
+      $.ajax({
+        url: 'http://139.199.192.48:9090/api/getgsproduct',
+        data: {
+          shopid: sort_id,
+          areaid: 0
+        },
+        dataType: 'JSON',
+        success: function (data) {
+          // console.log(data);
+          var htmlStr = template('product_tpl', data);
+          $('.product').html(htmlStr);
+
+          $('#nav_sort').css('display', 'none');
+        }
+      })
+      return false;
+    });
+
+    //区域id
+    $('#nav_place').on('click', '.getplaceId', function () {
+      var place_id = Number($(this).attr('data-id'));
+      var liText = $(this).attr("data-place");
+      liText = liText.slice(0, 2);
+      $(".placename").text(liText);
+
+      $.ajax({
+        url: 'http://139.199.192.48:9090/api/getgsproduct',
+        data: {
+          shopid: 0,
+          areaid: place_id
+        },
+        dataType: 'JSON',
+        success: function (data) {
+          console.log(data);
+          var htmlStr = template('product_tpl', data);
+          $('.product').html(htmlStr);
+          $('#nav_place').css('display', 'none');
+        }
+      })
+
+      return false;
+    });
+
+
+  }); //$最外层
+
+})

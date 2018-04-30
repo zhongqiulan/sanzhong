@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>慢慢买</title>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+</head>
+
+<body>
+    <!--头部部分开始-->
+    <div id="head">
+        <div class="headLogo">
+            <a href='javascript:;'><img src="images/header_logo.png" alt=""></a>
+            <a href='javascript:;' class="headApp"><img src="images/header_app.png" alt=""></a>
+        </div>
+    </div>
+    <!--搜索部分-->
+   <div class="container ">
+        <div class="row bg-w">
+            <div class="col-md-12">
+                <div class="input-group sreach">
+                    <input type="text" class="form-control" placeholder="请搜索你要比价的商品" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">搜索</span>
+                </div>
+            </div>
+        </div>
+     </div>   
+      <!--线-->
+    <div class="line"></div>
+
+    <!--菜单区域-->
+    <section id="menu"></section>
+
+    <!--商品推荐-->
+    <section id="recommen">
+        <!--商品头部-->
+        <div class="recommen_title">
+            <h4>超值折扣推荐</h4>
+            <i class="glyphicon glyphicon-menu-right"></i>
+        </div>
+        <!--商品内容-->
+        <div class="recommen_content">
+
+        </div>
+        <div class="recommen-more">
+            <a href='javascript:;'>
+              <button type="button">更多优惠信息<i>>></i></button>
+         </a>
+        </div>
+        <div class="recommen_title ">
+            <h4>品牌排行</h4>
+            <i class="glyphicon glyphicon-menu-right"></i>
+        </div>
+    </section>
+   
+     <!--底部区域-->
+    <section id="footer">
+        <ul class="row">
+            <li class="col-xs-4">
+                 <a href='./ChildPage/enroll.html'>注册</a>
+            </li>
+             <li class="col-xs-4">
+                 <a href='./ChildPage/register.html'>登录</a>
+            </li>
+             <li class="col-xs-4">
+                 <a href="#head"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</a>
+            </li>
+        </ul>
+       
+        <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+        <p>m.manmanbuy.com </p>
+    </section>
+     <!--菜单区域模板-->
+    <script type="text/html" id="menuTmp">
+        <ul class="row">
+            {{each result as value i}}
+            <li class="col-xs-3">
+                <a href="ChildPage/{{value.titlehref}}">
+                    {{#value.img}}
+                    <p>{{value.name}}</p>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </script>
+
+    <!--商品内容模板-->
+    <script type="text/html" id="recommenTmp">
+        {{each result as value i}}
+        <div class="media">
+            <div class="media-left media-middle">
+                <a class="media-object" href="#">
+                {{#value.productImgSm}}
+            </a>
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">{{value.productName}}
+                    <span>{{value.productPinkage}}</span>
+                </h5>
+                <p>{{value.productFrom}} | {{value.productTime}}
+                    <span><i class="glyphicon glyphicon-heart-empty"></i> {{value.productComCount.replace("有","").replace('人评论',"")}}
+                </p>
+                </div>
+            </div>
+         {{/each}}
+    </script>
+
+    <script src="lib/jquery/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="./lib/jquery/template.js"></script>
+     <script src="./js/index.js"></script>
+</body>
+
+</html>

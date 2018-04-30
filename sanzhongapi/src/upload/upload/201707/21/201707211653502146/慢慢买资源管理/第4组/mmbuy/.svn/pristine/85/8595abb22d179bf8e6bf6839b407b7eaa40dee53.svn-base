@@ -1,0 +1,203 @@
+    .navbar {
+        background-color: #ff841d;
+    }
+
+    .navbar .navbar-brand img {
+        width: 187px;
+    }
+
+    .app-donwload img {
+        height: 34px;
+        margin-top: 8px;
+    }
+
+    .header-logo {
+        width: 80%;
+    }
+    /*搜索栏*/
+
+    #index_search {
+        width: 100%;
+        position: relative;
+        margin-bottom: 1px;
+    }
+
+    #index_search .input1 {
+        width: 90%;
+        height: 30px;
+        border-radius: 20px;
+        border: 0;
+        margin-left: 5px;
+        padding-left: 10px;
+        background-color: #f1f1f1;
+    }
+
+    #index_search .input2 {
+        width: 60px;
+        height: 30px;
+        border-radius: 20px;
+        padding-left: 10px;
+        margin-right: 10px;
+        background-color: #ff841d;
+        color: #fff;
+        position: absolute;
+        right: 0;
+        top: 0;
+        border: 0;
+    }
+
+    main {
+        background-color: #f2f2f2;
+        .link {
+            height: 36px;
+            line-height: 16px;
+            padding: 10px;
+            margin-top: 16px;
+            border-top: 1px solid #ccc;
+            border-bottom: 1px solid #ccc;
+            background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+            a {
+                display: inline-block;
+                color: #5a5a5a;
+            }
+        }
+        h3 {
+            color: #8f5417;
+            height: 36px;
+            line-height: 36px;
+            margin: 0;
+            padding: 0 10px;
+            font-size: 14px;
+        }
+        .ten {
+            li {
+                height: 62px;
+                padding: 10px;
+                border-bottom: 1px solid #dfdfdf;
+                a {
+                    display: block;
+                    width: 100%;
+                    padding-left: 30px;
+                    position: relative;
+                    p {
+                        color: #bbb;
+                        font-size: 14px;
+                        margin: 5px 0;
+                    }
+                    i {
+                        position: absolute;
+                        left: 0;
+                        width: 20px;
+                        height: 20px;
+                        background-color: #c9c9c9;
+                        color: #fff;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 20px;
+                    }
+                    i.top1 {
+                        background-color: #f00;
+                    }
+                    i.top2 {
+                        background-color: #ff9314;
+                    }
+                    i.top3 {
+                        background-color: #8adf5b;
+                    }
+                    em {
+                        font-size: 20px;
+                        position: absolute;
+                        right: 1px;
+                        top: 6px;
+                        color: #bbb;
+                    }
+                }
+            }
+        }
+        .sale {
+            li {
+                .media {
+                    padding: 14px 8px;
+                    border-bottom: 1px solid #ccc;
+                    .media-left {
+                        width: 100px;
+                        img {
+                            width: 100px;
+                        }
+                    }
+                    .media-body {
+                        h4 {
+                            height: 40px;
+                            font-size: 15px;
+                            line-height: 20px;
+                            span {
+                                color: #ff841d;
+                            }
+                        }
+                        .price {
+                            color: #f00;
+                            font-size: 20px;
+                            margin: 2px 0;
+                        }
+                        .info {
+                            color: #a1a1a1;
+                            font-size: 12px;
+                            margin: 0;
+                            span {
+                                font-size: 14px;
+                                vertical-align: middle;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .comment {
+            .koubei-main {
+    padding: 10px;
+    .koubei-comment {
+        .product-info {
+            img {
+                width: 80px;
+                float: left;
+            }
+            p{
+               padding-left: 90px;
+               color: #9f9f9f;
+               line-height: 22px;
+            }
+        }
+        .comment-content{
+            background-color: #f8f8f8;
+            padding:10px;
+            margin-top: 10px;
+            .top{
+                .star{
+                    font-size: 18px;
+                    vertical-align: top;
+                    color: #ff9000;
+                }
+                .name{
+                    color: #677d23;
+                }
+                .time{
+                    color: #a1a1a1;
+                    float:right;
+                }
+            }
+            .text{
+                font-size: 15px;
+                color: #000;
+                line-height: 22px;
+                margin-top: 10px;
+            }
+            &:after{
+                content: "";
+                border-width: 10px 10px 10px 10px;
+
+            }
+        }
+    }
+}
+        }
+    }

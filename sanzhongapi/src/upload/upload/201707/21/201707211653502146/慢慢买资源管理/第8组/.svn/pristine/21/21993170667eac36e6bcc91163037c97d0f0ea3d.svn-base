@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel='stylesheet' href='../lib/bootstrap.3.3.7/content/Content/bootstrap.css'>
+    <link rel='stylesheet' href='../css/base.css'>
+    <link rel='stylesheet' href='../css/discount.css'>
+    <link rel='stylesheet' href='../icon/iconfont.css'>
+</head>
+
+<body>
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a href="../index.html" class="icon iconfont icon-fanhui"></a>
+                </div>
+                <div class="col-xs-4 inlandL">
+                    <p class="inlandD">国内折扣</p>
+                </div>
+                <div class="col-xs-4">
+                    <a class="app_donwload"></a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="main">
+        <ul>
+            <!-- 模板 -->
+        </ul>
+    </div>
+    <script type="text/template" id="discount">
+        {{each result as v i}}
+        <li>
+            <a href="./detailed.html?v.productId={{v.productId}}">
+             {{#v.productImg}} 
+                 <p>{{v.productName}}</p> 
+                 <p>{{v.productPrice}}</p> 
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <footer>
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <div class="row">
+                    <div class="login col-sm-4 col-xs-4"><a href="javascript:;">登录</a></div>
+                    <div class="register col-sm-4 col-xs-4"><a href="javascript:;">注册</a></div>
+                    <div class="to-top col-sm-4 col-xs-4"><a href="javascript:;"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+            <div class="app-updown">
+                <a href="javascript:;">手机APP下载</a>
+                <span>慢慢买手机版</span><span> - 掌上比价平台</span>
+                <p>m.mammambuy.com</p>
+            </div>
+        </nav>
+    </footer>
+    <script src="../lib/jquery-1.12.4.js"></script>
+    <script src="../lib/bootstrap.3.3.7/content/Scripts/bootstrap.js"></script>
+    <script src="../lib/template.js"></script>
+    <script src="../js/util.js"></script>
+    <script src="../js/discount.js"></script>
+</body>
+
+</html>

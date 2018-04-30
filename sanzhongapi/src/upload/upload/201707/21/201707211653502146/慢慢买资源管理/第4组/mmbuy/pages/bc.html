@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/bc_css/bc_index.css">
+    <link rel="stylesheet" href="../css/common/style.css">
+    <link rel="stylesheet" href="../css/common/bottom/bottom.css">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css"> -->
+</head>
+
+<body>
+
+    <div class="layout">
+        <header class='header'>
+
+        </header>
+        <div class="bcj_head">
+            <!-- 导航栏小盒子包住导航栏大盒子 -->
+            <div class="bcj_ul">
+                <div id="wrapper">
+                    <ul class="nav_bar">
+                        <!-- 引用模板引擎1 -->
+                    </ul>
+                </div>
+            </div>
+            <div class="searchBtn">
+                <i class="icon-search2"></i>
+            </div>
+            <div class="searchBox hide">
+                <div>
+                    <form action="">
+                        <input type="search" placeholder="搜索商品即可查内部券" class="input-find">
+                        <input type="submit" value="搜索" class="input-submit">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav_discount">
+            <img src="../bc_imgs/quan_banner_wap.png" alt="">
+        </div>
+        <div class="bc_container">
+            <div class="bcj_list">
+                <ul class="bcj_list_ul">
+                    <!-- 引用模板引擎2 -->
+                </ul>
+                <ul class="bcj_list_ul2">
+
+                </ul>
+            </div>
+        </div>
+        <div class="img_loading hide">
+            <img src="../bc_imgs/loading.gif" alt="">
+        </div>
+        <div class="loading_end hide" >
+            没有更多了
+        </div>
+        <div class="list_bottom">
+            <a href="javascript:;">首页</a>
+            <span>></span>
+            <a href="javascript:;">白菜价</a>
+        </div>
+        <div class="app_adv">
+            <img src="../bc_imgs/logo.png" alt="">
+            <div class="app_text">
+                <h4>慢慢买APP</h4>
+                <p>给喜欢网购的同学推荐下[慢慢买]这个APP，第一时间更新国内外的优惠信息！</p>
+            </div>
+            <div class="app_button">
+                <a href="javascript:;">立即打开</a>
+            </div>
+            <div class="gotop">
+                <a href="javascript:;" class=""></a>
+            </div>
+        </div>
+
+    </div>
+<!-- 底部 -->
+    <div class="container">
+<div class="row">
+<div class="col-xs-4"><a href="javascript:;">登陆</a></div>
+<div class="col-xs-4"><a href="javascript:;">注册</a></div>
+<div class="col-xs-4">
+<a href="javascript:;" class="top">
+<i class="icon-app-down"></i>
+返回顶部</a>
+</div>
+</div>
+</div>
+
+<div class="index_bottom_footer">
+<p>
+<a class="appdownload" href="javascript:;">手机APP下载</a>
+<a href="javascript:;">慢慢买手机版</a> --掌上比价平台
+</p>
+<p class="index_bottom_website"><a href="javascript:;">m.manmanbuy.com</a></p>
+</div>
+
+
+
+    <script type='text/template' id="nav_bar">
+        {{each result as v i}}
+        <li data-id={{v.titleId}}><a href="#">{{v.title}}</a></li>
+        {{/each}}
+    </script>
+    <script type='text/template' id='product_title'>
+        <a href="../index.html" class="icon-left">
+            </a>
+                <h2>{{title}}-白菜价</h2>
+                <i class="icon-app-down"></i>
+    </script>
+     <!-- <script type='text/template' id="product_list">
+        {{each result as v i}}
+        <li>
+            <div class="ad_pic">
+                {{#v.productImg}}
+            </div>
+
+            <div class="ad_title">
+                {{#v.productName}}
+            </div>
+            <div class="ad_price">
+                {{#v.productPrice}}
+            </div>
+            <div class="ad_ticket">
+                {{#v.productCoupon}}
+                <div class="buyhref">
+                    {{#v.productHref}}
+                </div>
+            </div>
+            <div class="ticket_count">
+                {{#v.productCouponRemain}}
+            </div>
+            </a>
+        </li>
+        {{/each}}
+    </script> --> -->
+    <!--tab内容模板-->
+    <script type="text/html" id="product_list">
+        <div>
+            {{each result as v i}}
+
+            <div class="media clearfix">
+                <div class="cont_img">
+                    {{#v.productImg}}
+                </div>
+                <div class="con_con">
+                    <h4>{{#v.productName}}</h4>
+                    <p> {{#v.productPrice}}</p>
+                    <!--<p><i>券后</i><em>¥</em>7.9<del>¥17.9</del></p>-->
+
+                     
+                    <!--<div class="bar clearfix">
+                    <a class="goquan" target="_blank"></a>
+                    <i>
+                                <em style="width:1%;"></em><span>1%</span>
+                            </i>
+                    <b>已领82张</b>
+                </div>-->
+                    <div class="bottom clearfix">
+                        <div class="l">
+                            {{#v.productCoupon}}
+                        </div>
+                        <div class="r">
+                            {{#v.productHref}}
+                        </div>
+                    </div>
+                    <!-- {{#v.productCouponRemain}}  -->
+                </div>
+            </div>
+
+
+
+
+
+            {{/each}}
+        </div>
+    </script>
+    </script>
+    <script src='../libs/jquery/jquery.js'></script>
+    <script src='../libs/artTemplate/template.js'></script>
+    <script src='../libs/bootstrap/js/bootstrap.min.js'></script>
+    <script src='../js/config/config.js'></script>
+    <script src='../js/bc_js/bc_index.js'></script>
+    <script src='../libs/bootstrap/js/bootstrap.js'></script> -->
+    <script src='../js/iscroll.js'></script> -->
+    <script src='../js/common/bottom.js'></script>
+    <script>
+        // var bcj_list_ul = document.getElementsByClassName('bcj_list_ul');
+
+      
+    </script>
+</body>
+
+</html>

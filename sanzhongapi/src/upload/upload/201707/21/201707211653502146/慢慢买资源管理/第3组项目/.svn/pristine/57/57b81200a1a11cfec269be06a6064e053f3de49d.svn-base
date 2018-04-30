@@ -1,0 +1,155 @@
+@import "base.less";
+
+@mmb_red: #c91523;
+// 头部
+.view{}
+header{
+    position: relative;
+    height: 44px;
+    width: 100%;
+    background-color:@mmb_red;
+    .head_title{
+        text-align: center;
+        color: #fff;
+        font: 18px/44px "Microsoft Yahei"
+    }
+    .head_back{
+        width: 50px;
+        height: 100%;
+        color: #fff;
+        font-size:25px;
+        position: absolute;
+        left: 10px;
+        top: 10px;  
+    }
+    .head_download img{
+        width:34px;
+        height:34px; 
+        position: absolute;
+        top: 6px;
+        right: 6px;
+    }
+    
+}
+
+// 导航条
+.tabs{
+
+}
+.nav_list{
+    overflow: hidden;
+}
+.nav-tabs{
+    width: 245%;
+    height: 38px;
+    overflow: hidden;
+    position: relative; 
+    li{
+        width: 8%;
+        height: 38px;
+        line-height: 36px;
+        padding: 0;
+        margin: 0;
+        font-size:12px;
+        text-align: center;
+        a{  
+            display: inline-block;
+            font-size: 14px;
+            line-height: 38px;
+            padding: 0;
+            border:none;
+            margin: 0;
+            border-radius:0; 
+           
+        }
+    }
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover{
+    border: none;
+    color: red;
+}
+
+
+// 商品栏
+.tab-content{
+    margin-top: 5px;
+        li{
+        position: relative;
+        width: 100%;
+        padding-top: 10px;
+       .shopPic{
+            width: 40%;
+            float: left;
+         }
+        .shopInfo{
+        width: 58%;
+        float: right;
+         position: relative;
+            .shopInfo_head{
+                padding-top: 5px;
+             }
+            .shopInfo_middle{
+                  color: red;
+             }
+            .shopInfo_foot{
+                .bar{
+                    font-size: 12px;
+                    text-align: center;
+                    width: 110px;
+                    height: 36px;
+                    line-height: 36px;
+                    border: 2px dashed red;
+                }
+            .xiadan{
+                text-align: center;
+                line-height: 35px;
+                width: 70px;
+                height: 35px;
+                background-color: #FF5E5D;
+                position: absolute;
+                right: 5px;
+                bottom: 20px;
+                border-radius:5px;   
+                :link{
+                    color: #fff;
+                    text-decoration: none;
+                }
+                :visited{
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+        }
+   }
+}
+// 底部信息
+.buttom_info{
+    .footer{
+        
+        width: 100%;
+        li{
+            float: left;
+            width: 33%;
+            vertical-align: middle;
+            border: 1px solid #fff;
+            text-align: center;
+            border: 1px solid #ccc;
+            i{  
+            width: 16px;
+            height: 10px;
+            float: left;
+            margin-left:20px;
+            margin-right: -20px;
+            margin-top:2px; 
+            }
+        }
+        .app_info{
+            padding-top: 30px;
+            text-align: center;
+            span:nth-of-type(1){
+                color: red;
+            }
+        }
+    }
+}

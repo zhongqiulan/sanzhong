@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买比价网--手机版</title>
+    <link rel="stylesheet" href="../libs/bootstrap.3.3.7/content/Content/bootstrap.css">
+    <link rel="stylesheet" href="../css/index/base.css">
+    <link rel="stylesheet" href="../css/index/style.css">
+    <link rel="stylesheet" href="../css/index/index.css">
+</head>
+
+<body>
+
+    <!--头部-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid clearfix">
+            <div class="navbar-header header_logo pull-left">
+                <a class="navbar-brand" href="#"><img src="../images/header_logo.png" alt=""></a>
+            </div>
+            <div class="navbar-right app_donwload pull-right">
+                <img src="../images/header_app.png" alt="">
+            </div>
+        </div>
+    </nav>
+
+    <!--搜索框-->
+    <form action="" method="get" name="frm">
+        <div id="search" class="search clearfix1">
+            <div class="searchtxt">
+                <input value="" name="" type="search" placeholder="请输入你想比价的商品">
+            </div>
+            <div class="searchbtn">
+                <input type="submit" value="搜索">
+            </div>
+        </div>
+    </form>
+
+    <!--菜单栏-->
+    <div class="container ">
+        <div class="row menu menu_list">
+            
+        </div>
+    </div>
+
+    <!--推荐栏-->
+    <div class="recommend">
+        <div class="title">
+            <h3>
+                超值折扣推荐
+            </h3>
+            <a href="javascript:;">
+                <i class="icon-go"></i>
+            </a>
+        </div>
+        <div class="content">
+            <div class="info">
+                <ul class="info_list">
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="footer">
+        <div class="more">
+            <div class="pad"></div>
+            <a href="javascript:;">更多优惠信息>></a>
+        </div>
+        <div class="title">
+            <h3>
+                品牌排行
+            </h3>
+            <a href="javascript:;">
+                <i class="icon-go"></i>
+            </a>
+        </div>
+        <div class="login">
+            <div class="dl"><a href="javascript:;">登录</a></div>
+            <div class="zc"><a href="javascript:;">注册</a></div>
+            <div class="back"><a href="#"><i class="icon-up"></i>返回顶部</a></div>
+        </div>
+        <div class="copyRight">
+            <a href="javascript:;">手机APP下载</a>
+            <span>慢慢买手机版--掌上比价平台</span>
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+
+    <!--固定的APP接口-->
+    <div class="app_download">
+        <div class="mmb_app">
+            <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia"><img src="../images/mmbuy_app.png" alt=""></a>
+        </div>
+    </div>
+
+    <!--菜单模板-->
+    <script type="text/template" id="menu_tpl">
+        {{each result as value i}} {{if i < 7}}
+        <div class="col-xs-3">
+            <div class="thumbnail">
+                {{#value.img}}
+                <div class="caption">
+                    <p>{{ value.name }}</p>
+                </div>
+            </div>
+        </div>
+        {{/if}} {{/each}}
+        {{each result as value i}} {{if i == 7}}
+            <div class="col-xs-3" data-toggle="collapse" data-target="#collapseExample">
+                <div class="thumbnail">
+                    {{#value.img}}
+                    <div class="caption">
+                        <p>{{ value.name }}</p>
+                    </div>
+                </div>
+            </div>
+        {{/if}}{{/each}}
+        <div class="collapse" id="collapseExample">
+            <div class="well">
+                {{each result as value i}} {{if i > 7}}
+                <div class="col-xs-3">
+                    <div class="thumbnail">
+                        {{#value.img}}
+                        <div class="caption">
+                            <p>{{ value.name }}</p>
+                        </div>
+                    </div>
+                </div>
+                {{/if}}{{/each}}
+            </div>
+        </div>
+    </script>
+
+    <!--推荐栏模板-->
+    <script type="text/template" id="rec_tpl">
+        {{each result as value i}}
+        <li>
+            <a href="javascript:;" style="text-decoration: none;">
+                <div class="pic">
+                    {{#value.productImgSm}}
+                </div>
+                <div class="introduce">
+                    <div class="text">
+                        {{value.productName}}
+                        <span class="tips">{{value.productPinkage}}</span>
+                    </div>
+                    <div class="date">
+                        <span class="mall">{{value.productFrom}}|{{value.productTime}}</span>
+                        <span class="comment">
+                            <i class="icon-recommend"></i>
+                            {{value.productComCount}}
+                        </span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="../libs/jquery-1.12.4.js"></script>
+    <script src="../libs/bootstrap.3.3.7/content/Scripts/bootstrap.js"></script>
+    <script src="../libs/template.js"></script>
+    <script src="../js/index/index.js"></script>
+    <script src="../js/index/util.js"></script>
+</body>
+</html>

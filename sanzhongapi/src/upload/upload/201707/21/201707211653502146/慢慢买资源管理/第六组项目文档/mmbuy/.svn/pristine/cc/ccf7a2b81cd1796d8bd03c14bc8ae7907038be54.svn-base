@@ -1,0 +1,15 @@
+define(['jquery'], function($) {
+   $(".login_span").on("click",function(){
+        $(".login_foot").fadeOut(500);
+    });
+    
+    $(".uname").on("blur",function(){
+      var str = $("#t_username").val();
+      var ret = /^[a-zA-Z][a-zA-Z0-9_]{5,20}$/;
+      if(ret.test(str)){
+        alert('ok');
+      }else{
+        alert('wrong');
+      }
+    })
+});

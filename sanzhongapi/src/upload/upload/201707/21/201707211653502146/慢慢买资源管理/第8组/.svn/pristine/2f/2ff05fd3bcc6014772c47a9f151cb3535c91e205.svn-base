@@ -1,0 +1,17 @@
+    <!--底部区域-->
+    <footer>
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <div class="row">
+                    <div class="login col-sm-4 col-xs-4"><a href="javascript:;">登录</a></div>
+                    <div class="register col-sm-4 col-xs-4"><a href="javascript:;">注册</a></div>
+                    <div class="to-top col-sm-4 col-xs-4"><a href="javascript:;" ><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+            <div class="app-updown">
+                <a href="javascript:;">手机APP下载</a>
+                <span>慢慢买手机版</span><span> - 掌上比价平台</span>
+                <p>m.mammambuy.com</p>
+            </div>
+        </nav>
+   </footer>

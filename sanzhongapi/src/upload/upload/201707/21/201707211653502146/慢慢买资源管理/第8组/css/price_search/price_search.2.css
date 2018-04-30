@@ -1,0 +1,183 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  margin-bottom: 10px;
+}
+.navbar .container-fluid {
+  background-color: #ff841d;
+}
+.navbar .container-fluid .header-logo a.navbar-brand img {
+  height: 25px;
+}
+.navbar .container-fluid .app-download img {
+  height: 34px;
+  margin: 8px;
+}
+.container {
+  margin-bottom: 10px;
+}
+.container .col-md-12 div.input-group {
+  width: 100%;
+}
+.container .col-md-12 input.form-control {
+  border-radius: 17px;
+  background-color: #f1f1f1;
+  width: 110%;
+}
+.container .col-md-12 span.input-group-addon {
+  position: relative;
+  border-radius: 17px;
+  background-color: #ff841d;
+  color: white;
+  width: 60px;
+  z-index: 2;
+}
+.main {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.main ol.breadcrumb {
+  margin: 0;
+}
+.main ol.breadcrumb li {
+  color: black;
+}
+.main ol.breadcrumb li a {
+  color: black;
+}
+.breadcrumb > li + li:before .breadcrumb > li + li:before li + .main ol.breadcrumb li:before {
+  content: 'ggg';
+}
+.main .commodity_info {
+  position: relative;
+  height: 270px;
+}
+.main .commodity_info p.title {
+  height: 80px;
+  padding: 20px 20px 0px;
+  font-size: 17px;
+  text-align: center;
+}
+.main .commodity_info div.camera {
+  height: 175px;
+  text-align: center;
+}
+.main .commodity_info i {
+  font-style: normal;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  background-color: #95d600;
+  color: #fff;
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+}
+.main ul.commodity_nav {
+  border-top: 2px solid #e0953f;
+  border-bottom: 2px solid #e0953f;
+  background-color: lime;
+  margin: 0px;
+}
+.main ul.commodity_nav li {
+  height: 40px;
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  background-color: #ffc21e;
+  color: #fff;
+}
+.main ul.commodity_nav li:nth-of-type(2) {
+  border-left: 2px solid #e0953f;
+  border-right: 2px solid #e0953f;
+}
+.main ul.commodity_contetnt li.comment_content h4 {
+  text-align: center;
+  background-color: #dbdbdb;
+  height: 35px;
+  line-height: 35px;
+}
+.main ul.commodity_contetnt li.comment_content ul > li div.user_info {
+  position: relative;
+  height: 60px;
+  padding: 5px 20px;
+}
+.main ul.commodity_contetnt li.comment_content ul > li div.user_info:after {
+  content: '';
+  height: 0;
+  display: block;
+  clear: both;
+}
+.main ul.commodity_contetnt li.comment_content ul > li div.user_info p {
+  position: absolute;
+  bottom: 0;
+  right: 20px;
+  text-align: right;
+}
+.main ul.commodity_contetnt li.comment_content ul > li div.content {
+  padding: 5px 20px 20px;
+  color: black;
+}
+div.btn_page {
+  position: relative;
+  width: 100%;
+  padding: 10px 20px;
+}
+div.btn_page #select_box {
+  height: 34px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  text-align: center;
+  padding-left: 15px;
+}
+footer {
+  overflow: hidden;
+}
+footer .navbar {
+  height: 100px;
+  margin: 0;
+  background-color: #efefef;
+}
+footer .navbar .row div {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+footer .navbar .row div a {
+  color: black;
+  font-size: 14px;
+}
+footer .navbar .row div a span {
+  color: #747474;
+  font-size: 12px;
+}
+footer .navbar .row div:nth-of-type(2) {
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+}
+footer .navbar div.app-updown {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+footer .navbar div.app-updown a {
+  color: red;
+}
+footer .navbar div.app-updown span:first-of-type {
+  color: black;
+}
+footer .navbar div.app-updown span:last-of-type {
+  color: #7b7b7b;
+}
+footer .navbar div.app-updown p {
+  color: #7b7b7b;
+}

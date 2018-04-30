@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/css/common/style.css">
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/getmoneyctrl/list.css">
+    <link rel="stylesheet" href="/css/common/bottom/bottom.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <div class="back">
+            <a href="javascript:;" class="glyphicon glyphicon-menu-left" aria-hidden="true"></a>
+        </div>
+        <div class="title">
+            <h2>省钱控-最新优惠</h2>
+        </div>
+        <div class="app">
+            <img src="/imgs/header_app.png" alt="">
+        </div>
+    </header>
+    <!--主体-->
+    <main>
+
+
+
+
+    </main>
+    <!--底部-->
+    <div class="common_bottom">
+             <div class="container">
+            <div class="row">
+                <div class="col-xs-4"><a href="javascript:;">登陆</a></div>
+                <div class="col-xs-4"><a href="javascript:;">注册</a></div>
+                <div class="col-xs-4">
+                    <a href="javascript:scroll(0,0)" >
+                        <i class="glyphicon glyphicon-arrow-up"></i>
+                    返回顶部</a>
+                </div>
+            </div>
+        </div>
+            <div class="index_bottom_footer">
+                <p>
+                    <a class="appdownload" href="javascript:;">手机APP下载</a>
+                    <a href="javascript:;">慢慢买手机版</a> --掌上比价平台
+                </p>
+                <p class="index_bottom_website"><a href="javascript:;">m.manmanbuy.com</a></p>
+            </div>
+        </div>
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/config/config.js"></script>
+    <script src="/libs/artTemplate/template.js"></script>
+    <script src="/js/getmoneyctrl/list.js"></script>
+    <script src="/js/common/bottom.js"></script>
+
+    <!--模板-->
+    <script type="text/template" id="gmc_tpl">
+        <ul>
+            {{each result as v i}}
+            <li data-id="{{v.productId}}">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                        {{#v.productImgSm}}
+                    </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{v.productName}}<span>{{v.productPinkage}}</span></h4>
+                        <div class="info">
+                            <div class="info-left pull-left">{{v.productFrom}}|{{v.productTime}}</div>
+                            <div class="info-right pull-right">
+                                <span class="icon-comment"></span>&nbsp;{{v.productComCount}}
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            {{/each}}
+        </ul>
+        <div class="page">
+            <button class="pull-left preBtn">上一页</button>
+            <select name="pageid" id="">
+                {{each arr as v i}}
+                <option value="{{v+1}}" class="isBtn">{{v+1}}/{{count}}</option>
+                {{/each}}
+            </select>
+            <button class="pull-right nextBtn">下一页</button>
+        </div>
+        <div class="link">
+            <a href="javascript:;">首页</a> &nbsp;>&nbsp;
+            <a href="javascript:;">省钱控</a>
+        </div>
+    </script>
+</body>
+
+</html>

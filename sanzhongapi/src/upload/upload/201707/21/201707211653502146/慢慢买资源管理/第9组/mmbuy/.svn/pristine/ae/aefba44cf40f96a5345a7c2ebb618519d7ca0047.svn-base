@@ -1,0 +1,23 @@
+$(function () {
+    alert(123);
+    var id = o.queryString().couponid;
+    console.log(o.queryString());
+    $.ajax({
+        url: 'http://139.199.192.48:9090/api/getcouponproduct',
+        type: 'get',
+        dataType: "JSON",
+        data: {
+            couponid: id
+        },
+        success: function (info) {
+            console.log(info);
+            var htmlStr = template('coupon_list', info);
+            $('.coupon_list').html(htmlStr);
+        }
+    })
+
+
+    $('.coupon_list').on('shown.bs.modal','a', function () {
+        $('#myInput').focus()
+    })
+})

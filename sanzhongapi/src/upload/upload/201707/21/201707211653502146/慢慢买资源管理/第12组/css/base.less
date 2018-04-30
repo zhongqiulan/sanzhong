@@ -1,0 +1,200 @@
+@charset "utf-8";
+
+/* CSS Document */
+
+@media only screen and (max-width: 1080px), only screen and (max-device-width:1080px) {
+     html,body {
+         font-size:168.75px;
+     }
+   }
+     @media only screen and (max-width: 960px), only screen and (max-device-width:960px) {
+     html,body {
+         font-size:150px;
+     }
+   }
+     @media only screen and (max-width: 800px), only screen and (max-device-width:800px) {
+     html,body {
+         font-size:125px;
+     }
+   }   
+     @media only screen and (max-width: 720px), only screen and (max-device-width:720px) {
+     html,body {
+         font-size:112.5px;
+     }
+   }
+     @media only screen and (max-width: 640px), only screen and (max-device-width:640px) {
+     html,body {
+         font-size:100px;
+     }
+   }
+     @media only screen and (max-width: 600px), only screen and (max-device-width:600px) {
+     html,body {
+         font-size:93.75px;
+     }
+   }
+     @media only screen and (max-width: 540px), only screen and (max-device-width:540px) {
+     html,body {
+         font-size:84.375px;
+     }
+   }
+     @media only screen and (max-width: 480px), only screen and (max-device-width:480px) {
+     html,body {
+         font-size:75px;
+     }
+   }
+     @media only screen and (max-width: 414px), only screen and (max-device-width:414px) {
+     html,body {
+         font-size:64.6875px;
+     }
+   }
+     @media only screen and (max-width: 400px), only screen and (max-device-width:400px) {
+     html,body {
+         font-size:62.5px;
+     }
+   }
+     @media only screen and (max-width: 375px), only screen and (max-device-width:375px) {
+     html,body {
+         font-size:58.59375px;
+     }
+   }
+     @media only screen and (max-width: 360px), only screen and (max-device-width:360px) {
+     html,body {
+         font-size:56.25px;
+     }
+   }
+     @media only screen and (max-width: 320px), only screen and (max-device-width:320px) {
+     html,body {
+         font-size:50px;
+     }
+   }
+     @media only screen and (max-width: 240px), only screen and (max-device-width:240px) {
+     html,body {
+         font-size:37.5px;
+     }
+   }
+
+
+ 
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+
+a {
+    color: #000;
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+ul,
+ol,
+li {
+    list-style: none;
+}
+
+em,
+i {
+    font-style: normal;
+}
+
+img {
+    border: none;
+}
+
+input,
+img {
+    vertical-align: middle;
+}
+
+body {
+    color: #000;
+    font-family: "Microsoft YaHei";
+    background-color: #fff;
+    overflow-x: hidden;
+}
+
+
+
+@mmm_color: #ff841d;
+#header {
+   height: 0.5rem;
+    background-color: #ff841d;
+    padding: 0.1rem;
+    >.logo {
+        margin-left: 0.05rem;
+        >img {
+            height: 0.25rem;
+        }
+    }
+    >.app {
+        float: right;
+        margin-top: -0.02rem;
+        >img {
+            height: 0.34rem;
+        }
+    }
+}
+
+//底部区域
+#footer{
+    background-color: #efefef;
+    padding-top: .2rem;
+    .row{
+        margin-bottom: .1rem;
+        border: .01rem solid #ccc;
+        div{
+            padding: 0;
+            height: .25rem;
+            line-height: .25rem;
+            >a{
+                display: block;
+                width: 100%;
+                text-align: center;
+               
+            }
+             a:hover{
+                color: #000;
+            }
+            
+        }
+        div:nth-last-child(2){
+            border-right: 1px solid #ccc;
+            border-left: 1px solid #ccc;
+        }
+        div:nth-last-child(1){
+            >a{
+                display: block;
+                width: 100% ;
+                height: 100%;
+                img{
+                    width:.05rem;
+                    height: .05rem
+                }
+            }
+        }
+    }
+    p{
+        text-align: center;
+        margin:0;
+        
+        a:first-of-type{
+            color: red;
+        }
+    }
+}

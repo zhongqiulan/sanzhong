@@ -1,0 +1,219 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+p,
+div {
+  padding: 0;
+  margin: 0;
+}
+body {
+  color: #000;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+  color: #000;
+}
+.clearfix:after {
+  content: "";
+  height: 0;
+  display: block;
+  clear: both;
+}
+input {
+  outline: 0;
+}
+.view .header {
+  width: 100%;
+}
+.view .header .logo {
+  height: 50px;
+  position: relative;
+  width: 100%;
+  background: #ff841d;
+}
+.view .header .logo .fl {
+  position: absolute;
+  left: 15px;
+  padding: 0px 10px;
+  top: 12px;
+}
+.view .header .logo .fl a {
+  display: inline-block;
+}
+.view .header .logo .fl a img {
+  height: 25px;
+}
+.view .header .logo .fr {
+  position: absolute;
+  right: 15px;
+  padding: 0px 10px;
+  top: 8px;
+}
+.view .header .logo .fr a {
+  display: inline-block;
+}
+.view .header .logo .fr a img {
+  height: 34px;
+}
+.view .header .search {
+  height: 30px;
+  position: relative;
+  margin-top: 15px;
+}
+.view .header .search .input {
+  height: 30px;
+  width: 90%;
+  position: absolute;
+  left: 10px;
+  top: 0px;
+  border-radius: 20px;
+  border: 1px solid #f1f1f1;
+  background: #f1f1f1;
+  padding: 0 12px;
+}
+.view .header .search .input-text {
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  display: inline-block;
+  width: 50px;
+  height: 30px;
+  background: #ff841d;
+  text-align: center;
+  line-height: 30px;
+  border-radius: 20px;
+  color: #fff;
+  font-size: 13px;
+}
+.view .nav .thum {
+  width: 25%;
+  text-align: center;
+  float: left;
+  margin-top: 10px;
+}
+.view .nav .thum img {
+  width: 50px;
+}
+.view .nav .thum p {
+  margin-top: 5px;
+}
+.view .discount {
+  width: 100%;
+}
+.view .discount .discount_title {
+  background: #ff841d;
+  padding: 0px 10px;
+  height: 35px;
+  line-height: 35px;
+}
+.view .discount .discount_title h3 {
+  line-height: 35px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  float: left;
+}
+.view .discount .discount_title a {
+  float: right;
+}
+.view .discount .discount_title a img {
+  width: 20px;
+}
+.view .discount .discount_content ul {
+  margin-top: 15px;
+}
+.view .discount .discount_content ul li {
+  margin-top: 20px;
+}
+.view .discount .discount_content ul li a {
+  display: inline-block;
+  color: #000;
+  width: 100%;
+}
+.view .discount .discount_content ul li a .pic {
+  padding: 0 10px;
+  padding-right: 0px;
+  text-align: center;
+}
+.view .discount .discount_content ul li a .pic img {
+  width: 100px;
+  height: 100px;
+  padding: 0px;
+  margin: 0px;
+}
+.view .discount .discount_content ul li a .info .title {
+  padding-bottom: 10px;
+}
+.view .discount .discount_content ul li a .info .title span {
+  color: #ff0000;
+}
+.view .discount .discount_content ul li a .info .other {
+  width: 100%;
+  position: relative;
+  color: #ccc;
+}
+.view .discount .discount_content ul li a .info .other b {
+  position: absolute;
+  right: 0px;
+  color: #ccc;
+  font-weight: normal;
+}
+.view .footer {
+  background: #f2f2f2;
+  overflow: hidden;
+}
+.view .footer .more-info {
+  padding: 8px;
+  text-align: center;
+  background: #fff;
+  width: 96%;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+.view .footer .more-info a {
+  color: #000;
+}
+.view .footer .brand-reco {
+  height: 35px;
+  background: #ff841d;
+  padding: 0 10px;
+}
+.view .footer .brand-reco h3 {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.view .footer .brand-reco a {
+  float: right;
+  line-height: 35px;
+}
+.view .footer .brand-reco a img {
+  width: 20px;
+}
+.view .footer .tool ul {
+  list-style: none;
+  margin: 10px 0px;
+}
+.view .footer .tool ul li {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+.view .footer .tool .mmurl {
+  text-align: center;
+}
+.view .footer .tool .mmurl span {
+  color: red;
+}

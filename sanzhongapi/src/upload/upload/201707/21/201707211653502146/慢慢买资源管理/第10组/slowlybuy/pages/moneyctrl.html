@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+     <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">  -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>海淘折扣</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/moneyctrl.css">
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!--头部  -->
+        <div class="ht-header">
+            <a href="../index.html" class='back'>
+                 <i class='glyphicon glyphicon-chevron-left'></i>
+             </a>
+            <h2>海淘折扣</h2>
+            <a href="appdown.html" class='app'></a>
+        </div>
+
+
+        <!--内容区  -->
+        <div class="ht-content">
+            <!-- <div class="media">
+                <div class="media-left ht-media-left">
+                    <a href="#">
+                     <img class="media-object" src="../images/haitao1.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">adidas 阿迪达斯 Next Level Speed 5 男子篮球鞋&nbsp;<span>$28（约￥290）</span> </h4>
+                    <span class='mall'>美国亚马逊</span>
+                    <span class='comment'><i class='glyphicon glyphicon-comment'></i>0</span>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left ht-media-left">
+                    <a href="#">
+                     <img class="media-object" src="../images/haitao2.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">adidas 阿迪达斯 Next Level Speed 5 男子篮球鞋&nbsp;<span>22099日元（转运约￥1740）</span> </h4>
+                    <span class='mall'>美国亚马逊</span>
+                    <span class='comment'><i class='glyphicon glyphicon-comment'></i>0</span>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left ht-media-left">
+                    <a href="#">
+                     <img class="media-object" src="../images/haitao3.jpg" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">adidas 阿迪达斯 Next Level Speed 5 男子篮球鞋&nbsp;<span>22099日元（转运约￥1740）</span> </h4>
+                    <span class='mall'>美国亚马逊</span>
+                    <span class='comment'><i class='glyphicon glyphicon-comment'></i>0</span>
+                </div>
+            </div> -->
+        </div>
+
+        <!--上下翻页  -->
+        <div class="ht-page">
+            <!--左右翻页  -->
+            <nav>
+                <ul class="pager">
+                    <li class="previous"><a href="#" class='prev_a'>上一页</a></li>
+                    <li >
+                        <div class="btn-group  ">
+                            <select class="form-control select-opt">
+                                  <!-- <option value=""></option>   -->
+                            </select>
+                        </div>
+                    </li>
+                    <li class="next "><a href="#" class='next_a'>下一页</span></a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--跳转页面  -->
+        <div class="ht-jump">
+            <a href="../index.html">首页</a>&nbsp;>&nbsp;
+            <a href="./savemoney.html">省钱控</a> &nbsp;>&nbsp海淘折扣
+        </div>
+
+        <!--底部  -->
+        <div class="footer">
+                <div class="row footer-top">
+                    <div class="col-xs-4 footer-nav"><a href="#">登录</a></div>
+                    <div class="col-xs-4 footer-nav"><a href="#">注册</a></div>
+                    <div class="col-xs-4 footer-nav backft" ><a href="javascript:;"><img src="../images/haitao-top.jpg" alt="">返回顶部</a></div>
+                </div>
+            <div class="footer-botton">
+               <p><a href="appdown.html" class='phone-app'>手机APP下载</a><a href="../index.html" class='manman'>慢慢买手机版</a> -- 掌上比价平台</p>
+               <p><a href="" class='m-com'>m.manmanbuy.com </a></p>
+            </div>
+        </div>
+        <div class="footer-app">
+            <a href="appdown.html">
+                <img src="../images/haitao4.png" alt="">
+            </a>
+        </div>
+
+    </div>
+</body>
+
+
+<script src='../lib/jquery/jquery.js'></script>
+<script src='../lib/template/template.js'></script>
+<script src='../lib/bootstrap/js/bootstrap.js'></script>
+<script src='../js/common/geturl.js'></script>
+<script src='../js/moneyctrl.js'></script>
+
+<!--模板  -->
+<script type='text/template' id='haitao-content-tpl'>
+    {{each result as v i}}
+     <div class="media" data-id='{{v.productId}}'>
+        <div class="media-left ht-media-left">
+            <a href="#">
+                {{#v.productImgSm}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{v.productName}}<span>{{v.productPinkage}}</span> </h4>
+            <span class='mall'>{{v.productFrom}}</span>
+            <span class='comment'><i class='glyphicon glyphicon-comment'></i>{{v.productComCount==''? '有0人评论':v.productComCount}}</span>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+</html>

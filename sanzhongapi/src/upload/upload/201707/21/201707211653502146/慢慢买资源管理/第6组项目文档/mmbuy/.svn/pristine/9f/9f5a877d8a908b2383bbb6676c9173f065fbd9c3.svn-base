@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/saveMoney.css">
+</head>
+
+<body>
+    <div class="save_view">
+        <!--1.头部-->
+        <div class="save_header">
+            <i class="glyphicon glyphicon-menu-left"></i>
+            <h4>省钱控 - 最新优惠</h4>
+            <a href="#"><img src="/views/public/image/init-imgs/header_app.png" alt=""></a>
+        </div>
+        <!--2.ajax请求的内容-->
+        <div class="save_menu">
+            <ul id="save_menu_ul">
+                <!--<li>
+                    <div class="media menu_media">
+                        <div class="media-left menu_left">
+                            <a href="#">
+                                <img class="media-object" src="/views/public/image/1.png" alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body menu_body">
+                            <h4 class="media-heading">移动端筹商品:海天 鲜味 生抽 1.28L <span>10.9元</span></h4>
+                            <span>京东商城 | 10-25 14:10 </span>
+                            <span class="menu_em pull-right"><img src="/views/public/image/init-imgs/dx.png" >&nbsp; 1 </span>
+                        </div>
+                     </div>
+                </li>-->
+            </ul>
+        </div>
+        <div class="save_btn">
+            <div class="save_button_btn">
+                <button type="submit" class="btn btn-default pull-left">上一页</button>
+                <select id="save_select">
+                 
+                </select>
+                <button type="submit" class="btn btn-default pull-right">下一页</button>
+            </div>
+        </div>
+        <!--3.底部-->
+        <div class="save_footed">
+            <div class="index_save">首页 > 省钱惠</div>
+            <!--空白区域-->
+            <div class="whileLine"></div>
+            <div class="save_Btn">
+                <div class="save_login"></div>
+                <div class="register"></div>
+                <div class="get_back"></div>
+            </div>
+        </div>
+        <!--4.右边固定的小图标-->
+        <div class="save_fixed">
+            <a href=""><img src="https://img.alicdn.com/imgextra/i2/379516416/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" ></a>
+        </div>
+    </div>
+    <?php include '/views/common/script.html'?>
+
+</body>
+
+<script id="save_menu_tpl" type="text/template">
+    {{each result as v i}}
+    <li data-id="{{v.productId}}" >
+        <a href="/views/page/produceDetail?productId={{v.productId}}" class="save_a" >
+        <div class="media menu_media">
+            <div class="media-left menu_left">
+                <!-- <a href="#"> -->
+                    {{#v.productImgSm}}
+                <!-- </a> -->
+            </div>
+            <div class="media-body menu_body clearfix">
+                <h4 class="media-heading">{{v.productName}}<span>{{v.productPinkage}}</span></h4>
+                <span>{{v.productFrom}}&nbsp; | &nbsp;{{v.productTime}}</span>
+                <span class="menu_em pull-right"><img src="/views/public/image/init-imgs/dx.png" >&nbsp; {{v.productComCount}}</span>
+            </div>
+        </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<script>
+    require(['js/saveMoney']);
+</script>
+
+</html>

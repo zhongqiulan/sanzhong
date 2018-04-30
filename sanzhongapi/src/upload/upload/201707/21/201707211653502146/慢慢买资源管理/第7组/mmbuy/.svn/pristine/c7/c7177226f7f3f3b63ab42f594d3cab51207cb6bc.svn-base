@@ -1,0 +1,51 @@
+/**
+ * 获取标题栏的内容信息
+ */
+var search = location.search;
+// search = search.slice(1);
+getDuctTitle();
+
+function getDuctTitle() {
+    $.ajax({
+        url: config.getUrl('/api/getcategorybyid') + search,
+        type: 'get',
+        success: function (data) {
+            var hrefStr = './ductlist.html?categoryid=' + data.result[0].categoryId;
+            $(".nav_title > a:last-of-type").attr("href", hrefStr).html(data.result[0].category);
+        }
+    })
+}
+
+/**
+ *渲染产品内容信息
+ */
+getDuctList();
+
+function getDuctList() {
+    $.ajax({
+        url: config.getUrl('/api/getproductlist') + search,
+        type: 'get',
+        success: function (data) {
+            var htmlStr = template("ductListTpl", data);
+            $(".content").html(htmlStr);
+
+            var totaPage = Math.ceil(data.totalCount / data.pagesize);
+            // 获取当前页最后一个元素的值
+            var currentPage = Math.floor(+$(".content .media").last().attr("data-productListId") / data.pagesize);
+            // 动态创建页码信息
+            for (var i = 0; i < totaPage; i++) {
+                var option = $("<option>");
+                option.attr('value', i + 1);
+                if ((i + 1) == currentPage) {
+                    option.prop('selected', true);
+                }
+                option.html((i + 1) + '/' + totaPage);
+                $(".flip select").append(option);
+            }
+
+        }
+    }) //ajax
+}
+// local storage
+sessionStorage.setItem('step1', JSON.stringify($(".title .left a:last-of-type").html()));
+// sessionStorage.setItem('step2', JSON.stringify($('input[type="hidden"]').val()));

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买项目</title>
+    <?php include '/views/common/css.html' ?>
+</head>
+<body>
+    <div class="view">
+        <!-- 头部 -->
+        <div class="header">
+            <div class="logo">
+                <div class="fl">
+                    <a href=""><img src="/images/header_logo.png" alt=""></a>
+                </div>
+                <div class="fr">
+                    <a href=""><img src="/images/header_app.png" alt=""></a>
+                </div>
+            </div>
+            <div class="search clearfix">
+                <input type="text" class="input" placeholder="请输入你想比价的商品">
+                <span class="input-text">搜索</span>
+            </div>
+        </div>
+        <!-- 导航栏 -->
+        <div class="nav clearfix">
+
+        </div>
+        <!-- 超值折扣推荐 -->
+        <div class="discount">
+            <!-- 折扣标题 -->
+            <div class="discount_title clearfix">
+                <h3>超值折扣推荐</h3>
+                <a href=""><img src="/images/more.png" alt=""></a>
+            </div>
+            <!-- 折扣内容 -->
+            <div class="discount_content">
+                <ul>
+                    <li class="list">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 底部 -->
+        <div class="footer">
+            <div class="more-info">
+                <a href='#'>更多优惠信息>></a>
+
+            </div>
+            <div class="brand-reco  clearfix">
+                <h3>品牌排行</h3>
+                <a href=""><img src="/images/more.png" alt=""></a>
+            </div>
+            <div class="tool">
+                <ul class="clearfix">
+                    <li>登陆</li>
+                    <li>注册</li>
+                    <li id="top"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</li>
+                </ul>
+                <div class="mmurl">
+                    <span>手机APP下载</span> 慢慢买手机版--掌上比价平台
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<?php include '/views/common/script.html' ?>
+<!-- 菜单导航渲染 -->
+<script type="text/template" id="nav">
+    {{each result as v i}}
+    <a href='{{v.titlehref}}' class="thum">
+            {{#v.img}}
+            <p class="name">{{v.name}}</p>
+     </a> {{/each}}
+</script>
+ <!-- 折扣商品列表渲染        -->
+<script type="text/template" id="list">
+    {{each result as value index}}
+    <a href="/produceDetail?productId={{value.productId}}" class="clearfix">
+        <div class="pic col-xs-4 col-md-4 col-sm-4 col-lg-4">{{#value.productImgSm}}</div>
+        <div class="info col-xs-8 col-md-8 col-sm-8 col-lg-8">
+            <div class="title">
+                {{value.productName}}
+                <span>{{value.productPinkage}}</span>
+            </div>
+            <div class="other">
+                <span>{{value.productFrom}}|{{value.productTime}}</span>
+                <b>{{value.productComCount}}</b>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+</script>
+<script>
+    require(['js/nav', 'js/list']);
+</script>
+
+</html>

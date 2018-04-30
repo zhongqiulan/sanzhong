@@ -1,0 +1,200 @@
+/*    author:郑伟雄
+      data:2017/7/19;
+*/
+header {
+  width: 100%;
+}
+header h1 {
+  width: 100%;
+  border-bottom: 1px solid  #e6e6e6 ;
+  background-color: #ff841d;
+  height: 50px;
+  padding-top: 13px;
+  position: relative;
+  padding-left: 25px;
+  margin-top: 0;
+}
+header h1 a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url('../../../../images/header_logo.png') no-repeat 0 0;
+  background-size: 185.5px ;
+}
+header h1 span {
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  background: url('../../../../images/header_app.png') no-repeat 0 0;
+  background-size: 34px ;
+  top: 10px;
+  right: 10px;
+}
+header .search .input-group {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+}
+header .search .input-group input {
+  border-radius: 50px;
+  width: 94%;
+  font-size: 12px;
+  background-color: #f6f6f6;
+  outline-color: none;
+  border-color: none;
+  border: none;
+  outline: none;
+}
+header .search .input-group span {
+  width: 63px;
+  border-radius: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  height: 34px;
+  background-color: #ff841d;
+  font-size: 16px;
+  color: #fff;
+  line-height: 19px;
+}
+.main .explain {
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+.main .explain .branName h3 {
+  font-size: 18px;
+  font-family: '微软雅黑';
+  font-weight: 700;
+  color: #000;
+  padding-left: 10px;
+  margin: 10px;
+}
+.main .explain p {
+  background-color: #fff;
+  margin: 0  5px;
+  padding: 10px;
+}
+.main .explain .hotSales {
+  background-color: #f7f7f7;
+  height: 36px;
+  line-height: 36px;
+  margin: 10px;
+  color: #888;
+}
+.main .nav li {
+  float: left;
+  width: 25%;
+}
+.main .nav li a {
+  display: block;
+  text-align: center;
+  line-height: 23px;
+  height: 40px;
+  font-size: 14px;
+}
+.main .nav li:first-of-type a {
+  color: red;
+}
+.main .show {
+  border-top: 1px solid #ccc;
+}
+.main .show ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 0;
+}
+.main .show ul li {
+  height: 140px;
+  border-bottom: 1px solid #ccc;
+  padding: 30px 10px;
+  position: relative;
+}
+.main .show ul li .show_left img {
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.main .show ul li .price {
+  position: absolute;
+  font-size: 18px;
+  font-weight: bold;
+  color: red;
+  left: 140px;
+  top: 70px;
+}
+.main .show ul li .title {
+  font-size: 16px;
+  position: absolute;
+  left: 140px;
+  top: 28px;
+}
+.main .show ul li span {
+  position: absolute;
+  font-size: 12px;
+  left: 140px;
+  bottom: 20px;
+  color: #ccc;
+}
+.main .show ul li i {
+  position: absolute;
+  right: 0;
+  top: 80px;
+  color: #ccc;
+}
+.footer {
+  background: #f2f2f2;
+  overflow: hidden;
+}
+.footer .more-info {
+  padding: 8px;
+  text-align: center;
+  background: #fff;
+  width: 96%;
+  margin: 10px 10px;
+  border-radius: 5px;
+}
+.footer .more-info a {
+  color: #000;
+}
+.footer .brand-reco {
+  height: 35px;
+  background: #ff841d;
+  padding: 0 10px;
+}
+.footer .brand-reco h3 {
+  float: left;
+  padding: 0px;
+  margin: 0px;
+  line-height: 35px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+}
+.footer .brand-reco a {
+  float: right;
+  line-height: 35px;
+}
+.footer .brand-reco a img {
+  width: 20px;
+}
+.footer .tool ul {
+  list-style: none;
+  margin: 10px 0px;
+}
+.footer .tool ul li {
+  width: 33.3%;
+  float: left;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 8px;
+}
+.footer .tool .mmurl {
+  text-align: center;
+}
+.footer .tool .mmurl span {
+  color: red;
+}

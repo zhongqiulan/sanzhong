@@ -1,0 +1,53 @@
+.views{
+    header{
+        width: 100%;
+        height: 50px;
+        background-color: #ff841d;
+        .logo{
+            padding:12px;
+            img{
+                max-height:25px;
+            }
+        }
+        .app-download{
+            padding:7px;
+            img{
+                max-height:34px;
+            }
+        }
+    }
+    .searchBox{
+        width: 100%;
+        height: 50px;
+        padding:10px;
+        position: relative;
+        font-size: 16px;
+        border-bottom: 1px solid #ccc;
+        input{
+            padding: 0;
+            width: 90%;
+            height: 30px;
+            line-height: 30px;
+            display: block;
+            border: none;
+            padding-left: 20px;
+            border-radius:15px;
+            background-color: #f1f1f1;
+            position: absolute;
+
+        }
+        .search_btn{
+            width: 66px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+            background-color: #ff841d;
+            border-radius: 15px;
+            color:#fff;
+            border: none;
+            position: absolute;
+            top:10px;
+            right: 10px;
+        }
+    }
+}

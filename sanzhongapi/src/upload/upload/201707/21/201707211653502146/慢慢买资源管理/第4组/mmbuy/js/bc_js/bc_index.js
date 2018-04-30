@@ -1,0 +1,237 @@
+
+navBar();
+productlist();
+// tabScroll();
+navtitle();
+
+// 渲染tab栏标签
+function navBar() {
+    $.ajax({
+        url: config.getUrl('/api/getbaicaijiatitle'),
+        dataType: 'JSON',
+        type: 'GET',
+        success: function (data) {
+            var htmlStr = template('nav_bar', data);
+            // console.log(data);
+            $('.nav_bar').html(htmlStr);
+            var navwidth = data.result.length * 65;
+            $('.nav_bar').width(navwidth)
+
+            var myScroll = new IScroll('#wrapper', {
+                scrollX: true,
+                scrollY: false
+            });
+        }
+
+    })
+
+}
+// tab栏点击事件list栏样式
+$('.nav_bar').on('click', 'li', function () {
+    var id = $(this).attr('data-id');
+    $('.nav_bar>li').removeClass("border");
+    $(this).addClass("border");
+    console.log(id);
+    $.ajax({
+        url: config.getUrl('/api/getbaicaijiaproduct'),
+        dataType: 'JSON',
+        type: 'GET',
+        data: { titleid: id },
+        success: function (data) {
+            var htmlStr = template('product_list', data);
+            // console.log(data);
+            $(".bcj_list_ul").html(htmlStr);
+
+
+        }
+    })
+})
+// tab栏点击事件nav栏样式
+$('.nav_bar').on('click', 'li', function () {
+    var id = $(this).attr('data-id');
+    // console.log(id);
+    $.ajax({
+        url: config.getUrl('/api/getbaicaijiatitle'),
+        dataType: 'JSON',
+        type: 'GET',
+        success: function (data) {
+            if (id == 0) {
+                var htmlStr2 = template('product_title', { title: '淘宝内部券' });
+            } else if (id == 1) {
+                var htmlStr2 = template('product_title', { title: '一小时热销' });
+            } else {
+                var htmlStr2 = template('product_title', data.result[id]);
+                // console.log(data.result[id])
+
+            }
+            $(".header").html(htmlStr2)
+
+        }
+    })
+})
+
+
+// 渲染list栏初始样式
+
+function productlist() {
+    $.ajax({
+        url: config.getUrl('/api/getbaicaijiaproduct'),
+        dataType: 'JSON',
+        type: 'GET',
+        data: { titleid: 1 },
+        success: function (data) {
+            var htmlStr = template('product_list', data);
+            // console.log(data);
+            $(".bcj_list_ul").html(htmlStr);
+
+        }
+    })
+}
+// 渲染nav栏初始样式
+function navtitle() {
+    var id = $(this).attr('data-id');
+    console.log(id);
+    $.ajax({
+        url: config.getUrl('/api/getbaicaijiatitle'),
+        dataType: 'JSON',
+        type: 'GET',
+        success: function (data) {
+            var htmlStr2 = template('product_title', { title: '淘宝内部券' });
+            $(".header").html(htmlStr2)
+        }
+    })
+}
+// 异步请求渲染数据
+var keyshow = 0;
+var page = 1;
+$(window).scroll(function () {    
+    var bottomtemp = 100;
+    var scrollTop = $(window).scrollTop();
+    var totalheight = $(window).height() + scrollTop;
+    if (page >= 5) {
+        $('.loading_end').removeClass('hide')
+    }
+    // console.log($(document).height()-bottomtemp<=totalheight);
+    // console.log(page<=5);
+    // console.log(keyshow==0);
+    
+    if ($(document).height() - bottomtemp <= totalheight && page < 5&&keyshow==0) {        
+        $('.img_loading').removeClass('hide');
+        console.log(1);
+        keyshow=1;
+        setTimeout(function(){
+        $.ajax({
+            url: config.getUrl('/api/getbaicaijiaproduct'),
+            dataType: 'JSON',
+            type: 'GET',
+            data: { titleid: page },
+            success: function (data) {
+                var newdiv = document.createElement("div");
+                var htmlStr = template('product_list', data);
+                // console.log(data);
+                $(newdiv).html(htmlStr);
+                console.log(newdiv)
+                $(newdiv).appendTo($(".bcj_list_ul2"));
+                page++;
+                $('.img_loading').addClass('hide');
+                keyshow = 0;
+            }
+        });
+        },2000)
+
+    }
+    // console.log(totalheight);
+    // console.log($(document).height()-bottomtemp);
+})
+// 异步请求结束
+
+
+
+// // 滑动tab栏
+// function tabScroll() {
+//     // 获取目标元素
+//     var nav_bar = document.querySelector('.nav_bar');
+
+//     // 手指按下坐标
+//     var startX;
+
+//     // 一共移动了的距离  一定要初始化为0  
+//     var totalDistance = 0;
+
+//     // 弹簧
+//     var springs = 150;
+
+//     // 左滑最大的距离  左滑的距离是负数
+//     var maxLeftDis = -(nav_bar.offsetWidth - nav_bar.parentNode.parentNode.offsetWidth);
+//     console.log(maxLeftDis);
+
+
+//     //绑定手指按下事件
+//     nav_bar.addEventListener("touchstart", function (e) {
+//         // 验证手指个数
+//         if (e.targetTouches.length > 1) {
+//             return;
+//         }
+
+//         // 记录坐标
+//         startX = e.targetTouches[0].clientX;
+//         // 清除过渡
+//         this.style.transition = "none";
+//         // console.log(startY);
+//     });
+//     // 绑定手指移动事件
+//     nav_bar.addEventListener("touchmove", function (e) {
+//         // 验证手指的个数
+//         if (e.targetTouches.length > 1) {
+//             return;
+//         }
+
+//         // 移动的坐标
+//         var moveX = e.targetTouches[0].clientX;
+//         //  console.log(moveY);
+//         // 移动的距离   要加上上一次移动的距离
+//         var tmpDistance = moveX - startX + totalDistance;
+
+//         // console.log(tmpDistance);
+
+//         // 下拉判断是否满足弹簧条件
+//         if (tmpDistance > springs) {
+//             tmpDistance = springs; // 50    
+//         } else if (tmpDistance < maxLeftDis - springs) {// -150
+//             // -100-50 =  -150px
+//             // 判断上滑的距离  谁越小 谁就越在上边
+//             tmpDistance = maxLeftDis - springs;
+//         }
+
+//         // 设置位移
+//         this.style.transform = "translateX(" + tmpDistance + "px)";
+//     });
+
+//     nav_bar.addEventListener("touchend", function (e) {
+//         // 判断手指的个数
+//         if (e.changedTouches.length > 1) {
+//             return;
+//         }
+
+//         // 记录上一次移动的距离  手指离开的时候呢 需要加上自己上一次移动的距离
+//         totalDistance += e.changedTouches[0].clientX - startX;
+
+//         // 判断是否满足下拉反弹的条件
+//         if (totalDistance > 0) {
+//             // 反弹
+//             totalDistance = 0;
+//             this.style.transition = "all .3s";
+//             this.style.transform = "translateX(" + totalDistance + "px)";
+//         } else if (totalDistance < maxLeftDis) {
+//             -100
+//             // 松开的时候 反弹 -只要超出最大上滑的距离的一点点的话 都要反弹
+//             totalDistance = maxLeftDis;
+//             this.style.transition = "all .3s";
+//             this.style.transform = "translateX(" + totalDistance + "px)";
+//         }
+
+//     })
+// }
+$(".searchBtn").click(function () {
+    $(".searchBox").toggleClass("hide");
+});

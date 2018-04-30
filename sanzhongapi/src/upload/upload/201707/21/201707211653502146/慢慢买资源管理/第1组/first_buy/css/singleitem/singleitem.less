@@ -1,0 +1,182 @@
+
+@font-face {font-family: "iconfont";
+  src: url('font/iconfont.eot?t=1500360557784'); /* IE9*/
+  src: url('font/iconfont.eot?t=1500360557784#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('font/iconfont.woff?t=1500360557784') format('woff'), /* chrome, firefox */
+  url('font/iconfont.ttf?t=1500360557784') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('font/iconfont.svg?t=1500360557784#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+@import "../shade/shade.less";
+// 头部
+.single-head {
+    height:45px;
+    background-color:#ff8b00;
+    color:#fff;
+    a {
+      color:#fff;
+      i {
+        position:absolute;
+        top:12px;
+        left:10px;      
+      }
+    }
+    h4 {
+      margin:0;
+      text-align: center;
+      line-height: 45px;
+    }
+}
+
+// 导航列表
+.single-navs {
+    width:100%;
+    border-bottom:1px solid rgb(241, 236, 236);
+    .btn-group {
+      width:30%;
+      &:nth-of-type(-n+2) {
+        margin-right:-4px;
+      }
+      .btn-default {
+        width:100%;
+        border:none;
+        outline: none;
+        font-size:16px;
+      }
+      .dropdown-menu {
+        width:333%;
+        border:none;
+        box-shadow: none;
+        border-radius:0;
+        margin:0;
+        border-top:1px solid rgb(241, 236, 236);
+        border-bottom:1px solid rgb(241, 236, 236);
+          li {
+            border-bottom:1px solid rgb(241, 236, 236);
+            &:last-of-type {
+              border:none;
+            }
+          }
+      }
+      &:nth-of-type(2){
+        .dropdown-menu {
+          left:-100%;
+        }
+      }
+      &:nth-of-type(3){
+        .dropdown-menu {
+          left:-200%;
+        }
+      }
+    }
+    .navs-font {
+      width:10%;
+      position: absolute;
+      // top: 45px;
+      // right: 0px;
+      border-left:1px solid rgb(241, 236, 236);
+      border-bottom:1px solid rgb(241, 236, 236);
+      .dropdown-menu {
+          left:-920%;
+          min-width:414px;
+          background-color:#f7f7f7;
+          .menu-top {
+            padding:10px;
+            border-bottom:1px solid #e4dbdb;
+            .font-search {
+              i {
+                position:absolute;
+                top:20px;
+                left:15px;
+              }
+              input {
+                padding-left:20px;
+                width:85%;
+                height:30px;
+                border:1px solid rgb(241, 236, 236);
+                outline: none;
+              }
+              .btn-search {
+                  border: none;
+                  background-color: #f7f7f7;
+              }
+            }
+
+            .menu-rank {
+              margin-top:20px;
+              button {
+                height:30px;
+                border:1px solid #e4dbdb;
+                background-color: #f7f7f7;
+                margin-left:5px;
+              }
+              .active {
+                background-color:#ff9501;
+                color:#fff;
+              }
+            }
+          }
+
+
+          .menu-bottom {
+            padding:10px;
+            .col-xs-3 {
+              padding:5px;
+              button {
+                height:30px;
+                width:100%;
+                border:1px solid #e4dbdb;
+                background-color: #f7f7f7;
+              }
+              .active {
+                background-color:#ff9501;
+                color:#fff;
+              }
+            }
+          }
+        }
+    }
+}
+
+
+// 主体内容
+.single-main {
+  padding:10px 0;
+  background-color: #f1f1f1;
+  overflow: hidden;
+  .col-xs-6 {
+    padding:0 5px;
+    margin-bottom:5px;
+    .sg-content {
+
+      background-color:#fff;
+    }
+    img {
+      width:193px;
+      height:193px;
+    }
+    p {
+      height:18px;
+      overflow: hidden;
+      margin-bottom:0;
+      margin-top:5px;
+      padding-left:10px;
+    }
+    .sg-main-font {
+      padding-left:5px;
+      color:red;
+      strong {
+        font-size:20px;
+      }
+    }
+  }
+}

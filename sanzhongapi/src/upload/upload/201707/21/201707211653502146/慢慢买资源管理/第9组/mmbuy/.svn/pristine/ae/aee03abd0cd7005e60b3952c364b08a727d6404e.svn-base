@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>比价评论</title>
+  <link rel="stylesheet" type="" href="../../lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" type="" href="../../css/base.css">
+  <link rel="stylesheet" type="" href="../../css/listclass/bijia.css">
+</head>
+
+<body>
+  <div id="container">
+    <div class="views">
+      <!--头部-->
+      <header class="clearfix">
+        <div class="logo pull-left">
+          <a href="javascript:;" class="header">
+                    <img src="../../images/header_logo.png" alt="">
+                </a>
+        </div>
+        <div class="app-download pull-right">
+          <a href="javascript:;">
+                    <img src="../../images/header_app.png" alt="">
+                </a>
+        </div>
+
+      </header>
+      <!--搜索框-->
+      <div class="searchBox">
+        <input type="text" placeholder="请输入你想比价的产品" aria-describedby="basic-addon2">
+        <span class="search_btn">搜索</span>
+      </div>
+      <!-- 主体start  -->
+      <div id="content">
+        <div class="info_top">
+          <ul>
+            <li>首页></li>
+            <li>平板电视></li>
+            <li>夏普 70SU665A</li>
+          </ul>
+        </div>
+        <div class="info_img"><img src="../../images/ic_bcj.png" alt=""></div>
+        <div class="info_main">夏普(SHARP) LCD-70SU665A 70英寸 4K超高清智能液晶电视</div>
+        <div class="info_price clearfix">
+          <div class="left">当前最低:￥4399</div>
+          <div class="right">优选评论:3096条</div>
+        </div>
+        <div class="there_color"></div>
+        <div class="three_list">
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">比价购买</a></li>
+            <li role="presentation" class="b_line"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">产品参数</a></li>
+            <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">优选评价</a></li>
+          </ul>
+
+          <!-- Tab panes -->
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+              <div class="left">
+                <img src="../../images/ic_bcj.png" alt="">
+                <span class="left_1">1号店</span>
+                <span class="left_self">自营</span>
+              </div>
+              <div class="right">
+                <span class="price">￥7099.00</span>
+                <span  class="arrow">></span>
+              </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">...</div>
+            <div role="tabpanel" class="tab-pane" id="messages">...</div>
+          </div>
+        </div>
+      </div>
+      <!-- 主体end  -->
+    </div>
+  </div>
+  <!-- container -->
+  <!-- <div id='foot_promptly'>
+      <a href="javascript:;"><img src="../../images/listclass/1.png" alt=""></a>
+      <div class="man">慢</div>
+      <p class="buy">慢慢买</p><br/>
+      <p class="history">全网比价,查看历史价格</p>
+      <div class="promptly_open">立即打开</div>
+    </div> -->
+  <script src="../../lib/jquery/jquery.min.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+  <!-- <script src="../../lib/artTemplate/template.js"></script>
+    <script src="../../js/listclass/listclass.js"></script> -->
+
+</body>
+
+</html>

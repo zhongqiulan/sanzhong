@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>国内折扣</title>
+    <?php include '/common/css.html' ?>
+    <link rel="stylesheet" href="/css/money/zhekou.css">
+</head>
+
+
+<body>
+    <!--遮罩层  -->
+    <div class="shade hide">
+        <img src="/images/loading.gif" alt="">
+    </div>
+    <div class="nav">
+        <i class="glyphicon glyphicon-menu-left dyh"></i>
+        <h1 class="sqk" id="top">国内折扣</h1>
+    </div>
+    <!--顶部-->
+    <div class="yemian">
+
+    </div>
+    <div class="zuihou">
+        <div class="zuihou-right"><i class="glyphicon glyphicon-shopping-cart zuihou-1"></i> 前往购买 </div>
+        <a href="#ctl00_ContentBody_txt_nr"><i class="glyphicon glyphicon-edit zuihou-2"></i> 评论</a>
+    </div>
+</body>
+<?php include '/common/script.html' ?>
+<script>
+    require(['zhekou']);
+</script>
+<script type="text/template" id="mymoban">
+    <div class="yemian">
+
+    <h3 class="title">{{productName}}</h3>
+    <div class="jiage">{{productPinkage}}</div>
+    <div class="laiyuan">
+        <span class="laiyuan-l">{{productFrom}}</span>
+        <span class="laiyuan-c">{{productTime}}</span>
+        <span class="laiyuan-r">{{productTips}}</span>
+    </div>
+    <P class="jieshao">
+        {{#productImg2}}
+        {{productInfo2}}
+    </P>
+        <div class="quanqiugou">
+            <span>京东全球购</span>{{productName}}
+        </div>
+
+        <div class="shopping">
+            <a href="javascript:;"><i class="glyphicon glyphicon-shopping-cart"></i> 前往购买</a>
+        </div>
+        <hr>
+        <!--评论栏-->
+        {{#productComment}}
+        <div class="login">
+            <div class="login-l">登录</div>
+            <div class="login-c">注册</div>
+            <div class="login-r">
+                <img src="/images/top.jpg" alt="" class="arrows"> <a href="#top">返回顶部</a>
+            </div>
+        </div>
+        <div class="appp">
+            <img src="/images/appp.png" alt="">
+        </div>
+        <div class="footer">
+            <p><a href="javascript:;" class="footer-1">手机APP下载</a>
+                <a href="javascript:;" class="footer-2">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <div class="footer-3">m.manmanbuy.com</div>
+        </div>
+    </div>
+
+</script>
+
+</html>

@@ -1,0 +1,115 @@
+
+input,a:hover,a:active{
+    text-decoration: none;
+}
+/*头部start*/
+header{
+    position: relative;
+}
+header h1{
+  background: #ff841d;
+  height: 44px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 44px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+header a{
+   position:absolute;
+   top:0; 
+}
+
+header .head_change {
+    font-size: 24px;
+    width: 56px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+}
+header .head_app{
+    width: 56px;
+    height: 44px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background:url("../image/init-imgs/header_app.png") no-repeat;
+    background-size: 34px;
+    right: 0;
+    background-origin: content-box;
+}
+/*头部end*/
+
+
+/*内容区start*/
+main  .produce_list{
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #999;
+    border-right: 1px solid #999;
+}
+main .produce_list .thumbnail{
+    border-radius: none;
+    border:none;
+    
+    margin-bottom: 0;
+}
+main .produce_list .thumbnail img{
+    margin-top: 20px;
+    width: 140px;
+    height: 140px;
+}
+
+main .produce_list .caption p:nth-of-type(1){
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
+    height: 36px;
+    overflow: hidden;
+}
+main .produce_list .caption p:nth-of-type(2){
+    color: #ff6c00;
+    font-size: 14px;
+    height: 20px;
+    overflow: hidden;
+}
+main .produce_list .caption p:nth-of-type(3){
+    color: #a1a1a1;
+    font-size: 12px;
+    
+}
+main .produce_list a{
+    width: 100%;
+}
+main .produce_list .caption .product_title{
+    width: 100%;
+}
+
+.loading{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+}
+/*内容区end*/
+
+
+/*底部start*/
+footer .container-fluid .row div{
+    text-align: center;
+    border-right: 1px solid #a1a1a1;
+}
+footer .container-fluid .row div a{
+   color: black;
+   height: 34px;
+   line-height: 34px;
+   display: block;
+   width: 100%;
+}
+footer .container-fluid .row div a i{
+    color: #a1a1a1;
+}
+/*底部end*/

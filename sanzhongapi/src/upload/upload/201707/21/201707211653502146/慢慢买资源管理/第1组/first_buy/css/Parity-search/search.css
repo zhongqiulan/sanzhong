@@ -1,0 +1,79 @@
+html,
+body,
+.views {
+    height: 100%;
+}
+
+.views {
+    background-color: #ebebeb;
+}
+
+.search_tool {
+    padding-bottom: 10px;
+}
+
+.seation_search {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.seation_search .panel {
+    border-radius: 5px;
+    margin: 0 5px;
+}
+
+.seation_search .panel .household_title {
+    background-color: #ededed;
+}
+
+.seation_search .panel-heading {
+    position: relative;
+}
+
+.seation_search .panel-heading .after {
+    background-image: url("/images/arrow1.gif");
+    background-repeat: no-repeat;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    width: 20px;
+    height: 10px;
+}
+
+.seation_search .panel-heading h4 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.seation_search .panel-body {
+    padding: 0;
+    overflow: hidden;
+}
+
+.household .col-xs-4 {
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.household .col-xs-4 a {
+    color: #000;
+    user-select: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.household .col-xs-4 a:hover {
+    text-decoration: none;
+    color: #000;
+}
+
+footer .btn-default {
+    background-color: #ebebeb;
+}
+
+.search_tool {
+    background: #fff;
+}

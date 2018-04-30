@@ -1,0 +1,36 @@
+function getUse(page) {
+    //每页的数量
+    var pagesize;
+    //当前的页数
+    var currentPage = page || 1;
+    //总页数
+    var totaPage;
+    $.ajax({
+        url: 'http://139.199.192.48:9090/api/getmoneyctrl',
+        dataType: 'JSON',
+        type: 'get',
+        data: {
+            pageid: currentPage,
+        },
+        success: function (data) {
+            console.log(data);
+            var htmlStr = template('saveMoney',data);
+            $('.serialList').html(htmlStr);
+            //计算页码,每页的数量
+            pagesize = data.pagesize;
+            totalCount = data.totalCount;
+            //当前页数
+            // currentPage = data.pageid
+            //总页数=总条数/每页的数量
+            // totalPage = Math.ceil(totalCount / pagesize);
+            // var optstr = template('optiontmp', {
+            //     totalPage: totalPage,
+            //     currentPage: currentPage
+            // })
+            // // $('')
+            // $('#selectPages option').text(currentPage + '/' + totalPage);
+        }
+    })
+}
+
+getUse(1);

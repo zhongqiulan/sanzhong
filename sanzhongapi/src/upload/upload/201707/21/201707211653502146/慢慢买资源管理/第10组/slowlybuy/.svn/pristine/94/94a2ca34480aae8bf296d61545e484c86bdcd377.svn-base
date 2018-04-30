@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>省钱控</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/savemoney.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!--头部-->
+        <header id="header">
+            <i class="icon-back glyphicon glyphicon-menu-left"></i>
+            <h1>省钱控-最新优惠</h1>
+            <a href="javascript:;" class="app-down"><img src="../images/header_app.png" alt=""></a>
+        </header>
+
+        <!--主体-->
+        <div class="serialList">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="../images/ic_coudanpin.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading">
+                        奥睿科 3.5英寸移动硬盘盒 2588US3-BK
+                        <span>21.3元（下单8.5折后），PRIME免邮</span>
+                    </p>
+                    <p class="media-footer">
+                        <span class="mall">中国亚马逊 | 07-18 15:26</span>
+                        <span class="comment pull-right"><i class=" glyphicon glyphicon-comment"></i>2</span>
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="../images/ic_coudanpin.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading">
+                        奥睿科 3.5英寸移动硬盘盒 2588US3-BK
+                        <span>21.3元（下单8.5折后），PRIME免邮</span>
+                    </p>
+                    <p class="media-footer">
+                        <span class="mall">中国亚马逊 | 07-18 15:26</span>
+                        <span class="comment pull-right"><i class=" glyphicon glyphicon-comment"></i>2</span>
+                    </p>
+                </div>
+            </div>
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="../images/ic_coudanpin.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading">
+                        奥睿科 3.5英寸移动硬盘盒 2588US3-BK
+                        <span>21.3元（下单8.5折后），PRIME免邮</span>
+                    </p>
+                    <p class="media-footer">
+                        <span class="mall">中国亚马逊 | 07-18 15:26</span>
+                        <span class="comment pull-right"><i class=" glyphicon glyphicon-comment"></i>2</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <!--页数-->
+        <div class="pages">
+            <nav aria-label="">
+                <ul class="pager">
+                    <li class="pull-left"><a href="#">上一页</a></li>
+                    <li class="pageCenter">
+                        <select name="" id="selectPages">
+                        <option selected="selected" value="1">1</option>
+                        <option  value="2">2</option>
+                        <option  value="3">3</option>
+                        <option  value="4">4</option>                  
+                     </select>
+                    </li>
+                    <li class="pull-right"><a href="#">下一页</a></li>
+                </ul>
+            </nav>
+        </div>
+
+
+        <!--跳转-->
+        <div class="link">
+            <a href="../index.html">首页</a>&nbsp;
+            <&nbsp;省钱控 </div>
+        </div>
+        
+        <!--登录-->
+        <div class="skip">
+            <div class="top">
+                <a href="javascript:;">登录</a>
+                <a href="javascript:;">注册</a>
+                <a href="javascript:;">
+                   <i class="glyphicon glyphicon-arrow-up"></i>
+                   返回顶部
+                </a>
+            </div>
+            <div class="botton">
+                <p>
+                  <a href="javascript:;" style="color: Red;">手机APP下载</a>
+                  <a href="javascript:;">慢慢买手机版</a>
+                   -- 掌上比价平台  
+                </p>
+                <p> 
+                  m.manmanbuy.com
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+       <script type="text/template" id="saveMoney">
+        {{each result as v i}}
+        <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="{{v.productImgSm}}" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <p class="media-heading">
+                        {{v.productName}}
+                        <span>{{v.productPinkage}}</span>
+                    </p>
+                    <p class="media-footer">
+                        <span class="mall">{{v.productFrom}}</span>
+                        <span class="comment pull-right"><i class=" glyphicon glyphicon-comment"></i>{{v.productComCount}}</span>
+                    </p>
+                </div>
+            </div>             
+       </script>
+
+
+        <script src='../lib/jquery/jquery.js'></script>
+        <script src='../lib/template/template.js'></script>
+        <script src='../lib/bootstrap/js/bootstrap.js'></script>
+        <script src='../js/savemoney.js'></script>
+
+</body>
+
+</html>

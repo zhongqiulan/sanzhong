@@ -1,0 +1,73 @@
+define([
+    'jquery',
+    'template',
+    "iscroll"
+], function ($, template, iScroll) {
+
+
+    var Scroll = new iScroll("#bcj-head-cat", {
+        scrollX: true,
+        scrollY: false
+    })
+
+    $.ajax({
+        url: 'http://157.122.54.189:9090/api/getbaicaijiatitle',
+        type: 'GET',
+        success: function (data) {
+            // console.log(data);
+            var html = template('li', data);
+            // console.log(html);
+            $('.nav-tabs').html(html);
+
+
+            // 动态获取到所有li的宽度的和,让后再动态设置给ul
+            var sunWidth = 0;
+            $('#wrapper').each(function (index, element) {
+                sunWidth += $(element).outerWidth(true);
+                // sunWidth+=160;
+                // console.log(sunWidth);
+            })
+            $('#wrapper').css({
+                "width": sunWidth + "px"
+            })
+
+            // getTabDiv(0);
+
+            var mains = $("#wrapper").children(); //选取id下面的所有子元素
+            // console.log(mains[0]);
+            // mains[0].addClass("")
+            $(mains).on('click', function () { //点击事件
+                $(mains).removeClass("reveal"); //移除类名
+                $(this).addClass("reveal"); //为当前点击的添加类
+                console.log(this);
+                // var index = $(this).index();
+                // $(".mains").removeClass("reveal");
+                // mains.eq(index).addClass("reveal");
+                // console.log(mains);
+
+
+                // console.log($(this).data().id);
+
+
+                // getTabDiv($(this).data().id);
+
+            })
+
+        }
+    })
+    $.ajax({
+        url: 'http://157.122.54.189:9090/api/getbaicaijiaproduct',
+        type: 'GET',
+        data: {
+            titleid: '0',
+            titleid: '1'
+        },
+        success: function (data) {
+            // console.log(data);
+            var html = template('sp', data);
+            // console.log(html);
+            $('.ul-list').html(html);
+        }
+    })
+
+});

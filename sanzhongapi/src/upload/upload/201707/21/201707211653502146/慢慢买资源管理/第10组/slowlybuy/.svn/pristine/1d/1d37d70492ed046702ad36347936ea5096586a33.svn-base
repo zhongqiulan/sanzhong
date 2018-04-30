@@ -1,0 +1,158 @@
+a {
+  display: block;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+body {
+  background: #f2f2f2;
+}
+.head_logo {
+  height: 50px;
+  padding-left: 10px;
+  background: #ff841d;
+}
+.head_logo .logo {
+  width: 80%;
+  height: 100%;
+  padding: 12px;
+}
+.head_logo .logo a {
+  height: 100%;
+  display: block;
+}
+.head_logo .logo a img {
+  height: 100%;
+}
+.head_logo .appdown {
+  height: 100%;
+  padding: 7px;
+}
+.head_logo .appdown a {
+  height: 100%;
+  display: block;
+}
+.head_logo .appdown a img {
+  height: 100%;
+}
+.seek {
+  background: #fff;
+  font-size: 16px;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  white-space: nowrap;
+}
+.seek .searcText {
+  display: block;
+}
+.seek .searcText input {
+  border: none;
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5%;
+  border-radius: 15px;
+  background: #f1f1f1;
+  cursor: auto;
+  outline: none;
+}
+.seek .searcBtn > input {
+  height: 30px;
+  line-height: 30px;
+  background: #ff841d;
+  border: none;
+  border-radius: 15px;
+  width: 63px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+}
+.Compare-price {
+  overflow: hidden;
+  background-color: #ebebeb;
+}
+.Compare-price #accordion {
+  margin: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.Compare-price #accordion .panel {
+  border: none;
+  border-bottom: 1px solid #ccc;
+  margin-top: 0;
+}
+.Compare-price #accordion .panel .panel-heading {
+  background-color: #ebebeb;
+  padding: 0;
+  margin: 0;
+}
+.Compare-price #accordion .panel .panel-heading h4 a {
+  color: #333;
+  font: 900 16px "微软雅黑";
+  padding-left: 10px;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+}
+.Compare-price #accordion .panel .panel-heading h4 a:focus {
+  text-decoration: none;
+}
+.Compare-price #accordion .panel .panel-heading h4 a span {
+  display: block;
+  height: 40px;
+  line-height: 40px;
+  padding-right: 10px;
+  float: right;
+  color: #929292;
+}
+.Compare-price #accordion .panel .clasify_title .panel-body {
+  background: #f9f9f9;
+  padding: 0;
+}
+.Compare-price #accordion .panel .clasify_title .panel-body div {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  height: 40px;
+  line-height: 40px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.Compare-price #accordion .panel .clasify_title .panel-body div a {
+  color: #333;
+}
+footer {
+  margin-top: 20px;
+  background: #efefef;
+}
+footer .login ul {
+  list-style: none;
+  padding: 0;
+}
+footer .login ul li {
+  padding: 5px 0;
+  border: 1px solid #dddddd;
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+footer .login ul li a {
+  color: #474747;
+  text-decoration: none;
+}
+footer .login ul li:last-child {
+  width: 40%;
+}
+footer .app {
+  text-align: center;
+  margin-top: 15px;
+  padding-bottom: 10px;
+}
+footer .app p {
+  margin: 0;
+}

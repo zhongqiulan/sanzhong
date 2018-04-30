@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+    <title>Document</title>
+    <link rel='stylesheet' href='../libs/bootstrap/css/bootstrap.css' />
+    <link rel='stylesheet' href='../css/parity_search.css' />
+</head>
+
+
+<body>
+    <!--头部-->
+    <div class="mmm_top">
+        <div class="top_conten">
+            <a href="javascript:;">
+                <span class="top_img_left"></span>
+                <span class="top_img_right"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--搜索框-->
+    <div class="mmm_search clearfix">
+        <div class="mmm_conten">
+            <span>
+            <input type="text" placeholder="请输入你想比较的商品">
+       </span>
+            <span>
+         <a href="javascript:;">按钮</a>
+       </span>
+        </div>
+    </div>
+
+    <div class="parity_search">
+       
+            <a class="btn btn-primary" data-id="{{v.titleId}}" role="button" data-toggle="collapse" href="#collapseExample" aria-expanded="false"
+                aria-controls="collapseExample">
+            Link with href
+            <span></span>
+        </a>
+        
+        <div class="collapse container-fluid " id="collapseExample">
+            <div class="row well">
+                ...
+            </div>
+        </div>
+    </div>
+
+    <!--底部-->
+    <div class="mmm_bottom clearfix">
+        <ul>
+            <li></li>
+            <li class="clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a>
+            </li>
+            <li class="clearfix hehe">
+
+                <p>
+                    <span>手机APP下载</span>
+                    <span>慢慢买手机版--</span>
+                    <span>掌上比价平台</span>
+                </p>
+                <h4>m.manmanbuy.com</h4>
+            </li>
+        </ul>
+
+    </div>
+    <script src="../libs/jquery/jquery.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <!--<script src="../js/util.js"></script>-->
+    <script src="../js/parity_search.js"></script>
+
+    <script type="text/html" id="parity_search_tpl">
+        {{each result as v i}}
+       
+            <a class="btn btn-primary family_electric" data-id="{{v.titleId}}" role="button" data-toggle="collapse" href="#collapseExample{{i}}" aria-expanded="false"
+                aria-controls="collapseExample">
+               <p>{{v.title}}<span class = "glyphicon glyphicon-menu-down"></span></p> 
+                    
+                </a>
+        
+        <div class="collapse" id="collapseExample{{i}}">
+            <div class="well">
+                <div class = "row container" id = "list{{v.titleId}}">
+                        
+                </div>
+                
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/html" id="parity_list_tpl">
+        {{each result as value i}}
+
+        <div class="col-xs-4 product">
+            <p id="info_list"><a href='parity_list.html?categoryId={{value.categoryId}}'>{{value.category}}</a></p>
+        </div>
+        {{/each}}
+
+    </script>
+
+
+
+</body>
+
+</html>

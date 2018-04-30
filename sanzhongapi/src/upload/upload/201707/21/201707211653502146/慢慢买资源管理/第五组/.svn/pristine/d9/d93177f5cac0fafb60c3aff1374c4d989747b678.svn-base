@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+  <title>省钱控</title>
+
+
+  <!-- Bootstrap -->
+  <!--<link rel="stylesheet" href="../css/bootstrap.min.css">-->
+  <link rel="stylesheet" href="../css/saveMoney.css">
+  <link rel="stylesheet" href="../fonts/zlx_font/iconfont/iconfont.css">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+  <div class="save_box">
+    <!-- 这是头部 -->
+    <div class="header">
+      <!--返回按钮-->
+      <div class="back">
+        <a href="../index.html">
+        <i class="iconfont icon-less21"></i>
+      </a>
+      </div>
+      <!--标题-->
+      <h1>省钱控-最新优惠</h1>
+      <!--app下载-->
+      <div class="home">
+        <a href="javascript:;">
+        <img src="../images/header_app.png" alt="">
+      </a>
+      </div>
+    </div>
+
+    <!-- 主体部分 -->
+    <div class="content">
+      <!--图片区域-->
+      <ul class="ul_content">
+        <!--这里是拼接模板的地方-->
+      </ul>
+      <!--页码-->
+      <div class="page">
+        <div class="page_c">
+          <div class="pre_page">
+            <button class="btnPre">上一页</button>
+          </div>
+          <div class="search">
+            <select>
+            <option selected value="1">1/15</option>
+            <option value="2">2/15</option>
+            <option value="3">3/15</option>
+            <option value="4">4/15</option>
+            <option value="5">5/15</option>
+            <option value="6">6/15</option>
+            <option value="7">7/15</option>
+            <option value="8">8/15</option>
+            <option value="9">9/15</option>
+            <option value="10">10/15</option>
+            <option value="11">11/15</option>
+            <option value="12">12/15</option>
+            <option value="13">13/15</option>
+            <option value="14">14/15</option>
+            <option value="15">15/15</option>
+          </select>
+          </div>
+          <div class="next_page">
+            <button class="btnNext">下一页</button>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!--导航条-->
+    <div class="save_nav">
+      <a href="javascript:;"><span>首页&lt</span>&nbsp;&nbsp;</a>
+      <span>省钱控</span>
+    </div>
+
+    <!-- 底部 -->
+    <div class="footer">
+      <div class="footer_top clearfix">
+        <a href="javascript:;">登入</a>
+        <a href="javascript:;">注册</a>
+        <a class="btnReturn" href="javascript:;">
+        <img src="../images/top.jpg" alt="">
+        返回顶部
+      </a>
+      </div>
+      <div class="footer_info">
+        <p class="toot_app">
+          <a class="app_red" href="javascript:;">手机app下载&nbsp</a>
+          <a class="app_self" href="javascript:;">慢慢买手机版&nbsp</a> --掌上比价平台
+        </p>
+        <p class="foot_http">
+          m.manmanbuy.com
+          <a href="javascript:;">
+          <img src="../images/app_download.png" alt="">
+        </a>
+        </p>
+      </div>
+    </div>
+
+
+  </div>
+
+  <!--页面主体部分的模板-->
+  <!--/?productId="+{{v.productId}}-->
+  <script type="text/template" id="con_tpl">
+    {{each result as v i}}
+    <li class="clearfix ui-border-b" id="productId">
+      <a href="discount.html?productId={{v.productId}}">
+        <div class="pic" data-id="{{v.productId}}">
+          {{#v.productImgSm}}
+        </div>
+        <div class="clearfix info">
+          <div class="title">{{v.productName}}
+            <span>{{v.productPinkage}}</span>
+          </div>
+          <div class="other">
+            <span class="mall">京东商城 | 07-18 16:50---{{v.productId}}</span>
+            <span class="comment">
+                <i class="iconfont icon-icon222"></i>
+                {{v.productComCount}}
+                </span>
+          </div>
+        </div>
+      </a>
+    </li>
+    {{/each}}
+  </script>
+
+
+  <script src="../libs/jquery/jquery-1.12.2.js"></script>
+  <!--<script src="../libs/bootstrap.js"></script>-->
+  <script src="../libs/artTemplate/template.js"></script>
+  <script src="../js/saveMoney.js"></script>
+</body>
+
+</html>

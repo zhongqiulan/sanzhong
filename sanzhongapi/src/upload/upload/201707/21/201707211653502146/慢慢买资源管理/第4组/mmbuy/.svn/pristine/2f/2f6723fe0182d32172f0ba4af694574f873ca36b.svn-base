@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>manmanbuy</title>
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="bookmark" href="./favicon.ico">
+    <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/common/head/index_head.css">
+    <link rel="stylesheet" href="./css/common/search/index_search.css">
+    <link rel="stylesheet" href="./css/common/bottom/index_bottom.css">
+    <link rel="stylesheet" href="./css/Icon_Font/iconfont.css">
+    <link rel="stylesheet" href="./css/index/index.css">
+</head>
+
+<body>
+    <!--慢慢买首页头部-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header header-logo pull-left">
+                <a class="navbar-brand" href="http://m.manmanbuy.com/"><img src="imgs/header_logo.png" alt=""></a>
+            </div>
+
+            <div class="navbar-right app-donwload pull-right">
+                <a href="http://m.manmanbuy.com/?o=download">
+                    <img src="imgs/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--慢慢买index的搜索栏-->
+    <form action="" id="index_search">
+        <div>
+            <input type="text" placeholder="请输入你想比价的商品" class="input_text">
+            <input type="submit" value="搜索" class="input_subimt">
+            </input>
+        </div>
+    </form>
+
+    <div class="line"></div>
+
+    <!--栅格系统-->
+    <div class="index_list">
+        <ul class="clearfix" id="index_list_ul">
+
+        </ul>
+    </div>
+
+    <!--超值折扣-->
+    <div class="index_count clearfix">
+        <span>超值折扣推荐</span>
+        <a href="javascript:;">
+            <img class="pull-right" src="./imgs/more.png" alt="">
+        </a>
+
+
+
+    </div>
+
+    <!--超值折扣图片-->
+    <div class="discount">
+        <ul class='discount_ul clearfix'>
+       
+
+        </ul>
+        <div class="discount_more">
+            <a href="javascript:;">更多优惠信息 >></a>
+        </div>
+    </div>
+
+
+    <!--品牌排行-->
+    <div class="index_bottom">
+        <div class='index_bottom_head cleaerfix'>
+            <span>品牌排行</span>
+            <a href="javascript:;">
+                <img class="pull-right" src="./imgs/more.png" alt="">
+             </a>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4"><a href="javascript:;">登陆</a></div>
+                <div class="col-xs-4"><a href="javascript:;">注册</a></div>
+                <div class="col-xs-4">
+                    <a href="javascript:scroll(0,0)">
+                        <i class="glyphicon glyphicon-arrow-up"></i>
+                    返回顶部</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="index_bottom_footer">
+            <p>
+                <a class="appdownload" href="javascript:;">手机APP下载</a>
+                <a href="javascript:;">慢慢买手机版</a> --掌上比价平台
+            </p>
+            <p class="index_bottom_website"><a href="javascript:;">m.manmanbuy.com</a></p>
+
+        </div>
+
+    </div>
+
+    <div class="img_fixed">
+        <a class="img_fixed_img">
+                <img src="./imgs/app_download.png" alt="">
+        </a>
+        <div id="back_top">
+            <a href="javascript:;">
+                 <i class="iconfont icon-top"></i>
+            </a>
+        </div>
+
+
+
+
+        <!--meun的渲染-->
+        <script type="text/template" id="index_list_tmp">
+            {{each result as v i }} 
+            {{if i<7}} <li class="pull-left">
+                <a href="{{v.titlehref}}">
+                     {{#v.img.replace('images','imgs')}}
+                        <!--<img src="./imgs/ic_bcj.png" alt="">-->
+                    <p>{{v.name}}</p>
+                    </a>
+                </li>
+                {{/if}} {{/each}} {{each result as v i }} {{if i == 7}}
+                <li class="pull-left" data-toggle="collapse" data-target="#collapseExample">
+                    <a href="{{v.titlehref}}">
+                     {{#v.img.replace('images','imgs')}}
+                        <!--<img src="./imgs/ic_bcj.png" alt="">-->
+                    <p>{{v.name}}</p>
+                    </a>
+                </li>
+                {{/if}} {{/each}}
+
+                <div class="collapse clearfix" id="collapseExample">
+                    {{each result as v i }} {{if i >7}}
+                    <li class='pull-left'>
+                        <a href="{{v.titlehref}}">
+                     {{#v.img.replace('images','imgs')}}
+                        <!--<img src="./imgs/ic_bcj.png" alt="">-->
+                    <p>{{v.name}}</p>
+                    </a>
+                    </li>
+                    {{/if}} {{/each}}
+                </div>
+
+
+
+        </script>
+
+
+
+        <!--超值折扣模板-->
+        <script type="text/template" id='discount_tmp'>
+            {{each result as v i}}      
+          <li>
+                <a class="clickli clearfix" href="javascript:;">
+                    <div class="discount_img pull-left">
+                        {{#v.productImgSm}}
+                    </div>
+                    <div class="discount_content">
+                        <div class="discount_title">
+                            {{v.productName}}
+                            <span>
+                                    {{v.productPinkage}}                   
+                                    </span>
+                        </div>
+                        <div class="discount_message clearfix">
+                            <span>{{v.productFrom}}|{{v.productTime}}</span>
+                            <span class="pull-right">
+                                            <i class="iconfont icon-icon222">
+                                              {{
+                             v.productComCount.replace(/[^0-9]/ig,'')}}
+                                            </i>
+                            </span>
+                        </div>
+                    </div>
+
+                </a>
+            </li>
+            {{/each}}
+        </script>
+
+
+
+        <script src="./libs/jquery/jquery.js"></script>
+        <script src="./libs/bootstrap/js/bootstrap.js"></script>
+        <script src="./libs/artTemplate/template.js"></script>
+        <script src="./js/index/index.js"></script>
+        <script src="./js/config/config.js"></script>
+</body>
+
+</html>

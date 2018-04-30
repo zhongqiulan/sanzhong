@@ -1,0 +1,225 @@
+.nav{
+    height: 36px;
+    background-color: #ebebeb;
+    border-top: solid 1px #ebebeb;
+    border-bottom: 1px solid #ccc;
+    line-height: 36px;
+    padding-left: 8px;
+    font-size: 14px;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+}
+.show{
+    background: #fff;
+    position: relative;
+}
+.show .pic{
+    text-align: center;
+}
+.show .pic>img{
+    padding: 15px 0;
+    margin: 0 auto;
+}
+.show .pic a>img{
+    position: absolute;
+    right: 20px;
+    top:20px;
+    width: 39px;
+    height: 39px;
+}
+.show .producthead {
+    font-size: 16px;
+    text-align: left;
+    padding:0 10px; 
+    margin-bottom: 10px;
+}
+.show .productpj_j{
+    padding: 0 10px;
+}
+.show .productpj_j ul li{
+   width: 50%;
+}
+.show .productpj_j ul li span{
+    font-size: 12px;
+}
+.show .productpj_j ul li.pull-left{
+        color: #575757;
+}
+.show .productpj_j ul li.pull-right{
+    color: #a1a1a1;
+}
+.show .productpj_j ul li em{
+    color: #666;
+    font-size: 12px;
+}
+.table-nav{
+    position: relative;
+    width: 100%;
+    height: 34px;
+    line-height: 34px;
+    border-bottom: 1px solid #c14d00;
+    border-top: 1px solid #c14d00;
+    margin-top: 20px;
+    color: #fff;
+    background-color: #ffbb00;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffa632),to(#ff9000)); 
+}
+.table-nav ul li{
+    width: 33.33%;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+}
+.table-nav ul li.minddle_wl{
+    border-left: 1px solid #c14d00;
+    border-right: 1px solid #c14d00;
+}
+.table-nav .threeangle{
+   position: absolute;
+   bottom: -5px;
+    left: 15%;
+    margin-left: -4px;
+    z-index: 5;
+    width: 8px;
+}
+
+.table-content {
+    width: 100%;
+}
+ .compareprice{
+    background: #fff;
+     padding: 10px;
+}
+ 
+.compareprice .red{
+    color: red;
+    text-align: right; 
+}
+.compareprice>a{
+    width: 100%;
+    display: block;
+    color: #5a5a5a;
+    padding-top: 5px;
+}
+.compareprice>.tishi{
+    font-size: 12px;
+    color: #888;
+    padding: 8px 10px;
+    line-height: 18px;
+}
+/*评价*/
+.good_pj{
+    width: 100%;
+}
+.good_pj h4{
+    border-top: 4px solid #7a7a7a;
+    margin: 0;
+    margin-top: 5px;
+    text-align: center;
+    line-height: 34px;
+    background: #dbdbdb;
+    font-size: 14px;
+}
+.good_pj .pjlist{
+    padding: 10px;
+    background: #fff;
+    margin-top: 1px;
+}
+.good_pj .pjlist .namedata span,.good_pj .pjlist .start span{
+   width: 50%;
+   display: block;
+   float: left;
+   color: #999999;
+}
+.good_pj .pjlist .start span{
+    width: 100%;
+}
+.good_pj .pjlist .namedata span:last-of-type,.good_pj .pjlist .start span:last-of-type{
+    text-align: right;
+}
+.good_pj .pjlist .start span:last-of-type{
+    color:#666;
+}
+.good_pj .pj_content{
+    color: #000;
+    font-size: 14px;
+    line-height: 22px;
+    padding-top: 5px;
+}
+.response{
+    font-size: 12px;
+    color: #999;
+}
+.morepj{
+    padding: 10px;
+}
+.morepj input{
+    width: 100%;
+    border:none;
+    outline:none;
+    border-radius: 5px;
+    text-align: center;
+    height: 32px;
+    background-color: #d4d4d4;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+    border-bottom: 1px solid #bababa;
+    box-shadow: 0 0 1px #666;
+    font-size: 14px;
+    line-height: 32px;
+}
+.productdata{
+    height: 34px;
+    line-height: 34px;
+    overflow: hidden;
+    background: #dbdbdb;
+    font-size: 18px;
+    margin-top: 8px;
+    padding-left: 20px;
+    font-weight: bold;
+    display: none;
+}
+/*下载APP*/
+.downApp {
+    padding: 10px;
+    background: rgba(0,0,0,.7);
+    color: #fff;
+    position: relative;
+}
+.downApp .media-left img{
+    width: 64px;
+}
+.downApp .media-body h4{
+    color: #fff;
+    margin-bottom: 7px;
+}
+.downApp .media-body{
+    color: #fee6c2;
+}
+.open{
+     width: 80px;
+    background: #6db110;
+    font-size: 14px;
+    border-radius: 5px;
+    position: absolute;
+    right: 8px;
+    top: 9px;
+    text-align: center;
+    padding: 4px;
+}
+
+.search {
+    background-color: #fff;
+}
+
+ .search .search-btn{
+    border-radius: 20px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #FF841D;
+    padding: 0px 15px;
+    border: none;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+
+}

@@ -1,0 +1,44 @@
+footer {
+  overflow: hidden;
+}
+footer .navbar {
+  height: 100px;
+  margin: 0;
+  background-color: #efefef;
+}
+footer .navbar .row div {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+footer .navbar .row div a {
+  color: black;
+  font-size: 14px;
+}
+footer .navbar .row div a span {
+  color: #747474;
+  font-size: 12px;
+}
+footer .navbar .row div:nth-of-type(2) {
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+}
+footer .navbar div.app-updown {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+footer .navbar div.app-updown a {
+  color: red;
+}
+footer .navbar div.app-updown span:first-of-type {
+  color: black;
+}
+footer .navbar div.app-updown span:last-of-type {
+  color: #7b7b7b;
+}
+footer .navbar div.app-updown p {
+  color: #7b7b7b;
+}

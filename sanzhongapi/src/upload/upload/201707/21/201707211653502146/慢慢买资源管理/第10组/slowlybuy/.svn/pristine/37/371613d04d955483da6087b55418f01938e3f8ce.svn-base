@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品列表</title>
+    <link rel='stylesheet' type='text/css' href='../../lib/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='../../css/Compare-price-search/list.css'>
+</head>
+
+<body>
+    <div class="list">
+        <!--导航-->
+        <div class="list_nav">
+            <!--导航模板-->
+        </div>
+        <!--商品列表-->
+        <div class="product">
+            
+            <!--<div class="media">
+                <div class="media-left media-middle">
+                    <a href="#">
+                    <img class="media-object" src="../../images/pic_1.jpg" >
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">超级电视乐视超级电视电视乐视超级电视</h4>
+                    <h5>¥1999.00</h5>
+                    <span class="pull-left">9商城报价</span>
+                    <span class="pull-right">有36622人评价</span>
+                </div>
+            </div>-->
+            <!--底部分页-->
+            <!--<div class="footer">
+                <div class="container-fluid">
+                    <div class="col-xs-4">
+                        <button class="prev">上一页</button>
+                    </div>
+                    <div class="col-xs-4 center">
+                        <select name="" id="">
+                    <option value="">1/3</option>
+                    <option value="">2/3</option>
+                    <option value="">3/3</option>
+                </select>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="next">下一页</button>
+                    </div>
+                </div>
+            </div>-->
+        </div>
+        <div class="link">
+            <h4>相关连接:</h4>
+            <h6>电视机十大品牌</h6>
+            <h6>电视机口碑大全</h6>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
+<!--导航渲染-->
+<script id="nav_tpl" type="text/template">
+    {{each result as v i}}
+    <div class="navleft pull-left">
+        <a href="javascript:;">首页</a>
+        <span class="">&gt</span>
+        <a href="./category.html">全部分类</a>
+        <span class="">&gt</span>
+        <a href="javascript:;">{{v.category}}</a>
+    </div>
+    <div class="navright pull-right">
+        <button>筛选</button>
+    </div>
+    {{/each}}
+</script>
+<!--商品列表渲染-->
+<script id="product_list_tpl" type="text/template">
+    {{each result as v i}}
+    <div class="media">
+        <div class="media-left media-middle">
+            <a href="./details.html?productid={{v.productId}}&brandName={{v.brandName}}">
+                {{#v.productImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{v.productName}}</h4>
+            <h5>{{v.productPrice}}</h5>
+            <span class="pull-left">{{v.productQuote}}</span>
+            <span class="pull-right">{{productCom}}</span>
+        </div>
+    </div>
+    {{/each}}
+    <div class="footer" data-totalpage="{{pages.length}}">
+        <div class="container-fluid">
+            <div class="col-xs-4">
+                <button class="prev">上一页</button>
+            </div>
+            <div class="col-xs-4 center">
+                <select name="" id="">
+                    {{each pages as v i }}
+                        <option value="">{{v}} / {{pages.length}}</option> 
+                  {{/each}}
+                </select>
+            </div>
+            <div class="col-xs-4">
+                <button class="next">下一页</button>
+            </div>
+        </div>
+    </div>
+</script>
+
+<script src="../../lib/jquery/jquery.js"></script>
+<script src='../../lib/template/template.js'></script>
+<script src='../../lib/bootstrap/js/bootstrap.js'></script>
+<script src="../../js/Compare-price-search/geturl.js"></script>
+<script src='../../js/Compare-price-search/list.js'></script>
+<script>
+
+</script>

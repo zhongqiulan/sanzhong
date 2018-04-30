@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <?php include '/views/common/css.html' ?>
+</head>
+
+<body>
+    <div class="view">
+        <!-- 头部 -->
+        <?php include '/views/common/head.html' ?>
+        <!-- 导航栏 -->
+        <div class="nav clearfix">
+
+        </div>
+        <!-- 超值折扣推荐 -->
+        <div class="discount">
+            <!-- 折扣标题 -->
+            <div class="discount_title clearfix">
+                <h3>超值折扣推荐</h3>
+                <a href="javascript:void(0);"><img src="/images/more.png" alt=""></a>
+            </div>
+            <!-- 折扣内容 -->
+            <div class="discount_content">
+                <ul>
+                    <li class="list">
+
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- 固定右边app下载logo -->
+        <div class="app-logo"><img src="../../images/appdown.png" alt=""></div>
+        <!-- 底部 -->
+       <?php include '/views/common/foot.html' ?>
+    </div>
+</body>
+<?php include '/views/common/script.html' ?>
+<!-- 导航菜单渲染 -->
+<script type="text/template" id="nav">
+    {{each result as v i}}
+    <a href='{{v.titlehref}}' class="thum">
+            {{#v.img}}
+            <p class="name">{{v.name}}</p>
+            </a> {{/each}}
+</script>
+    <!-- 商品折扣列表渲染     -->
+<script type="text/template" id="list">
+    {{each result as value index}}
+    <a  href="/indexdetail?produceId={{value.productId}}"  class="clearfix">
+        <div class="pic col-xs-4 col-md-4 col-sm-4 col-lg-4">{{#value.productImgSm}}</div>
+        <div class="info col-xs-8 col-md-8 col-sm-8 col-lg-8">
+            <div class="title">
+                {{value.productName}}
+                <span>{{value.productPinkage}}</span>
+            </div>
+            <div class="other">
+                <span>{{value.productFrom}}|{{value.productTime}}</span>
+                <!-- <i class="glyphicon glyphicon-comment"></i> -->
+                <b>{{value.productComCount}}</b>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+</script>
+<script>
+    require(['js/nav', 'js/list']);
+</script>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑单品 --慢慢买比价网</title>
+    <link rel="stylesheet" href="/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/shade/shade.css">
+    <link rel="stylesheet" href="/css/singleitem/singleitem.css">
+</head>
+
+<body>
+    <!--头部  -->
+    <div class="single-head">
+        <a href="/index"><i class="iconfont">&#xe6ba;</i></a>
+        <h4>凑单品</h4>
+    </div>
+    <!--下拉框  -->
+    <div class="single-navs">
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" id="group-jd" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                京东 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" id="jd-lists">
+                <div class="small-shade hide">
+                    <img src="/images/loading.gif" alt="">
+                </div>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" id="group-area" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                华北 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu" id="area-lists">
+                <div class="small-shade hide">
+                    <img src="/images/loading.gif" alt="">
+                </div>
+            </ul>
+        </div>
+        <div class="btn-group">
+            <button type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                1元 <span class="caret"></span>
+            </button>
+            <ul class="dropdown-menu">
+                <li><a href="#">全部价格</a></li>
+                <li><a href="#">1-3元</a></li>
+                <li><a href="#">3-5元</a></li>
+                <li><a href="#">5-10元</a></li>
+                <li><a href="#">10-15元</a></li>
+                <li><a href="#">15元以上</a></li>
+            </ul>
+        </div>
+        <div class="btn-group navs-font">
+            <button type="button" class="btn btn-default" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+               <i class="glyphicon glyphicon-tasks"></i>
+            </button>
+            <div class="dropdown-menu">
+                <div class="menu-top">
+                    <div class="font-search">
+                        <i class="iconfont">&#xe669;</i>
+                        <input type="text" placeholder="搜索您想要的凑单品">
+                        <button class="btn-search">搜索</button>
+                    </div>
+                    <div class="menu-rank clearfix">
+                        <p>排序</p>
+                        <button class="col-xs-3">销量</button>
+                        <button class="col-xs-3 active">价格<i class="iconfont">&#xe504;</i></button>
+                        <button class="col-xs-3">价格<i class="iconfont">&#xe502;</i></button>
+                    </div>
+                </div>
+                <div class="menu-bottom">
+                    <p>分类</p>
+                    <div class="col-xs-3"><button class="active">全部</button></div>
+                    <div class="col-xs-3"><button>家居</button></div>
+                    <div class="col-xs-3"><button>数码</button></div>
+                    <div class="col-xs-3"><button>办公</button></div>
+                    <div class="col-xs-3"><button>个护</button></div>
+                    <div class="col-xs-3"><button>食品</button></div>
+                    <div class="col-xs-3"><button>母婴</button></div>
+                    <div class="col-xs-3"><button>服饰</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--主体内容  -->
+    <div class="single-main clearfix">
+        <div class="small-shade">
+            <img src="/images/loading.gif" alt="">
+        </div>
+    </div>
+    <script type="text/template" id="jd-tpl">
+        {{each result as v i}}
+        <li><a href="#" id="shopId" data-id="{{v.shopId}}">{{v.shopName}}</a></li>
+        {{/each}}
+    </script>
+    <script type="text/template" id="area-tpl">
+        {{each result as v i}}
+        <li><a href="#" id="areaId" data-id="{{v.areaId}}">{{v.areaName}}</a></li>
+        {{/each}}
+    </script>
+    <script type="text/template" id="main-tpl">
+        {{each result as v i}}
+        <div class="col-xs-6">
+            <div class="sg-content">
+                <img src="{{v.productImg}}" alt="">
+                <p>{{v.productName}}</p>
+                <div class="sg-main-font"><strong>{{v.productPrice}}</strong></div>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <?php include '/common/script.html'; ?>
+    <script>
+        require(['js/singleitem/singleitem']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>产品分类-慢慢买比价页面</title>
+    <link rel="stylesheet" href="/css/Parity-search/search.css" />
+    <link rel="stylesheet" href='/css/dashboard/basic.css'>
+    <?php include '/common/css.html' ?>
+</head>
+
+<body>
+
+    <div class="views">
+        <?php include '/common/head.html' ?>
+
+
+        <!-- 标题区域 -->
+        <div class="seation_search">
+            <!--遮罩层  -->
+            <div class="small-shade">
+                <img src="/images/loading.gif" alt="">
+            </div>
+        </div>
+
+        <?php include '/common/footer.html' ?>
+    </div>
+</body>
+
+<script type="text/template" id="search_tpl">
+    {{each result as list i}}
+    <div class="panel panel-default">
+        <div class="panel-heading household_title" data-titleId="{{list.titleId}}" role="tab" id="headingOne">
+            <h4 class="panel-title" data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{list.titleId}}" aria-controls="collapseOne">
+                {{list.title}}
+            </h4>
+            <div class="after"></div>
+        </div>
+        <div id="collapseOne{{list.titleId}}" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+            <div class="panel-body">
+                <div class="row household">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/template" id="collapse_tpl">
+    {{each result as list i}}
+    <div class="col-xs-4">
+        <a href="list?id={{list.categoryId}}">
+        {{list.category}}</a>
+    </div>
+    {{/each}}
+</script>
+
+<?php include '/common/script.html' ?>
+<script>
+    require(['p_search']);
+</script>
+
+</html>

@@ -1,0 +1,59 @@
+@import "../common/base.less";
+/********************************优惠券头部****************************/
+.mmb-coupon {
+    .coupon-head {
+        width: 100%;
+        height: 44px;
+        background-color: #f4483e;
+        text-align: center;
+        color: #fff;
+        position: relative;
+        .head-back {
+            font-size: 18px;
+            position: absolute;
+            left: 10px;
+            top: 12px;
+        }
+        h4 {
+            font-size: 20px;
+            height: 100%;
+            line-height: 44px;
+            font-weight: bold;
+        }
+        .head-app {
+            background: url(../../imgs/header_app.png) no-repeat;
+            background-size: 34px 34px;
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            right: 20px;
+            top: 5px;
+        }
+    }
+}
+/********************************优惠券内容****************************/
+.coupon-content{
+    width: 100%;
+    ul{
+        margin-top: 12px;
+        padding-bottom: 15px;
+        li{
+            float: left;
+            width: 33.33%;
+            padding: 3px;
+            a{
+                border: 1px solid #ccc;
+                padding-top: 5px;
+                padding-bottom: 10px;
+                img{
+                    width: 50px;
+                    margin: 0 auto;
+                }
+                p{
+                    color: #666;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}

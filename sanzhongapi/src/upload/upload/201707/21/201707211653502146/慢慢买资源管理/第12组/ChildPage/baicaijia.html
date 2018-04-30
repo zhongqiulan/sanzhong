@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>白菜价</title>
+    <link href="../lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/baicaijia/baicaijia.css">
+    <link rel="stylesheet" href="../lib/font-bc/iconfont.css">
+</head>
+
+<body>
+    <!--头部部分开始-->
+    <div id="head">
+        <div class="headLogo">
+            <h4><a href='../index.html' class="glyphicon glyphicon-menu-left"></a>白菜价-淘宝内部券</h4>
+            <a href='javascript:;' class="headApp"><img src="../images/header_app.png" alt=""></a>
+        </div>
+    </div>
+
+
+    <!--导航菜单开始-->
+    <div id="bc_Tab">
+        <div id="my_Scroll">
+
+        </div>
+        <!--搜索功能-->
+        <div class="grabble">
+            <i class="iconfont cut ">&#xe62f;</i>
+            <i class="iconfont cut" style="display: none">&#xe701;</i>
+            <div class="formsch clearfix cut"style="display: none">
+                <div class="txt">
+                    <input type="text">
+                    <i class="iconfont">&#xe656;</i>
+                </div>
+                <div class="smt">
+                    <input type="submit" value="搜 索">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="img_ad">
+        <img src="../images/quan_banner_wap.png" alt="">
+    </div>
+    <div id="content">
+
+    </div>
+
+
+
+    <!--底部区域-->
+    <section id="footer">
+        <ul class="row">
+            <li class="col-xs-4">
+                <a href='enroll.html'>注册</a>
+            </li>
+            <li class="col-xs-4">
+                <a href='register.html'>登录</a>
+            </li>
+            <li class="col-xs-4">
+                <a href="#head"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</a>
+            </li>
+        </ul>
+
+        <p> <a href="#">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+        <p>m.manmanbuy.com </p>
+    </section>
+
+    <!--返回頂部按鈕-->
+    <div class="goBack">
+        <a href='#head' class="glyphicon glyphicon-arrow-up"></a>
+    </div>
+
+    <!--标题切换模板-->
+        <script type="text/html" id='title_tpl'>
+
+             <h4><a href='../index.html' class="glyphicon glyphicon-menu-left"></a>{{title}}-白菜价</h4>
+            <a href='javascript:;' class="headApp"><img src="../images/header_app.png" alt=""></a>
+
+        </script>
+
+
+
+    <!--tab栏模板-->
+    <script type="text/html" id='tab_tpl'>
+        <ul id="tab">
+            {{each result as v i}}
+            <li data-id='{{v.titleId}}'><a href='javascript:;'>{{v.title}}</a></li>
+            {{/each}}
+        </ul>
+    </script>
+
+
+
+    <!--tab内容模板-->
+    <script type="text/html" id="tab_cont_tpl">
+        <div>
+            {{each result as v i}}
+
+            <div class="media clearfix">
+                <div class="cont_img">
+                    {{#v.productImg}}
+                </div>
+                <div class="con_con">
+                    <h4>{{#v.productName}}</h4>
+                    <p> {{#v.productPrice}}</p>
+                    <!--<p><i>券后</i><em>¥</em>7.9<del>¥17.9</del></p>-->
+
+                    {{#v.productCouponRemain}}
+                    <!--<div class="bar clearfix">
+                    <a class="goquan" target="_blank"></a>
+                    <i>
+                                <em style="width:1%;"></em><span>1%</span>
+                            </i>
+                    <b>已领82张</b>
+                </div>-->
+                    <div class="bottom clearfix">
+                        <div class="l">
+                            {{#v.productCoupon}}
+                        </div>
+                        <div class="r">
+                            {{#v.productHref}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            {{/each}}
+        </div>
+    </script>
+
+
+
+    <script src="../lib/jquery/jquery.min.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../lib/jquery/template.js"></script>
+    <script src="../js/baicaijia/iscroll.js"></script>
+    <script src="../js/baicaijia/baicaijia.js"></script>
+    <script>
+    </script>
+</body>
+
+</html>

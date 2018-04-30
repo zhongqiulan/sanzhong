@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../css/category/base.css">
+</head>
+
+<body>
+  <!--头部-->
+  <nav class="navbar" id='navbar'>
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand pull-left" href="#"> <img src="../images/header_logo.png" alt=""></a>
+        <a class='pull-right app_download' href="#"><img src="../images/header_app.png" alt=""></a>
+      </div>
+      <!--搜索-->
+      <form class="search navbar-form">
+        <div class="form-group">
+          <input type="text" class="form-control pull-left" placeholder="请输入你要比较的商品">
+          <button type="submit" class="btn search_btn pull-right">搜 索</button>
+        </div>
+
+      </form>
+
+    </div>
+  </nav>
+  <!--商品分类-->
+  <div id='good_category'>
+    <div class="container-fluid">
+
+      <div class="panel-group" id="accordion">
+
+      </div>
+
+    </div>
+  </div>
+
+  <!--底部-->
+  <footer>
+    <div class="container-fluid">
+      <div class="row">
+        <li class='col-xs-4'><a href="register.html">登录</a></li>
+        <li class='col-xs-4'><a href="enroll.html">注册</a></li>
+        <li class='col-xs-4'><a href="#navbar"><span class='glyphicon glyphicon-arrow-up'></span>返回顶部</a></li>
+      </div>
+      <div class='appdown'>
+        <a href="javascript:;">手机APP下载</a>&nbsp<span>慢慢买手机版 </span><span>--掌上比价平台</span>
+        <p>m.manmanbuy.com</p>
+      </div>
+    </div>
+  </footer>
+  <script src="../lib/jquery/jquery.min.js"></script>
+  <script src="../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../lib/jquery/template.js"></script>
+  <script src="../js/category/search/catalog.js"></script>
+  <script type='text/template' id='title_tpl'>
+    {{each result as v i}}
+    <div class="panel">
+      <div class="panel-heading" data-isGet='true' data-toggle="collapse" data-parent="#accordion" data-id='{{i}}' href="#collapse{{i+1}}">
+        <h4 class="panel-title">{{v.title}}</h4>
+        <span class='glyphicon glyphicon-menu-down pull-right'></span>
+      </div>
+      <div id="collapse{{i+1}}" class="panel-collapse collapse">
+        <div class="panel-body">
+          <div class='row good_list'>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+    {{/each}}
+
+  </script> 
+  <script type='text/template' id='list_tpl'>
+    {{each result as v }}
+    <div class='col-xs-4'><a href="./category/cataloglist.html?categoryId={{v.categoryId}}&category={{v.category}}">{{v.category}}</a></div>
+    {{/each}}
+
+  </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,81 @@
+/*
+    Author: ÎâÉú
+    Date: 20170718
+*/
+
+/*µ¼º½Ìø×ª*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.nav {
+    height: 35px;
+    border-top: 1px solid #bebebe;
+    border-bottom: 1px solid #bebebe;
+    line-height: 35px;
+    padding-left: 5px;
+    background-color: #ebebeb;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+}
+.nav a {
+    display: inline;
+    color: #666;
+}
+
+.Ranking {
+    padding: 10px 5px 0;
+    background-color: #eee
+}
+.hotpaih {
+    width: 100%;
+    margin: 0 auto;
+    height: 40px;
+    display: block;
+    border: none;
+    color: #874604;
+    text-align: left;
+    font-size: 17px;
+    padding-left: 15px;
+    line-height: 40px;
+    border: 1px solid #c0c0c0;
+    background-color: #eee;
+}
+
+.Ranking ul.rkList {
+    padding: 10px 10px 0;
+    margin-bottom: 0;
+}
+
+.Ranking ul.rkList li {
+
+    font-size: 19px;
+    font-weight: 700;
+    height: 42px;
+    line-height: 42px;
+    border-bottom: 1px solid #ccc;
+}
+.Ranking ul.rkList li i{
+    width: 20px;
+    height: 12px;
+    display: block;
+    float: right;
+    margin-top: 12px;
+    background: url('../images/arrow1.gif') left  center no-repeat;
+}
+.Ranking ul.rkList li a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+

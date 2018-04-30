@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <title>慢慢买-登录</title>
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+    <link rel='stylesheet' href='fonts/style.css' />
+    <link rel='stylesheet' href='css/index/index.css' />
+    <link rel='stylesheet' href='css/index/login.css'/>
+    <!--<link rel='stylesheet' href='css/base.css' />-->
+    <link rel='icon' href='images/favicon.ico' type='image/x-icon' />
+</head>
+
+<body>
+    <div class="views">
+        <!--头部-->
+        <header class="clearfix">
+            <div class="logo pull-left">
+                <a href="index.html" class="header">
+                    <img src="images/header_logo.png" alt="">
+                </a>
+            </div>
+            <div class="app-download pull-right">
+                <a href="javascript:;">
+                    <img src="images/header_app.png" alt="">
+                </a>
+            </div>
+
+        </header>
+        <!--搜索框-->
+        <div class="searchBox">
+            <input type="text" placeholder="请输入你想比价的产品" aria-describedby="basic-addon2">
+            <span class="search_btn">搜索</span>
+        </div>
+
+        <div class="loginPage">
+            <div class="loginContainer clearfix">
+                <label for="userName">账号</label>
+                <input type="text" name="userName" id="userName">
+            </div>
+            <div class="loginContainer clearfix">
+                <label for="userPass">密码</label>
+                <input type="password" name="userPass" id="userPass">
+            </div>
+            <input type="button"  value="登 录" >
+            <div class="autoLogin">
+                <input type="checkbox" name="" value="">
+                一个月内自动登录
+            </div>
+        </div>
+
+        <p class="tips">忘记密码：请电脑登录www.manmanbuy.com找回</p>
+
+
+
+
+
+
+        <!--登录注册-->
+        <div class="foot_bar">
+            <ul class="clearfix">
+                <li><a href="javascript:;">登录</a></li>
+                <li><a href="javascript:;">注册</a></li>
+                <li><a href="#"><i class="icon-top"></i>返回顶部</a></li>
+            </ul>
+        </div>
+        <footer>
+            <div class="foot_top">
+                <a href="javascript:;">手机APP下载</a>
+                <a href="index.html">慢慢买手机版</a>
+                 -- 掌上比价平台
+            </div>
+            <div class="foot_bottom">m.manmanbuy.com</div>
+        </footer>
+    </div>
+
+    <script src='lib/jquery/jquery.js'></script>
+
+</body>
+
+</html>

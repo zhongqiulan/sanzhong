@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>凑单品</title>
+    <link rel='stylesheet' type='text/css' href='../lib/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='../css/gsproduct.css'>
+</head>
+
+<body>
+    <div class="gsproduct">
+        <!--凑单品-->
+        <header>
+            <!--返回上一层箭头-->
+            <div class="prev">
+                <a href="../index.html"><span class="glyphicon glyphicon-menu-left"></span></a>
+            </div>
+            <h2>凑单品</h2>
+            <!--app下载-->
+            <div class="download">
+                <a href="appdown.html"><img src="../images/header_app.png" alt=""></a>
+            </div>
+        </header>
+
+        <!--筛选-->
+        <div class="dropdown_box">
+            <div class="container-fluid">
+                <div class="col-xs-3">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
+                            京东
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu shop_menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">京东<span class="glyphicon glyphicon-ok pull-right"></span></a> </li>
+
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
+                            华南
+                            <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu area_menu" aria-labelledby="dropdownMenu1">
+                            <li><a href="#">华南<span class="glyphicon glyphicon-ok pull-right"></span></a> </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-xs-3">
+                    <div class="dropdown">
+                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="true">
+                            全部价格
+                            <span class="caret"></span>
+                        </button>
+
+                    </div>
+                </div>
+                <div class="col-xs-2 col-xs-offset-1">
+                    <span class='glyphicon glyphicon-calendar'></span>
+                </div>
+            </div>
+        </div>
+
+        <!--商品列表-->
+        <div class="product">
+            <div class="container-fluid productList">
+                <!--<div class="col-xs-6">
+                    <div class="container-box">
+                        <a href="javascript::">
+                            <img src="../images/pic_3.jpg" >
+                        </a>
+                        <p>背景连系统瑟吉欧暑假工计算机</p>
+                        <h3><span>¥</span>25225</h3>
+                    </div>
+                </div>-->
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
+<!--商铺渲染-->
+<script id="shop_tpl" type="text/template">
+    {{each result as v i}}
+    <li data-shopid="{{v.shopId}}"><a href="#?shopId={{v.shopId}}">{{v.shopName}}<span class="glyphicon  pull-right"></span></a> </li>
+    {{/each}}
+</script>
+<!--地区渲染-->
+<script id="area_tpl" type="text/template">
+    {{each result as v i}}
+    <li data-areaid="{{v.areaId}}"><a href="#?areaId={{v.areaId}}">{{v.areaName}}<span class="glyphicon  pull-right"></span></a> </li>
+    {{/each}}
+</script>
+
+<!--商品列表-->
+<script id="product_tpl" type="text/template">
+    {{each result as v i}}
+    <div class="col-xs-6 ">
+        <div class="container-box">
+            <a href="javascript::">
+                <img src="{{v.productImg}}" >
+            </a>
+            <p>{{v.productName}}</p>
+            <h3>{{v.productPrice}}</h3>
+        </div>
+    </div>
+    {{/each}}
+
+
+</script>
+<script src="../lib/jquery/jquery.js"></script>
+<script src='../lib/template/template.js'></script>
+<script src='../lib/bootstrap/js/bootstrap.js'></script>
+<script src="../js/Compare-price-search/geturl.js"></script>
+<script src='../js/gsproduct.js'></script>

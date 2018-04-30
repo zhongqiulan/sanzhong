@@ -1,0 +1,27 @@
+// 顶部
+.head_logo{
+    height:50px;
+    line-height: 50px;
+    padding-left:10px;
+    background: red;
+    img{
+        height: 50%;
+    }
+    
+
+}
+
+// 搜索框
+.seek{}
+
+// 导航栏
+.nav{}
+
+// 超值折扣推荐
+.rebate{}
+
+// 品牌排行
+.brand{}
+
+// 底部
+floor{}

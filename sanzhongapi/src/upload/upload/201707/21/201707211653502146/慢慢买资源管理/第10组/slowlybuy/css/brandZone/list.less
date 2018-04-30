@@ -1,0 +1,83 @@
+@import "base.less";
+@mmb_color: #ff841d;
+.mmb_sprites() {
+    background-image: url("../../images/icon_bar.png"); // 二倍图
+    background-size: 200px;
+}
+
+.bz_view,
+header,
+.search,
+.bz_nav,
+.bz_brans,
+.bz_title,
+.bz_list {
+    height: 100%
+}
+
+.bz_view {
+    padding-top: 102px;
+    position: relative;
+    header {
+        //头部
+        height: 102px;
+        width: 100%;
+        position: absolute;
+        top: 0;
+        .logo {
+            height: 51px;
+            background-color: @mmb_color;
+        } //头部logo
+        .search {
+            height: 51px;
+        } //搜索框
+    } //头部
+}
+// 主体部分
+.main {
+    .bz_nav {
+        height: 36px;
+        background-color: #ebebeb;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+        border-top: solid 1px #ebebeb;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0px;
+        >li {
+            >a {
+                text-decoration: none;
+                color: #000;
+            } //a
+        } //li
+    } //bz_nav
+    .bz_brans {
+        padding-top: 10px;
+        background-color: #f2f2f2;
+        .bz_title {
+            font-size: 16px;
+            color: #874604;
+            height: 40px;
+            padding-left: 10px;
+            line-height: 40px;
+            margin:0 10px 5px;
+            border: 1px solid #ccc;
+            background-color: #eee;
+            margin-bottom: 0px;
+        }
+        .bz_list {
+            padding: 0 10px;
+            .fl_t {
+                a {
+                    height: 40px;
+                    background: url(../../images/arrow1.gif) right center no-repeat;
+                    line-height: 40px;
+                    color: #000;
+                    font-weight: bold;
+                    font-size: 16px;
+                    display: block;
+                    padding-left: 0px;
+                    border-bottom: 1px solid #ccc;
+                }
+            }
+        }
+    }
+} //main

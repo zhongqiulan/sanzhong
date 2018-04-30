@@ -1,0 +1,43 @@
+img {
+  width: 100%;
+}
+a {
+  display: block;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+.list .list_nav {
+  line-height: 40px;
+  height: 40px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0 10px;
+}
+.list .list_nav .navleft a {
+  color: #000;
+  display: inline-block;
+}
+.list .list_nav .navright button {
+  width: 60px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+  margin-top: 4px;
+}
+.list .product .media:first-child {
+  margin-top: 0;
+}
+.list .product .media .media-left {
+  width: 120px;
+  height: 120px;
+}
+.list .product .media .media-left a {
+  width: 120px;
+  height: 120px;
+}
+.list .product .media .media-left a img {
+  width: 100%;
+}

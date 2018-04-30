@@ -1,0 +1,235 @@
+
+body,html,ul,li,div,h1,p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a {
+    text-decoration:none;
+    -webkit-tap-highlight-color: transparent;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+
+//顶部
+.navbar {
+    height: 50px;
+    line-height: 50px;
+    background-color: #f4483e;
+    z-index: 2;
+    font-size: 20px;
+    text-align: center;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    .glyphicon {
+        color: #fff;
+    }
+    .glyphicon:link,
+    .glyphicon:visited,
+    .glyphicon:focus,
+    .glyphicon:hover,{
+        text-decoration: none;
+    }
+    img {
+        width: 34px;
+        height: 34px;
+        margin-top: 10px;
+    }
+}
+
+// 头部标题部分
+.baicai_title{
+    margin-top: 5rem;
+    .container-fluid {
+        .row> li{
+            padding:0;
+            text-align: center;
+            border:none;
+            font-size: 1.4rem;
+            line-height: 3rem;
+        }
+        .nav{
+            li{
+                span{
+                    display: inline-block;
+                    height: 100%;
+                    border-bottom: 1px solid #fff;
+                }
+            }
+        }
+    }
+}
+
+.baicai_title .container-fluid .nav  li a,
+.baicai_title .container-fluid .nav  li a:active
+.baicai_title .container-fluid .nav  li a:focus,
+.baicai_title .container-fluid .nav  li a:hover{
+    text-decoration: none;
+    color: #666;
+}
+.titleVisited{
+    border-color: red !important;
+}
+
+// 商品部分
+.products{
+    padding-top: .3rem;
+    background-color: #f7f7f7;
+    margin-bottom: 5rem;
+    .product{
+        margin: 1rem 0;
+        padding:1.5rem .5rem ;
+        background-color: #fff;
+    }
+    .pro_img{
+        width: 30%;
+        height: 100%;
+        img{
+            width: 100%;
+        }
+    }
+    .pro_desc{
+        width:65%;
+        margin-left: 1rem;
+        position: relative;
+        .pro_title{
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .pro_price {
+        font-size: 2rem;
+        color:red;
+        padding: 1rem 0;
+        em,del{
+            font-size: 1.2rem;
+        }
+        i{
+            font-style: normal;    
+        }
+        del{
+            margin-left: 1.5rem;
+            color:#666;
+        }
+    }
+    .pro_progress{
+        position: relative;
+        span{
+            color: #fff;
+            z-index: 999;
+            position: absolute;
+            left: 30px;
+        }
+        b{
+            position: absolute;
+            right: 1.3rem;
+            color: red;
+            z-index: 999;
+        }
+        .progress{
+            position: absolute;
+            top:.3rem;
+            width: 50%;
+            border-radius: 1rem;
+            height: 1rem;
+            border:1px solid red;   
+            background-color: #ffb7b7;
+            .progress-bar{
+                background-color: #ff5e5d;
+                color: #fff;
+                font-size: 1rem;
+                line-height: 1rem;
+            }
+        }
+        span{
+            margin-right:20%; 
+            font-size: 1.2rem;
+            line-height: 1.8rem;
+            color: #fff;
+            font-weight: 700;
+        }
+    }
+
+    .coupon{
+        margin-top: 2.5rem;
+        display: inline-block;
+        padding: 0 .5rem;
+        font-size: 1.2rem;  
+        line-height: 1.8rem; 
+        border: 1px dashed #ff5e5d;
+        color: #ff5e5d;
+    }
+    .buy{
+        padding: 0.3rem .5rem;
+        display: inline-block;
+        background-color: #ff5e5d;
+        color: #fff;
+        border-radius: .5rem;
+        font-size: 1.4rem;
+        position: absolute;
+        right:.5rem;
+        bottom: 0;
+    }
+
+}
+
+
+#scroll{
+    position: absolute;
+	z-index: 1;
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+	width: 160%;
+	height: 100%;
+}
+#wrapper{
+    height:40px;
+    position: relative;
+	z-index: 1;
+	width: 100%;
+	overflow: hidden;
+}
+#wrapper li{
+    padding-left: 5px;
+    padding-right: 15px;
+    height:40px;
+    line-height: 40px;
+}
+
+//底部
+.footer {
+    background-color: #efefef;
+    width: 100%;
+    // position: fixed;
+    // bottom: 0;
+}
+
+.footer .checkin .row div {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #c5c5c5;
+}
+
+.footer .checkin .row div a {
+    color: #000;
+}
+
+.footer .bbottom {
+    box-sizing: border-box;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.footer .bbottom .app a {
+    color: #f00;
+}
+
+.footer .bbottom .app .grey {
+    color: #676767;
+}

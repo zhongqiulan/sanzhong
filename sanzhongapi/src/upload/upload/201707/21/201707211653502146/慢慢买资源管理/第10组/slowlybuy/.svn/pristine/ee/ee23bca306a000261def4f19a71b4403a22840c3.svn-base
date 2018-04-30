@@ -1,0 +1,205 @@
+@import "base.less";
+@mmb_color: #ff841d; // 主体
+.main {
+    .bz_nav {
+        height: 36px;
+        background-color: #ebebeb;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+        border-top: solid 1px #ebebeb;
+        border-bottom: 1px solid #ccc;
+        margin-bottom: 0px;
+        >li {
+            >a {
+                text-decoration: none;
+                color: #000;
+            } //a
+        } //li
+    } //bz_nav
+    .bz {
+        background-color: #f2f2f2;
+        color: #000;
+        font-size: 14px;
+        .rk_title {
+            color: #874604;
+            background: #f3f3f3;
+            border: 1px solid #c8c8c8;
+            border-left: none;
+            border-right: none;
+            font-weight: bold;
+            height: 36px;
+            line-height: 36px;
+            font-size: 14px;
+            padding-left: 10px;
+        } // .rk_title
+        .rk_list {
+            padding: 0 10px;
+            em.top1 {
+                background-color: #f10e0e;
+            } //em.top1
+            em.top2 {
+                background-color: #ff9314;
+            } //em.top2
+            em.top3 {
+                background-color: #8adf5b;
+            } //em.top3
+            ul {
+                li {
+                    display: inline-block;
+                    border-bottom: 1px solid #e7e7e7;
+                    padding: 10px;
+                    width: 100%;
+                    i {
+                        float: right;
+                        color: #999;
+                        font-size: 20px;
+                        height: 40px;
+                        line-height: 40px;
+                    }
+                    a {
+                        display: block;
+                        em {
+                            float: left;
+                            display: inline-block;
+                            width: 20px;
+                            height: 20px;
+                            text-align: center;
+                            background: #c9c9c9;
+                            color: #FFFFFF;
+                            line-height: 20px;
+                            vertical-align: top;
+                            margin: 0 10px 0 0;
+                            font-size: 14px;
+                        }
+                        .inner {
+                            float: left;
+                            font-size: 14px;
+                            color: #999;
+                        }
+                        .tit {
+                            font-size: 16px;
+                            color: #000;
+                            margin-bottom: 2px;
+                        }
+                        p {
+                            font-size: 12px;
+                        }
+                        &:after {
+                            clear: both;
+                            content: " ";
+                            display: block;
+                            font-size: 0;
+                            height: 0;
+                            visibility: hidden;
+                        }
+                    } //a
+                } //li
+            } //ul
+        } // .rk_title
+    }
+}
+
+
+/*品牌销量排行star*/
+
+.bz_sales {
+    .sales_content {
+        ul {
+            li {
+                border-bottom: 1px solid #e7e7e7;
+                padding: 10px;
+                a {
+                    .pic {
+                        float: left;
+                        margin-right: 10px;
+                    }
+                    .info {
+                        .tit {
+                            color: #333333;
+                            line-height: 22px;
+                            min-height: 44px;
+                            word-break: break-all;
+                        }
+                        span {
+                            color: #F00;
+                        }
+                        .price {
+                            height: 25px;
+                            margin-top: 4px;
+                            em {
+                                font-size: 18px;
+                                color: #ea3900;
+                                vertical-align: middle;
+                                float: left;
+                            }
+                            .star {
+                                float: right;
+                                margin-top: 2px;
+                                em.star5 {
+                                    width: 18px;
+                                    float: left;
+                                }
+                            }
+                        } //pricebrandTitleId
+                        .other {
+                            font-size: 12px;
+                            color: #999;
+                        }
+                    } //info
+                } //a
+            } //li
+        } //ul
+    }
+}
+
+
+/*品牌销量排行end*/
+
+
+/*y用户评论star*/
+
+.bz_comment {
+    .comment_list {
+        ul {
+            li {
+                border-bottom: 1px solid #e7e7e7;
+                padding: 10px;
+                .protit {
+                    margin-bottom: 45px;
+                    .pic {
+                        float: left;
+                        margin-right: 10px;
+                    } //pic
+                    .tit {
+                        color: #999999;
+                        line-height: 22px;
+                        font-size: 14px;
+                        word-break: break-all;
+                    } //tit
+                } //protit
+                .plbox {
+                    background: #f8f8f8;
+                    padding: 10px;
+                    border: 1px solid #e7e7e7;
+                    position: relative;
+                    &:after {
+                        content: '';
+                        width: 0;
+                        height: 0;
+                        position: absolute;
+                        left: 30px;
+                        top: -7px;
+                        border-bottom: 8px solid #f8f8f8;
+                        border-left: 7px solid transparent;
+                        border-right: 7px solid transparent;
+                    }
+                    .name {
+                        color: #4f6900;
+                    } //name
+                } //plbox 
+            }
+        }
+    }
+}
+
+
+/*y用户评论end*/

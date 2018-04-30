@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>电视机比价选购，电视机推荐哪个好 -- 慢慢买手机版</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/category/ductlist.css">
+    <link rel="stylesheet" href="../../css/head.css">
+</head>
+
+<body>
+    <div class="view" id="top">
+        <!--头部login  -->
+        <div class="head">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header pull-left">
+                        <a class="navbar-brand" href="#"><img src="../../images/header_logo.png" alt=""></a>
+                    </div>
+                    <div class="download pull-right">
+                        <a href="#"> <img src="../../images/header_app.png"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--顶部导航nav  -->
+        <div class="zyzsreach">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">搜索</span>
+            </div>
+        </div>
+        <!--主体部分  -->
+        <main>
+            <!--标题 -->
+            <div class="title">
+                <div class="left nav_title">
+                    <!--渲染标题栏  -->
+                    <a href="../../index.html">首页</a><span>></span>
+                    <a href="./category.html">全部分类</a><span>></span>
+                    <a href="./ductlist.html">电视</a><span>></span>
+                </div>
+                <div class="right pull-right">
+                    筛选
+                </div>
+            </div>
+            <!--主体内容  -->
+            <div class="content">
+                <!--模板渲染  -->
+            </div>
+        </main>
+
+        <div class="flip">
+            <button class="pull-left">上一页</button>
+            <select class="pull-left "></select>
+            <button class="pull-right">下一页</button>
+        </div>
+
+        <!--尾部区域-->
+        <div class="footer ">
+            <div class="footertop row">
+                <a href="#" class='col-xs-4'>登陆</a>
+                <a href="#" class='col-xs-4'>注册</a>
+                <a href="#top" class='col-xs-4'>回到顶部</a>
+            </div>
+            <div class="footercenter">
+                <a href="#">手机App下载</a>
+                <a href="#">慢慢买手机版</a>
+                <a href="#">--掌上比价平台</a>
+                <p> m.manmanmai.com</p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="../../libs/jquery/jquery.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../../libs/artTemplate/template.js"></script>
+    <script src="../../libs/jquery-cookie/jquery.cookie.js"></script> 
+    <script src="../../js/utils.js"></script>
+    <script src="../../js/category/ductlist.js"></script>
+
+    <!-- 渲染标题栏   -->
+    <script type="text/template" id="ductListTpl">
+        {{each result as v i}}
+        <input type="hidden" name="v.brandName" value="{{v.brandName}}">
+        <div class="media" data-productListId={{v.productListId}}>
+            <div class="media-left media-middle">
+                <a href="#">{{#v.productImg}}</a>
+            </div>
+            <div class="media-body">
+                <div  class="media-heading">{{v.productName}}</div>
+                <p>{{v.productPrice}}</p>
+                <span>{{v.productQuote}}</span>
+                <span>{{v.productCom}}</span>
+            </div>
+            <a href="./product.html?productid={{v.productId}}"></a>
+        </div>
+        {{/each}}
+    </script>
+
+</body>
+
+</html>

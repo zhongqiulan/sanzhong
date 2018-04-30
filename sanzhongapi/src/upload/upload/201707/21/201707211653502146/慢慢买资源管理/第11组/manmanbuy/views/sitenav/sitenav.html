@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" type="" href="/views/public/css/sitenav/sitenav.css">
+    <link rel="stylesheet" type="" href="/views/public/css/base/font.css">
+</head>
+
+<body>
+    <div class="sitenav">
+        <!--头部-->
+        <header>
+            <a href="javascript:;" class="arrow"><span class="glyphicon glyphicon-menu-left"></span></a>
+            <h1>商城导航</h1>
+            <a href="javascript:;" class="header_app"><img src="/views/public/images/header_app.png" alt=""></a>
+        </header>
+        <!--主体内容-->
+        <div class="body">
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                京东商城
+            </a>
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                淘宝
+            </a>
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                天猫商城
+            </a>
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                1号店
+            </a>
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                苏宁易购
+            </a>
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                中国亚马逊
+            </a>
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                当当
+            </a>
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                国美在线
+            </a>
+            <a href="javascript:;">
+                <img src="../public/uploads/sitenav1.png" alt="">
+                考拉海淘
+            </a>
+        </div>
+        <!--底部导航-->
+        <div class="menu">
+            <a href="javascript:;">首页</a> &nbsp;> &nbsp;
+            <a href="javascript:;">商城导航</a>
+        </div>
+        <!--底部-->
+       <?php include "/views/common/footer.html" ?>
+        <!--这是固定定位-->
+        <div class="app">
+            <a href="javascript:;">
+                <img src="/views/public/uploads/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt="">
+            </a>
+        </div>
+    </div>
+    <?php include "/views/common/script.html" ?>
+    <script id="sitenav_tmp" type="text/html">
+    {{each result as v i}}
+        <a href="{{v.navHref}}">
+             <img src="{{v.navImg}}" alt="">
+            {{v.navTitle}}
+        </a>
+    {{/each}}
+    </script>
+    <script>
+        require(["js/sitenav/sitenav"]);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,169 @@
+@import 'base.less';
+#layout {
+    width: 100%;
+    height: 100%;
+    clear: both;
+    #skiphop_tap {
+        height: 50px;
+        background: #ff841d;
+        .banck {
+            a {
+                display: block;
+                width: 11px;
+                height: 44px;
+                background: url('../images/icon_bar.png') -209px -19px;
+            }
+        }
+        .cout {
+            font-size: 0.36rem;
+            height: 49px;
+            line-height: 49px;
+            color: #fff;
+            text-align: center;
+            margin: 0;
+        }
+        .logo {
+            a {
+                display: block;
+                height: 50px;
+                width: 100%;
+                padding: 0;
+                clear: both;
+                img {
+                    display: block;
+                    height: 44px;
+                    width: 40px;
+                    color: #fff;
+                    padding-top: 7px;
+                    float: right;
+                }
+            }
+        }
+    }
+    .container {
+        // background:white;
+        z-index: 999;
+        position: relative; // 下拉菜单
+        .jds {
+            font-size: 16px;
+            .jds_l {
+                width: 55px;
+                margin-left: 0px;
+                .sjx {
+                    // display: block;
+                    // width: 10px;
+                    // height: 10px;
+                    // background: skyblue;
+                    // position: absolute;
+                    // top: 7px;
+                    // left: 55px;
+                }
+            }
+            .jds_lj {
+                width: 89px;
+                .moreSome {
+                    left: 86px;
+                }
+            }
+        }
+        ul {
+            display: none;
+            position: absolute;
+            top: 100%;
+            left: -15px;
+            background: #fff;
+            li {
+                width: 100%;
+                border: 1px solid #ccc;
+                height: 34px;
+                line-height: 34px;
+                &::after {
+                    display: block;
+                    width: 10px;
+                    height: 10px;
+                    background: yellowgreen;
+                }
+            }
+        }
+        .jd_ul {
+            margin: 0;
+            width: 687%;
+        }
+        .shang {}
+        .xia {}
+        .where_ul {
+            margin: 0;
+            position: absolute;
+            top: 100%;
+            left: -50px;; // margin-left: -214%;
+            width: 686%;
+        }
+        .much_ul {
+            margin: 0;
+            margin-left: -292%;
+            width: 422%;
+        }
+        .searcher {
+            i {
+                width: 37px;
+                height: 22px;
+                font-size: 25px;
+                text-align: center;
+                border: 1px solid #ccc;
+                background: white;
+                position: absolute;
+                top: 0px;
+                right: -15px;
+            }
+        }
+    }
+    #buy_main {
+        ul {
+            li {
+                display: block;
+                width: 50%;
+                float: left;
+                margin-top: 10px;
+                a {
+                    display: block;
+                    width: 109%;
+                    height: 50%;
+                    padding-right: 0;
+                    margin-left: -8px;
+                    background: white;
+                    .images_s {
+                        width: 100%;
+                        img {
+                            display: block;
+                            width: 100%;
+                        }
+                    }
+                    .title {
+                        font-size: 12px;
+                        color: #333;
+                        height:50px;
+                        overflow:hidden;
+                    }
+                    .money {
+                        color: red;
+                        font-size: 26px;
+                        em {
+                            font-size: 14px;
+                            color: red;
+                        }
+                    }
+                    span {
+                        position: absolute;
+                        bottom: 0px;
+                        right: 12px;
+                        width: 58px;
+                        height: 25px;
+                        background: #ff841d;
+                        font-size: 18px;
+                        margin-right: 3px;
+                    }
+                }
+            }
+        }
+    }
+}

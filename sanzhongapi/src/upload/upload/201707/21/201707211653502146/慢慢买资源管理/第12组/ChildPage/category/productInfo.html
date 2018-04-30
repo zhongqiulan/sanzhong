@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap -->
+   <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+    
+    <link rel="stylesheet" href="../../css/category/base.css">
+</head>
+
+<body>
+  <!--头部-->
+  <nav class="navbar" id='navbar'>
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <a class="navbar-brand pull-left" href="#"> <img src="../../images/header_logo.png" alt=""></a>
+        <a class='pull-right app_download' href="#"><img src="../../images/header_app.png" alt=""></a>
+      </div>
+      <!--搜索-->
+      <form class="search navbar-form">
+        <div class="form-group">
+          <input type="text" class="form-control pull-left" placeholder="请输入你要比较的商品">
+          <button type="submit" class="btn search_btn pull-right">搜 索</button>
+        </div>
+
+      </form>
+ 
+    </div>
+  </nav>
+    <!--商品详情页-->
+    <div class="productInfo">
+        <div class="container-fluid product">
+            <!--面包屑-->
+            <!--<i>JD</i>
+                    <h5>京东商城</h5>
+                    <div class="price pull-right">
+                        <span>$1999.00</span>
+                        <span>去购买</span>-->
+
+        </div>
+        <div class="container-fluid">
+                        <div class="comment">
+                <h5>网友评价</h5>
+            </div>
+            <!--查看更多评价-->
+            <div class='moreComment'>
+                <button type="button" class="btn btn-lg btn-block">查看更多评价</button>
+
+            </div>
+        </div>
+
+
+
+        <!--底部-->
+       <footer>
+    <div class="container-fluid">
+    <div class="row">
+      <li class='col-xs-4'><a href="register.html">登录</a></li>
+      <li class='col-xs-4'><a href="enroll.html">注册</a></li>
+      <li class='col-xs-4'><a href="#navbar"><span class='glyphicon glyphicon-arrow-up'></span>返回顶部</a></li>
+    </div>
+    <div class='appdown'>
+      <a href="javascript:;">手机APP下载</a>&nbsp<span>慢慢买手机版 </span><span>--掌上比价平台</span>
+        <p>m.manmanbuy.com</p>
+    </div>
+     </div>
+  </footer>
+   <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../lib/jquery/template.js"></script>
+    <script src="../../js/category/utils/util.js"></script>
+     <script src="../../js/category/search/cataloginfo.js"></script>
+        <script type='text/template' id='prod_tpl'>
+            <ol class="breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">{{category}}</a></li>
+                <li class="active">{{ptName}}</li>
+            </ol>
+
+            <div class="productShow">
+                <h5>{{productName}}</h5>
+                {{#productImg}}
+                <i>收藏</i>
+            </div>
+
+            <div class='productControl'>
+                <ul class="row">
+                    <li class='col-xs-4'><a href="javascript:;">比价购买</a></li>
+                    <li class='col-xs-4'><a href="javascript:;">产品参数</a></li>
+                    <li class='col-xs-4'><a href="javascript:;">评价(2322)</a></li>
+                </ul>
+                <div class="shop">
+
+                    {{#bjShop}}
+                </div>
+
+            </div>
+            <p class='note'>*实际价格以各网站列出的实时售价为准,我们提供的价格可能有数小时至数日的延迟</p>
+    </div>
+
+    </script>
+    <script type='text/template' id='comment_tpl'>
+    {{each result as v}}
+        <div class='com_info'>
+        <div class="info clearfix">
+
+            <p class='pull-left'>{{v.comName}}</p>
+            <div class="pull-right">
+                <p>{{v.comTime}}</p>
+                <p>{{v.comFrom}}</p>
+            </div>
+
+        </div>
+        <p class='comments'>{{v.comContent}}</p>
+    </div>
+    {{/each}}
+    </script>
+   
+</body>
+
+</html>

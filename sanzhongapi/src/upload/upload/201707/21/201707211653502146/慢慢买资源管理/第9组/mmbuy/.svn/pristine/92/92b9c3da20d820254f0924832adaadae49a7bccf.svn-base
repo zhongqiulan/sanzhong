@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title优惠券</title>
+        <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/coupon-tab.css">
+</head>
+
+<body>
+    <!--优惠券顶部-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header header-logo pull-left">
+                <a class="navbar-brand" href="../../index.html"><span class='glyphicon glyphicon-chevron-left'></span></a>
+                <!--<span>优惠劵</span>-->
+            </div>
+            <div class="navbar-center pull-left">
+                <span>优惠劵</span>
+            </div>
+            <div class="navbar-right app-donwload pull-right">
+                <img src="../../images/header_app.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <!--优惠券选项-->
+
+    <div class="row coupon-box">
+        
+    </div>
+    <script src='../../lib/jquery/jquery.js'></script>
+    <script src='../../lib/bootstrap/js/bootstrap.min.js'></script>
+    <script src='../../lib/artTemplate/template.js'></script>
+    <script type='text/template' id='coupon_tab'>
+        {{each result as v i}}
+        <div class="col-sm-4 col-md-4 col-sd-4 col-xs-4 coupon-tab">
+            <a href='{{v.couponLink}}?couponid={{v.couponId}}' class="thumbnail">
+                <img src="{{v.couponImg}}" alt="{{v.couponTitle}}">
+                <div class="caption">
+                    <p>{{v.couponTitle}}</p>
+                </div>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+    <script src='../../js/coupon/coupon-tab.js'></script>
+</body>
+
+</html>

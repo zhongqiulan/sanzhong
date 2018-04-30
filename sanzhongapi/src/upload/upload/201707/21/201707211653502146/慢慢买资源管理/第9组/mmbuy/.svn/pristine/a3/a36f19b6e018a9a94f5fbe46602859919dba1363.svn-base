@@ -1,0 +1,30 @@
+
+var search = location.search;
+
+var search = search.slice(1);
+
+var arr = search.split("&");
+// console.log(arr);
+var obj={};
+for(var i=0;i<arr.length;i++){
+  var arrNew = arr[i].split("=");
+  obj[arrNew[0]]=arrNew[1];
+  // console.log(obj);
+}
+  console.log(obj.titleId);
+$.ajax({
+  url:'http://192.168.50.2:9090/api/getproductlist',
+  type:'get',
+  dataType:'Json',
+  data:{
+    categoryid:Number(obj.titleId),
+    pageid :Number(obj.titleId+1)
+  },
+  success:function(info){
+    // console.log('123');
+    var htmlStr = template('prolist_tpl',info);
+    $('#tab_content').html(htmlStr);
+    console.log(info);
+  }
+
+});

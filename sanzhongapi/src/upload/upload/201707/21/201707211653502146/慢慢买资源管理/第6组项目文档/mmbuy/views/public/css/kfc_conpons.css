@@ -1,0 +1,137 @@
+/*
+    页面初始化
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.clearfloat:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.clearfloat {
+  zoom: 1;
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* 头部模块*/
+.headers {
+  height: 50px;
+  background: #ff841d;
+  width: 100%;
+  position: relative;
+  padding-left: 8px;
+  box-sizing: border-box;
+}
+.headers a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-top: 5px;
+  position: absolute;
+  line-height: 40px;
+}
+.headers a + a {
+  top: 0;
+}
+.headers .app {
+  padding: 0;
+  position: absolute;
+  right: 8px;
+  top: 0;
+}
+.headers #tit {
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+}
+.headers {
+  background: #f4483e;
+}
+.headers a {
+  font-size: 35px;
+  color: #fff;
+  text-decoration: none;
+  font-family: '宋体';
+}
+.main {
+  overflow: hidden;
+}
+.main > ul a {
+  display: block;
+  height: 128px;
+  width: 100%;
+  padding: 14px 8px;
+  box-sizing: border-box;
+  position: relative;
+}
+.main > ul a:visited {
+  color: #000;
+}
+.main > ul a:after {
+  color: #000;
+}
+.main > ul a > .info {
+  padding-left: 110px;
+}
+.main > ul a > .info > img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: 14px;
+  left: 8px;
+}
+.main > ul a > .info .yh-content {
+  height: 57px;
+  text-decoration: blink ;
+}
+.main > ul a > .info > span {
+  display: inline-block;
+  height: 24px;
+  margin-top: 10px;
+}
+.main > ul a > .info .mall {
+  color: #ccc;
+  font-size: 13px;
+}
+.screen {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  top: 0;
+  left: 0;
+  line-height: 50%;
+}
+.screen #carousel-example-generic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.screen #carousel-example-generic .atz1 {
+  transform: translate(-200%);
+}
+.screen #carousel-example-generic .atz2 {
+  transform: translate(200%);
+}
+.active {
+  display: none;
+}

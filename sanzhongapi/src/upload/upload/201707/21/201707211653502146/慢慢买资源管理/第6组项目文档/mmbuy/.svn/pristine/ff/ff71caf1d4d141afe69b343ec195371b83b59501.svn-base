@@ -1,0 +1,6 @@
+.goods_list_nav ul {
+  list-style: none;
+}
+.goods_list_nav ul li {
+  float: left;
+}

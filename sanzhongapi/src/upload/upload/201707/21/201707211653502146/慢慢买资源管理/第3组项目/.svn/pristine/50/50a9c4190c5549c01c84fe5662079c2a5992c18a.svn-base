@@ -1,0 +1,24 @@
+/**
+ * Created by Administrator on 2017/7/18.
+ *
+ * Author:ฮโนค
+ */
+
+$(function(){
+    $.ajax({
+        url:'http://139.199.192.48:9090/api/getbrandtitle',
+        dataType:'jsonp',
+        success:function(data){
+            //console.log(data);
+            var htmlStr=template('tmpl_rkList',data);
+            $('.rkList').html(htmlStr);
+        }
+    })
+})
+
+
+
+
+
+
+

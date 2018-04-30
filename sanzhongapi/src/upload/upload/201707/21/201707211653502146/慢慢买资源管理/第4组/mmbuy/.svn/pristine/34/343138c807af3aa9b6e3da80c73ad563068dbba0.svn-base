@@ -1,0 +1,112 @@
+/*
+author:hq
+Date:2017-7-18
+*/
+body{
+    padding-bottom: 50px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+//   历史价格查询
+.seach-history{
+    width: 100%;
+    height: 50px;
+    background-color: #ff8b00;
+    a{
+        font-size: 30px;
+        color: #fff;
+        left: 10px;
+        top:10px;
+    }
+    h1{
+        font-weight: normal;
+        color:#ffffff;
+        padding-top: 10px;
+        font-size: 24px;
+        position: absolute;
+        top: -20px;
+        left: 35%;
+    }
+}
+
+//    商品链接
+.item_link{
+    padding: 10px;
+    p{}
+    .state{
+        color: #ccc;
+        border-bottom: 1px solid #ccc;
+    }
+}
+
+//  按钮
+.btn{
+    padding-top: 40px;
+    padding-left: 20%;
+    .seach-history-Price,.reset{
+        padding: 10px 20px;
+        border-radius:20px;
+        border: 1px solid #ccc;
+        background-color: #fff;
+    }
+}
+
+//    操作说明
+.operation{
+    padding: 10px;
+    h5{}
+    p{
+        color:#b7b8b3;
+        font-size: 12px;
+    }
+}
+
+// 中间空白
+.meddle{
+    width: 100%;
+    height: 350px;
+}
+
+
+//   底部
+.footer{
+    background-color: #faf8f5;
+    padding: 5px;
+    position: relative;
+    margin-top: 23px;
+    i{
+        font-size: 25px;
+        color:#c8c8da;
+        float:left;
+        top:25px;
+
+    }
+    span{
+        display: inline-block;
+        width: 60px;
+        height: 60px;
+        text-align: center;
+        border-radius: 5px;
+        font-size: 40px;
+        color: #fff;
+        background-color: #fc5506;
+        float:left;
+        margin:0 5px;
+    }
+    .media-body{
+        margin-right: 5px;
+    }
+    a{
+        display: inline-block;
+        color: #fff;
+        background-color:#ff7700;
+        padding: 10px;
+        border-radius: 5px;
+        position: absolute;
+        right: 5px;
+        top: 30px;
+    }
+}

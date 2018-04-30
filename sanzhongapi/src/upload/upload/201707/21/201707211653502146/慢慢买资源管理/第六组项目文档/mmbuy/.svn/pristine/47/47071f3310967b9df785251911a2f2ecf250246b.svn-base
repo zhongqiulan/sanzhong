@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>国内折扣</title>
+    <?php include "/views/common/css.html"?>
+    <link rel="stylesheet" href="/views/public/css/homeDiscount.css">
+</head>
+
+<body>
+   <div class="view">
+        <!--头部-->
+    <header>
+        <a href="/index" class="head_change"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <h1>国内折扣</h1>
+        <a href="#" class="head_app"></a>
+    </header>
+    <!--主体内容-->
+    <main>
+        <div class="container">
+            <div class="row produce_box">
+                <!--<div class="col-xs-6 produce_list">
+                    <a href="#">
+                        <div class="thumbnail">
+                        <img src="../public/image/init-imgs/test.jpg" alt="商品">
+                        <div class="caption">
+                            <p class="">Divoom Airbeat-10 多功能便携蓝牙音箱 8小时续航 防水防尘 迷你低音炮</p>
+                            <p>99</p>
+                            <p>京东商城 | 2017/7/18 17:21</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>-->
+                <!--<div class="col-xs-6 produce_list">
+                    <a href="#">
+                        <div class="thumbnail">
+                        <img src="../public/image/init-imgs/test.jpg" alt="商品">
+                        <div class="caption">
+                            <p>Divoom Airbeat-10 多功能便携蓝牙音箱 8小时续航 防水防尘 迷你低音炮</p>
+                            <p>99</p>
+                            <p>京东商城 | 2017/7/18 17:21</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 produce_list">
+                    <a href="#">
+                        <div class="thumbnail">
+                        <img src="../public/image/init-imgs/test.jpg" alt="商品">
+                        <div class="caption">
+                            <p>Divoom Airbeat-10 多功能便携蓝牙音箱 8小时续航 防水防尘 迷你低音炮</p>
+                            <p>99</p>
+                            <p>京东商城 | 2017/7/18 17:21</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+                <div class="col-xs-6 produce_list">
+                    <a href="#">
+                        <div class="thumbnail">
+                        <img src="../public/image/init-imgs/test.jpg" alt="商品">
+                        <div class="caption">
+                            <p>Divoom Airbeat-10 多功能便携蓝牙音箱 8小时续航 防水防尘 迷你低音炮</p>
+                            <p>99</p>
+                            <p>京东商城 | 2017/7/18 17:21</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>-->
+            </div>
+        </div>
+    </main>
+    <!--底部-->
+    <?php include "/views/common/foot.html"?> 
+   </div> 
+    <?php include "/views/common/script.html"?>
+
+
+    <script type="text/template" id="produce_temp">
+      {{each result as v i}}
+        <div class="col-xs-6 produce_list" id="detail" data-id="{{v.productId}}">
+                    <a href="#">
+                        <div class="thumbnail">
+                        {{#v.productImg}}
+                        <div class="caption">
+                            <p class="product_title">{{v.productName}}</p>
+                            <p>{{v.productPrice}}</p>
+                            <p>{{v.productFrom}} | 2017-{{v.productTime}}</p>
+                        </div>
+                    </div>
+                    </a>
+         </div>
+         {{/each}}
+    </script>
+    <script>
+        require(["js/homeDiscount"]);
+    </script>
+</body>
+
+</html>

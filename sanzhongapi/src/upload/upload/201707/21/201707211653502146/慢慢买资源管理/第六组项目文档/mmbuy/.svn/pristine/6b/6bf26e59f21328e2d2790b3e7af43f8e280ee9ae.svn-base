@@ -1,0 +1,17 @@
+define(['jquery'], function($) {
+   $(".login_span").on("click",function(){
+        $(".login_foot").fadeOut(500);
+    });
+    
+    $(".uname").on("blur",function(){
+      var str = $("#t_username").val();
+      var ret = /^[a-zA-Z][a-zA-Z0-9_]{5,20}$/;
+      if(ret.test(str)){
+        $(".input_div").css("display",'block');
+        $(".input_div").addClass("input_div_green")
+        $(".input_div").html("验证成功,请输入密码");
+      }else{
+        // alert('wrong');
+      }
+    })
+});

@@ -1,0 +1,40 @@
+
+    //基本品牌的的渲染
+$.ajax({
+    url: 'http://139.199.192.48:9090/api/getbrandtitle',
+    type: 'get',
+    success: function (info) {
+        var str = template('tpl_brand', info);
+        $(".content  ul").html(str)
+    }
+})
+
+    //随机出现的商品展示
+$.ajax({
+    url: 'http://139.199.192.48:9090/api/getbrandproductlist',
+    type: 'get',
+    data: {
+        brandtitleid: 1,
+    },
+    success: function (info){
+        console.log(info)
+        var showStr = template('tpl_exp',info);
+        $(".expl ul").html(showStr)
+    }
+})
+
+
+
+//点击品牌的跳转
+$(".content ul").on("click", '#brand_Title', function () {
+    var nem = $(this).attr('brandTitle');
+    location.href = 'brand_good.html?brandtitleid=' + nem
+})
+
+//点击商品的跳转
+
+ $(".expl  ul").on("click","#shou_produt",function(){
+     var productid = $(this).attr("data-produ") ;
+     var  numbe = $(this).attr("data-index")
+     location.href = 'comment.html?productid='+productid +"&numbe=" +numbe +"&page=1" ;
+ })

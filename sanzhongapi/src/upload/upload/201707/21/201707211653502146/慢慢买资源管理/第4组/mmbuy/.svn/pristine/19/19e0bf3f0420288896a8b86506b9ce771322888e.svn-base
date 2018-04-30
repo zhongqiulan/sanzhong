@@ -1,0 +1,18 @@
+~function(){
+    $.ajax({
+        url: config.getUrl('/api/getbrandtitle'),
+        type:"get",
+        success:function(data){
+            var tplStr=template("bt_tpl",data);
+            $(".brand-ul").html(tplStr);
+            $(".brand-ul").on("click","li",function(){
+                var id=$(this).attr("data-id");
+                var title=$(this.attr("data-title"));
+                title=title.splice()
+                location.href='/pages/brand/list.html?brandTitleId='+id;
+                return false;
+            })
+        }
+    })
+    
+}()

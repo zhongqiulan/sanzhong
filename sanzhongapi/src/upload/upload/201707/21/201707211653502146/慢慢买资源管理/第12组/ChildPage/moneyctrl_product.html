@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>省钱控</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/moneyctrl/moneyctrl.css">
+</head>
+<body>
+    <div class="save_product" id="aa">
+        <!--头部-->
+        <header class="clearfix">
+            国内折扣
+            <a class="glyphicon glyphicon-chevron-left return" href="moneyctrl.html">
+                
+            </a>  
+            <a class="app" href="#">
+                <img src="../images/header_app.png" alt="">
+            </a>   
+        </header>
+
+        <!--内容-->
+        <div class="product">
+           
+               
+        </div> 
+        
+        <!--底部-->
+        <footer>
+            <div class="container-fluid">
+                <div class="row">
+                    <li class='col-xs-4'><a href="register.html">登录</a></li>
+                    <li class='col-xs-4'><a href="enroll.html">注册</a></li>
+                    <li class='col-xs-4'><a href="aa"><span class='glyphicon glyphicon-arrow-up'></span>返回顶部</a></li>
+                </div>
+                <div class='appdown'>
+                <a href="javascript:;">手机APP下载</a>&nbsp<span>慢慢买手机版 </span><span>--掌上比价平台</span>
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </div>
+        </footer>
+                
+    </div>
+
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/artTemplate/template.js"></script>
+    <script src="../js/moneyctrl/moneyctrl.product.js"></script>
+</body>
+</html>
+
+<script type="text/template" id ="product_tpl">
+
+            <div class="title">{{productName}}</div>
+            <p class="mes">京东商城 10-25 14：11 小经验或/慢慢卖</p>
+            <div class="content">
+                {{#productImgSm}}
+                {{productInfo2}}
+            </div>   
+            {{#productImgLg}}
+
+            <a class="buy" href="">前往购买</a>   
+
+            <!--评论区-->
+            {{#productComment}}
+            
+</script>

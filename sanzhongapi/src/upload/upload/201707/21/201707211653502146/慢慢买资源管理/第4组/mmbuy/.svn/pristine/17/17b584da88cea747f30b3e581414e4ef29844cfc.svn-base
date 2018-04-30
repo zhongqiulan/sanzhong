@@ -1,0 +1,7 @@
+    .navbar {
+        background-color: #ff841d;
+    }
+
+    .navbar .navbar-brand img {
+        width: 187px;
+    }

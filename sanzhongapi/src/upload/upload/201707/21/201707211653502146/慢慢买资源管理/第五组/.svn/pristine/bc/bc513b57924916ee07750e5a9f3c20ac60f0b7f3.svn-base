@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  /* a标签点击高亮  */
+}
+ul {
+  list-style: none;
+}
+input {
+  outline: none;
+  border: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+img {
+  display: block;
+  width: 100%;
+}
+.clearfix:after {
+  display: block;
+  content: "";
+  clear: both;
+  height: 0;
+}
+.header {
+  background-color: #ff841d;
+  height: 44px;
+}
+.header .back a {
+  float: left;
+  color: #fff;
+  width: 50px;
+  height: 44px;
+  padding-left: 10px;
+  padding-top: 10px;
+}
+.header .back a i {
+  font-size: 20px;
+  font-weight: bold;
+}
+.header h1 {
+  text-align: center;
+  font-size: 20px;
+  color: #fff;
+  line-height: 44px;
+}
+.header .header_app {
+  float: right;
+  margin-top: -44px;
+}
+.header .header_app img {
+  width: 50px;
+  height: 44px;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 4px 10px;
+}
+.content h3 {
+  font-size: 18px;
+  margin: 10px auto 5px auto;
+}
+.content h4 {
+  color: #ff6c00;
+  font-size: 15px;
+}
+.content .info {
+  font-size: 12px;
+  color: #999999;
+  margin: 12px auto;
+}
+.content .content_ctt .picwrap {
+  width: 120px;
+  overflow: hidden;
+  float: right;
+}
+.content .content_ctt .picwrap img {
+  width: 120px;
+  height: 120px;
+}
+.content .content_ctt .conn .p1 {
+  margin: 5px auto;
+  color: #606060;
+  line-height: 24px;
+  margin-bottom: 40px;
+}
+.content .content_ctt .conn .bigPic img {
+  max-width: 100%;
+}
+.content .content_ctt .conn .infoPic img {
+  max-width: 100%;
+}
+.content .golink {
+  background-color: #ff9000;
+  margin: 40px 15px 20px;
+}
+.content .golink a {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  color: #fff;
+}
+.content .ui-border-t {
+  position: relative;
+}
+.content .ui-border-t .tit {
+  margin-bottom: 10px;
+}
+.content .ui-border-t .reply {
+  width: 100%;
+}
+.content .ui-border-t .reply textarea {
+  width: 100%;
+  resize: none;
+  border: 2px solid #ccc;
+  height: 90px;
+  background-color: #fff;
+}
+.content .ui-border-t .reply .ctrl input {
+  position: absolute;
+  top: 95px;
+  background-color: #ccc;
+  height: 32px;
+  font-size: 16px;
+  text-align: right;
+  padding-right: 20px;
+  border-top: 1px solid #ccc;
+}
+.content .ui-border-t .reply .ctrl input:after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 32px;
+  width: 120px;
+  top: 0;
+  right: 0;
+  background-color: #ff6c00;
+}
+.content .ui-border-t #newcomment {
+  margin-top: 10px;
+}
+.content .ui-border-t .list li {
+  margin-bottom: 20px;
+}
+.content .ui-border-t .list li .userimg {
+  float: left;
+}
+.content .ui-border-t .list li .userimg img {
+  width: 40px;
+}
+.lastPage {
+  background-color: #f2f2f2;
+  height: 50px;
+}
+.lastPage p {
+  line-height: 50px;
+  background-color: #f8f8f8;
+  text-align: center;
+  font-size: 16px;
+}
+.nav {
+  height: 36px;
+  padding-left: 10px;
+  position: relative;
+}
+.nav a {
+  display: inline-block;
+  font-size: 12px;
+  line-height: 36px;
+}
+.appbanner {
+  background-color: #434343;
+  padding: 10px;
+  margin: 10px 4px 20px 4px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  position: relative;
+}
+.appbanner .applogo {
+  float: left;
+}
+.appbanner .applogo img {
+  width: 64px;
+}
+.appbanner .title {
+  color: #fff;
+  margin-left: 70px;
+}
+.appbanner .title .p1 {
+  font-size: 18px;
+}
+.appbanner .title .p2 {
+  margin-top: 16px;
+  color: #FFFFFF;
+  font-size: 14px;
+}
+.appbanner .btn {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  background-color: #6db110;
+  color: #fff;
+  border-radius: 3px;
+  padding: 4px 8px;
+}
+.footer {
+  margin-top: -26px;
+}
+.footer .footer_top a {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+  height: 34px;
+  line-height: 34px;
+  background-color: #f2f2f2;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  border-left: 1px solid #c4c4c4;
+}
+.footer .footer_top a > img {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  margin: 0 auto;
+}
+.footer .row {
+  height: 60px;
+  background-color: #efefef;
+}
+.footer .row .bottom {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.footer .row .bottom .comment {
+  float: left;
+  width: 25%;
+  height: 40px;
+  background-color: #fff;
+  line-height: 40px;
+  text-align: center;
+}
+.footer .row .bottom .promptly {
+  color: #fff;
+  height: 40px;
+  float: right;
+  width: 75%;
+  background-color: #ff9000;
+  line-height: 40px;
+  text-align: center;
+}

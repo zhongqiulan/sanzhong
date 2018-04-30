@@ -1,0 +1,211 @@
+body,html{
+    background: #fff;
+    height: 100%;
+    width: 100%;
+}
+.navtable{
+    width: 100%;
+    border-top: 1px solid #ccc; 
+}
+.navtable ul li{
+    width: 25%;
+    float: left;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+}
+ .navtable ul li a{
+     color: #5a5a5a;
+     display: block;
+     position: relative;
+ }
+  .navtable ul li a .icon{
+      width: 16px;
+      height: 16px;
+      display: block;
+      text-align: center;
+      background-image: url("../../images/icon-loudou.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      position: absolute;
+      left: 50%;
+      top: 32%;
+      transform: translate(-30px);
+  }
+  .navbar{
+      margin: 0;
+      padding: 0;
+      min-height: 40px;
+  }
+  .pagenav{
+      padding: 10px 8px;
+  }
+  .pagenav .media  img{
+      width: 120px;
+      height: 120px;
+  }
+  .pagenav .media-body h4{
+      font-size: 15px;
+      line-height: 25px;
+  }
+  .pagenav .media-body p{
+      color: red;
+      font-size: 18px;
+      margin-bottom: 5px;
+
+  }
+  .pagenav .media-body p em{
+      font-size: 15px;
+  }
+  .pagenav .media-body .other{
+      color: #a1a1a1;
+  }
+  .pagenav .media-body .other span{
+      font-size: 12px;
+  }
+  .pagenav .media-body .other span:first-of-type{
+      float: left;
+  }
+  .pagenav .media-body .other span:last-of-type{
+      float: right;
+  }
+ .navbar  li a.active_wl{
+     color: red;
+ }
+
+ .bottom_wl{
+    background: #F2F2F2;
+    width:100%;
+    padding: 20px;
+    text-align: center;
+ }
+ .bottom_wl span{
+    padding: 8px 20px; 
+    border-radius: 5px;
+    border:1px solid #bababa;
+    background-color: #d4d4d4;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+    font-size: 14px;
+ }
+ .bottom_wl span:first-of-type{
+     float: left;
+ }
+ .bottom_wl span:last-of-type{
+     float: right;
+ }
+  .bottom_wl select{
+      padding: 8px 20px; 
+  }
+  .bottom_wl  .linklist{
+      text-align: left;
+  }
+  .bottom_wl  .linklist p {
+      margin: 20px 0 10px 0;
+      font-size: 16px; 
+  }
+  .bottom_wl  .linklist a {
+      display: block;
+      color: #5a5a5a;
+  }
+
+  .asidecontent{
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      background-color: rgba(0, 0, 0, .4);
+      left: 0;
+      top:0;
+      display: none;
+  }
+ .content {
+     position: absolute;
+     left: -80%;
+      top: 0;
+      background: #fff;
+      width: 80%;
+      height: 100%;
+      transition:left 1s;
+  }
+.content h4 {
+      text-align: center;
+      font-size: 18px;
+      height: 44px;
+      line-height: 44px;
+      font-weight: normal;
+      margin: 0;
+  }
+.content h4 i {
+      float: right;
+      margin-right: 10px;
+      height: 44px;
+      line-height: 44px;
+      font-size: 16px;
+      font-weight: normal;
+  }
+  .content .choice_row{
+      width: 100%;
+      padding: 0 10px;
+  }
+  .content .choice_row .rowhead{
+      line-height: 35px;
+  }
+  .content .choice_row .rowhead span.allpp{
+      color: #ff5000;
+      margin-left: 4px;
+  }
+  .content .choice_row .rowhead span.glyphicon{
+      float: right;
+          margin-top: 6px;
+  }
+  
+  .content .choice_row .rowbody ul li{
+     float: left;
+     width: 30%;
+     margin-right: 3%;
+     margin-bottom: 10px;
+     text-align: center;
+     border-radius: 8px;
+     background: #F2F2F3;
+     line-height: 28px;
+     height: 28px;
+     display: none;
+  }
+  .content .choice_row .rowbody ul li:first-of-type{
+     background-color: #ff5000;
+  }
+    .content .choice_row .rowbody ul li:first-of-type a{
+        color: #fff;
+    }
+    .content .choice_row .rowbody ul li:nth-of-type(-n+6){
+        display: block;
+    }
+
+.search {
+    background-color: #fff;
+}
+
+ .search .search-btn{
+    border-radius: 20px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #FF841D;
+    padding: 0px 15px;
+    border: none;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

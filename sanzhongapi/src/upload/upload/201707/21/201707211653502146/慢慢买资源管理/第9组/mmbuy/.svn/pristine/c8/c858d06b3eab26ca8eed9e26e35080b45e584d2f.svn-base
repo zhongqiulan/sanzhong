@@ -1,0 +1,11 @@
+  $.ajax({
+        url:"http://139.199.192.48:9090/api/getmoneyctrl",
+        dataType:'JSON',
+        type:"GET",
+        success:function(data){
+            console.log(123);
+            console.log(data);            
+            var htmlstr=template("save_list_tmp",data);
+            $(".save_list").html(htmlstr);
+        }
+    })

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>肯德基优惠劵</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <!--<link rel="stylesheet" type="text/css" href="./css/base.css">-->
+    <!-- <link rel="stylesheet" type="text/css" href="./css/coupons.css"> -->
+    <link rel="stylesheet" href="../../css/Z_mmBuy/coupons.css">
+</head>
+
+<body>
+    <!--头部-->
+    <nav>
+        <a href="../../pages/Z_mmBuy/kfc.html">
+            <span class="glyphicon glyphicon-menu-left"></span>
+        </a>
+        
+        <h1>肯德基优惠劵</h1>
+         <img src="../../images/header_app.png" alt="">
+    </nav>
+
+
+    <!--小提示-->
+    <div class="hint">
+        --点餐前出示手机中的优惠券，即可享受优惠--
+    </div>
+
+
+
+
+    <!--主体内容-->
+    <div class="kfc_coupons">
+
+        <div class="kfc_coupons_content">
+            <ul id="kfc_coupons_ul">
+
+            </ul>
+        </div>
+
+    </div>
+
+
+
+    <!--底部的首页和优惠劵-->
+    <div id="ctl00_Menu" class="nav">
+        <a href="../../index.html">首页</a> >
+        <a href="./coupons.html">优惠劵</a>>
+        <a href="./kfc.html">肯德基优惠劵</a>
+    </div>
+
+    <!--进击的底部-->
+    <div>
+        <div class="footer_top">
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;" class="zhuce">注册</a>
+            <a href="javascript:;" class="get_top">
+                <img src="../../images/top.jpg" alt="">
+                返回顶部 
+            </a>
+        </div>
+
+        <div class="footer_bottom">
+            <p>
+                <a href="javascript:;" class="phone_app">手机APP下载</a>
+                <a href="javascript:;" class="mm_phone">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com </p>
+        </div>
+    </div>
+
+
+
+    <!--遮罩层-->
+    <div class="visible" id="galleryOverlay">
+        <div class="kfc_gallery">
+            <span id="previous" class="glyphicon glyphicon-menu-left"></span>
+            <img src="../../images/kfc-5ikfc.jpg" alt="" id="picture">
+            <span id="next" class="glyphicon glyphicon-menu-right"></span>
+        </div>
+    </div>
+
+
+
+    <!--渲染模板-->
+    <script type="text/template" id="coupons_tpl">
+        {{each result as value i}}
+        <li data-id="{{value.couponProductId}}">
+            <a href="javascript:;" onclick="kfc_click()" class="picshow">
+
+                <div class="content_pic">
+                    {{#value.couponProductImg}}
+                </div>
+                <div class="content_info">
+                    <p>{{value.couponProductName}}</p>
+                    <strong class="price">{{value.couponProductPrice}}</strong>
+                    <div class="kfc_time">
+                        {{value.couponProductTime}}
+                    </div>
+                </div>
+
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+    <script src="../../libs/jquery/jquery.min.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../libs/artTemplate/template.js"></script>
+    <script src="../../js/Z_mmBuy/coupons.js"></script>
+
+
+
+
+
+    <!--********************************************-->
+    <!--APP下载-->
+    <div class="app_download">
+        <a href="http://m.manmanbuy.com/?o=download">
+            <img src="../../images/app-xz.png" alt="">
+        </a>
+    </div>
+</body>
+
+</html>

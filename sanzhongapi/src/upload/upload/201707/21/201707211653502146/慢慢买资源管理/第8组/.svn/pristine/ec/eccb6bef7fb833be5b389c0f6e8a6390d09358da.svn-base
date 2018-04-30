@@ -1,0 +1,77 @@
+html body {
+  width: 100%;
+}
+html body header {
+  height: 40px;
+  line-height: 40px;
+  background-color: red;
+  width: 100%;
+}
+html body header .container-fluid {
+  height: 40px;
+}
+html body header .container-fluid .row .inlandD {
+  text-align: center;
+  color: #fff;
+}
+html body header .container-fluid .row .app_donwload {
+  color: #fff;
+  background: url('../../images/header_app.png') no-repeat;
+  width: 32px;
+  height: 32px;
+  background-size: 32px;
+  position: absolute;
+  right: 5px;
+  top: 3px;
+}
+html body .main li {
+  width: 50%;
+  float: left;
+}
+html body .main li a p:nth-of-type(2) {
+  color: red;
+}
+html body footer {
+  overflow: hidden;
+}
+html body footer .navbar {
+  height: 100px;
+  margin: 0;
+  background-color: #efefef;
+}
+html body footer .navbar .row div {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+html body footer .navbar .row div a {
+  color: black;
+  font-size: 14px;
+}
+html body footer .navbar .row div a span {
+  color: #747474;
+  font-size: 12px;
+}
+html body footer .navbar .row div:nth-of-type(2) {
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+}
+html body footer .navbar div.app-updown {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+html body footer .navbar div.app-updown a {
+  color: red;
+}
+html body footer .navbar div.app-updown span:first-of-type {
+  color: black;
+}
+html body footer .navbar div.app-updown span:last-of-type {
+  color: #7b7b7b;
+}
+html body footer .navbar div.app-updown p {
+  color: #7b7b7b;
+}

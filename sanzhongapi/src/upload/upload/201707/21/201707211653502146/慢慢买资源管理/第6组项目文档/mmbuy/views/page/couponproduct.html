@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <?php include '/views/common/css.html' ?>
+    <link rel="stylesheet" href="/views/public/css/kfc_conpons.css">
+    <!--<link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css/">-->
+    <title>肯德基优惠券</title>
+</head>
+
+<body>
+    <!--页面头部-->
+    <div class="headers">
+        <div>
+            <a href="/index">
+                &lt;
+            </a>
+            <h3 id="tit">优惠券</h3>
+            <a href="javascript:;" class="app">
+                <img src="/views/public/image/init-imgs/header_app.png" alt="">
+            </a>
+        </div>
+    </div>
+
+    <!--页面主体-->
+    <div class="main">
+        <ul class="list-group">
+
+        </ul>
+    </div>
+
+
+    <!--页面遮障-->
+    <div class="screen active">
+
+    </div>
+
+</body>
+<?php include '/views/common/script.html'?>
+
+
+<script type="text/template" id="yh-tpl">
+    {{each result as v i}}
+    <li class="list-group-item">
+        <a href="#" data-id={{v.couponProductId}}>
+            <div class="info">
+                {{#v.couponProductImg}}
+                <div class="yh-content">
+                    {{v.couponProductName}} <span>{{v.couponProductPrice}}</span>
+                </div>
+                <span class="mall">{{v.couponProductTime}}</span>
+                <span><i></i></span>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<script type="text/template" id="screen-tpl">
+
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            {{each result as v i}}
+            <div class="item item{{v.couponProductId}}">
+                {{#v.couponProductImg}}
+                <div class="carousel-caption">
+                    ...
+                </div>
+            </div>
+            {{/each}}
+        </div>
+
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+</script>
+<script>
+    require(["js/kfc_coupons"]);
+
+</script>
+
+</html>
+
+
+
+<!--couponproduct.html:12 Resource interpreted as Stylesheet but transferred with MIME type text/html:-->

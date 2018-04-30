@@ -1,0 +1,191 @@
+body {
+  background-color: #fff;
+}
+a:focus,
+a:visited,
+a:hover {
+  text-decoration: none;
+}
+header {
+  width: 100%;
+}
+header h1 {
+  width: 100%;
+  border-bottom: 1px solid  #e6e6e6 ;
+  background-color: #ff841d;
+  height: 50px;
+  padding-top: 13px;
+  position: relative;
+  padding-left: 25px;
+}
+header h1 a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url('../../images/header_logo.png') no-repeat 0 0;
+  background-size: 185.5px ;
+}
+header h1 span {
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  background: url('../../images/header_app.png') no-repeat 0 0;
+  background-size: 34px ;
+  top: 10px;
+  right: 10px;
+}
+header .zyzsreach .input-group {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+}
+header .zyzsreach .input-group input {
+  border-radius: 50px;
+  width: 94%;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  outline-color: none;
+  border-color: none;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+header .zyzsreach .input-group span {
+  width: 63px;
+  border-radius: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  height: 34px;
+  background-color: #ff841d;
+  font-size: 16px;
+  color: #fff;
+  line-height: 19px;
+}
+.main .explain {
+  background-color: #f2f2f2;
+  overflow: hidden;
+}
+.main .explain .branName h3 {
+  font-size: 18px;
+  font-family: '微软雅黑';
+  font-weight: 700;
+  color: #000;
+  padding-left: 10px;
+  margin: 10px;
+}
+.main .explain p {
+  background-color: #fff;
+  margin: 0  5px;
+  padding: 10px;
+}
+.main .explain .hotSales {
+  background-color: #f7f7f7;
+  height: 36px;
+  line-height: 36px;
+  margin: 10px;
+  color: #888;
+}
+.main .nav li {
+  float: left;
+  width: 25%;
+}
+.main .nav li a {
+  display: block;
+  text-align: center;
+  line-height: 23px;
+  height: 40px;
+  font-size: 14px;
+}
+.main .nav li:first-of-type a {
+  color: red;
+}
+.main .show {
+  border-top: 1px solid #ccc;
+}
+.main .show ul {
+  width: 100%;
+}
+.main .show ul li {
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+.main .show ul li a {
+  display: block;
+  height: 140px;
+  position: relative;
+}
+.main .show ul li a .show_left {
+  position: absolute;
+  top: 14px;
+  left: 8px;
+}
+.main .show ul li a .show_left img {
+  width: 120px;
+  height: 120px;
+  margin: 0  auto ;
+}
+.main .show ul li a .show_right {
+  padding: 15px  5px  0  135px ;
+}
+.main .show ul li a .show_right .title {
+  font-size: 16px;
+  font-family: '微软雅黑';
+  color: #000;
+  line-height: 26px;
+}
+.main .show ul li a .show_right .price {
+  color: red;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.main .show ul li a .show_right .price em {
+  font-size: 14px;
+  color: #000;
+}
+.main .show ul li a .show_right .something {
+  color: #999;
+  overflow: hidden;
+}
+.main .show ul li a .show_right .something span {
+  margin-left: -25px;
+}
+.main .show ul li a .show_right .something i {
+  margin-right: 5px;
+}
+.footer .footertop a {
+  width: 33.33%;
+  display: block;
+  float: left;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .footercenter {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  height: 60px;
+  text-align: center;
+}
+.footer .footercenter a {
+  display: inline-block;
+  text-decoration: none;
+}
+.footer .footercenter a:focus,
+.footer .footercenter a:hover {
+  text-decoration: none;
+  color: #000;
+}
+.footer .footercenter a:nth-of-type(1) {
+  color: red;
+}
+.footer .footercenter a:nth-of-type(2) {
+  color: #000;
+}

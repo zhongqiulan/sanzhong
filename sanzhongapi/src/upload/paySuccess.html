@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <title>支付成功界面</title>
+</head>
+
+<body>
+    <div>
+        <div style="width:100px;height:100px;margin:50px auto;">
+            <img style="width:100%;height:100%;" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1517422729754&di=0c09c943f64e5ba5b8df10df6daef0a3&imgtype=0&src=http%3A%2F%2Fico.ooopic.com%2Fajax%2Ficonpng%2F%3Fid%3D97371.png"
+                alt="">
+        </div>
+        <h3 style="color:green;text-align:center;">亲爱的用户，恭喜您
+            <br/> 支付成功
+        </h3>
+    </div>
+
+    <script>
+        //解析参数字符串
+        function getQueryString(name) {
+            var reg = new RegExp('(^|&)' + name + '=([^&]*)(&|$)', 'i');
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null) {
+                return unescape(r[2]);
+            }
+            return null;
+        }
+
+        var out_trade_no = getQueryString("out_trade_no")
+
+        if (out_trade_no){
+            console.log("可以更改订单的状态!!!")
+            //发送请求给服务器，要求更改订单状态
+            //开发环境地址
+            //var url = "http://niubi666.ittun.com/site/validate/order/paysuccess/" + out_trade_no
+            //生产环境地址
+            var url = "http://39.108.135.214:8899/site/validate/order/paysuccess/"+out_trade_no
+
+            $.get(url, function (result) {
+                console.log(result)
+            });
+        } else {
+            console.log("没有订单号,不能更改订单的状态!!!")
+        }
+    </script>
+</body>
+
+</html>

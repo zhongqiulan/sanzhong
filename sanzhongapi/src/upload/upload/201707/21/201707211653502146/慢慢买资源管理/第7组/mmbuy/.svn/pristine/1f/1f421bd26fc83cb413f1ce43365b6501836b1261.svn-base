@@ -1,0 +1,49 @@
+var config = {
+    // http://157.122.54.189:9090/api/getindexmenu
+    
+    host:'157.122.54.189',
+    port:':9090/',
+    prefix:'http://',
+    getUrl:function(api){
+            if(api.indexOf('/')!=0)
+            {
+               
+                  return this.prefix + this.host+this.port + api;
+            }
+            return this.prefix+this.host+ this.port + api.substring(1,api.length);
+      
+    }
+    
+}
+var config2 = {
+    //http://139.199.192.48:9090/api/getmoneyctrl
+    
+    host:'139.199.192.48',
+    port:':9090/',
+    prefix:'http://',
+    getUrl:function(api){
+            if(api.indexOf('/')!=0)
+            {
+               
+                  return this.prefix + this.host+this.port + api;
+            }
+            return this.prefix+this.host+ this.port + api.substring(1,api.length);
+      
+    }
+    
+}
+
+
+// baicaijia
+var config3 = {
+    // http://139.199.192.48:9090/api/getbaicaijiatitle
+    host:'139.199.192.48',
+    port:':9090/',
+    prefix:'http://',
+    getUrl:function(api){
+        if(api.indexOf('/')!=0){
+            return this.prefix + this.host+this.port;
+        }
+        return this.prefix+this.port+this.host+api.substring(1,api.length);
+    }
+}

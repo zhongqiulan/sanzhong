@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('../../fonts/icomoon.eot?mm4vmy');
+  src:  url('../../fonts/icomoon.eot?mm4vmy#iefix') format('embedded-opentype'),
+    url('../../fonts/icomoon.ttf?mm4vmy') format('truetype'),
+    url('../../fonts/icomoon.woff?mm4vmy') format('woff'),
+    url('../../fonts/icomoon.svg?mm4vmy#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-x:before {
+  content: "\78";
+}
+.icon-shoppingcart:before {
+  content: "\e670";
+}
+.icon-search2:before {
+  content: "\e63e";
+}
+.icon-up:before {
+  content: "\e7fa";
+}
+.icon-comment2:before {
+  content: "\e616";
+}
+.icon-top:before {
+  content: "\e62c";
+}
+.icon-icon222:before {
+  content: "\e622";
+}
+.icon-down:before {
+  content: "\e608";
+}
+.icon-wrong:before {
+  content: "\e72d";
+}
+.icon-top1:before {
+  content: "\e62d";
+}
+.icon-left:before {
+  content: "\e61d";
+}
+.icon-app-down:before {
+  content: "\e901";
+  color: #fff;
+}
+.icon-search:before {
+  content: "\e902";
+}
+.icon-comment:before {
+  content: "\e900";
+}

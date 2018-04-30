@@ -1,0 +1,35 @@
+.navbar {
+  background-color: #f4483e;
+  height: 40px;
+  position: relative;
+}
+.navbar .navbar-header .navbar-brand {
+  width: 40px;
+  height: 40px;
+  color: #fff;
+}
+.navbar .navbar-center {
+  font-size: 26px;
+  position: absolute;
+  left: 40%;
+  top: 5px;
+}
+.navbar .navbar-center span {
+  height: 40px;
+  color: #fff;
+}
+.navbar .app-donwload {
+  margin-top: 5px;
+}
+.navbar .app-donwload img {
+  width: 40px;
+  height: 40px;
+}
+.coupon-tab .thumbnail img {
+  width: 50px;
+  height: 50px;
+}
+.coupon-tab .thumbnail .caption {
+  padding: 5px;
+  text-align: center;
+}

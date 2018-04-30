@@ -1,0 +1,12 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+.view .header {
+  height: 50px;
+  background: #ff841d;
+  width: 100%;
+}

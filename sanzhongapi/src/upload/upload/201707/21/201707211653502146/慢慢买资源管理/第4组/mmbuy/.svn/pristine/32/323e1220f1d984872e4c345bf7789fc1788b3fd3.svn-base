@@ -1,0 +1,179 @@
+.navbar {
+  background-color: #ff841d;
+}
+.navbar .navbar-brand img {
+  width: 187px;
+}
+.app-donwload img {
+  height: 34px;
+  margin-top: 8px;
+}
+.header-logo {
+  width: 80%;
+}
+/*搜索栏*/
+#index_search {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1px;
+}
+#index_search .input1 {
+  width: 90%;
+  height: 30px;
+  border-radius: 20px;
+  border: 0;
+  margin-left: 5px;
+  padding-left: 10px;
+  background-color: #f1f1f1;
+}
+#index_search .input2 {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-right: 10px;
+  background-color: #ff841d;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0;
+}
+main {
+  background-color: #f2f2f2;
+}
+main .link {
+  height: 36px;
+  line-height: 16px;
+  padding: 10px;
+  margin-top: 16px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+}
+main .link a {
+  display: inline-block;
+  color: #5a5a5a;
+}
+main h3 {
+  color: #8f5417;
+  height: 36px;
+  line-height: 36px;
+  margin: 0;
+  padding: 0 10px;
+  font-size: 14px;
+}
+main .ten li {
+  height: 62px;
+  padding: 10px;
+  border-bottom: 1px solid #dfdfdf;
+}
+main .ten li a {
+  display: block;
+  width: 100%;
+  padding-left: 30px;
+  position: relative;
+}
+main .ten li a p {
+  color: #bbb;
+  font-size: 14px;
+  margin: 5px 0;
+}
+main .ten li a i {
+  position: absolute;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  background-color: #c9c9c9;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+}
+main .ten li a i.top1 {
+  background-color: #f00;
+}
+main .ten li a i.top2 {
+  background-color: #ff9314;
+}
+main .ten li a i.top3 {
+  background-color: #8adf5b;
+}
+main .ten li a em {
+  font-size: 20px;
+  position: absolute;
+  right: 1px;
+  top: 6px;
+  color: #bbb;
+}
+main .sale li .media {
+  padding: 14px 8px;
+  border-bottom: 1px solid #ccc;
+}
+main .sale li .media .media-left {
+  width: 100px;
+}
+main .sale li .media .media-left img {
+  width: 100px;
+}
+main .sale li .media .media-body h4 {
+  height: 40px;
+  font-size: 15px;
+  line-height: 20px;
+}
+main .sale li .media .media-body h4 span {
+  color: #ff841d;
+}
+main .sale li .media .media-body .price {
+  color: #f00;
+  font-size: 20px;
+  margin: 2px 0;
+}
+main .sale li .media .media-body .info {
+  color: #a1a1a1;
+  font-size: 12px;
+  margin: 0;
+}
+main .sale li .media .media-body .info span {
+  font-size: 14px;
+  vertical-align: middle;
+}
+main .comment .koubei-main {
+  padding: 10px;
+}
+main .comment .koubei-main .koubei-comment .product-info img {
+  width: 80px;
+  float: left;
+}
+main .comment .koubei-main .koubei-comment .product-info p {
+  padding-left: 90px;
+  color: #9f9f9f;
+  line-height: 22px;
+}
+main .comment .koubei-main .koubei-comment .comment-content {
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-top: 10px;
+}
+main .comment .koubei-main .koubei-comment .comment-content .top .star {
+  font-size: 18px;
+  vertical-align: top;
+  color: #ff9000;
+}
+main .comment .koubei-main .koubei-comment .comment-content .top .name {
+  color: #677d23;
+}
+main .comment .koubei-main .koubei-comment .comment-content .top .time {
+  color: #a1a1a1;
+  float: right;
+}
+main .comment .koubei-main .koubei-comment .comment-content .text {
+  font-size: 15px;
+  color: #000;
+  line-height: 22px;
+  margin-top: 10px;
+}
+main .comment .koubei-main .koubei-comment .comment-content:after {
+  content: "";
+  border-width: 10px 10px 10px 10px;
+}

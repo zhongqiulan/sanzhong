@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>优惠券</title>
+    <link rel="stylesheet" href="../js/assets/bootstrap/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/coupon/coupon.css"/>
+
+</head>
+<body>
+    <div class="view">
+        <!-- 头部-->
+        <header id="header">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header header-logo pull-left">
+                        <a class="navbar-brand" href="./index.html">
+                            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                        </a>
+                    </div>
+                    <div class="header-text pull-left">优惠券</div>
+                    <div class="navbar-right app-donwload pull-right">
+                        <img src="../images/header_app.png" alt="">
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!--优惠券标题列表区域-->
+        <section id="coupon-title">
+            <div class="row">
+
+            </div>
+        </section>
+        <!-- 路劲导航-->
+        <section id="coupon-nav">
+            <ul class="clearfix">
+                <li><a href="./index.html">首页</a></li>
+                <li>&nbsp;>&nbsp;</li>
+                <li><a href="#">优惠券</a></li>
+            </ul>
+        </section>
+        <!-- 底部-->
+        <footer id="footer">
+            <!-- 底部导航栏-->
+            <div class="footer-nav clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#">
+                    <span class="glyphicon glyphicon-arrow-up"></span>
+                    返回顶部
+                </a>
+            </div>
+            <!-- 底部连接工具区域-->
+            <div class="footer-link">
+                <p>
+                    <a class="link-app" href="#">手机app下载</a>
+                    <a href="#">慢慢买手机版</a>
+                    --掌上比价平台
+                </p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+    </div>
+
+    <!-- 优惠券标题模板-->
+    <script type="text/template" id="coupon_title_tpl">
+        {{each result as v i}}
+        <div class="col-xs-6 col-md-3">
+            <a href="./couponproduct.html?couponId={{v.couponId}},couponTitle={{v.couponTitle}}" class="thumbnail">
+                <img name="couponImg" src="{{v.couponImg}}" alt="...">
+                <span name="couponTitle">{{v.couponTitle}}</span>
+            </a>
+        </div>
+        {{/each}}
+    </script>
+    <script src="../js/assets/jquery/jquery.min.js"></script>
+    <script src="../js/assets/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/assets/artTemplate/template.js"></script>
+    <script src="../js/coupon/coupon.js"></script>
+</body>
+</html>

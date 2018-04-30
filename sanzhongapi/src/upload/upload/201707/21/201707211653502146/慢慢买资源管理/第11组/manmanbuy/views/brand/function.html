@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/brand/function.css">
+    <title>mmbuy-brand-func</title>
+</head>
+
+<body>
+    <div class="brand_func">
+        <!--顶部logo区域-->
+        <div class="top">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="#"><img src="/views/public/images/header_logo.png" alt=""></a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><img src="/views/public/images/header_app.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
+        <!--搜索框-->
+        <div class="search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+
+        <!--网页主体  -->
+        <div class="header">
+            <ul class="nav nav-pills">
+                <li role="presentation"><a href="/">首页</a></li>
+                <li role="presentation"><span class="glyphicon glyphicon-menu-right"></span> </li>
+                <li role="presentation"><a href="/views/brand/function">品牌大全</a></li>
+            </ul>
+        </div>
+        <div class="nav">
+            <div class="nav_title">
+                <h4>热门品牌排行</h4>
+            </div>
+            <div class="nav_content">
+                <ul class="list-group">
+                    <li class="list-group-item">
+                        <div class="list-group" id="func_list">
+                          
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!--网页底部  -->
+        <?php include '/views/common/footer.html'?>
+        <!-- <footer>
+            <div class="menu">
+                <ul class="clearfix">
+                    <li><a href="###">登录</a></li>
+                    <li><a href="###">注册</a></li>
+                    <li><a href="###"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="xinxi">
+                <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer> -->
+        <!--底部广告栏  -->
+        <div class="footer-bar">
+            <a href="javascript:;" class="closefix"></a>
+            <i></i>
+            <p class="buy">慢慢买</p>
+            <p class="check">全网比较，查历史价格</p>
+            <a href="javascript:;" class="openfix">立即打开</a>
+        </div>
+    </div>
+    <script type="text/template" id="function_tpl">
+        {{each result as v i}}
+        <a class="list-group-item" data-id="{{v.brandTitleId}}" data-title="{{v.brandTitle}}">
+            <span class="glyphicon glyphicon-menu-down pull-right"></span>
+            {{v.brandTitle}}
+        </a>
+        {{/each}}
+    </script>
+    <?php include '/views/common/script.html'?>
+    <script>
+        require(['js/brand/function']);
+    </script>
+ 
+</body>
+
+</html>

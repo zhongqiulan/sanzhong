@@ -1,0 +1,77 @@
+
+.seach_wl{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 5px;
+    padding-bottom: 0;
+}
+.list_wl{
+    border:  1px solid #ccc;
+    border-top: none;
+    border-radius: 3px;
+}
+.list_wl>.headall {
+     line-height: 40px;
+     position: relative;
+     padding: 0 20px;
+     border-top: 1px solid #ccc;
+}
+.list_wl>.headall span {
+    font-size: 16px;
+}
+
+.list_wl>.headall .icon{
+   font-size: 15px;
+    position: absolute;
+    right: 20px;
+    top:14px;
+    color: #a3a3a3;
+}
+.list_wl>.headall:first-of-type{
+    border-top: 1px solid #ccc;
+}
+
+/*分类下的table--------------------------------*/
+.table-responsive {
+    border:none;
+}
+.list_wl div.tableall{
+  width: 100%;
+  display: none;
+  font-size: 16px;
+  margin-bottom: 0;
+  background: #F9F9F9;
+  color: #333;
+}
+.list_wl div.tableall .table_wl{
+    text-align: center;
+    line-height: 40px;
+    margin: 0;
+}
+.list_wl div.tableall .table_wl div{
+    border-bottom:1px solid #ccc;
+    border-right: 1px solid #ccc;
+    height: 40px;
+    overflow: hidden;
+}
+.list_wl div.tableall .table_wl div:nth-of-type(3n){
+    border-right: none;
+}
+
+.search {
+    background-color: #fff;
+}
+
+ .search .search-btn{
+    border-radius: 20px;
+    font-size: 17px;
+    line-height: 30px;
+    color: #fff;
+    background-color: #FF841D;
+    padding: 0px 15px;
+    border: none;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+
+}

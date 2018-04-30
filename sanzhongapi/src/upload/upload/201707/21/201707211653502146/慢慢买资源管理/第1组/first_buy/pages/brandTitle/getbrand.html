@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+    <title>十大品牌列表</title>
+    <?php include '/common/css.html' ?>
+    <link rel='stylesheet' type='text/css' href='/css/brandTitle/getbrand.css' />
+</head>
+
+<body>
+    <!--顶部-->
+    <header class="top">
+        <div class="container-fluid">
+            <div class="navbar-header pull-left">
+                <a class="navbar_logo" href="/index"><img src="/images/header_logo.png" alt=""></a>
+            </div>
+            <div class="navbar-right app_donwload pull-right">
+                <img src="/images/header_app.png" alt="">
+            </div>
+        </div>
+    </header>
+    <!-- 搜索框 -->
+    <div class="search_tool">
+        <input type="text" placeholder="请输入你想比价的商品">
+        <button type="text" class="search_btn pull-right" id="search_btn">搜索</button>
+    </div>
+    <!--指引-->
+    <div class="linkTo">
+        <a href="/index">首页</a> &gt; <a href="/brandTitle/brandTitle" class="f12">
+            品牌大全</a>
+    </div>
+    <!--渲染的模板内容-->
+    <div class="main">
+        <div class="small-shade">
+            <img src="/images/loading.gif" alt="">
+        </div>
+    </div>
+    <div class="ranking">
+        <div class="small-shade">
+            <img src="/images/loading.gif" alt="">
+        </div>
+    </div>
+    <div class="comContent">
+        <div class="small-shade">
+            <img src="/images/loading.gif" alt="">
+        </div>
+    </div>
+    <div class="footer">
+        <div class="checkin">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-sm-4 col-xs-4"><a href="#">登录</a></div>
+                    <div class="col-sm-4 col-xs-4"><a href="#">注册</a></div>
+                    <div class="col-sm-4 col-xs-4"><a href="#top"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+        </div>
+        <div class="bbottom">
+            <div class='app'>
+                <a href="#">手机APP下载</a>
+                <span>慢慢买手机版</span>
+                <span class="grey">--掌上比价平台</span>
+            </div>
+            <a href="/index">m.manmanbuy.com</a>
+        </div>
+    </div>
+</body>
+<?php include '/common/script.html' ?>
+<script>
+    require(['getbrand']);
+</script>
+<script type="text/template" id="getbrand_tpl">
+    <div class='catagory'>
+        {{brandTit}}哪个牌子好
+    </div>
+    {{each result as v i}}
+    <a class='content' href="/pages/brandTitle/brandId.html?brandId={{v.brandId}}" data-id="{{v.brandId}}">
+        <span class="num">{{i+1}}</span>
+        <h4>{{v.brandName}}</h4>
+        <div class="brandInfo">
+            {{v.brandInfo}}
+        </div>
+        <span class="arrow glyphicon glyphicon-menu-right pull-right"></span>
+    </a>
+    {{/each}}
+</script>
+<script type="text/template" id="recommend_tpl">
+    <div class='catagory'>
+        {{brandTit}}产品销量排行
+    </div>
+    {{each result as value i}}
+    <div class="row">
+        <div class="col-xs-3">{{#value.productImg}} </div>
+        <div class="col-xs-9">
+            <div class="recommend_right">
+                <p>{{value.productName}}</p>
+                <p class="price">{{value.productPrice}}
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                </p>
+                <div class="jd_shop">
+                    <span>{{value.productQuote}} | {{value.productCom}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    {{/each}}
+</script>
+<script type="text/template" id="comId_tpl">
+    <div class='catagory'>
+        {{brandTit}}最有用的用户评论
+    </div>
+    <div>
+        <a href="javascript:;">
+            <div class="protit row">
+                <div class="pic col-xs-4">{{#img}}</div>
+                <div class="tit col-xs-8">{{name}}</div>
+            </div>
+        </a>
+        {{each result as v i}}
+        <div class="plbox">
+            <a href="javascript:;">
+                <div class="name">{{v.comName}}：<span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span>
+                    <span class="glyphicon glyphicon-star"></span><i class="pull-right">{{v.comTime}}</i></div>
+                <div class="con">{{v.comContent}}</div>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+</script>
+
+</html>

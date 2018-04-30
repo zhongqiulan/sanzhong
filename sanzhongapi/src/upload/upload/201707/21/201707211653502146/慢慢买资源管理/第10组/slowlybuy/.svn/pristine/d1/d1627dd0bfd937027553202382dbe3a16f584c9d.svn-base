@@ -1,0 +1,10 @@
+$.ajax({
+    url:'http://139.199.192.48:9090/api/getindexmenu',
+    type:'GET',
+    success:function(info){
+        console.log(info);
+        
+        var menuHtml = template('menu_tpl',info)
+        $('.menu').html(menuHtml);
+    }
+})

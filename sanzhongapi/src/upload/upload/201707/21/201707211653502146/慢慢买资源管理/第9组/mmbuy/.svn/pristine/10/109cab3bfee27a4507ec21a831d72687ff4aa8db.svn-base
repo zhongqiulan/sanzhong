@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/index.css">
+    <link rel="stylesheet" href="../../css/brand/list.css">
+</head>
+<body>
+
+<div class="views">
+    <header class="clearfix">
+        <div class="logo pull-left">
+            <a href="javascript:;" class="header">
+                <img src="../../images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="app-download pull-right">
+            <a href="javascript:;">
+                <img src="../../images/header_app.png" alt="">
+            </a>
+        </div>
+
+    </header>
+    <div class="searchBox">
+        <input type="text" placeholder="请输入你想比价的产品" aria-describedby="basic-addon2">
+        <span class="search_btn">搜索</span>
+    </div>
+</div>
+
+<div class="main">
+
+    <div class="nav">
+        <a href="../../index.html">首页</a>
+        >
+        <a href="./brandlist.html">品牌大全</a>
+    </div>
+    <!-- 品牌列表 -->
+    <div class="model">
+
+    </div>
+    <!--<div class="model">
+
+    </div>-->
+</div>
+
+
+<script type="text/template" id="temp_brand_list">
+    <div class="model-title">
+        <h3>LED电视哪个品牌好</h3>
+    </div>
+    <div class="model-list">
+        <ul>
+            {{each result as v i}}
+            <li>
+                <a href="./productlist.html?id={{v.brandId}}" >
+                    {{if v.brandId>2}}
+                    <em>{{v.brandId+1}}</em>
+                    {{else}}
+                    <em class="top{{v.brandId+1}}">{{v.brandId+1}}</em>
+                    {{/if}}
+                    <div class="inner">
+                        <div class="tit">{{v.brandName}}</div>
+                        <p>{{v.brandInfo}}</p>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</script>
+
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/artTemplate/template.js"></script>
+
+<script src="../../js/utils.js"></script>
+<script src="../../js/brand/list.js"></script>
+</body>
+</html>

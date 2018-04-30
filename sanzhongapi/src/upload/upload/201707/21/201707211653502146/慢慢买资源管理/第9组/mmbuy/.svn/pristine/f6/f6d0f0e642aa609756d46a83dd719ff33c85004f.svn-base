@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>省钱控</title>
+    <link rel="stylesheet" href="../../css/savecss/save.css">
+    <link rel="stylesheet" href="../../js/savejs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../fonts/font/iconfont.css">
+</head>
+
+<body>
+    <div class="view">
+        <!--******************省钱控头部***********************************-->
+        <div class="save_head">
+            <div class="row">
+                <div class="container-fluid">
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                        <a href="javascript:;">
+                            <div class="pull-left">
+                                <i class="iconfont icon-zuojiantou"></i>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                        <span class="save_title">省钱控 - 最新优惠</span>
+                    </div>
+                    <div class="col-md-4 col-lg-4 col-sm-4 col-xs-4">
+                        <a href="javascript:;">
+                            <div class="pull-right">
+                                <img src="../../images/header_app.png" alt="">
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--******************省钱控主体***********************************-->
+        <div class="save_tbody">
+            <div class="center">
+                <div class="row">
+                    <div class="container-fluid save_list">
+                        <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
+                            <div class="cloth">
+                                <img src="../../images/beauty.jpg" alt="" width="92px" heigh="92px">
+                                <div class="cloth_word">
+                                    <p class="word_top">白象 挂面 优麦手擀 <span>鸡蛋挂面500g/袋</span></p>
+                                    <p class="word_bot">京东商城 | 07-18 16:08</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+                            <div class="commits pull-right">
+                                <i class="iconfont icon-commenticon"></i>&nbsp;<span>0</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--******************省钱控尾部***********************************-->
+        <div class="save_foot">
+            <div class="row">
+                <div class="col-md-3 col-3 col-sm-3 col-xs-3 top_page">
+                    <a href="javascript:;">
+                        <span class="top_page_word">上一页</span>
+                    </a>
+                </div>
+                <div class="col-md-6 col-6 col-sm-6 col-xs-6 middle_btn">
+                    <select>
+                        <option value ="volvo">&nbsp;<span>1</span>/<span>144</span></option>                    
+                        <option value ="volvo">&nbsp;<span>2</span>/<span>144</span></option>                    
+                    </select>
+                </div>
+                <div class="col-md-3 col-3 col-sm-3 col-xs-3 top_page">
+                    <a href="javascript:;">
+                         <span class="last_page_word">下一页</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="to_save">
+            <div class="container-fluid">
+                <div class="to_save_word">
+                    首页 &gt 省钱控
+                </div>
+            </div>
+        </div>
+        <div class="to_top">
+            <div class="row">
+                <div class="container-fluid">
+                      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 ">
+                          <a href="javascript:;" class="login">登录</a>
+                      </div>
+                      <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 ">
+                           <a href="javascript:;" class="register">注册</a>
+                      </div>
+                      <div class="col-md-6 col-lg-6 col-sm-6 col-xs-6" id="backToTop">
+                           <a href="javascript:;" class="back_top"><img src="../../images/top.jpg" alt="" width="16px" height="14px" >&nbsp;&nbsp;回到顶部</a>
+                      </div>
+                </div>            
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../../js/savejs/jquery/jquery.js"></script>
+<script src="../../js/savejs/bootstrap/js/bootstrap.js"></script>
+<script src="../../js/savejs/artTemplate/template.js">
+
+</script>
+<script type="text/template" id="save_list_tmp">
+    {{each result as value index}}
+    <a href="javascript:;">
+        <div class="col-md-10 col-lg-10 col-sm-10 col-xs-10">
+            <div class="cloth">
+                {{#value.productImgSm}}
+                <div class="cloth_word">
+                    <p class="word_top">{{value.productName}} <span>{{value.productPinkage}}</span></p>
+                    <p class="word_bot">京东商城 | 07-18 16:08</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-2 col-lg-2 col-sm-2 col-xs-2">
+            <div class="commits pull-right">
+                <i class="iconfont icon-commenticon"></i>&nbsp;<span>{{value.productComCount}}</span>
+            </div>
+        </div>
+    </a>
+    {{/each}}
+</script>
+<script type="text/template" id="save_btn_tmp">
+    <option value="volvo">&nbsp;<span>{{pagesize}}</span>/<span>{{totalCount}}</span></option>
+</script>
+<script src="../../js/savejs/save.js"></script>
+<script>
+    $.ajax({
+        url: "http://139.199.192.48:9090/api/getmoneyctrl",
+        dataType: 'JSON',
+        type: "GET",
+        success: function (data) {
+            console.log(123);
+            console.log(data);
+            var htmlstr = template("save_btn_tmp", data);
+            $("select").html(htmlstr);
+        }
+    })
+</script>
+<script>
+    var backToTop=document.querySelector("#backToTop");
+    var screenh=document.body.clientHeight;
+    window.onscroll=function(){
+        var scrolltop=document.body.scrollTop;
+    }  
+   backToTop.onclick=function(){
+         document.body.scrollTop =0;
+   }
+</script>

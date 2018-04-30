@@ -1,0 +1,66 @@
+.navbar{
+     height: 40px;
+     margin-bottom: 0;
+    background-color: #f4483e;
+     position: relative;
+    .navbar-header{
+        .navbar-brand{
+           width:40px;
+            height: 40px;
+            color:#fff;
+        }
+    };
+    .navbar-center{
+        font-size:26px;
+        position:absolute;
+        left:40%;
+        top:5px;
+        span{
+            height: 40px;
+            color:#fff;
+        }
+    }
+    .app-donwload{
+        margin-top: 5px;
+        img{
+           width:40px;
+           height: 40px; 
+        }
+    }
+};
+
+// 优惠劵选项列表
+.dealcre{
+    color:#999;
+    text-align: center;
+}
+.coupon_list{
+    a{
+        color:#000;
+        line-height:center;
+        border-bottom: 1px solid #ccc;
+        text-decoration: none;
+        img{
+            width: 100px;
+            height: 80px;
+        }
+        h4{
+            margin: 5px 0;
+        }
+        p{
+            margin:5px 0;
+            color:#f5b26f;
+        }
+        .media-right{
+            span{ 
+                margin-top:25px; 
+                font-size: 20px;
+                color:#999; 
+           :before{
+                 height: 40px;
+           }
+        }
+        }
+        
+    }
+}

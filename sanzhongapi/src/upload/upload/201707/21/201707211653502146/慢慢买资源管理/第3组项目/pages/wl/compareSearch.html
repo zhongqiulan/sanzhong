@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    <title>比价搜索</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/wl/common.css">
+    <link rel="stylesheet" href="../../css/wl/cpShindex.css">
+    <link rel="stylesheet" href="../../css/index.css">
+</head>
+<body>
+
+        <!-- 顶部logo区域 -->
+        <div class="topLogo">
+           <h1 class="logo"><a href="../../index.html"><img src="../../images/header_logo.png" alt=""/></a></h1>
+           <div class="download"> <a href="#"><img src="../../images/header_app.png" alt=""> </a></div>
+        </div>
+        <!-- 搜索通栏区域 -->
+        <div class="search">
+            <input type="text" class="txt" placeholder="请输入你想比价的商品"/>
+            <input type="button" class="search-btn" value="搜索"/>
+        </div>
+    <!--搜索分类/////////////////////////////////////////////////////////////////////////-->
+   <div class="seach_wl">
+       
+   </div>
+    <!--搜索分类 end/////////////////////////////////////////////////////////////////////////-->
+        <div class="bottom_info">
+            <div class="footer">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="javascript:;" id="top"><i><img src="../../images/top.jpg" alt=""/></i>返回顶部</a></li>
+                </ul>
+                <p class="app-info">
+                    <a href="javascript:;">
+                        <span class="red-app">手机APP下载</span>
+                        <span>慢慢买手机版--掌上手机平台</span> <br/>
+                        <span>m.manmanbuy.com.</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+</body>
+<script src="../../libs/jquery/jquery.js"></script>
+<script src="../../libs/bootstrap/js/bootstrap.js"></script>
+<script src="../../libs/artTemplate/template.js"></script>
+<script src="../../libs/common/netcommon.js"></script>
+<script src="../../js/wl/cpShindex.js"></script>
+<script src="../../js/public.js"></script>
+
+
+<!--商品分类模版/////////////////////////-->
+<script type="text/html" id="productlists">
+     <div class="list_wl">
+    {{each result as v i}}
+           <div class="headall" data_id="{{v.titleId}}">
+                <span>{{v.title}}</span>
+                <i class="xiajian glyphicon glyphicon-menu-down icon">
+                                  <!--glyphicon glyphicon-menu-up-->
+                </i>
+            </div>
+            <div class="tableall table-responsive ">
+            </div>
+    {{/each}}
+      </div>
+</script>
+<!--相应商品的列表//////////////////////////-->
+<script type="text/html" id="pdlist">
+            <div class="row table_wl">
+                {{each result as v i}}
+               <a href="javascript:;" data-goodid='{{v.categoryId}}'><div class="col-xs-4 col-md-4">{{v.category}}</div></a>
+               {{/each}}
+            </div>
+            
+</script>
+</html>

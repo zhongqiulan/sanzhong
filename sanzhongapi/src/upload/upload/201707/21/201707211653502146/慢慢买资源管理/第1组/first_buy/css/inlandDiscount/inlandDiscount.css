@@ -1,0 +1,84 @@
+.navbar {
+  height: 50px;
+  line-height: 50px;
+  background-color: #ff841d;
+  z-index: 2;
+  font-size: 20px;
+  color: white;
+  width: 100%;
+  position: fixed;
+  top: 0;
+}
+.navbar .glyphicon {
+  color: #fff;
+}
+.navbar img {
+  width: 34px;
+  height: 34px;
+  margin-top: 10px;
+}
+.navbar .glyphicon:link,
+.navbar .glyphicon:visited,
+.navbar .glyphicon:focus,
+.navbar .glyphicon:hover {
+  text-decoration: none;
+}
+#top {
+  height: 5px;
+}
+.goodsList {
+  margin-top: 70px;
+  margin-bottom: 50px;
+}
+.goodsList h4 {
+  height: 35px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.goodsList .row > div {
+  margin: 0;
+  padding: 0;
+  height: 280px;
+}
+.goodsList .row > div .thumbnail {
+  margin-bottom: 0;
+  border-radius: 0;
+  border: none;
+}
+.goodsList .row > div .thumbnail img {
+  height: 150px;
+}
+.goodsList .row .price {
+  color: #ff841d;
+  height: 30px;
+}
+.goodsList .row .goodsBottom {
+  color: #ccc;
+}
+.goodsList .row .goodsBottom a {
+  color: #ccc;
+}
+.footer {
+  background-color: #efefef;
+  width: 100%;
+}
+.footer .checkin .row div {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #c5c5c5;
+}
+.footer .checkin .row div a {
+  color: #000;
+}
+.footer .bbottom {
+  box-sizing: border-box;
+  padding: 20px 50px;
+  text-align: center;
+}
+.footer .bbottom .app a {
+  color: #f00;
+}
+.footer .bbottom .app .grey {
+  color: #676767;
+}

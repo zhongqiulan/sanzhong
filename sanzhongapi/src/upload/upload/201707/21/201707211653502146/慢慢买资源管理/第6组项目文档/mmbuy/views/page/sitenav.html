@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>商城导航</title>
+  <link rel="stylesheet" type="text/css" href="/views/public/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/views/public/css/getsitenav.css">
+</head>
+
+<body>
+  <!--头部-->
+  <header>
+    <a href="/index" class="head_change"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <h1>商场导航</h1>
+    <a href="#" class="head_app"></a>
+  </header>
+
+  <!--主体部分-->
+  <div class="sitennav-main ">
+    <div class="sitennav-link" id="sitennav_link">
+
+    </div>
+  </div>
+
+  <!--底部路径条-->
+  <div class="sitennav-path">
+    <ol class="breadcrumb">
+      <li><a href="/index">首页 ></a></li>
+      <li class="active"><a href="javascript:;">商城导航</a></li>
+    </ol>
+  </div>
+
+   <!-- 固定右边app下载logo -->
+  <div class="app-logo"><img src="/images/appdown.png" alt=""></div>
+
+
+  <!--页面底部-->
+  <div class="sitennav-footer">
+    <div class="container">
+      <div class="row borderRow">
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 footerDiv">
+          <a href="/login">登录</a>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 footerDiv">
+          <a href="/registr">注册</a>
+        </div>
+        <div class="col-xs-4 col-sm-4 col-md-4 col-lg-4 footerDiv">
+          <a href="#sitennav_header">
+            <img src="/views/public/image/init-imgs/top.jpg">
+            返回顶部</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-info">
+      <p>
+        <a href="javascript:;" style="color: Red;">手机APP下载</a>        
+        <a href="http://m.manmanbuy.com" class="foot-aLink">
+           慢慢买手机版</a> 
+           -- 掌上比价平台
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+</body>
+
+<?php include "/views/common/script.html"?>
+
+<!--渲染模版-->
+<script type="text/template" id="getsitenav_tpl">
+  {{each result as v i}}
+  <button id="btn" class="btn btn-default" type="submit">
+        <input type="hidden" name="v.navId" value="{{v.navId}}">
+        <a href="{{v.navHref}}" target="_blank">
+          <img src="{{v.navImg}}">
+          {{v.navTitle}}
+        </a>
+      </button> {{/each}}
+</script>
+<script>
+        require(["js/getsitenav"]);
+    </script>
+</html>

@@ -1,0 +1,166 @@
+
+// 头部 
+header{
+    width:100%;
+    color:#fff;
+    h1{
+        width:100%;
+        border-bottom:1px solid  #e6e6e6 ;
+        background-color: #ff841d;
+        height:50px;
+        padding-top: 13px;
+        position: relative;
+        padding-left:25px;
+        margin-top: 0;
+        a{  
+            display: block;
+            height: 100%;
+            width:100%;
+            background:url('../../../../images/header_logo.png')  no-repeat 0  0  ;
+            background-size: 185.5px ;
+        }
+        span{
+            height: 34px;
+            width:34px;
+            position: absolute;
+            background:url('../../../../images/header_app.png')  no-repeat 0  0  ;
+             background-size: 34px ;
+            top:10px;
+            right:10px;
+        }
+    }
+
+    .zyzsreach{
+        .input-group{
+            width: 100%;
+            padding: 10px;
+            position: relative;
+            background-color: #fff;
+            input{
+                border-radius: 50px;
+                width: 94%;
+                font-size: 16px;
+                background-color: #f6f6f6;
+                outline-color: none;
+                border-color: none;
+                font-weight: 600;
+                border: none;
+                outline: none;
+            }
+            span{
+                width: 63px;
+                border-radius: 30px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                z-index: 999;
+                height: 34px;
+                background-color: #ff841d;
+                font-size: 16px;
+                color: #fff;
+                line-height: 19px;
+            }
+        }
+    }
+}
+
+
+
+//主体部分
+.main{
+    background-color: #f2f2f2;
+    .head{
+        .nav{
+        height: 40px;
+        line-height: 40px;
+        padding-left:10px;
+        border-top:2px solid  #ececec;
+        background-color: #f4f4f4;
+        a{
+            font-size: 16px;
+            font-family: "微软雅黑";
+            text-decoration: none;
+        }
+        span{
+            font-size: 12px;
+        }
+      }
+       .title{
+        height:40px;
+        line-height: 40px;
+        font-size: 14px;
+        color: #874604;
+        margin-top:10px  ;
+        border-top:3px solid #ccc;
+        border-bottom:1px solid #ccc;
+        background-color: #eee;
+        padding-left:10px;
+        font-weight: 700;
+        }
+    }
+
+    .box{
+       
+       .content{
+        //    padding:0 15px;
+           ul{
+               list-style: none;
+               padding-left:0;
+               li{
+                   padding:15px  0  ;
+                   padding-left: 38px;
+                   border-bottom: 1px solid #ccc;
+                   position: relative;
+                    a{
+                        text-decoration: none;
+                        div{
+                            font-size: 16px;
+                            color:#000;
+                            font-family: "微软雅黑";
+                        }
+                        p{
+                            color:#888;
+                            margin-top:5px;
+                        }
+                        
+                        
+                    }
+                    i{
+                            height: 20px;
+                            width:20px;
+                            background-color: #c9c9c9;
+                            position:absolute;
+                            top:15px;
+                            left:13px;
+                            text-align: center;
+                            color:#fff;
+                      } 
+                      span{
+                            position:absolute;
+                            font-size: 20px;
+                            font-weight: 300;
+                            color:#ccc;
+                            top:25px;
+                            right:5px;
+                        }
+               }
+               li:nth-of-type(1){
+                    i{
+                        background-color:red;
+                    }
+               }
+               li:nth-of-type(2){
+                    i{
+                        background-color:#ff9314;
+                    }
+               }
+               li:nth-of-type(3){
+                    i{
+                        background-color:#8adf5b;
+                    }
+               }
+           }
+       }
+    }
+
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买_比价搜索-商品分类</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/category/category-list.css">
+    <!--<link rel="stylesheet" href="../public/assets/artTemplate/template.js">-->
+</head>
+
+<body id="dingbu">
+    <div class="cate-lest">
+        <!--顶部logo区域-->
+        <div class="top">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="#"><img src="/views/public/images/header_logo.png" alt=""></a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><img src="/views/public/images/header_app.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
+
+        <!--搜索框-->
+        <div class="search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+        <!--商品分类-->
+        <div class="Commodity-list">
+            <div class="container">
+
+            </div>
+        </div>
+
+       <?php include '/views/common/footer.html' ?>
+    </div>
+</body>
+
+</html>
+<!--<script src="../public/assets/jquery/jquery.js"></script>
+<script src="../public/assets/bootstrap/js/bootstrap.js"></script>
+<script src="../public/assets/artTemplate/template.js"></script>
+<script src="../public/js/category/list_class.js"></script>-->
+<!--<script src="../public/assets/artTemplate/template.js"></script>-->
+<?php include '/views/common/script.html' ?>
+<script type="text/tepl" id="ctae-tpl">
+    {{each result as v}}
+    <div class="List-item">
+        <!--具体的类名-->
+        <div><a class="class-name btn" data-id="{{v.titleId}}" data-in="{{v._id}}">{{v.title}}<span class="glyphicon glyphicon-menu-down pull-right"></span></a></div>
+        <div class="hidden xfl">
+            <!--<ul class="col clearfix">
+
+            </ul>-->
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script type="text/tpl2" id="catelist-tpl">
+    <ul class="col clearfix">
+        <!--让其显示为她添加show的类名-->
+        {{each result as v}}
+        <li class="col-xs-4 col-sm-4 "><a href="/category/category_Prolist?categoryid={{v.categoryId}}&category={{v.category}}"  class="sp2" data-cpid="{{v.categoryId}}">{{v.category}}</a></li>
+        {{/each}}
+    </ul>
+</script>
+<script>
+require(['js/category/list_class']);
+</script>

@@ -1,0 +1,16 @@
+$(function () {
+    var url = config.getUrl('/api/getindexmenu');
+    $.ajax({
+        url: url,
+        dataType: "JSON",
+        type: "GET",
+        success: function (info) {
+            console.log(info);
+            var html = template('temp', info);
+            $('.menu').html(html);
+        }
+    })
+    $('.menu').on('click', 'div:nth-of-type(3)', function () {
+        location.href = "pages/discount.html"
+    })
+})

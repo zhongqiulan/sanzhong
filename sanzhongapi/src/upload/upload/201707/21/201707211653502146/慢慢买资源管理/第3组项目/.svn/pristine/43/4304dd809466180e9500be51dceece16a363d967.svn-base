@@ -1,0 +1,83 @@
+.view .header {
+     background: #ff8b00;
+     height: 44px;
+     padding: 0 52px;
+     position: relative;
+     overflow: hidden;
+ }
+ .view .header .head_left{
+     position: absolute;
+     width: 44px;
+     height: 44px;
+     top: 0;
+     left: 0;
+     line-height: 44px;
+     text-align: center;
+     color: #fff;
+ }
+ .view .header .head_right {
+     position: absolute;
+     width: 44px;
+     height: 44px;
+     top: 0;
+     right: 0;
+ }
+.view .header h1 { 
+    width: 100%;
+    font-size: 20px;
+    line-height: 44px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    color: #fff;
+}
+.bottom_info {
+    background-color:#F2F2F2;
+    padding-top: 10px;
+}
+.bottom_info .title {
+    margin: 20px  0 10px 0;
+}
+
+.bottom_info ul {
+    border: 1px solid #c0c0c0;
+    border-left: none;
+    border-right: none;
+    list-style: none;
+    background-color: #F2F2F2;
+}
+.bottom_info ul li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+}
+.bottom_info ul li+li {
+    border-left: 1px solid #c0c0c0;
+}
+.bottom_info ul li i {
+    float: left;
+    margin-left: 35px;
+    margin-top: 8px;
+}
+.bottom_info ul li img {
+    float: left;
+    margin-left: 5px;
+    width: 15px;
+}
+.bottom_info .app-info {
+    text-align: center;
+    font-size: 13px;
+}
+.bottom_info .app-info .red-app {
+    color: red;
+}
+.bottom_info a {
+    text-decoration: none;
+    color: #000;
+}
+
+.bottom_info .title a{
+    color: #fff;
+}

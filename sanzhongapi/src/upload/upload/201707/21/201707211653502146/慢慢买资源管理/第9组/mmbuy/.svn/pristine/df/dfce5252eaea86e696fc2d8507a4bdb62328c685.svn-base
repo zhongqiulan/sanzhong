@@ -1,0 +1,49 @@
+function queryString() {
+    // 获取当前url中的tc_id
+    var search = location.search;//  ?tc_id=14&name=zhangsan&age=20
+    search = search.slice(1); //第一个参数是从哪里开始截取，第二个参数是截取到哪里，如果不写默认是截取到最后
+    // console.log(search);
+    var searchArr = search.split('&');  //searchArr是一个数组
+    // console.log(searchArr);
+    var obj = {};  //定义一个空对象 ，用来存储数据
+    for (var i = 0; i < searchArr.length; i++) {
+        var temp = searchArr[i].split('='); //temp也是一个数组
+        // console.log(temp);
+        obj[temp[0]] = temp[1];
+    }
+    return obj; //要把对象返回值
+}
+
+var info = queryString();
+console.log(info.id);
+
+
+//页面加载
+loadPage(info.pageid, info.id);
+
+function loadPage(num, index) {
+    $.ajax({
+        url: 'http://139.199.192.48:9090/api/getmoneyctrl?pageid=' + num,
+        type: 'get',
+        success: function (data) {
+            console.log(data);
+            var detail = template("detail", data.result[index]);
+
+            $('.container').html(detail);
+            // var title=template("title",data.result[index]);
+            // $('header').append()
+        }
+    });
+}
+
+
+//点击图标返回上一页
+$('.glyphicon-chevron-left').on("click",function () {
+    location.href="./sea.html";
+});
+//返回顶部功能
+
+$('.backTop').on("click",function () {
+    $('body,html').animate({ scrollTop: 0 }, 200);
+    return false;
+})

@@ -1,0 +1,200 @@
+body {
+  font-size: 14px;
+}
+.all {
+  position: relative;
+  background: #fff;
+}
+.all a.fix {
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+}
+.all a.fix img {
+  width: 60px;
+}
+.all header {
+  background: #ff841d;
+}
+.all header h1 {
+  text-align: center;
+  padding: 12px 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.all header .get_back {
+  float: left;
+  color: #fff;
+  font-size: 20px;
+}
+.all header .dowapp {
+  float: right;
+  margin-top: -5px;
+  width: 32px;
+}
+.all header .dowapp img {
+  width: 100%;
+}
+.all .main .padd_main {
+  padding: 0 10px;
+}
+.all .main .padd_main h3 {
+  padding: 15px 0;
+  font-weight: bold;
+  font-size: 20px;
+  color: #aaa;
+}
+.all .main .padd_main h4 {
+  font-weight: bold;
+  color: #ff6e05;
+  font-size: 15px;
+}
+.all .main .padd_main .info {
+  color: #afafaf;
+  font-size: 12px;
+  padding: 15px 0;
+}
+.all .main .padd_main .pic_info {
+  font-size: 16px;
+  color: #606060;
+}
+.all .main .padd_main .pic_info img {
+  width: 120px;
+  height: 120px;
+  float: right;
+  margin: 10px;
+}
+.all .main .padd_main .pic_info .btn {
+  width: 100%;
+  padding: 40px 0 20px;
+}
+.all .main .padd_main .pic_info .btn button {
+  color: #fff;
+  padding: 10px 140px;
+  background: #ff9000;
+  border-radius: 5px;
+}
+.all .main .padd_main .evaluate .tit {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.all .main .padd_main .evaluate .form {
+  position: relative;
+}
+.all .main .padd_main .evaluate .form textarea {
+  border: 2px solid #eceae8;
+  width: 100%;
+  height: 100px;
+  outline: none;
+}
+.all .main .padd_main .evaluate .form .ctrl {
+  width: 100%;
+  background: #fbfbfb;
+  position: absolute;
+  bottom: 0;
+  border: 2px solid #eceae8;
+  border-top: 1px solid #eceae8;
+}
+.all .main .padd_main .evaluate .form .ctrl .tjdp {
+  float: right;
+  background: #ff841d;
+  color: #fff;
+  font-size: 18px;
+  padding: 6px 10px;
+  border-radius: 2px;
+}
+.all .new_eva_tit {
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  padding: 10px 0;
+}
+.all .list ul li {
+  padding: 10px 0;
+}
+.all .list ul li .eca_pic {
+  float: left;
+}
+.all .list ul li .eca_pic img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+.all .list ul li .com {
+  padding-left: 60px;
+}
+.all .list ul li .com .tips {
+  padding-bottom: 5px;
+}
+.all .list ul li .com .tips .tips_name {
+  color: #5997c0;
+}
+.all .list ul li .com .tips .com_time {
+  color: #999999;
+  float: right;
+}
+.all .list ul li .com .comments {
+  color: #727272;
+}
+.all .fertop {
+  width: 100%;
+  padding: 6px 0 6px 6px;
+  background: #f6f6f6;
+  color: #000;
+}
+.all .fertop span:nth-child(3) {
+  width: 150px;
+  height: 16px;
+  display: inline-block;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+.all footer {
+  color: #000;
+  background: #f6f6f6;
+}
+.all footer p {
+  height: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.all footer .logins button {
+  background: none;
+  width: 30%;
+  padding: 5px 0;
+}
+.all footer .logins button + button {
+  border-left: 1px solid #ccc;
+}
+.all footer .logins button:nth-child(3) {
+  width: 36%;
+}
+.all footer .logins button:nth-child(3) a {
+  text-decoration: none;
+  color: #000;
+}
+.all footer .logins button:nth-child(3) a span {
+  color: #aaa;
+}
+.all footer .brief {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.all footer .brief span:nth-child(1) {
+  color: #fd4343;
+}
+.all footer .brief span:nth-child(3) {
+  color: #727272;
+}
+.all footer .brief p {
+  color: #77667f;
+  border: none;
+  padding: 5px 0;
+}

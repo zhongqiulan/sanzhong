@@ -1,0 +1,306 @@
+@import "base.less";
+
+//顶部
+.header{
+	background-color: #ff841d;
+	height: 44px;
+	.back{
+		a{
+			float: left;
+			color: #fff;
+			width: 50px;
+			height: 44px;
+			padding-left: 10px;
+			padding-top: 10px;
+			i{
+				font-size: 20px;
+				font-weight: bold;
+			}
+		}
+	}
+	h1{
+		text-align: center;
+		font-size: 20px;
+		color: #fff;
+		line-height: 44px;
+	}
+	.header_app{
+		float: right;
+		margin-top: -44px;
+		img{
+			width: 50px;
+			height: 44px;
+		}
+	}
+}
+
+
+//主体部分
+.content{
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 4px 10px;
+	h3{
+		font-size: 18px;
+		margin: 10px auto 5px auto;
+	}
+	h4{
+		color: #ff6c00;
+		font-size: 15px;
+	}
+	.info{
+		font-size: 12px;
+		color: #999999;
+		margin: 12px auto;
+	}
+	.content_ctt{
+		.picwrap{
+			width:120px;
+			overflow: hidden;
+			float: right;
+			img{
+				width: 120px;
+				height: 120px;
+			}
+		}
+		.conn{
+			.p1{
+				margin: 5px auto;
+				color: #606060;
+				line-height: 24px;
+				margin-bottom: 40px;
+			}
+			.bigPic{
+				img{
+					max-width: 100%;
+				}
+			}
+			.infoPic{
+				img{
+					max-width: 100%;
+				}
+			}
+
+		}
+	}
+	.golink{
+		background-color: #ff9000;
+		margin: 40px 15px 20px;
+		a{
+			height: 40px;
+			line-height: 40px;
+			text-align: center;
+			color: #fff;
+		}
+	}
+
+	//评论区
+	// .review{
+	// 	.title{
+	// 		border-top: 1px solid #ECEAE8;
+	// 		font-size: 16px;
+	// 		padding-left: 8px;
+	// 		padding-top: 6px;
+	// 		margin-bottom: 18px;
+	// 	}
+	// 	.textarea{
+	// 		border: 2px solid #ECEAE8;
+	// 		height: 106px;
+	// 		width: 98%;
+	// 		margin: 0 auto;
+	// 		background-color: #fff;
+	// 		border-bottom: 1px solid #ECEAE8;
+	// 	}
+	// 		.row{
+	// 			height: 37px;
+	// 			background-color: #f2f2f2;
+	// 			width: 98%;
+	// 			margin: 0 auto;
+	// 			border-bottom: 2px solid #ECEAE8;
+	// 			.info{
+	// 				background-color: #ff841d;
+	// 				color: #fff;
+	// 				height: 37px;
+	// 				line-height: 37px;
+	// 				padding: 0 12px;
+	// 			}
+	// 		}
+	// 		.hotRev{
+	// 			margin: 10px auto 10px 8px;
+	// 		}
+	// 		.newRev{
+	// 			margin-left: 8px;
+	// 		}
+	// }
+	.ui-border-t{
+		position: relative;
+		.tit{
+			margin-bottom: 10px;
+		}
+		.reply{
+			width: 100%;
+			textarea{
+				width: 100%;
+				resize: none;
+				border: 2px solid #ccc;
+				height: 90px;
+				background-color: #fff;
+			}
+			.ctrl{
+				input{
+					position: absolute;
+					top: 95px;
+					background-color: #ccc;
+					height: 32px;
+					font-size: 16px;
+					text-align: right;
+					padding-right: 20px;
+					border-top: 1px solid #ccc;
+					&:after{
+						position: absolute;
+						content: "";
+						display: block;
+						height: 32px;
+						width: 120px;
+						top: 0;
+						right: 0;
+						background-color: #ff6c00;
+					}
+				}
+			}
+		}
+		#newcomment{
+			margin-top: 10px;
+		}
+		.list{
+			li{
+				margin-bottom: 20px;
+				.userimg{
+					float: left;
+					img{
+						width: 40px;
+						// display: inline-block;
+					}
+				}
+				.con{}
+			}
+		}
+	}
+
+}
+
+
+
+
+
+//最后一页
+.lastPage{
+	background-color: #f2f2f2;
+	height: 50px;
+	p{
+		line-height: 50px;
+		background-color: #f8f8f8;
+		text-align: center;
+		font-size: 16px;
+	}
+}
+
+//导航条
+.nav{
+	height: 36px;
+	padding-left: 10px;
+	position: relative;
+	a{
+		display: inline-block;
+		font-size: 12px;
+		line-height: 36px;
+	}
+}
+
+//app广告栏
+.appbanner{
+	background-color: #434343;
+	padding: 10px;
+	margin: 10px 4px 20px 4px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	position: relative;
+	.applogo{
+		float: left;
+		img{
+			width: 64px;
+		}
+	}
+	.title{
+		color: #fff;
+		margin-left: 70px;
+		.p1{
+			font-size: 18px;
+		}
+		.p2{
+			margin-top: 16px;
+			color: #FFFFFF;
+			font-size: 14px;
+		}
+	}
+	.btn{
+		position: absolute;
+		right: 8px;
+		top: 8px;
+		background-color: #6db110;
+		color: #fff;
+		border-radius: 3px;
+		padding: 4px 8px;
+	}
+}
+
+
+//底部
+.footer{
+	margin-top: -26px;
+	.footer_top{
+		a{
+			float:left;
+			width:33.33%;
+			text-align: center;
+			height: 34px;
+			line-height: 34px;
+			background-color: #f2f2f2;
+			border-top: 1px solid #c4c4c4;
+			border-bottom: 1px solid #c4c4c4;
+			border-left: 1px solid #c4c4c4;
+			>img{
+				display: inline-block;
+				width: 15px;
+				height: 15px;
+				margin:0 auto;
+			}
+		}
+	}
+	.row{
+		height: 60px;
+		background-color: #efefef;
+		.bottom{
+			position: fixed;
+			bottom: 0;
+			width: 100%;
+			.comment{
+				float: left;
+				width: 25%;
+				height: 40px;
+				background-color: #fff;
+				line-height: 40px;
+				text-align: center;
+			}
+			.promptly{
+				color: #fff;
+				height: 40px;
+				float:right;
+				width: 75%;
+				background-color: #ff9000;
+				line-height: 40px;
+				text-align: center;
+			}
+		}
+	}
+}

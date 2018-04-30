@@ -1,0 +1,48 @@
+.agio-content #agio-list {
+  display: table;
+  width: 100%;
+  padding: 0 0 10px 0;
+}
+.agio-content #agio-list .pro-li {
+  float: left;
+  width: 50%;
+  height: 100%;
+  font-size: 12px;
+  text-align: center;
+  display: table-cell;
+  box-sizing: border-box;
+  padding: 10px 0 0 10px;
+  border-right: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.agio-content #agio-list .pro-li a {
+  font-size: 14px;
+}
+.agio-content #agio-list .pro-li a .pro-img {
+  margin: 10px auto;
+  overflow: hidden;
+  width: 140px;
+  height: 140px;
+}
+.agio-content #agio-list .pro-li a .pro-title {
+  padding: 0 8px;
+  text-align: left;
+  font-weight: 600;
+  height: 36px;
+  overflow: hidden;
+}
+.agio-content #agio-list .pro-li a .pro-subtit {
+  text-align: left;
+  color: #ff6c00;
+  padding: 0 8px;
+  height: 18px;
+  line-height: 18px;
+  overflow: hidden;
+  margin-top: 4px;
+}
+.agio-content #agio-list .pro-li a .pro-mail {
+  padding: 6px 8px;
+  font-size: 12px;
+  color: #a1a1a1;
+  text-align: left;
+}

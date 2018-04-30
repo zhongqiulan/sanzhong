@@ -1,0 +1,186 @@
+/*
+author:hq
+Date:2017-7-18
+*/
+body{
+    padding-bottom: 50px;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f1f1f1;
+}
+//   凑单品
+.seach-history{
+    width: 100%;
+    height: 50px;
+    background-color: #ff8b00;
+    a{
+        font-size: 30px;
+        color: #fff;
+        left: 10px;
+        top:10px;
+    }
+    h1{
+        font-weight: normal;
+        color:#ffffff;
+        padding-top: 10px;
+        font-size: 24px;
+        position: absolute;
+        top: -20px;
+        left: 35%;
+    }
+}
+// 下拉选择导航
+.down_lowd{
+    background-color: #fff;
+    .nav_top{
+        li{
+            width: 30%;
+
+        a{
+            color:black;
+        }
+        }
+        li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    border: none;
+    cursor: default;
+    background-color: #fff;
+        }
+
+        .last_seach{
+            width: 10%;
+            border-left: 1px solid #ccc;
+        }
+    }
+    .tab-content{
+        position: absolute;
+        z-index: 3;
+      .tab-pane{
+          .box{
+              width: 550%;
+              background-color: #fff;
+              ul{
+              list-style: none;
+              width: 100%;
+              li{
+                  width: 100%;
+                  padding: 10px;
+                  border-bottom:1px solid #ccc;
+                  a{
+                      color:black;
+                      i{
+                          float:right;
+                          color:#ff8b00;
+                      }
+                  }
+              }
+          }
+          }
+
+      }
+      .last-pane{
+          background-color: #f7f7f7;
+        //   搜索下拉
+          .seach{
+            padding: 10px 5px;
+            i{
+                color: #ccc;
+                background-color: #fff;
+                padding: 6px;
+            }
+            input{
+                border-style: none;
+                border:none;
+                outline: none;
+                background-color: #ffffff;
+                padding:5px;
+                width: 83%;
+            }
+            button{
+                border:none;
+                background-color: #f7f7f7;
+            }
+          }
+          .sort{
+              padding: 5px;
+              ul{
+                  list-style: none;
+                 li{
+                  border:1px solid #dfdfdf;
+                  padding: 5px 15px;
+                  float: left;
+                  margin-right: 10px;
+                  border-radius: 5px;
+              }
+              .up{
+                  background-color: #ff9501;
+                  a{
+                      color:#fff;
+                  }
+              }
+              }
+
+          }
+          .classification{
+              background-color: #ccc;
+              margin-top: 50px;
+              clear: both;
+              h4{
+                  margin-bottom:0;
+                  background-color: #f7f7f7;
+              }
+              ul{
+                  background-color: #f7f7f7;
+                  li{
+                      padding: 5px ;
+                      display: inline-block;
+                      border: none;
+                      a{
+                          color: black;
+                        border-radius: 5px;
+                      text-align: center;
+                      padding: 5px 15px;
+                          display: inline-block;
+                          border:1px solid #ccc;
+                      }
+                      .a_color{
+                          background-color: #ff9501;
+                          color:#fff;
+                      }
+                  }
+              }
+          }
+      }
+    }
+}
+
+
+// 商品展示
+.item-show{
+    clear:both;
+    padding: 5px;
+    .show{
+        height: 260px;
+        padding: 5px;
+        box-sizing: border-box;
+        .main{
+            width: 100%;
+            height: 100%;
+            margin-left: 5px;
+             background-color:#fff;
+             img{
+                 width: 100%;
+             }
+             span{
+                 color:#ff8b00;
+                i{
+                 font-size: 8px;
+             }
+             }
+
+        }
+    }
+}

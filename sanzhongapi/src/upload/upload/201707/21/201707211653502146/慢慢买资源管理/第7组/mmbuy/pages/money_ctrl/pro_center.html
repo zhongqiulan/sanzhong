@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>国内折扣</title>
+    <!-- 引入当前页面要用到的js文件 -->
+    <link rel="stylesheet" href="../../fonts/demo.css">
+    <link rel="stylesheet" href="../../fonts/iconfont.css">
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/money_ctrl/pro_center.css">
+</head>
+
+<body>
+    <!-- 省钱控-最新优惠 -->
+    <div id="views">
+        <!-- 头部 -->
+        <div id="header">
+            <a class="icon_back" href="../moneyCtrl.html">
+                <i class="glyphicon glyphicon-menu-left"></i>
+            </a>
+            <h1>国内折扣</h1>
+            <a class="icon_app" href="javascript:;">
+                <img src="../../images/header_app.png" alt="">
+            </a>
+        </div>
+        <div class="containers">
+            <!-- 主体部分 -->
+            <div id="pro_center">
+                <!-- 商品详情页数据 -->
+                <div id="main">
+                    <!-- 商品详情页数据 -->
+                    <div class="title">
+                        <h3>
+                            移动端凑单品：海天 鲜味 生抽 1.28L
+                        </h3>
+                        <h4>10.9元</h4>
+                        <div class="info">
+                            <span>京东商城</span>
+                            <span>10-25 14:10</span>
+                            <span>小编烟火 / 慢慢买</span>
+                            <span>有1人评论</span>
+                        </div>
+                    </div>
+                    <div class="explain">
+                        <p class="small_img">
+                            海天的金标生抽酱油，采用了非转基因大豆以及小麦发酵而成，
+                        </p>
+                        <p>
+                            目前京东商城移动端售价10.9元，不错的凑单品，刚需可入，规格1.28L。
+                        </p>
+                        <p></p>
+                        <p>
+                            <!--{{v.productInfo1}}-->
+                        </p>
+                        <p class="big_img"><img src="" alt=""></p>
+                        <div class="supply">
+                        </div>
+                        <div class="Btn">
+                            <a href="javascript:;"><i class="iconfont icon-shopping1"></i>前往购买</a>
+                        </div>
+                    </div>
+                    <!-- 评论区 -->
+                    <div class="comment">
+                        <h4>发表评论</h4>
+                        <div class="compile">
+                            <textarea></textarea>
+                            <div class="publish"><a href="javascript:;">发表评论</a></div>
+                        </div>
+                        <p>最新评论</p>
+                        <!--<div class="user_comment">
+                            <div class="media">
+                                <div class="media-left">
+                                    <a href="#">
+                                        <img class="media-object" src="http://bbs.manmanbuy.com/images/face/none.gif" alt="">
+                                    </a>
+                                </div>
+                                <div class="media-body">
+                                    <h4 class="media-heading">mob_420923HK<span>2017/7/19 11:23:42</span></h4>
+                                    听说这个数字就很尴尬了
+                                    <div>
+                                        <p>引用 @mob_420923HK:</p>
+                                        <p>上次活动八块一斤</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!-- 页码 -->
+                <div class="path">首页 > 省钱控</div>
+                <p class="empty"></p>
+            </div>
+            <!-- 底部 -->
+            <div class="footer clearfix">
+                <div class="footertop clearfix">
+                    <a href="">登陆</a>
+                    <a href="">注册</a>
+                    <a href="#"><img src="../../images/top.jpg" alt="">回到顶部</a>
+                </div>
+                <div class="footercenter">
+                    <a href="">手机App下载</a>
+                    <a href="">慢慢买手机版</a>
+                    <a href="">--掌上比价平台</a>
+                    <p> m.manmanmai.com</p>
+                </div>
+            </div>
+            <div class="other">
+                <div class="comment">
+                    <a href="javascript:;"><i class="iconfont icon-comment"></i><span>评论</span></a>
+                </div>
+                <div class="purchase">
+                    <a href="javascript:;"><i class="iconfont icon-shopping1"></i>前往购买</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../../libs/jquery/jquery.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../../libs/artTemplate/template.js"></script>
+    <script src="../../js/money_ctrl/pro_center.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- 商品详情页模板 -->
+<script type="text/template" id="pro_center_tpl">
+    {{each result as v i}}
+    <!-- 商品详情页数据 -->
+    <div class="title">
+        <h3>
+            {{v.productName}}
+        </h3>
+        <h4>{{v.productPinkage}}</h4>
+        <div class="info">
+            <span>{{v.productFrom}}</span>
+            <span>{{v.productTime}}</span>
+            <span>{{v.productTips}}</span>
+            <span>{{v.productComCount}}</span>
+        </div>
+    </div>
+    <div class="explain">
+        <p class="small_img">
+            {{#v.productImgSm}}
+        </p>
+        <p>
+            {{v.productInfo}}
+        </p>
+        <p></p>
+        <p>
+            {{v.productInfo1}}
+        </p>
+        <p class="big_img">{{#v.productImgLg}}</p>
+        <div class="supply">
+            {{#v.productCity}}
+        </div>
+        <div class="Btn">
+            <a href="javascript:;"><i class="iconfont icon-shopping1"></i>前往购买</a>
+        </div>
+    </div>
+    <!-- 评论区 -->
+    <div class="comment">
+        <h4>发表评论</h4>
+        <div class="compile">
+            <textarea></textarea>
+            <div class="publish"><a href="javascript:;" class="evabtn" >发表评论</a></div>
+        </div>
+        <p>最新评论</p>
+        <div class="list"></div>
+    </div>
+    {{/each}}
+</script>
+
+<script id="evas" type="text/html">
+    <div class="user_comment">
+        <div class="media">
+            <div class="media-left">
+                <a href="#">
+                    <img class="media-object" src="{{img}}" alt="">
+                </a>
+            </div>
+            <div class="media-body">
+                <h4 class="media-heading">{{name}}<span>{{time}}</span></h4>
+                {{infos}}
+            </div>
+        </div>
+    </div>
+</script>

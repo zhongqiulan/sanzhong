@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>优惠劵</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="./css/base.css">-->
+    <link rel="stylesheet" href="../../css/Z_mmBuy/kfc.css">
+</head>
+
+<body>
+    <!--头部-->
+    <nav>
+        <a href="../../index.html">
+            <span class="glyphicon glyphicon-menu-left"></span>
+        </a>
+        
+        <h1>优惠劵</h1>
+         <img src="../../images/header_app.png" alt="">
+    </nav>
+
+
+
+    <!--内容-->
+    <div class="quan_box clearfix" >
+        <ul id="nav_content">
+
+        </ul>
+    </div>
+
+    <!--底部的首页和优惠劵-->
+    <div id="ctl00_Menu" class="nav">
+        <a href="../../index.html">首页</a> >
+        <a href="./kfc.html">优惠劵</a>
+    </div>
+
+    <!--进击的底部-->
+    <div>
+        <div class="footer_top">
+            <a href="javascript:;">登录</a>
+            <a href="javascript:;" class="zhuce">注册</a>
+            <a href="#" class="get_top">
+                <img src="../../images/top.jpg" alt="">
+                返回顶部 
+            </a>
+        </div>
+
+        <div class="footer_bottom">
+            <p>
+                <a href="javascript:;" class="phone_app">手机APP下载</a>
+                <a href="javascript:;" class="mm_phone">慢慢买手机版</a> -- 掌上比价平台
+            </p>
+            <p>m.manmanbuy.com </p>
+        </div>
+    </div>
+
+
+
+
+
+    <script type="text/template" id="kdj_tpl">
+        {{each result as value i}}
+            <li>
+                <a href="./coupons.html?id={{value.couponId}}">
+                    <img src="{{value.couponImg}}" alt="">
+                    <br>{{value.couponTitle}}</a>
+            </li>
+        {{/each}}
+    </script>
+    <script src="../../libs/jquery/jquery.min.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../libs/artTemplate/template.js"></script>
+    <script src="../../js/Z_mmBuy/kfc.js"></script>
+
+
+
+    <!--APP下载-->
+    <div class="app_download">
+        <a href="http://m.manmanbuy.com/?o=download">
+            <img src="../../images/app-xz.png" alt="">
+        </a>
+    </div>
+</body>
+
+</html>

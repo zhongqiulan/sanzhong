@@ -1,0 +1,92 @@
+.navbar {
+  background-color: #ff841d;
+  height: 50px;
+  margin: 0;
+}
+.navbar .container-fluid .header_logo img {
+  width: 187px;
+}
+.navbar .container-fluid .app_donwload img {
+  width: 34px;
+  margin-top: 8px;
+}
+form {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+form .search {
+  height: 30px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+}
+form .search .searchtxt input {
+  padding-left: 25px;
+  height: 30px;
+  width: 95%;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  position: absolute;
+}
+form .search .searchbtn input {
+  width: 64px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.container .menu_list {
+  margin-top: 15px;
+}
+.container .menu_list .col-xs-3 {
+  margin: 0;
+  padding: 0;
+}
+.container .menu_list .col-xs-3 .thumbnail {
+  border: none;
+  margin: 0;
+}
+.container .menu_list .col-xs-3 .thumbnail img {
+  width: 50px;
+}
+.container .menu_list .col-xs-3 .thumbnail .caption {
+  padding: 0;
+}
+.container .menu_list .col-xs-3 .thumbnail .caption p {
+  text-align: center;
+  font-size: 13px;
+}
+.recommend .title {
+  height: 40px;
+  background-color: #ff841d;
+  position: relative;
+}
+.recommend .title h3 {
+  display: inline-block;
+  width: 80%;
+  padding-left: 10px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+.recommend .title a {
+  width: 10%;
+  height: 40px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 10px;
+}
+.recommend .title a i {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+}

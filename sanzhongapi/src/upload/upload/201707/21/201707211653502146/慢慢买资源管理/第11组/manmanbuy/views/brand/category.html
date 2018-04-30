@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/brand/category.css">
+    <title>mmbuy-brand-category</title>
+</head>
+
+<body>
+    <div id="brand-category">
+        <!--顶部logo区域-->
+        <div class="top">
+            <nav class="navbar navbar-default">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="#"><img src="/views/public/images/header_logo.png" alt=""></a>
+                </div>
+                <div class="pull-right">
+                    <a href=""><img src="/views/public/images/header_app.png" alt=""></a>
+                </div>
+            </nav>
+        </div>
+        <!--搜索框-->
+        <div class="search">
+            <input type="text" placeholder="请输入你想比价的商品">
+            <button>搜索</button>
+        </div>
+        <!--网页导航  -->
+        <!--网页主体  -->
+        <div class="header">
+            <ul class="nav nav-pills">
+                <li role="presentation"><a href="/">首页</a></li>
+                <li role="presentation"><span class="glyphicon glyphicon-menu-right"></span> </li>
+                <li role="presentation"><a href="/views/brand/function">品牌大全</a></li>
+                <li role="presentation"><span class="glyphicon glyphicon-menu-right"></span> </li>
+                <li role="presentation"><a href="javascript:;"></a></li>
+            </ul>
+        </div>
+        <!--平板电视那个牌子好  -->
+        <div id="brand">
+            <div class="brand-title">
+                <h4 class="title"><a href="javascript:;"></a></h4>
+            </div>
+            <div class="brand-content">
+                <ul>
+
+
+                </ul>
+            </div>
+        </div>
+        <!--平板电视产品销量排行  -->
+        <div id="sale">
+            <div class="sale-title">
+                <h4 class="title"><a href="javascript:;"></a></h4>
+            </div>
+            <div class="sale-content">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <!--平板电视最有用的用户评论  -->
+        <div id="recommend">
+            <div class="recommend-title">
+                <h4 class="title"><a href="javascript:;"></a></h4>
+            </div>
+            <div class="recommend-content">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+        <!--网页底部  -->
+        <?php include '/views/common/footer.html'?>
+        <!-- <footer>
+            <div class="menu">
+                <ul class="clearfix">
+                    <li><a href="###">登录</a></li>
+                    <li><a href="###">注册</a></li>
+                    <li><a href="###"><img src="http://www.zuyushop.com/wap/images/top.jpg" alt="">返回顶部</a></li>
+                </ul>
+            </div>
+            <div class="xinxi">
+                <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer> -->
+        <!--底部广告栏  -->
+        <div class="footer-bar">
+            <a href="javascript:;" class="closefix"></a>
+            <i></i>
+            <p class="buy">慢慢买</p>
+            <p class="check">全网比较，查历史价格</p>
+            <a href="javascript:;" class="openfix">立即打开</a>
+        </div>
+    </div>
+    <?php include '/views/common/script.html' ?>
+    <!--哪个销量最好的模板  -->
+    <script type="text/template" id="category_tpl">
+        {{each result as v i}}
+        <li>
+            <a href="javascript:;">
+                    <i>{{i+1}}</i>
+                    <div class="des pull-left">
+                    <p class="des-brand">{{v.brandName}}</p>
+                    <p class="des-sale">30天全网销量：{{v.brandInfo}}件</p>
+                </div>
+                <span class="glyphicon glyphicon-menu-right pull-right"></span>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!--销量排行  -->
+    <script type="text/template" id="sale_tpl">
+        {{each result as v i}}
+        <li>
+            <a href="javascript:;">
+                    {{#v.productImg}}
+                    <div class="detail">
+                        <div class="title">{{v.productName}}</div>
+                        <div class="price clearfix">
+                            <span>{{v.productPrice}}</span>
+                            <div class="stars pull-right clearfix" >
+                                <i class="icon-start"></i>
+                                <i class="icon-start"></i>
+                                <i class="icon-start"></i>
+                                <i class="icon-start"></i>
+                                <i class="icon-start"></i>
+                            </div>
+                        </div>
+                        <div class="other">
+                            {{v.productQuote}}  {{v.productCom}}
+                        </div>
+                    </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!--评论区  -->
+     <script type="text/template" id="recommend_tpl">
+        {{each result as v i}}
+        <li>
+            <div class="protit">
+                <img src="http://pro.zuyushop.com:8015/ProPic/201411/small80/Thumb_2014110008364442033.jpg" alt="">
+                <span>LG 49LF5400 49英寸 全高清 普通LED液晶电视</span>
+            </div>
+            <div class="plbox clearfix">
+                <div class="name clearfix">
+                    <span class="phone">{{v.comName}} : </span>
+                    <div class="stars clearfix">
+                        <i class="icon-start"></i>
+                        <i class="icon-start"></i>
+                        <i class="icon-start"></i>
+                        <i class="icon-start"></i>
+                        <i class="icon-start"></i>
+                    </div>
+                    <span class="time">{{v.comTime}}</span>
+                </div>
+                <div class="con">
+                  {{v.comContent}}
+                </div>
+                <s></s>
+            </div>
+        </li>
+        {{/each}}
+    </script> 
+    <script>
+        require(['js/brand/category']);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+// author:fanyuanhuan,date:2017-7-18
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+//头部导航和搜素
+.view{
+
+.header{
+height: 50px;
+background: #ff841d;
+width: 100%;
+}
+//导航栏
+.nav{
+
+}
+//超值折扣推荐
+.discount{
+    .discount_title{
+
+    }
+    .discount_content{
+
+    }
+}
+}

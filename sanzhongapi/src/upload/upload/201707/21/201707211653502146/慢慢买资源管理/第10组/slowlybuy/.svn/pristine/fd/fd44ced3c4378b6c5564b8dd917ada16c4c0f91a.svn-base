@@ -1,0 +1,16 @@
+
+getUrl()
+
+function getUrl(){
+    $.ajax({
+        url:'http://139.199.192.48:9090/api/getmoneyctrl',
+        dataType:'json',
+        type:'get',
+        success:function(data){
+        //    console.log(data.result)
+          var str=template('haitao-content-tpl',data);
+        //   console.log(str)
+           $('.ht-content').html(str);
+        }
+    })
+}

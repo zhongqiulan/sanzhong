@@ -1,0 +1,36 @@
+~function(){
+    var id=o.queryString().brandTitleId;
+    var title=o.queryString().title;
+    title=decodeURI(title)
+    $(".list_title").html(title+"哪个牌子好")
+    document.title=title+"什么品牌好，"+title+"十大品牌排行榜"
+    // 十大品牌排行
+    $.ajax({
+        url:config.getUrl('/api/getbrand'),
+        data:{
+            brandtitleid:id
+        },
+        type:"get",
+        success:function(data){
+            var tplStr=template("ten_tpl",data);
+            $(".ten").html(tplStr);
+            $(".ten h3").html(title+"十大品牌");
+        }
+    })
+
+// 品牌销量排行
+    $.ajax({
+        url:config.getUrl('/api/getbrandproductlist'),
+        type:'get',
+        data:{
+            brandtitleid:id,
+            pagesize :10
+        },
+        success:function(data){
+            var tplStr=template("sale_tpl",data);
+            $(".sale").html(tplStr);
+            $(".sale h3").html(title+"产品销量排行");
+        }
+    })
+    // 最新评论
+}()

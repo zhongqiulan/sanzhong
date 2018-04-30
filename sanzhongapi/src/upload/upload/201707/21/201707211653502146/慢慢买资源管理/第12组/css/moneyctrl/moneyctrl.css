@@ -1,0 +1,310 @@
+.save,
+.save_product {
+  /*底部*/
+}
+.save header,
+.save_product header {
+  height: 0.8rem;
+  background-color: #ff841d;
+  padding: 0.01rem 0.1rem;
+  font-size: 0.32rem;
+  position: relative;
+  text-align: center;
+  color: white;
+  line-height: 0.78rem;
+}
+.save header a.return,
+.save_product header a.return {
+  font-size: 0.3rem;
+  color: white;
+  position: absolute;
+  left: 0.1rem;
+  top: 0.2rem;
+}
+.save header a.app,
+.save_product header a.app {
+  height: 100%;
+  position: absolute;
+  right: 0.1rem;
+  top: 0rem;
+}
+.save header a.app img,
+.save_product header a.app img {
+  height: 100%;
+  display: block;
+  padding: 0.05rem 0.05rem;
+}
+.save .content li,
+.save_product .content li {
+  height: 1.6rem;
+  padding: 0.1rem 0.2rem 0.5rem 0.3rem;
+  position: relative;
+}
+.save .content li a img,
+.save_product .content li a img {
+  width: 25%;
+  font-size: 0.02rem;
+}
+.save .content li a .info,
+.save_product .content li a .info {
+  width: 75%;
+}
+.save .content li a .info p,
+.save_product .content li a .info p {
+  padding-left: 0.2rem;
+  font-size: 0.21rem;
+  width: 100%;
+}
+.save .content li a .info p:nth-child(2),
+.save_product .content li a .info p:nth-child(2) {
+  color: #aaa;
+  position: absolute;
+  bottom: 0rem;
+  left: 25%;
+  margin-left: 0.2rem;
+}
+.save .content li a .info p .price,
+.save_product .content li a .info p .price {
+  color: red;
+}
+.save .product,
+.save_product .product {
+  padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+  font-size: 0.28rem;
+}
+.save .product .title,
+.save_product .product .title {
+  font-size: 0.3rem;
+  font-weight: bold;
+}
+.save .product .mes,
+.save_product .product .mes {
+  margin: 0.2rem 0;
+  font-size: 0.2rem;
+  color: #999999;
+}
+.save .product .content img,
+.save_product .product .content img {
+  float: right;
+  width: 30%;
+}
+.save .product > img,
+.save_product .product > img {
+  width: 90%;
+  display: block;
+  margin: 0 auto;
+  margin: 1rem 0;
+}
+.save .product a.buy,
+.save_product .product a.buy {
+  display: block;
+  width: 85%;
+  background-color: orange;
+  color: white;
+  margin: 0.5rem auto;
+  text-align: center;
+  height: 0.6rem;
+  line-height: 0.6rem;
+}
+.save .product .comment,
+.save_product .product .comment {
+  width: 100%;
+}
+.save .product .comment .input,
+.save_product .product .comment .input {
+  height: 2rem;
+  border: 1px solid #aaa;
+}
+.save .product .comment .input input,
+.save_product .product .comment .input input {
+  width: 100%;
+  height: 70%;
+}
+.save .product .comment .input button,
+.save_product .product .comment .input button {
+  width: 20%;
+  height: 30%;
+  background-color: #aa0;
+  color: white;
+  border: none;
+}
+.save .product .comment .comment_list,
+.save_product .product .comment .comment_list {
+  width: 100%;
+}
+.save .product .comment .comment_list img,
+.save_product .product .comment .comment_list img {
+  width: 15%;
+}
+.save .product .comment .comment_list > div,
+.save_product .product .comment .comment_list > div {
+  width: 85%;
+}
+.save .product .cu-content-pl textarea,
+.save_product .product .cu-content-pl textarea {
+  width: 100%;
+}
+.save .product .form,
+.save_product .product .form {
+  border: 1px solid #aaa;
+  position: relative;
+  padding-bottom: 0.4rem;
+}
+.save .product .form input,
+.save_product .product .form input {
+  color: white;
+  background-color: #ff841d;
+  border: none;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  font-size: 0.2rem;
+  padding: 0 0.1rem;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.save .product .list .ui-border-b,
+.save_product .product .list .ui-border-b {
+  overflow: hidden;
+  font-size: 0.25rem;
+  margin: 0.2rem 0;
+  width: 100%;
+}
+.save .product .list .ui-border-b .userimg,
+.save_product .product .list .ui-border-b .userimg {
+  border-radius: 50%;
+  overflow: hidden;
+  float: left;
+  width: 15%;
+}
+.save .product .list .ui-border-b .userimg img,
+.save_product .product .list .ui-border-b .userimg img {
+  width: 100%;
+}
+.save .product .list .ui-border-b .con,
+.save_product .product .list .ui-border-b .con {
+  width: 80%;
+  height: 100%;
+  float: left;
+  margin-left: 0.2rem;
+  overflow: hidden;
+}
+.save .product .list .ui-border-b .con .username,
+.save_product .product .list .ui-border-b .con .username {
+  float: left;
+  color: #44a;
+}
+.save .product .list .ui-border-b .con .time,
+.save_product .product .list .ui-border-b .con .time {
+  font-size: 0.15rem;
+  float: right;
+  color: #aaa;
+}
+.save .product .list .ui-border-b .con .content,
+.save_product .product .list .ui-border-b .con .content {
+  bottom: 0;
+  left: 15%;
+}
+.save .pagelist,
+.save_product .pagelist {
+  margin-bottom: 1.5rem;
+}
+.save .pagelist .pager,
+.save_product .pagelist .pager {
+  margin: 0;
+}
+.save .pagelist .pager li a,
+.save_product .pagelist .pager li a {
+  border-radius: 5px;
+  width: 60px;
+  height: 20px;
+  padding: 0;
+  padding-top: 2px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+  color: #000;
+}
+.save .pagelist .pager li select,
+.save_product .pagelist .pager li select {
+  border-radius: 5px;
+  outline: none;
+}
+.save footer,
+.save_product footer {
+  margin-top: 0.5rem;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.save footer .row,
+.save_product footer .row {
+  padding: 0;
+}
+.save footer .row > li,
+.save_product footer .row > li {
+  list-style: none;
+  box-decoration-break: none;
+  border-right: 1px solid #cfcfcf;
+  border-bottom: 1px solid #cfcfcf;
+  border-top: 1px solid #cfcfcf;
+  text-align: center;
+  line-height: 30px;
+}
+.save footer .row > li > a,
+.save_product footer .row > li > a {
+  color: #000;
+  text-decoration: none;
+  -webkit-tap-highlight-color: none;
+}
+.save footer .row > li span,
+.save_product footer .row > li span {
+  color: #747474;
+  font-weight: bold;
+}
+.save footer .appdown,
+.save_product footer .appdown {
+  margin-top: 4px;
+  text-align: center;
+}
+.save footer .appdown a,
+.save_product footer .appdown a {
+  color: red;
+  -webkit-tap-highlight-color: none;
+}
+.save footer .appdown a:hover,
+.save_product footer .appdown a:hover {
+  text-decoration: none;
+}
+.save footer .appdown span,
+.save_product footer .appdown span {
+  color: #000;
+}
+.save footer .appdown span:last-of-type,
+.save_product footer .appdown span:last-of-type {
+  color: #555555;
+}
+.save footer .appdown p,
+.save_product footer .appdown p {
+  color: #666466;
+}
+.save footer,
+.save_product footer,
+.save .appdown,
+.save_product .appdown,
+.save .pagelist,
+.save_product .pagelist {
+  font-size: 0.2rem;
+}
+.save footer a,
+.save_product footer a,
+.save .appdown a,
+.save_product .appdown a,
+.save .pagelist a,
+.save_product .pagelist a {
+  font-size: 0.2rem;
+}
+.save_product {
+  background-color: white;
+  margin-bottom: 1.5rem;
+}

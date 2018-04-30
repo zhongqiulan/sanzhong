@@ -1,0 +1,89 @@
+header {
+  height: 44px;
+  line-height: 44px;
+  background-color: #ff841d;
+  color: #fff;
+  position: relative;
+}
+header h2 {
+  padding: 0 60px;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+header .back,
+header .app {
+  position: absolute;
+  width: 50px;
+  height: 44px;
+  top: 0;
+}
+header .back {
+  left: 5px;
+}
+header .back a {
+  color: #fff;
+}
+header .app {
+  right: 5px;
+}
+header .app img {
+  height: 34px;
+}
+main ul {
+  margin: 0;
+}
+main .media {
+  padding: 14px 8px;
+  border-bottom: 1px solid #ccc;
+}
+main .media .media-left img {
+  width: 100px;
+}
+main .media .media-body h4 {
+  height: 57px;
+  font-size: 15px;
+}
+main .media .media-body h4 span {
+  color: #ff841d;
+}
+main .media .media-body .info {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+main .media .media-body .info span {
+  font-size: 14px;
+  vertical-align: middle;
+}
+main .page {
+  height: 74px;
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  padding: 20px 10px;
+  position: relative;
+}
+main .page button {
+  padding: 5px 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+main .page select {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40%;
+  padding: 0 10%;
+  height: 34px;
+  border: 1px solid #ccc;
+}
+main .link {
+  height: 36px;
+  line-height: 16px;
+  padding: 10px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+}
+main .link a {
+  display: inline-block;
+}

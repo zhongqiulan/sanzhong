@@ -1,0 +1,5 @@
+var config = {
+    url:function(){
+        
+    }
+}

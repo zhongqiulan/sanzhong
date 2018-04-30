@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <link rel='stylesheet' href='../lib/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' href='../css/baicaijia.css'>
+    <title>白菜价-淘宝内部优惠券</title>
+</head>
+
+<body>
+    <div class="up">
+        <span class="glyphicon glyphicon-arrow-up"></span>
+    </div>
+    <!--头部白菜价-淘宝内部券-->
+    <header>
+        <!--返回上一层箭头-->
+        <div class="prev">
+            <a href="javasript:;"><span class="glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <h2>白菜价-淘宝内部券</h2>
+        <!--app下载-->
+        <div class="download">
+            <a href="appdown.html"><img src="../images/header_app.png" alt=""></a>
+        </div>
+    </header>
+    <!--页面导航栏-->
+    <div class="navs">
+        <div class="navs_box" id="navs_box">
+            <ul class="navs_list clearfix">
+
+            </ul>
+        </div>
+        <div class="nav-search">
+            <span class="glyphicon glyphicon-search"></span>
+        </div>
+    </div>
+    <!--广告-->
+    <div class="adv">
+        <a href="#"><img src="../images/quan_banner_wap.png" alt=""></a>
+    </div>
+    <!--商品列表-->
+    <div class="shangping">
+        
+    </div>
+    <!--页脚-->
+    <footer>
+        <div class="login clearfix">
+            <ul>
+                <li><a href="javascrip:;">登录</a></li>
+                <li><a href="javascrip:;">注册</a></li>
+                <li class="top"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</li>
+            </ul>
+        </div>
+        <div class="app">
+            <p><a href="appdown.html" style="color:red">手机APP下载</a><a href="../index.html">慢慢买手机版</a>--掌上比价平台</p>
+            <p>m.mammanbuy.com</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+<script src='../lib/jquery/jquery.js'></script>
+<script src='../lib/bootstrap/js/bootstrap.js'></script>
+<script src='../lib/template/template.js'></script>
+<script src='../lib/iscroll/iscroll.js'></script>
+<script src='../js/geturl.js'></script>
+<script src='../js/baicaijia.js'></script>
+<!--导航栏模板-->
+<script type="text/template" id="bcj_navs_tel">
+    {{each result as v i}} {{if i==0}}
+    <li class='navs_title'><a data-id='{{v.titleId}}' href="javasript:;" class="active">{{v.title}}</a></li>
+    {{else}}
+    <li class='navs_title'><a href="javasript:;" data-id='{{v.titleId}}'>{{v.title}}</a></li>
+    {{/if}} {{/each}}
+</script>
+<!--商品模板-->
+<script type="text/template" id="bcj_shangping">
+{{each result as v i}}
+<div class="media">
+    <div class="media-left">
+        <a class="media_img" href="#">
+            {{#v.productImg}}
+             </a>
+    </div>
+    <div class="media-body">
+        <h4 class="media-heading">{{#v.productName}}</h4>
+        <div class="info">
+            <p><span>券后<em>¥</em>0.0</span>
+                <del>¥0</del>
+            </p>
+            {{#v.productCouponRemain}}
+            <span class="click_quan">
+                    {{#v.productCoupon}}
+                </span>
+
+            <div class="btn">
+                {{#v.productHref}}
+            </div>
+        </div>
+    </div>
+    </div>
+    {{/each}}
+</script>

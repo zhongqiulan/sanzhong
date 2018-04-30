@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比价搜索</title>
+    <link rel="stylesheet" href="../js/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/price_search/price_search.css">
+</head>
+<body>
+    <!--头部区域-->
+    <!--顶部导航-->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header header-logo pull-left">
+                    <a class="navbar-brand" href="#"><img src="../images/header_logo.png" alt=""></a>
+                </div>
+
+                <div class="navbar-right app-download pull-right">
+                    <img src="../images/header_app.png" alt="">
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!--搜索栏-->
+        <div class="container ">
+            <div class="row bg-w">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2">搜索</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu mt15">
+
+            </div>
+        </div>
+    </header>
+    <!--内容-->
+    <div class="main">
+        <ul>
+ 
+        </ul>
+    </div>
+
+    <!--底部区域-->
+    <footer>
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <div class="row">
+                    <div class="login col-sm-4 col-xs-4"><a href="javascript:;">登录</a></div>
+                    <div class="register col-sm-4 col-xs-4"><a href="javascript:;">注册</a></div>
+                    <div class="to-top col-sm-4 col-xs-4"><a href="javascript:;" ><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+            <div class="app-updown">
+                <a href="javascript:;">手机APP下载</a>
+                <span>慢慢买手机版</span><span> - 掌上比价平台</span>
+                <p>m.mammambuy.com</p>
+            </div>
+        </nav>
+   </footer>
+  
+
+    <script src='../js/assets/jquery/jquery.min.js'></script>
+    <script src='../js/assets/bootstrap/js/bootstrap.min.js'></script>
+    <script src='../js/assets/artTemplate/template.js'></script>
+    <script>
+ 
+    //    //初始化页面,请求分类页数据渲染到页面
+    //     $.ajax({
+    //     url:'http://139.199.192.48:9090/api/getcategorytitle',
+    //     success:function(d){
+    //         var htmlStr = template("main_list_tpl",d);
+    //         $('.main>ul').html(htmlStr);
+    //         // console.log(d);
+    //         }
+    //     });
+    //     //点击主菜单时,加载分类标题到页面,并显示
+    //     $('.main').on('click','.main_list',function(){
+    //         //判断当前是否有ul_hide类名
+    //         var flag = $(this).next().hasClass('ul_hide');
+    //         var _this = $(this);
+    //         //所有隐藏
+    //         $(".main_list").next().addClass('ul_hide');
+    //         //循环将所有main_list类名下面的span移除类名,显示向下箭头
+    //         for(var i=0;i<$(".main_list").length;i++){
+    //             $($(".main_list")[i]).children().eq(1).removeClass("glyphicon-menu-up");
+    //             $($(".main_list")[i]).children().eq(1).addClass("glyphicon-menu-down");
+    //         }
+    //         console.log($(".main_list"));
+    //         if(!this.getAttribute('data_active')){
+    //             $(this).next().removeClass('ul_hide');
+    //             $(this).children().eq(1).removeClass("glyphicon-menu-down");
+    //             $(this).children().eq(1).addClass("glyphicon-menu-up");
+    //             $.ajax({
+    //                 url:'http://139.199.192.48:9090/api/getcategory',
+    //                 //传入titleId参数
+    //                 data:{titleid:$(this).attr('data-titleId')},
+    //                 success:function(d){
+    //                     console.log(d);
+    //                 var htmlStr=template('son_list_tpl',d);
+    //                 _this.next().html(htmlStr);
+    //                 //设置一个属性做为已请求渲染的标识
+    //                 _this.attr('data_active','ok');
+    //                 }
+    //             });
+    //         }else{
+    //             if(flag){
+    //                 $(this).next().removeClass('ul_hide');
+    //                 $(this).children().eq(1).removeClass("glyphicon-menu-down");
+    //                 $(this).children().eq(1).addClass("glyphicon-menu-up");
+    //             }else{
+    //                 $(this).next().addClass('ul_hide');
+    //                 $(this).children().eq(1).removeClass("glyphicon-menu-up");
+    //                 $(this).children().eq(1).addClass("glyphicon-menu-down");
+
+    //             }
+
+    //         }
+    //     });
+    </script>
+    <script type="text/template" id="main_list_tpl">
+            {{each result as v i}}
+            <li > 
+                <!--titleId和标签关联起来-->
+               <div class="main_list" data-titleId={{v.titleId}}>
+                   <span >{{v.title}}</span>
+                   <span class="glyphicon glyphicon-menu-down"></span>
+               </div>
+               <ul class="son_list ">
+               </ul> 
+            </li>
+            {{/each}}
+    </script>
+    <script type="text/template" id="son_list_tpl">
+            {{each result as v i}}
+                   <li><a href="price_search.1.html?categoryId={{v.categoryId}}&category={{v.category}}">{{v.category}}</a></li>
+            {{/each}}
+            <!--判断下每行是否不足3,如果不足3将其补满-->
+            {{if result.length%3==2 }}
+                   <li><a href="javascript:;"> </a></li>
+            {{else if result.length%3==1}}
+                   <li><a href="javascript:;"> </a></li>
+                   <li><a href="javascript:;"> </a></li>
+            {{/if}}
+
+    </script>
+</body>
+</html>

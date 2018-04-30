@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>海淘折扣 -- 慢慢买</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/overseasShopping/index.css">
+    <link rel="stylesheet" href="../../fonts/font/iconfont.css">
+    <link rel="icon" href="../../images/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<div class="layout">
+    <!--头部-->
+    <div id="coupon">
+        <div class="container-fluid">
+            <i class="glyphicon glyphicon-chevron-left"></i>
+            <h3>海淘折扣</h3>
+
+            <a href="" class="app-download">
+                <img src="../../images/header_app.png">
+            </a>
+
+
+        </div>
+    </div>
+    <!--主体-->
+    <div id="overseas_main">
+        <div class="container-fluid pageList">
+            <script id="seaPage" type="text/html">
+                {{each result as v i}}
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#" data-id="{{i}}" data-product="{{v.productId}}">
+                            {{#v.productImgSm}}
+                        </a>
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">{{v.productName}}<span>{{v.productPinkage}}</span></h4>
+                        <a href="">{{v.productFrom}}</a>
+                        <i class="iconfont icon-commenticon"></i>
+                        <span class="comment">{{v.productComCount}}</span>
+                    </div>
+                </div>
+                {{/each}}
+
+            </script>
+
+        </div>
+        <!--分页-->
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-12">
+                    <button class="btn btn-default btn-lg pull-left prev">上一页</button>
+
+                    <select name="" id="select" class="text-center form-control ">
+                        <option value="1" >1/15</option>
+                        <option value="2" >2/15</option>
+                        <option value="3" >3/15</option>
+                        <option value="4" >4/15</option>
+                        <option value="5" >5/15</option>
+                        <option value="6" >6/15</option>
+                        <option value="7" >7/15</option>
+                        <option value="8" >8/15</option>
+                        <option value="9" >9/15</option>
+                        <option value="10" >10/15</option>
+                        <option value="11" >11/15</option>
+                        <option value="12" >12/15</option>
+                        <option value="13" >13/15</option>
+                        <option value="14" >14/15</option>
+                        <option value="15" >15/15</option>
+                    </select>
+
+                    <button class="btn btn-default btn-lg pull-right next">下一页</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--面包屑导航-->
+    <div id="Breadcrumbs">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="span6">
+                    <ul class="breadcrumb">
+                        <li>
+                            <a href="#" class="backIndex">首页</a> <span class="divider">></span>
+                        </li>
+                        <li>
+                            <a href="#">省钱控</a> <span class="divider">></span>
+                        </li>
+                        <li class="active">海淘折扣</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--底部-->
+    <div id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4"><a href="" class="login">登录</a></div>
+                <div class="col-xs-4"><a href="" class="register">注册</a></div>
+                <div class="col-xs-4"><a href="" class="backTop"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--链接-->
+    <div class="link">
+        <p><a href="" class="phoneApp">手机APP下载</a>&nbsp;&nbsp;<a href="" class="mobile">慢慢买手机版</a>&nbsp;&nbsp;-- 掌上比价平台
+        </p>
+        <p>http://m.manmanbuy.com</p>
+    </div>
+</div>
+
+</body>
+<script src="../../lib/jquery/jquery.js"></script>
+<script src="../../lib/artTemplate/template.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../js/overseasShopping/sea.js"></script>
+
+
+</html>

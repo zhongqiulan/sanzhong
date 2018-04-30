@@ -1,0 +1,386 @@
+html,
+body {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+  background-color: #ffffff;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  display: inline-block;
+  -webkit-tap-highlight-color: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?5je7j5');
+  src: url('fonts/icomoon.eot?5je7j5#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?5je7j5') format('truetype'), url('fonts/icomoon.woff?5je7j5') format('woff'), url('fonts/icomoon.svg?5je7j5#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-start:before {
+  content: "\e900";
+  color: #ff9000;
+}
+#brand-category .top .navbar-default {
+  width: 100%;
+  height: 50px;
+  background: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+#brand-category .top .navbar-default .navbar-brand {
+  width: 100%;
+}
+#brand-category .top .navbar-default .navbar-brand img {
+  width: 185px;
+}
+#brand-category .top .navbar-default .pull-right {
+  width: 34px;
+  padding-top: 8px;
+  position: relative;
+}
+@media screen and (max-width: 300px) {
+  #brand-category .top .navbar-default .pull-right {
+    display: none;
+  }
+}
+#brand-category .top .navbar-default .pull-right img {
+  position: absolute;
+  width: 34px;
+  right: 7px;
+  top: 7px;
+}
+#brand-category .search {
+  height: 30px;
+  padding: 10px;
+  background-color: #fff;
+  position: relative;
+  top: -20px;
+}
+#brand-category .search input {
+  height: 30px;
+  background: #f1f1f1;
+  border-radius: 25px;
+  width: 100%;
+  border-width: 0;
+  padding-left: 30px;
+  font-size: 16px;
+}
+#brand-category .search button {
+  height: 30px;
+  background: #ff841d;
+  border-radius: 25px;
+  color: #fff;
+  width: 60px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border-width: 0;
+}
+#brand-category .header {
+  font-size: 14px;
+  background-color: #f5f5f5;
+  border-top: 1px solid #d5d5d5;
+  border-bottom: 1px solid #d5d5d5;
+}
+#brand-category .header span {
+  font-size: 12px;
+  padding-top: 13px;
+}
+#brand-category .header a {
+  padding: 10px 4px;
+  color: #000;
+}
+#brand-category h4.title {
+  height: 40px;
+  padding-left: 10px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  line-height: 32px;
+  font-size: 14px;
+  margin: 0;
+  font-weight: 900;
+  background-color: #f3f3f3;
+}
+#brand-category h4.title a {
+  color: #884809;
+}
+#brand-category ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+#brand-category li {
+  margin: 0;
+  padding: 0;
+}
+#brand-category a {
+  color: #000;
+  display: block;
+}
+#brand-category #brand li:first-child i {
+  background-color: #f10e0e;
+}
+#brand-category #brand li:nth-of-type(2) i {
+  background-color: #ff9314;
+}
+#brand-category #brand li:nth-of-type(3) i {
+  background-color: #8adf5b;
+}
+#brand-category #brand li a {
+  position: relative;
+  height: 54px;
+  background-color: #f2f2f2;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+#brand-category #brand li a i {
+  position: absolute;
+  left: 9px;
+  top: 9px;
+  width: 17px;
+  height: 17px;
+  background-color: #c9c9c9;
+  line-height: 17px;
+  text-align: center;
+  color: #fff;
+  font-style: normal;
+}
+#brand-category #brand li a .des {
+  position: absolute;
+  left: 36px;
+  top: 0;
+}
+#brand-category #brand li a .des .des-brand {
+  margin: 8px 0 0px 0;
+}
+#brand-category #brand li a .des .des-sale {
+  font-size: 12px;
+  color: #9e9e9e;
+}
+#brand-category #brand li a span {
+  line-height: 54px;
+  font-size: 20px;
+  color: #9e9e9e;
+  margin-right: 10px;
+}
+#brand-category #sale .sale-content ul li a {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 10px 10px 10px 110px;
+  background-color: #f2f2f2;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+}
+#brand-category #sale .sale-content ul li a img {
+  position: absolute;
+  left: 10px;
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+#brand-category #sale .sale-content ul li a .detail {
+  padding-left: 20px;
+}
+#brand-category #sale .sale-content ul li a .detail .title {
+  font-size: 14px;
+}
+#brand-category #sale .sale-content ul li a .detail .price {
+  margin-top: 6px;
+}
+#brand-category #sale .sale-content ul li a .detail .price span {
+  font-size: 16px;
+  color: #ea3916;
+}
+#brand-category #sale .sale-content ul li a .detail .price .stars i {
+  font-size: 18px;
+}
+#brand-category #sale .sale-content ul li a .detail .other {
+  font-size: 12px;
+  color: #a4999e;
+  margin-top: 10px;
+}
+#brand-category #recommend .recommend-content {
+  box-sizing: border-box;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+#brand-category #recommend .recommend-content li .protit img {
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+}
+#brand-category #recommend .recommend-content li .protit span {
+  vertical-align: top;
+  margin-left: 10px;
+  color: #999999;
+}
+#brand-category #recommend .recommend-content li .plbox {
+  position: relative;
+  background-color: #f8f8f8;
+  padding: 10px;
+  margin-top: 15px;
+}
+#brand-category #recommend .recommend-content li .plbox s {
+  position: absolute;
+  left: 30px;
+  top: -20px;
+  width: 0;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent transparent  #f8f8f8 transparent;
+}
+#brand-category #recommend .recommend-content li .plbox .name .phone {
+  float: left;
+  color: #4f6900;
+}
+#brand-category #recommend .recommend-content li .plbox .name .stars {
+  margin-left: 5px;
+  float: left;
+}
+#brand-category #recommend .recommend-content li .plbox .name .stars i {
+  float: left;
+  margin-right: 1px;
+  font-size: 16px;
+}
+#brand-category #recommend .recommend-content li .plbox .name .time {
+  float: right;
+  color: #b9a4a0;
+  font-size: 12px;
+}
+#brand-category #recommend .recommend-content li .plbox .con {
+  margin-top: 10px;
+  font-size: 14px;
+}
+#brand-category footer {
+  padding-top: 20px;
+  background: #efefef;
+}
+#brand-category footer .menu ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+#brand-category footer .menu li {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  float: left;
+  width: 33.3%;
+}
+#brand-category footer .menu li img {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  vertical-align: baseline;
+  margin-right: 4px;
+}
+#brand-category footer .menu li:nth-of-type(2) {
+  border: 1px solid #c4c4c4;
+}
+#brand-category footer .menu li a {
+  display: block;
+  color: #000;
+}
+#brand-category footer .xinxi {
+  font-size: 13px;
+  text-align: center;
+  padding: 15px 0;
+}
+#brand-category footer .xinxi p {
+  margin: 0;
+  color: #747474;
+}
+#brand-category footer .xinxi p a {
+  display: inline-block;
+}
+#brand-category footer .xinxi p a:nth-of-type(1) {
+  color: red;
+}
+#brand-category footer .xinxi p a:nth-of-type(2) {
+  color: #000;
+}
+#brand-category .footer-bar {
+  position: fixed;
+  display: block;
+  bottom: 0;
+  height: 60px;
+  width: 100%;
+  background-color: #faf8f5;
+  z-index: 3;
+  padding-left: 100px;
+}
+#brand-category .footer-bar .closefix {
+  box-sizing: border-box;
+  position: absolute;
+  left: 0;
+  display: block;
+  background-image: url('https://img.alicdn.com/imgextra/i3/379516416/TB2U68FkXXXXXXBXFXXXXXXXXXX_!!379516416.png');
+  background-size: 21px;
+  width: 45px;
+  height: 60px;
+  background-origin: content-box;
+  background-clip: content-box;
+  padding: 19px 12px;
+}
+#brand-category .footer-bar i {
+  position: absolute;
+  left: 45px;
+  top: 10px;
+  background-image: url('http://m.manmanbuy.com/download/images/logo.png');
+  background-size: 41px;
+  width: 41px;
+  height: 41px;
+}
+#brand-category .footer-bar p {
+  margin: 0;
+  color: #888895;
+}
+#brand-category .footer-bar .buy {
+  margin-top: 10px;
+  font-size: 18px;
+}
+#brand-category .footer-bar .check {
+  font-size: 12px;
+}
+#brand-category .footer-bar .openfix {
+  position: absolute;
+  right: 10px;
+  top: 14px;
+  width: 72px;
+  height: 31px;
+  text-align: center;
+  line-height: 31px;
+  background-color: #ff7700;
+  border-radius: 5px;
+  color: #fff;
+}

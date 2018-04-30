@@ -1,0 +1,264 @@
+* {
+  margin: 0px;
+  padding-block-end: 0px;
+}
+a {
+  color: inherit;
+}
+a:hover,
+a:visited,
+a:link,
+a:active {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.nav::before {
+  background-image: url('/images/header_app.png');
+  position: absolute;
+  content: "";
+  display: block;
+  width: 44px;
+  height: 30px;
+  right: 0px;
+  background-size: 30px;
+  background-repeat: no-repeat;
+  top: 8px;
+}
+.nav {
+  background-color: #ff841d;
+  height: 44px;
+  position: relative;
+}
+.sqk {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  line-height: 44px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.dyh {
+  position: absolute;
+  color: white;
+  left: 10px;
+  font-size: 15px;
+  top: 15px;
+}
+.title {
+  font-size: 18px;
+  font-weight: 800;
+  margin-left: 10px;
+  color: #5a5a5a;
+}
+.jiage {
+  color: #ff841d;
+  margin-left: 10px;
+  font-weight: 700;
+}
+.laiyuan {
+  color: #999999;
+  font-size: 13px;
+  margin-left: 10px;
+  margin-top: 15px;
+}
+.jieshao {
+  margin-top: 10px;
+  color: #606060;
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.jieshao img {
+  width: 120px;
+  float: right;
+  margin-top: 10px;
+}
+.quanqiugou {
+  font-size: 16px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.quanqiugou span {
+  color: #4682c5;
+}
+.shopping {
+  margin-top: 40px;
+  margin-bottom: 30px;
+}
+.shopping a {
+  display: block;
+  background-color: #ff841d;
+  height: 40px;
+  width: 90%;
+  margin: 0 auto;
+  line-height: 40px;
+  text-align: center;
+  color: white;
+  border-radius: 5px;
+}
+.tit {
+  margin-left: 10px;
+}
+.form {
+  margin-top: 15px;
+}
+.form textarea {
+  width: 90%;
+  resize: none;
+  height: 80px;
+  margin: 0 auto;
+  display: block;
+  border: 2px solid #eeeeee;
+}
+.form .ctrl {
+  width: 90%;
+  background-color: #fbfbfb;
+  margin: 0 auto;
+  position: relative;
+  height: 40px;
+  border: 2px solid #eeeeee;
+  border-top: none;
+}
+.form .ctrl .tjdp {
+  position: absolute;
+  height: 40px;
+  right: 0px;
+  background-color: #ff841d;
+  color: white;
+  width: 100px;
+  top: -2px;
+  border: none;
+}
+.userimg {
+  float: left;
+  overflow: hidden;
+}
+.userimg img {
+  width: 40px;
+  border-radius: 50%;
+}
+.list ul {
+  padding-left: 15px;
+}
+.con .name {
+  padding-left: 50px;
+  padding-right: 15px;
+}
+.con .name .username {
+  float: left;
+}
+.con .name .time {
+  float: right;
+}
+.username {
+  color: #5997c0;
+}
+.content {
+  line-height: 20px;
+  padding-left: 50px;
+  margin-top: -10px;
+}
+.yinyong {
+  background-color: #FBFBFB;
+  border: 1px solid #eeeeee;
+  padding: 5px;
+}
+.content {
+  padding-right: 10px;
+}
+.ui-border-b {
+  border-bottom: 1px solid #eeeeee;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.bottom {
+  height: 36px;
+  line-height: 36px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  padding-left: 15px;
+}
+.kong {
+  height: 25px;
+  background-color: #efefef;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+}
+.login {
+  height: 35px;
+  background-color: #efefef;
+  line-height: 35px;
+  border-bottom: 1px solid #c4c4c4;
+}
+.login-l {
+  float: left;
+  width: 30%;
+  text-align: center;
+}
+.login-c {
+  float: left;
+  width: 30%;
+  text-align: center;
+  border-left: 1px solid #c4c4c4;
+  border-right: 1px solid #c4c4c4;
+}
+.arrows {
+  width: 15px;
+  margin-top: -3px;
+}
+.login-r {
+  float: right;
+  width: 40%;
+  text-align: center;
+}
+.appp img {
+  width: 60px;
+  position: fixed;
+  right: 0px;
+  bottom: 30px;
+  z-index: 2;
+}
+.footer {
+  height: 60px;
+  background-color: #efefef;
+  text-align: center;
+  font-size: 13px;
+  padding-top: 15px;
+}
+.footer-1 {
+  color: red;
+}
+.footer p {
+  color: #666;
+}
+.footer-2 {
+  color: black;
+}
+.footer-3 {
+  color: #666;
+  margin-top: -12px;
+}
+.zuihou {
+  height: 44px;
+  background-color: #ff841d;
+  text-align: center;
+  line-height: 44px;
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+}
+.zuihou a {
+  float: left;
+  width: 30%;
+  background-color: #fbfbfb;
+}
+.zuihou .zuihou-right {
+  float: right;
+  width: 70%;
+  color: white;
+}
+.zuihou-1 {
+  color: white;
+}

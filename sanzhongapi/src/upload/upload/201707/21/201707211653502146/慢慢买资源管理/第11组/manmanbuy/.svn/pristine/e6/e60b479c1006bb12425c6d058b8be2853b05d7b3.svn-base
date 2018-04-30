@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>省钱控</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/haitao/haitao.css">
+    <link rel="stylesheet" href="/views/public/css/base/base.css">
+</head>
+
+<body id="top">
+    <div class="ydb">
+        <!--头部-->
+        <div class="head clearfix">
+            <div class="back">
+                <a href="/" class="glyphicon glyphicon-menu-left"></a>
+            </div>
+            <div class="head-title">
+                <h1>海淘折扣</h1>
+            </div>
+
+            <div class="app-download">
+                <a href="javascript:;">
+                   <img src="/views/public/images/header_app.png" alt="">
+               </a>
+            </div>
+        </div>
+        <!--主体-->
+        <div class="main">
+            <div class="m-product">
+                <ul class="m-pc-ls">
+
+
+                </ul>
+            </div>
+            <div class="pages">
+                <table>
+                    <tbody>
+                        <tr>
+                            <td>
+                                <a class="up-page" href="javascript:;">上一页</a>
+                            </td>
+                             <td id="currentTotal">                               
+                                
+                                    <span>1/1</span>
+                                                    
+                            </td>
+                            <td>
+                                <a class="down-page" href="javascript:;">下一页</a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!--导航条方向-->
+        <div class="direction">
+            <a href="javascript:;">首页</a> &nbsp;>&nbsp;省钱控
+        </div>
+
+        <footer>
+    <div class="menu">
+        <ul class="clearfix">
+            <li><a href="###">登录</a></li>
+            <li><a href="###">注册</a></li>
+            <li><a href="#top"><img src="/views/public/uploads/top.jpg" alt="">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="xinxi">
+        <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+    </div>
+
+    <div class="mmb-app">
+        <a href="javascript:;">
+            <img src="/views/public/uploads/moneyctrl/mmb-app.png" alt="">
+        </a>
+    </div>
+
+    <script type="text/template" id="pc-lsis-tpl">
+    {{each result as v i}}
+        <li class="clearfix m-product-list" data-id={{v.productId}}>
+        <a>
+                <div class="pic">
+                    {{#v.productImg2}}
+                </div>
+
+                <div class="clearfix info">
+                    <div class="title">
+                        {{v.productName}}
+                        <span>{{v.productPinkage}}</span>
+                    </div>
+
+                    <div class="other">
+                        <span class="smll">{{v.productFrom}} | {{v.productTime}}</span>
+                        <span class="comment"><i></i>{{v.productComCount}}</span>
+                    </div>
+
+                </div>
+            </a>
+        </li>
+    {{/each}}
+    </script>
+
+    <!--<script src="/views/public/assets/artTemplate/template.js"></script>
+    <script src="/views/public/assets/jquery/jquery.js"></script>
+    <script src="/views/public/js/moneyctrl/moneyctrl.js"></script>
+    <script src="/views/public/assets/bootstrap/js/bootstrap.js"></script>-->
+    <?php include '/views/common/script.html'?> 
+    <script>
+        require(['js/haitao/haitao']);
+    </script>
+</body>
+
+</html>

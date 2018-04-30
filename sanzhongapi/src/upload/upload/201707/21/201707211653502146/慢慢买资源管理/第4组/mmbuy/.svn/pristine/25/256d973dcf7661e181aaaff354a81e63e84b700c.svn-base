@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/base.css">
+    <link rel="stylesheet" href="/css/brand/list.css">
+    <link rel="stylesheet" href="/css/common/bottom/bottom.css">
+
+
+</head>
+
+<body>
+    <!--头部-->
+    <!--慢慢买首页头部-->
+<nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header header-logo pull-left">
+                <a class="navbar-brand" href="http://m.manmanbuy.com/"><img src="/images/header_logo.png" alt=""></a>
+            </div>
+            <div class="navbar-right app-donwload pull-right">
+                <a href="http://m.manmanbuy.com/?o=download">
+                    <img src="/images/header_app.png" alt="">
+                </a>
+            </div>
+        </div>
+    </nav>
+        <!-- /.container-fluid -->
+    </nav>
+    <!--search-->
+    <form action="" id="index_search">
+        <div>
+            <input type="text" placeholder="请输入你想比价的商品" class="input1">
+            <input type="button" value="搜索" class="input2">
+            </input>
+    </form>
+    <main>
+        <div class="link">
+            <a href="javascript:;">首页</a> &nbsp;>&nbsp;
+            <a href="/pages/brand/brand.html">品牌大全</a>&nbsp;>&nbsp;
+            <a href="javascript:;" class="list_title"></a>
+        </div>
+        <div class="ten">
+            <h3></h3>
+            <ul>
+                <li>
+                    <a href="javascript:;">
+                        <i>1</i>
+                        <div>d百百</div>
+                        <p>dfefjefkf</p>
+                        <em>></em>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="sale">
+            <h3></h3>
+            <ul>
+                <li data-id="{{v.productId}}">
+                    <div class="media">
+                        <div class="media-left">
+                            <a href="#">
+                                <img class="media-object" src="..." alt="...">
+                            </a>
+                        </div>
+                        <div class="media-body">
+                            <h4 class="media-heading">Media heading</h4>
+                            <p class="price">￥32322 <span></span></p>
+                            <p class="info">
+                                <span>挖人</span>
+                                <span>评论</span>
+                            </p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="comment">
+            <h3></h3>
+            <div class="koubei-main">
+                <div class="koubei-comment">
+                    <div class="product-info clearfix">
+                        <img src="../../imgs/haitao.png" alt="">
+                        <p>康佳(KONKA) LED40S1 40英寸 全高清1080P HDR智能液晶电视</p>
+                    </div>
+                    <div class="comment-content">
+                        <div class="top">
+                            <span class="name">j***3：</span>
+                            <span class="star glyphicon glyphicon-star"></span>
+                            <span class="star glyphicon glyphicon-star"></span>
+                            <span class="star glyphicon glyphicon-star"></span>
+                            <span class="star glyphicon glyphicon-star"></span>
+                            <span class="star glyphicon glyphicon-star"></span>
+                            <span class="time">2017/7/18</span>
+                        </div>
+                        <div class="text">
+                            师傅们服务很好，电视也非常清晰，不过就是等了7天才收到货，这就有点失望了
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="common_bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-4"><a href="javascript:;">登陆</a></div>
+                <div class="col-xs-4"><a href="javascript:;">注册</a></div>
+                <div class="col-xs-4">
+                    <a href="javascript:scroll(0,0)">
+                        <i class="glyphicon glyphicon-arrow-up"></i>
+                    返回顶部</a>
+                </div>
+            </div>
+        </div>
+        <div class="index_bottom_footer">
+            <p>
+                <a class="appdownload" href="javascript:;">手机APP下载</a>
+                <a href="javascript:;">慢慢买手机版</a> --掌上比价平台
+            </p>
+            <p class="index_bottom_website"><a href="javascript:;">m.manmanbuy.com</a></p>
+        </div>
+    </div>
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/js/config/config.js"></script>
+    <script src="/libs/artTemplate/template.js"></script>
+    <script src="/js/brand/list.js"></script>
+    <script src="/js/common/bottom.js"></script>
+</body>
+
+<script type="text/template" id="ten_tpl">
+    <h3></h3>
+    {{each result as v i}}
+    <ul>
+        <li data-id="{{v.brandId}}">
+            <a href="javascript:;">
+                        <i class="top{{i+1}}">{{i+1}}</i>
+                        <div>{{v.brandName}}</div>
+                        <p>{{v.brandInfo}}</p>
+                        <em>></em>
+                    </a>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script type="text/template" id="sale_tpl">
+    <h3></h3>
+    <ul>
+        {{each result as v i}}
+        <li data-id="{{v.productId}}">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#">
+                        {{#v.productImg}}
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">{{v.productName}}</h4>
+                    <p class="price">{{v.productPrice}}<span></span></p>
+                    <p class="info">
+                        <span>{{v.productQuote}}</span>&nbsp;
+                        <span>{{v.productCom}}</span>
+                    </p>
+                </div>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+<script type="text/template" id="koubei_tpl">
+    <h3></h3>
+    <div class="koubei-main">
+        {{each result as v i}}
+
+        <div class="koubei-comment">
+            <div class="product-info clearfix">
+                <img src="../../imgs/haitao.png" alt="">
+                <p>康佳(KONKA) LED40S1 40英寸 全高清1080P HDR智能液晶电视</p>
+            </div>
+            <div class="comment-content">
+                <div class="top">
+                    <span class="name">{{v.comName}}：</span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="star glyphicon glyphicon-star"></span>
+                    <span class="time">{{v.comTime}}</span>
+                </div>
+                <div class="text">
+                    {{v.comContent}}
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</script>
+
+</html>

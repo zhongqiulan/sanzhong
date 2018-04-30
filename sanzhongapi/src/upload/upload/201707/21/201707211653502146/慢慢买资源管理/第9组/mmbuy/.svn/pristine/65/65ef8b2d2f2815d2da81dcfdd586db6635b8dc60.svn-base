@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>国内折扣</title>
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/inlanddiscount/moneyctrlproduct.css">
+  <link rel="icon" href="../../images/favicon.ico">
+</head>
+
+<body>
+  <!-- 头部 -->
+  <header>
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header header-logo pull-left">
+          <a class="navbar-brand return" href="javascript:;"><span class="glyphicon glyphicon glyphicon-menu-left"></span></a>
+        </div>
+        <h1>国内折扣</h1>
+        <div class="navbar-right app-donwload pull-right">
+          <img src="../../images/header_app.png" alt="">
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <!--内容-->
+  <div class="views">
+
+  </div>
+
+  <!--登录注册-->
+  <div class="foot_bar">
+    <ul class="clearfix">
+      <li><a href="../../login.html">登录</a></li>
+      <li><a href="javascript:;">注册</a></li>
+      <li><a href="javascript:scroll(0,0)"><i class="icon-top"></i>返回顶部</a></li>
+      <link rel="icon" href="../../images/favicon.ico">
+    </ul>
+  </div>
+  <footer>
+    <div class="foot_top">
+      <a href="javascript:;">手机APP下载</a>
+      <a href="index.html">慢慢买手机版</a> -- 掌上比价平台
+    </div>
+    <div class="foot_bottom">m.manmanbuy.com</div>
+  </footer>
+
+
+
+
+
+
+  <script type="text/template" id="pro_tpl">
+    <div class="container tit-introduce">
+      <h3>{{productName}}</h3>
+      <div class="price">{{productPrice}}</div>
+      <div class="Source">
+        <span>{{productFrom}}</span>
+        <span>{{productTime}}</span>
+        <span>{{productTips}}</span>
+      </div>
+
+      <div class="introduce">
+        <div class="row">
+
+          <div class="col-xs-12 pic">
+            <a href="#" class="thumbnail">
+              {{#productImg}}
+            </a>
+          </div>
+          <p>{{productInfo}}</p>
+          <p>{{productInfo1}}</p>
+          <p>{{productInfo2}}</p>
+        </div>
+        {{#productCity}}
+
+          <!--按钮-->
+          <div class="gobuy">
+            <button type="button" class="btn btn-default btn-lg btn-block">前往购买</button>
+          </div>
+      </div>
+      <div class="tit-comment">
+        <!--发表评论-->
+        <div class="comment">
+          发表评论
+        </div>
+        <div class="comment-area clearfix">
+          <textarea rows="" cols=""></textarea>
+          <button class="btn pull-right go-comment" role="button">发表评论</button>
+        </div>
+        <div class="new-comment">
+          最新评论
+        </div>
+      </div>
+
+    </div>
+
+
+    <!--导航-->
+    <div class="nav-chain">
+      <a href="../../index.html">首页</a> > <a href="javascript:;">超值推荐</a> > <a href="javascript:;">{{productName}}</a>
+      <!--<span>首页</span>><span>超值推荐</span>><span>{{productName}}</span>-->
+    </div>
+  </script>
+
+
+
+  <script src="../../lib/jquery/jquery.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../lib/artTemplate/template.js"></script>
+  <script src="../../js/inlanddiscount/util.js"></script>
+  <script src="../../js/inlanddiscount/moneyctrlproduct.js"></script>
+</body>
+
+
+</html>

@@ -1,0 +1,74 @@
+@import "base.less";
+
+
+ //mmbuy_list     
+  .parity_search{ 
+    border-radius: 10px;
+    background-color:#f2f2f2;
+    width: 100%;
+    padding-top:5px;
+    // .content{
+      //  width: 95%;
+       
+    // }
+    .btn{
+      border-radius: 0;
+      border: 0;
+      // border-top-left-radius:20px;
+    }
+    .family_electric{
+      // 
+      border: 1px solid #ccc; 
+      margin-top:0px;
+      margin-left:5px;
+      height:30px;
+      line-height: 30px;
+      width: 98%;
+      background-color:#ebebeb;
+      // border-right: 1px solid #ccc;
+      // border-bottom: 1px solid #ccc;
+      p{
+        text-align: left;
+        font-size: 18px;
+        color: #000;    
+        position: relative;   
+      }
+      .glyphicon{
+        position: absolute;
+        right: 10px;
+        color:#ccc;
+      }    
+    }
+
+
+
+      .well{
+        width: 98%;
+        margin-left:5px;
+        background-color: #f9f9f9;
+        border-bottom: 2px solid #ccc;
+        padding: 0; 
+        .row{
+          div{
+            margin-top: 0;
+            padding-top: 0;
+            padding: 10px;
+            text-align: center;
+          }
+          .col-xs-4{
+            border: 1px solid #ccc;
+          }
+        }
+      }
+   
+      a{
+        padding:0;
+      }
+
+
+  } 
+    
+
+
+
+

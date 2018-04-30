@@ -1,0 +1,167 @@
+*{
+    list-style: none;
+    margin:0;
+    padding:0;
+}
+// 顶部导航条
+.navbar{
+    margin-bottom:10px;
+    .container-fluid{
+        background-color: #ff841d;
+        .header-logo{
+            a.navbar-brand{
+                img{
+                    height: 25px;
+                }
+            }
+        }
+        .app-download{
+            img{
+                height: 34px;
+                margin:8px;
+            }
+        }
+    }
+}
+//搜索框
+.container{
+    margin-bottom:10px;
+    .col-md-12{
+        div.input-group{
+            width:100%;
+        }
+        input.form-control{
+            border-radius:17px;
+            background-color: #f1f1f1;
+            width:110%;
+        }
+        span.input-group-addon{
+            position:relative;
+            border-radius:17px; 
+            background-color: #ff841d;  
+            color:white;   
+            width:60px;
+            z-index: 2;
+        }
+    }
+}
+//main内容
+.main {
+    
+        border-top:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+    ol.breadcrumb{
+        margin:0;
+    }    
+
+    ul.commodity_title{
+        border-bottom:1px solid #e3e3e3;
+
+        // clear:both;
+        &:after{
+            content:'';
+            display:block;
+            height:0;
+            clear:both;
+        }
+        >li{
+            float:left;
+            width: 25%;
+            height: 40px;
+            text-align: center;
+            line-height: 35px;
+            padding:5px 0;
+
+        }
+    }
+    ul.commodity_list{
+        
+        >li{
+            position:relative;
+            border-bottom:1px solid #eeeeee;
+            padding:10px 10px 10px 132px;
+            // margin:10px 0;
+            .left{
+                position:absolute;
+                top:10px;
+                left:0;
+                height: 110px;
+                width: 128px;
+                line-height: 110px;
+                text-align:center;
+                
+            }
+            .right{
+                height:110px;
+                padding-top:5px;
+                .name{
+                    height:40%;
+                    font-size:16px;
+                }
+                .price{
+                    height:25%;
+                    font-size:18px;
+                    color:red;
+                }
+                .info {
+                    a{
+                        color:#cdcdcd;
+                        float:left;
+                    }
+                    a+a{
+                        float:right;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+//底部区域
+footer{
+    overflow:hidden;
+    .navbar{
+        height:100px;
+        margin:0;
+        background-color: #efefef;
+        .row{
+            div{
+                border-top:1px solid #cbcbcb;
+                border-bottom:1px solid #cbcbcb;
+                height: 35px;
+                line-height: 35px;
+                text-align: center;
+                a {
+                    color:black;
+                    font-size:14px;
+                        span{
+                            color:#747474;
+                            font-size:12px;
+                        }
+                    }
+            }
+            div:nth-of-type(2){
+                border-left:1px solid #cbcbcb;
+                border-right:1px solid #cbcbcb;
+            }
+        }
+        div.app-updown{
+            text-align: center;
+            padding-top:5px;
+            font-size:12px;
+            a{
+                color:red;
+            }
+            span:first-of-type{
+                color:black;
+            }
+            span:last-of-type{
+                color:#7b7b7b;
+            }
+            p{
+                color:#7b7b7b;
+            }
+        }
+    }
+}

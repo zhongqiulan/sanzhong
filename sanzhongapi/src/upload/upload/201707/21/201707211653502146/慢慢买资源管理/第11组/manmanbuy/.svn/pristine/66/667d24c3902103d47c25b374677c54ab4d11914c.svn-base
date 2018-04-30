@@ -1,0 +1,273 @@
+html,
+body {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+  background-color: #ffffff;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  display: inline-block;
+  -webkit-tap-highlight-color: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+ul {
+  list-style: none;
+}
+.show {
+  display: block;
+}
+.coudan header {
+  height: 44px;
+  background: #ff8b00;
+  color: #fff;
+  position: relative;
+}
+.coudan header h1 {
+  width: 100%;
+  font-size: 20px;
+  line-height: 44px;
+  padding: 0px 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.coudan header .arrow {
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  color: #fff;
+  padding: 13px;
+}
+.coudan header .header_app {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+.coudan header .header_app img {
+  width: 34px;
+}
+.coudan .coudan-header-content {
+  position: relative;
+}
+.coudan .coudan-header-content .nav {
+  height: 37px;
+  position: relative;
+  border-bottom: 2px solid #eee;
+}
+.coudan .coudan-header-content .nav .nav_left {
+  width: 100%;
+  padding-right: 40px;
+}
+.coudan .coudan-header-content .nav .nav_left ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.coudan .coudan-header-content .nav .nav_left ul li {
+  float: left;
+  width: 33.33%;
+  text-align: center;
+}
+.coudan .coudan-header-content .nav .nav_left ul li a {
+  display: block;
+  color: #000;
+  width: 100%;
+  height: 37px;
+  line-height: 37px;
+  font-size: 16px;
+  color: #5a5a5a;
+}
+.coudan .coudan-header-content .nav .nav_left ul li a span.icon-c,
+.coudan .coudan-header-content .nav .nav_left ul li a span.icon-d {
+  font-size: 24px;
+  vertical-align: middle;
+}
+.coudan .coudan-header-content .nav .nav_search {
+  position: absolute;
+  width: 40px;
+  right: 0;
+  font-size: 22px;
+  text-align: center;
+  line-height: 37px;
+  border-left: 2px solid #eee;
+}
+.coudan .coudan-header-content .popbox {
+  display: none;
+  width: 100%;
+  position: absolute;
+  top: 37px;
+  left: 0;
+  background: #fff;
+  box-shadow: 0px 3px 6px #dddddd;
+}
+.coudan .coudan-header-content .popbox ul {
+  padding-left: 0px;
+}
+.coudan .coudan-header-content .popbox ul li {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-top: 1px solid #eee;
+}
+.coudan .coudan-header-content .popbox ul li a {
+  display: block;
+  height: 40px;
+  color: #5a5a5a;
+  font-size: 16px;
+  padding-right: 50px;
+  position: relative;
+}
+.coudan .coudan-header-content .popbox ul li a span {
+  position: absolute;
+  right: 10px;
+  font-size: 30px;
+  top: 10px;
+}
+.coudan .coudan-header-content .popsearch {
+  display: none;
+  background: #f7f7f7;
+  padding: 10px 0px;
+}
+.coudan .coudan-header-content .popsearch .coudanSearch {
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+.coudan .coudan-header-content .popsearch .coudanSearch .form-control {
+  padding-left: 35px;
+  border: none;
+  border-radius: none;
+  background: #fff;
+}
+.coudan .coudan-header-content .popsearch .coudanSearch .input-group-addon {
+  border: none;
+  border-radius: none;
+  padding: 6px;
+  background: #f7f7f7;
+  color: #000;
+}
+.coudan .coudan-header-content .popsearch .coudanSearch .fadajing {
+  position: absolute;
+  left: 20px;
+  font-size: 20px;
+  color: #ccc;
+  line-height: 34px;
+  z-index: 10;
+}
+.coudan .coudan-header-content .popsearch .sort {
+  border-bottom: 1px solid #eaeaea;
+}
+.coudan .coudan-header-content .popsearch .select p {
+  padding-top: 10px;
+  padding-left: 10px;
+}
+.coudan .coudan-header-content .popsearch .select .list {
+  height: 40px;
+}
+.coudan .coudan-header-content .popsearch .select .list ul {
+  padding-right: 10px;
+}
+.coudan .coudan-header-content .popsearch .select .list ul li {
+  border-top: none;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 0px;
+}
+.coudan .coudan-header-content .popsearch .select .list ul li a {
+  border: 1px solid #eaeaea;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 4px;
+  font-size: 12px;
+}
+.coudan .coudan-body-content {
+  width: 100%;
+  padding: 6px;
+  background: #f1f1f1;
+}
+.coudan .coudan-body-content ul {
+  padding-left: 0;
+}
+.coudan .coudan-body-content ul li {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+.coudan .coudan-body-content ul li a {
+  width: 100%;
+  background: #fff;
+  display: block;
+}
+.coudan .coudan-body-content ul li a img {
+  width: 100%;
+}
+.coudan .coudan-body-content ul li a p {
+  color: #000;
+  font-size: 12px;
+  margin-bottom: 0px;
+  margin-top: 5px;
+  padding: 0px 5px 0px;
+  height: 14px;
+  overflow: hidden;
+}
+.coudan .coudan-body-content ul li a .money {
+  font-size: 20px;
+  color: #ff8b00;
+  margin: 6px 0;
+  height: 37px;
+}
+.coudan footer {
+  background: #efefef;
+}
+.coudan footer .menu ul {
+  padding: 0;
+  margin: 0;
+}
+.coudan footer .menu li {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  float: left;
+  width: 33.3%;
+}
+.coudan footer .menu li:nth-of-type(2) {
+  border: 1px solid #c4c4c4;
+}
+.coudan footer .menu li a {
+  display: block;
+  color: #000;
+}
+.coudan footer .menu li img {
+  width: 15px;
+  display: inline-block;
+  margin-bottom: 6px;
+  margin-right: 3px;
+}
+.coudan footer .xinxi {
+  font-size: 13px;
+  text-align: center;
+  padding: 15px 0;
+}
+.coudan footer .xinxi p {
+  margin: 0;
+  color: #747474;
+}
+.coudan footer .xinxi p a:nth-of-type(1) {
+  color: red;
+}
+.coudan footer .xinxi p a:nth-of-type(2) {
+  color: #000;
+}

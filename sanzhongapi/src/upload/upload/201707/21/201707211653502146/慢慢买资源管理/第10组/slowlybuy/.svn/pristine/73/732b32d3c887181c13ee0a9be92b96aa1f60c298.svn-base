@@ -1,0 +1,54 @@
+
+$.ajax({
+    url: config.getUrl("api/getgsshop"),
+    success: function (info) {
+        // console.log(info);
+        var htmlStr = template("shop_tpl", info);
+        $(".shop_menu").html(htmlStr);
+    }
+})
+
+$.ajax({
+    url: config.getUrl("api/getgsshoparea"),
+    success: function (info) {
+        // console.log(info);
+        var htmlStr = template("area_tpl", info);
+        $(".area_menu").html(htmlStr);
+    }
+})
+
+//首次进来页面渲染模板
+getProduct(0, 0);
+
+$(".shop_menu").on("click", "li", function () {
+    $(".shop_menu span").removeClass("glyphicon-ok");
+    $(this).children().children().addClass("glyphicon-ok");
+    $(this).attr("data-shopid");
+    
+
+})
+
+$(".area_menu").on("click", "li", function () {
+    $(".area_menu span").removeClass("glyphicon-ok");
+    $(this).children().children().addClass("glyphicon-ok");
+
+
+})
+
+//默认渲染商品列表
+function getProduct(shopId, areaId) {
+    $.ajax({
+        url: config.getUrl("api/getgsproduct"),
+        data: {
+            shopid:shopId,
+            areaid:areaId
+        },
+        success:function (info) {
+            console.log(info);
+            var htmlStr=template("product_tpl",info);
+            $(".productList").html(htmlStr);
+        }
+    })
+}
+
+

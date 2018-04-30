@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>产品分类 - 慢慢买比价网</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/category/category.css">
+    <link rel="stylesheet" href="../../css/head.css">
+</head>
+
+<body>
+    <div class="view">
+        <!--头部login  -->
+        <div class="head">
+            <nav class="navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header pull-left">
+                        <a class="navbar-brand" href="#"><img src="../../images/header_logo.png" alt=""></a>
+                    </div>
+                    <div class="download pull-right">
+                        <a href="#"> <img src="../../images/header_app.png"></a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+        <!--顶部导航nav  -->
+        <div class="zyzsreach">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">搜索</span>
+            </div>
+        </div>
+        <!--主体内容main  -->
+        <main>
+            <div class="category">
+                <!--渲染页面模板  -->
+            </div>
+        </main>
+        <!--尾部区域-->
+        <div class="footer ">
+            <div class="footertop row">
+                <a href="#" class='col-xs-4'>登陆</a>
+                <a href="#" class='col-xs-4'>注册</a>
+                <a href="#" class='col-xs-4'>回到顶部</a>
+            </div>
+            <div class="footercenter">
+                <a href="#">手机App下载</a>
+                <a href="#">慢慢买手机版</a>
+                <a href="#">--掌上比价平台</a>
+                <p> m.manmanmai.com</p>
+            </div>
+        </div>
+
+        <script src="../../libs/jquery/jquery.js"></script>
+        <script src="../../libs/bootstrap/js/bootstrap.js"></script>
+        <script src="../../libs/artTemplate/template.js"></script>
+        <script src="../../js/utils.js"></script>
+        <script src="../../js/category/category.js"></script>
+
+        <!--渲染大标题  -->
+        <script type="text/template" id="categoryTpl">
+            <ul>
+                {{each result as v i}}
+                <li data-tid="{{v.titleId}}">
+                    <div class="title" data-id="{{v._id}}">
+                        <a href="javascript:;">{{v.title}}</a>
+                        <i class="glyphicon glyphicon-menu-down"></i>
+                    </div>
+                    <div class='hide ct_info'>
+                        <!--渲染模板  -->
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+
+        <!--渲染每个大标题下的内容信息  -->
+        <script type="text/template" id="infoTpl">
+            <ul class="row">
+                {{each result as v i}}
+                <li class="col-xs-4" data-categoryId={{v.categoryId}}>
+                    <a href="./ductlist.html?categoryid={{v.categoryId}}">{{v.category}}</a>
+                </li>
+                {{/each}}
+            </ul>
+        </script>
+</body>
+
+</html>

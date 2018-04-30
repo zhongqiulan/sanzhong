@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="view">
+     <!--路径导航-->
+    <div class="bz_nav">
+      <a href="../../index.html"></a>
+      >
+      <a href="/"></a>
+    </div>
+    <!--路径导航-->
+
+    
+    <!--品牌排行 star-->
+    <div class="bz_brans">
+      <div class="bz_title"></div>
+      <div class="bz_paihan"></div>
+    </div>
+    <!--品牌排行 end-->
+
+
+  </div>
+</body>
+
+</html>

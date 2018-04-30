@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/common/base.css">
+    <link rel="stylesheet" href="/css/common/style.css">
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/getmoneyctrl/product.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <div class="back">
+            <a href="javascript:;" class="glyphicon glyphicon-menu-left" aria-hidden="true"></a>
+        </div>
+        <div class="title">
+            <h2>国内折扣</h2>
+        </div>
+        <div class="app">
+            <img src="/imgs/header_app.png" alt="">
+        </div>
+    </header>
+    <main>
+        
+    </main>
+    <div class="bottom">
+        <ul class="clearfix">
+            <li><a href="javascript:;">登录</a></li>
+            <li class="middle"><a href="javascript:;">注册</a></li>
+            <li><a href="javascript:;" class="top"><span class="glyphicon glyphicon-arrow-up"> </span>返回顶部</a></li>
+        </ul>
+        <div>
+            <p>
+                <a href="javascript:;">手机APP下载</a>&nbsp;
+                <a href="javascript:;"> 慢慢买手机版</a>
+                 -- 掌上比价平台
+            </p>
+            <p>
+                m.manmanbuy.com 
+            </p>
+        </div>
+    </div>
+    <div class="fix">
+        <div class="comment pull-left">
+            <a href="javascript:;">
+                <span>朋</span>
+                <span>评论</span>
+            </a>
+        </div>
+        <div class="buy pull-right">
+            <a href="javascript:;">
+            <span></span>
+            <span>前往购买</span>
+
+            </a>
+
+        </div>
+    </div>
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="/js/config/config.js"></script>
+    <script src="/libs/artTemplate/template.js"></script>
+    <script src="/js/getmoneyctrl/product.js"></script>
+    <script type="text/template" id="product_tpl">
+        <div class="contents">
+            <h4>{{productName}}</h4>
+            <span class="productPinkage">{{productPinkage}}</span>
+            <div class="from">
+                <a href="javascript:;">{{productFrom}}</a>
+                <span class="productTime">{{productTime}}</span>
+                <apan class="productTips">$nbsp;{{productTips}}</apan>
+            </div>
+            <div class="info">
+                <div class="imgsm">
+                    {{#productImgSm}}
+                </div>
+                <p>{{productInfo}}
+                </p>
+                <p>{{productInfo1}}
+                </p>
+                <p>{{productInfo2}}
+                </p>
+                <div class="imglg">
+                    {{#productImgLg}}
+                    {{#productImg2}}
+                </div>
+            </div>
+            <center>
+                {{if productCity}} {{#productCity}} {{/if}}
+            </center>
+            <button><span class="glyphicon glyphicon-shopping-cart"></span>前往购买</button>
+             {{#productComment}}
+
+        <div class="last-page">
+            <span>已经是最后一页！</span>
+        </div>
+        <div class="link">
+            <a href="javascript:;">首页</a> &nbsp;>&nbsp;
+            <a href="javascript:;">省钱控</a> &nbsp;>&nbsp;
+            <a href="javascript:;" >{{productName}}</a>
+        </div>
+    </script>
+</body>
+
+</html>

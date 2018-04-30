@@ -1,0 +1,56 @@
+
+$.ajax({
+    url:'http://139.199.192.48:9090/api/getindexmenu',
+    
+    type:'GET',
+    dataType:'JSON',
+    success:function(info){
+        console.log(info.result);
+        
+        var menuHtml = template('menu_tpl',info)
+        $('.menu').html(menuHtml);
+
+
+        //  更多菜单
+        var sin=$('.single');
+        var chesin =[];
+        for (var i = 0; i < sin.length; i++) {
+           if(i>7){
+               chesin.push(sin[i]);
+               sin[i].style.display='none';
+           }
+            
+        }
+        
+        $(sin[7]).on('click',function () {
+             for (var i = 0; i < chesin.length; i++){
+                if(chesin[i].style.display=='block'){
+                    chesin[i].style.display='none'
+                }else{ 
+                    chesin[i].style.display='block'
+                } 
+            }
+            return false;
+        })
+       
+    }
+});
+
+
+$.ajax({
+    
+    url:'http://139.199.192.48:9090/api/getmoneyctrl',
+    
+    type:'GET',
+    dataType:'JSON',
+    success:function(info){
+        // console.log(info);
+        
+        var recomHtml = template('recom_tpl',info);
+        $('#recomUl').html(recomHtml);
+    }
+})
+
+$(".up,.top").click(function () {
+    $("html,body").animate({ scrollTop: 0 }, 500);
+});

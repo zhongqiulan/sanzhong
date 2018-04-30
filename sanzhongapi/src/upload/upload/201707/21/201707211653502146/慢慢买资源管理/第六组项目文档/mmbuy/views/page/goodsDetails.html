@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <?php include '/views/common/css.html' ?>
+    <link rel="stylesheet" href="/views/public/css/goods_list.css">
+    <link rel="stylesheet" href="/views/public/css/goods_details.css">
+    <link rel="stylesheet" href="/views/public/css/category.css">
+   
+</head>
+
+<body>
+    <div class="view">
+        <div class="container-fluid">
+
+
+            <?php include '/views/common/head.html' ?>
+            <!--导航路径-->
+            <div class="goods_navs">
+
+            </div>
+
+
+
+            <!--商品详情-->
+            <div class="goods_details container">
+
+
+            </div>
+            <div class="evaluate container">
+                <h4>网友评价</h4>
+                <div class="content">
+                    <!--<div class="title">
+                        <div>
+                            <span class="comName pull-left" >jfdsajfl</span>
+                            <span class="comTime pull-right">2016/10/1</span>
+                        </div>
+                        
+                        <div class="comFrom pull-right">京东商城</div>
+                    </div>
+                    
+                    <p>
+                        局辅导机构懒得看金坷垃九分裤大家啊理
+                        发过节期间if举哀放大镜来访登记奥利给几点啦房价大家当降低；经发局 合肥价格和恐惧感和偶去交警奇偶去急功近利发卡机
+                    </p>-->
+                </div>
+            </div>
+
+            <?php include '/views/common/foot.html' ?>
+        </div>
+    </div>
+
+    <?php include '/views/common/script.html' ?>
+    <script type="text/template" id="goods_navs_tpl">
+        <ol class="breadcrumb">
+            <li><a href="http://www.mmbuy.com">首页 ></a></li>
+            <li><a href="/views/page/goods_list?categoryId={{result[0].categoryId}}&category={{category}}">{{category}} ></a></li>
+            <li class="active">{{goods_name}} ></li>
+            <li class="pull-right"><button type="button" class="btn btn-default btn-lg active">筛选</button></li>
+        </ol>
+    </script>
+    <script type="text/template" id="goods_details_tpl">
+        {{each result as v i}}
+        <h4>{{v.productName}}</h4>
+        {{#v.productImg}}
+        <div class="row">
+            <div class="col-xs-4">比价购买</div>
+            <div class="col-xs-4">产品参数</div>
+            <div class="col-xs-4">评价(2322)</div>
+        </div>
+
+        {{#v.bjShop}}
+        <div class="matters">
+            *实际价格以各网站列出的实时售价为准，我们提供的价格可能有数小时至数日的延迟。
+        </div>
+        {{/each}}
+    </script>
+    <script type="text/template" id="com_tpl">
+        {{each result as v i}}
+       
+            <div class="title">
+                <div>
+                    <span class="comName pull-left">{{v.comName}}</span>
+                    <span class="comTime pull-right">{{v.comTime}}</span>
+                </div>
+
+                <div class="comFrom pull-right">{{v.comFrom}}</div>
+            </div>
+
+            <p>
+               {{v.comContent}}
+            </p>
+        
+        {{/each}}
+    </script>
+    <script>
+        require(['js/goodsDetails']);
+    </script>
+</body>
+
+</html>

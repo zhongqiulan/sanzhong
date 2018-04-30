@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="../css/saveMoney/bootstrap.3.3.7/content/Content/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/saveMoney/base.css"/>
+    <link rel="stylesheet" href="../css/saveMoney/rebate.css"/>
+</head>
+<body>
+<!--头部-->
+
+
+
+    <div class="head">
+        <div class="back">
+            <a href="saveMoney.html">
+                <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+            </a>
+        </div>
+        <h2>国内折扣</h2>
+        <div class="navbar-right app-donwload pull-right">
+            <img src="../images/header_app.png" alt="">
+        </div>
+    </div>
+
+    <!-- 商品详情-->
+        <div class="main">
+            <!--<div class="goods clearfix">-->
+                <!--<div class="goods_title">-->
+                    <!--移动端凑单品：海天 野味 生抽 1.28L-->
+                <!--</div>-->
+                <!--<h4>12.9元包邮（27.9-15）</h4>-->
+                <!--<div class="info">-->
+                    <!--<span class="mall">天猫旗舰店</span>-->
+                    <!--<span class="addtime" style="margin-right: 4px;">07-20 14:05</span>  <span class="author">发酵的面包 / 慢慢买</span>-->
+                <!--</div>-->
+                <!--<img class="min" src="small.jig" alt=""/>-->
+                <!--<div class="conn">-->
+                    <!--<p>包含2碗2盘2勺子，饭碗尺寸：4.5英寸口径11.5cm，高约5.7cm；盘子尺寸：7英寸直径约17.6cm，高约3.2cm；采用优质骨瓷烧制，釉面与花纹装饰融为一体。绿色环保，健康无毒。</p>-->
+                    <!--<p><br></p>-->
+                    <!--<p>天猫君鑫旗舰店售价27.9元，券后12.9元包邮，价格不贵，喜欢的可入。</p>-->
+                    <!--<p><br></p>-->
+                    <!--<p><br></p>-->
+                    <!--<p><img class="big" src="big.jpg" alt=""/></p>-->
+                <!--</div>-->
+            <!--</div>-->
+        </div>
+
+        <!-- 前往购买-->
+        <div class="golink">
+    <a href="">前往购买</a>
+</div>
+        <!--评论-->
+        <div class="comment">
+    <div class="tit">发表评论</div>
+    <div class="reply">
+        <div class="form">
+            <textarea name="" id="" cols="30" rows="10"></textarea>
+            <div class="ctrl">发表评论</div>
+        </div>
+    </div>
+    <div class="tit">热门评论</div>
+    <div class="tit">最新评论</div>
+</div>
+
+
+    <!-- 底部-->
+    <div class="footer">
+        <div class="footer_login">
+            <a href="#">登录</a>
+            <a href="reg.aspx">注册</a>
+            <a class="back_top" href="#"><img src="../images/top.jpg" width="15" height="15">返回顶部</a>
+        </div>
+        <div class="footer_end">
+            <p>
+                <a href="#" onclick="trackEvent('footer头部下载');" style="color: Red;">手机APP下载</a>
+                <a href="http://m.manmanbuy.com">慢慢买手机版</a>
+                -- 掌上比价平台
+            </p>
+            <p>
+                m.manmanbuy.com
+            </p>
+        </div>
+    </div>
+
+    <!-- 模板-->
+    <script type="text/template" id="goods_tpl">
+        {{each result as v i}}
+
+        <div class="main" name="productId" data-id="{{v.productId}}">
+            <div class="goods clearfix">
+                <div class="goods_title" name="productName">{{v.productName}}</div>
+                <h4 name="productPinkage">{{v.productPinkage}}</h4>
+                <div class="info">
+                    <span class="mall" name="productFrom">{{v.productFrom}}</span>
+                    <span class="addtime" style="margin-right: 4px;" name="productTime">{{v.productTime}}</span>
+                    <span class="author" name="productTips">{{v.productTips}}</span>
+                </div>
+                {{#v.productImgSm}}"
+                <div class="conn">
+                    <p name="productInfo">{{v.productInfo}}</p>
+                    <p><br></p>
+                    <p name="productInfo1">{{v.productInfo1}}</p>
+                    <p><br></p>
+                    <p><br></p>
+                    {{#v.productImgLg}}
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+    </script>
+
+    <script src='../js/libs/jquery-1.12.4.js'></script>
+    <script src='../js/libs/template.js'></script>
+    <script src="../js/saveMoney/jquery.form.js"></script>
+    <script src="../js/saveMoney/utils.js"></script>
+    <script src="../js/saveMoney/rebate.js"></script>
+</body>
+</html>

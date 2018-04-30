@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>商城导航</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sitenav.css">
+</head>
+
+<body>
+    <div class="all">
+        <!-- 头部 -->
+        <header id="tops">
+            <h1>
+                <span class="get_back glyphicon glyphicon-chevron-left"></span> 商城导航
+                <span class="dowapp">
+                <img src="../images/header_app.png" alt="">
+            </span>
+            </h1>
+        </header>
+        <!-- 内容 -->
+        <div class="main">
+            <ul class="navs clearfix">
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img src="http://sf.manmanbuy.com/images/sitelogo/1.png" alt="">
+                        <span>京东商城</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <!-- 页面位置 -->
+        <div class="fertop"><span>首页</span>&nbsp>&nbsp<span>超值推荐</span>&nbsp>&nbsp<span>商城导航</span></div>
+        <!-- 底部 -->
+        <footer>
+
+            <p></p>
+            <div class="logins">
+                <button>登录</button>
+                <button>注册</button>
+                <button><a href="#tops"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp返回顶部</a></button>
+            </div>
+            <div class="brief">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span>--&nbsp掌上比价平台</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+        <a href="javascript:;" class="fix">
+            <img src="https://img.alicdn.com/imgextra/i2/379516416/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png">
+        </a>
+    </div>
+
+    <script src="../libs/jquery/jquery.min.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/sitenav.js"></script>
+    <script id="href_nav" type="text/html">
+    {{each result as v i}}
+        <li name="{{v.navId}}">
+            <a href="{{v.navHref}}">
+                <img src="{{v.navImg}}" alt="">
+                <span>{{v.navTitle}}</span>
+            </a>
+        </li>
+    {{/each}}
+    </script>
+
+</body>
+
+</html>

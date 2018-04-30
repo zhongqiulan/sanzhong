@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>国内折扣</title>
+</head>
+<link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+<link rel="stylesheet" href="../../css/hour/hour-base.css">
+<link rel="stylesheet" href="../../css/hour/hour-main.css">
+<link rel="shortcut icon" type="image/x-icon" href="../../images/favicon.ico">
+
+<body>
+    <div class="layout">
+        <!--网页头部区域-->
+        <header id="header" class="clearfix">
+            <a href="./hour-index.html">
+                <div class="icon-back glyphicon glyphicon-menu-left"></div>
+            </a>
+            <h1>国内折扣</h1>
+            <div class="icon-app">
+                <a href="#"><img src="../../images/header_app.png" alt=""></a>
+            </div>
+        </header>
+        <!--折扣商品详情  -->
+        <div class="container">
+            <div class="content-top">
+                <!-- <h3 class="title">
+                    双11预售：Aprica 阿普丽佳 魔捷轻风 轻量便携婴儿伞车 SK92
+                </h3>
+                <h4>899元包邮（100元定金）</h4>
+                <div class="info">
+                    <span class="mall">天猫商城</span>
+                    <span class="addtime" style="margin-right: 4px;">10-22 13:18</span>
+                    <span class="author">zzy19991015/ 慢慢买</span>
+                </div>
+                <div class="content clearfix">
+                    <div class="picwrap">
+                        <img src="./images/list1.jpg" alt="">
+                    </div>
+                    <div class="conn">                       
+                        <p>单手即可自由收放~天猫精选目前预售价999元，需要预付100元定金，可抵用200元，双11再付799元即可， 新低价格，需要的可以关注。↵Aprica是来自日本的著名母婴品牌，因为轻便、舒适的婴儿推车而受到广大麻麻的欢迎和推崇！这款magical
+                            air 超轻婴儿推车是2015年上市的新款，是单向半敞型推车，主打超轻便，净重仅2.8KG，单手即可自由收放，是力量不足的妈妈们的福音；前置开放式扶手，座位空间宽敞，坐垫可拆洗，顶端带有遮阳伞补；3D避震车轮设计，缓震性能良好，遮阳伞蓬和杂物篮也都齐全。适合6~36个月的宝宝。
+                        </p>                        
+                    </div>
+                </div>
+                <div class="golink clearfix">
+                    <a href="javascript:;"><i class="icon-gobuy"></i>前往购买</a></div>
+                <div class="cu-content-pl ui-border-t">
+                    <div class="tit">发表评论</div>
+                    <div class="reply">
+                        <div class="form">
+                            <textarea rows="3"></textarea>
+                            <div class="ctrl">
+                                <input type="submit" value="发表评论" class="tjdp" />
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tit" id="newcomment">
+                        最新评论</div>
+                </div> -->
+            </div>
+            <div class="nav" style="margin-top:20px;"><a href="../../index.html">首页</a>&nbsp;&gt;&nbsp; 超值推荐
+                <div class="appbanner  appbannerc" id="Div1">
+                    <div class="applogo"><img src="../../images/logo.png" /></div>
+                    <div class="tit">
+                        慢慢买APP
+                        <div class="subtit">
+                            <p>专注全网比价，每一次购物都在为你省钱！</p>
+
+                        </div>
+                    </div>
+                    <div class="btn">
+                        <a href="http://m.manmanbuy.com/?o=download" class="a-install">立即打开</a>
+                    </div>
+                </div>
+            </div>
+
+            <div id="footer">
+                <div class="foot_top">
+                    <a href="javascript:;">登录</a>
+                    <a href="javascript:;">注册</a>
+                    <a href="#" style="width: 40%; border: 0;"><img src="../../images/top.jpg" width="15" height="15" />返回顶部</a>
+                </div>
+                <div class="foot_bottom">
+                    <p>
+                        <a href="http://m.manmanbuy.com/?o=download" style="color: Red;">手机APP下载</a> <a href="http://m.manmanbuy.com">
+                    慢慢买手机版</a> -- 掌上比价平台</p>
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </div>
+        </div>
+        <script type="text/template" id="main-tpl">
+            <h3 class="title">
+                {{productName}}
+            </h3>
+            <h4>{{productPrice}}</h4>
+            <div class="info">
+                <span class="mall">{{productFrom}}</span>
+                <span class="addtime" style="margin-right: 4px;">{{productTime}}</span>
+                <span class="author">{{productTips}}</span>
+            </div>
+            <div class="content">
+                <div class="picwrap">
+                    {{#productImg}}
+                </div>
+                <div class="conn">
+                    <!--内容开始-->
+                    <p>{{productInfo}}</p>
+                    <!--内容结束-->
+                </div>
+            </div>
+            <div class="golink clearfix">
+                <a href="javascript:;"><i class="icon-gobuy"></i>前往购买</a></div>
+            <div class="cu-content-pl ui-border-t">
+                <div class="tit">发表评论</div>
+                <div class="reply">
+                    <div class="form">
+                        <textarea rows="3"></textarea>
+                        <div class="ctrl">
+                            <input type="submit" value="发表评论" class="tjdp" />
+                        </div>
+                    </div>
+                </div>
+                <div class="tit" id="newcomment">
+                    最新评论</div>
+            </div>
+        </script>
+        <script src="../../libs/jquery/jquery.js"></script>
+        <script src="../../libs/artTemplate/template.js"></script>
+        <script src="../../libs/bootstrap/js/bootstrap.js"></script>
+        <script src="../../js/hour/hour-main.js"></script>
+        <script type="text/javascript">
+            document.write('<div style="position:fixed;right:0;bottom:30px;z-index:999"><a href="http://m.manmanbuy.com/?o=download"><img src="https://img.alicdn.com/imgextra/i2/379516416/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" width="60"></a></div>');
+        </script>
+</body>
+
+</html>

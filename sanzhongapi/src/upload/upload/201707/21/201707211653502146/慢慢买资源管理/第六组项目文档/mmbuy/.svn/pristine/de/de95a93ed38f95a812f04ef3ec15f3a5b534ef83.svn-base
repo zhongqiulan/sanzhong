@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>凑单品</title>
+  <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../public/css/getgsshop.css">
+</head>
+
+<body>
+  <!--头部-->
+  <div class="gsshop-header" id="gsshop_header">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header pull-left">
+          <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        </div>
+
+        <p class="text-center gsshopHead">凑单品</p>
+      </div>
+      <!-- /.container-fluid -->
+    </nav>
+  </div>
+
+
+  <!-- 导航栏部分 -->
+
+  <div class="gsshopnav">
+    <!-- 商品导航部分 -->
+    <div class="gsshopnav-main">
+      <!--导航栏-->
+      <div class="gsshopnav-filter">
+        <!-- 左边 -->
+        <div class="row clearfix left-tab">
+          <div class=" active col-md-4 col-xs-4 .col-sm-4 col-lg-4"><a href="javascript:;">一号店<i></i></a></div>
+          <div class="col-md-4 col-xs-4 .col-sm-4 col-lg-4"><a href="javascript:;">华北<i></i></a></div>
+          <div class="col-md-4 col-xs-4 .col-sm-4 col-lg-4"><a href="javascript:;">全部价格<i></i></a></div>
+        </div>
+        <!-- 右边搜索按钮 -->
+        <div class="right-search"> <i class="icon-search"></i></div>
+      </div>
+      
+
+      <!--各种下拉-->
+      <!-- 商店 -->
+      <div class="nav-sort">
+        <ul>
+          <li><a href="javascript:;">京东</a></li>
+          <li class="active"><a href="javascript:;">一号店</a></li>
+          <li><a href="javascript:;">天猫超市</a></li>
+        </ul>
+      </div>
+
+      <!-- 地区 -->
+      <div class="nav-place">
+        <ul>
+          <li class="active"><a href="javascript:;">华北（北京、山西等）</a></li>
+          <li><a href="javascript:;">华东（山东、浙江等）</a></li>
+          <li><a href="javascript:;">华南（广东、广西等）</a></li>
+          <li><a href="javascript:;">华中（湖北、河南等）</a></li>
+          <li><a href="javascript:;">西南（四川、云南等）</a></li>
+          <li><a href="javascript:;">东北（辽宁、吉林等）</a></li>
+          <li><a href="javascript:;">西北（宁夏、新疆等）</a></li>
+        </ul>
+      </div>
+
+      <!-- 价格 -->
+      <div class="nav-cat popbox">
+        <ul>
+          <li class="active"><a href="javascript:;">全部价格</a></li>
+          <li><a href="javascript:;">1-3元</a></li>
+          <li><a href="javascript:;">3-5元</a></li>
+          <li><a href="javascript:;">5-10元</a></li>
+          <li><a href="javascript:;">10-15元</a></li>
+          <li><a href="javascript:;">15元以上</a></li>
+        </ul>
+      </div>
+
+      <!-- 搜索 -->
+      <div class="popsearch border-bottom-img popbox" style="display: none;">
+        <div class="formsch clearfix">
+          <div class="txt">
+            <input type="search" value="" oninput="delInput();" class="border-img" placeholder="搜索您想要的凑单品" style="width: 538px;">
+            <a href="javascript:;" class="a-delput"></a>
+          </div>
+          <div class="smt">
+            <input type="button" value="搜索" onclick="search()">
+          </div>
+        </div>
+        <div class="select ui-border-b">
+          <div class="t">排序</div>
+          <div class="c">
+            <dl class="clearfix">
+              <dd><a href="javascript:GetRequest('sort', 0);">销量</a></dd>
+              <dd class="on"><a href="javascript:sortjavascript:GetRequest('sort', 1);">价格↑</a></dd>
+              <dd><a href="javascript:javascript:GetRequest('sort', 2);">价格↓</a></dd>
+            </dl>
+          </div>
+        </div>
+        <div class="select">
+          <div class="t">分类</div>
+          <div class="c">
+            <dl class="clearfix">
+              <dd class="on"><a href="javascript:;">全部</a></dd>
+              <dd><a href="javascript:;">家居</a></dd>
+              <dd><a href="javascript:;">数码</a></dd>
+              <dd><a href="javascript:;">办公</a></dd>
+              <dd><a href="javascript:;">个护</a></dd>
+              <dd><a href="javascript:;">食品</a></dd>
+              <dd><a href="javascript:;">母婴</a></dd>
+              <dd><a href="javascript:;">服饰</a></dd>
+            </dl>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 商品展示部分 -->
+    <div class="gsshopnav-show" id="gsshopnav_show">
+      <ul class="clearfix">
+        <li class="col-md-6 col-xs-6 .col-sm-6 col-lg-6"><a href="javascript:;">
+            <img src="../../public/image/init-imgs/getsshop01.jpg" alt="">
+            <p class="show-title">sean 矿泉水拉拉嘻嘻耶哈哈哈嘿嘿啊啊哦</p>
+            <p><span>￥</span><span class="price">0.01</span></p>
+          </a>
+        </li>
+
+
+        <li class="col-md-6 col-xs-6 .col-sm-6 col-lg-6"><a href="javascript:;">
+            <img src="../../public/image/init-imgs/getsshop01.jpg" alt="">
+            <p class="show-title">sean 矿泉水拉拉嘻嘻耶哈哈哈嘿嘿啊啊哦</p>
+            <p><span>￥</span><span class="price">0.01</span></p>
+          </a>
+        </li>
+
+
+        <li class="col-md-6 col-xs-6 .col-sm-6 col-lg-6"><a href="javascript:;">
+            <img src="../../public/image/init-imgs/getsshop01.jpg" alt="">
+            <p class="show-title">sean 矿泉水拉拉嘻嘻耶哈哈哈嘿嘿啊啊哦</p>
+            <p><span>￥</span><span class="price">0.01</span></p>
+          </a>
+        </li>
+
+
+        <li class="col-md-6 col-xs-6 .col-sm-6 col-lg-6"><a href="javascript:;">
+            <img src="../../public/image/init-imgs/getsshop01.jpg" alt="">
+            <p class="show-title">sean 矿泉水拉拉嘻嘻耶哈哈哈嘿嘿啊啊哦</p>
+            <p><span>￥</span><span class="price">0.01</span></p>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+  </div>
+</body>
+<script src="../../public/assets/jquery/jquery.min.js"></script>
+<script src="../../public/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../public/assets/artTemplate/template.js"></script>
+<!--<script src="../../public/js/getgsshop.js"></script>-->
+
+</html>

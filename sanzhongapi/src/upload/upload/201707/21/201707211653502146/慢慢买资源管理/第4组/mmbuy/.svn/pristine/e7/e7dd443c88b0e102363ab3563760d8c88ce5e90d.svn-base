@@ -1,0 +1,123 @@
+head {
+    .navbar {
+        background-color: #ff841d;
+    }
+    .navbar .navbar-brand img {
+        width: 187px;
+    }
+    .app-donwload img {
+        height: 34px;
+        margin-top: 8px;
+    }
+    .header-logo {
+        width: 80%;
+    }
+}
+
+main {
+    background-color: #f2f2f2;
+    .link {
+        height: 36px;
+        line-height: 16px;
+        padding: 10px;
+        margin-top: 16px;
+        border-top: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        background: -webkit-gradient(linear, 0 0, 0 100%, from(#fff), to(#ebebeb));
+        a {
+            display: inline-block;
+            color: #5a5a5a;
+        }
+    }
+    h3 {
+        color: #8f5417;
+        height: 36px;
+        line-height: 36px;
+        margin: 0;
+        padding: 0 10px;
+        font-size: 14px;
+    }
+    .ten {
+        li {
+            height: 62px;
+            padding: 10px;
+            border-bottom: 1px solid #dfdfdf;
+            a {
+                display: block;
+                width: 100%;
+                padding-left: 30px;
+                position: relative;
+                p {
+                    color: #bbb;
+                    font-size: 14px;
+                    margin: 5px 0;
+                }
+                i {
+                    position: absolute;
+                    left: 0;
+                    width: 20px;
+                    height: 20px;
+                    background-color: #c9c9c9;
+                    color: #fff;
+                    font-size: 14px;
+                    text-align: center;
+                    line-height: 20px;
+                }
+                i.top1 {
+                    background-color: #f00;
+                }
+                i.top2 {
+                    background-color: #ff9314;
+                }
+                i.top3 {
+                    background-color: #8adf5b;
+                }
+                em {
+                    font-size: 20px;
+                    position: absolute;
+                    right: 1px;
+                    top: 6px;
+                    color: #bbb;
+                }
+            }
+        }
+    }
+    .sale {
+        li {
+            .media {
+                padding: 14px 8px;
+                border-bottom: 1px solid #ccc;
+                .media-left {
+                    width: 100px;
+                    img {
+                        width: 100px;
+                    }
+                }
+                .media-body {
+                    h4 {
+                        height: 40px;
+                        font-size: 15px;
+                        line-height: 20px;
+                        span {
+                            color: #ff841d;
+                        }
+                    }
+                    .price {
+                        color: #f00;
+                        font-size: 20px;
+                        margin: 2px 0;
+                    }
+                    .info {
+                        color: #a1a1a1;
+                        font-size: 12px;
+                        margin: 0;
+                        span {
+                            font-size: 14px;
+                            vertical-align: middle;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

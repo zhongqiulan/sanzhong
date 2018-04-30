@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详情页</title>
+    <link rel='stylesheet' type='text/css' href='../../lib/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='../../css/Compare-price-search/details.css'>
+</head>
+
+<body>
+    <div class="details">
+        <!--顶部logo-->
+        <div class="head_logo clearfix">
+            <div class="logo pull-left">
+                <a href='../../index.html'>
+                <img src="../../images/header_logo.png" alt="logo">
+            </a>
+
+            </div>
+            <div class="appdown  pull-right">
+                <a href='javascript:;'>
+                <img src="../../images/header_app.png" alt="app" class="pull-right" >
+           </a>
+            </div>
+        </div>
+        <!--搜索框-->
+        <div class="seek ">
+            <div class="searcText">
+                <input type="text" placeholder='你输入你想比价的商品'>
+            </div>
+            <div class="searcBtn">
+                <input type="submit" value="搜索">
+            </div>
+
+        </div>
+
+        <div class="bigcontainer">
+            <!--导航-->
+            <!--<div class="list_nav">
+                <div class="navleft pull-left">
+                    <a href="../../index.html">首页</a>
+                    <span class="">&gt</span>
+                    <a href="./list.html">电视</a>
+                    <span class="">&gt</span>
+                    <a href="javascript:;">乐视TV</a>
+                </div>
+            </div>-->
+            <!--产品图-->
+            <!--<div class="picture_info">
+                <div class="pic">
+                    <img src="../../images/pic_1.jpg">
+                </div>
+                <h3>夏普(SHARP) LCD-70SU665A 70英寸 4K超高清智能液晶电视</h3>
+
+            </div>-->
+        </div>
+        <!--评价-->
+        <div class="comment">
+            <!--评价标签按钮-->
+            <div class="title">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs container-fluid" role="tablist">
+                    <li role="presentation" class="col-xs-4"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">比价购买</a></li>
+                    <li role="presentation" class="col-xs-4"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">产品参数  </a></li>
+                    <li role="presentation" class="active col-xs-4"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">优选评价</a></li>
+                </ul>
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane " id="home">比价购买</div>
+                    <div role="tabpanel" class="tab-pane" id="profile">产品参数</div>
+                    <div role="tabpanel" class="tab-pane active" id="messages">
+                        <!-- Nav tabs -->
+                        <ul class="nav nav-tabs container-fluid" role="tablist">
+                            <li role="presentation" class=" active col-xs-4"><a href="#home1" aria-controls="home1" role="tab" data-toggle="tab">全部</a></li>
+                            <li role="presentation" class="col-xs-4"><a href="#profile1" aria-controls="profile1" role="tab" data-toggle="tab">值得购买  </a></li>
+                            <li role="presentation" class=" col-xs-4"><a href="#messages1" aria-controls="messages1" role="tab" data-toggle="tab">不值得购买</a></li>
+                        </ul>
+                        <!-- Tab panes -->
+                        <div class="tab-content">
+                            <div role="tabpanel" class="tab-pane active" id="home1">
+                                <!--评价详情-->
+                                <div class="comment_box">
+                                    <!--<div class="comment_detail">
+                                        <div class="username clearfix">
+                                            <span class="pull-left">张三</span>
+                                            <span class="pull-right">2016/4/14</span>
+                                        </div>
+                                        <div class="buy clearfix">
+                                            <span class="pull-left">
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                        <i class="glyphicon glyphicon-star"></i>
+                                            </span>
+                                            <span class="pull-right">购买自:京东商城</span>
+                                        </div>
+                                        <div class="comment_details">
+                                            冷藏还行，冷冻还没用，制冷没问题，压缩机运作的时候有点噪音， 夜里安静时比较明显，但是可以接受，冷藏部分会有小水珠结冰。外观稍有磨损，没太多讲究，不影响使用就行
+                                        </div>
+                                        <div class="huifu">回复</div>
+                                    </div>-->
+
+                                </div>
+                                <!--分页-->
+                                <div class="fenye">
+                                    <div class="container-fluid">
+                                        <div class="col-xs-4">
+                                            <button class="prev">上一页</button>
+                                        </div>
+                                        <div class="col-xs-4 center">
+                                            <select name="" id="">
+                                            <option value=""></option> 
+                                        </select>
+                                        </div>
+                                        <div class="col-xs-4">
+                                            <button class="next">下一页</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div role="tabpanel" class="tab-pane" id="profile1">值得购买</div>
+                            <div role="tabpanel" class="tab-pane " id="messages1">不值得购买</div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--页脚-->
+    <footer>
+        <div class="login clearfix">
+            <ul>
+                <li><a href="javascrip:;">登录</a></li>
+                <li><a href="javascrip:;">注册</a></li>
+                <li class="top"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</li>
+            </ul>
+        </div>
+        <div class="app">
+            <p><a href="#">手机APP下载</a>慢慢买手机版--掌上比价平台</p>
+            <p>m.mammanbuy.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<script id="pic_tpl" type="text/template">
+
+    {{each result as v i}}
+    <div class="list_nav">
+        <div class="navleft pull-left">
+            <a href="../../index.html">首页</a>
+            <span class="">&gt</span>
+            <a href="./list.html?categoryid={{v.categoryId}}">电视</a>
+            <span class="">&gt</span>
+            <a href="javascript:;">{{brandName}}</a>
+        </div>
+    </div>
+    <div class="picture_info">
+        <div class="pic">
+            {{#v.productImg}}
+        </div>
+        <h3>{{v.productName}}</h3>
+        <div class="tableB">
+            {{#v.bjShop}}
+        </div>
+    </div>
+    {{/each}}
+</script>
+
+<script id="comment_tpl" type="text/template">
+    {{each result as v i}}
+    <div class="comment_detail">
+        <div class="username clearfix">
+            <span class="pull-left">{{v.comName}}</span>
+            <span class="pull-right">{{v.comTime}}</span>
+        </div>
+        <div class="buy clearfix">
+            <span class="pull-left">
+                <i class="glyphicon glyphicon-star"></i>
+                <i class="glyphicon glyphicon-star"></i>
+                <i class="glyphicon glyphicon-star"></i>
+                <i class="glyphicon glyphicon-star"></i>
+            </span>
+            <span class="pull-right">{{v.comFrom}}</span>
+        </div>
+        <div class="comment_details">
+            {{v.comContent}}
+        </div>
+        <div class="huifu">回复</div>
+    </div>
+    {{/each}}
+</script>
+<script src="../../lib/jquery/jquery.js"></script>
+<script src='../../lib/template/template.js'></script>
+<script src='../../lib/bootstrap/js/bootstrap.js'></script>
+<script src="../../js/Compare-price-search/geturl.js"></script>
+<script src='../../js/Compare-price-search/details.js'></script>

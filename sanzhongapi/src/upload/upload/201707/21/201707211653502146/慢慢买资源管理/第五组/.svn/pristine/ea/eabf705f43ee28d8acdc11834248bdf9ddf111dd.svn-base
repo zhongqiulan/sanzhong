@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/公共的.css">
+    <link rel='stylesheet' href='../css/zc_product_info.css' />
+</head>
+
+<body>
+    <!--头部-->
+    <div class="mmm_top">
+        <div class="top_conten">
+            <h4 class="header_title">国内折扣</h4>
+            <a href="./inlanddiscount.html">
+                <span class="top_img_left iconback glyphicon glyphicon-menu-left"></span>
+                <span class="top_img_right"></span>
+            </a>
+
+        </div>
+    </div>
+    <!--******************网页主体start****************-->
+    <div class="zhekou_content">
+        <!--内容模块-->
+
+    </div>
+
+    <!--loading部分-->
+    <div class="loading">
+        <img src="../images/inlandiscount/loading.gif" alt="">
+    </div>
+    </div>
+    <!--******************网页主体end****************-->
+
+    <!--搜索框-->
+    <div class="mmm_search clearfix">
+        <div class="mmm_conten">
+            <span>
+            <input type="text" placeholder="请输入你想比较的商品">
+       </span>
+            <span>
+         <a href="javascript:;">按钮</a>
+       </span>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--底部-->
+    <div class="mmm_bottom clearfix">
+        <ul>
+            <li></li>
+            <li class="clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a>
+            </li>
+            <li class="clearfix hehe">
+
+                <p>
+                    <span>手机APP下载</span>
+                    <span>慢慢买手机版--</span>
+                    <span>掌上比价平台</span>
+                </p>
+                <h4>m.manmanbuy.com</h4>
+            </li>
+        </ul>
+
+    </div>
+    <!--渲染当前页面-->
+    <script type="text/template" id="comment_info_tpl">
+        {{each result as v i}}
+        <div class="content clearfix">
+            <div class="pic">
+                {{#v.productImg}}
+            </div>
+            <div class="description">
+                <h3 class="title">{{v.productName}}</h3>
+                <p class="price">{{v.productPrice}}</p>
+                <p class="subtitle">
+                    <span>{{v.productFrom}}</span>
+                    <span>{{v.productTime}}</span>
+                    <!--<span>18:02</span>-->
+                    <span>{{v.productTips}}</span>
+                </p>
+                <p class="coupon">促销类型： [用券]
+                    <a href='javascript:;'>100.00元满减券</a>
+                </p>
+                <p> {{v.productInfo}}</p>
+                <!--<p> 人呢就是这么拿着白玫瑰想着红玫瑰 </p>
+                <p> ——穿衣打扮也是同理—— </p>
+                <p> 夏天的时候想穿时髦的大衣+长靴，冬天的时候想穿吊带连衣裙~ </p>
+                <p> 现某猫售价139元，领100元优惠券，实付39元包邮。 </p>
+                <p> 有卖家晒图 </p>-->
+            </div>
+
+        </div>
+
+        <!--前往购买-->
+        <div class="btnBuy">
+            <a href='http://www.jd.com'>前往购买</a>
+        </div>
+        <div class="bottom">
+            <div class="bottom_comment">
+                {{#v.productComment}}
+                <div class="newcomment">
+
+
+                </div>
+            </div>
+        </div>
+
+        {{/each}}
+    </script>
+    <!--追加评论的模板-->
+    <script type="text/template" id="submitInfo_tpl">
+        <div class="newcomment_content">
+            <div class="media">
+                <div class="media-left">
+                    <a href="#" class="imgWrap">
+                            <img class="media-object" src="../images/inlandiscount/person.gif" alt="...">
+                        </a>
+                </div>
+                <div class="media-body clearfix">
+                    <h4 class="media-heading">{{user_name}}</h4>
+                    <div class="time">{{time}}</div>
+                    <p class="user_comment">{{text}}</p>
+                </div>
+            </div>
+        </div>
+    </script>
+    <script src="../libs/jquery/jquery.min.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/inlandiscount/pruduct_info.js"></script>
+    <script>
+
+        
+    </script>
+
+
+</body>
+
+</html>

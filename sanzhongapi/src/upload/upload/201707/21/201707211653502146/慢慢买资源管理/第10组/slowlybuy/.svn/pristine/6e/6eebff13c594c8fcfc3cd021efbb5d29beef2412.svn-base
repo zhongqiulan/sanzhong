@@ -1,0 +1,41 @@
+a{
+    text-decoration: none;
+    color: #000;
+}
+.layout {
+  position: relative;
+  height: 100%;
+}
+.layout #header {
+  height: 100%;
+  text-align: center;
+  position: relative;
+  background-color: #ff841d;
+  color: #fff;
+}
+.layout header .icon-back {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+}
+
+.layout header .app-down {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  font-size: 20px;
+   padding-bottom: 5px;
+   height: 100%;
+}
+.layout header .app-down img{
+    width: 34px;
+    height: 34px;
+}
+.layout header h1 {
+  margin: 0;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  font-size: 20px;
+}

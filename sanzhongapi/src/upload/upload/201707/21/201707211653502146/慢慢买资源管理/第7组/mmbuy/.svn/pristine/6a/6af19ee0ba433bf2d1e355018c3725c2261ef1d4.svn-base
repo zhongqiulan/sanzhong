@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>国内折扣商品列表</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../less/inland_discount.css">
+</head>
+
+<body>
+    <div class="all">
+        <header id="tops">
+            <h1>
+                <span class="get_back glyphicon glyphicon-chevron-left"></span> 国内折扣
+                <span class="dowapp">
+                <img src="../images/header_app.png" alt="">
+            </span>
+            </h1>
+        </header>
+        <div class="main">
+            <div class="row">
+
+                <div class="col-xs-6">
+                    <div class="thumbnail">
+                        <img src="../images/ic_bcj.png" alt="...">
+                        <div class="caption">
+                            <h3>黄国粮业 水磨糯米粉 1Kg*2包</h3>
+                            <p class="much">19.9元包邮</p>
+                            <p class="time">天猫商城 | 2017/7/18 15:42</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="thumbnail">
+                        <img src="../images/ic_bcj.png" alt="...">
+                        <div class="caption">
+                            <h3>黄国粮业 水磨糯米粉 1Kg*2包</h3>
+                            <p class="much">19.9元包邮</p>
+                            <p class="time">天猫商城 | 2017/7/18 15:42</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="thumbnail">
+                        <img src="../images/ic_bcj.png" alt="...">
+                        <div class="caption">
+                            <h3>黄国粮业 水磨糯米粉 1Kg*2包</h3>
+                            <p class="much">19.9元包邮</p>
+                            <p class="time">天猫商城 | 2017/7/18 15:42</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="thumbnail">
+                        <img src="../images/ic_bcj.png" alt="...">
+                        <div class="caption">
+                            <h3>黄国粮业 水磨糯米粉 1Kg*2包</h3>
+                            <p class="much">19.9元包邮</p>
+                            <p class="time">天猫商城 | 2017/7/18 15:42</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xs-6">
+                    <div class="thumbnail">
+                        <img src="../images/ic_bcj.png" alt="...">
+                        <div class="caption">
+                            <h3>黄国粮业 水磨糯米粉 1Kg*2包</h3>
+                            <p class="much">19.9元包邮</p>
+                            <p class="time">天猫商城 | 2017/7/18 15:42</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="fertop"><span>首页</span> > <span>省钱快曝</span></div>
+            <p></p>
+            <div class="logins">
+                <button>登录</button>
+                <button>注册</button>
+                <button><a href="#tops"><span class="glyphicon glyphicon-arrow-up"></span>&nbsp返回顶部</a></button>
+            </div>
+            <div class="brief">
+                <span>手机APP下载</span>
+                <span>慢慢买手机版</span>
+                <span>--&nbsp掌上比价平台</span>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+       <a href="javascript:;" class="fix">
+            <img src="https://img.alicdn.com/imgextra/i2/379516416/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png">
+        </a>
+    </div>
+
+    <script src="../libs/jquery/jquery.min.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/inland_discount.js"></script>
+
+    <script id="com_list" type="text/html">
+    {{each result as v i}}
+        <div class="col-xs-6" name="productId">
+            <a href="./inland_discount2.html?productid={{v.productId}}" class="thumbnail details">
+                {{#v.productImg}}
+                <div class="caption">
+                    <h3>{{v.productName}}</h3>
+                    <p class="much">{{v.productPrice}}</p>
+                    <p class="time">{{v.productFrom}} | {{v.productTime}}</p>
+                </div>
+            </a>
+        </div>
+    {{/each}}
+    </script>
+</body>
+
+</html>

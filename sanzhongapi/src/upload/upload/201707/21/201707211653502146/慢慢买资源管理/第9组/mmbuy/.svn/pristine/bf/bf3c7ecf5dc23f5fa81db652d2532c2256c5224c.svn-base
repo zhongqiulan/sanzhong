@@ -1,0 +1,133 @@
+@color: #ff841d;
+#coupon {
+  height: 44px;
+  background-color: @color;
+  position: relative;
+  h3 {
+    text-align: center;
+    color: #ffffff;
+    line-height: 44px;
+    margin: 0;
+    font-size: 20px;
+  }
+  i,a{
+    position: absolute;
+    top: 0;
+
+  }
+  .glyphicon-chevron-left {
+    color: #ffffff;
+    font-size: 30px;
+    line-height: 44px;
+    left: 10px;
+    cursor: pointer;
+
+  }
+
+  .app-download {
+    right: 0;
+    img{
+      width: 50px;
+      height: 44px;
+    }
+  }
+}
+
+//主体页面
+#overseas_main {
+  a,h4{
+    font-size: 15px;
+  }
+  height: 100%;
+  .media {
+    padding: 15px;
+  }
+  .media-left {
+    a {
+      img {
+        width: 100px;
+        height: 100px;
+      }
+    }
+  }
+  .media-body{
+    position: relative;
+    a{
+      position: absolute;
+      color: #a1a1a1;
+      bottom: 0;
+    }
+    span{
+      margin-left: 10px;
+      color: @color;
+    }
+  }
+
+  .container-fluid{
+    //height: 80px;
+    background-color: #f2f2f2;
+    .row{
+      padding: 15px 50px;
+      position: relative;
+      select{
+        position: absolute;
+        text-align: center;
+        width: 30%;
+        padding-left: 70px;
+
+        //transform: translate(-50%);
+      }
+      select.form-control {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%,-50%);
+      }
+      .button{
+        background-color: #d6d6d6;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+//面包屑
+#Breadcrumbs{
+  background-color: #fafafa;
+  border-bottom: 1px solid #ccc;
+
+  li,a{
+    color: #0f0f0f;
+  }
+  .row:before {
+    display: table;
+    content: "";
+  }
+}
+
+#footer{
+  margin-top: 15px;
+  border: 1px solid #ccc;
+
+  a{
+    padding: 15px 0;
+    display: block;
+    text-align: center;
+    color:#0f0f0f;
+  }
+  .col-xs-4+.col-xs-4{
+    border-left: 1px solid #ccc;
+  }
+}
+//链接
+.link{
+  padding-top: 15px;
+  p{
+    text-align: center;
+  }
+  a.phoneApp{
+    color: red;
+  }
+  a.mobile {
+    color: #0f0f0f;
+    font-weight: 700;
+  }
+}

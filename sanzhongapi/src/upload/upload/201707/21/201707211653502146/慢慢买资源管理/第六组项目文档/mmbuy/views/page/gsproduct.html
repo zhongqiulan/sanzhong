@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>凑单品</title>
+  <?php include '/views/common/css.html' ?>
+  <link rel="stylesheet" href="/views/public/css/getgsshop.css">
+  <link rel="stylesheet" type="text/css" href="/views/public/iconfont/iconfont.css">
+</head>
+
+<body>
+  <!--头部-->
+  <header>
+    <a href="/index" class="head_change"><i class="glyphicon glyphicon-chevron-left"></i></a>
+    <h1>凑单品</h1>
+  </header>
+
+
+  <!-- 导航栏部分 -->
+
+  <div class="gsshopnav">
+    <!-- 商品导航部分 -->
+    <div class="gsshopnav-main">
+      <!--导航栏-->
+      <div class="gsshopnav-filter">
+        <!-- 左边 -->
+        <div class="row clearfix left-tab">
+          <!--商店名-->
+          <div id="shop_id" value="shopId:shopId" class="tab-item sort col-md-4 col-xs-4 col-sm-4 col-lg-4">
+            <span class="shopname">天猫超市</span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+            
+          </div>
+          <!-- 渲染商铺 -->
+          <ul class="nav-main nav-shop1" id="nav_sort">
+
+          </ul>
+
+          <!-- 地区 -->
+          <div id="place_id" value="areaId:areaId" class="tab-item place col-md-4 col-xs-4 col-sm-4 col-lg-4">
+            <span class="placename">华北</span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+          </div>
+          <!-- 渲染地区 -->
+          <ul class="nav-main nav-place" id="nav_place">
+
+          </ul>
+
+          <!-- 价格 -->
+          <div class="tab-item price col-md-4 col-xs-4 col-sm-4 col-lg-4">
+            <span class="allPrice">全部价格</span>
+            <span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true"></span>
+          </div>
+          <!-- 价格下拉列表 -->
+          <ul class="nav-cat nav-main">
+            <li class="active"><a href="javascript:;">全部价格</a></li>
+            <li><a href="javascript:;">1-3元</a></li>
+            <li><a href="javascript:;">3-5元</a></li>
+            <li><a href="javascript:;">5-10元</a></li>
+            <li><a href="javascript:;">10-15元</a></li>
+            <li><a href="javascript:;">15元以上</a></li>
+          </ul>
+        </div>
+        <!-- 右边搜索按钮 -->
+        <div class="right-search">
+          <i class="gsshopnav icon-sousuomulu"></i>
+          <i class="gsshopnav icon-cha"></i>
+        </div>
+
+      </div>
+
+
+      <!--下拉列表-->
+
+      <!-- 搜索 -->
+      <div class="navsearch">
+        <!-- 搜索框 -->
+        <div class="formsch clearfix">
+          <div class="txt">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="input-group sreach">
+                  <input type="text" class="inptext form-control" aria-describedby="basic-addon2">
+                  <span class="input-group-addon" id="basic-addon2">搜索</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--排序-->
+        <div class="select paixu">
+          <div class="t">排序</div>
+          <div class="c">
+            <ul class="clearfix row">
+              <li class="active col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">销量</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">价格↑</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:javascript:;">价格↓</a></li>
+            </ul>
+          </div>
+        </div>
+        <!--分类-->
+        <div class="select fenlei">
+          <div class="t">分类</div>
+          <div class="c">
+            <ul class="clearfix row">
+              <li class="active col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">全部</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">家居</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">数码</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">办公</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">个护</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">食品</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">母婴</a></li>
+              <li class="col-md-3 col-xs-3 col-sm-3 col-lg-3"><a href="javascript:;">服饰</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- 商品展示部分 -->
+    <div class="gsshopnav-show" id="gsshopnav_show">
+      <ul class="clearfix product">
+
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- 底部 -->
+  <div class="footer">
+    <div class="more-info">
+        <a href='#'>更多优惠信息>></a>
+
+    </div>
+    <div class="brand-reco  clearfix">
+        <h3>品牌排行</h3>
+        <!--<a href="javascript:void(0);"><img src="/images/more.png" alt=""></a>-->
+    </div>
+    <div class="tool">
+        <ul class="clearfix">
+            <li><a href="/login">登陆</a></li>
+            <li><a href="/registr">注册</a></li>
+            <li id="top"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</li>
+        </ul>
+        <div class="mmurl">
+            <span>手机APP下载</span> 慢慢买手机版--掌上比价平台
+            <p>m.manmanbuy.com</p>
+        </div>
+    </div>
+</div>
+
+</body>
+<?php include "/views/common/script.html"?>
+
+
+<!-- 渲染商店数据模版 -->
+<script type="text/template" id="nav_sort_tpl">
+  {{each result as v i}}
+  <li class="getsortId" data-id="{{v.shopId}}" data-shopName="{{v.shopName}}"><a href="javascript:;">{{v.shopName}}</a></li>
+  {{/each}}
+</script>
+
+<!-- 渲染商店数据模版 -->
+<script type="text/template" id="nav_place_tpl">
+  {{each result as v i}}
+  <li class="getplaceId" data-id="{{v.areaId}}" data-place="{{v.areaName}}"><a href="javascript:;">{{v.areaName}}</a></li>
+  {{/each}}
+</script>
+
+<!-- 渲染商品展示模版-->
+<script type="text/template" id="product_tpl">
+  {{each result as v i}}
+  <li class="col-md-6 col-xs-6 .col-sm-6 col-lg-6" data-productId="{{productId}}"><a href="javascript:;">
+    <img src="{{v.productImg}}" alt="">
+    <p class="show-title">{{v.productName}}</p>
+    <p><span class="price">{{v.productPrice}}</span></p>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+<script>
+  require(["js/getgsshop"]);
+</script>
+
+</html>

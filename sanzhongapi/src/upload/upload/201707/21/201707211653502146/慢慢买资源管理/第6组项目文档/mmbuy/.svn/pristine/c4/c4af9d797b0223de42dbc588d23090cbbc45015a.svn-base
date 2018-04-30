@@ -1,0 +1,24 @@
+<div class="save_menu">
+                <ul id="save_menu_ul">
+                    <!--模版-->
+                </ul>
+</div>
+<script id="save_menu_tpl" type="text/template">
+    {{each result as v i}}
+    <li data-id="{{v.productId}}" >
+        <a href="/views/page/produceDetail?productId={{v.productId}}" class="save_a" >
+        <div class="media menu_media">
+            <div class="media-left menu_left">
+                    {{#v.productImgSm}}
+                </div>
+                <div class="media-body menu_body clearfix">
+                    <h4 class="media-heading">{{v.productName}}<span>{{v.productPinkage}}</span></h4>
+                    <span>{{v.productFrom}}&nbsp; | &nbsp;{{v.productTime}}</span>
+                    <span class="menu_em pull-right"><img src="/views/public/image/init-imgs/dx.png" >&nbsp; {{v.productComCount}}</span>
+                </div>
+                </a>    
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>

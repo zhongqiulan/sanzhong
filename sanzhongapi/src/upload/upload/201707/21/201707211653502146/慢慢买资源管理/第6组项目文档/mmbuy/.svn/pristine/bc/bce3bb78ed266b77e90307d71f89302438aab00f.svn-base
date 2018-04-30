@@ -1,0 +1,37 @@
+
+//去掉上下分页的间距
+.panel-group .panel + .panel {
+    margin-top:0;
+}
+
+.panel-group {
+    padding: 0px 6px;
+}
+
+//修改分页标题的样式
+.panel-title>a:nth-of-type(1) {
+    color:#000;
+    font-size:16px;
+    font-weight:bold;
+}
+a.collapse-arrow {
+    text-decoration:none;
+    color:#ccc;
+}
+
+//分裂列表样式
+.panel-body {
+    padding:0;
+
+    .row div{
+        height:40px;
+        // padding:0 20px;
+        text-align:center;
+        line-height:40px;
+        border-right:1px solid #ccc;
+        border-bottom:1px solid #ccc;
+    }
+}
+
+
+

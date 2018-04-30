@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel='stylesheet' type='text/css' href='libs/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='css/base.css'>
+
+
+</head>
+
+<body>
+    <!--头部导航条-->
+    <div class="head" id='top'>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header pull-left">
+                    <a class="navbar-brand" href="#"><img src="images/header_logo.png" alt=""></a>
+                </div>
+                <div class="download pull-right">
+                    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia"> <img src="images/header_app.png"></a>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+    <!--搜索栏-->
+    <div class="zyzsreach">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+            <span class="input-group-addon" id="basic-addon2">搜索</span>
+        </div>
+    </div>
+    <!--分割线-->
+    <div class="bg-w"></div>
+
+    <!--菜单栏-->
+    <div class="zyz_menu">
+        <div class="row menu mt15">
+
+        </div>
+
+    </div>
+
+
+    <!---->
+    <div class="cjzk">
+        <a href='pages/money_ctrl.html'> <i>超级折扣推荐</i></a>
+        <a href='pages/money_ctrl.html'><span></span></a>
+    </div>
+    <!--超级折扣推荐-->
+    <div class="zyzdiscount">
+        <ul class='clearfix cjtj'>
+            <!--<li>
+                <a href='javascript:;'>
+                    <div class="discount_left">
+                        <img src="images/gengduo.png" alt="">
+                    </div>
+                    <div class="discount_right">
+                        <div class="title">
+
+                            <span>主要用来面菜单栏数据，上</span>
+                        </div>
+                        <div class="other">
+                            <span>慢慢买|7-13 8：00</span>
+                            <span><i></i>889</span>
+                        </div>
+                    </div>
+                </a>
+            </li>-->
+        </ul>
+    </div>
+
+
+
+<!--更多优惠信息-->
+    <div class="gdyhxx">
+        <a href='pages/money_ctrl.html'>更多优惠信息>></a>
+
+    </div>
+
+
+<!--品牌排行-->
+
+ <div class="cjzk">
+        <a href='pages/brand.html'> <i>品牌排行</i></a>
+        <a href='pages/brand.html'><span></span></a>
+    </div>
+    <!--底部-->
+
+    <div class="footer ">
+        <div class="footertop row">
+            <a href="#" class='col-xs-4'>登陆</a>
+            <a href="#" class='col-xs-4'>注册</a>
+            <a href="#top" class='col-xs-4'>回到顶部</a>
+        </div>
+        <div class="footercenter">
+            <a href="#">手机App下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#">--掌上比价平台</a>
+            <p> m.manmanmai.com</p>
+        </div>
+    </div>
+    </div>
+
+    <!--慢字和回到顶部-->
+    <div style="position:fixed;right:0;bottom:60px;z-index:999" class="appdown">
+        <a href='http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia'><img src="images/TB2WepTeb1J.eBjSszcXXbFzVXa_!!379516416.png" alt=""></a>
+    </div>
+    <div class="back" style="position:fixed;right:5px;bottom:10px;z-index:999">
+        <a href='#top'><img src="images/back.png" alt=""></a>
+    </div>
+
+    <!--菜单栏模板start-->
+    <script type='text/template' id='temp'>
+        {{each result as value i}} {{if i
+        <7}} <div class="col-xs-3">
+            <div class="thumbnail">
+                <a href='pages/{{value.titlehref}}'>
+                {{#value.img}}
+                <div class="caption">
+                    <p>{{ value.name }}</p>
+                </div>
+                </a>
+            </div>
+            </div>
+            {{/if}} {{/each}} {{ each result as value i }} {{ if i ==7 }}
+            <div class="col-xs-3" data-toggle="collapse" data-target="#collapseExample">
+                <div class="thumbnail">
+                    <!--<a href='pages/{{value.titlehref}}'>-->
+                    {{#value.img}}
+                    <div class="caption">
+                        <p>{{ value.name }}</p>
+                    </div>
+                    <!--</a>-->
+                </div>
+            </div>
+            {{/if}} {{/each}}
+
+            <div class="collapse" id="collapseExample">
+                <div class="well">
+                    {{ each result as value i }} {{if i> 7}}
+                    <div class="col-xs-3">
+                        <div class="thumbnail">
+                            <a href='pages/{{value.titlehref}}'>
+                            {{#value.img}}
+                            <div class="caption">
+                                <p>{{ value.name }}</p>
+                            </div>
+                            </a>
+                        </div>
+                    </div>
+                    {{/if}} {{/each}}
+                </div>
+            </div>
+
+    </script>
+    <!--菜单栏模板end-->
+
+    <!--超级折扣推荐start-->
+    <script type='text/template' id='temp2'>
+        {{ each result as v i}}
+        <li>
+            <a href='pages/sitenav.html?productid={{v.productId-10}}'>
+                <div class="discount_left">
+                    {{#v.productImgSm}}
+                </div>
+                <div class="discount_right">
+                    <div class="title">
+                        {{v.productName}}
+                        <span>{{v.productInfo1}}</span>
+                    </div>
+                    <div class="other">
+                        <span>{{v.productFrom}}|{{v.productTime}}</span>
+                        <span><i></i>{{v.productComCount}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <!--超级折扣推荐end-->
+
+    <script src="libs/jquery/jquery.js">
+
+    </script>
+    <script src="libs/bootstrap/js/bootstrap.js">
+
+    </script>
+    <script src="js/until.js">
+
+    </script>
+    <script src="libs/artTemplate/template.js">
+
+    </script>
+    <script src="js/index.js">
+
+    </script>
+</body>
+
+</html>

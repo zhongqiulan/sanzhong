@@ -1,0 +1,143 @@
+html,
+body {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", tahoma, arial, simsun, "宋体";
+  background-color: #ffffff;
+}
+img {
+  display: block;
+  width: 100%;
+}
+a {
+  display: inline-block;
+  -webkit-tap-highlight-color: none;
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+html {
+  background: #f2f2f2;
+}
+.sitenav header h1 {
+  font-weight: 700;
+}
+.sitenav header {
+  height: 44px;
+  background: #ff8b00;
+  color: #fff;
+  position: relative;
+}
+.sitenav header h1 {
+  width: 100%;
+  font-size: 20px;
+  line-height: 44px;
+  padding: 0px 50px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+}
+.sitenav header .arrow {
+  position: absolute;
+  left: 0;
+  font-size: 18px;
+  color: #fff;
+  padding: 13px;
+}
+.sitenav header .header_app {
+  display: block;
+  position: absolute;
+  right: 8px;
+  top: 5px;
+}
+.sitenav header .header_app img {
+  width: 34px;
+}
+.sitenav .body {
+  width: 300px;
+  margin: 10px auto;
+  font-size: 0px;
+  background: #fff;
+}
+.sitenav .body a {
+  padding: 10px 8px;
+  background: #f4f4f4;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #bfbfbf;
+  color: #000;
+  font-size: 16px;
+}
+.sitenav .body a img {
+  display: inline-block;
+  width: 16px;
+}
+.sitenav .menu {
+  height: 36px;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ebebeb;
+  line-height: 36px;
+  padding-left: 8px;
+  margin-bottom: 30px;
+}
+.sitenav .menu a {
+  color: #000;
+}
+.sitenav footer {
+  background: #efefef;
+}
+.sitenav footer .menu ul {
+  padding: 0;
+  margin: 0;
+}
+.sitenav footer .menu li {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  float: left;
+  width: 33.3%;
+}
+.sitenav footer .menu li:nth-of-type(2) {
+  border: 1px solid #c4c4c4;
+}
+.sitenav footer .menu li a {
+  display: block;
+  color: #000;
+}
+.sitenav footer .menu li img {
+  width: 15px;
+  display: inline-block;
+  margin-bottom: 6px;
+  margin-right: 3px;
+}
+.sitenav footer .xinxi {
+  font-size: 13px;
+  text-align: center;
+  padding: 15px 0;
+}
+.sitenav footer .xinxi p {
+  margin: 0;
+  color: #747474;
+}
+.sitenav footer .xinxi p a:nth-of-type(1) {
+  color: red;
+}
+.sitenav footer .xinxi p a:nth-of-type(2) {
+  color: #000;
+}
+.sitenav .app {
+  position: fixed;
+  width: 60px;
+  right: 0;
+  bottom: 30px;
+  z-index: 999;
+}

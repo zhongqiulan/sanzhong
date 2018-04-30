@@ -1,0 +1,144 @@
+.view > #header {
+  height: 44px;
+  width: 100%;
+  background-color: #f4483e;
+  position: relative;
+}
+.view > #header a {
+  display: block;
+  width: 40px;
+  height: 40px;
+  float: left;
+  text-align: center;
+  line-height: 40px;
+  font-size: 18px;
+  color: #fff;
+}
+.view > #header > h1 {
+  color: #fff;
+  text-align: center;
+  line-height: 44px;
+  font-size: 20px;
+  width: 100%;
+  margin: 0;
+}
+.view > #header > .icon-back {
+  position: absolute;
+  font-size: 18px;
+  left: 10px;
+  line-height: 44px;
+  top: 0;
+  color: #fff;
+}
+.view > #header > .app_download > a {
+  position: absolute;
+  width: 34px;
+  height: 34px;
+  top: 5px;
+  right: 20px;
+}
+.view > #header > .app_download > a > img {
+  width: 34px;
+}
+.view #main > .quan-box {
+  background: #000;
+  text-align: left;
+}
+.view #main > .quan-box > .quan-model {
+  background: #FFFFFF;
+  margin: 10px auto;
+}
+.view #main > .quan-box > .quan-model > .items {
+  padding-bottom: 6px;
+  box-sizing: border-box;
+}
+.view #main > .quan-box > .quan-model > .items > ul {
+  margin: 0px;
+  padding: 0px;
+}
+.view #main > .quan-box > .quan-model > .items > ul > .list {
+  box-sizing: border-box;
+  float: left;
+  list-style: none;
+  border: 1px solid #eeeeee;
+  display: block;
+  height: 75px;
+  width: 32%;
+  margin-left: 4px;
+  margin-top: 5px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 12px;
+}
+.view #main > .quan-box > .quan-model > .items > ul > .list > a {
+  display: block;
+  height: 100%;
+  color: #5a5a5a;
+}
+.view #main > .quan-box > .quan-model > .items > ul > .list > a > img {
+  border: none;
+  margin: 0 auto;
+  margin-top: 5px;
+  width: 50px;
+  height: 50px;
+}
+.view .nav {
+  height: 36px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  margin-top: 20px;
+  bottom: 0;
+  font-size: 14px;
+}
+.view .nav > a {
+  color: #000;
+  display: inline;
+}
+.view #footer {
+  background-color: #efefef;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+}
+.view #footer > .checkin .row > div {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #c5c5c5;
+}
+.view #footer > .checkin .row > div > a {
+  color: #000;
+}
+.view #footer > .checkin .row > div > a > img {
+  width: 15px;
+  height: 15px;
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 2px;
+  border: none;
+  display: inline;
+}
+.view #footer > .bottom {
+  background: #efefef;
+  text-align: center;
+  font-size: 12px;
+  padding: 15px 0;
+  color: #666;
+}
+.view #footer > .bottom > a {
+  color: #7c667c;
+}
+.view #footer > .bottom > .app > .app_download {
+  color: #f00;
+}
+.view #footer > .bottom > .app > a {
+  display: inline;
+  color: #000;
+}
+.view #footer > .bottom > .app > .grey {
+  color: #676767;
+}

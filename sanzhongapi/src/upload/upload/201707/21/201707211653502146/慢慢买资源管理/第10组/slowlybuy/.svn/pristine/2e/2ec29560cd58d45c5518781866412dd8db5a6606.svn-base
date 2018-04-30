@@ -1,0 +1,27 @@
+
+$.ajax({
+    url:config.getUrl("api/getgsshop"),
+    success:function (info) {
+        console.log(info);
+        var htmlStr=template("shop_tpl",info);
+        console.log(htmlStr);
+        $(".shop_menu").html(htmlStr);
+    }
+})
+
+$.ajax({
+    url:config.getUrl("api/getgsshoparea"),
+    success:function(info){
+        console.log(info);
+        var htmlStr=template("area_tpl",info);
+        console.log(htmlStr);
+        $(".area_menu").html(htmlStr);
+    }
+})
+
+// $(".shop_menu").on("click","li",function(){
+//     $(".shop_menu span").removeClass("glyphicon-ok");
+//     console.log($(this));
+//     console.log($(this).chidren());
+ 
+// })

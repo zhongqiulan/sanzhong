@@ -1,0 +1,15 @@
+/**
+ * Created by Administrator on 2017/7/20 0020.
+ */
+$(function(){
+    var url = config.getUrl('/api/getmoneyctrlproduct');
+    $.ajax({
+        url:url,
+        type:"GET",
+        dataType:'JSON',
+        success:function(info){
+            var htmlStr = template('goods_tpl',info);
+            $('.main').html(htmlStr);
+        }
+    })
+})

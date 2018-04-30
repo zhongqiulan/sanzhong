@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">   
+    <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
+</head>
+<body>
+    <!--顶部logo-->
+    <div class="head_logo">
+        <img src="./images/header_logo.png" alt="">
+    </div>
+    <!--搜索框-->
+    <div class="seek"></div>
+    <!--导航栏-->
+    <div class="nav"></div>
+    <!--超值折扣推荐-->
+    <div class="rebate"></div>
+    <!--品牌排行-->
+    <div class="brand"></div>
+    <!--功能栏-->
+    <div class="fn"></div>
+    <!--底部-->
+    <floor></floor>
+</body>
+</html>

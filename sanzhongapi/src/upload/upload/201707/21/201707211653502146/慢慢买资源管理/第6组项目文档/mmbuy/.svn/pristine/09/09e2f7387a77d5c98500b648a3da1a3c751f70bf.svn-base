@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>品牌大全列表</title>
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/getbrandtitle.css">
+</head>
+
+<body>
+<div class="all">
+    
+        <!--首页>导航-->
+        <div class="home_nav">
+            <a href='javascript:;'>
+                首页
+            </a> >
+            <a href='javascript:;'>
+                品牌大全
+            </a>
+
+        </div>
+        <!--品牌排行版-->
+        <div class="brand_ranking">
+            <!--热门品牌排行标题-->
+            <div class="ranking_head">
+                <span>热门品牌排行</span>
+            </div>
+            <!--品牌的分类介绍标题-->
+            <div class="introduce_parten">
+
+
+            </div>
+    </div>
+</div>
+  <!--<script src="../../public/assets/zepto/zepto.js"></script>
+   <script src="../../public/assets/zepto/ajax.js"></script>
+    <script src="../../public/assets/zepto/event.js"></script>-->
+    <script src="../../public/assets/jquery/jquery.min.js"></script>
+    <script src="../../public/assets/artTemplate/template.js"></script>
+    <script src="../../public/js/getbrandtitle.js"></script>
+</body>
+
+</html>
+
+<script type="text/template" id="tp_br_tpl">
+    {{each result as v i}}
+  <div class="brand_introduce ">
+    <div class='introduce' >
+        <a href='getbrand.html?brandTitleId='+{{v.brandTitleId}} id="jump"  data-id={{v.brandTitleId}} >{{v.brandTitle}}</a>
+        <span class="glyphicon glyphicon-menu-down"></span>
+    </div>
+ </div>
+    {{/each}}
+</script>
+

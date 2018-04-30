@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>肯德基等优惠券 -- 慢慢买</title>
+    <link rel="stylesheet" href="/css/dashboard/basic.css" />
+    <link rel='stylesheet' type="text/css" href='/css/coupons/coupons_base.css'>
+    <link rel='stylesheet' type="text/css" href='/css/coupons/coupons_lists.css'>
+    <link rel='stylesheet' type="text/css" href='/public/coupons_fonts/iconfont/iconfont.css'>
+    <?php include '/common/css.html' ?>
+
+
+
+
+
+
+</head>
+
+<body>
+    <!--优惠券部分-->
+    <div class="view">
+        <!--遮罩层-->
+        <div class="mask">
+            <img src="" alt="">
+            <span class="glyphicon glyphicon-menu-left"></span>
+            <span class="glyphicon glyphicon-menu-right"></span>
+        </div>
+        <!--头部区域-->
+        <div id="header">
+            <a href="/coupons/coupons"><i class="iconfont icon-back">&#xe508;</i></a>
+            <h1>肯德基优惠券</h1>
+            <!--<i class="iconfont icon-download">&#xe64a;</i>-->
+            <div class="app_download">
+                <a href="#"><img src="/images/header_app.png" alt=""></a>
+            </div>
+
+        </div>
+        <!--主体区域-->
+        <div id="main">
+
+            <div class="s_title">
+                --点餐前出示手机的优惠券，即可享受优惠--
+            </div>
+            <div class="quan-box">
+                <div id="main_quanlist" class="quan-list" data-gallery="one">
+                    <ul class="list_click">
+                        <div class="small-shade">
+                            <img src="/images/loading.gif" alt="">
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <!--导航条-->
+            <div class="nav">
+                <a href="/index">首页</a>&nbsp;>&nbsp;
+                <a href="/coupons/coupons">优惠券</a>&nbsp;>&nbsp;
+                <a href="/coupons/lists">肯德基优惠券</a>
+            </div>
+        </div>
+
+
+
+
+        <!--底部区域-->
+        <?php include '/common/footer.html' ?>
+    </div>
+
+</body>
+
+<?php include '/common/script.html' ?>
+<script>
+    require(['lists']);
+</script>
+
+
+<script type='text/html' id='listsTmp'>
+
+    {{each result as value i}} {{if i
+    <35}} <li data-id="{{value.couponId}}">
+        <a href="#" title="{{value.couponProductId}}">
+            <div class="pic">
+                <!--<img src="{{#value.couponProductImg}}" alt="{{value.couponProductId}}">-->
+                {{#value.couponProductImg}}
+            </div>
+            <div class="info">
+                <div class="tit">
+                    <h3>{{value.couponProductName}}</h3>
+                    <h2>
+                        <em>{{value.couponProductPrice}}</em>
+                    </h2>
+                </div>
+                <div class="time">{{value.couponProductTime}}</div>
+            </div>
+        </a>
+        </li>
+        {{/if}} {{/each}}
+
+</script>
+
+</html>

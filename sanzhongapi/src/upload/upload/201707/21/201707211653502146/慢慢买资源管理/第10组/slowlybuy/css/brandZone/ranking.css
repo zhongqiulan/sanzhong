@@ -1,0 +1,220 @@
+div,
+ul,
+li,
+a,
+p,
+ol,
+h3,
+em,
+i,
+img,
+span {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-style: normal;
+}
+a {
+  color: #5a5a5a;
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+/*左右浮动*/
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+/*左右浮动*/
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  height: 0;
+}
+/*兼容IE6/7*/
+.clearfix {
+  zoom: 1;
+}
+/*清除浮动*/
+.main .bz_nav {
+  height: 36px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 0px;
+}
+.main .bz_nav > li > a {
+  text-decoration: none;
+  color: #000;
+}
+.main .bz {
+  background-color: #f2f2f2;
+  color: #000;
+  font-size: 14px;
+}
+.main .bz .rk_title {
+  color: #874604;
+  background: #f3f3f3;
+  border: 1px solid #c8c8c8;
+  border-left: none;
+  border-right: none;
+  font-weight: bold;
+  height: 36px;
+  line-height: 36px;
+  font-size: 14px;
+  padding-left: 10px;
+}
+.main .bz .rk_list {
+  padding: 0 10px;
+}
+.main .bz .rk_list em.top1 {
+  background-color: #f10e0e;
+}
+.main .bz .rk_list em.top2 {
+  background-color: #ff9314;
+}
+.main .bz .rk_list em.top3 {
+  background-color: #8adf5b;
+}
+.main .bz .rk_list ul li {
+  display: inline-block;
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+  width: 100%;
+}
+.main .bz .rk_list ul li i {
+  float: right;
+  color: #999;
+  font-size: 20px;
+  height: 40px;
+  line-height: 40px;
+}
+.main .bz .rk_list ul li a {
+  display: block;
+}
+.main .bz .rk_list ul li a em {
+  float: left;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  background: #c9c9c9;
+  color: #FFFFFF;
+  line-height: 20px;
+  vertical-align: top;
+  margin: 0 10px 0 0;
+  font-size: 14px;
+}
+.main .bz .rk_list ul li a .inner {
+  float: left;
+  font-size: 14px;
+  color: #999;
+}
+.main .bz .rk_list ul li a .tit {
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 2px;
+}
+.main .bz .rk_list ul li a p {
+  font-size: 12px;
+}
+.main .bz .rk_list ul li a:after {
+  clear: both;
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  visibility: hidden;
+}
+/*品牌销量排行star*/
+.bz_sales .sales_content ul li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.bz_sales .sales_content ul li a .pic {
+  float: left;
+  margin-right: 10px;
+}
+.bz_sales .sales_content ul li a .info .tit {
+  color: #333333;
+  line-height: 22px;
+  min-height: 44px;
+  word-break: break-all;
+}
+.bz_sales .sales_content ul li a .info span {
+  color: #F00;
+}
+.bz_sales .sales_content ul li a .info .price {
+  height: 25px;
+  margin-top: 4px;
+}
+.bz_sales .sales_content ul li a .info .price em {
+  font-size: 18px;
+  color: #ff841d;
+  vertical-align: middle;
+  float: left;
+}
+.bz_sales .sales_content ul li a .info .price .star {
+  float: right;
+  margin-top: 2px;
+}
+.bz_sales .sales_content ul li a .info .price .star em.star5 {
+  width: 18px;
+  float: left;
+}
+.bz_sales .sales_content ul li a .info .other {
+  font-size: 12px;
+  color: #999;
+}
+/*品牌销量排行end*/
+/*y用户评论star*/
+.bz_comment .comment_list ul li {
+  border-bottom: 1px solid #e7e7e7;
+  padding: 10px;
+}
+.bz_comment .comment_list ul li .protit {
+  margin-bottom: 45px;
+}
+.bz_comment .comment_list ul li .protit .pic {
+  float: left;
+  margin-right: 10px;
+}
+.bz_comment .comment_list ul li .protit .tit {
+  color: #999999;
+  line-height: 22px;
+  font-size: 14px;
+  word-break: break-all;
+}
+.bz_comment .comment_list ul li .plbox {
+  background: #f8f8f8;
+  padding: 10px;
+  border: 1px solid #e7e7e7;
+  position: relative;
+}
+.bz_comment .comment_list ul li .plbox:after {
+  content: '';
+  width: 0;
+  height: 0;
+  position: absolute;
+  left: 30px;
+  top: -7px;
+  border-bottom: 8px solid #f8f8f8;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+}
+.bz_comment .comment_list ul li .plbox .name {
+  color: #4f6900;
+}
+.bz_comment .comment_list ul li .plbox .star {
+  color: #ff841d;
+}
+/*y用户评论end*/

@@ -1,0 +1,243 @@
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.qinrongze .header1 {
+  height: 50px;
+  width: 100%;
+  background-color: #ff841d;
+  border-bottom: 1px solid #e6e6e6;
+}
+.qinrongze .header1 .logo {
+  margin-left: 5px;
+  padding: 12px;
+}
+.qinrongze .header1 .logo a {
+  display: block;
+  height: 100%;
+}
+.qinrongze .header1 .logo a img {
+  height: 25px;
+}
+.qinrongze .header1 .appdown {
+  height: 100%;
+  padding: 7px;
+}
+.qinrongze .header1 .appdown a {
+  text-decoration: none;
+}
+.qinrongze .header1 .appdown a img {
+  height: 34px;
+}
+.qinrongze .search1 {
+  border-bottom: 1px solid #e6e6e6;
+  height: 51px;
+  padding: 10px;
+}
+.qinrongze .search1 input {
+  border-radius: 15px;
+  border: none;
+  background-color: #f1f1f1;
+  font-size: 16px;
+  height: 30px;
+  padding-left: 20px;
+}
+.qinrongze .search1 span {
+  border-radius: 15px;
+  background-color: #ff841d;
+  color: white;
+  font-size: 16px;
+}
+.qinrongze .aspnetForm {
+  font-style: normal;
+}
+.qinrongze .aspnetForm .menu {
+  margin-top: 14px;
+  background-color: white;
+  padding: 6px 0px;
+}
+.qinrongze .aspnetForm .menu .col-xs-3 {
+  padding: 0;
+}
+.qinrongze .aspnetForm .menu .col-xs-3 .thumbnail {
+  width: 100%;
+  height: 70px;
+  border-style: none;
+  text-align: center;
+}
+.qinrongze .aspnetForm .menu .col-xs-3 .thumbnail img {
+  height: 50px;
+  width: 50px;
+}
+.qinrongze .aspnetForm .czzktj {
+  height: 35px;
+  width: 100%;
+  background-color: #ff9000;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+}
+.qinrongze .aspnetForm .czzktj span {
+  color: white;
+  float: left;
+  font-weight: bolder;
+  font-size: 18px;
+  padding-left: 7px;
+  line-height: 35px;
+}
+.qinrongze .aspnetForm .czzktj img {
+  float: right;
+  line-height: 35px;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 9px;
+}
+.qinrongze .aspnetForm .list {
+  width: 100%;
+  background-color: #ffffff;
+  text-align: left;
+  font-size: 14px;
+  margin: 0 auto;
+}
+.qinrongze .aspnetForm .list .cu-list {
+  padding: 10px 5px;
+  list-style: none;
+}
+.qinrongze .aspnetForm .list .cu-list a {
+  display: block;
+  width: 100%;
+}
+.qinrongze .aspnetForm .list .cu-list a .pic {
+  margin-right: 3px;
+  width: 100px;
+  height: 100px;
+  float: left;
+}
+.qinrongze .aspnetForm .list .cu-list a .pic img {
+  display: block;
+  width: 100px;
+  height: 100px;
+}
+.qinrongze .aspnetForm .list .cu-list a .info {
+  padding-left: 100px;
+  display: block;
+  color: black;
+}
+.qinrongze .aspnetForm .list .cu-list a .info .br-none {
+  color: white;
+}
+.qinrongze .aspnetForm .list .cu-list a .info span {
+  color: #ff6c00;
+}
+.qinrongze .aspnetForm .list .cu-list a .info .other span {
+  color: gray;
+}
+.qinrongze .aspnetForm .list .cu-list a .info .other .mall {
+  font-size: 12px;
+  float: left;
+}
+.qinrongze .aspnetForm .list .cu-list a .info .other .comment {
+  float: right;
+  padding-right: 5px;
+}
+.qinrongze .aspnetForm .list .cu-list a .info .other .comment img {
+  margin-top: -3px;
+}
+.qinrongze .aspnetForm .list .cu-list a .info .other .comment i {
+  color: gray;
+  font-size: 12px;
+  float: right;
+}
+.qinrongze .aspnetForm .more-bar {
+  display: block;
+  background: black;
+  text-align: center;
+  width: 100%;
+  height: 45px;
+  background: #f4f4f4;
+}
+.qinrongze .aspnetForm .more-bar .a-button {
+  margin-top: 10px;
+  padding: 0 15px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.qinrongze .aspnetForm .more-bar .a-button a {
+  position: absolute;
+  top: 10px;
+  border: 1px solid #f4f4f4;
+  display: block;
+  width: 80%;
+  color: gray;
+  border-radius: 12px;
+  margin-left: 40px;
+  background: white;
+}
+.qinrongze footer {
+  position: relative;
+  background: #efefef;
+}
+.qinrongze footer .ppph {
+  float: left;
+  margin: 10px 0;
+  height: 35px;
+  width: 100%;
+  background-color: #ff9000;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffaf47), to(#ff9000));
+}
+.qinrongze footer .ppph span {
+  color: white;
+  float: left;
+  font-weight: bolder;
+  font-size: 18px;
+  padding-left: 7px;
+  line-height: 35px;
+}
+.qinrongze footer .ppph img {
+  float: right;
+  line-height: 35px;
+  width: 20px;
+  height: 20px;
+  margin-top: 8px;
+  margin-right: 9px;
+}
+.qinrongze footer .menu-footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.qinrongze footer .menu-footer li {
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+  border-bottom: 1px solid #c4c4c4;
+  border-top: 1px solid #c4c4c4;
+  float: left;
+  width: 33.3%;
+}
+.qinrongze footer .menu-footer li:nth-of-type(2) {
+  border: 1px solid #c4c4c4;
+}
+.qinrongze footer .menu-footer li a {
+  display: block;
+  color: #000;
+}
+.qinrongze footer .xinxi {
+  font-size: 12px;
+  text-align: center;
+  padding: 15px 0;
+}
+.qinrongze footer .xinxi p {
+  margin: 0;
+  color: #747474;
+}
+.qinrongze footer .xinxi p a:nth-of-type(1) {
+  color: red;
+}
+.qinrongze footer .xinxi p a:nth-of-type(2) {
+  color: #000;
+}
+.well {
+  padding: 0;
+}

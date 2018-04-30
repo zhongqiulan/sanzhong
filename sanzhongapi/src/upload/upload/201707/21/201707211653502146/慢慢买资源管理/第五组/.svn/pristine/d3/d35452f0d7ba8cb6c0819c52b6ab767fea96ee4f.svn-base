@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/choudanpin.css">
+    <link rel="stylesheet" href="../fonts/baochaijia/iconfont.css">
+    <link rel="stylesheet" type="text/css" href="../css/base.css">
+    
+    <!--rem适配-->
+    <script>
+        !function(e){function t(a){if(i[a])return i[a].exports;var n=i[a]={exports:{},id:a,loaded:!1};return e[a].call(n.exports,n,n.exports,t),n.loaded=!0,n.exports}var i={};return t.m=e,t.c=i,t.p="",t(0)}([function(e,t){"use strict";Object.defineProperty(t,"__esModule",{value:!0});var i=window;t["default"]=i.flex=function(e,t){var a=e||100,n=t||1,r=i.document,o=navigator.userAgent,d=o.match(/Android[\S\s]+AppleWebkit\/(\d{3})/i),l=o.match(/U3\/((\d+|\.){5,})/i),c=l&&parseInt(l[1].split(".").join(""),10)>=80,p=navigator.appVersion.match(/(iphone|ipad|ipod)/gi),s=i.devicePixelRatio||1;p||d&&d[1]>534||c||(s=1);var u=1/s,m=r.querySelector('meta[name="viewport"]');m||(m=r.createElement("meta"),m.setAttribute("name","viewport"),r.head.appendChild(m)),m.setAttribute("content","width=device-width,user-scalable=no,initial-scale="+u+",maximum-scale="+u+",minimum-scale="+u),r.documentElement.style.fontSize=a/2*s*n+"px"},e.exports=t["default"]}]);
+        flex(100, 1); 
+    </script>
+</head>
+<body>
+    
+    <div class="header-wrap">
+        <header>
+            <div class="back">
+                <a href="javascript:;">
+                    <i class="iconfont icon-houtui"></i>
+                </a>
+            </div>
+            <div class="title">
+                <h2>凑单品</h2>
+            </div>
+            <div class="app-download">
+                <a href="javascript:;" alt=""></a>
+            </div>
+        </header>
+    </div>
+
+    <div class="nav-sel">
+        <ul>
+            <li>
+                <a href="javascript:;" class="shop-btn">
+                    京东
+                    <i class="iconfont icon-shangsanjiao"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;" class="area-btn">
+                    华北
+                    <i class="iconfont icon-shangsanjiao"></i>
+                </a>
+            </li>
+            <li>
+                <a href="javascript:;">
+                    全部价格
+                    <i class="iconfont icon-shangsanjiao"></i>
+                </a>
+            </li>
+            <li class="search">
+                <a href="javascript:;">
+                    <i class="iconfont icon-sousuo-liebiao"></i>
+                </a>
+            </li>
+        </ul>
+        <div class="popup">
+            <div class="shop">
+                
+            </div>
+            <div class="area">
+                
+            </div>
+            <div class="price">
+                <ul>
+                    <li><a href="javascript:;">写死的价格</a></li>
+                    <li><a href="javascript:;">写死的价格</a></li>
+                    <li><a href="javascript:;">写死的价格</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="prolist" id="list">
+        
+    </div>
+
+</body>
+
+<!--店铺模板-->
+<script type="text/template" id="tpl-shop">
+    <ul>
+        {{each result as v i}}
+        <li><a href="javascript:;" data-id="{{v.shopId}}">{{v.shopName}}</a><i class="iconfont icon-ok"></i></li>
+        {{/each}}
+    </ul>
+</script>
+
+<!--地区模板-->
+<script type="text/template" id="tpl-area">
+    <ul>
+        {{each result as v i}}
+        <li><a href="javascript:;" data-id="{{v.areaId}}">{{v.areaName}}</a><i class="iconfont icon-ok"></i></li>
+        {{/each}}
+    </ul>
+</script>
+
+<!--列表模板-->
+<script type="text/template" id="tpl-list">
+    <ul>
+        {{each result as v i}}
+        <li>
+            <img src="{{v.productImg}}" alt="">
+            <p>{{v.productName}}</p>
+            <div class="clearfix">
+                <span class="price">{{v.productPrice}}</span>
+                <a href="javascript:;">去凑单</a>
+            </div>
+        </li>
+        {{/each}}
+    </ul>
+</script>
+
+<script src="../libs/zepto/zepto.js"></script>
+<script src="../libs/zepto/ajax.js"></script>
+<script src="../libs/zepto/event.js"></script>
+<script src="../libs/artTemplate/template.js"></script>
+<script src="../js/cdp.js"></script>
+
+</html>

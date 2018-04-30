@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <?php include '/views/common/css.html' ?>
+    <link rel="stylesheet" href="/views/public/css/goods_list.css">
+</head>
+
+<body>
+    <div class="goods_list_nav">
+        <ul>
+            <li>首页</li>
+            <li>全部分类</li>
+            <li>电视</li>
+            <li>
+                <button>筛选</button>
+            </li>
+        </ul>
+    </div>
+    <?php include '/views/common/script.html' ?>
+</body>
+
+</html>

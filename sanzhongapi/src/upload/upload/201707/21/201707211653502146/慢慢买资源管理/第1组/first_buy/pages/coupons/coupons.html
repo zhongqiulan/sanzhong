@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>肯德基等优惠券 -- 慢慢买</title>
+    <link rel='stylesheet' type="text/css" href='/css/coupons/coupons_base.css'>
+    <link rel='stylesheet' type="text/css" href='/css/coupons/coupons_index.css'>
+    <link rel='stylesheet' type="text/css" href='/public/coupons_fonts/iconfont/iconfont.css'>
+    <?php  include  '/common/css.html' ?>
+
+</head>
+
+<body>
+    <!--优惠券部分-->
+    <div class="view">
+        <!--头部区域-->
+        <div id="header">
+            <a href="/index"><i class="iconfont icon-back">&#xe508;</i></a>
+            <h1>优惠券</h1>
+            <!--<i class="iconfont icon-download">&#xe64a;</i>-->
+            <div class="app_download">
+                <a href="#"><img src="/images/header_app.png" alt=""></a>
+            </div>
+
+        </div>
+        <!--主体区域-->
+        <div id="main">
+            <div class="quan-box">
+                <div class="quan-model">
+                    <div class="items clearfix">
+                        <ul class="items_click">
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--导航条-->
+        <div class="nav">
+            <a href="/index">首页</a>&nbsp;>&nbsp;
+            <a href="/coupons/coupons">优惠券</a>
+        </div>
+        <!--底部区域-->
+        <div id="footer">
+            <div class="checkin">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-sm-4 col-xs-4"><a href="#">登录</a></div>
+                        <div class="col-sm-4 col-xs-4"><a href="#">注册</a></div>
+                        <div class="col-sm-4 col-xs-4">
+                            <a href="#top">
+                                <img src="/images/coupons/top.jpg" alt="">返回顶部
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="bottom">
+                <p class='app'>
+                    <a href="#" class="app_download">手机APP下载</a>
+                    <a href="#">慢慢买手机版</a>-- 掌上比价平台
+                </p>
+                <a href="#">m.manmanbuy.com</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+<?php include '/common/script.html' ?>
+<!--<script src="/js/coupons/coupons.js"></script>-->
+
+<script>
+    require(['coupons']);
+</script>
+
+
+
+<!--优惠券模板-->
+<script type='text/html' id='couponsTmp'>
+
+    {{each result as value i}}
+    <li class="list" data-id="{{value.couponId}}">
+        <a href="#"><img src="{{value.couponImg}}" alt="{{value.couponTitle}}">{{value.couponTitle}}</a>
+    </li>
+    {{/each}}
+
+</script>
+
+</html>

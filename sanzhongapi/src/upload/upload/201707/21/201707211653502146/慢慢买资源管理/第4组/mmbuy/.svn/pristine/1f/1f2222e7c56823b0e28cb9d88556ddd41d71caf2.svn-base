@@ -1,0 +1,28 @@
+.container {
+  width: 100%;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+.container div {
+  border: 1px solid #ccc;
+  border-left: 0px;
+  padding: 0px;
+}
+.container div a {
+  color: #333333;
+  display: block;
+  width: 100%;
+}
+.index_bottom_footer {
+  text-align: center;
+  padding: 10px 0;
+}
+.index_bottom_footer p {
+  margin: 0px;
+}
+.index_bottom_footer p .appdownload {
+  color: red;
+}
+.index_bottom_footer p .appdownload a {
+  color: #5a5a5a;
+}

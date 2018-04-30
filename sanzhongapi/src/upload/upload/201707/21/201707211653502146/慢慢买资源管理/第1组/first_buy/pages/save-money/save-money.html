@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>省钱购</title>
+    <?php include '/common/css.html' ?>
+    <link rel="stylesheet" href="/css/money/money.css">
+</head>
+
+
+<body>
+    <div class="nav">
+        <a href="/index"><i class="glyphicon glyphicon-menu-left dyh"></i></a>
+        <h1 class="sqk" id="top">省钱控 - 最</h1>
+    </div>
+    <!--导航栏结束-->
+    <ul class="list-group" id="product-list">
+        <div class="small-shade ">
+            <img src="/images/loading.gif" alt="">
+        </div>
+    </ul>
+    <!--数据栏结束-->
+
+    <div class="fanye">
+        <div class="fanye-left">
+            <a href="javascript:;" data-d="front" class="btn-front btns">上一页</a>
+        </div>
+        <div class="fanye-center">
+            <select class="yeshu">
+                <option value="1">1</option>
+            </select>
+        </div>
+        <div class="fanye-right">
+            <a href="javascript:;" data-d="back" class="btn-back btns">下一页</a>
+        </div>
+    </div>
+    <!--翻页栏结束-->
+    <div class="bottom">
+        首页 > 省钱控
+    </div>
+    <div class="kong">
+
+    </div>
+    <div class="login">
+        <div class="login-l">登录</div>
+        <div class="login-c">注册</div>
+        <div class="login-r">
+            <img src="/images/top.jpg" alt="" class="arrows"> <a href="#top">返回顶部</a>
+        </div>
+    </div>
+    <div class="appp">
+        <img src="/images/appp.png" alt="">
+    </div>
+    <div class="footer">
+        <p><a href="javascript:;" class="footer-1">手机APP下载</a>
+            <a href="javascript:;" class="footer-2">慢慢买手机版</a> -- 掌上比价平台
+        </p>
+        <div class="footer-3">m.manmanbuy.com</div>
+    </div>
+
+
+</body>
+<?php include '/common/script.html' ?>
+<script>
+    require(['money']);
+</script>
+
+
+<script type="text/template" id="myul">
+    {{each result as v i}}
+    <li class="list-group-item">
+        <a href="javascript:;" class="btn-tz" data-id="{{v.productId}}">
+            <div class="tp-left">
+                {{#v.productImg2}}
+            </div>
+            <div class="tp-right">
+                <div class="titile">
+                    {{v.productName}}
+                    <span class="price">
+                            {{v.productPinkage}}
+                            </span>
+                    <!--价格-->
+                </div>
+                <div class="tp-right-count">
+                    <span class="source">
+                        {{v.productFrom}} | {{v.productTime}}
+                        </span>
+                    <!--来源-->
+                    <span class="evaluate">
+                        <i class=" glyphicon glyphicon-comment tbzt"></i>13
+                        </span>
+                    <!--评价-->
+                </div>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</html>

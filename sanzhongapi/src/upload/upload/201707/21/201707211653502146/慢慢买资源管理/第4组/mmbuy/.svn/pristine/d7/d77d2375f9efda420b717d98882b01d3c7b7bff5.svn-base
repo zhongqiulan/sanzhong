@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type='text/css' href="../libs/bootstrap/css/bootstrap.min.css">
+    <link rel='stylesheet' type='text/css' href='../css/coupon/couponproduct.css' />
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="mmb-coupon">
+        <!--优惠券列表头部-->
+        <div class="coupon-head">
+            <span class="head-back glyphicon glyphicon-menu-left"></span>
+            <h4>肯德基优惠券</h4>
+            <span class="head-app"></span>
+        </div>
+        <!--优惠券列表内容-->
+        <div class="couponList-content" id="product-content">
+            <!--<p class="coupon-tips">--点餐前出示手机中的优惠券，即可享受优惠--</p>
+            <div class="media content-info">
+                <div class="media-left">
+                    <a href="#">
+                        <img class="media-object" src="../imgs/haitao.png" alt="...">
+                    </a>
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">C23  两人小食组 香辣鸡翅2块+黄金鸡块5块+薯条(中)+原味圣代(草莓酱/巧克力酱) 2017年7月凭肯德基优惠券</h4>
+                    <p class="money">￥ 30.5</p>
+                    <p class="time">有效期至7月31日</p>
+                </div>
+                <span class="glyphicon glyphicon-menu-right"></span>
+            </div>-->
+        </div>
+    </div>
+</body>
+</html>
+<script type="text/template" id="couponproduct">
+    <p class="coupon-tips">--点餐前出示手机中的优惠券，即可享受优惠--</p>
+    {{each result as v i}}
+    <div class="media content-info">
+        <div class="media-left">
+            <a href="#">
+                <!--<img class="media-object" src="../imgs/haitao.png" alt="...">-->
+                {{#v.couponProductImg}}
+            </a>
+        </div>
+        <div class="media-body">
+            <h4 class="media-heading">{{v.couponProductName}}</h4>
+            <p class="money">{{v.couponProductPrice}}</p>
+            <p class="time">{{v.couponProductTime}}</p>
+        </div>
+        <span class="glyphicon glyphicon-menu-right"></span>
+    </div>
+    {{/each}}
+</script>
+<script src="../libs/jquery/jquery.min.js"></script>
+<script src="../libs/artTemplate/template.js"></script>
+<script src="../js/coupon/couponproduct.js"></script>

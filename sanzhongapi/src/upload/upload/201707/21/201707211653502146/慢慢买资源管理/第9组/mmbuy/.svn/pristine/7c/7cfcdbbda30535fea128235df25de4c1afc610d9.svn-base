@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title优惠券</title>
+        <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/couponproduct.css">
+</head>
+
+<body>
+    <!--优惠券顶部-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header header-logo pull-left">
+                <a class="navbar-brand" href="coupon-tab.html"><span class='glyphicon glyphicon-chevron-left'></span></a>
+                <!--<span>优惠劵</span>-->
+            </div>
+            <div class="navbar-center pull-left">
+                <span>优惠劵</span>
+            </div>
+            <div class="navbar-right app-donwload pull-right">
+                <img src="../../images/header_app.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <!--优惠券选项列表-->
+    <p class='dealcre'>--点餐前出示手机中的优惠券，即可享受优惠--</p>
+    <div class="coupon_list">
+
+    </div>
+    <!--模态框-->
+    <!--<div class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Modal title</h4>
+                </div>
+                <div class="modal-body">
+                    <p>One fine body&hellip;</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            <!-- /.modal-content -->
+        </div>
+        <!-- /.modal-dialog -->
+    <!--</div>-->
+    <!-- /.modal -->
+
+    <script src='../../lib/jquery/jquery.js'></script>
+    <script src='../../lib/bootstrap/js/bootstrap.min.js'></script>
+    <script src='../../lib/artTemplate/template.js'></script>
+    <script type='text/template' id='coupon_list'>
+        {{each result as v i}}
+        <a href='#' class="media">
+            <div class="media-left">
+                {{#v.couponProductImg}}
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">{{v.couponProductName}}</h5>
+                <h4>{{v.couponProductPrice}}</h4>
+                <p>{{v.couponProductTime}}</p>
+            </div>
+            <div class="media-right">
+                <span class='glyphicon glyphicon-menu-right '></span>
+            </div>
+        </a>
+        {{/each}}
+    </script>
+    <script src='../../js/coupon/couponproduct.js'></script>
+    <script src='../../js/coupon/utils.js'></script>
+</body>
+
+</html>

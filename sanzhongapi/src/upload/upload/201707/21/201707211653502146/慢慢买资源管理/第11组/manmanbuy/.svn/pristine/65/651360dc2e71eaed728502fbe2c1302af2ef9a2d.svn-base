@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/category/category-list.css">
+    <link rel="stylesheet" href="/views/category/font/font/iconfont.css">
+</head>
+
+<body>
+    <div class="cate-list">
+        <!--logo模块-->
+        <div class="top">
+            <!--顶部logo区域-->
+            <div class="top">
+                <nav class="navbar navbar-default">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header pull-left">
+                        <a class="navbar-brand" href="#"><img src="/views/public/images/header_logo.png" alt=""></a>
+                    </div>
+                    <div class="pull-right">
+                        <a href=""><img src="/views/public/images/header_app.png" alt=""></a>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--搜索模块-->
+        <div class="search">
+            <input type="text">
+            <button>搜索</button>
+        </div>
+
+        <div class="bigbox">
+            <!--产品展示qu-->
+            <div class="cpzs">
+                <!--产品展示的小导航-->
+
+            </div>
+
+            <div class="cp-tab">
+                <div>
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active col-xs-4">
+                            <a href="#home" aria-controls="home" role="tab" data-toggle="tab">比价购买</a>
+                            <span class="caret"></span>
+                        </li>
+                        <li role="presentation" class='col-xs-4'>
+                            <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">产品参数</a>
+                            <span class="caret"></span>
+                        </li>
+                        <li role="presentation" class='col-xs-4'>
+                            <a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">产品评价</a>
+                            <span class="caret"></span>
+                        </li>
+                    </ul>
+
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div role="tabpanel" class="tab-pane active" id="home">
+                        </div>
+                        <div role="tabpanel" class="tab-pane" id="profile">...</div>
+                        <div role="tabpanel" class="tab-pane" id="messages">
+                            <!--客户评价对应的模块-->
+                            <div class="evaluate">
+                                <!--评价分类的盒子-->
+                                <div class="pjfl">
+                                    <ul class="clearfix">
+                                        <li class="col-xs-4"><a href="comment.aspx?PageID=1&amp;id=534573#pl">全部</a></li>
+                                        <li class="col-xs-4"><a href="comment.aspx?PageID=1&amp;id=534573&amp;fs=5#pl">值得购买</a></li>
+                                        <li class="col-xs-4"><a href="comment.aspx?PageID=1&amp;id=534573&amp;fs=1#pl">不值得购买</a></li>
+                                    </ul>
+                                </div>
+                                <!--评价的具体内容-->
+                                <div class="pj-content">
+                                    <ul>
+                                        <li>
+                                            <div class="user-info clearfix">
+                                                <div class="user-name row">
+                                                    <p class="name col-xs-6">xx</p>
+                                                    <p class="date col-xs-6" id="date">2017-10-01</p>
+                                                </div>
+                                                <div class="pj-data row">
+                                                    <div class="star col-xs-6">
+                                                        <span class="glyphicon glyphicon-star"></span>
+                                                        <span class="glyphicon glyphicon-star"></span>
+                                                    </div>
+                                                    <span class="shangcheng col-xs-6">京东商城</span>
+                                                </div>
+                                            </div>
+                                            <div class="content">
+                                                <i class="huif">回复</i>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        
+
+
+        <!--footer模块-->
+        <footer>
+            <div class="menu">
+                <ul class="clearfix">
+                    <li><a href="###">登录</a></li>
+                    <li><a href="###">注册</a></li>
+                    <li>
+                        <a href="###">{{<img src="/views/public/uploads/top.jpg" alt="">}}返回顶部</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="xinxi">
+                <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+                <p>m.manmanbuy.com</p>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
+<?php include '/views/common/script.html' ?>
+<script>
+    require(['js/category/category_details']);
+
+</script>
+
+<script type="text/dtpl" id='tpl'>
+    <div class="cpzs-nav">
+        <ul class="clearfix">
+            <li>首页</li>
+            <li>&gt;</li>
+            <li>家庭影院</li>
+            <li>&gt;</li>
+            <li>产品名</li>
+        </ul>
+    </div>
+    <div class="cp-content">
+        <div class="pic">
+            <!--商品图片-->
+            <div class="spimg">
+                {{#productImg}}
+            </div>
+            <!--收藏按钮-->
+            <img class="scbtn" src="http://www.zuyushop.com/wap/images/sc.jpg"></img>
+        </div>
+        <div class="text-ms">{{productName}}</div>
+        <div class="other clearfix">
+            <span>当前最低价<em>¥</em>499999</span>
+            <b class="pull-right">优选评论:条</b>
+        </div>
+    </div>
+    <!--{{#bjShop}}-->
+</script>
+
+<script type="text/tpl" id="jsop">
+<div class="row">
+     {{#bjShop}}
+</div>
+</script>

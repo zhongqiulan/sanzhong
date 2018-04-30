@@ -1,0 +1,242 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+//二倍精灵图设置
+.baj_sprites() {
+    background-image: url("../images/icon_bar.png");
+    /* 二倍精灵图 */
+    background-size: 220px 132px;
+}
+
+.up {
+    display: none;
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 15px;
+    right: 10px;
+    z-index: 999;
+    background: rgba(0, 0, 0, .3);
+    border-radius: 50%;
+    span {
+        margin-left: 8px;
+        font-size: 22px;
+        line-height: 40px;
+        color: #fff;
+    }
+}
+
+// 头部白菜价-淘宝内部券样式
+header {
+    color: #fff;
+    background: #e4393c;
+    position: relative; //标题
+    h2 {
+        margin: 0;
+        padding: 10px 50px;
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+    } //返回按钮
+    .prev {
+        position: absolute;
+        left: 0;
+        font-size: 22px;
+        text-align: center;
+        a {
+            width: 50px;
+            height: 44px;
+            display: block;
+            box-sizing: border-box;
+            padding-top: 8px;
+            span {
+                color: #fff;
+            }
+        }
+    }
+    ; //app下载
+    .download {
+        position: absolute;
+        right: 0;
+        top: 0;
+        a {
+            width: 50px;
+            height: 44px;
+            display: block;
+            img {
+                width: 34px;
+                margin-top: 7px;
+            }
+        }
+    }
+}
+
+;
+// 导航样式
+.navs {
+    background-color: #fff;
+    position: relative;
+    width: 100%;
+    .active {
+        color: #e4393c;
+        border-bottom: 2px solid #e4393c;
+    }
+    a {
+        color: #000512;
+        margin: 0 10px;
+        padding-bottom: 2px;
+        text-decoration: none;
+    }
+    .navs_box {
+        width: 100%;
+        height: 38px;
+        position: relative;
+        overflow: hidden;
+        .navs_list {
+            position: absolute;
+            margin-bottom: 0;
+            height: 38px;
+            width: 750px;
+            list-style: none;
+            li {
+                // width: 100%;
+                float: left;
+                padding: 10px 0;
+            }
+        }
+    }
+    .nav-search {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 10px 15px 0;
+        font-size: 22px;
+        background: #f7f7f7;
+    }
+}
+
+//广告样式
+.adv {
+    margin-top: 10px;
+    a {
+        img {
+            width: 100%;
+        }
+    }
+}
+
+//白菜价商品
+.media {
+    position: relative;
+    background: #fff;
+    padding: 10px 0;
+    margin-bottom: 15px;
+    .media_img {
+        display: inline-block;
+        width: 130px;
+        height: 130px;
+        img {
+            width: 100%; // height: 130px;
+        }
+    }
+    .media-body {
+        .media-heading {
+            color: #464646;
+        }
+        .info {
+            p {
+                span {
+                    color: red;
+                    font-size: 16px;
+                    em {
+                        font-size: 12px;
+                    }
+                }
+            }
+            .bar {
+                margin-bottom: 14px;
+                font-size: 12px;
+                color: #ffb7b7;
+                width: 100%;
+                .quan {}
+                i {
+                    position: relative;
+                    em {
+                        color: #fff;
+                    }
+                    border-radius: 10px;
+                    display: inline-block;
+                    width: 30%;
+                    background: #ffb7b7;
+                    span {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        display: inline-block; // width: 50%;
+                        background: #fc353a;
+                        border-radius: 10px;
+                        text-align: center;
+                    }
+                }
+            }
+            .click_quan {
+                padding-top: 15px;
+                a {
+                    color: #ffb7b7;
+                    font-size: 12px;
+                    padding: 5px;
+                    border: 1px dashed #ffb7b7;
+                }
+            }
+            .btn {
+                position: absolute;
+                bottom: 10px;
+                right: 10px;
+                background: #ff5e5d;
+                padding: 3px 6px;
+                a {
+                    font-size: 14px;
+                    color: #fff;
+                }
+            }
+        }
+    }
+}
+
+//页脚样式
+footer {
+    background: #efefef;
+    .login {
+        ul {
+            list-style: none;
+            li {
+                padding: 5px 0;
+                border: 1px solid #dddddd;
+                float: left;
+                width: 30%;
+                text-align: center;
+                a {
+                    color: #474747;
+                    text-decoration: none;
+                }
+            }
+            li:last-child {
+                width: 40%;
+            }
+        }
+    }
+    .app {
+        text-align: center;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        p {
+            margin: 0;
+        }
+    }
+}

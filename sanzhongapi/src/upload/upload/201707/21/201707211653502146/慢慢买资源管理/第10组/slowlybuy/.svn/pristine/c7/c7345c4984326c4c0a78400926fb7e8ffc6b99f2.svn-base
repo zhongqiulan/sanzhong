@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>国内折扣</title>
+    <link rel="stylesheet" href="/slowlybuy/lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/slowlybuy/css/savemoney_step.css">
+</head>
+
+<body>
+    <div class="layout">
+        <!--头部-->
+        <header id="header">
+            <i class="icon-back glyphicon glyphicon-menu-left"></i>
+            <h1>国内折扣</h1>
+            <a href="javascript:;" class="app-down"><img src="../images/header_app.png" alt=""></a>
+        </header>
+        <!--主要内容-->
+        <div class="main">
+            <!--标题-->
+            <div class="title">
+                <h3>JBL T110 线控入耳式耳机</h3>
+                <h4>59元包邮(99-40)</h4>
+            </div>
+            <!--详情-->
+            <div class="details">
+                <span>天猫商城</span>
+                <span>07-18 21:08</span>
+                <span>不可一世的我 / 慢慢买</span>
+                <span><a href="#">有7人评论</span>
+            </div>
+            <!--主要模板-->
+            <div class="media">
+                <div class="pull-right pic">
+                    <img class="media-object" src="../images/savem_step1.jpg" alt="...">
+                </div>
+                <div class="text">
+                    <!--介绍-->
+                    <p>这款JBL T110 线控入耳式耳机，扁线条设计，用低音增强技术，声音深邃、浑厚， 侧面三个出音口环形设计，增强立体音效，现场包围感强， 让你沉浸在运动音乐的动感节拍上。 输入功率3MW，喇叭阻坑DB值：118db±3db
+                        耳机总长1.2米
+                    </p>
+                    <p></p>
+                    <!---->
+                    <p>
+                        天猫商城目前特价至99元，使用一张40元优惠券，实付59元包邮。近期好价，需要的慢友可以入手了。
+                    </p>
+                    <p><img src="../images/savem_step1.jpg" alt=""></p>
+                </div>
+                <!--购买-->
+                <div class="buy">
+                    <a href="#"><i class="glyphicon glyphicon-shopping-cart"></i>前往购买</a>
+                </div>
+            </div>
+        </div>
+        <!--评论区-->
+        <div class="comment">
+            <div class="com">
+                <div class="title">发表评论</div>
+                <div class="add_com">
+                    <div class="form">
+                        <textarea rows="" cols=""> 呵呵  </textarea>
+                        <div><input type="button" name="" value="发表评论"></div>
+                    </div>
+                </div>
+                <div class="hot_com">热门评论</div>
+                <div class="new_com">
+                    <h4>最新评论</h4>
+                    <ul>
+                        <li>
+                            <div class="media">
+                                <div class="media-left">
+                                    <img class="media-object" src="../images/savestep_use.gif" alt="...">
+                                </div>
+                                <div class="media-body">
+                                    <span class="heading">pinkchenchen</span>
+                                    <span class="time pull-right">2017/7/19 15:29:13</span>
+                                    <p>手机端进不去，电脑端说领完了</p>
+                                    <p class="yingyong"><span>引用 @pinkchenchen：</span>领不了小编 </p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--最后一页  -->
+        <div class='finally'>
+            <p>已经是最后一页！</p>
+        </div>
+
+        <!--跳转页面  -->
+        <div class="htlist-jump">
+            <a href="../index.html">首页</a>&nbsp;>&nbsp;
+            <a href="./cxm-haitao.html">海淘购</a>&nbsp;>&nbsp;
+            <a href="#">T110 线控入耳式耳机</a>
+        </div>
+
+        <!--底部  -->
+        <div class="footer">
+            <div class="footer-app">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                            <img class="media-object" src="../images/htlist-logo.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body media-app">
+                        <h4 class="media-heading">慢慢买APP</h4>
+                        专注全网比价，每一次购物都在为你省钱！
+                    </div>
+                    <div class="btn">
+                        <a href="#">立即打开</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-login">
+                <div class="row footer-top">
+                    <div class="col-xs-4 footer-nav"><a href="#">登录</a></div>
+                    <div class="col-xs-4 footer-nav"><a href="#">注册</a></div>
+                    <div class="col-xs-4 footer-nav">
+                        <a href="#"><img src="../images/haitao-top.jpg" alt="">返回顶部</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-shopping">
+                <div class="row">
+                    <div class="col-xs-4  shopping-left"><a href="#"><i class='glyphicon glyphicon-edit'></i><span>评论</span></a></div>
+                    <div class="col-xs-8  shopping-right"><a href="#" class='shopping'><i class='glyphicon glyphicon-shopping-cart'></i>&nbsp;前往购买</a></div>
+                </div>
+            </div>
+            <div class="footer-img">
+                <a href="#">
+                    <img src="../images/haitao4.png" alt="">
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+<script src='../lib/jquery/jquery.js'></script>
+<script src='../lib/template/template.js'></script>
+<script src='../lib/bootstrap/js/bootstrap.js'></script>
+<script src='../js/savemoney_step.js'></script>
+
+</html>

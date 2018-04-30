@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>慢慢买-凑单品</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/gsshop.css">
+</head>
+
+<body>
+
+    <!--标题栏-->
+    <div class="CDPNav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid CDPNav-er">
+                <div class="navbar-header headText">
+                    <div class="nav navbar-nav navbar-left headArrows">
+                        <span class="glyphicon glyphicon-menu-left"></span>
+                    </div>
+                    <span class="navbar-brand" href="#">凑单品</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!--下拉菜单-->
+    <div class="gasNav">
+        <div class="leftNav clearfix">
+            <div class="on">
+                <div class="topNav">京东
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+            </div>
+            <div class="on">
+                <div class="topNav">华北
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+            </div>
+            <div class="on">
+                <div class="topNav">全部价格
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="search glyphicon glyphicon-align-justify"></div>
+
+
+        <div class="zhtai">
+            <div class="src">
+            <span class="sc_sp glyphicon glyphicon-search"></span>
+            <div class="sc_ipt">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="搜索商品即可查内部券" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">搜索</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+
+
+
+
+        <div class="list">
+            <ul>
+                <li class="gasline"></li>
+                <li>京东</li>
+                <li class="gasline"></li>
+                <li>一号店</li>
+                <li class="gasline"></li>
+                <li>天猫超市</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="gasline"></li>
+                <li>华北（北京、山西等）</li>
+                <li class="gasline"></li>
+                <li>华东（山东、浙江等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="gasline"></li>
+                <li>京东</li>
+                <li class="gasline"></li>
+                <li>一号店</li>
+                <li class="gasline"></li>
+                <li>天猫超市</li>
+            </ul>
+        </div>
+    </div>
+
+    </div>
+    <!--<div class="container-fluid gasNav">
+        <div class="row">
+            <div class="leftNav col-lg-11 col-md-11 col-ms-11 col-xs-11">
+                <div class="on col-lg-4 col-md-4 col-ms-4 col-xs-4">
+                    <div class="topNav">京东
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </div>
+                </div>
+                <div class="on col-lg-4 col-md-4 col-ms-4 col-xs-4">
+                    <div class="topNav">华北
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </div>
+                </div>
+                <div class="on col-lg-4 col-md-4 col-ms-4 col-xs-4">
+                    <div class="topNav">全部价格
+                        <span class="glyphicon glyphicon-triangle-bottom"></span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search col-lg-1 col-md-1 col-ms-1 col-xs-1">col</div>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="gasline"></li>
+                <li>京东</li>
+                <li class="gasline"></li>
+                <li>一号店</li>
+                <li class="gasline"></li>
+                <li>天猫超市</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="gasline"></li>
+                <li>华北（北京、山西等）</li>
+                <li class="gasline"></li>
+                <li>华东（山东、浙江等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+                <li class="gasline"></li>
+                <li>华南（广东、广西等）</li>
+            </ul>
+        </div>
+        <div class="list">
+            <ul>
+                <li class="gasline"></li>
+                <li>京东</li>
+                <li class="gasline"></li>
+                <li>一号店</li>
+                <li class="gasline"></li>
+                <li>天猫超市</li>
+            </ul>
+        </div>
+    </div>-->
+
+
+    <!--商品列表-->
+    <div class="gasSP">
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="splb">
+            <div class="bj">
+                <div class="SPTop">
+                    <img src="../images/0.jpg" alt="">
+                </div>
+                <div class="SPBottom">
+                    <div class="bt">
+                        <span>Cephei 奢斐 特浓3合1白咖啡 16g 马来西亚进口</span>
+                    </div>
+                    <div class="bb">
+                        <div class="bbl">
+                            <em>￥</em><i>1.00</i>
+                        </div>
+                        <div class="bbr">去凑单</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="../libs/jquery/jquery.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/gsshop.js"></script>
+</body>
+
+</html>

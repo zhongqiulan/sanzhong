@@ -1,0 +1,15 @@
+$(function(){
+    var id = location.search.split('=')[1];
+      $.ajax({
+         url:'http://139.199.192.48:9090/api/getmoneyctrlproduct',
+         type:'get',
+         data:{
+           productid:id
+         },
+         success:function(info){
+             console.log(info);         
+             var htmlStr =template('media_tpl',info);
+             $('.main').html(htmlStr);
+         }
+     })
+})

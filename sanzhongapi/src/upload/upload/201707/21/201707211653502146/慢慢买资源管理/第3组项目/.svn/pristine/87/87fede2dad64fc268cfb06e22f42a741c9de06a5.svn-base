@@ -1,0 +1,96 @@
+/*
+    Author:Œ‚…˙
+    createDate:2017/07/19
+*/
+
+.content_rk {
+    padding: 10px;
+    background-color: #F2F2F2;
+}
+
+.rkTop_title {
+
+}
+
+.rkTop_title h2 {
+    margin: 0;
+    font-weight: 700;
+    font-size: 16px;
+    height: 30px;
+    line-height: 30px;
+    padding-left: 5px;
+}
+.rkTop_title p {
+    background-color: #fff;
+    padding: 10px 20px 10px 10px;
+    font-size: 12px;
+    color: #666666;
+    line-height: 20px;
+}
+.content_rk .conList {
+
+}
+.content_rk .title-list {
+    height: 35px;
+    padding: 10px 8px;
+    background-color: #F7F7F7;
+    font-size: 12px;
+    color: #999999;
+}
+.conList .content-list {
+    background-color: #fff;
+}
+.conList .content-list ul {
+    border:none;
+}
+
+.conList .content-list ul.nav {
+    background-color: #fff;
+    background: none;
+}
+.conList .content-list ul.nav li a {
+    border: none;
+    padding: 0;
+}
+.conList .content-list ul.nav li {
+    width: 25%;
+    text-align: center;
+    height: 30px;
+    margin-top: 10px;
+}
+.content-list .nav-tabs li.active a{
+    color: #f00;
+}
+.content-list .tab-pane .media {
+    width: 100%;
+}
+.content-list .tab-content li {
+    padding: 10px 5px 5px 5px;
+}
+.content-list .tab-content li .media-body {
+    padding-top: 10px;
+
+}
+.content-list .tab-content li img {
+    width: 120px;
+    height: 100px;
+}
+.content-list .tab-content li .media-body h4 {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+.content-list .tab-content li .media-body em {
+    color: #f00;
+    font-style: normal;
+    font-weight: 700;
+    font-family: "microsoft yahei";
+}
+
+.content-list .tab-content li .media-body span.le,
+.content-list .tab-content li .media-body span.rl{
+    color: #A1A1A1;
+    font-size: 12px;
+}
+
+

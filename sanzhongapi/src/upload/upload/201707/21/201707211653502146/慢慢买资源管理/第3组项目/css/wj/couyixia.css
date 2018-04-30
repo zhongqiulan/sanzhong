@@ -1,0 +1,141 @@
+.view .content {
+    color: #5a5a5a;
+    background: #dadada;
+}
+.view .content .title {
+    height: 44px;
+    line-height: 44px;
+    padding-left: 20px;
+}
+.view .content .chae{
+    position: relative;
+    height: 45px;
+    line-height: 45px;
+    font-size: 15px;
+    background: #fff;
+    border-top: 1px solid #dadada;
+    border-bottom: 1px solid #dadada;
+}
+.view .content .chae .left {
+    position: absolute;
+    top: 0;
+    left: 40px;
+}
+.view .content .chae .right {
+    position: absolute;
+    height: 100%;
+    width: 50px;
+    border:  none;
+    top: 0;
+    right: 50px;
+}
+.view .content .choose {
+    height: 85px;
+    padding-top: 50px;
+    padding-left: 20px;
+    border-bottom: 1px solid #dadada;
+}
+.view .content .wanglei {
+    background: #FFF;
+    position: relative;
+}
+.view .content .wanglei .shang i{
+    margin-left: 15px;
+}
+.view .content .wanglei .xia i{
+    /*margin-left: 43px;*/
+}
+.view .content .wanglei span{
+    /*margin-left: 5px;*/
+}
+.view .content .wanglei .shang,.view .content .wanglei .xia{
+    height: 40px;
+    line-height: 40px;
+    padding-left: 40px;
+    border-bottom: 1px solid #dadada;
+    position: relative;
+}
+.view .content .wanglei .shang .l,.view .content .wanglei .xia .l{
+    float: left;
+}
+.view .content .wanglei .shang .i_icon1{
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: url('../images/shangc.png') no-repeat;
+    background-size:22px 22px;
+    
+}
+.view .content .wanglei .xia .i_icon2{
+    display: inline-block;
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    width: 20px;
+    height: 20px;
+    background: url('../images/diqu.png') no-repeat;
+    background-size:22px 22px;
+}
+.view .content .wanglei .xia .i_icon3 {
+    position: absolute;
+    top: 0;
+    right: 15px;
+}
+.view .content .wanglei .shang .r,.view .content .wanglei .xia .r{
+    width: 90px;
+    /*background: #ccc;*/
+    margin-right: 10px;
+    padding-left: 5px;
+    float: right;
+}
+.view .content .wanglei .shang .r {
+    border-bottom: 1px solid #fff;
+}
+.view .content .chae   i{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background: url('../images/chae.png') no-repeat;
+    background-size:22px 22px;
+    margin-left: 18px; 
+    margin-top: 12px; 
+}
+.view .content .footer{
+    background: #ff8b00;
+    
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-weight: bolder;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 3px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.view .content .footer a {
+    color: #fff;
+}
+.view .content .wanglei .wangleiaa {
+    background: #fff;;
+    position: absolute;
+    width: 100px;
+    top: 80px;
+    right: 0;
+    border:1px solid #dadada;
+    display: none;
+}
+.view .content .wanglei .wangleiaa ul li{
+    height: 30px;
+    line-height: 30px;
+    padding-left: 10px;
+} 
+.view .content .wanglei .wangleiaa.on{
+    display: block;
+}
+.view .content .wanglei .wangleiaa ul li+li {
+    border-top: 1px solid #dadada;
+}

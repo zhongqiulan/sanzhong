@@ -1,0 +1,218 @@
+a {
+    color: #000;
+}
+
+a:focus {
+    text-decoration: none;
+}
+
+
+/*头部*/
+
+ul {
+    list-style: none;
+}
+
+.products {
+    margin-top: 10px;
+}
+
+.pro_nav .breadcrumb {
+    /*position: relative;*/
+    background: repeating-linear-gradient(rgba(0, 0, 0, .1) 0%, #f4f4f4 50%, rgba(0, 0, 0, .1) 100%);
+}
+
+.pro_nav .breadcrumb li:last-of-type {
+    width: 130px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    position: relative;
+    top: 5px;
+}
+
+.pro_nav {
+    position: relative;
+}
+
+.pro_nav .selectBtn {
+    border: 1px solid rgba(0, 0, 0, .1);
+    /*margin-right: 10px;*/
+    position: absolute;
+    right: 10px;
+    top: 6px;
+}
+
+.pro_nav .breadcrumb a,
+.pro_nav .breadcrumb a:link,
+.pro_nav .breadcrumb a:focus,
+{
+    color: #000;
+    text-decoration: none;
+}
+
+.pro_nav .breadcrumb li+li::before {
+    content: ">";
+}
+
+.pro_nav .breadcrumb li:last-child:after {
+    content: ">";
+    color: #ccc;
+    margin-left: 5px;
+}
+
+.pro_title {
+    text-align: center;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.pro_img {
+    text-align: center;
+    position: relative;
+}
+
+.pro_img .save {
+    background-color: #95d700;
+    display: inline-block;
+    border-radius: 50%;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    right: 40px;
+    bottom: 0px;
+}
+
+.pro_options {
+    width: 100%;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.pro_options li {
+    float: left;
+    background-color: #ffc527;
+    width: 33.3%;
+    text-align: center;
+    border: 1px solid #df7811;
+    border-radius: 0;
+}
+
+.pro_options li a {
+    color: #fff;
+}
+
+.pro_options li.option_active {
+    background-color: #ff9c1c;
+}
+
+.pro_price {
+    padding: 10px 8px;
+}
+
+.pro_price img {
+    width: 16px;
+    margin-right: 5px;
+}
+
+.pro_price .item_price {
+    color: #d7322c;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.pro_price .buy {
+    color: #fff;
+    background-color: #ff5500;
+    display: inline-block;
+    padding: 0 3px;
+    border-radius: 5px;
+}
+
+.expression p {
+    padding: 10px;
+}
+
+.expression::before {
+    display: block;
+    width: 100%;
+    height: 2px;
+    content: "";
+    background-color: #ccc;
+}
+
+.comments .comments_title {
+    height: 36px;
+    line-height: 36px;
+    font-size: 16px;
+    background-color: #dbdbdb;
+    text-align: center;
+    margin-bottom: 10px;
+    /*padding: 0 10px;*/
+}
+
+.comments .comment_title>.pull-left {
+    margin-left: 10px;
+}
+
+.comments .comment_title>.pull-right {
+    margin-right: 10px;
+}
+
+.buyfrom>.pull-right {
+    margin-right: 10px;
+}
+
+.comment_main {
+    padding: 10px;
+}
+
+.line {
+    content: "";
+    display: block;
+    height: 1px;
+    width: 100%;
+    background-color: #ccc;
+    margin-bottom: 10px;
+}
+
+.more_comments {
+    text-align: center;
+}
+
+.more_comments .btn {
+    width: 90%;
+    background: repeating-linear-gradient(rgba(0, 0, 0, .1) 0%, #f4f4f4 50%, rgba(0, 0, 0, .1) 100%);
+}
+
+.footer {
+    background-color: #efefef;
+    width: 100%;
+}
+
+.footer .checkin .row div {
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border: 1px solid #c5c5c5;
+}
+
+.footer .checkin .row div a {
+    color: #000;
+}
+
+.footer .bbottom {
+    box-sizing: border-box;
+    padding: 20px 50px;
+    text-align: center;
+}
+
+.footer .bbottom .app a {
+    color: #f00;
+}
+
+.footer .bbottom .app .grey {
+    color: #676767;
+}

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel="stylesheet" href="../js/assets/bootstrap/css/bootstrap.css">
+  <link rel='stylesheet' href='../css/dabaicai/index.css'>
+  <title>白菜价-淘宝内部劵</title>
+</head>
+
+<body>
+  <div class="views">
+    <div class="content">
+      <!--    头部  S   -->
+      <header>
+        <div class="back_icon">
+          <span class="iconfont">&#xe60d;</span>
+        </div>
+        <a href='javascript:;' class="AppDownLoad"></a>
+        <h2>白菜价-淘宝内部劵</h2>
+      </header>
+      <!--    头部  E   -->
+
+      <!--   导航条 S   -->
+      <nav>
+        <div class="box">
+          <ul class="naver">
+            <!--<li><a class="actives" href='javascript:;'>全部</a></li>-->
+          </ul>
+        </div>
+        <div class="dropdown search">
+          <span id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="iconfont">&#xe6a4;</span>
+          <div class="dropdown-menu" aria-labelledby="dLabel">
+            <i class="iconfont" id="SearchIcon">&#xe6a4;</i>
+            <input type="text" name="search" placeholder="搜索商品即可查内部卷">
+          </div>
+        </div>
+      </nav>
+      <!--   导航条 E   -->
+
+      <!--    广告  S   -->
+      <a class="banner" href='javascript:;'><img src="../images/quan_banner_wap.png" alt=""></a>
+      <!--    广告  E   -->
+
+      <!--    商品  S   -->
+      <div class="main">
+        <ul id="productList" data-role="listview">
+
+        </ul>
+      </div>
+      <!--    商品  E   -->
+
+      <!--    尾部  S   -->
+      <footer>
+        <div id="login" class="clearfix ">
+          <i>登录</i>
+          <i>注册</i>
+          <i id="TopBtn">返回顶部</i>
+        </div>
+        <i class="copy">
+            <span>手机APP下载</span><span> 慢慢买手机版</span><span> -- 掌上比价平台</span>
+            <p>m.manmanbuy.com</p>
+        </i>
+      </footer>
+      <!--    尾部  E   -->
+
+      <!--返回顶部固定按钮-->
+      <div class="TopBtn">
+        <span class="iconfont">&#xe63b;</span>
+      </div>
+      
+    </div>
+  </div>
+  <script src="../js/assets/jquery/jquery.js"></script>
+  <script src="../js/assets/bootstrap/js/bootstrap.js"></script>
+  <script src="../js/assets/artTemplate/template.js"></script>
+  <script src="../js/dabaicai/dabaicai.js"></script>
+  <script src="../js/dabaicai/mytouch.js"></script>
+
+  <!--导航条渲染-->
+  <script type="text/template" id="navInfo">
+    {{each result as v i }}
+    <li>
+      <input type="hidden" name="titleId" value="{{v.titleId}}">
+      <a href="javascript:;">{{v.title}}</a>
+    </li>
+    {{/each}}
+  </script>
+
+</body>
+
+</html>

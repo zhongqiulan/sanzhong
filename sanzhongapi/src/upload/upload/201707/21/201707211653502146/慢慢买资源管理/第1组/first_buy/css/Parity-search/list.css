@@ -1,0 +1,144 @@
+.views {
+    overflow: hidden;
+}
+
+.seation_list {
+    margin-top: 10px;
+}
+
+.seation_list .nav {
+    border-top: 1px solid #ececec;
+    border-bottom: 1px solid #ececec;
+    padding: 0 10px;
+    height: 40px;
+    background: repeating-linear-gradient(rgba(0, 0, 0, .1) 0%, #f4f4f4 50%, rgba(0, 0, 0, .1) 100%);
+}
+
+.seation_list .nav .pull-right {
+    margin-top: 5px;
+    height: 30px;
+    background: repeating-linear-gradient(rgba(0, 0, 0, .1) 0%, #f4f4f4 50%, rgba(0, 0, 0, .1) 100%);
+}
+
+.seation_list .nav .pull-left {
+    font-size: 14px;
+    line-height: 40px;
+}
+
+.seation_list .nav .pull-left a {
+    color: #000;
+    text-decoration: none;
+}
+
+
+/*商品列表  */
+
+.main .list-group li {
+    border: none;
+    padding: 10px;
+    height: 116px;
+}
+
+.main .tp-left {
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+
+.main .tp-right .titile {
+    font-size: 14px;
+    color: black;
+    height: 50px;
+}
+
+.main .price {
+    color: red;
+    font-size: 17px;
+}
+
+.main .tp-right-count {
+    color: #a1a1a1;
+    margin-top: 5px;
+    position: relative;
+}
+
+.main .source {
+    float: left;
+}
+
+.main .evaluate {
+    float: right;
+}
+
+.main .evaluate .tbzt {
+    color: #a1a1a1;
+    margin-right: 5px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.main .tp-left img {
+    width: 100px;
+}
+
+
+/*分页的样式  */
+
+.fanye {
+    height: 80px;
+    background-color: #efefef;
+    line-height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.fanye .fanye-left,
+.fanye .fanye-center {
+    float: left;
+}
+
+.fanye .fanye-left {
+    width: 20%;
+    font-size: 13px;
+}
+
+.fanye .fanye-right {
+    float: right;
+    width: 20%;
+    font-size: 13px;
+}
+
+.fanye .fanye-center {
+    margin: 0 auto;
+    width: 60%;
+}
+
+.fanye .fanye-center .yeshu {
+    display: block;
+    margin: 0 auto;
+    width: 115px;
+    margin-top: 25px;
+    height: 30px;
+}
+
+.fanye-left a {
+    color: #000;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0 0 1px #666;
+    border-radius: 5px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+}
+
+.fanye-right a {
+    color: #000;
+    padding: 5px 10px 5px 10px;
+    box-shadow: 0 0 1px #666;
+    border-radius: 5px;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#f1f1f1), to(#d4d4d4));
+}
+
+.fanye a:hover {
+    text-decoration: none;
+    user-select: none;
+}

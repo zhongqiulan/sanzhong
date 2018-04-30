@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比价搜索</title>
+    <link rel='stylesheet' type='text/css' href='../lib/bootstrap/css/bootstrap.css'>
+    <link rel='stylesheet' type='text/css' href='../css/category.css'>
+</head>
+
+<body>
+    <div class="Compare-price">
+        <!--顶部logo-->
+        <div class="head_logo clearfix">
+            <div class="logo pull-left">
+                <a href='../index.html'>
+                <img src="../images/header_logo.png" alt="logo">
+            </a>
+
+            </div>
+            <div class="appdown  pull-right">
+                <a href='appdown.html'>
+                <img src="../images/header_app.png" alt="app" class="pull-right" >
+           </a>
+            </div>
+        </div>
+        <!--搜索框-->
+        <div class="seek ">
+            <div class="searcText">
+                <input type="text" placeholder='你输入你想比价的商品'>
+            </div>
+            <div class="searcBtn">
+                <input type="submit" value="搜索">
+            </div>
+
+        </div>
+        <!--分类-->
+        <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+            <!--<div class="panel panel-default">
+                <div class="panel-heading" role="tab" id="headingOne">
+                    <h4 class="panel-title">
+                        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-controls="collapseOne">
+                        大家电
+                        <span class="glyphicon glyphicon-menu-down"></span>
+                        </a>
+                    </h4>
+                </div>
+
+                <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                    <div class="panel-body container-fluid">
+                        <div class="col-xs-4">平板电脑</div>
+                        <div class="col-xs-4">空调</div>
+                        <div class="col-xs-4">家庭影院</div>
+                        <div class="col-xs-4">冰箱</div>
+                        <div class="col-xs-4">DVD高清播放器</div>
+                    </div>
+                </div>
+
+            </div>-->
+        </div>
+    </div>
+    <!--页脚-->
+    <footer>
+        <div class="login clearfix">
+            <ul>
+                <li><a href="javascrip:;">登录</a></li>
+                <li><a href="javascrip:;">注册</a></li>
+                <li class="top"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</li>
+            </ul>
+        </div>
+        <div class="app">
+            <p><a href="appdown.html">手机APP下载</a>慢慢买手机版--掌上比价平台</p>
+            <p>m.mammanbuy.com</p>
+        </div>
+    </footer>
+</body>
+
+</html>
+<!--子类标题-->
+<script id="title_tpl" type="text/template">
+    {{each result as v i}}
+    <div class="panel panel-default" data-titleid="{{v.titleId}}">
+        <div class="panel-heading" role="tab" id="headingOne{{v.titleId}}">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne{{v.titleId}}" aria-controls="collapseOne{{v.titleId}}">
+                        {{v.title}}
+                <span class="glyphicon glyphicon-menu-down"></span>
+                </a>
+            </h4>
+        </div>
+
+        <div id="collapseOne{{v.titleId}}" class="panel-collapse collapse clasify_title" data-getData="false" role="tabpanel" aria-labelledby="headingOne{{v.titleId}}">
+        </div>
+
+    </div>
+    {{/each}}
+</script>
+
+<!--子类标题下面的分类-->
+<script id="clasifu_title_tpl" type="text/template">
+    <div class="panel-body container-fluid">
+        {{each result as v i}}
+        <div class="col-xs-4 clasify-category" date-categoryId="{{v.categoryId}}">
+            <a href="./Compare-price-search/list.html?categoryid={{v.categoryId}}&category={{v.category}}">{{v.category}}</a>
+        </div>
+        {{/each}}
+    </div>
+</script>
+<script id="classify_title_tpl"></script>
+<script src="../lib/jquery/jquery.js"></script>
+<script src='../lib/template/template.js'></script>
+<script src='../lib/bootstrap/js/bootstrap.js'></script>
+<script src="../js/Compare-price-search/geturl.js"></script>
+<script src='../js/Compare-price-search/category.js'></script>

@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    display: block;
+}
+ul{
+    list-style: none;
+}
+#nav_conten{
+    background-color: orangered;
+}
+
+.container-fluid .nav_img .nvim span {
+    margin-top: 6px;
+    font-size: 20px;
+    color: white;
+}
+.container-fluid .fo_title{
+     float: left; 
+     margin-left:150px;
+    margin-top: -20px;
+    color: #fff;
+    font-size: 20px;
+}
+.container-fluid .app-donwload  img{
+    height:34px;
+    margin-top: -35px;
+}
+.shop_nav .dropdown{
+     width: 30%; 
+    float:left;
+    margin-top: -10px;
+}
+.shop_nav .dropdown  .jd_btn{
+    border: none;
+    margin-left: 10px;
+}
+.shop_lis .shlo {
+    margin-top: 30px;
+}
+.shl_lis .shop_lis a  p{
+    text-align: center;
+    font-size: 16px;
+    color:#000;
+}
+.shl_lis .shop_lis a del{
+    color: red;
+    font-size: 20px;   
+}
+.shl_lis .shop_lis a span{
+    margin-left: 70px;
+    padding: 10px;
+    background-color: red;
+    color: white;
+    font-size: 16px;
+}

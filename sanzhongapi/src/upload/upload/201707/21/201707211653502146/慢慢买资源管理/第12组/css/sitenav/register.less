@@ -1,0 +1,126 @@
+ // 头部部分开始
+ body{
+      background-color: rgb(242, 242, 242) !important;
+ }
+ #head {
+     background-color: #ff841d;
+     .headLogo {
+         position: relative;
+         >a {
+             display: block;
+             line-height: 0rem;
+             padding: .1rem;
+             padding-right: .6rem;
+             padding-left: .2rem;
+             img {
+                 height: .5rem;
+             }
+         }
+         a.headApp {
+             position: absolute;
+             right: .1rem;
+             top: .1rem;
+             padding: 0;
+         }
+     }
+ } // 输入框
+ .sreach {
+    background-color: rgb(241, 241, 241);
+     padding-bottom: 10px;
+     padding-top:20px;
+     input {
+         border-top-left-radius: 20px;
+         border-bottom-left-radius: 20px;
+         width: 107% !important;
+         color:#ccc;
+         font-weight:700;
+     }
+     span {
+         border-radius: 20px !important;
+         position: relative;
+         z-index: 4;
+         background-color: #ff841d;
+         color: #fff;
+     }
+ } 
+//  登录输入框
+.message{
+    form{
+        input{
+            display: block;
+            width: 90%;
+            height: 36px;
+            margin:10px auto;
+            color:#ccc;
+            border:none;
+            font-weight:600;
+            border:1px solid #ccc;
+            font-weight:'Microsoft-yahei';
+            font-size: 14px;
+        }
+       .btnlogin{
+            display: block;
+            width: 90%;
+            height: 36px;
+            margin:8px auto;
+            background-color:rgb(255, 163, 44);
+            border-radius:3px;
+            color:#fff;
+            font-size: 18px;
+            border:none;
+            border:1px solid #ccc;      
+       }
+              
+        input[type='checkbox']{
+            display: inline-block;
+            margin-left:20px;
+            width: 15px;
+            height: 15px;
+            text-align: left;
+        }
+        span{
+            color:#000;
+            font-weight:normal;
+            font-size: 14px; 
+            vertical-align: middle;   
+        }
+    }
+}
+.forget{
+    span{
+        display: block;
+        margin-top:50px;
+        margin-left:20px;
+        margin-bottom:30px;
+        color:#ccc;
+        font:normal 14px 'Microsoft-yahei';
+    }
+}
+ //底部区域
+ #footer {
+     background-color: #f1f1f1;
+     font-size: .24rem;
+     text-align: center;
+     padding-top: .4rem;
+     ul {
+         text-align: center;
+         li {
+             border-top: .01rem solid #ccc;
+             border-bottom: .01rem solid #ccc;
+             a {
+                 display: block;
+                 padding: .12rem 0;
+             }
+         }
+         li:nth-of-type(2) {
+             border-left: .01rem solid #ccc;
+             border-right: .01rem solid #ccc;
+         }
+     }
+     >p {
+         padding-top: 15px;
+         >a:first-of-type {
+             color: red;
+         }
+     }
+ }

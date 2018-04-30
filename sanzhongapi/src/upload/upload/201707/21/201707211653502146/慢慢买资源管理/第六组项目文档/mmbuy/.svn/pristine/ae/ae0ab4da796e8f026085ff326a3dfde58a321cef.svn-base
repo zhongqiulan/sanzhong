@@ -1,0 +1,21 @@
+ <div class="footer">
+            <div class="more-info">
+                <a href='#'>更多优惠信息>></a>
+
+            </div>
+            <div class="brand-reco  clearfix">
+                <h3>品牌排行</h3>
+                <a href="javascript:void(0);"><img src="/images/more.png" alt=""></a>
+            </div>
+            <div class="tool">
+                <ul class="clearfix">
+                    <li>登陆</li>
+                    <li>注册</li>
+                    <li id="top"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</li>
+                </ul>
+                <div class="mmurl">
+                    <span>手机APP下载</span> 慢慢买手机版--掌上比价平台
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </div>
+        </div>

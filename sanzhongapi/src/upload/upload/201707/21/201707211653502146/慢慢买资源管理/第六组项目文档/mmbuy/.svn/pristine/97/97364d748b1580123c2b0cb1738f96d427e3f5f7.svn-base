@@ -1,0 +1,83 @@
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>商品详情</title>
+    <link rel="stylesheet" href="../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../public/css/homeDiscount.css">
+    <link rel="stylesheet" href="../public/css/produceDetail.css">
+</head>
+<body>
+       <header>
+        <a href="#" class="head_change"><i class="glyphicon glyphicon-chevron-left"></i></a>
+        <h1>国内折扣</h1>
+        <a href="#" class="head_app"></a>
+      </header>
+     
+    <main>
+        <div class="container">
+            <h3>【苏宁超市】蓝月亮 深层洁净护理洗衣液(自然清香) 500g/袋</h3>
+        <p class="price">9.9元</p>
+        <p class="time">京东商城 | 2017-10-22 13:28</p>
+        <div class="product_detail">
+            <img class="pull-right" width="120" height="120" src="../public/image/init-imgs/test.jpg" alt="">
+            发大水发大水发生大法师打发第三方啊打发速度发 短发卡机的反馈垃圾的反馈
+            发大水发大水发生大法师打发第三方啊打发速度发 短发卡机的反馈垃圾的反馈
+            发大水发大水发生大法师打发第三方啊打发速度发 短发卡机的反馈垃圾的反馈
+            发大水发大水发生大法师打发第三方啊打发速度发 短发卡机的反馈垃圾的反馈
+        </div>
+        <div class="gobuy"><button class="btn">前往购买</button></div>
+    
+         <div class="comment">
+             <p>发表评论</p>
+             <form>
+                 <textarea></textarea>
+             </form>
+             <button class="btn">发表评论</button>
+         </div>
+
+         <p>最新评论</p>
+         <div class="newComment">
+             <ul>
+                 <li>
+                     <div class="person">
+                         <img src="../public/image/init-imgs/none.gif" alt="" width="40">
+                     </div>
+                     
+                     <div class="person_comment">
+                        <p class="clearfix"> <span class="pull-left">手机端网友183***65</span>
+                         <span class="pull-right">2017/7/18 21:13:27</span></p>
+                         <p>发顺丰俺的沙发上 阿斯蒂芬</p>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+         <div class="nav">
+            <a href="#">首页</a>
+            <span>&gt;</span>
+            <a href="#">超值推荐</a>
+            <span>&gt;</span>
+            <a href="#">Skullcandy H...</a>
+         </div>     
+
+
+        </div>
+
+    </main> 
+ 
+        <!--底部-->
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4"><a href="#">登录</a></div>
+                <div class="col-xs-4"><a href="#">注册</a></div>
+                <div class="col-xs-4"><a href="#"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</a></div>
+            </div> 
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/agio/agio-base.css">
+    <link rel="stylesheet" href="./css/agio-child/agio-child.css">
+    <title>国内折扣-详情页面</title>
+</head>
+<body>
+    <!--国内折扣 子页面 容器-->
+    <div class="agio-child ">
+      <!--详情页面 头部-->
+      <div class="details-header"></div>
+
+      <div class="det-box">
+
+      </div>
+
+      <div class="det-menu">
+          <ul class="clearfix">
+              <li><a href="javascript:;">首页 ></a></li>
+              <li><a href="javascript:;">超级推荐 ></a></li>
+              <li><a href="javascript:;">京东商城 波兰进口  sa...</a></li>
+          </ul>
+      </div>
+      <div class="footer">
+          <div class="footer-top">
+              <ul class="clearfix">
+                  <li><a href="javascript:;">登陆</a></li>
+                  <li><a href="javascript:;">注册</a></li>
+                  <li><a href="javascript:;">返回顶部</a></li>
+              </ul>
+          </div>
+      </div>
+    </div>
+    <!--国内折扣 子页面 容器 结束-->
+
+    <div class="mmb-logo">
+        <img src="./images/" alt="">
+    </div>
+</body>
+
+
+
+<!--渲染模版 开始-->
+<script type="text/template" id="agio_child_tpl">
+    <!--详情页面 内容容器 开始-->
+       <form action="" name="" id="aspnetForm">
+        <!--详情页面-内容-->
+        {{each result as v i}}
+        <div class="details-content">
+            <!--标题-->
+           <h3 class="det-title">
+               {{v.productName}}
+               {{v.productPinkage}}   
+           </h3>
+           <!--时间信息-->
+           <div class="det-info">
+               <span class="det-mall">{{v.productFrom}}</span>
+               <span class="det-addtime">{{v.productTime}}</span>
+               <span class="det-author">{{v.productTips}}</span>
+           </div>
+           <!--物品详情 容器-->
+           <div class="clearfix det-content" id="det-content">
+               <!--右 物品图片 -->
+              <div class="right-img" id="picwrap" >
+                  {{#v.productImg}}
+              </div>
+            <!--物品详情 左  文字-->
+              <div class="left-font">
+                  {{v.productInfo}}
+                  {{v.productInfo1}}
+                  {{v.productInfo2}}
+              </div>
+           </div>
+
+           <!--前往购买-->
+           <div class="golink">
+               <a href="javascript:;">前往购买</a>
+           </div>
+
+        </div>
+        {{/each}}
+          <!-- 发表评论-->
+         <div class="comment-box">
+           <div class="com-tit">发表评论</div>
+           <div class="com-replay">
+               <div class="form">
+                 <textarea name="" id=""  rows="3"></textarea>
+                 <input type="hidden" neme="" id="" value="手机端">
+               </div>
+           </div>
+           
+           <!--提交评论-->
+           <div class="com-ctrl">
+               <input type="submit" name="" value="发表评论">
+           </div>
+           <div id="new-com">最新评论</div>
+         </div>
+
+         <!--已提交评论-->
+         <div class="com-list">
+             <ul>
+                 <li>
+                     <div class="user-img">
+                     </div>
+                     <div class="user-con">
+                         <div class="name clearfix">
+                             <div class="user-name"></div>
+                             <div class="user-time"></div>
+                         </div>
+                         <div class="user-content"></div>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+
+         </div>
+        </form>
+      <!--详情页面 内容容器 结束-->
+       
+</script>
+
+
+
+<script src="./libs/jquery/jquery.min.js"></script>
+<script src="./libs/bootstrap/js/bootstrap.min.js"></script>
+<script src="./libs/template.js"></script>
+<script src="./js/agio/agio-untils.js"></script>
+<script src="./js/agio/agio-child.js"></script>
+</html>

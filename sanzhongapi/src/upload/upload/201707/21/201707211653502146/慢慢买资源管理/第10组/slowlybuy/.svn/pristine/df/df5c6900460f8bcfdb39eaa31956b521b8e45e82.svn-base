@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>慢慢买App</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/appdown.css">
+</head>
+
+<body>
+    <div class="appbody">
+        <!--头部-->
+        <div class="apphead">
+            <!--应用宝-->
+            <div class="usepro">
+                <img src="../images/appIMG/myapp-logo.png" alt="">
+            </div>
+            <!--logo-->
+            <div class="logo">
+                <img src="../images/appIMG/96.png" alt="">
+            </div>
+            <!--应用名称-->
+            <h1 id="headH">
+                <div>
+                    <span>慢慢买</span>
+                    <e>官网</e>
+                </div>
+            </h1>
+            <!--数据-->
+            <p>
+                <span>4.7</span>分
+                <span>15万次</span>下载
+                <span>10MB</span>
+            </p>
+            <!--下载链接-->
+            <div class="downBtn">
+                <a href='javascript:;'>
+                    安全下载
+                </a>
+                <p>普通下载</p>
+            </div>
+        </div>
+        <!--详情-->
+        <div class="appdeta">
+            <div class="list">
+                <ul class="clearfix">
+                    <li><img src="../images/appIMG/1.jpg" alt=""></li>
+                    <li><img src="../images/appIMG/2.jpg" alt=""></li>
+                    <li><img src="../images/appIMG/3.jpg" alt=""></li>
+                    <li><img src="../images/appIMG/4.jpg" alt=""></li>
+                    <li><img src="../images/appIMG/5.jpg" alt=""></li>
+                </ul>
+               
+                <p>
+                    慢慢买，一个让你网购省钱省心的随身购物助手。
+                    <br>
+                    囊括京东、天猫、一号店、亚马逊、苏宁易购等国内一线电商平台优惠促销信息。
+                    <br>
+                    覆盖家用电器、日用商品、母婴商城、手机数码等多个购物品类。
+                    <br>
+                    每一款都是人工精挑细选审核，0元单、bug价、神价格，不在话下，天天包邮，低价不停。
+                </p>
+                 <!--版本-->
+                <div class="ed">
+                    <p>版本：2.6.0</p>
+                    <p>更新时间：2017年07月18日</p>
+                </div>
+
+                <!--声明-->
+                <div class="state">
+                    <span>无病毒</span>
+                    <span class="span2">无病毒</span>
+                    <span class="span3">无病毒</span>
+                </div>
+            </div>
+            
+            <!--评论-->
+             <div class="appcomment">
+                 <h4>精彩评论</h4>
+
+                 <div class="assess">
+                     <span>很好(3)</span>
+                     <span>非常适用(1)</span>
+                     <span>赞(1)</span>
+                     <span>良心应用(1)</span>
+                     <span>很喜欢(1)</span>
+                     <span>实惠(1)</span>
+                 </div>
+
+
+                 <div class="leave_word">
+                     <div class="user clearfix">
+                            <div class="userImg pull-left">
+                                <img src="../images/appIMG/g (1).jpg" alt="">
+                             </div>
+                             <div class="userword pull-left "> 
+                                <div class="clearfix"><span class="pull-left">七月</span> <span class="pull-right">0人已赞</span></div> 
+                                 <p>每一款都是人工精挑细选审价格，折扣信息非常准确</p>
+                             </div>
+                 </div>
+             </div>
+        </div>
+
+        <!--评论-->
+       
+    </div>
+
+</body>
+
+</html>

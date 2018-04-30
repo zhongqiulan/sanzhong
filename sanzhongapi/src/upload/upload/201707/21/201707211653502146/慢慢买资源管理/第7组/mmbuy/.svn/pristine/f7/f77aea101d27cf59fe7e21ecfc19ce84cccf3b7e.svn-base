@@ -1,0 +1,100 @@
+body {
+  font-size: 14px;
+}
+.all {
+  position: relative;
+}
+.all a.fix {
+  position: fixed;
+  right: 0;
+  bottom: 30px;
+}
+.all a.fix img {
+  width: 60px;
+}
+.all header {
+  background: #ff841d;
+}
+.all header h1 {
+  text-align: center;
+  padding: 12px 10px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 20px;
+}
+.all header .get_back {
+  float: left;
+  color: #fff;
+  font-size: 20px;
+}
+.all header .dowapp {
+  float: right;
+  margin-top: -5px;
+  width: 32px;
+}
+.all header .dowapp img {
+  width: 100%;
+}
+.all .main .navs {
+  background: #fff;
+  padding: 5px 30px;
+}
+.all .main .navs li {
+  float: left;
+  padding: 10px 8px;
+  background: #f4f4f4;
+  border: 1px solid #bfbfbf;
+  font-size: 14px;
+  margin: 5px;
+}
+.all .main .navs li a {
+  color: #000;
+}
+.all .fertop {
+  padding: 6px 0 6px 6px;
+  color: #000;
+}
+.all footer {
+  color: #000;
+}
+.all footer p {
+  height: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.all footer .logins button {
+  background: none;
+  width: 30%;
+  padding: 5px 0;
+}
+.all footer .logins button + button {
+  border-left: 1px solid #ccc;
+}
+.all footer .logins button:nth-child(3) {
+  width: 36%;
+}
+.all footer .logins button:nth-child(3) a {
+  text-decoration: none;
+  color: #000;
+}
+.all footer .logins button:nth-child(3) a span {
+  color: #aaa;
+}
+.all footer .brief {
+  text-align: center;
+  padding: 10px 0;
+  font-size: 13px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.all footer .brief span:nth-child(1) {
+  color: #fd4343;
+}
+.all footer .brief span:nth-child(3) {
+  color: #727272;
+}
+.all footer .brief p {
+  color: #77667f;
+  border: none;
+  padding: 5px 0;
+}

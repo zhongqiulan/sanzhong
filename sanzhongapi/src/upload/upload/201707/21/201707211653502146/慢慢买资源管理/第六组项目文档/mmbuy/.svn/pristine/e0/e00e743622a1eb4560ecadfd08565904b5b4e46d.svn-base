@@ -1,0 +1,19 @@
+/**
+ * Created by Administrator on 2017/7/12.
+ */
+require.config({
+  baseUrl:'/views/public/',
+  paths:{
+    'jquery':'assets/jquery/jquery.min',
+    'bootstrap':'assets/bootstrap/js/bootstrap.min',
+    'template':'assets/artTemplate/template',
+    'utils':'assets/utils/utils',
+    'common':'js/common'
+  },
+  shim:{
+    'bootstrap':{
+      deps:['jquery']
+    }
+  }
+});
+require(['common']);

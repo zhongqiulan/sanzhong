@@ -1,0 +1,17 @@
+
+
+
+
+// 请求商品内容
+$.ajax({
+    url:"http://139.199.192.48:9090/api/getinlanddiscount",
+    dataType:"Json",
+    success:function (info) { 
+        var htmlStr=template("produce_temp",info);
+        $(".produce_box").html(htmlStr);
+
+
+        //注册点击事件
+        
+     }
+})

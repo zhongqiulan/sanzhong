@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>品牌标题对应</title>
+    <link rel="stylesheet" href="../../public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../public/css/getbrand.css">
+</head>
+<body>
+    <div class="all">
+         <!--首页>导航-->
+        <div class="home_nav">
+            <a href='javascript:;'>
+                首页
+            </a> 
+            >
+            <a href='javascript:;'>
+                品牌大全
+            </a>
+            >平板电脑哪个牌子好
+
+        </div>
+          <!--平板电脑哪个好-->
+        <div class="product_recommont">
+              <div class="product">
+                <span>平板电视哪个牌子好</span>
+            </div>
+         </div>
+
+       
+
+       <!--平板-->
+
+
+
+
+
+
+
+
+    </div>
+
+
+
+</body>
+   <!--<script src="../../public/assets/zepto/zepto.js"></script>
+    <script src="../../public/assets/zepto/ajax.js"></script>
+    <script src="../../public/assets/zepto/event.js"></script>-->
+    <script src="../../public/assets/jquery/jquery.min.js"></script>
+    <script src="../../public/assets/artTemplate/template.js"></script>
+    <script src="../../public/js/getbrandtitle.js"></script>
+    <script src="../../public/js/getbrand.js"></script>
+</html>
+
+        <script type="text/template" id="tp_br_tpl"> 
+           {{each result as v i}}   
+                <div class="recommont_parten">
+                    <div class="recommont_introduce">
+                        <div class='recommont' >
+                                <i >{{v.brandId+1}}</i>
+                                <a href='javascript:;'  >{{v.brandName}}</a>
+                                <p>{{v.brandInfo}}</p>
+                                <span class="glyphicon glyphicon-menu-down"></span>
+                        </div>
+                    </div>
+                </div>
+            
+            {{/each}}
+         </script>
+          
+                 

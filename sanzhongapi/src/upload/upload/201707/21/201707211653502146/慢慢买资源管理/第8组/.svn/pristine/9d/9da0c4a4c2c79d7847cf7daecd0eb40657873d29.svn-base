@@ -1,0 +1,158 @@
+// 头部
+.navbar{
+    background-color: #ff841d;
+    height: 50px;
+    margin: 0;
+    .container-fluid {
+        .header_logo{
+            img{
+                width: 187px;
+            }
+        }
+        .app_donwload{
+            img{
+                width: 34px;
+                margin-top: 8px;
+            }
+        }
+    }
+}
+
+// 搜索框
+form{
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    .search{
+        height: 30px;
+        padding: 10px;
+        position: relative;
+        background-color: #fff;
+        .searchtxt{
+            input{
+                padding-left: 25px;
+                height: 30px;
+                width: 95%;
+                font-size: 16px;
+                line-height: 30px;
+                border-radius: 15px;
+                background-color: #f1f1f1;
+                position: absolute;
+            }
+        }
+        .searchbtn{
+            input{
+                width: 64px;
+                height: 30px;
+                line-height: 30px;
+                border-radius: 15px;
+                background-color: #ff841d;
+                font-size: 16px;
+                position: absolute;
+                top: 10px;
+                right: 10px;
+            }
+        }
+    }
+}
+
+// 菜单栏
+.container{
+    .menu_list{
+        margin-top: 15px;
+        .col-xs-3{
+            margin: 0;
+            padding: 0;
+            .thumbnail{
+                border: none;
+                margin: 0;
+                img{
+                    width: 50px;
+                }
+                .caption{
+                    padding: 0;
+                    p{
+                        text-align: center;
+                        font-size: 13px;
+                        // margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// 推荐栏
+.recommend{
+    .title{
+        height: 40px;
+        background-color: #ff841d;
+        position: relative;
+        h3 {
+            display: inline-block;
+            width: 80%;
+            padding-left: 10px;
+            line-height: 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #fff;
+            margin: 0;
+        }
+        a{
+            width: 10%;
+            height: 40px;
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 10px;
+            i{
+                display: block;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+    }
+    .content{
+        .info{
+            width: 100%;
+            .info_list{
+                li{
+                    height: 100px;
+                    margin: 28px 7px;
+                    position: relative;
+                    .pic{
+                        float: left;
+                        width: 110px;
+                        img{
+                            display: block;
+                            width: 100px;
+                        }
+                    }
+                    .introduce{
+                        padding-left: 90px;
+                        .text{
+                            font-size: 15px;
+                            line-height: 19px;
+                            min-height: 57px;
+                            text-align: left;
+                            span{
+                                color:#ff841d;
+                            }
+                        }
+                        .date{
+                            color: #a1a1a1;
+                            .comment{
+                                float: right;
+                                i{
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                li:nth-of-type(1){
+                    margin-top: 14px;
+                }
+            }
+        }
+    }
+}

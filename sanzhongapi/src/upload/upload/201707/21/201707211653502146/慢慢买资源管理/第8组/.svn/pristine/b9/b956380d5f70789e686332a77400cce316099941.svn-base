@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>省钱控-最新优惠</title>
+    <link rel="stylesheet" href="../css/saveMoney/bootstrap.3.3.7/content/Content/bootstrap.css"/>
+    <link rel="stylesheet" href="../css/saveMoney/base.css"/>
+    <link rel="stylesheet" href="../css/saveMoney/saveMoney.css"/>
+</head>
+<body>
+<!--头部-->
+<div class="head">
+    <div class="back">
+        <a href="http://m.manmanbuy.com/">
+            <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+        </a>
+    </div>
+    <h2>省钱控 - 最新优惠</h2>
+    <div class="navbar-right app-donwload pull-right">
+        <img src="../images/header_app.png" alt="">
+    </div>
+</div>
+<!--主体内容-->
+<div class="main">
+    <ul class="content">
+
+    </ul>
+    <!--上一页-下一页-->
+    <table>
+        <tr>
+            <td>
+                <a onclick="alert('已经是第一页了！');return false;" class="previous">上一页</a>
+            </td>
+            <td>
+                <select class="selectPage">
+                    <option selected="selected" value="1">1/5</option>
+                    <option value="2">2/5</option>
+                    <option value="3">3/5</option>
+                    <option value="4">4/5</option>
+                    <option value="5">5/5</option>
+                </select>
+            </td>
+            <td>
+                <a href="#" class="next">下一页</a>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<!-- 底部-->
+<div class="footer">
+    <div class="nav">
+        <a href="http://m.manmanbuy.com">首页</a>&nbsp;&gt;&nbsp;省钱控
+    </div>
+    <div class="footer_login">
+        <a href="#">登录</a>
+        <a href="reg.aspx">注册</a>
+        <a class="back_top" href="#"><img src="../images/top.jpg" width="15" height="15">返回顶部</a>
+    </div>
+    <div class="footer_end">
+        <p>
+            <a href="#" onclick="trackEvent('footer头部下载');" style="color: Red;">手机APP下载</a>
+            <a href="http://m.manmanbuy.com">慢慢买手机版</a>
+            -- 掌上比价平台
+        </p>
+        <p>
+            m.manmanbuy.com
+        </p>
+    </div>
+</div>
+
+<!--模板-->
+<script type="text/template" id="content_tpl">
+    {{each result as v i}}
+
+    <li id="btnSkip" data-id="productId" class="clearfix">
+        {{#v.productImgSm}}
+        <div class="clearfix info">
+            <div class="title" name="productName">{{v.productName}}
+                <span name="productPinkage">{{v.productPinkage}}</span>
+            </div>
+            <div class="other">
+                <span class="mall" name="productFrom">{{v.productFrom}} |</span>
+                <span name="productTime">{{v.productTime}}</span>
+                <span class="comment fr">
+                    <a href="#">
+                        <span class="glyphicon glyphicon-comment" aria-hidden="true"></span>
+                    </a>
+                    {{v.productComCount}}
+                </span>
+            </div>
+        </div>
+    </li>
+
+    {{/each}}
+</script>
+
+<script src='../js/libs/jquery-1.12.4.js'></script>
+<script src='../js/libs/bootstrap.3.3.7/content/Scripts/bootstrap.js'></script>
+<script src='../js/libs/template.js'></script>
+<script src="../js/saveMoney/jquery.form.js"></script>
+<script src="../js/saveMoney/utils.js"></script>
+<script src="../js/saveMoney/saveMoney.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: #f7f7f7;
+}
+
+//头部样式
+header {
+    color: #fff;
+    background: #e4393c;
+    position: relative; //标题
+    h2 {
+        margin: 0;
+        padding: 10px 50px;
+        width: 100%;
+        font-size: 22px;
+        text-align: center;
+    } //返回按钮
+    .prev {
+        position: absolute;
+        left: 0;
+        font-size: 22px;
+        text-align: center;
+        a {
+            width: 50px;
+            height: 44px;
+            display: block;
+            box-sizing: border-box;
+            padding-top: 8px;
+            span {
+                color: #fff;
+            }
+        }
+    }
+    ; //app下载
+    .download {
+        position: absolute;
+        right: 0;
+        top: 0;
+        a {
+            width: 50px;
+            height: 44px;
+            display: block;
+            img {
+                width: 34px;
+                margin-top: 7px;
+            }
+        }
+    }
+}
+
+//优惠券列表
+.info {
+    padding: 10px 2px 0 2px;
+    ul {
+        list-style: none; // .coupon+.coupon{
+        //     margin: 5px 5px;
+        // }
+        .coupon {
+            margin: 5px 1px;
+            float: left;
+            width: 32.5%;
+            text-align: center;
+            border: 1px solid #f2f2f2;
+            a {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+        }
+    }
+}
+
+//路径导航样式
+.link {
+    background: #f2f2f2;
+    .breadcrumb {
+        li+li:before {
+            content: '>';
+            font-size: 22px;
+            vertical-align: middle;
+        }
+        li {
+            a {
+                color: #444444;
+                text-anchor: none;
+            }
+        }
+    }
+}
+
+//页脚样式
+footer {
+    background: #efefef;
+    .login {
+        ul {
+            list-style: none;
+            li {
+                padding: 5px 0;
+                border: 1px solid #dddddd;
+                float: left;
+                width: 30%;
+                text-align: center;
+                a {
+                    color: #474747;
+                    text-decoration: none;
+                }
+            }
+            li:last-child {
+                width: 40%;
+            }
+        }
+    }
+    .app {
+        text-align: center;
+        margin-top: 15px;
+        padding-bottom: 10px;
+        p {
+            margin: 0;
+        }
+    }
+}

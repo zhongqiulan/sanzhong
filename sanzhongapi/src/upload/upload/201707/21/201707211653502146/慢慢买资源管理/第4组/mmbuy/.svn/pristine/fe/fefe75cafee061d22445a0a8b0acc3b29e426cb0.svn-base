@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../../css/domestic_discount/aspx.css">
+</head>
+
+<body>
+    <header>
+        <div class="back">
+            <a href="javascript:;" class="glyphicon glyphicon-menu-left" aria-hidden="true"></a>
+        </div>
+        <div class="title">
+            <h2>国内折扣</h2>
+        </div>
+        <div class="app">
+            <img src="../../imgs/header_app.png" alt="">
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="search">
+            <div class="input-group search-box">
+                <input type="text" class="form-control i-text" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+                <span class="input-group-addon i-search" id="basic-addon2">搜&nbsp;&nbsp;索</span>
+            </div>
+        </div>
+        <div class="pp-nav">
+            <a href="#">首页</a> &nbsp;&nbsp;
+            <span>>&nbsp;品牌大全</span>
+        </div>
+        <div class="pp-all">
+            <div class="pp-hot">
+                <p>热门品牌排行</p>
+            </div>
+            <div class="pp-list">
+                <ul class="list-group">
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                    <li class="list-group-item">平板电视十大品牌
+                        <a href="javascript:;">
+                            <span class="glyphicon glyphicon-chevron-down"></span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="../../libs/jquery/jquery.js"></script>
+    <script src="../../libs/bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

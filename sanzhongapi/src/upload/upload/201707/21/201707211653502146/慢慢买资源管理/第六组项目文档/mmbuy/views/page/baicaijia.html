@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+    <title>Document</title>
+    <?php include '/views/common/css.html' ?>
+    <link rel="stylesheet" href="/views/public/css/baicaijai/baicaijia.css">
+
+</head>
+
+<body>
+
+    <div class="bcj_layout">
+        <!--头部  start-->
+        <div class="bcj_head" id="top">
+            <div class="head_title">
+                <i class="glyphicon glyphicon-menu-left"></i>
+                <h1>白菜价-淘宝内部券</h1>
+                <a href='javascript:;'><img src="/views/public/image/init-imgs/header_app.png" alt=""></a>
+            </div>
+        </div>
+        <!--头部  end-->
+
+        <!--导航条  start-->
+        <div class="bcj_nav">
+            <div class="nav_bar">
+                <!--渲染模板 导航条菜单栏-->
+            </div>
+            <button class="icon_search glyphicon glyphicon-zoom-in"></button>
+
+            <div class="search_div toggle">
+                <i class="glyphicon glyphicon-search"></i>
+                <input type="text" name="" value="" placeholder="搜索商品即可查内部券">
+                <button type="">搜索</button>
+            </div>
+        </div>
+        <!--导航条  end-->
+
+        <!--优惠信息  start-->
+        <div class="bcj_quan_banner">
+            <h3>先领券，后下单，商家内部券显示优惠</h3>
+            <p>每天更新上百款,史上最给力的隐藏折扣</p>
+        </div>
+        <!--优惠信息  end-->
+
+        <!--数据列表  start-->
+        <div class="bcj_list">
+            <!--渲染模板-->
+        </div>
+        <!--数据列表  end-->
+
+        <!--底部  start-->
+        <div class="bcj_foot">
+            <?php include '/views/common/foot.html' ?>
+        </div>
+        <!--底部  end-->
+
+
+        <div class="bcj_top">
+            <a id="a_top" href='#top'><i class="glyphicon glyphicon-flash"></i></a>
+        </div>
+
+    </div>
+
+    <?php include '/views/common/script.html' ?>
+
+    <script type="text/html" id="bcj_nav_menu">
+        <ul class="nav_bar_menu clearfix">
+            {{each result as value}}
+            <li data-value={{value.titleId}}><a href='javascript:;'>{{value.title}}</a></li>
+            {{/each}}
+        </ul>
+    </script>
+
+    <script type="text/html" id="bcj_list_info">
+        {{each result as value}}
+        <div class="list_info" data-titleID="{{value.titleId}}">
+            <div class="list_info_img">
+                {{#value.productImg}}
+            </div>
+            <div class="list_info_text" data-productId="{{value.productId}}">
+                <div class="text">
+                    {{#value.productName}}
+                </div>
+                {{#value.productPrice}}
+                <div class="quan">
+                    <div class="quan_progress">
+                        <div>
+                            {{#value.productCouponRemain}}
+                        </div>
+                    </div>
+                    <span class="tap">{{#value.productCoupon}}</span>
+                    <span class="button">{{#value.productHref}}</span>
+
+                </div>
+
+            </div>
+        </div>
+        {{/each}}
+    </script>
+
+    <script>
+        require(['js/baicaijia'])
+    </script>
+
+
+    
+
+</body>
+
+</html>

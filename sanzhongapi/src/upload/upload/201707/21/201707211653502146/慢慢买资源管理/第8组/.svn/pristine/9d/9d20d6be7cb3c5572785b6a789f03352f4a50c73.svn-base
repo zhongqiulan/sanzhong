@@ -1,0 +1,136 @@
+* {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar {
+  margin-bottom: 10px;
+}
+.navbar .container-fluid {
+  background-color: #ff841d;
+}
+.navbar .container-fluid .header-logo a.navbar-brand img {
+  height: 25px;
+}
+.navbar .container-fluid .app-download img {
+  height: 34px;
+  margin: 8px;
+}
+.container {
+  margin-bottom: 10px;
+}
+.container .col-md-12 div.input-group {
+  width: 100%;
+}
+.container .col-md-12 input.form-control {
+  border-radius: 17px;
+  background-color: #f1f1f1;
+  width: 110%;
+}
+.container .col-md-12 span.input-group-addon {
+  position: relative;
+  border-radius: 17px;
+  background-color: #ff841d;
+  color: white;
+  width: 60px;
+  z-index: 2;
+}
+.ul_hide {
+  display: none;
+}
+.ul_show {
+  display: block;
+}
+.main {
+  background-color: #f2f2f2;
+  padding: 5px;
+  height: 500px;
+}
+.main > ul {
+  border: 1px solid #d3d3d3;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.main > ul > li > div.main_list {
+  background-color: yellow;
+  height: 40px;
+  background-color: #ebebeb;
+  border-bottom: 1px solid #ccc;
+}
+.main > ul > li > div.main_list span {
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  font-size: 16px;
+}
+.main > ul > li > div.main_list span:first-of-type {
+  float: left;
+  font-weight: bold;
+}
+.main > ul > li > div.main_list span:last-of-type {
+  float: right;
+  color: #919191;
+}
+.main > ul > li > ul:after {
+  content: '';
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.main > ul > li > ul > li {
+  height: 30px;
+  width: 33.3%;
+  float: left;
+  border: 1px solid #ccc;
+  background-color: #FFF;
+  line-height: 30px;
+  text-align: center;
+}
+.main > ul > li > ul > li > a {
+  color: #343434;
+}
+footer {
+  overflow: hidden;
+}
+footer .navbar {
+  height: 100px;
+  margin: 0;
+  background-color: #efefef;
+}
+footer .navbar .row div {
+  border-top: 1px solid #cbcbcb;
+  border-bottom: 1px solid #cbcbcb;
+  height: 35px;
+  line-height: 35px;
+  text-align: center;
+}
+footer .navbar .row div a {
+  color: black;
+  font-size: 14px;
+}
+footer .navbar .row div a span {
+  color: #747474;
+  font-size: 12px;
+}
+footer .navbar .row div:nth-of-type(2) {
+  border-left: 1px solid #cbcbcb;
+  border-right: 1px solid #cbcbcb;
+}
+footer .navbar div.app-updown {
+  text-align: center;
+  padding-top: 5px;
+  font-size: 12px;
+}
+footer .navbar div.app-updown a {
+  color: red;
+}
+footer .navbar div.app-updown span:first-of-type {
+  color: black;
+}
+footer .navbar div.app-updown span:last-of-type {
+  color: #7b7b7b;
+}
+footer .navbar div.app-updown p {
+  color: #7b7b7b;
+}

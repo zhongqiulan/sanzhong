@@ -1,0 +1,70 @@
+
+$.ajax({
+    url: "http://139.199.192.48:9090/api/getmoneyctrl",
+    dataType: 'JSON',
+    type: "GET",
+    success: function (data) {
+        console.log(123);
+        console.log(data);                 
+        var htmlstr = template("save_list_tmp", data);
+        $(".save_list").html(htmlstr);
+            $(".save_list").on("click",".save_list_a",function (){
+                 console.log($(this));               
+                 var id=$(this).attr("data-value");
+                 console.log(data); 
+                 console.log(id);               
+                 location.href="discount.html?productid="+id;                 
+                }
+            )     
+    }
+})
+$("select#status").change(function () {
+    var id = $(this).val();
+    console.log(id);
+    $.ajax({
+        url: "http://139.199.192.48:9090/api/getmoneyctrl",
+        dataType: 'JSON',
+        type: "GET",
+        data: {
+            pageid: id,
+        },
+        success: function (data) {
+            console.log(123);
+            console.log(data);
+            console.log(data.result);
+            var htmlstr = template("save_list_tmp", data);
+            $(".save_list").html(htmlstr);           
+        }
+    });
+});
+
+var id="";
+
+$(".top_page_word").click(function () {
+    id = $("select").find("option:selected").attr('value')
+    console.log(id);   
+    // console.log(sum);
+    if (id == 1) {
+        alert("已经是第一页了");
+    } else if (1 < id < 13) {
+        id=Number(id)-1;
+        $("select").find("option:selected").attr('value',id);      
+        $.ajax({
+            url: "http://139.199.192.48:9090/api/getmoneyctrl",
+            dataType: 'JSON',
+            type: "GET",
+            data: {
+                pageid: id,
+            },
+            success: function (data) {
+                console.log(123);
+                console.log(data);
+                console.log(data.result);
+                var htmlstr = template("save_list_tmp", data);
+                $(".save_list").html(htmlstr);
+            }
+        });
+    }
+})
+
+

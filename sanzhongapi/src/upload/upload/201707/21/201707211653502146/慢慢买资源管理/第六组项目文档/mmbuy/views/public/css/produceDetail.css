@@ -1,0 +1,148 @@
+
+input,button,a:hover{
+    outline: 0;
+    text-decoration: none;
+    border:none;
+}
+main .container h3{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: normal;
+}
+main .container>.price{
+   color: #ff6c00;
+  
+}
+
+main .container>.time{
+   color: #999999;
+   font-size: 12px;
+   margin: 15px 0;
+}
+main .container .product_detail{
+   font-size: 14px;
+   color:#606060;
+   line-height: normal;
+   
+}
+main .container .gobuy{
+    margin-top: 20px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+main .container .gobuy button{
+   width: 92%;
+   background: #FF9000;
+   color: white;
+   cursor: pointer;
+}
+main .container .comment {
+    position: relative;
+    margin-bottom: 20px;
+}
+main .container .comment form textarea{
+    width: 100%;
+    height: 100px;
+    resize: none;
+    border:1px solid #999;
+    padding: 10px;
+    border-radius: none;
+    outline: none;
+}
+main .container .comment .btn{
+    width: 100px;
+    background: #FF9000;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    right: -1px;
+    bottom: 2px;
+}
+main .container .nav a{
+    color: black;
+}
+
+main .container .newComment ul{
+  list-style: none;
+  padding: 0;
+  padding: 20px 0px;
+
+}
+.newComment ul li .person{
+    width: 50px;
+    position: absolute;
+    left: 0;
+}
+.newComment ul li .person img{
+    border-radius: 50%;
+}
+.newComment ul li{
+  padding-left: 50px;
+  position: relative;
+  border-bottom: 1px solid #999;
+  margin: 20px 0;
+  padding-bottom: 20px;
+}
+.newComment ul li .person_comment{
+    width: 100%;
+    color: #999;
+}
+.person_comment span{
+    color: #5997c0;
+}
+.product_detail img{
+    width: 120px;
+    height: 120px;
+    float: right;
+}
+.imgbox{
+    margin: 40px 0;
+    text-align: center;
+}
+.imgbox img{
+    width: 200px;
+    height: 200px;
+}
+
+
+.appBannar{
+   background: #434343;
+   height: 65px;
+}
+.appBannar img{
+    width: 50px;
+}
+.bannar_box{
+    position: relative;
+    padding-left: 60px;
+}
+.bannar_box .open{
+    width: 80px;
+    height: 30px;
+    background: green;
+    color: white;
+    text-align: center;
+    line-height: 30px;
+    position: absolute;
+    right: 5px;
+    top: 5px;
+}
+.bannar_box .logoApp{
+    position: absolute;
+    top: 8px;
+    left: 5px;
+}
+.bannar_box .right_content p{
+    color: #fee6c2;
+}
+.bannar_box .right_content h4{
+    color: white;
+}
+main .nav_menu{
+    margin: 20px 0;
+    padding: 10px 10px;
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    background-color: #f2f2f2;
+}
+

@@ -1,0 +1,134 @@
+/*
+  author:kuanglq;
+  date:2017-7-18;
+  商城导航
+*/
+
+/* 头部样式 */
+.navbar{
+  border:none;
+  margin-bottom: 0;
+}
+.container-fluid{
+  height:50px;
+  background-color:#ff841d;
+
+  .navbar-header{
+    padding-left:10px;
+  }
+  .glyphicon{
+    color:#fff;
+    font-size: 20px;
+    line-height: 50px;
+  }
+  .shangpinnav{
+    font-size: 20px;
+    font-weight: bold;
+    display:inline-block;
+    color:#fff;
+    margin-left: 40%;
+    line-height: 50px;
+  }
+
+  .app-donwload{
+    >img{
+      height: 34px;
+      margin-top: 8px;
+    }
+  }
+}
+
+/* 页面主体样式 */
+
+.sitennav-main {
+  padding-top:5px;
+  // text-align: center;
+}
+.sitennav-link{
+  width:300px;
+  margin:0px auto;
+}
+.btn{
+  border-radius: 0;
+  padding:10px 8px;
+  margin-top:5px;
+  background-color: #f4f4f4;
+  border: 1px solid #bfbfbf;
+  >a{
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+
+/* 底部路径样式  */
+
+.sitennav-path{
+  background-color: #efefef;
+}
+.breadcrumb>li+li:before {
+  padding: 0;
+  color: #ccc;
+  content: "";
+}
+.breadcrumb{
+  margin-top: 20px;
+  margin-bottom:0px;
+  height: 36px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+  background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+  background: -o-linear-gradient(top,#ffffff, #ebebeb);
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  >li{
+    >a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+
+/* 底部控制菜单 */
+
+.sitennav-footer{
+  margin-top:20px;
+  background-color:#efefef;
+  .borderRow{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    .footerDiv{
+      text-align: center;
+      padding:5px 0;
+      >a{
+        color:#000;
+        text-decoration: none;
+        >img{
+          width:15px;
+          height:15px;
+          vertical-align: baseline;
+          margin-bottom: -2px;
+        }
+      }
+      +.footerDiv{
+        border-left: 1px solid #ccc;
+      }
+    }
+  }
+
+  /* 底部信息 */
+  .footer-info{
+    padding:15px 0;
+    text-align: center;
+    font-size: 12px;
+    >p{
+      margin:0 ;
+      .foot-aLink{
+        color:#000;
+      }
+    }
+  }
+}
+
+

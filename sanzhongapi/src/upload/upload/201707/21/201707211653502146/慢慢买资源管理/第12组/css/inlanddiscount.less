@@ -1,0 +1,109 @@
+@import 'base.less';
+.view {}
+
+;
+.head {
+    height: 44px;
+    background-color: #ff841d;
+    line-height: 44px;
+    text-align: center;
+    color: #fff;
+    >div {
+        font-size: 0.4rem;
+        >.back {
+            height: 44px;
+            line-height: 44px;
+            >a {
+                display: inline-block;
+                line-height: 44px;
+                font-size: 0.3rem; // font-weight: normal;
+                color: #fff;
+            }
+        }
+        .appload {
+            display: inline-block;
+            >img {
+                width: 32px;
+                height: 32px;
+            }
+        }
+    }
+}
+
+// 内容
+.container {
+    .shopping:nth-of-type(2n) {
+        border-left: 1px solid #ddd;
+    }
+    .shopping {
+        padding-right: 0px;
+        padding-left: 0px;
+        border-bottom: 1px solid #ddd;
+        .thumbnail {
+            border: none;
+            margin-bottom: 0;
+            >img {
+                width: 140px;
+                height: 140px;
+            }
+            .caption {
+                h3 {
+                    font-size: 0.15rem;
+                    height: 36px; // line-height: 36px;
+                    overflow: hidden;
+                }
+                .price {
+                    font-size: 0.15rem;
+                    height: 18px;
+                    line-height: 18px;
+                    overflow: hidden;
+                }
+                .info {
+                    font-size: 0.16rem;
+                    height: 18px;
+                    overflow: hidden;
+                }
+            }
+        }
+    }
+}
+
+// 底部
+.footer {
+    height: 70px;
+    background-color: #eee;
+    width: 100%;
+    .tools {
+        height: 25px;
+        >ul {
+            border-top: 1px solid #aaa;
+            border-bottom: 1px solid #aaa;
+            height: 25px;
+            width: 100%;
+            font-size: 0.2rem;
+            line-height: 25px;
+            text-align: center;
+            >li {
+                width: 30%;
+                height: 25px;
+                border-left: 1px solid #aaa;
+                float: left;
+            }
+        }
+    }
+    .footer-info {
+        padding-top: 8px;
+        font-size: 0.16rem;
+        text-align: center;
+        >a {
+            display: inline-block;
+            color: red;
+        }
+        >p {
+            padding-top: 8px;
+            font-size: 0.16rem;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+    }
+}

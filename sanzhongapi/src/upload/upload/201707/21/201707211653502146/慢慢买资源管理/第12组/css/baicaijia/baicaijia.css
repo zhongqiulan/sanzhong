@@ -1,0 +1,248 @@
+html {
+  width: 100%;
+}
+html body {
+  width: 100%;
+  background-color: #f1f1f1;
+}
+#head {
+  background-color: #e4393c;
+}
+#head .headLogo {
+  position: relative;
+}
+#head .headLogo > h4 {
+  margin: 0;
+  height: .9rem;
+  line-height: .9rem;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+  font-size: .4rem;
+  position: relative;
+}
+#head .headLogo > h4 > a {
+  font-size: .5rem;
+  position: absolute;
+  left: .25rem;
+  top: .23rem;
+  color: #fff;
+}
+#head .headLogo .headApp {
+  display: block;
+  position: absolute;
+  line-height: 0;
+  top: .15rem;
+  right: .15rem;
+}
+#head .headLogo .headApp img {
+  height: .6rem;
+}
+.img_ad {
+  height: 1.2rem;
+  line-height: .9rem;
+  margin-bottom: .1rem;
+}
+.img_ad > img {
+  height: 1.2rem;
+}
+#bc_Tab {
+  background-color: #fff;
+  height: .7rem;
+  font-size: .25rem;
+  margin-bottom: .1rem;
+  position: relative;
+}
+#bc_Tab .grabble > i {
+  text-align: center;
+  width: .7rem;
+  height: .7rem;
+  line-height: .7rem;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: #fbfbfb;
+  font-size: .4rem;
+  color: #7f7f7f;
+}
+#bc_Tab .grabble .formsch {
+  height: 1rem;
+  line-height: .55rem;
+  padding: .2rem;
+  width: 100%;
+  position: absolute;
+  bottom: -1rem;
+  background-color: #f7f7f7;
+}
+#bc_Tab .grabble .formsch .txt {
+  float: left;
+  color: #757575;
+}
+#bc_Tab .grabble .formsch .txt input {
+  outline: none;
+  border: .01rem solid #eee;
+  padding-left: .5rem;
+  width: 4.9rem;
+  position: relative;
+}
+#bc_Tab .grabble .formsch .txt > i {
+  position: absolute;
+  left: .24rem;
+  top: .24rem;
+  font-size: .5rem;
+}
+#bc_Tab .grabble .formsch .smt {
+  float: left;
+}
+#bc_Tab .grabble .formsch .smt input {
+  outline: none;
+  border: none;
+  width: 1rem;
+  background-color: #f7f7f7;
+}
+#bc_Tab #my_Scroll {
+  position: relative;
+  height: .7rem;
+}
+#bc_Tab #my_Scroll ul {
+  margin: 0;
+}
+#bc_Tab #my_Scroll ul li {
+  float: left;
+  padding: 0 .25rem;
+}
+#bc_Tab #my_Scroll ul li a {
+  font-size: .3rem;
+  text-align: center;
+  display: block;
+  height: .7rem;
+  line-height: .7rem;
+}
+#bc_Tab #my_Scroll ul .reveal a {
+  color: #f4483e;
+  border-bottom: .04rem solid #f4483e;
+}
+#content div {
+  display: block;
+}
+#content div .media {
+  margin: 0;
+  margin-bottom: .1rem;
+  padding: .15rem .08rem;
+  background-color: #fff;
+}
+#content div .media .cont_img {
+  float: left;
+  margin-left: .1rem;
+  background-image: url(https://img.alicdn.com/imgextra/i2/2260213950/TB2he1WXYaI.eBjSspaXXXIKpXa_!!2260213950.jpg?t=1476888_290x290.jpg);
+}
+#content div .media .cont_img img {
+  width: 2rem;
+}
+#content div .media .con_con {
+  float: left;
+  margin-left: .15rem;
+}
+#content div .media .con_con > h4 {
+  font-size: .25rem;
+  margin: 0;
+  height: .6rem;
+  width: 3.9rem;
+  overflow: hidden;
+}
+#content div .media .con_con > p {
+  margin: 0;
+  height: .5rem;
+  line-height: .5rem;
+  font-size: .35rem;
+  color: #fc353a;
+}
+#content div .media .con_con > p i,
+#content div .media .con_con > p em,
+#content div .media .con_con > p del {
+  font-size: .25rem;
+  padding-left: .12rem;
+}
+#content div .media .con_con > p del {
+  color: #b2b2b2;
+}
+#content div .media .con_con .bar {
+  font-size: .1rem;
+  color: #fc353a;
+  padding: .15rem 0;
+}
+#content div .media .con_con .bar > i {
+  text-align: center;
+  float: left;
+  height: .2rem;
+  line-height: .2rem;
+  background-color: #ffb7b7;
+  width: 1.5rem;
+  border-radius: .5rem;
+  color: #fff;
+}
+#content div .media .con_con .bar > b {
+  float: left;
+  margin-left: .2rem;
+  height: .2rem;
+  line-height: .2rem;
+}
+#content div .media .con_con .bottom {
+  font-size: .2rem;
+}
+#content div .media .con_con .bottom .l {
+  float: left;
+  margin-top: .1rem;
+  padding: 0rem;
+  border: .01rem dashed #fc353a;
+  color: #fc353a;
+}
+#content div .media .con_con .bottom .r {
+  float: right;
+  padding: .1rem;
+  background-color: #fc353a;
+  color: #fff;
+  border-radius: .1rem;
+}
+#footer {
+  background-color: #f1f1f1;
+  font-size: .24rem;
+  text-align: center;
+  padding-top: .4rem;
+}
+#footer ul {
+  height: 100%;
+  text-align: center;
+}
+#footer ul li {
+  border-top: .01rem solid #ccc;
+  border-bottom: .01rem solid #ccc;
+}
+#footer ul li a {
+  display: block;
+  padding: .12rem 0;
+}
+#footer ul li:nth-of-type(2) {
+  border-left: .01rem solid #ccc;
+  border-right: .01rem solid #ccc;
+}
+#footer > p > a:first-of-type {
+  color: red;
+}
+.goBack {
+  text-align: center;
+  width: .5rem;
+  height: .5rem;
+  border-radius: .25rem;
+  position: fixed;
+  background-color: #ccc;
+  opacity: 0.8;
+  right: .3rem;
+  bottom: .3rem;
+}
+.goBack a {
+  display: block;
+  font-size: .3rem;
+  margin: 0 auto;
+  line-height: .45rem;
+}

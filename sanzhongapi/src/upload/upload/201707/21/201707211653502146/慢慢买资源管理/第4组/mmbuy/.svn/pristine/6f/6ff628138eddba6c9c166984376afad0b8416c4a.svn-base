@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1">
+    <title>Document</title>
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/common/head/index_head.css">
+    <link rel="stylesheet" href="/css/common/search/index_search.css">
+    <link rel="stylesheet" href="/css/brand/brand.css">
+    <link rel="stylesheet" href="/css/common/bottom/bottom.css">
+</head>
+
+<body>
+    <!--慢慢买首页头部-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header header-logo pull-left">
+                <a class="navbar-brand" href="#"><img src="/imgs/header_logo.png" alt=""></a>
+            </div>
+
+            <div class="navbar-right app-donwload pull-right">
+                <img src="/imgs/header_app.png" alt="">
+            </div>
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!--慢慢买index的搜索栏-->
+    <form action="" id="index_search">
+        <div>
+            <input type="text" placeholder="请输入你想比价的商品" class="input1">
+            <input type="button" value="搜索" class="input2">
+            </input>
+    </form>
+    <div class="link">
+        <a href="javascript:;">首页</a> &nbsp;>&nbsp;
+        <a href="javascript:;">品牌大全</a>
+    </div>
+    <main>
+        <div class="brand-title">热门品牌排行</div>
+        <ul class="brand-ul">
+            <li>
+                <a href="javascript:;">
+                    <span>平板电视</span>
+                    <i class="down glyphicon glyphicon-chevron-down"></i>
+                </a>
+            </li>
+        </ul>
+    </main>
+
+    <div class="container">
+    <div class="row">
+        <div class="col-xs-4"><a href="javascript:;">登陆</a></div>
+        <div class="col-xs-4"><a href="javascript:;">注册</a></div>
+        <div class="col-xs-4">
+            <a href="javascript:;" class="top">
+<i class="glyphicon glyphicon-arrow-up"></i>
+返回顶部</a>
+        </div>
+    </div>
+    </div>
+
+    <div class="index_bottom_footer">
+        <p>
+            <a class="appdownload" href="javascript:;">手机APP下载</a>
+            <a href="javascript:;">慢慢买手机版</a> --掌上比价平台
+        </p>
+        <p class="index_bottom_website"><a href="javascript:;">m.manmanbuy.com</a></p>
+    </div>
+</body>
+<script src="/libs/jquery/jquery.js"></script>
+<script src="/js/config/config.js"></script>
+<script src="/libs/artTemplate/template.js"></script>
+<script src="/js/brand/brand.js"></script>
+<script src="/js/common/bottom.js"></script>
+
+<script type="text/template" id="bt_tpl">
+    {{each result as v i}}
+    <li data-id="{{v.brandTitleId}}" data-title="{{v.brandTitle}}">
+        <a href="javascript:;">
+            <span>{{v.brandTitle}}</span>
+            <i class="down glyphicon glyphicon-chevron-down"></i>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+</html>

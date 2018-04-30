@@ -1,0 +1,166 @@
+/*优惠券列表样式*/
+
+/*初始化*/
+*{
+    padding:0;
+    margin:0;
+}
+ul {
+    list-style: none;
+}
+body,a {
+    color:#000;
+}
+.clearfix:after {
+    content: "";
+    clear:both;
+    display: block;
+    line-height: 0;
+}
+.view {
+    width: 100%;
+    height: 100%;
+}
+/*头部*/
+#header .navbar {
+    height: 40px;
+    background-color: #f4483e;
+    position: relative;
+}
+.navbar-header .glyphicon {
+    font-size: 20px;
+    color:#fff;
+}
+.header-text {
+    font-size: 20px;
+    font-weight: bold;
+    color:#fff;
+    position:relative;
+    left:50%;
+
+}
+.header-text #title {
+    position: relative;
+    left:-50%;
+    margin-top: 10px;
+}
+.app-donwload img {
+    height:34px;
+    margin-top: 8px;
+}
+/*提示*/
+.hint {
+    text-align: center;
+    color: #999;
+    font-size: 12px;
+    margin-bottom: 10px;
+}
+/*优惠产品列表*/
+.coupon-list .row {
+    width:100%;
+    padding: 0;
+}
+.coupon-list .row .thumbnail {
+    border:0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0;
+    margin-top: 15px;
+    position: relative;
+}
+.coupon-list .row .thumbnail img {
+    width:120px;
+    margin:0;
+    float:left;
+}
+.coupon-list .row .thumbnail .caption {
+    font-size: 14px;
+    float: left;
+    width:64%;
+    padding:0;
+    padding-left: 8px;
+}
+.coupon-list .row .thumbnail .caption h3 {
+    margin-top: 0;
+    font-size: 14px;
+}
+.coupon-list .row .thumbnail .caption .product-time {
+    font-size: 12px;
+    color:#EE7700;
+}
+.coupon-list .row .thumbnail .icon-btn {
+    position: absolute;
+    right: 0px;
+    top:50%;
+    font-size: 18px;
+    color:#ccc;
+    margin-top: -9px;
+}
+/*路劲导航*/
+#coupon-nav {
+    height:36px;
+    background-color: #ebebeb;
+    padding-left: 10px;
+    line-height: 36px;
+    font-size: 15px;
+    border-top: 1px solid #ccc;
+    border-tottom: 1px solid #ccc;
+    margin-bottom: 25px;
+}
+#coupon-nav ul li {
+    float:left;
+}
+/*-------底部----------*/
+/*底部导航栏*/
+#footer {
+    width:100%;
+    background-color: #efefef;
+}
+.footer-nav {
+    height:36px;
+    line-height: 36px;
+}
+.footer-nav a {
+    display: block;
+    float: left;
+    width:33.33%;
+    text-align: center;
+    border:1px solid #ccc;
+}
+.footer-nav a span {
+    color:#666;
+}
+/*底部连接工具区域*/
+.footer-link {
+    text-align: center;
+    padding:25px 0 15px;
+    color:#666;
+    font-size: 12px;
+}
+.footer-link p {
+    line-height: 0;
+}
+.footer-link p a.link-app {
+    color:red;
+}
+/*遮罩层*/
+.product-mask {
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: block;
+    z-index: 999;
+    background-color: rgba(0, 0, 0,.8);
+    /*text-align: center;*/
+    /*margin:auto 0;*/
+}
+.product-mask img {
+    width:200px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    margin-left: -100px;
+    margin-top: -80px;
+}

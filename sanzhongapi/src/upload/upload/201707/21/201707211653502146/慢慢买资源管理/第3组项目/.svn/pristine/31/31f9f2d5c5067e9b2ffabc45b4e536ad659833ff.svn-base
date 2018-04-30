@@ -1,0 +1,206 @@
+/*
+    Author: 吴生
+    createDate:20170719
+*/
+
+.cellBatter {
+    margin: 0;
+    height: 35px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 35px;
+    padding-left: 5px;
+    font-weight: 700;
+    color: #333;
+    font-size: 14px;
+    color: #874604;
+}
+
+.Ranking {
+    padding: 0;
+}
+ul.rankingList{
+    margin: 0;
+}
+/*排行榜部分*/
+
+ul.rankingList li {
+    padding: 10px;
+    height: 55px;
+    background-color: #F2F2F2;
+    border-bottom: 1px solid #E7E7E7;
+}
+ul.rankingList li:last-of-type{
+    border-bottom:none;
+}
+.left-media {
+
+}
+
+
+ul.rankingList .const {
+    width: 20px;
+    height: 20px;
+    text-align: center;
+    background-color: #C9C9C9;
+    color: #fff;
+    display: block;
+    line-height: 20px;
+    margin-bottom: 30px;
+}
+
+ul.rankingList li:nth-of-type(1) .const{
+    background-color: #f00;
+}
+ul.rankingList li:nth-of-type(2) .const{
+    background-color: orange;
+}
+ul.rankingList li:nth-of-type(3) .const{
+    background-color: #0f0;
+}
+
+
+
+ul.rankingList .media-heading {
+    font-size: 16px;
+}
+ul.rankingList .media-body p {
+    color: #c0c0c0;
+    font-size: 13px;
+}
+
+ul.rankingList .rightarow {
+
+}
+.Ranking h4.title-h4 {
+    margin: 0;
+    border-top: 1px solid #c0c0c0;
+    border-bottom: 1px solid #c0c0c0;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+    padding-left: 10px;
+    font-weight: 700;
+    color: #A24604;
+}
+
+
+.Sales_volume {
+    background-color: #F2F2F2;
+}
+.Sales_volume  ul {
+    margin: 0;
+}
+.Sales_volume  ul li {
+    padding: 10px;
+    border-bottom: 1px solid #E7E7E7;
+}
+.Sales_volume .media img {
+    width: 100px;
+    height: 100px;
+}
+.Sales_volume .title-h4 {
+    font-size: 15px;
+    line-height: 22px;
+    height: 30px;
+    line-height: 30px;
+    border-top: 1px solid #CCCCCC;
+    border-bottom: 1px solid #CCCCCC;
+    margin: 0;
+    padding-left: 5px;
+}
+
+.Sales_volume .media em {
+    font-style: normal;
+    color: #f00;
+    font-size: 18px;
+}
+
+.Sales_volume .media p {
+    color: #999999;
+    font-size: 12px;
+    margin-top: 5px;
+}
+.starts {
+    background: url("../images/start.png");
+    width: 92px;
+    height: 19px;
+    display: block;
+}
+
+
+.comment {
+    background-color: #F2F2F2;
+    color: #BDA499;
+}
+
+.comment .top-title {
+
+}
+.comment .media {
+    padding: 10px;
+}
+.comment .top-title img {
+    width: 80px;
+    height: 80px;
+}
+.comment .top-title h4 {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.bot-content {
+    position: relative;
+    width: 96%;
+    border: 1px solid #E7E7E7;
+    margin: 0 auto;
+    background-color: #F8F8F8;
+    padding: 10px;
+}
+
+.bot-content::after {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    left: 30px;
+    top: -7px;
+    border-bottom: 8px solid #f8f8f8;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+}
+.bot-content .line em {
+    font-style: normal;
+    color: #987A00;
+
+}
+.bot-content .line .starts {
+    margin-left: 5px;
+}
+.bot-content .con {
+    margin-top: 10px;
+    color: #333;
+}
+
+.comment ul {
+    margin: 0;
+}
+
+.comment ul li {
+    border-bottom: 1px solid #E7E7E7;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

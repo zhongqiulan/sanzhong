@@ -1,0 +1,31 @@
+
+var configURL = {
+    host:"139.199.192.48:9090",
+    protocol:"http://",
+    getURL:function (path) {
+        return this.protocol+this.host+"/api/"+path;
+    }
+}
+$.ajax({
+    url:configURL.getURL("getindexmenu"),
+    type:"get",
+    success:function (info) {
+        console.log(info);
+        var htmlStr = template("menu_tpl",info);
+        $("#menu_list").html(htmlStr);
+        $("#menu_list>li").eq(7).on("click","a",function () {
+            $(this).parent().nextAll().toggleClass("menu_show menu_hide");
+            return false;
+        })
+    }
+});
+
+$.ajax({
+    url:configURL.getURL("getmoneyctrl"),
+    type:"get",
+    success:function (info) {
+        console.log(info);
+        var htmlStr = template("tjzk_tpl",info);
+        $("#tjzk_list").html(htmlStr);
+    }
+})

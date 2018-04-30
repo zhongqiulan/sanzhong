@@ -1,0 +1,24 @@
+
+<?php 
+    header("Content-type:text/html;charset=utf-8");
+    include 'views/page/paritySearch/goods_list.html';
+    // var_dump($_SERVER);
+    // 如果访问的地址是http://www.study1.com/index.php,则PATH_INFO是不存在的，所以进行判断
+    $path = '';
+    if(array_key_exists('PATH_INFO',$_SERVER)) {
+        $path = $_SERVER['PATH_INFO'];
+        //截取字符串
+        $path = substr($path,1);
+        $arr = explode('/',$path);
+        
+        if(count($arr) == 2) {
+            $path = 'views/'.$arr[0].'/'.$arr[1];
+        }else if(count($arr) == 1) {
+            $path = 'views/page/'.$arr[0];
+        }
+    }else {
+        $path = 'views/page/paritySearch/';
+    }
+
+    include $path.'.html';
+?>

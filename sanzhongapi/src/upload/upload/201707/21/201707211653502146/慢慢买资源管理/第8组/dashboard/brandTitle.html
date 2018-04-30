@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <link rel="stylesheet" href="../js/assets/bootstrap/css/bootstrap.css">
+  <link rel='stylesheet' href='../css/All_brand/index.css'>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="views">
+    <div class="content">
+      <!--    头部  S   -->
+      <header>
+        <a href='javascript:;' class="logo"></a>
+        <a href='javascript:;' class="AppDownLoad"></a>
+      </header>
+      <!--    头部  E   -->
+
+      <!-- 搜索框 S -->
+      <div class="search clearfix ">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="请输入你想比价的商品">
+        </div>
+        <button type="submit" class="btn btn-default">搜索</button>
+      </div>
+      <!-- 搜索框 E -->
+
+
+      <!-- 导航 S -->
+      <nav>
+        <a href="javascript:;">首页</a>
+        <span>&gt;</span>
+        <a id="nav" href="javascript:;">全部分类</a>
+        <span id="backBtn">返回</span>
+      </nav>
+      <!-- 导航 E -->
+
+      <!--  品牌列表 S-->
+
+      <div class="tradeList">
+        <h2 id="TopTitle">热门品牌排行</h2>
+
+        <ul class="list">
+          <!--<li class="Top10">
+            <input type="hidden" value="">
+            手机十大品牌
+            <i class="iconfont">&#xe657;</i>
+          </li>-->
+
+
+          <!--Top10 详情-->
+          <!--<li class="TopList">
+            <div class="media">
+              <div class="media-left">
+                <span class="media-object">1</span>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">三星平板电视</h4>
+                <span>30天全网销量:10000件</span>
+                <i class="iconfont">&#xe657;</i>
+              </div>
+            </div>
+          </li>-->
+
+          <!--<li class="TopInfo">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                <img class="media-object" src="../images/gengduo.png" alt="...">
+              </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">超级乐视5kJHDKSBd kdjsbdj康的就是播放将4654654654654654</h4>
+                <span>￥3266.00</span>
+                <p>
+                  <span>报价(7)</span>
+                  <span>评论(452)</span>
+                </p>
+              </div>
+            </div>
+          </li>-->
+
+          <!--<li class="comment">
+            <div class="media">
+              <div class="media-left media-middle">
+                <a href="#">
+                <img class="media-object" src="../images/gengduo.png" alt="...">
+              </a>
+              </div>
+              <div class="media-body">
+                <h4 class="media-heading">超级乐视5kJHDKSBd kdjsbdj康的就是播放将4654654654654654</h4>
+              </div>
+            </div>
+            <div class="outerBox">
+              <div class="comment_con">
+                <p>
+                  <span>昵称</span>
+                  <span>2017/06/18</span>
+                </p>
+                哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈 哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈
+                <p>购买自</p>
+              </div>
+            </div>
+          </li>-->
+
+        </ul>
+      </div>
+      <!--  品牌列表 E-->
+
+      <!--    尾部  S   -->
+      <footer>
+        <div id="login" class="clearfix ">
+          <i>登录</i>
+          <i>注册</i>
+          <i id="TopBtn">返回顶部</i>
+        </div>
+        <i class="copy">
+            <span>手机APP下载</span><span> 慢慢买手机版</span><span> -- 掌上比价平台</span>
+            <p>m.manmanbuy.com</p>
+        </i>
+      </footer>
+      <!--    尾部  E   -->
+
+      <!--返回顶部固定按钮-->
+      <div class="TopBtn">
+        <span class="iconfont">&#xe63b;</span>
+      </div>
+      <!--返回顶部固定按钮-->
+    </div>
+  </div>
+  <script src="../js/assets/jquery/jquery.js"></script>
+  <script src="../js/assets/bootstrap/js/bootstrap.js"></script>
+  <script src="../js/assets/artTemplate/template.js"></script>
+  <script src="../js/All_brand/All_brand.js"></script>
+  <!--十大品牌列表项-->
+  <script type="text/template" id="tradeList">
+    {{each result as v i }}
+    <li class="Top10">
+      <input class="brandId" type="hidden" value="{{v.brandTitleId}}">
+      <input type="hidden" value="{{v.categoryId}}">
+      <span>{{v.brandTitle}}</span>
+      <i class="iconfont">&#xe657;</i>
+    </li>
+    {{/each}}
+  </script>
+
+  <!--Top10商品-->
+  <script type="text/template" id="TopList">
+    {{each result as v i }}
+    <li class="TopList">
+      <input class="brandId" type="hidden" value="{{v.brandId}}">
+      <input type="hidden" value="{{v.brandTitleId}}">
+      <input type="hidden" value="{{v.categoryId}}">
+      <div class="media">
+        <div class="media-left">
+          <span class="media-object">{{i + 1}}</span>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{v.brandName}}</h4>
+          <span>{{v.brandInfo}}</span>
+          <i class="iconfont">&#xe657;</i>
+        </div>
+      </div>
+    </li>
+    {{/each}}
+  </script>
+
+  <!--Top10商品详情-->
+  <script type="text/template" id="Top10_Info">
+    {{each result as v i }}
+    <li class="TopInfo">
+      <input type="hidden" class="productId" value="{{v.productId}}">
+      <div class="media">
+        <div class="media-left media-middle">
+          <a id="imgInfo" href="#">
+            {{#v.productImg}}
+            </a>
+        </div>
+        <div class="media-body">
+          <h4 id="title2" class="media-heading">{{v.productName}}</h4>
+          <span>{{v.productPrice}}</span>
+          <p>
+            <span>{{v.productQuote}}</span>
+            <span>{{v.productCom}}</span>
+          </p>
+        </div>
+      </div>
+    </li>
+    {{/each}}
+  </script>
+
+  <!--  评论页面 -->
+  <script type="text/template" id="comment">
+    <li class="comment">
+      
+      <div class="media">
+        <div class="media-left media-middle">
+          <a href="#">
+              {{#img}}
+          </a>
+        </div>
+        <div class="media-body">
+          <h4 class="media-heading">{{title}}</h4>
+        </div>
+      </div>
+      <div class="outerBox">
+        {{each result as v i}}
+        <div class="comment_con">
+          <p>
+            <span>{{v.comName}}</span>
+            <span>{{v.comTime}}</span>
+          </p>
+          {{v.comContent}}
+          <p>{{v.comFrom}}</p>
+        </div>
+        {{/each}}
+      </div>
+      
+    </li>
+
+  </script>
+</body>
+
+</html>

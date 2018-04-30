@@ -1,0 +1,220 @@
+.head_logo {
+  height: 50px;
+  padding-left: 10px;
+  background: #ff841d;
+}
+.head_logo .logo {
+  width: 80%;
+  height: 100%;
+  padding: 12px;
+}
+.head_logo .logo a {
+  height: 100%;
+  display: block;
+}
+.head_logo .logo a img {
+  height: 100%;
+}
+.head_logo .appdown {
+  height: 100%;
+  padding: 7px;
+}
+.head_logo .appdown a {
+  height: 100%;
+  display: block;
+}
+.head_logo .appdown a img {
+  height: 100%;
+}
+.seek {
+  font-size: 16px;
+  height: 50px;
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #e6e6e6;
+  white-space: nowrap;
+}
+.seek .searcText {
+  display: block;
+}
+.seek .searcText input {
+  border: none;
+  width: 90%;
+  height: 30px;
+  line-height: 30px;
+  padding-left: 5%;
+  border-radius: 15px;
+  background: #f1f1f1;
+  cursor: auto;
+  outline: none;
+}
+.seek .searcBtn > input {
+  height: 30px;
+  line-height: 30px;
+  background: #ff841d;
+  border: none;
+  border-radius: 15px;
+  width: 63px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  color: #fff;
+}
+.navss .row {
+  height: 33%;
+}
+.navss .row .col-xs-3 {
+  padding: 0;
+  margin-top: 15px;
+}
+.navss .row .thumbnail {
+  border: none;
+  margin-bottom: 0px;
+  background: none;
+  padding: 0;
+}
+.navss .row .thumbnail a {
+  display: block;
+}
+.navss .row .thumbnail a img {
+  width: 50px;
+  min-width: 50px;
+}
+.navss .row .thumbnail a .caption {
+  white-space: nowrap;
+  display: block;
+  padding: 0;
+  text-align: center;
+  font-size: 12px;
+}
+.rebate {
+  line-height: 40px;
+  position: relative;
+}
+.rebate .recom {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  position: relative;
+  background: #ff9000;
+}
+.rebate .recom a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.rebate .recom img {
+  height: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.rebate .recomdet ul {
+  list-style: none;
+  padding: 0;
+}
+.rebate .recomdet ul li {
+  padding: 14px 8px;
+  height: 128px;
+}
+.rebate .recomdet ul li a {
+  display: block;
+  height: 100px;
+  padding-left: 100px;
+  position: relative;
+}
+.rebate .recomdet ul li a .brand_Img {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.rebate .recomdet ul li a .brand_Img img {
+  width: 100px;
+  height: 100px;
+}
+.rebate .recomdet ul li a .title {
+  color: #333;
+  font-size: 15px;
+  line-height: 19px;
+  min-height: 57px;
+  text-align: left;
+}
+.rebate .recomdet ul li a .title span {
+  color: #ff6c00;
+  display: inline;
+}
+.rebate .recomdet ul li a .other {
+  color: #a1a1a1;
+  font-size: 12px;
+}
+.rebate .recomdet ul li a .other span {
+  white-space: nowrap;
+}
+.floor {
+  background: #efefef;
+}
+.floor .fav {
+  padding: 10px;
+}
+.floor .fav a {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #5a5a5a;
+  background: #F4F4F4;
+  border: 1px solid #dddddd;
+}
+.floor .brand {
+  padding-left: 10px;
+  padding-right: 10px;
+  height: 40px;
+  line-height: 40px;
+  position: relative;
+  background: #ff9000;
+}
+.floor .brand a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+}
+.floor .brand a img {
+  height: 50%;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.floor .fn {
+  height: 34px;
+  margin-top: 6px;
+  border-top: 1px  solid #ccc;
+  border-bottom: 1px  solid #ccc;
+  background: #F4F4F4;
+}
+.floor .fn a {
+  display: inline-block;
+  width: 32%;
+  font-size: 14px;
+  color: #5a5a5a;
+  text-align: center;
+  height: 32px;
+  line-height: 30px;
+  border-left: 1px  solid #ccc;
+}
+.floor .bottom {
+  height: 60px;
+  padding: 15px;
+  text-align: center;
+}
+.floor .bottom p {
+  margin: 0;
+}
+.floor .bottom p a#colors {
+  color: red;
+}

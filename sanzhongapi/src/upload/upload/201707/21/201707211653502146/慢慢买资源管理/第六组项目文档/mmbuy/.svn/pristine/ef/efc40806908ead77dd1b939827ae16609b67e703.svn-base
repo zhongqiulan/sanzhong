@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1.0,minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <?php include '/views/common/css.html' ?>
+    <link rel="stylesheet" type="text/css" href="/views/public/css/detail.css">
+</head>
+
+<body>
+
+    <div class="view">
+        <!-- 头部 -->
+        <div class="headerlist">
+            <div class="back pull-left glyphicon glyphicon-chevron-left">
+            </div>
+            <span>国内折扣</span>
+            <div class="home pull-right">
+                <img src="/images/header_app.png" alt=""></div>
+        </div>
+        <!-- 商品详细信息 -->
+        <div class="detail">
+          
+        </div>
+        <div class="add-shopcar">
+            <ul class="clearfix">
+                <li><span>319.00</span></li>
+                <li>
+                    1
+                    <div class="dis">-</div>
+                    <div class="ad">+</div>
+                </li>
+                <li>
+                    <select>
+                        <option value="">已经省了259.50元</option>
+                        <option value="">已经省了259.50元</option>
+                        <option value="">已经省了259.50元</option>
+                        <option value="">已经省了259.50元</option>
+                    </select>
+                </li>
+                <li>59.9</li>
+            </ul>
+            <ul>
+                <li>店铺优惠：
+                    <select>
+                        <option value="">已经省了259.50元</option>
+                        <option value="">已经省了259.50元</option>
+                        <option value="">已经省了259.50元</option>
+                        <option value="">已经省了259.50元</option>
+                    </select>
+                </li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div>
+        <!-- 底 -->
+        <?php include '/views/common/foot.html' ?>
+
+    </div>
+</body>
+<?php include '/views/common/script.html' ?>
+
+<script type="text/template" id="detail">  
+      <div class="title">
+                <h4>{{productName}}</h4>
+            </div>
+            <div class="price">
+                <span>{{productPinkage}}</span>
+            </div>
+            <div class="time">
+                <span>{{productFrom}}{{productTips}}{{productTime}}</span>
+            </div>
+            <div class="media">
+                <div class="media-body">
+                    <!-- <h4 class="media-heading">Middle aligned media</h4> -->
+                    {{productInfo1}}
+                </div>
+                <div class="media-right media-middle">
+                    <a href="#">
+                    {{#productImgSm}}
+                 </a>
+                </div>
+            </div>
+            <div class="intro">
+                <p>
+                 {{productInfo2}}
+                </p>
+            </div>
+            <div class="big-img">
+               {{#productImgLg}}
+            </div>
+        </script>
+<script>
+    require(['js/indexDetail']);
+</script>
+
+</html>

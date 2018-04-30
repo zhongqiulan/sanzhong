@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+    <title>Document</title>
+    <link rel='stylesheet' href='../libs/bootstrap/css/bootstrap.css' />
+    <link rel='stylesheet' href='../css/product_info.css' />
+</head>
+
+<body>
+    <!--头部-->
+    <div class="mmm_top">
+        <div class="top_conten">
+            <a href="javascript:;">
+                <span class="top_img_left"></span>
+                <span class="top_img_right"></span>
+            </a>
+        </div>
+    </div>
+
+    <!--搜索框-->
+    <div class="mmm_search clearfix">
+        <div class="mmm_conten">
+            <span>
+            <input type="text" placeholder="请输入你想比较的商品">
+       </span>
+            <span>
+         <a href="javascript:;">按钮</a>
+       </span>
+        </div>
+    </div>
+
+    <!--导航-->
+    <div class="nav">
+        <ul>
+            <li> <a href='javascript:;'>首页></a></li>
+            <li> <a href='javascript:;'>分类列表></a></li>
+            <li> <a href='javascript:;'>>电视</a></li>
+
+        </ul>
+        <button>筛选</button>
+    </div>
+    <!--头部详细信息-->
+    <div class="product_info">
+        <!--div class="head_info">
+            <div class="text_title">
+                <h4>夏普(SHARP)LCD-70SU665A 70英寸 4K 超清智能液晶电视</h4>
+            </div>
+            <div class="picture">
+                <img src='../images/product.jpg'>
+                <a href='javascript:;'> <img src= '../images/sc.jpg'></a>
+            </div>
+        </div>-->
+
+        <!--tab分割栏-->
+
+       <!-- <div class="btnTab">
+            <div class="btn-group" role="group" aria-label="...">
+                <button type="button" class="btn btn-default">Left</button>
+                <button type="button" class="btn btn-default">Middle</button>
+                <button type="button" class="btn btn-default">Right</button>
+            </div>
+
+        </div>-->
+        <!--价格-->
+      <!--  <div class="info_money">
+            <ul>
+                <li>
+                    <a href='javascript:;' class="clearfix">
+                        <div class="iconWeb">
+                            <img src='../images/13.png'> 京东商城
+                            <span class="self-support">自营</span>
+                        </div>
+                        <div class="info_price">
+                            <span class="price">¥3345</span>
+                            <button class="btnMail">购买</button>
+                        </div>
+
+                    </a>
+                </li>
+            </ul>
+            <p>*实际价格以个网站列出的实时售价为准,我们提供的价格可能有数小时至数日的延迟</p>
+        </div>-->
+    </div>
+
+    <!--评价-->
+
+
+    <div class="evaluation">网友评价</div>
+    <div class="evaluation-info">
+        <ul class = "comeFrom">
+            <!--<li>
+                <div class="info_from">
+                    <div class="top-info">
+                        <span class="left-name">dadasdd</span>
+                        <span class="right-date">2017/7/16</spanclass>
+                            </div>
+                            <span class="from-mall">来自:京东商城</span>
+
+                    </div>
+                    <p class="specific-evaluation">是的哈哈伦裤的骄傲了肯德基奥克兰的骄傲快乐圣诞节来看</p>
+            </li>-->
+        </ul>
+        </div>
+
+
+
+
+
+
+
+
+
+        <!--底部-->
+        <div class="mmm_bottom clearfix">
+            <ul>
+                <li></li>
+                <li class="clearfix">
+                    <a href="#">登录</a>
+                    <a href="#">注册</a>
+                    <a href="#"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a>
+                </li>
+                <li class="clearfix hehe">
+
+                    <p>
+                        <span>手机APP下载</span>
+                        <span>慢慢买手机版--</span>
+                        <span>掌上比价平台</span>
+                    </p>
+                    <h4>m.manmanbuy.com</h4>
+                </li>
+            </ul>
+
+        </div>
+        <script src="../libs/jquery/jquery.js"></script>
+        <script src="../libs/bootstrap/js/bootstrap.js"></script>
+        <script src="../libs/artTemplate/template.js"></script>
+        <!--<script src="../js/util.js"></script>-->
+        <script src="../js/parity_info.js"></script>
+
+
+        <script type="text/html" id="product_info_tpl">
+            {{each result as v i}}
+            <div class="head_info">
+                <div class="text_title">
+                    <h4>{{v.productName}}</h4>
+                </div>
+                <div class="picture">
+
+                    {{#v.productImg}}
+                    <a href='javascript:;'> <img src= '../images/sc.jpg'></a>
+                </div>
+            </div>
+
+            <!--tab分割栏-->
+
+            <div class="btnInfo">
+                <div class="btnTab">
+                    <div class="btn-group" role="group" aria-label="...">
+                        <button type="button" class="btn btn-default">比价购买</button>
+                        <button type="button" class="btn btn-default">产品参数</button>
+                        <button type="button" class="btn btn-default">评价</button>
+                    </div>
+
+                </div>
+                {{#v.bjShop}}
+                <p>*实际价格以个网站列出的实时售价为准,我们提供的价格可能有数小时至数日的延迟</p>
+            </div>
+            {{/each}}
+        </script>
+        <script type="text/html" id="evaluation_tpl">
+            {{each result as value i}}
+                <li>
+                    <div class="info_from">
+                        <div class="top-info">
+                            <span class="left-name">{{value.comName}}</span>
+                            <span class="right-date">{{value.comTime}}</spanclass>
+                                </div>
+                                <span class="from-mall">{{value.comFrom}}</span>
+
+                        </div>
+                        <p class="specific-evaluation">{{value.comContent}}</p>
+                 </li>
+            {{/each}}
+        
+        </script>
+
+</body>
+
+</html>

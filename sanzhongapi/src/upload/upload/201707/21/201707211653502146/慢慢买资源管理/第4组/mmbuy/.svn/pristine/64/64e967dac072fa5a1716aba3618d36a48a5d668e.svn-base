@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/css/domestic_discount/zhekou.css">
+</head>
+<body>
+    <header>
+        <div class="back">
+            <a href="javascript:;" class="glyphicon glyphicon-menu-left" aria-hidden="true"></a>
+        </div>
+        <div class="title">
+            <h2>国内折扣</h2>
+        </div>
+        <div class="app">
+            <img src="/imgs/header_app.png" alt="">
+        </div>
+    </header>
+
+    <!--主体部分-->
+    <div class="main">
+        <ul>
+            <li class="list-img">
+                <a href="">
+                    <div class="img">
+                        <img src="/imgs/e60b479f841145538202fbcac07cbac8.jpg" alt="">
+                    </div>
+                    <div class="title">MSI 微星 X99A SLI主板+赠品</div>
+                    <div class="subtit">3499元包邮（赠i7-6800K）</div>
+                    <div class="info">
+                        <div class="mall">京东商城 | 2017/7/18 18:17</div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-img">
+                <a href="">
+                    <div class="img">
+                        <img src="/imgs/e60b479f841145538202fbcac07cbac8.jpg" alt="">
+                    </div>
+                    <div class="title">MSI 微星 X99A SLI主板+赠品</div>
+                    <div class="subtit">3499元包邮（赠i7-6800K）</div>
+                    <div class="info">
+                        <div class="mall">京东商城 | 2017/7/18 18:17</div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-img">
+                <a href="">
+                    <div class="img">
+                        <img src="/imgs/e60b479f841145538202fbcac07cbac8.jpg" alt="">
+                    </div>
+                    <div class="title">MSI 微星 X99A SLI主板+赠品</div>
+                    <div class="subtit">3499元包邮（赠i7-6800K）</div>
+                    <div class="info">
+                        <div class="mall">京东商城 | 2017/7/18 18:17</div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-img">
+                <a href="">
+                    <div class="img">
+                        <img src="/imgs/e60b479f841145538202fbcac07cbac8.jpg" alt="">
+                    </div>
+                    <div class="title">MSI 微星 X99A SLI主板+赠品</div>
+                    <div class="subtit">3499元包邮（赠i7-6800K）</div>
+                    <div class="info">
+                        <div class="mall">京东商城 | 2017/7/18 18:17</div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-img">
+                <a href="">
+                    <div class="img">
+                        <img src="/imgs/e60b479f841145538202fbcac07cbac8.jpg" alt="">
+                    </div>
+                    <div class="title">MSI 微星 X99A SLI主板+赠品</div>
+                    <div class="subtit">3499元包邮（赠i7-6800K）</div>
+                    <div class="info">
+                        <div class="mall">京东商城 | 2017/7/18 18:17</div>
+                    </div>
+                </a>
+            </li>
+            <li class="list-img">
+                <a href="">
+                    <div class="img">
+                        <img src="/imgs/e60b479f841145538202fbcac07cbac8.jpg" alt="">
+                    </div>
+                    <div class="title">MSI 微星 X99A SLI主板+赠品</div>
+                    <div class="subtit">3499元包邮（赠i7-6800K）</div>
+                    <div class="info">
+                        <div class="mall">京东商城 | 2017/7/18 18:17</div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </div>
+
+    <!--底部导航栏-->
+    <div class="bottom">
+        <div class="bottom-nav">
+            <a href="#">首页</a>
+            <span>&nbsp;>&nbsp;省钱快曝</span>
+        </div>
+        <div class="login">
+            <div class="bottom-login">
+                <a href="#">登录</a>
+            </div>
+            <div class="bottom-login">
+                <a href="#">注册</a>
+            </div>
+            <div class="bottom-login">
+                <a href="#"><span class="glyphicon glyphicon-chevron-up"></span>返回顶部</a>
+            </div>
+        </div>
+        <div class="bottom-info"></div>
+    </div>
+    
+
+
+
+    <script src="/libs/jquery/jquery.js"></script>
+    <script src="/libs/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

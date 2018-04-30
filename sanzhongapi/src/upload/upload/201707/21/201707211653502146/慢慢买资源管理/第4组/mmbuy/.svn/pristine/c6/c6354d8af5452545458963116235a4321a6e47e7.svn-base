@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/common/base.css">
+    <link rel="stylesheet" href="../css/bc_css/bc_index.css">
+    <link rel="stylesheet" href="../css/bc_css/icon_style.css">
+    <!-- <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css"> -->
+</head>
+
+<body>
+
+    <div class="layout">
+        <div class="bcj_head">
+            <!-- 导航栏小盒子包住导航栏大盒子 -->
+            <div class="bcj_ul">
+                <ul>
+                    <li class="active"><a href="#">全部</a></li>
+                    <li><a href="#">热销</a></li>
+                    <li><a href="#">9块9包邮</a></li>
+                    <li><a href="#">19块邮</a></li>
+                    <li><a href="#">数码家电</a></li>
+                    <li><a href="#">居家</a></li>
+                    <li><a href="#">美食</a></li>
+                    <li><a href="#">男装</a></li>
+                    <li><a href="#">女装</a></li>
+                    <li><a href="#">鞋包配饰</a></li>
+                    <li><a href="#">文体</a></li>
+                    <li><a href="#">母婴</a></li>
+                    <li><a href="#">美妆</a></li>
+                </ul>
+            </div>
+            <div class="searchBtn">
+                <i class="icon-search"></i>
+            </div>
+            <div class="searchBox hide">
+                <div class="">
+                    <form action="">
+                        <input type="search" placeholder="搜索商品即可查内部券">
+                        <input type="submit" value="搜索">
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="nav_discount">
+            <img src="../bc_imgs/quan_banner_wap.png" alt="">
+        </div>
+        <div class="container">
+            <div class="bcj_list">
+                <ul>
+                    <li>
+                        <a href="javascript:;">
+                            <img src="" alt="">
+                            <p></p>
+                            <p></p>
+                            <p></p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="img_loading">
+
+        </div>
+
+    </div>
+    <script src='../libs/jquery/jquery.js'></script>
+    <script src='../libs/artTemplate/template.js'></script>
+    <script src='../iscroll.js'></script>
+    <script src='../js/bc_js/bc_index.js'></script>
+    <!-- <script src='../libs/bootstrap/js/bootstrap.js'></script> -->
+    <script>
+        var myScroll=new IScroll('.bcj_ul');
+    </script>
+</body>
+
+</html>

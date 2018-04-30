@@ -1,0 +1,35 @@
+div,
+ul,
+li,
+a {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-style: normal;
+}
+a {
+  text-decoration: none;
+}
+/*左右浮动*/
+.float_l {
+  float: left;
+}
+.float_r {
+  float: right;
+}
+/*左右浮动*/
+/*清除浮动*/
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+}
+.clearfix:after {
+  clear: both;
+  height: 0;
+}
+/*兼容IE6/7*/
+.clearfix {
+  zoom: 1;
+}
+/*清除浮动*/

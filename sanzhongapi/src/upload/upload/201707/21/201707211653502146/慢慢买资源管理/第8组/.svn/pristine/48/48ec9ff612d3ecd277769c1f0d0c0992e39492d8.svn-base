@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比价搜索</title>
+    <link rel="stylesheet" href="../js/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/price_search/price_search.css">
+</head>
+<body>
+    <!--头部区域-->
+    <!--顶部导航-->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header header-logo pull-left">
+                    <a class="navbar-brand" href="#"><img src="../images/header_logo.png" alt=""></a>
+                </div>
+
+                <div class="navbar-right app-download pull-right">
+                    <img src="../images/header_app.png" alt="">
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!--搜索栏-->
+        <div class="container ">
+            <div class="row bg-w">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2">搜索</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu mt15">
+
+            </div>
+        </div>
+    </header>
+    <!--内容-->
+    <div class="main">
+        <ul>
+            <li >
+               <div class="main_list">
+                   <span>大家电</span>
+                   <span class="glyphicon glyphicon-menu-down"></span>
+                   <!--下:glyphicon glyphicon-menu-down
+                   上:glyphicon glyphicon-menu-up-->
+               </div>
+               <ul class="son_list ul_hide">
+                   <li><a href="javascript:;">平板电视</a></li>
+                   <li><a href="javascript:;">空调</a></li>
+                   <li><a href="javascript:;">家庭影院</a></li>
+                   <li><a href="javascript:;">冰箱</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+                   <li><a href="javascript:;">家庭影院</a></li>
+                   <li><a href="javascript:;">冰箱</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+               </ul> 
+            </li>
+            <li>
+               <div class="main_list">
+                   <span>手机数码</span>
+                   <span class="glyphicon glyphicon-menu-down"></span>
+                   <!--下:glyphicon glyphicon-menu-down
+                   上:glyphicon glyphicon-menu-up-->
+               </div>
+               <ul class="son_list ul_hide">
+                   <li><a href="javascript:;">平板电视</a></li>
+                   <li><a href="javascript:;">空调</a></li>
+                   <li><a href="javascript:;">家庭影院</a></li>
+                   <li><a href="javascript:;">冰箱</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+               </ul> 
+            </li>
+            <li>
+               <div class="main_list">
+                   <span>手机数码</span>
+                   <span class="glyphicon glyphicon-menu-down"></span>
+                   <!--下:glyphicon glyphicon-menu-down
+                   上:glyphicon glyphicon-menu-up-->
+               </div>
+               <ul class="son_list ul_hide">
+                   <li><a href="javascript:;">平板电视</a></li>
+                   <li><a href="javascript:;">空调</a></li>
+                   <li><a href="javascript:;">家庭影院</a></li>
+                   <li><a href="javascript:;">冰箱</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+                   <li><a href="javascript:;">家庭影院</a></li>
+                   <li><a href="javascript:;">冰箱</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+               </ul> 
+            </li>
+            <li>
+               <div class="main_list">
+                   <span>手机数码</span>
+                   <span class="glyphicon glyphicon-menu-down"></span>
+                   <!--下:glyphicon glyphicon-menu-down
+                   上:glyphicon glyphicon-menu-up-->
+               </div>
+               <ul class="son_list ul_hide">
+                   <li><a href="javascript:;">平板电视</a></li>
+                   <li><a href="javascript:;">空调</a></li>
+                   <li><a href="javascript:;">家庭影院</a></li>
+                   <li><a href="javascript:;">冰箱</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+                   <li><a href="javascript:;">平板电视</a></li>
+                   <li><a href="javascript:;">空调</a></li>
+                   <li><a href="javascript:;">家庭影院</a></li>
+                   <li><a href="javascript:;">冰箱</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+               </ul> 
+            </li>
+            <li>
+               <div class="main_list">
+                   <span>手机数码</span>
+                   <span class="glyphicon glyphicon-menu-down"></span>
+                   <!--下:glyphicon glyphicon-menu-down
+                   上:glyphicon glyphicon-menu-up-->
+               </div>
+               <ul class="son_list ul_hide">
+                   <li><a href="javascript:;">平板电视</a></li>
+                   <li><a href="javascript:;">空调</a></li>
+                   <li><a href="javascript:;">家庭影院</a></li>
+                   <li><a href="javascript:;">冰箱</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+                   <li><a href="javascript:;">热水器</a></li>
+               </ul> 
+            </li>
+        </ul>
+    </div>
+
+    <!--底部区域-->
+    <footer>
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <div class="row">
+                    <div class="login col-sm-4 col-xs-4"><a href="javascript:;">登录</a></div>
+                    <div class="register col-sm-4 col-xs-4"><a href="javascript:;">注册</a></div>
+                    <div class="to-top col-sm-4 col-xs-4"><a href="javascript:;" ><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+            <div class="app-updown">
+                <a href="javascript:;">手机APP下载</a>
+                <span>慢慢买手机版</span><span> - 掌上比价平台</span>
+                <p>m.mammambuy.com</p>
+            </div>
+        </nav>
+   </footer>
+  
+
+
+    <script src='../js/assets/jquery/jquery.min.js'></script>
+    <script src='../js/assets/bootstrap/js/bootstrap.min.js'></script>
+    <script src='../js/assets/artTemplate/template.js'></script>
+    <script>
+    
+        $.ajax({
+            url:'http://139.199.192.48:9090/api/getcategorytitle',
+            success:function(d){
+                var htmlStr = "";
+                // console.log(d);
+                for(var i=0;i<d.result.length;i++){
+                    $.ajax({
+                        url:"http://139.199.192.48:9090/api/getcategory",
+                        data:{titleid:d.result[i].titleId},
+                        _title:d.result[i].title,
+                        success:function(d){
+                            d.title = this._title;
+                            // console.log(d);
+                            htmlStr += template('list_tpl',d);
+                            console.log(htmlStr);
+                            // $('.main>ul').html(htmlStr);
+                        }
+                    });
+                }
+                console.log(htmlStr);
+                console.log(htmlStr);
+                // $('.main>ul').html(htmlStr);
+            }
+        });
+        
+        $('.main').on('click','.main_list',function(){
+            // $(this).next().slideToggle();
+            $('.son_list').css('display','none');
+            $(this).next().toggle('ul_hide');
+        });
+    </script>
+    <script type="text/template" id="list_tpl">
+            <li >
+               <div class="main_list">
+                   <span>{{title}}</span>
+                   <span class="glyphicon glyphicon-menu-down"></span>
+                   <!--下:glyphicon glyphicon-menu-down
+                   上:glyphicon glyphicon-menu-up-->
+               </div>
+               <ul class="son_list ul_hide">
+            {{each result as v i}}
+                   <li><a href="javascript:;">{{v.category}}</a></li>
+            {{/each}}
+               </ul> 
+            </li>
+    </script>
+</body>
+</html>

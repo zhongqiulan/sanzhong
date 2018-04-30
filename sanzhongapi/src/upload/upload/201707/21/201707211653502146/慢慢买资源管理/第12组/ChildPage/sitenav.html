@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>商城导航</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/sitenav/sitenav.css">
+</head>
+
+<body>
+    <!--头部-->
+    <header>
+        <a href="../index.html" class="glyphicon glyphicon-chevron-left"></a>
+        <h1>商城导航</h1>
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia&ckey=CK1360146084813" class="head-load">
+            <img src="../images/header_app.png" alt="">
+        </a>
+    </header>
+    <!--导航栏-->
+    <div class="navLink">
+    </div>
+    <!--底部链接-->
+    <div class="back-link">
+        <a href="../index.html">首页</a>
+        &nbsp;>&nbsp;
+        <a href="sitenav.html">商城导航</a>
+    </div>
+    <!--登录及注册  -->
+    <div class="back_nav">
+         <a href="register.html">登录</a>
+        <a href="enroll.html">注册</a>
+        <a href="#top">
+            <img src="../images/top.jpg" alt="">
+            返回顶部
+        </a>
+    </div>
+    <!--底部-->
+    <footer>
+         <p> <a href="#"class="onea">手机APP下载</a> <a href="#">慢慢买手机版</a> -- 掌上比价平台</p>
+        <p>m.manmanbuy.com </p>
+    </footer>
+   
+    <!--<script type="text/template" id="tp_download">
+    <% for(var i=0;i<list.length;i++){%>
+        <a href="<%=list[i].navHref %>">
+            <img src="<%=list[i].navImg %>" alt="">
+            <b><%=list[i].navTitle %></b>
+        </a>
+        <%}%>
+    </script>-->
+    <script type="text/template" id="tp_download">
+        {{each result as u i}}
+        <a href="{{u.navHref}}">
+            <img src="{{u.navImg}}" alt="">
+            <b>{{u.navTitle}}</b>
+        </a> {{/each}}
+    </script>
+
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/jquery/template.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/sitenav/sitenav.js"></script>
+</body>
+ 
+</html>

@@ -1,0 +1,125 @@
+.header {
+  overflow: hidden;
+  height: 44px;
+  background: #f4483e ;
+  color: #fff;
+  position: relative;
+  line-height: 44px;
+  padding-left: 60px;
+  padding-right: 60px;
+  text-align: center;
+  font-size: 22px;
+}
+.header .back {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+}
+.header .back .comeback {
+  width: 60px;
+  height: 44px;
+  display: block;
+  font-size: 18px;
+  color: #fff;
+}
+.header h3 {
+  height: 100%;
+}
+.header .home {
+  position: absolute;
+  top: 7px;
+  right: -14px;
+}
+.header .home .download {
+  width: 60px;
+  height: 44px;
+  display: block;
+  background: url("../images/header_app.png") no-repeat;
+  background-size: 50%;
+}
+.discount {
+  text-align: center;
+  margin: 10px 0;
+  font-size: 14px;
+}
+.content ul li {
+  padding: 10px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.content ul li #click {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  font-size: 30px;
+  transform: translate(0, -50%);
+}
+.content ul li #click:hover {
+  cursor: pointer;
+}
+.content ul li a {
+  position: relative;
+}
+.content ul li a img {
+  width: 100px;
+  height: 80px;
+  float: left;
+}
+.content ul li a .info {
+  font-size: 15px;
+  font-weight: 700;
+  margin-left: 120px;
+}
+.content ul li a .info h2 {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.content ul li a .info .time {
+  color: red;
+}
+.carousel {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(225, 225, 225, 0.5);
+}
+.jump {
+  height: 30px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  margin-top: 30px;
+  line-height: 30px;
+  padding-left: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  background-color: #efefef;
+}
+.footer {
+  margin-top: 30px;
+  background-color: #efefef;
+}
+.footer .footertop a {
+  width: 33%;
+  display: block;
+  float: left;
+  border-right: 1px solid #ccc;
+  text-align: center;
+  line-height: 30px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-size: 16px;
+  font-weight: 700;
+}
+.footer .footercenter {
+  border-top: 1px solid #ccc;
+  padding: 20px;
+  height: 60px;
+  text-align: center;
+}
+.footer .footercenter a:nth-of-type(1) {
+  color: red;
+}
+.footer .footercenter a:nth-of-type(2) {
+  color: #000;
+}

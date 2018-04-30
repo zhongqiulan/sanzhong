@@ -1,0 +1,219 @@
+.navbar {
+  background-color: #ff841d;
+  margin-bottom: 10px;
+}
+.navbar .navbar-brand {
+  width: 80%;
+}
+.navbar .navbar-brand img {
+  width: 187px;
+}
+.navbar .app-donwload img {
+  height: 34px;
+  margin-top: 8px;
+}
+#index_search {
+  width: 100%;
+  position: relative;
+  margin-bottom: 1px;
+}
+#index_search .input_text {
+  width: 90%;
+  height: 30px;
+  border-radius: 20px;
+  border: 0;
+  margin-left: 5px;
+  padding-left: 30px;
+  outline: none;
+  background-color: #f1f1f1;
+}
+#index_search .input_subimt {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  padding-left: 10px;
+  margin-right: 10px;
+  background-color: #ff841d;
+  color: #fff;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: 0;
+}
+.line {
+  width: 100%;
+  height: 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: #aaa;
+}
+.index_list #index_list_ul {
+  list-style: none;
+  padding-left: 0;
+}
+.index_list #index_list_ul li {
+  width: 25%;
+}
+.index_list #index_list_ul li a {
+  display: block;
+  margin-left: 10%;
+  text-align: center;
+  color: #5a5a5a;
+}
+.index_list #index_list_ul li a img {
+  width: 50px;
+}
+.index_list #index_list_ul .collapse li {
+  width: 25%;
+}
+.index_list #index_list_ul .collapse li a {
+  display: block;
+  margin-left: 10%;
+  text-align: center;
+  color: #5a5a5a;
+}
+.index_list #index_list_ul .collapse li a img {
+  width: 50px;
+}
+.index_count {
+  width: 100%;
+  background-color: #ff841d;
+}
+.index_count span {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.index_count img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.discount {
+  width: 100%;
+  background-color: #fff;
+}
+.discount .discount_ul {
+  list-style: none;
+  padding-left: 0px;
+}
+.discount .discount_ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+.discount .discount_ul li .clickli {
+  width: 100%;
+  display: block;
+}
+.discount .discount_ul li .clickli .discount_img img {
+  width: 100px;
+  height: 100px;
+}
+.discount .discount_ul li .clickli .discount_content {
+  padding-left: 110px;
+}
+.discount .discount_ul li .clickli .discount_content .discount_title {
+  min-height: 50px;
+  word-break: break-all;
+  text-align: left;
+  color: black;
+}
+.discount .discount_ul li .clickli .discount_content .discount_title span {
+  color: #ff6c00;
+}
+.discount .discount_ul li .clickli .discount_content .discount_message {
+  margin-top: 20px;
+}
+.discount .discount_ul li .clickli .discount_content .discount_message span {
+  font-size: 12px;
+  color: #ccc;
+}
+.discount .discount_ul li .clickli .discount_content .discount_message span i {
+  font-size: 12px;
+}
+.discount .discount_more {
+  padding-bottom: 10px;
+}
+.discount .discount_more a {
+  display: block;
+  width: 90%;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  color: #5a5a5a;
+  font-size: 12px;
+}
+.index_bottom {
+  background-color: #f2f2f2;
+}
+.index_bottom .index_bottom_head {
+  background-color: #ff841d;
+  font-size: 20px;
+  color: #fff;
+}
+.index_bottom .index_bottom_head span {
+  font-size: 20px;
+  color: #fff;
+  margin-left: 20px;
+  font-weight: 600;
+}
+.index_bottom .index_bottom_head a img {
+  width: 20px;
+  height: 20px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+.index_bottom .container {
+  width: 100%;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+.index_bottom .container div {
+  border: 1px solid #ccc;
+  border-left: 0px;
+  padding: 0px;
+}
+.index_bottom .container div a {
+  color: #333333;
+  display: block;
+  width: 100%;
+}
+.index_bottom .index_bottom_footer {
+  text-align: center;
+  padding: 10px 0;
+}
+.index_bottom .index_bottom_footer p {
+  margin: 0px;
+}
+.index_bottom .index_bottom_footer p .appdownload {
+  color: red;
+}
+.index_bottom .index_bottom_footer p .appdownload a {
+  color: #5a5a5a;
+}
+.img_fixed {
+  position: fixed;
+  bottom: 0px;
+  right: 0px;
+}
+.img_fixed .img_fixed_img img {
+  width: 50px;
+  height: 50px;
+}
+.img_fixed #back_top {
+  visibility: hidden;
+  width: 40px;
+  height: 40px;
+  background-color: #fff;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+.img_fixed #back_top a i {
+  margin-left: 5px;
+  font-size: 216%;
+  color: #ccc;
+}

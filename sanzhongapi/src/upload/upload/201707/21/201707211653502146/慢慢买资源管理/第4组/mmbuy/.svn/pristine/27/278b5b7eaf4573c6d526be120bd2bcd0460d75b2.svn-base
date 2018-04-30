@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/gsproduct.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../favicon.ico"/>
+    <title>凑单品</title>
+</head>
+
+<body>
+
+    <!--凑单品头部-->
+    <div class="seach-history">
+        <a href="../index.html" class="glyphicon glyphicon-menu-left"></a>
+        <h1>凑单品</h1>
+    </div>
+    <!--下拉选择导航-->
+    <div class="down_lowd">
+
+        <!-- Nav tabs -->
+        <ul class="nav_top nav nav-tabs" role="tablist">
+            <li id="jd_seach" role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">京东 <span class="caret"></span></a></li>
+            <li id="area_seach" role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">华北 <span class="caret"></span></a></li>
+            <li id="jg_seach" role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">全部价格<span class="caret"></span></a></li>
+            <li class="last_seach" role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab"><span class="glyphicon glyphicon-search"></span></a></li>
+        </ul>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="tab-pane active" id="home">
+                <!--京东下拉-->
+                <div class="box">
+                    <ul class="jd_download">
+
+                    </ul>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="profile">
+                <!--地域下拉-->
+                <div class="box">
+                    <ul class="area">
+
+                    </ul>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane" id="messages">
+                <!--价格下拉-->
+                <div class="box">
+                    <ul class="price">
+                        <li><a href="#">全部价格<i class="glyphicon glyphicon-ok"></i></a></li>
+                        <li><a href="#">1-3元<i></i></a></li>
+                        <li><a href="#">3-5元<i></i></a></li>
+                        <li><a href="#">5-10元<i></i></a></li>
+                        <li><a href="#">10-15元<i></i></a></li>
+                        <li><a href="#">15元以上<i></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+            <div role="tabpanel" class="tab-pane last-pane" id="settings">
+                <!--搜索下拉-->
+                <div class="seach_content">
+                    <div class="seach">
+                        <i></i>
+                        <input type="text" placeholder="搜索您想要的凑单品">
+                        <button>搜索</button>
+                    </div>
+                    <div class="sort">
+                        <h4>排序</h4>
+                        <ul>
+                            <li><a href="javascript:;">销量</a></li>
+                            <li class="up"><a href="javascript:;">价格<b class="glyphicon glyphicon-arrow-up"></b></a></li>
+                            <li><a href="javascript:;">价格<b class="glyphicon glyphicon-arrow-down"></b></a></li>
+                        </ul>
+                    </div>
+                    <div class="classification">
+                        <h4>分类</h4>
+                        <ul class="col-xs-12">
+                            <li class="col-xs-3"><a class="a_color" href="javascript:;">全部</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">家居</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">数码</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">办公</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">个护</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">食品</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">母婴</a></li>
+                            <li class="col-xs-3"><a href="javascript:;">服饰</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!--商品展示-->
+    <div class="item-show">
+        <div class="container-fluid">
+            <div class="row">
+
+            </div>
+        </div>
+    </div>
+    <!--京东商品展示模板-->
+    <script type="text/template" id="jd_tpl">
+        {{each result as v i}}
+        <div class="show col-xs-6">
+            <div class="main">
+                <a href="javascript:;"><img src="{{v.productImg}}" alt=""></a>
+                <p>{{v.productName}}</p>
+                <span><i class="glyphicon glyphicon-jpy"></i>{{v.productPrice}}</span>
+            </div>
+        </div>
+        {{/each}}
+    </script>
+    <!--商店模板-->
+    <script type="text/template" id="shop_tpl">
+        {{each result as v i}}
+        <li id="{{v.shopId}}"><a href="#">{{v.shopName}}
+               <i></i>
+                </a></li>
+        {{/each}}
+    </script>
+    <!--地域下拉选项模板-->
+    <script type="text/template" id="dy_tpl">
+        {{each result as v i}}
+        <li id="{{v.areaId}}"><a href="#">{{v.areaName}}<i></i></a></li>
+        {{/each}}
+    </script>
+</body>
+<script src="../libs/jquery/jquery.js"></script>
+<script src="../libs/bootstrap/js/bootstrap.js"></script>
+<script src="../libs/artTemplate/template.js"></script>
+<script src="../js/common/gsproduct.js"></script>
+</html>

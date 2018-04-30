@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>国内折扣</title>
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../../css/inlanddiscount/inlanddiscount.css">
+  <link rel="icon" href="../../images/favicon.ico">
+
+</head>
+<!-- 头部 -->
+<header>
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header header-logo pull-left">
+        <a class="navbar-brand return" href="#"><span class="glyphicon glyphicon glyphicon-menu-left"></span></a>
+      </div>
+      <h1>国内折扣</h1>
+      <div class="navbar-right app-donwload pull-right">
+        <img src="../../images/header_app.png" alt="">
+      </div>
+    </div>
+  </nav>
+</header>
+
+<!--内容-->
+<div class="dis-content container">
+  <div class="row" id="dis_content">
+    
+  </div>
+</div>
+<!--登录注册-->
+  <div class="foot_bar">
+      <ul class="clearfix">
+          <li><a href="../../login.html">登录</a></li>
+          <li><a href="javascript:;">注册</a></li>
+          <li><a href="javascript:scroll(0,0)"><i class="icon-top"></i>返回顶部</a></li>
+      </ul>
+  </div>
+  <!--底部-->
+<footer>
+    <div class="foot_top">
+        <a href="javascript:;">手机APP下载</a>
+        <a href="index.html">慢慢买手机版</a>
+          -- 掌上比价平台
+    </div>
+    <div class="foot_bottom">m.manmanbuy.com</div>
+</footer>
+
+
+
+<script type="text/template" id="dis_content_tpl">
+  {{each result as v i}}
+  <div class="col-xs-6">
+    <div class="thumbnail">
+      <a href="moneyctrlproduct.html?id={{v.productId}}">
+        {{#v.productImg}}
+        <div class="caption">
+          <h3>{{v.productName}}</h3>
+          <p>{{v.productPrice}}</p>
+          <span>{{v.productFrom}}|{{v.productTime}}</span>
+        </div>
+      </a>
+    </div>
+  </div>
+  {{/each}}
+</script>
+
+
+
+
+
+
+<body>
+  <script src="../../lib/jquery/jquery.js"></script>
+  <script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+  <script src="../../lib/artTemplate/template.js"></script>
+  <script src="../../js/inlanddiscount/util.js"></script>
+  <script src="../../js/inlanddiscount/inlanddiscount.js"></script>
+</body>
+
+
+</html>

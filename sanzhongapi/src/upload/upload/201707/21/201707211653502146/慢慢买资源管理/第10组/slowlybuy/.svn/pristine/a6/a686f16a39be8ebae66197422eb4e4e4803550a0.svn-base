@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买-品牌</title>
+  <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap-theme.css">
+  <!--品牌页的css样式-->
+  <link rel="stylesheet" href="../css/brandZone/brandTitle.css">
+  <link rel="stylesheet" href="../css/baicaijia.css">
+  <link rel="stylesheet" href="../css/index.css">
+</head>
+
+<body>
+  <!--view star-->
+  <div class="bz_view">
+    <!--头部-->
+   <!--顶部logo-->
+    <div class="head_logo clearfix">
+        <div class="logo pull-left">
+            <a href='javascript:;'>
+                <img src="../images/header_logo.png" alt="logo">
+            </a>
+
+        </div>
+        <div class="appdown  pull-right">
+            <a href='javascript:;'>
+                <img src="../images/header_app.png" alt="app" class="pull-right" >
+           </a>
+        </div>
+    </div>
+    <!--搜索框-->
+    <div class="seek ">
+        <div class="searcText">
+            <input type="text" placeholder='你输入你想比价的商品'>
+        </div>
+        <div class="searcBtn">
+            <input type="submit" value="搜索">
+        </div>
+
+    </div>
+    <!--头部-->
+
+    <!-- 主体 star-->
+    <div class="main">
+
+      <!--路径导航 star-->
+      <ol class="bz_nav breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a class="active" href="#">品牌大全</a></li>
+        <!--<li >Data</li>-->
+      </ol>
+      <!--路径导航 end-->
+
+
+      <!--品牌分类 star-->
+      <div class="bz_brans">
+        <!--<div class="bz_title">
+          热门品牌排行
+        </div>
+        <div class="bz_list">
+          <div class="fl_t">
+            <a href="distop.aspx?id=4">平板电视十大品牌</a>
+          </div>
+        </div>-->
+      </div>
+      <!--品牌分类 end-->
+
+    </div>
+    <!-- 主体 end-->
+  </div>
+  <!-- view  end-->
+  <!--y页脚-->
+   <footer>
+        <div class="login clearfix">
+            <ul>
+                <li><a href="javascrip:;">登录</a></li>
+                <li><a href="javascrip:;">注册</a></li>
+                <li class="top"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</li>
+            </ul>
+        </div>
+        <div class="app">
+            <p><a href="#">手机APP下载</a>慢慢买手机版--掌上比价平台</p>
+            <p>m.mammanbuy.com</p>
+        </div>
+    </footer>
+    <!--y页脚-->
+  <script type="text/template" id="bz_list_tpl">
+    <div class="bz_title">
+      热门品牌排行
+    </div>
+    {{each result as v i}}
+
+    <div class="bz_list" name="{{v.categoryId}}">
+      <div class="fl_t">
+        <a class="rankingBtn" href="brandZone/ranking.html?brandtitleid={{v.brandTitleId}}" name="{{v.brandTitleId}}">{{v.brandTitle}}</a>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  <!--"-->
+</body>
+<script src="../lib/jquery/jquery.js"></script>
+<script src="../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../lib/form/jquery.form.js"></script>
+<script src="../lib/template/template.js"></script>
+<script src="../js/common/geturl.js"></script>
+<!--<script src="../js/index.js"></script>-->
+<!--<script src="../js/baicaijia.js"></script>-->
+
+
+<!-- 获取接口 -->
+<script src="../js/brandZone/list.js"></script>
+
+</html>

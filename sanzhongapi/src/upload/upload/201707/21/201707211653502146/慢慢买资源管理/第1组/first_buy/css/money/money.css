@@ -1,0 +1,200 @@
+
+*{
+    margin: 0px;
+    padding-block-end: 0px;
+}
+a{
+    color: inherit;
+}
+a:hover, a:visited, a:link, a:active {
+   text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.nav::before{ 
+  background-image: url('/images/header_app.png');
+  position: absolute;
+  content: "";
+  display: block; 
+   width: 44px;
+  height: 30px; 
+  right: 0px;
+   background-size: 30px;
+   background-repeat: no-repeat;
+   top:8px;
+}
+.nav{
+    background-color: #ff841d;
+    height: 44px;
+    position: relative;
+}
+.sqk{
+      font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: white;
+    line-height: 44px;
+    margin-top:0px;
+    margin-bottom: 0px;
+}
+.dyh{
+    position: absolute;
+    color: white;
+    left: 10px;
+    font-size: 15px;
+    top:15px;
+}
+/*导航栏结束*/
+
+.list-group  li{
+    border:none;
+    padding: 10px;
+    height: 116px;
+}
+.tp-left{
+    width: 100px;
+    height: 100px;
+    float: left;
+    margin-right: 10px;
+}
+.tp-left img{
+    width: 100px;
+}
+.tp-right .titile{
+    font-size: 15px;
+    color: black;
+    height: 50px;
+}
+.price{
+    color: red;
+}
+.tp-right-count{
+    color: #a1a1a1;
+    margin-top:20px;
+      position: relative;
+}
+.source{
+    float: left;
+}
+.evaluate{
+    float: right;
+}
+.evaluate .tbzt{
+   color: #a1a1a1;    
+   margin-right: 5px;
+   margin-top: 5px;
+   font-size: 12px;
+}
+/*end*/
+/*start*/
+.fanye{
+    height: 80px;
+    background-color:#efefef;
+    line-height: 80px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.fanye .fanye-left,.fanye .fanye-center{
+    float: left;
+}
+.fanye .fanye-left{
+    width: 20%;
+     font-size: 13px;
+  
+}
+.fanye .fanye-right{
+    float: right;  
+     width: 20%; 
+     font-size: 13px;
+}
+.fanye .fanye-center {
+    margin:0 auto;
+     width: 60%;
+}
+.fanye .fanye-center .yeshu{
+  display: block;
+  margin: 0 auto;
+  width: 115px;
+  margin-top: 25px;
+  height: 30px;
+}
+.fanye-left a{
+      padding: 5px 10px 5px 10px;
+      box-shadow: 0 0 1px #666;
+     border-radius: 5px;
+     background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+}
+.fanye-right a{
+      padding: 5px 10px 5px 10px;
+      box-shadow: 0 0 1px #666;
+     border-radius: 5px;
+     background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+}
+/*翻页栏结束*/
+
+.bottom{
+    height: 36px;
+    line-height: 36px;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+    padding-left: 15px;
+}
+.kong{
+    height: 25px;
+      background-color:#efefef;
+      border-bottom: 1px solid #c4c4c4;
+      border-top: 1px solid #c4c4c4;
+}
+.login{
+    height: 35px;
+     background-color:#efefef;
+     line-height: 35px;
+     border-bottom: 1px solid #c4c4c4;
+}
+.login-l{
+    float:left;
+    width: 30%;
+     text-align: center;
+}
+.login-c{
+    float:left;
+    width:  30%;
+     text-align: center;
+     border-left: 1px solid #c4c4c4;
+     border-right: 1px solid #c4c4c4;
+}
+.arrows{
+    width: 15px;
+    margin-top: -3px;
+}
+.login-r{
+    float:right;
+    width:  40%;
+    text-align: center;
+}
+.appp img{
+    width: 60px;
+    position: fixed;
+    right: 0px;
+    bottom: 30px;
+}
+.footer{
+    height: 60px;
+     background-color:#efefef;
+     text-align: center;
+     font-size: 13px;
+     padding-top:15px;
+}
+.footer-1{
+    color: red;
+}
+.footer p{
+    color:#666;
+}
+.footer-2{
+    color: black;
+}
+.footer-3{
+    color: #666;
+    margin-top:-12px;
+}

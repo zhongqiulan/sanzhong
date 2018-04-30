@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name='viewport' content='width=device-width, initial-scale=1.0,user-scalable=no,maximum-scale=1,minimum-scale=1'>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>商品详细信息</title>
+    <?php include '/common/css.html' ?>
+    <link rel='stylesheet' href='/css/Parity-search/product.css' />
+    <link rel="stylesheet" href="/css/dashboard/basic.css" />
+</head>
+
+<body>
+
+    <?php include '/common/head.html' ?>
+
+
+    <div class="products">
+        <!--遮罩层  -->
+        <div class="small-shade">
+            <img src="/images/loading.gif" alt="">
+        </div>
+    </div>
+    <div class="comments">
+        <!--遮罩层  -->
+        <div class="small-shade">
+            <img src="/images/loading.gif" alt="">
+        </div>
+    </div>
+    <div class='more_comments'>
+        <p><a href="#" class='btn btn-default'>查看更多评价</a></p>
+    </div>
+
+    <?php include '/common/footer.html' ?>
+</body>
+<?php include '/common/script.html' ?>
+<script>
+    require(['product']);
+</script>
+
+<script type='text/template' id='product_tpl'>
+    {{each result as v i}}
+    <div class="pro_nav">
+        <a href="#" class='btn selectBtn btn-sm active'>筛选</a>
+        <ol class="breadcrumb">
+            <li><a href="/index">首页</a></li>
+            <li>
+                <a href="javascript:;" id="a_creat"></a>
+            </li>
+            <li class="active">{{v.productName}}</li>
+        </ol>
+    </div>
+    <p class='pro_title'>
+        {{v.productName}}
+    </p>
+    <div class="pro_img">
+        {{#v.productImg}}
+        <a href="#" class='save'>收藏</a>
+    </div>
+    <ul class="pro_options clearfix">
+        <li class='option_active btn active btn-sm'>
+            <a href="#" class='active'>比价购买</a>
+        </li>
+        <li class=' btn btn-sm'>
+            <a href="#">产品参数</a>
+        </li>
+        <li class='btn btn-sm'>
+            <a href="#">评价(2332)</a>
+        </li>
+    </ul>
+    <div class="pro_price">
+        <!--<img src="/images/favicon.jpg" alt="">-->
+        <!--京东商城-->
+        {{#v.bjShop}}
+        <!--<span class='buy pull-right'>去购买</span>
+        <span class='item_price pull-right'>￥1999.00</span>-->
+    </div>
+    <div class="expression">
+        <p>
+            *实际价格以个网站列出的实时售价为准,我们提供的价格可能有数小时至数日的延迟。
+        </p>
+    </div>
+
+
+    {{/each}}
+</script>
+
+
+<script type='text/template' id='comment_tpl'>
+    <div class="comments_title">
+        网友评价
+    </div>
+    {{each result as v i}}
+    <div class="comments_item">
+        <p class='comment_title clearfix'>
+            <span class='pull-left'>{{v.comName}}</span>
+            <span class='pull-right'>{{v.comTime}}</span>
+        </p>
+        <p class='buyfrom clearfix'><span class='pull-right'>{{v.comFrom}}</span></p>
+        <p class='comment_main'>
+            {{v.comContent}}
+        </p>
+        <div class="line"></div>
+    </div>
+    {{/each}}
+</script>
+
+</html>

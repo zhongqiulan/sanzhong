@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>海淘</title>
+    <?php include "/view/common/css.html" ?>
+    <link rel="stylesheet" href="/view/public/css/saveMoney/haitao.css">
+</head>
+<body>
+    <div class="saveMoneyHeader">
+        
+    </div>
+
+
+    
+    <div class="main">
+        <ul class="ulist123" id="itemList">
+            
+        </ul>
+    </div>
+
+
+    <div class="pages container">
+        <div class="row">
+            <button class="btn btn-sm btn-success  col-xs-2" id="prevPage">上一页</button>
+            <div class="col-xs-8 ">
+                <select class="pageControl center-block btn btn-default " id="selectPages">
+                    <option value="1">第1页</option>
+                </select>
+            </div>
+            <button class="btn btn-sm btn-success  col-xs-2" id="nextPage">下一页</button>
+        </div>
+    </div>
+
+
+    <div class="href">
+        <a href="">首页</a>
+        >
+        <a href="#">省钱控</a>
+    </div>
+
+    <div class="blank">
+    </div>
+
+    <div class="container tool">
+        <div class="row">
+            <a href="javascript:;" class="col-xs-4 btn btn-sm">登录</a>
+            <a href="javascript:;" class="col-xs-4 btn btn-sm">注册</a>
+            <a href="#" class="col-xs-4 btn btn-sm" id="returnTop">返回顶部</a>
+        </div>
+    </div>
+
+ 
+       
+    <div class="footer">
+        <p>
+            <a href="javascript:;" class="app">手机APP下载</a>-<a href="javascript:;" class="cellphone">
+                慢慢买手机版</a> -- 掌上比价平台</p>
+        <p class="website">
+            m.manmanbuy.com 
+        </p>
+    </div>
+    
+   
+
+
+
+
+
+    <?php include "/view/common/script.html" ?>
+    <script type="text/template" id="listTemplate">
+        {{each result}}
+        <li class="list">
+            <a href="./discount.html?id={{$value.productId}}" class="listLink">
+                <div class="left">
+                    {{#$value.productImgSm}}
+                </div>
+                <div class="right">
+                    <div class="title">
+                        {{$value.productName}}
+                        <span class="price">{{$value.productPinkage}}</span>
+                    </div>
+                    <div class="info">
+                        <span class="mall">{{$value.productFrom}} | {{$value.productTime}}</span>
+                        <span class="comment pull-right"><i class="icon-comment"></i>{{$value.productComCount}}</span>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+    <script src="/view/public/js/saveMoney/haitao.js"></script>
+</body>
+</html>

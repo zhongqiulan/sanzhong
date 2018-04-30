@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/checkhistorycost.css">
+    <title>历史价格查询</title>
+</head>
+
+<body>
+    <!--历史价格查询-->
+    <div class="seach-history">
+        <a href="javascript:;" class="glyphicon glyphicon-menu-left"></a>
+        <h1>历史价格查询</h1>
+    </div>
+
+    <!--商品链接-->
+    <div class="item_link">
+        <p>商品链接</p>
+        <input class="col-xs-12" type="text" placeholder="请通过购物App中使用分享或浏览器打开商品页面获取商品链接">
+    </div>
+
+    <!--按钮-->
+    <div class="btn">
+        <button class="seach-history-Price">查询历史价格</button>
+        <button class="reset">重置</button>
+    </div>
+
+    <!--操作说明-->
+    <div class="operation">
+        <h5>两步操作即可识别商品真假促销</h5>
+        <p>1.打开购物APP（如手机淘宝）复制商品链接</p>
+        <p>2.打开慢慢买APP，系统自动识别查历史价</p>
+    </div>
+
+    <!--中间空白-->
+    <div class="meddle"></div>
+
+    <!--底部-->
+    <div class="footer">
+        <i class="glyphicon glyphicon-remove-sign"></i>
+        <div class="media">
+            <div class="media-left media-middle">
+                <span class="media-object">慢</span>
+                <div class="media-body">
+                    <h4 class="media-heading">慢慢买</h4>
+                    <p>全网比价，历史价格查询</p>
+                </div>
+            </div>
+            <a href="javascript:;">立即打开</a>
+        </div>
+</body>
+<script src="../libs/jquery/jquery.js"></script>
+<script src="../libs/bootstrap/js">
+</script>
+<script src="../js/common/checkhistorycost.js"></script>
+</html>

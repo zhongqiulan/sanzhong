@@ -1,0 +1,114 @@
+
+<!--
+      author:郑伟雄
+      data:2017/7/19;
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买</title>
+    <?php include "/views/common/css.html"?>
+    <link rel="stylesheet" href="/views/public/css/brand/fptv.css">
+</head>
+<body>
+   <header>
+        <h1>
+            <a href="javascript:;"></a>
+            <span></span>
+        </h1>
+        <div class="search">
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="请输入你想比价的商品" aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">搜索</span>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="explain">
+            <div class="branName">
+                
+            </div>
+            <p class="detailed"> 创维（Skyworth）成立于1988年，以生产电视机遥控器起家，1992年获得彩电生产许可证，开始生产彩电、VCD、DVD，家庭影院和卫星接收机等产品。创维（Skyworth）以生产彩电、数字电视机顶盒、手机为主导产品。</p>
+            <div class="hotSales">以下是热卖机型</div>
+        </div>
+        <ul class="nav clearfix">
+            <li>
+                <a href="javascript:;">综合</a>
+            </li>
+            <li>
+                <a href="javascript:;">销量</a>
+            </li>
+            <li>
+                <a href="javascript:;">价格</a>
+            </li>
+            <li>
+                <a href="javascript:;">筛选</a>
+            </li>
+        </ul>
+        <div class="show">
+            <ul>
+              
+            </ul>
+        </div>
+    </div>
+     <div class="footer">
+            <div class="more-info">
+                <a href='#'>更多优惠信息>></a>
+
+            </div>
+            <div class="brand-reco  clearfix">
+                <h3>品牌排行</h3>
+                <a href="javascript:void(0);"><img src="/images/more.png" alt=""></a>
+            </div>
+            <div class="tool">
+                <ul class="clearfix">
+                    <li>登陆</li>
+                    <li>注册</li>
+                    <li id="top"><i class="glyphicon glyphicon-arrow-up"></i>返回顶部</li>
+                </ul>
+                <div class="mmurl">
+                    <span>手机APP下载</span> 慢慢买手机版--掌上比价平台
+                    <p>m.manmanbuy.com</p>
+                </div>
+            </div>
+        </div>
+        
+   <?php include "/views/common/script.html"?>
+
+    <script type="text/template"  id="tpl_branNam">
+        <h3>{{result[0].brandName}}</h3>
+    </script>
+
+    <script type="text/template" id="tpl_sales">
+        {{each result as v i}}
+        <li>
+            <a id="shou_produt"  data-index="{{i}}"  data-produ="{{v.productId}}"  href="javascript:;">
+                <div class="show_left ">
+                    {{#v.productImg}}
+                </div>
+                <div class="show_right  ">
+                    <div class="title">{{v.productName}}</div>
+                    <div class="price">
+                         {{v.productPrice}}
+                    </div>
+                    <div class="something ">
+                        <span >{{v.productQuote}}商城报价</span>
+                        <i >{{v.productCom}}</i>
+                    </div>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+    </script>
+
+      <script>
+      require(['js/brand/fptv'])
+    </script>
+</body>
+
+</html>

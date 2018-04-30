@@ -1,0 +1,127 @@
+header {
+    height: 44px;
+    line-height: 44px;
+    background-color: #ff841d;
+    color: #fff;
+    position: relative;
+    h2 {
+        padding: 0 60px;
+        line-height: 44px;
+        font-size: 20px;
+        margin:0;
+        text-align: center;
+    }
+    .back,
+    .app {
+        position: absolute;
+        width: 50px;
+        height: 44px;
+        top: 0;
+    }
+    .back {
+        left: 5px;
+        a{
+        color:#fff;
+        font-size: 20px;
+        top: 5px;
+        }
+    }
+    .app {
+        right: 5px;
+        img {
+            height: 34px;
+        }
+    }
+}
+.main{
+    ul{
+        padding:0;
+        margin:0;
+        li{
+            list-style: none;
+            float: left;
+            width: 50%;
+            border: 1px solid #eeeeee;
+            border-top-width: 0;
+            text-align: center;
+            a{
+                display: block;
+                .img{
+                    width: 140px;
+                    height: 140px;
+                    margin: 10px auto;
+                    img{
+                        width: 140px;
+                        height: 140px;
+                    }
+                }
+                .title{
+                    padding:0 8px;
+                    font-size: 14px;
+                    font-weight: bold;
+                    color:#333333;
+                    text-align-last: left;
+                }
+                .subtit{
+                    color:#ff6c00;
+                    text-align-last: left;
+                    height: 18px;
+                    line-height: 18px;
+                    padding:0 8px;
+                }
+                .info{
+                    font-size: 12px;
+                    color:#a1a1a1;
+                    text-align: left;
+                    padding:0 8px;
+                }
+            }
+        }
+    }
+}
+
+
+// 底部导航栏及其他
+.bottom{
+    background-color: #ebebeb;
+    height: 35px;
+    width: 100%;
+    float:left;
+    border-top:#eeeeee;
+    .bottom-nav{
+        margin-top: 20px;
+        height: 35px;
+        width: 100%;
+        border-top: 1px solid #c4c4c4;
+        border-bottom:1px solid #c4c4c4;
+        background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+        a{
+            display: block;
+            height: 35px;
+            width: 40px;
+            line-height: 35px;
+            float:left;
+            padding-left:10px;
+            color:#000;
+        }
+        span{
+            float:left;
+            display: block;
+            height: 35px;
+            width: 100px;
+            line-height: 35px;
+        }
+    }
+    .login{
+        background: #ebebeb;
+        width: 100%;
+        padding-top: 25px;
+        .bottom-login{
+            float: left;
+            height: 35px;
+            width: 33.33%;
+            background-color: #ebebeb;
+            border:#c4c4c4;
+        }
+    }
+}

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>比价搜索-商品详情</title>
+    <link rel="stylesheet" href="../js/assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/price_search/price_search.2.css">
+</head>
+<body>
+    <!--头部区域-->
+    <!--顶部导航-->
+    <header>
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header header-logo pull-left">
+                    <a class="navbar-brand" href="#"><img src="../images/header_logo.png" alt=""></a>
+                </div>
+
+                <div class="navbar-right app-download pull-right">
+                    <img src="../images/header_app.png" alt="">
+                </div>
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+        <!--搜索栏-->
+        <div class="container ">
+            <div class="row bg-w">
+                <div class="col-md-12">
+                    <div class="input-group">
+                        <input type="text" class="form-control" aria-describedby="basic-addon2">
+                        <span class="input-group-addon" id="basic-addon2">搜索</span>
+                    </div>
+                </div>
+            </div>
+            <div class="row menu mt15">
+
+            </div>
+        </div>
+    </header>
+    <!--内容-->
+    <div class="main">
+
+
+
+        
+    </div>
+
+
+    <!--底部区域-->
+    <footer>
+        <nav class="navbar navbar-default ">
+            <div class="container">
+                <div class="row">
+                    <div class="login col-sm-4 col-xs-4"><a href="javascript:;">登录</a></div>
+                    <div class="register col-sm-4 col-xs-4"><a href="javascript:;">注册</a></div>
+                    <div class="to-top col-sm-4 col-xs-4"><a href="javascript:;" ><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a></div>
+                </div>
+            </div>
+            <div class="app-updown">
+                <a href="javascript:;">手机APP下载</a>
+                <span>慢慢买手机版</span><span> - 掌上比价平台</span>
+                <p>m.mammambuy.com</p>
+            </div>
+        </nav>
+   </footer>
+  
+
+    <script src='../js/assets/jquery/jquery.min.js'></script>
+    <script src='../js/assets/bootstrap/js/bootstrap.min.js'></script>
+    <script src='../js/assets/artTemplate/template.js'></script>
+    <script src='../js/price_search/price_search.2.js'>
+        // //获取categoryId
+        // var search = location.search;
+        //  search =  search.slice(1);
+        // var arr =  search.split('&');
+        // var obj = {};
+        // for(var i=0;i<arr.length;i++){
+        //     var tempArr = arr[i].split('=');
+        //     obj[tempArr[0]] = tempArr[1];
+        // }
+        // console.log(obj);
+        // //发送请求,通过category 和 productId获取数据
+        // $.ajax({
+        //     url:'http://139.199.192.48:9090/api/getproduct',
+        //     type:'get',
+        //     data:{productid:obj.productId},
+        //     success:function(d){
+        //         //把url码转成中文,存入d属性中
+        //         d.category = decodeURI(obj.category);
+        //         var htmlStr = template('commodity_info_tpl',d);
+        //         $('.main').html(htmlStr);
+
+        //     $.ajax({
+        //         url:'http://139.199.192.48:9090/api/getproductcom',
+        //         type:'get',
+        //         data:{productid:obj.productId},
+        //         success:function(d){
+        //             var htmlStr = template('comment_tpl',d);
+        //             $('.comment_content ul').html(htmlStr);
+        //             console.log(htmlStr);
+        //         }
+
+        //     });
+                
+        //         // console.log(d);
+        //     }
+        // });
+        // //注册点击评价按钮的事件,显示评价内容
+        // // $('.main').on('click','.commodity_nav .comment',function(){
+        // //     $.ajax({
+        // //     url:'http://139.199.192.48:9090/api/getproductcom',
+        // //     type:'get',
+        // //     data:{productid:obj.productId},
+        // //     success:function(d){
+        // //         var htmlStr = template('comment_tpl',d);
+        // //         $('.comment_content ul').html(htmlStr);
+        // //         console.log(htmlStr);
+        // //     }
+
+        // //     });
+        // // });
+
+    </script>
+    <script type="text/template" id="commodity_info_tpl">
+    {{each result as v i}}
+            <!--小导航-->
+        <ol class="breadcrumb">
+            <li><a href="#">首页</a></li>
+            <li><a href="#">{{category}}</a></li>
+            <li class="active">></li>
+        </ol>
+        <!--商品主要信息-->
+        <div class="commodity_info">
+            <p class="title">{{v.productName}}</p>
+            <div class="camera">
+                {{#v.productImg}}
+            </div>
+            <i class="flag text-center">收藏</i>
+        </div>
+        <ul class="commodity_nav clearfix">
+            <li>比价购买</li>
+            <li>产品参数</li>
+            <li class="comment">评价(222)</li>
+        </ul>
+        <ul class="commodity_contetnt">
+            <li></li>
+            <li></li>
+            <li class="comment_content">
+                <h4>网友评价</h4>
+                <ul>
+            <!--评论内容-->
+
+                </ul>
+
+            </li>
+        </ul>
+    {{/each}}
+    </script>
+
+    <script type="text/template" id="comment_tpl">
+    {{each result as v i}}
+        <li>
+            <div class="user_info clearfix">
+                <span class="name pull-left">{{v.comName}}</span>
+                <span class="data pull-right">{{v.comTime}}</span>
+                <p class="buy">{{v.comFrom}}</p>
+            </div>
+            <div class="content">
+                {{v.comContent}}
+            </div>
+        </li>
+    {{/each}}
+    </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+var configURL = {
+    host: "139.199.192.48:9090",
+    protocol: "http://",
+    getURL: function (path) {
+        return this.protocol + this.host + "/api/" + path;
+    }
+}
+$.ajax({
+    url: configURL.getURL("getindexmenu"),
+    type: "get",
+    success: function (info) {
+        for (var i = 0; i < info.result.length; i++) {
+            if (i == 6 || i == 9 ||i==7) {
+                info.result[i].titlehref = "javascript:;";
+            } else {
+                if (i == 0) {
+                    var temp = "listclass";
+                } else if (i == 1) {
+                    var temp = "save";
+                } else if (i == 6 || i == 9) {
+                    var temp = "#";
+                } else if (i == 4) {
+                    var temp = "overseasShopping";
+                } else if (i == 8) {
+                    var temp = "skiphop"
+                } else {
+                    var temp = info.result[i].titlehref.replace(".html", "");
+                }
+                info.result[i].titlehref = "pages/" + temp + "/" + temp + ".html";
+            }
+        }
+        var htmlStr = template("menu_tpl", info);
+        $("#menu_list").html(htmlStr);
+        $("#menu_list>li").eq(7).on("click", "a", function () {
+            $(this).parent().nextAll().toggleClass("menu_show menu_hide");
+            return false;
+        })
+    }
+});
+
+$.ajax({
+    url: configURL.getURL("getmoneyctrl"),
+    type: "get",
+    success: function (info) {
+        console.log(info);
+        var htmlStr = template("tjzk_tpl", info);
+        $("#tjzk_list").html(htmlStr);
+    }
+})
+
+
+$("#top").on("click", function () {
+    window.scrollTo(0, 0);
+    return false;
+})
+window.onscroll = function () {
+    if (document.body.scrollTop > 100) {
+        $("#Div1").css("display", "none");
+    }
+    if (document.body.scrollTop > 800) {
+        $("#gotop").css("display", "block");
+    } else {
+        $("#gotop").css("display", "none");
+    }
+}
+$("#Div1 .a-close").on("click", function () {
+    $("#Div1").css("display", "none");
+})
+$("#gotop").on("click", function () {
+    window.scrollTo(0, 0);
+    return false;
+})

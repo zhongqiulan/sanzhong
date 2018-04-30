@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>品牌大全</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/brandTitle/brandTitle.css">
+</head>
+
+<body>
+    <div class="brand">
+        <!--********************************************头部********************************************-->
+        <header class="clearfix">
+            <img class="logo pull-left" src="../images/header_logo.png" alt="">
+            <a class="app pull-right" href="#">
+                <img src="../images/header_app.png" alt="">
+            </a>
+        </header>
+
+
+        <!--********************************************搜索框********************************************-->
+        <div class="search">
+            <input type="text" value="" class="pull-left" placeholder="请输入你想比价的商品">
+            <input type="button" value="搜索" class="pull-right">
+        </div>
+
+
+        <!--********************************************内容********************************************-->
+        <div class="content">
+            <div class="content_header clearfix">
+                <a href="" class="pull-left">首页</a>
+                <span class="pull-left">></span>
+                <a href="brandTitle.html" class="pull-left">品牌大全</a>
+                <span class="pull-left">></span>
+                <a href="#" class="pull-left"></a>
+            </div>
+            <div class="brand_list">
+                <div class="title"></div>
+                <ul class="bestBrand">
+                </ul>
+
+                <!--销量排行-->
+                <div class="title"></div>
+                <ul class="rankingList" id="rankingList">
+                </ul>
+
+                <div class="title"></div>
+                <ul class="comment">
+                </ul>
+
+
+            </div>
+        </div>
+
+
+        <!--********************************************底部********************************************-->
+        <footer class="clearfix">
+            <span class="pull-left"><a href="">登录</a></span>
+            <span class="pull-left"><a href="">注册</a></span>
+            <span class="pull-left"><a href="">返回顶部</a></span>
+        </footer>
+
+
+    </div>
+
+    <script src="../lib/jquery/jquery.js"></script>
+    <script src="../lib/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/artTemplate/template.js"></script>
+    <script src="../js/brandTitle/brandTitle_list.js"></script>
+</body>
+
+</html>
+
+<!--***********************************************十大品牌列表模板******************************************************-->
+<script type="text/template" id="best_tpl">
+    {{each result as v i}}
+    <li>
+        <a class="clearfix" href="">
+            <div class="pull-left  number">{{i}}</div>
+            <div class="pull-left">
+                <p>{{v.brandName}}</p>
+                <p>{{v.brandInfo}}</p>
+            </div>
+            <i class="glyphicon glyphicon-chevron-right pull-right"></i>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+<!--***********************************************产品销量排行模板******************************************************-->
+<script type="text/template" id="rankingList_tpl">
+    {{each result as v i }}
+    <li data-id="{{v.productId}}" data-name="{{v.productName}}" data-img="{{v.productImg}}">
+        <a class="clearfix" href="./category/productInfo.html?productid={{v.productId}}&category={{category}} ">
+            {{#v.productImg}}
+            <div class="info pull-right">
+                <p>{{v.productName}}</p>
+                <p>
+                    <span class="pull-left">{{v.productPrice}}</span>
+                    <span class="pull-right glyphicon glyphicon-star"></span>
+                    <span class="pull-right glyphicon glyphicon-star"></span>
+                    <span class="pull-right glyphicon glyphicon-star"></span>
+                    <span class="pull-right glyphicon glyphicon-star"></span>
+                    <span class="pull-right glyphicon glyphicon-star"></span>
+                </p>
+                <p>{{v.productQuote}} {{v.productCom}}</p>
+            </div>
+        </a>
+    </li>
+    {{/each}}
+</script>
+
+
+<!--************************************************最新用户评论模板*******************************************************-->
+<script type="text/template" id="comment_tpl">
+    {{each result as v i}}
+    <li>
+        <a class="product clearfix" href="">
+                {{#img}}
+                <div class="info pull-right">{{pName}}</div>
+        </a>
+        <a class="product_comment" href="">
+            <div class="comment_header clearfix">
+                <span class="pull-left"> {{v.comName}}:
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+                <span class="glyphicon glyphicon-star"></span>
+
+                </span>
+                <span class="pull-right time"> {{v.comTime}}</span>
+            </div>
+            <div class="comment_content">
+                {{v.comContent}}
+            </div>
+        </a>
+    </li>
+    {{/each}}
+
+</script>

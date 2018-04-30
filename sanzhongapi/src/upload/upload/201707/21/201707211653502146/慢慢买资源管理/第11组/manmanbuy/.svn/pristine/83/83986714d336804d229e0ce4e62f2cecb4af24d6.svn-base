@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>产品信息</title>
+    <link rel="stylesheet" href="/views/public/assets/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="/views/public/css/base/base.css">
+    <link rel="stylesheet" href="/views/public/css/moneyctrl/moneyctrl-message.css">
+</head>
+
+<body id="top">
+    <div class="ydb">
+        <div class="head clearfix">
+            <div class="back">
+                <a href="/views/moneyctrl/moneyctrl" class="glyphicon glyphicon-menu-left"></a>
+            </div>
+            <div class="head-title">
+                <h1>产品信息</h1>
+            </div>
+
+            <div class="app-download">
+                <a href="javascript:;">
+                   <img src="../public/images/header_app.png" alt="">
+               </a>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="main">
+
+
+                <div class="pages">
+                    已经是最后一页！
+                </div>
+            </div>
+        </div>
+        <div class="mmb-app">
+            <a href="javascript:;">
+            <img src="../public/uploads/moneyctrl/mmb-app.png" alt="">
+        </a>
+        </div>
+
+        <script type="text/template" id="m-mes">
+            {{each result as v i}}
+            <h3 class="title">{{v.productName}}</h3>
+            <h4>{{v.productPinkage}}</h4>
+            <div class="info">
+                <span class="mall">{{v.productFrom}}</span>
+                <span class="time">{{v.productTime}}</span>
+                <span class="author">{{v.productTips}}</span>
+                <span class="author"><a href="#newcomment" style="color:#4682c5;">{{v.productComCount}}</a></span>
+            </div>
+            <div class="content clearfix">
+                <div class="pic1">
+                    {{#v.productImgSm}}
+                </div>
+                <div class="introduce">
+
+                    {{v.productInfo}}
+                    <br>
+                    <br>{{v.productInfo2}}
+                    <br>
+                    <br>
+                    <div style="text-align:center">
+                        {{#v.productImg2}}
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="gobuy">
+                <a href="javascript:;">
+                        <i class="glyphicon glyphicon-shopping-cart"></i>
+                        前往购买
+                    </a>
+            </div>
+    </div>
+    <!--<div class="comment">
+        <div class="pl-title">
+            发表评论
+        </div>
+        <div class="reply">
+            <div class="form">
+                <textarea rows="3"></textarea>
+                <div class="ctrl">
+                    <input type="submit" name="" value="发表评论">
+                </div>
+            </div>
+        </div>
+        <div class="pl-title">
+            热门评论
+        </div>
+        <div class="pl-title">
+            最新评论
+        </div>
+        <div class="pl-list">
+            <ul style="padding-left: 0px;">
+                <li class="pl-message">
+                    <div class="userimg">
+                        <img src="../public/uploads/moneyctrl/userimg.jpg" alt="">
+                    </div>
+                    <div class="con">
+                        <div class="name clearfix">
+                            <div class="username">前易</div>
+                            <div class="time">2017/7/19 17:28:15</div>
+                        </div>
+                        <div class="content">
+                            植护的纸太薄了，而且抽数也少，好在数量多过价格，不然真心不划算
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>-->
+
+    {{#v.productComment}}
+
+    {{/each}}
+    </script>
+
+    <footer>
+    <div class="menu">
+        <ul class="clearfix">
+            <li><a href="###">登录</a></li>
+            <li><a href="###">注册</a></li>
+            <li><a href="#top"><img src="/views/public/uploads/top.jpg" alt="">返回顶部</a></li>
+        </ul>
+    </div>
+    <div class="xinxi">
+        <p><a href="">手机APP下载</a> <a href="">慢慢买手机版</a>--掌上比价平台</p>
+        <p>m.manmanbuy.com</p>
+    </div>
+</footer>
+    
+    <!--<script src="/views/public/assets/artTemplate/template.js"></script>
+    <script src="/views/public/assets/jquery/jquery.js"></script>
+    <script src="/views/public/assets/bootstrap/js/bootstrap.js"></script>
+    <script src="/views/public/js/moneyctrl/utils.js"></script>
+    <script src="/views/public/js/moneyctrl/moneyctrl-message.js"></script>-->
+    <?php include '/views/common/script.html'?>
+
+    <script>
+        require(['js/moneyctrl/moneyctrl-message'])
+    </script>
+</body>
+
+</html>

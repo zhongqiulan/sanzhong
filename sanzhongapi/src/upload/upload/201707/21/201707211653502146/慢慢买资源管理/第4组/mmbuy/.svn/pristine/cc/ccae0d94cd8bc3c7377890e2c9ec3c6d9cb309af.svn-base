@@ -1,0 +1,40 @@
+.classm
+        {
+            float: left;
+            font-size: 14px;
+            width: 75%;
+        }
+        .classm a
+        {
+            padding: 10px 8px;
+            background: #f4f4f4;
+            border: 1px solid #bfbfbf;
+            float: left;
+            margin: 0 0 5px 5px;
+        }
+        .topt
+        {
+            font-size: 15px;
+            text-align: center;
+            font-weight: bold;
+            line-height: 32px;
+        }
+        .topt span
+        {
+            color: #ff5400;
+        }
+        .link
+        {
+            width: 300px;
+            margin: 10px auto;
+            float: none;
+        }
+        .link a
+        {
+            padding: 10px 8px;
+        }
+        .link a img
+        {
+            margin-right: 5px;
+        }
+        .clear{clear: both;}

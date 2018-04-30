@@ -1,0 +1,9 @@
+.head_logo {
+  height: 50px;
+  line-height: 50px;
+  padding-left: 10px;
+  background: red;
+}
+.head_logo img {
+  height: 50%;
+}

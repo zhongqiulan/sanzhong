@@ -1,0 +1,347 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    height: 100%;
+    // font-family: "microsoft yahei"
+    background-color: #f7f7f7;
+}
+html,
+body {
+    height: 100%;
+    overflow-x: hidden;
+}
+a {
+    text-decoration: none !important;
+    -webkit-tap-highlight-color: transparent;
+    color: #000;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input,
+select,
+button {
+    vertical-align: middle;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    outline: 0;
+}
+.clearfix:after {
+    content:"";
+    clear : both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.clearfix {
+    zoom: 1;
+}
+em,
+i {
+    font-style: normal;
+}
+img {
+    border: none;
+}
+input,
+img {
+    vertical-align: middle;
+}
+@color:#e4393c;
+.color {
+    color:#e4393c;
+}
+.toggle {
+    display: none;
+}
+.active {
+    border-bottom: 2px solid red;
+    color: red !important;
+}
+
+.bcj_layout {
+
+    // 头部
+    .bcj_head {
+        overflow: hidden;
+        height: 44px;
+        background-color: @color;
+        .head_title {
+            color:#fff;
+            position: relative;
+            padding: 0 44px;
+            h1 {
+                font-size: 20px;
+                text-align: center;
+                line-height: 44px;
+                margin: 0;
+            }
+            i {
+                position: absolute;
+                top: 0;
+                left: 0;
+                font-size: 20px;
+                line-height: 44px;
+                color:#fff;
+                text-align: center;
+                width: 44px;
+                height: 43px;
+                display: inline-block;
+            }
+            a {
+                position: absolute;
+                right: 0;
+                top: 0;
+                text-align: center;
+                padding-top: 5px;
+                width: 44px;
+                height: 43px;
+                display: inline-block;
+                img {
+                    width: 34px;
+                    height: 34px;
+                }
+            }
+        }
+        
+    }
+
+    // 导航条
+    .bcj_nav {
+         position: relative;
+         width: 100%;
+        .nav_bar{
+            margin-right: 38px;
+            margin: 0;
+            width: 100%;
+            background-color: #fff;
+            border-bottom: 1px solid #e6e6e6;
+            overflow: hidden;
+            .nav_bar_menu {
+                background-color: #fff;
+                margin: 0;
+                li {
+                    float: left;
+                    line-height: 38px;
+                    padding: 0 13px;
+                    a {
+                        display: block;
+                        font-size: 14px;
+                        color: #000;
+                    }
+                }
+            }
+            
+        }
+        .icon_search {
+            width: 38px;
+            height: 38px;
+            position: absolute;
+            top: 0;
+            right: -1px;
+            border: none;
+            border-left: 1px solid #e6e6e6;
+            border-radius: 0;
+            background-color: #f7f7f7;
+            color: #000;
+        }
+        .search_div {
+                width: 100%;
+                padding: 10px;
+                margin: 0;
+                position: absolute;
+                top: 38px;
+                left: 0;
+                background-color: #f7f7f7;
+                box-shadow: 0 1px 5px 5px #fff;
+                i {
+                        width: 30px;
+                        height: 30px;
+                        position: absolute;
+                        top: 13px;
+                        left: 13px;
+                        font-size: 18px;
+                        text-align: center;
+                        line-height: 30px;
+                        color: #eee;
+                    }
+               input {
+                    padding: 0 20px 0 35px;
+                    height: 35px;
+                    width: 90%;
+                    background-color: #fff;
+                    border: none;
+                    
+                    
+                    
+                   
+               }
+               button {
+                   border: none;
+                   background-color: #f7f7f7;
+                   width: 30px;
+                    text-align: center;
+                    line-height: 35px;
+                    font-size: 15px;
+                    margin-left: 10px;
+               }
+            
+        }
+    }
+
+    // 优惠券信息
+    .bcj_quan_banner {
+        margin: 10px 0;
+        width: 100%;
+        background-color: #a00;
+        text-align: center;
+        padding: 10px;
+        h3 {
+            margin: 0;
+            font: 20px 'microsoft yahei';
+            color: #fcf76e;
+        }
+        p {
+            color :#fff;
+             margin: 0;
+             margin-top: 10px;
+        }
+    }
+
+    // 数据列表
+    .bcj_list {
+        margin: 0 auto;
+        max-width: 960px;
+        height: 100%;
+        // margin-bottom: 5px;
+        .list_info {
+            background-color: #fff;
+            padding: 10px 8px 10px 150px;
+            position: relative;
+            margin-bottom: 8px;
+            overflow: hidden;
+            .list_info_img {
+                position: absolute;
+                top: 10px;
+                left: 0;
+                
+                img {
+                    margin:0 5px;
+                    width: 135px;
+                    height: 130px;
+
+                }
+            }
+            .list_info_text {
+                font-size: 28px;
+                color: @color;
+                .text {
+                    font-size: 18px;
+                    color: #000;
+                }
+                >i {
+                    font-size: 16px;
+                    
+                    
+                }
+                em {
+                    font-size: 14px;
+                    margin: 0 5px 0 10px;
+                }
+                del {
+                    color:#a8a8a8;
+                    font-size: 14px;
+                    margin-left: 10px;
+                }
+                
+                .quan {
+                    width: 100%;
+                    font-size: 12px;
+                    position: relative;
+                    // margin-bottom: 10px;
+                    .quan_progress {
+                        .bar {
+                            position: relative;
+                            i {
+                                display: inline-block;
+                                width: 50%;
+                                height: 20px;
+                                border-radius: 10px;
+                                border: 1px solid #fc353a;
+                                background-color: #ffb7b7;
+                                overflow: hidden;
+                                em {
+                                    border-radius: 10px 0 0 10px;
+                                    background-color: #fc353a;
+                                    height: 18px;
+                                    display: inline-block;
+                                    margin: 0;
+                                }
+                                span {
+                                    margin: 10px;
+                                    vertical-align: top;
+                                }
+                            }
+                            b {
+                                margin-left: 10px;
+                                vertical-align: top;
+                            }
+                            .goquan {
+                                position: absolute;
+                                display: inline-block;
+                                width: 50%;
+                                height: 20px;
+                            }
+                        }
+                    }
+                    
+                    .tap>a {
+                        padding: 3px;
+                        border: 1px dashed red;
+                        display: inline-block;
+                        color: red;
+                        margin-top: 8px;
+                    }
+                    .button>a {
+                        position: absolute;
+                        top: 20px;
+                        right: 10px;
+                        padding: 10px 8px;
+                        background-color:#ff5e5d;
+                        border: none;
+                        border-radius: 5px;
+                        color:#fff;
+                    }
+                    
+                }
+            }
+        }
+    }
+
+}
+
+// 回到顶部
+.bcj_top{
+    width: 40px;
+    height: 40px;
+    background-color: #808080;
+    position: fixed;
+    right: 15px;
+    bottom: 30px;
+    display: inline-block;
+    border-radius: 50%;
+    padding-left: 9px;
+    .glyphicon-flash {
+        line-height: 40px;
+        color:#fff;
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,97 @@
+//获取凑单品的店铺的信息 并渲染到店铺的下拉列表
+
+$('#tabs .shop').on("click", function () {
+    $.ajax({
+        url: 'http://139.199.192.48:9090/api/getgsshop',
+        // url:'http://192.168.50.2:9090/api/getgsshop',
+        type: "get",
+        dataType: "Json",
+        success: function (data) {
+            console.log(data);
+            var dropOne = template("dropOne", data);
+            $('#list_one').html(dropOne);
+        }
+
+    })
+});
+
+$('#tabs .area').on("click", function () {
+    $.ajax({
+        url: 'http://139.199.192.48:9090/api/getgsshoparea',
+        // url:'http://192.168.50.2:9090/api/getgsshoparea',
+        type: "get",
+        dataType: "Json",
+        success: function (data) {
+            console.log(data);
+            var dropTwo = template("dropTwo", data);
+            $('#list_two').html(dropTwo);
+        }
+
+    })
+})
+//根据对应的店铺和商品信息渲染页面,默认是第一个店铺和第一个参数
+getPage(0,0);
+function getPage(shopid,areaid) {
+    $.ajax({
+        url: 'http://139.199.192.48:9090/api/getgsproduct',
+        // url:'http://192.168.50.2:9090/api/getgsproduct?shopid=1&areaid=1',
+        type: "get",
+        data:{
+            shopid:shopid,
+            areaid:areaid
+        },
+        dataType: "Json",
+        success: function (info) {
+
+            var details = template("list_details", info);
+
+            $('#page_details').html(details);
+
+        }
+    })
+}
+
+
+//tab栏点击事件
+$('#tabs .nav').on("click", "li", function () {
+    $(this).siblings().find('i').removeClass('glyphicon glyphicon-triangle-top').addClass('glyphicon glyphicon-triangle-bottom');
+    $(this).find('i').removeClass().addClass('glyphicon glyphicon-triangle-top');
+})
+
+// 默认第一项加上类
+
+
+
+
+//下拉选项点击事件
+
+$('.list-group').on("click", "a", function () {
+
+    $(this).siblings().find('i').removeClass('glyphicon-ok');
+    $(this).find('i').addClass('glyphicon-ok');
+//    获取shopid
+
+    var shopid=$(this).attr('data-shop');
+     console.log(shopid);
+     var areaid=$(this).attr('data-area');
+      console.log(areaid);
+    //改变导航的值
+    $('.nav li').each(function (i,e) {
+        
+    })
+
+
+
+
+    return false;
+});
+
+
+//点击回到首页
+
+$('#topTitle i').on("click",function () {
+
+    location.href="../../index.html";
+
+
+});

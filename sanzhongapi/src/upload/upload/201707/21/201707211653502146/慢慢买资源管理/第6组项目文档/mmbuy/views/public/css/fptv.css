@@ -1,0 +1,150 @@
+header {
+  width: 100%;
+}
+header h1 {
+  width: 100%;
+  border-bottom: 1px solid  #e6e6e6 ;
+  background-color: #ff841d;
+  height: 50px;
+  padding-top: 13px;
+  position: relative;
+  padding-left: 25px;
+}
+header h1 a {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background: url('../../images/header_logo.png') no-repeat 0 0;
+  background-size: 185.5px ;
+}
+header h1 span {
+  height: 34px;
+  width: 34px;
+  position: absolute;
+  background: url('../../images/header_app.png') no-repeat 0 0;
+  background-size: 34px ;
+  top: 10px;
+  right: 10px;
+}
+header .zyzsreach .input-group {
+  width: 100%;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+}
+header .zyzsreach .input-group input {
+  border-radius: 50px;
+  width: 94%;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  outline-color: none;
+  border-color: none;
+  font-weight: 600;
+  border: none;
+  outline: none;
+}
+header .zyzsreach .input-group span {
+  width: 63px;
+  border-radius: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 999;
+  height: 34px;
+  background-color: #ff841d;
+  font-size: 16px;
+  color: #fff;
+  line-height: 19px;
+}
+.main {
+  background-color: #f2f2f2;
+}
+.main .nav {
+  height: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  border-top: 2px solid  #ececec;
+  border-bottom: 1px solid  #ececec;
+  background-color: #f4f4f4;
+}
+.main .nav a {
+  font-size: 14px;
+  font-family: "微软雅黑";
+}
+.main .nav span {
+  font-size: 12px;
+}
+.main .detail-head {
+  background-color: #fff;
+  padding: 15px 8px;
+}
+.main .detail-head .exple {
+  height: 180px;
+  text-align: center;
+  position: relative;
+  padding-top: 10px;
+}
+.main .detail-head .exple a {
+  position: absolute;
+  background-color: #8bc900;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 40px;
+  height: 40px;
+  width: 40px;
+  top: 3px;
+  right: 10px;
+}
+.main .detail-head .exple img {
+  height: 160px;
+  width: 160px;
+}
+.main .detail-head .title {
+  font-size: 16px;
+  line-height: 24px;
+  font-family: '微软雅黑';
+  color: #000;
+}
+.main .detail-head p {
+  line-height: 30px;
+  height: 30px;
+  font-size: 14px;
+}
+.main .comment h4 {
+  height: 35px;
+  line-height: 35px;
+  background-color: #dbdbdb;
+  text-align: center;
+  border-top: 3px solid #7a7a7a ;
+}
+.main .comment .content {
+  background-color: #fff;
+}
+.main .comment .content li {
+  padding: 6px  8px;
+  border-bottom: 1px solid #ccc;
+}
+.main .comment .content li p {
+  line-height: 18px;
+  height: 18px;
+}
+.main .comment .content li p span {
+  color: #999;
+}
+.main .comment .content li .shangcheng {
+  line-height: 18px;
+  height: 18px;
+}
+.main .comment .content li .shangcheng .star span {
+  color: #ff9000;
+  font-size: 16px;
+}
+.main .comment .content li .shangcheng .star span + span {
+  margin: -2px;
+}
+.main .comment .content li .describe {
+  margin: 5px  0 ;
+}
+.main .comment .content li a {
+  color: #999;
+}

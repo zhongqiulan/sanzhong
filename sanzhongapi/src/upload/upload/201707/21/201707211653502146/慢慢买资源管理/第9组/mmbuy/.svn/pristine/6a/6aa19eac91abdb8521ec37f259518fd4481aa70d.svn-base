@@ -1,0 +1,21 @@
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main {
+    background-color: #f2f2f2;
+}
+
+
+.brandnav {
+    height: 36px;
+    line-height: 36px;
+    font-size: 14px;
+    padding-left: 8px;
+    border-top: 1px solid #ebebeb;
+    border-bottom: 1px solid #ccc;
+}
+.brandnav a {
+    color: #5a5a5a;
+}

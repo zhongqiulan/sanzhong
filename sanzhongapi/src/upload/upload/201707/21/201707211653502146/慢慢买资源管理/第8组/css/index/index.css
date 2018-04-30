@@ -1,0 +1,248 @@
+.navbar {
+  background-color: #ff841d;
+  height: 50px;
+  margin: 0;
+}
+.navbar .container-fluid .header_logo img {
+  width: 187px;
+}
+.navbar .container-fluid .app_donwload img {
+  width: 34px;
+  margin-top: 8px;
+}
+form {
+  height: 50px;
+  border-bottom: 1px solid #ccc;
+}
+form .search {
+  height: 30px;
+  padding: 10px;
+  position: relative;
+  background-color: #fff;
+}
+form .search .searchtxt input {
+  padding-left: 25px;
+  height: 30px;
+  width: 95%;
+  font-size: 16px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color: #f1f1f1;
+  position: absolute;
+}
+form .search .searchbtn input {
+  width: 64px;
+  height: 30px;
+  line-height: 30px;
+  border-radius: 15px;
+  background-color: #ff841d;
+  font-size: 16px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+.container .menu_list {
+  margin-top: 15px;
+}
+.container .menu_list .col-xs-3 {
+  margin: 0;
+  padding: 0;
+}
+.container .menu_list .col-xs-3 a {
+  text-decoration: none;
+}
+.container .menu_list .col-xs-3 .thumbnail {
+  border: none;
+  margin: 0;
+}
+.container .menu_list .col-xs-3 .thumbnail img {
+  width: 50px;
+}
+.container .menu_list .col-xs-3 .thumbnail .caption {
+  padding: 0;
+}
+.container .menu_list .col-xs-3 .thumbnail .caption p {
+  text-align: center;
+  font-size: 13px;
+}
+.recommend .title {
+  height: 40px;
+  background-color: #ff841d;
+  position: relative;
+}
+.recommend .title h3 {
+  display: inline-block;
+  width: 80%;
+  padding-left: 10px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+.recommend .title a {
+  width: 10%;
+  height: 40px;
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.recommend .title a i {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  color: #fff;
+}
+.recommend .content .info {
+  width: 100%;
+}
+.recommend .content .info .info_list li {
+  height: 100px;
+  margin: 28px 7px;
+  position: relative;
+}
+.recommend .content .info .info_list li .pic {
+  float: left;
+  width: 110px;
+}
+.recommend .content .info .info_list li .pic img {
+  display: block;
+  width: 100px;
+}
+.recommend .content .info .info_list li .introduce {
+  padding-left: 90px;
+}
+.recommend .content .info .info_list li .introduce .text {
+  font-size: 15px;
+  line-height: 19px;
+  min-height: 57px;
+  text-align: left;
+}
+.recommend .content .info .info_list li .introduce .text span {
+  color: #ff841d;
+}
+.recommend .content .info .info_list li .introduce .date {
+  color: #a1a1a1;
+}
+.recommend .content .info .info_list li .introduce .date .comment {
+  float: right;
+}
+.recommend .content .info .info_list li:nth-of-type(1) {
+  margin-top: 14px;
+}
+.footer {
+  background-color: #f1f1f1;
+}
+.footer .more {
+  text-align: center;
+  width: 100%;
+}
+.footer .more .pad {
+  width: 100%;
+  height: 5px;
+  background-color: #f1f1f1;
+}
+.footer .more a {
+  display: block;
+  text-decoration: none;
+  line-height: 30px;
+  background: #fff;
+  font-size: 13px;
+  margin: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+.footer .title {
+  height: 40px;
+  background-color: #ff841d;
+  position: relative;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.footer .title h3 {
+  display: inline-block;
+  width: 80%;
+  padding-left: 10px;
+  line-height: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0;
+}
+.footer .title a {
+  width: 10%;
+  height: 40px;
+  display: block;
+  text-decoration: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.footer .title a i {
+  display: block;
+  text-align: center;
+  line-height: 40px;
+  font-size: 22px;
+  color: #fff;
+}
+.footer .login {
+  width: 100%;
+  height: 34px;
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.footer .login div {
+  display: inline-block;
+  width: 32%;
+  border-right: 1px solid #ccc;
+}
+.footer .login div a {
+  text-decoration: none;
+  box-sizing: border-box;
+  text-align: center;
+  line-height: 34px;
+}
+.footer .login div a i {
+  font-size: 20px;
+}
+.footer .login div:last-child {
+  border-right: none;
+}
+.footer .copyRight {
+  text-align: center;
+  margin-top: 20px;
+}
+.footer .copyRight a {
+  display: inline-block;
+  text-decoration: none;
+  color: red;
+  font-size: 14px;
+}
+.footer .copyRight span {
+  display: inline-block;
+  font-size: 14px;
+}
+.footer .copyRight p {
+  margin: 0;
+  text-align: center;
+  font-size: 14px;
+}
+.app_download {
+  z-index: 99;
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+}
+.app_download .mmb_app {
+  width: 60px;
+  height: 60px;
+}
+.app_download .mmb_app a {
+  display: block;
+}
+.app_download .mmb_app a img {
+  width: 60px;
+}

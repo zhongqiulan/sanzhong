@@ -1,0 +1,28 @@
+function getUse(pageid) {
+    //每页的数量
+    //当前的页数
+    var currentPage = pageid || 1;
+    //总页数
+    var pages=0;
+    var pageArr=[];
+    $.ajax({
+        url: 'http://139.199.192.48:9090/api/getmoneyctrl',
+        dataType: 'JSON',
+        type: 'get',
+        data: {
+            pageid: currentPage,
+        },
+        success: function (info) {
+            //总页数=总条数/每页的数量
+            pages = Math.ceil(info.totalCount / info.pagesize);
+            for(var i=1;i<=pages;i++){
+               pageArr.push(i);
+            }
+            info.pages=pageArr;
+            var htmlStr = template('saveMoney',info);
+            $('.serialList').html(htmlStr);
+            var textStr=template('opt_tpl',info)
+            $('#selectPages').text(textStr);
+        }
+    })
+}

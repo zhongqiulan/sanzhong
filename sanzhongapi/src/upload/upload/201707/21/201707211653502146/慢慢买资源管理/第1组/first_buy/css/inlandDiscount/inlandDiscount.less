@@ -1,0 +1,100 @@
+// .view{
+//     position: relative;
+// }
+.navbar {
+    height: 50px;
+    line-height: 50px;
+    background-color: #ff841d;
+    z-index: 2;
+    font-size: 20px;
+    color: white;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    .glyphicon {
+        color: #fff;
+    }
+    img {
+        width: 34px;
+        height: 34px;
+        margin-top: 10px;
+    }
+    .glyphicon:link,
+    .glyphicon:visited,
+    .glyphicon:focus,
+    .glyphicon:hover,
+    {
+        text-decoration: none;
+    }
+}
+
+#top {
+    height: 5px;
+}
+
+.goodsList {
+    h4 {
+        height: 35px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+    margin-top:70px;
+    margin-bottom:50px;
+    .row {
+        >div {
+            margin: 0;
+            padding: 0;
+            height: 280px;
+            .thumbnail {
+                margin-bottom: 0;
+                border-radius: 0;
+                border: none;
+                img {
+                    height: 150px;
+                }
+            }
+        }
+        .price {
+            color: #ff841d;
+            height: 30px;
+        }
+        .goodsBottom {
+            // margin-bottom: 0;
+            color: #ccc;
+            a {
+                color: #ccc;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: #efefef;
+    width: 100%;
+    .checkin {
+        .row {
+            div {
+                height: 30px;
+                line-height: 30px;
+                text-align: center;
+                border: 1px solid #c5c5c5;
+                a {
+                    color: #000;
+                }
+            }
+        }
+    }
+    .bbottom {
+        box-sizing: border-box;
+        padding: 20px 50px;
+        text-align: center;
+        .app {
+            a {
+                color: #f00;
+            }
+            .grey {
+                color: #676767;
+            }
+        }
+    }
+}

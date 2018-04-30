@@ -1,0 +1,56 @@
+.container {
+  max-width: 960px;
+  margin: 0px auto;
+}
+.container > .content-top > h3 {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 10px auto 5px auto;
+  font-weight: 800;
+  text-align: left;
+  text-align-last: left;
+  word-break: break-all;
+  color: #5a5a5a;
+  line-height: normal;
+}
+.container > .content-top > h4 {
+  color: #ff6c00;
+  display: block;
+  font-size: 15px;
+}
+.container > .content-top > .info {
+  margin: 12px auto;
+  color: #999999;
+  font-size: 12px;
+  line-height: 24px;
+}
+.container > .content-top > .info span {
+  color: #999999;
+  vertical-align: middle;
+}
+.container > .content-top > .info span .author {
+  margin-right: 4px;
+}
+.container > .content-top > .info span .mall {
+  margin: 0px 4px;
+}
+.container > .content-top > .info span .time {
+  margin-left: 4px;
+}
+.container > .content-top > .conn {
+  font-size: 16px;
+  word-break: break-all;
+  line-height: 24px;
+  color: #606060;
+  padding-bottom: 20px;
+}
+.container > .content-top > .picwrap {
+  width: 120px;
+  float: right;
+  margin: 12px auto auto 10px;
+  overflow: hidden;
+}
+.container > .content-top > .picwrap img {
+  width: 120px;
+  height: 120px;
+}

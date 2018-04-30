@@ -1,0 +1,109 @@
+// ?categoryid=0&category=电视
+var search = location.search.slice(1);
+var searchArr = search.split("&");
+var obj = {};
+for (var i = 0; i < searchArr.length; i++) {
+    var arr = searchArr[i].split("=");
+    obj[arr[0]] = arr[1];
+}
+var categoryid = obj.categoryid;
+var category = encodeURI(obj.category);
+//获取导航信息
+$.ajax({
+    // url:"http://139.199.192.48:9090/api/getcategorybyid",
+    url: config.getUrl("api/getcategorybyid"),
+    data: {
+        categoryid: categoryid
+    },
+    success: function (info) {
+        var htmlStr = template("nav_tpl", info);
+        $(".list_nav").html(htmlStr);
+    }
+})
+
+//首先请求第一条数据
+getProductList();
+
+//点击下一页获取下一条数据
+$(".list").on("click", ".next", function () {
+    //获取总页数
+    var $select = $('#select');
+    var page = parseInt($select.attr('data-page'));
+    // console.log(page);
+    page++;
+    var totalpage = $('.footer').attr("data-totalpage");
+    // console.log(totalpage);
+    if (page > totalpage) {
+        alert('没有更多数据');
+        return;
+    }
+    // alert(page);
+    $select.attr('data-page', page);
+    $select.find('option').prop('selected', false);
+    $select.find('option').eq(page - 1).prop('selected', true);
+
+    getProductList(page);
+
+
+})
+//点击上一页获取上一条数据
+$(".list").on("click", ".prev", function () {
+    var $select = $('#select');
+    var page = parseInt($select.attr('data-page'));
+    // console.log(page);
+    page--;
+    if (page < 1) {
+        alert('已经是第一页了!!');
+        return;
+    }
+    $select.attr('data-page', page);
+    $select.find('option').prop('selected', false);
+    // alert(page);
+    $select.find('option').eq(page - 1).prop('selected', true);
+    getProductList(page);
+})
+
+
+function getProductList(pageid) {
+    var pageArr = [];
+    var pages = 0;
+    $.ajax({
+        // url: "http://139.199.192.48:9090/api/getproductlist",
+        url: config.getUrl("api/getproductlist"),
+        dataType: "json",
+        data: {
+            categoryid: categoryid,
+            pageid: pageid
+        },
+        success: function (info) {
+            pages = Math.ceil(info.totalCount / info.pagesize);
+            $('.footer').attr('data-totalpage', pages);
+            for (var i = 1; i <= pages; i++) {
+                pageArr.push(i);
+            }
+            info.pages = pageArr;
+            // console.log(info);
+            var htmlStr = template("product_list_tpl", info);
+            $(".list .product").html(htmlStr);
+
+            var $select = $('#select');
+            //  console.log($select.length);
+            if ($select.length == 0) {
+                var htmlStr2 = template("pagetor", info)
+                $('.footer').html(htmlStr2);
+            }
+        }
+    })
+}
+
+//选择option发送ajax
+$(".footer").on("change", "#select", function () {
+    getProductList(this.value);
+    var $select = $('#select');
+    $select.attr('data-page', this.value);
+})
+
+//点击回到顶部
+$(".top").click(function () {
+    $("html,body").animate({ scrollTop: 0 }, 500);
+});

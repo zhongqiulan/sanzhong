@@ -1,0 +1,136 @@
+body {
+  background-color: #f1f1f1;
+}
+.header-wrap header {
+  display: flex;
+  background-color: #ff841d;
+  height: 0.8rem;
+  align-items: center;
+  justify-content: center;
+}
+.header-wrap header .back a {
+  display: flex;
+  width: 0.8rem;
+  height: 0.8rem;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.header-wrap header .back .iconfont {
+  font-size: 0.4rem;
+}
+.header-wrap header .title {
+  flex: 1;
+}
+.header-wrap header .title h2 {
+  font-size: 0.4rem;
+  line-height: 0.8rem;
+  color: #fff;
+  text-align: center;
+}
+.header-wrap header .app-download a {
+  background: url('../images/header_app.png') no-repeat center center;
+  background-size: 0.6rem;
+  height: 0.8rem;
+  width: 0.8rem;
+  margin-right: 0.1rem;
+}
+.nav-sel > ul {
+  display: flex;
+  border-bottom: 1px solid #dadada;
+  background-color: #fff;
+}
+.nav-sel > ul li {
+  flex-grow: 3;
+  color: #565656;
+}
+.nav-sel > ul li a {
+  display: flex;
+  height: 0.7rem;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.2rem;
+}
+.nav-sel > ul li a .iconfont {
+  font-size: 0.6rem;
+}
+.nav-sel > ul li.search {
+  border-left: 1px solid #dadada;
+}
+.nav-sel .popup div {
+  display: none;
+}
+.nav-sel .popup div.active {
+  display: block;
+}
+.nav-sel .popup ul {
+  background-color: #fff;
+  font-size: 0.4rem;
+}
+.nav-sel .popup ul li {
+  border-bottom: 1px solid #ccc;
+  padding: 0.12rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-sel .popup ul li a {
+  flex: 1;
+}
+.nav-sel .popup ul li i {
+  font-size: 0.4rem;
+  color: green;
+  display: none;
+}
+.nav-sel .popup ul li i.active {
+  display: block;
+}
+.prolist {
+  padding: 0 0.1rem 0.1rem;
+}
+.prolist ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.prolist ul li {
+  width: 49%;
+  background-color: #fff;
+  padding: 0.1rem;
+  box-sizing: border-box;
+  margin-top: 0.1rem;
+}
+.prolist ul li img {
+  width: 100%;
+  display: block;
+}
+.prolist ul li p {
+  margin-top: 0.1rem;
+  font-size: 0.3rem;
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.prolist ul li div.clearfix {
+  margin-top: 0.14rem;
+}
+.prolist ul li div.clearfix .price {
+  float: left;
+  color: red;
+  font-size: 0.5rem;
+}
+.prolist ul li div.clearfix a {
+  margin-top: 0.1rem;
+  float: right;
+  font-size: 0.3rem;
+  width: 1.2rem;
+  height: 0.5rem;
+  line-height: 0.5rem;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  background-color: #ff9501;
+}

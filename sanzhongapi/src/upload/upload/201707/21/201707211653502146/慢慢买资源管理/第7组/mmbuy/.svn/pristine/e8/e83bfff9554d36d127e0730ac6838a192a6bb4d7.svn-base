@@ -1,0 +1,44 @@
+var objs = {
+    "result": [
+        {
+            "_id": "580b6a1c61457b22d6b8e5ec",
+            "productId": 1,
+            "productName": "Apple iPhone 6 64GB 金色 移动联通电信4G手机",
+            "productPrice": "4088.00",
+            "productFrom": "苏宁易购",
+            "productTime": "10-22 13:29",
+            "productTips": "zjie\n                            / 慢慢买",
+            "productInfo": "64G果6，需要的可以入手。 苏宁自营，现在参加大聚惠，4088到手，不玩游戏用用蛮好的。",
+            "productImg": "<img src=\"http://image3.suning.cn/uimg/b2c/newcatentries/0000000000-000000000123129054_1_200x200.jpg\" alt=\"Apple iPhone 6 64GB 金色 移动联通电信4G手机\">",
+            "productComment": "<div class=\"tit\">\n                发表评论</div>\n            <div class=\"reply\">\n                <div class=\"form\">\n                    <textarea name=\"ctl00$ContentBody$txt_nr\" id=\"ctl00_ContentBody_txt_nr\" rows=\"3\"></textarea>\n                    <input name=\"ctl00$ContentBody$lbl_fbr\" id=\"ctl00_ContentBody_lbl_fbr\" value=\"手机端网友58***74\" type=\"hidden\">\n                    <input name=\"ctl00$ContentBody$hid_name\" id=\"ctl00_ContentBody_hid_name\" value=\"Apple iPhone 6 64GB 金色 移动联通电信4G手机\" type=\"hidden\">\n                    <div class=\"ctrl\">\n                        <input name=\"ctl00$ContentBody$Button1\" value=\"发表评论\" id=\"ctl00_ContentBody_Button1\" class=\"tjdp\" type=\"submit\">\n                    </div>\n                </div>\n            </div>\n            <div class=\"tit\" id=\"newcomment\">\n                最新评论</div>\n            <div class=\"list\">\n                <ul>\n                    \n                </ul>\n            </div>"
+        }
+    ]
+}
+
+var search = location.search;
+$.ajax({
+    url: "http://139.199.192.48:9090/api/getdiscountproduct" + search,
+    dataType: "json",
+    success: function (data) {
+        var htmls = template("com_info", data);
+        $(".main").html(htmls);
+    }
+})
+
+// 评论
+var arr =  ["窜天猴","猴赛雷","飞天猪","打地鼠","你愁啥","瞅你咋地","你咋不上天","啦啦啦德玛西亚"];
+var times = ["2222/2/33 14:66:80","2522/2/33 04:76:110","1222/12/53 14:86:00","2282/6/43 14:66:89","22/2/33 14:66:80",]
+$(".main").on("click", ".tjdp", function () {
+    var txt = $("textarea").val();
+    var data = {
+        img: "http://bbs.manmanbuy.com/images/face/none.gif",
+        name:arr[Math.floor(Math.random()*arr.length)],
+        time:times[Math.floor(Math.random()*times.length)],
+        infos: txt
+    }
+    alert("搞定,走你~");
+    var htmls = template("tips_eva", data);
+    console.log(htmls);
+    $("textarea").val('');
+    $(".list ul").append(htmls);
+})

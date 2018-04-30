@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Microsoft YaHei";
+  color: #000;
+  font-family: arial;
+  background: #FFF;
+  overflow-x: hidden;
+}
+html,
+body {
+  height: 100%;
+}
+ol,
+ul {
+  list-style: none;
+}
+input,
+select,
+form images,
+button {
+  vertical-align: middle;
+  -webkit-tap-highlight-color: transparent;
+  outline: 0;
+}
+.clearfix::after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+.clearfix {
+  zoom: 1;
+}
+textarea {
+  width: 95%;
+}
+a {
+  color: #000;
+  text-decoration: none !important;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+em,
+i {
+  font-style: normal;
+}
+img {
+  border: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* 通用头部 */
+#header {
+  width: 100%;
+  height: 44px;
+  background-color: #ff841d;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+#header > a {
+  display: block;
+  color: #fff;
+}
+#header > a > .icon-back {
+  font-size: 18px;
+  position: absolute;
+  left: 10px;
+  top: 12px;
+}
+#header > h1 {
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  margin: 0px 52px;
+  padding: 0;
+  overflow: hidden;
+}
+#header > .icon-app {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  text-align: right;
+  width: auto;
+  font-size: 14px;
+  line-height: 40px;
+  overflow: hidden;
+}
+#header > .icon-app a {
+  display: block;
+}
+#header > .icon-app a img {
+  width: 50%;
+}
+/* 底部样式 */
+.nav {
+  height: 36px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#ebebeb));
+  background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+  background: -o-linear-gradient(top, #ffffff, #ebebeb);
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  line-height: 36px;
+  padding-left: 8px;
+  font-size: 14px;
+}
+#footer > .foot_top {
+  background: #efefef;
+  border-top: 1px solid #c4c4c4;
+  border-bottom: 1px solid #c4c4c4;
+  height: 34px;
+  line-height: 34px;
+  margin-top: 20px;
+  clear: both;
+}
+#footer > .foot_top > a {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  float: left;
+  font-size: 14px;
+  border-right: 1px solid #c4c4c4;
+  text-align: center;
+  width: 30%;
+}
+#footer > .foot_top > a > img {
+  vertical-align: middle;
+  margin-top: -5px;
+  margin-right: 2px;
+}
+#footer > .foot_bottom {
+  background: #efefef;
+  text-align: center;
+  font-size: 12px;
+  padding: 13px 0;
+  color: #666;
+}
+#footer > .foot_bottom > p {
+  margin: 0;
+}

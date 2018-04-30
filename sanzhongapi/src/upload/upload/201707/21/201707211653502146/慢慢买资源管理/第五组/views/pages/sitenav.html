@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--理想视口代码-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/sitenav.css">
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <title>商城导航</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.min.css">
+</head>
+<body>
+<!--头部-->
+<div class="header">
+    <!--左边返回按钮-->
+    <div class="back">
+        <a href="../index.html"><span class="glyphicon glyphicon-menu-left"></span></a>
+    </div>
+    <!--中间标题-->
+    <h2>商城导航</h2>
+    <!--右边下载-->
+    <div class="download">
+        <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia&ckey=CK1360146084813"><img src="../images/header_app.png" alt=""></a>
+    </div>
+</div>
+
+<!--商品列表-->
+<div class="good_list">
+    <div class="container" id="gd_list_container">
+        <!--此处渲染-->
+
+    </div>
+    <div class="clear"></div>
+</div>
+
+<!--底部菜单栏显示-->
+<div class="foot_menu">
+    <a class="" href="../index.html">首页</a>&nbsp;>&nbsp;<a class="" href="./sitenav.html">商城导航</a>
+</div>
+
+<!--底部app下载-->
+<div class="foot_appdownload">
+    <div class="contain clearfix">
+        <a href="javascript:;">登录</a>
+        <a href="javascript:;">注册</a>
+        <a href=""><img src="../images/top.jpg" alt="">返回顶部</a>
+    </div>
+    <div class="foot_text">
+        <p class="clearfix">
+            <a href="#">手机app下载</a>
+            <a href="#">慢慢买手机版</a>
+            --掌上比价平台
+        </p>
+        <p>m.manmanbuy.com。</p>
+    </div>
+</div>
+
+<!--底部app图片下载-->
+<div class="app_link" id="app_link">
+    <a href="http://a.app.qq.com/o/simple.jsp?pkgname=com.manmanbuy.bijia&ckey=CK1360146084813"><img src="../images/App_download.png" alt=""></a>
+</div>
+
+</body>
+
+<script src="../libs/jquery/jquery-1.12.2.js"></script>
+<script src="../libs/bootstrap/bootstrap.js"></script>
+<script src="../js/sitenav.js"></script>
+<script src="../libs/artTemplate/template.js"></script>
+
+<!--引入模板-->
+<script type="html/template" id="ittun_tpl">
+    {{each data as v i }}
+    <a href="{{v.navHref}}" target="_blank">
+        <img src="{{v.navImg}}" alt="">
+        {{v.navTitle}}
+    </a>
+    {{/each}}
+</script>
+</html>

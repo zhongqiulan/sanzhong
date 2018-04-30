@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买-品牌</title>
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme.css">
+  <!--品牌页的css样式-->
+  <link rel="stylesheet" href="../../css/brandZone/list.css">
+</head>
+
+<body>
+  <!--view star-->
+  <div class="bz_view">
+    <!--头部-->
+    <header>
+      <div class="logo"></div>
+      <div class="search"></div>
+    </header>
+
+    <!--头部-->
+
+    <!-- 主体 star-->
+    <div class="main">
+
+      <!--路径导航 star-->
+      <ol class="bz_nav breadcrumb">
+        <li><a href="../../index.html">首页</a></li>
+        <li><a class="active" href="./list.html">品牌大全</a></li>
+        <!--<li >Data</li>-->
+      </ol>
+      <!--路径导航 end-->
+
+
+      <!--品牌分类 star-->
+      <div class="bz_brans">
+        <!--<div class="bz_title">
+          热门品牌排行
+        </div>
+        <div class="bz_list">
+          <div class="fl_t">
+            <a href="distop.aspx?id=4">平板电视十大品牌</a>
+          </div>
+        </div>-->
+      </div>
+      <!--品牌分类 end-->
+
+    </div>
+    <!-- 主体 end-->
+  </div>
+  <!-- view  end-->
+  <script type="text/template" id="bz_list_tpl">
+    <div class="bz_title">
+      热门品牌排行
+    </div>
+    {{each result as v i}}
+
+    <div class="bz_list" name="{{v.categoryId}}">
+      <div class="fl_t">
+        <a class="rankingBtn" href="ranking.html?brandtitleid={{v.brandTitleId}}" name="{{v.brandTitleId}}">{{v.brandTitle}}</a>
+      </div>
+    </div>
+    {{/each}}
+  </script>
+  <!--"-->
+</body>
+<script src="../../lib/jquery/jquery.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../../lib/form/jquery.form.js"></script>
+<script src="../../lib/template/template.js"></script>
+<script src="../../js/common/geturl.js"></script>
+<!-- 获取接口 -->
+<script src="../../js/brandZone/list.js"></script>
+
+</html>

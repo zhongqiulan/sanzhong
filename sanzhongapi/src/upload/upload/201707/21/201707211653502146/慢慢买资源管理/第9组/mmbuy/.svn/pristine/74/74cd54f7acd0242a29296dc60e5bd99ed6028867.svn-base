@@ -1,0 +1,108 @@
+a {
+  color: #5a5a5a;
+}
+#topTitle {
+  height: 44px;
+  background-color: #ff841d;
+  position: relative;
+}
+#topTitle h3 {
+  text-align: center;
+  color: #ffffff;
+  line-height: 44px;
+  margin: 0;
+  font-size: 20px;
+}
+#topTitle i {
+  position: absolute;
+  top: 0;
+}
+#topTitle .glyphicon-chevron-left {
+  color: #ffffff;
+  font-size: 28px;
+  line-height: 44px;
+  left: 10px;
+  cursor: pointer;
+}
+#tabs {
+  height: 38px;
+  background-color: #ffffff;
+}
+#tabs .nav {
+  position: relative;
+}
+#tabs .nav li {
+  padding: 0;
+}
+#tabs .nav li a {
+  text-align: center;
+}
+#tabs .nav .search {
+  right: 0;
+  position: absolute;
+  border-left: 1px solid #ccc;
+}
+#tabs .nav .search i {
+  width: 40px;
+  height: 20px;
+  text-align: center;
+  padding-top: 10px;
+  font-size: 20px;
+  color: #5a5a5a;
+}
+#tabs .list-group a {
+  display: block;
+  text-decoration: none;
+  color: #5a5a5a;
+}
+#tabs .list-group a:active {
+  text-decoration: none;
+}
+#tabs .list-group li {
+  position: relative;
+}
+#tabs .list-group li i {
+  color: #ff841d;
+  position: absolute;
+  right: 30px;
+  top: 5px;
+  font-size: 22px;
+}
+#page_details {
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+}
+#page_details li {
+  background-color: #f1f1f1;
+  text-align: center;
+  padding-left: 0;
+  padding-right: 10px;
+}
+#page_details li a {
+  display: block;
+  background-color: #ffffff;
+}
+#page_details li p {
+  text-align: left;
+}
+.details {
+  background-color: #f1f1f1;
+  padding: 15px 0;
+  padding-left: 10px;
+}
+.details #page_details li img {
+  max-width: 100%;
+}
+.details #page_details li p.productName {
+  font-size: 12px;
+  height: 14px;
+  line-height: 14px;
+  padding: 0 6px;
+  color: #333333;
+}
+.details #page_details li p.price {
+  margin-top: 20px;
+  color: #f8601d;
+  font-size: 20px;
+}

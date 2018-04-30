@@ -1,0 +1,160 @@
+/*
+  author:kuanglq;
+  date:2017-7-18;
+  商城导航
+*/
+
+/* 头部样式 */
+header{
+    position: relative;
+}
+header{
+  h1{
+  background: #ff841d;
+  height: 44px;
+  width: 100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  line-height: 44px;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+} 
+
+header{
+  >a{
+   position:absolute;
+   top:0; 
+}
+} 
+header{
+  .head_change {
+    font-size: 24px;
+    width: 56px;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    color: white;
+}
+} 
+
+header {
+  .head_app{
+    width: 56px;
+    height: 44px;
+    padding-left: 10px;
+    padding-top: 5px;
+    background:url("../image/init-imgs/header_app.png") no-repeat;
+    background-size: 34px;
+    right: 0;
+    background-origin: content-box;
+}
+}
+
+/* 页面主体样式 */
+
+.sitennav-main {
+  padding-top:5px;
+  // text-align: center;
+}
+.sitennav-link{
+  width:300px;
+  margin:0px auto;
+}
+#btn{
+  border-radius: 0;
+  padding:10px 8px;
+  margin-top:5px;
+  background-color: #f4f4f4;
+  border: 1px solid #bfbfbf;
+  >a{
+    color: #000;
+    text-decoration: none;
+  }
+}
+
+
+/* 底部路径样式  */
+
+.sitennav-path{
+  background-color: #efefef;
+}
+.breadcrumb>li+li:before {
+  padding: 0;
+  color: #ccc;
+  content: "";
+}
+.breadcrumb{
+  margin-top: 20px;
+  margin-bottom:0px;
+  height: 36px;
+  background-color: #ebebeb;
+  background: -webkit-gradient(linear,0 0,0 100%,from(#ffffff),to(#ebebeb));
+  background: -moz-linear-gradient(top, #ffffff, #ebebeb);
+  background: -o-linear-gradient(top,#ffffff, #ebebeb);
+  border-top: solid 1px #ebebeb;
+  border-bottom: 1px solid #ccc;
+  >li{
+    >a {
+      color: #000;
+      text-decoration: none;
+    }
+  }
+}
+
+
+//固定applogo
+.app-logo{
+    position: fixed;
+    right: 0px;
+    bottom: 80px;
+    z-index: 999;
+    img{
+        width: 60px;
+    }
+}
+
+
+/* 底部控制菜单 */
+
+.sitennav-footer{
+  margin-top:20px;
+  background-color:#efefef;
+  .borderRow{
+    border-top:1px solid #ccc;
+    border-bottom:1px solid #ccc;
+    .footerDiv{
+      text-align: center;
+      padding:5px 0;
+      >a{
+        color:#000;
+        text-decoration: none;
+        >img{
+          width:15px;
+          height:15px;
+          vertical-align: baseline;
+          margin-bottom: -2px;
+        }
+      }
+      +.footerDiv{
+        border-left: 1px solid #ccc;
+      }
+    }
+  }
+
+  /* 底部信息 */
+  .footer-info{
+    padding:15px 0;
+    text-align: center;
+    font-size: 12px;
+    >p{
+      margin:0 ;
+      .foot-aLink{
+        color:#000;
+      }
+    }
+  }
+}
+
+

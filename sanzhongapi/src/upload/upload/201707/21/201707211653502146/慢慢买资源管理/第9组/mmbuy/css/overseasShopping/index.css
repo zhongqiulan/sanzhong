@@ -1,0 +1,128 @@
+#coupon {
+  height: 44px;
+  background-color: #ff841d;
+  position: relative;
+}
+#coupon h3 {
+  text-align: center;
+  color: #ffffff;
+  line-height: 44px;
+  margin: 0;
+  font-size: 20px;
+}
+#coupon i,
+#coupon a {
+  position: absolute;
+  top: 0;
+}
+#coupon .glyphicon-chevron-left {
+  color: #ffffff;
+  font-size: 30px;
+  line-height: 44px;
+  left: 10px;
+  cursor: pointer;
+}
+#coupon .app-download {
+  right: 0;
+}
+#coupon .app-download img {
+  width: 50px;
+  height: 44px;
+}
+#overseas_main {
+  height: 100%;
+}
+#overseas_main a,
+#overseas_main h4 {
+  font-size: 15px;
+}
+#overseas_main .media {
+  padding: 15px;
+}
+#overseas_main .media-left a img {
+  width: 100px;
+  height: 100px;
+}
+#overseas_main .media-body {
+  position: relative;
+}
+#overseas_main .media-body a {
+  position: absolute;
+  color: #a1a1a1;
+  bottom: 0;
+}
+#overseas_main .media-body span {
+  margin-left: 10px;
+  color: #ff841d;
+}
+#overseas_main .media-body i {
+  position: absolute;
+  right: 80px;
+  bottom: -3px;
+}
+#overseas_main .media-body span.comment {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #a1a1a1;
+}
+#overseas_main .container-fluid {
+  background-color: #f2f2f2;
+}
+#overseas_main .container-fluid .row {
+  padding: 15px 50px;
+  position: relative;
+}
+#overseas_main .container-fluid .row select {
+  position: absolute;
+  text-align: center;
+  width: 30%;
+  padding-left: 10%;
+}
+#overseas_main .container-fluid .row select.form-control {
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+#overseas_main .container-fluid .row .button {
+  background-color: #d6d6d6;
+  border-radius: 5px;
+}
+#Breadcrumbs {
+  background-color: #fafafa;
+  border-bottom: 1px solid #ccc;
+}
+#Breadcrumbs li,
+#Breadcrumbs a {
+  color: #0f0f0f;
+}
+#Breadcrumbs .row:before {
+  display: table;
+  content: "";
+}
+#footer {
+  margin-top: 15px;
+  border: 1px solid #ccc;
+}
+#footer a {
+  padding: 15px 0;
+  display: block;
+  text-align: center;
+  color: #0f0f0f;
+}
+#footer .col-xs-4 + .col-xs-4 {
+  border-left: 1px solid #ccc;
+}
+.link {
+  padding-top: 15px;
+}
+.link p {
+  text-align: center;
+}
+.link a.phoneApp {
+  color: red;
+}
+.link a.mobile {
+  color: #0f0f0f;
+  font-weight: 700;
+}

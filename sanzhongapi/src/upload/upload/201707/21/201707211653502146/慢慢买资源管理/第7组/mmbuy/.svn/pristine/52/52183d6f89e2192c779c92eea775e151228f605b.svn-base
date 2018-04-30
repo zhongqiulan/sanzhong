@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>慢慢买-凑单品</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/gsshop.css">
+</head>
+
+<body>
+
+    <!--标题栏-->
+    <div class="CDPNav">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid CDPNav-er">
+                <div class="navbar-header headText">
+                    <div class="nav navbar-nav navbar-left headArrows">
+                        <span class="glyphicon glyphicon-menu-left"></span>
+                    </div>
+                    <span class="navbar-brand" href="#">凑单品</span>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <!--下拉菜单-->
+    <div class="gasNav">
+        <div class="leftNav clearfix">
+            <div class="on ona">
+                <div class="topNav">京东
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+            </div>
+            <div class="on onb">
+                <div class="topNav">华北
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+            </div>
+            <div class="on onc">
+                <div class="topNav">全部价格
+                    <span class="glyphicon glyphicon-triangle-bottom"></span>
+                </div>
+            </div>
+        </div>
+
+        <div class="search glyphicon glyphicon-align-justify"></div>
+
+
+        <!--下拉菜单-->
+        <div class="list l1 caidanlist">
+            <ul>
+
+            </ul>
+        </div>
+
+        <div class="list l2 caidanlist">
+            <ul>
+
+            </ul>
+        </div>
+
+        <div class="list l3 caidanlist">
+            <ul>
+                <li class="gasline"></li>
+                <li data-shopId="{{v.shopId}}" name="shopName" class="dp">1-3元</li>
+                 <li class="gasline"></li>
+                <li data-shopId="{{v.shopId}}" name="shopName" class="dp">3-5元</li>
+                 <li class="gasline"></li>
+                <li data-shopId="{{v.shopId}}" name="shopName" class="dp">5-10元</li>
+                 <li class="gasline"></li>
+                <li data-shopId="{{v.shopId}}" name="shopName" class="dp">10-15元</li>
+                 <li class="gasline"></li>
+                <li data-shopId="{{v.shopId}}" name="shopName" class="dp">15元以上</li>
+            </ul>
+        </div>
+
+
+        <!--搜索-->
+        <div class="zhtai caidanlist">
+            <div class="src">
+            <span class="sc_sp glyphicon glyphicon-search"></span>
+            <div class="sc_ipt">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="搜索商品即可查内部券" aria-describedby="basic-addon2">
+                    <span class="input-group-addon" id="basic-addon2">搜索</span>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+    <!--商品列表-->
+    <div class="gasSP clearfix">
+
+    </div>
+
+    <!--尾部区域-->
+    <div class="footer ">
+        <div class="footertop row">
+            <a href="#" class='col-xs-4'>登陆</a>
+            <a href="#" class='col-xs-4'>注册</a>
+            <a href="#top" class='col-xs-4'>回到顶部</a>
+        </div>
+        <div class="footercenter">
+            <a href="#">手机App下载</a>
+            <a href="#">慢慢买手机版</a>
+            <a href="#">--掌上比价平台</a>
+            <p> m.manmanmai.com</p>
+        </div>
+    </div>
+    </div>
+
+
+    <script src="../libs/jquery/jquery.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/gsshop.js"></script>
+</body>
+
+</html>
+
+<script type="text/template" id="dian">
+
+    {{each result as v i}}
+    <li class="gasline"></li>
+    <li data-shopId="{{v.shopId}}" name="shopName" class="dp">{{v.shopName}}</li>
+    {{/each}}
+
+</script>
+
+<script type="text/template" id="diqu">
+
+    {{each result as v i}}
+    <li class="gasline"></li>
+    <li data-areaId="{{v.areaId}}" name="areaName" class="dq">{{v.areaName}}</li>
+    {{/each}}
+
+</script>
+
+<script type="text/template" id="dplist">
+    {{each result as v i}}
+    <div class="splb">
+        <div class="bj">
+            <div class="SPTop">
+                <img src="{{v.productImg}}" alt="">
+            </div>
+            <div class="SPBottom">
+                <div class="bt">
+                    <span>{{v.productName}}</span>
+                </div>
+                <div class="bb">
+                    <div class="bbl">
+                        {{v.productPrice}}
+                    </div>
+                    <div class="bbr">去凑单</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{/each}}
+</script>
+
+<script type="text/template" id="dqlist">
+    {{each result as v i}}
+    <div class="splb">
+        <div class="bj">
+            <div class="SPTop">
+                <img src="{{v.productImg}}" alt="">
+            </div>
+            <div class="SPBottom">
+                <div class="bt">
+                    <span>{{v.productName}}</span>
+                </div>
+                <div class="bb">
+                    <div class="bbl">
+                        {{v.productPrice}}
+                    </div>
+                    <div class="bbr">去凑单</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    {{/each}}
+</script>
+

@@ -1,0 +1,25 @@
+$.ajax({
+    url:'http://139.199.192.48:9090/api/getindexmenu',
+    
+    type:'GET',
+    dataType:'JSON',
+    success:function(info){
+        console.log(info.result);
+        
+        var menuHtml = template('menu_tpl',info)
+        $('.menu').html(menuHtml);
+    }
+});
+
+
+$.ajax({
+    url:'http://139.199.192.48:9090/api/getmoneyctrl',
+    dataType:'JSON',
+    type:'GET',
+    success:function(info){
+        // console.log(info);
+        
+        var recomHtml = template('recom_tpl',info);
+        $('#recomUl').html(recomHtml);
+    }
+})

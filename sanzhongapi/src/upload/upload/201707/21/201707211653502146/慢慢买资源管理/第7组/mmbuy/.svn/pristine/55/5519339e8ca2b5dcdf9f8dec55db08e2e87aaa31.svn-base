@@ -1,0 +1,139 @@
+// tab栏
+function TabNav() {
+    this.getTab = function () {
+        $.ajax({
+            url: 'http://139.199.192.48:9090/api/getbaicaijiatitle',
+            type: 'get',
+            datatype: 'json',
+            success: function (info) {
+                console.log(info);
+                var htmlStr = template('tabNav', info);
+                $('#baiDhl').html(htmlStr);
+            }
+        });
+    }
+
+    this.jiantou = function () {
+        $('#jiantou').on('click', function () {
+            location.href = '../index.html';
+        })
+
+    }
+    this.scroll = function () {
+        // 获取目标元素
+        var top_menu = document.querySelector('.top-menu');
+
+        // 手指按下坐标
+        var startX;
+
+        // 一共移动了的距离  一定要初始化为0  
+        var totalDistance = 0;
+
+        // 弹簧
+        var springs = 50;
+
+        // 上滑最大的距离  上滑的距离是负数
+        var maxUpDis = -(top_menu.offsetWidth - top_menu.parentNode.offsetWidth);
+        // console.log(maxUpDis);
+
+
+        //绑定手指按下事件
+        top_menu.addEventListener("touchstart", function (e) {
+            // 验证手指个数
+            if (e.targetTouches.length > 1) {
+                return;
+            }
+
+            // this  ==
+            // 记录坐标
+            startX = e.targetTouches[0].clientX;
+            // 清除过渡
+            this.style.transition = "none";
+            // console.log(startX);
+        });
+        // 绑定手指移动事件
+        top_menu.addEventListener("touchmove", function (e) {
+            // 验证手指的个数
+            if (e.targetTouches.length > 1) {
+                return;
+            }
+
+            // 移动的坐标
+            var moveX = e.targetTouches[0].clientX;
+            //  console.log(moveY);
+            // 移动的距离   要加上上一次移动的距离
+            var tmpDistance = moveX - startX + totalDistance;
+
+            // console.log(tmpDistance);
+
+            // 下拉判断是否满足弹簧条件
+            // if (tmpDistance > springs) {
+            //     tmpDistance = springs; // 50    
+        // } else
+         if (tmpDistance < maxUpDis - springs) {
+                // 判断上滑的距离  谁越小 谁就越在上边
+                tmpDistance = maxUpDis - springs;
+            }
+
+            // 设置位移
+            this.style.transform = "translateX(" + tmpDistance + "px)";
+        });
+
+        top_menu.addEventListener("touchend", function (e) {
+            // 判断手指的个数
+            if (e.changedTouches.length > 1) {
+                return;
+            }
+
+            // 记录上一次移动的距离  手指离开的时候呢 需要加上自己上一次移动的距离
+            totalDistance += e.changedTouches[0].clientX - startX;
+
+            // 判断是否满足下拉反弹的条件
+            if (totalDistance > 0) {
+                // 反弹
+                totalDistance = 0;
+                this.style.transition = "all .6s";
+                this.style.transform = "translateX(" + totalDistance + "px)";
+            } else if (totalDistance < maxUpDis) {
+                // 松开的时候 反弹 -只要超出最大上滑的距离的一点点的话 都要反弹
+                totalDistance = maxUpDis;
+                this.style.transition = "all .6s";
+                this.style.transform = "translateX(" + totalDistance + "px)";
+            }
+
+        });
+    }
+}
+
+
+        // 商品列表
+        function Common() {
+            this.getCn = function () {
+                $('.top-menu').on('click', '.menuLi', function () {
+                    $(this).addClass('active').siblings().removeClass('active');
+                    var id = $(this).attr('data-titleId');
+                    // console.log(id);
+                    $.ajax({
+                        url: 'http://139.199.192.48:9090/api/getbaicaijiaproduct',
+                        datatype: 'json',
+                        type: 'get',
+                        data: { titleid: id },
+                        success: function (info) {
+                            console.log(info);
+                            var htmlStr = template('xplb', info);
+                            $('#cnt').html(htmlStr);
+                        }
+                    })
+                })
+            }
+        }
+
+        window.onload = function () {
+            var tabNav = new TabNav();
+            tabNav.getTab();
+            tabNav.jiantou();
+            tabNav.scroll();
+
+            var common = new Common();
+            common.getCn();
+        }

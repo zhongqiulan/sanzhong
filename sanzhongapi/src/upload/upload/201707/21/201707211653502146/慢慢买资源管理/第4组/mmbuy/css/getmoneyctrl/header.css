@@ -1,0 +1,34 @@
+header {
+  height: 44px;
+  line-height: 44px;
+  background-color: #ff841d;
+  color: #fff;
+  position: relative;
+}
+header h2 {
+  padding: 0 60px;
+  line-height: 44px;
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0;
+  text-align: center;
+}
+header .back,
+header .app {
+  position: absolute;
+  width: 40px;
+  height: 44px;
+  top: 0;
+}
+header .back {
+  left: 5px;
+}
+header .back a {
+  color: #fff;
+}
+header .app {
+  right: 5px;
+}
+header .app img {
+  width: 40px;
+}

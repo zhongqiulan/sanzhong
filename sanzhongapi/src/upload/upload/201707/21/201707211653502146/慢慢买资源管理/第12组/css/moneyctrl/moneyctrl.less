@@ -1,0 +1,307 @@
+.save,.save_product{
+    // 头部
+    header{
+        height:0.8rem;
+        background-color:#ff841d;
+        padding: 0.01rem 0.1rem;
+        font-size: 0.32rem;
+        position: relative;
+        text-align: center;
+        color: white;
+        line-height: 0.78rem;
+        a.return {
+            font-size: 0.3rem;
+            color:white;
+            position: absolute;
+            left: 0.1rem;
+            top: 0.2rem;
+        }
+        a.app{
+            height: 100%;
+            position: absolute;
+            right: 0.1rem;
+            top: 0rem;
+            img{
+                height: 100%;
+                display: block;
+                padding: 0.05rem 0.05rem;
+            }
+        }
+    }
+
+    //**************** save页面内容******************
+    .content{
+        li{
+            height: 1.6rem;  
+            padding: 0.1rem 0.2rem 0.5rem 0.3rem;
+            position: relative;
+            
+            a{
+                img{
+                    width: 25%;
+                    font-size: 0.02rem;
+                }
+                .info{
+                    
+                    width:75%;
+                    p{
+                        padding-left: 0.2rem;
+                        font-size: 0.21rem;
+                        width: 100%;
+                        &:nth-child(2){
+                            color:#aaa;
+                            position: absolute;
+                            bottom: 0rem;
+                            left: 25%;
+                            margin-left: 0.2rem;
+                        } 
+                        .price{
+                            color:red;
+                        }         
+                    }
+                }
+            }
+         }      
+    }
+
+    // ************** save_product页面商品折扣详情************
+     .product{
+        padding: 0.2rem 0.2rem 0.2rem 0.2rem;
+        font-size: 0.28rem;
+        .title{
+            font-size: 0.3rem;
+            font-weight: bold;
+        }
+        .mes{
+            margin: 0.2rem 0;
+            font-size: 0.2rem;
+            color: #999999;
+        }
+        
+        // 渲染出来的评论区域 start
+        .content {
+            
+            img{
+            float: right;
+            width: 30%;
+        }}
+        >img{
+            width:90%;
+            display: block;
+            margin: 0 auto;
+            margin: 1rem 0;
+        }
+        a.buy{
+            display: block;
+            width: 85%;
+            background-color: orange;
+            color:white;
+            margin: 0.5rem auto;
+            text-align: center;
+            height: 0.6rem;
+            line-height: 0.6rem;
+        }
+        .comment{
+            width: 100%;
+            .input{
+                height: 2rem;
+                border: 1px solid #aaa;
+                input{
+                    width: 100%;
+                    height: 70%;
+                }
+                button{
+                    width: 20%;
+                    height: 30%;
+                    background-color: #aa0;
+                    color:white;
+                    border: none;
+                }
+                
+            }
+            .comment_list{
+                width: 100%;
+                img{
+                    width: 15%;
+                }
+                >div{
+                    width: 85%;
+                }
+            }
+        }
+        .cu-content-pl{
+            textarea{
+                width: 100%;
+            }
+        }
+        
+        .form{
+            border: 1px solid #aaa;
+            position: relative;
+            padding-bottom: 0.4rem;
+            input{
+                color: white;
+                background-color: #ff841d;
+                border: none;
+                height: 0.5rem;
+                line-height: 0.5rem;
+                font-size: 0.2rem;
+                padding: 0 0.1rem;
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        .list{
+           
+            .ui-border-b{
+                overflow: hidden;
+                font-size: 0.25rem;
+                margin: 0.2rem 0;
+                width: 100%;
+                // position: relative;
+                // height:3rem;
+
+                // 头像
+                 .userimg {
+                    border-radius: 50%;
+                    overflow: hidden;
+                    float:left;
+                    width:15%;
+                    img{
+                    width:100%;
+                    }
+                }
+                // 评论内容
+                .con{
+                    width:80%;
+                    height: 100%;
+                    float: left;
+                    margin-left: 0.2rem;
+                    overflow: hidden;
+                    
+                    .username{
+                        float: left;
+                        color: #44a;
+                    }
+                    .time{
+                        font-size: 0.15rem;
+                        float: right;
+                        color: #aaa;
+                    }
+                    .content{
+                        // position: absolute;
+                        bottom: 0;
+                        left: 15%;
+                        // padding-left: 0.2rem;
+                    }
+                }
+            }
+            
+        }
+        
+        // 渲染出来的评论区域 end
+         
+     }
+
+
+   
+    //跳转
+    .pagelist{
+        // height:1rem;
+        margin-bottom: 1.5rem;
+                .pager{
+                        margin:0;
+                        li{
+                            // margin:0 40px;
+                            a{
+                                border-radius: 5px;
+                                width: 60px;
+                                height: 20px;
+                                // font-size: 12px;
+                                padding: 0;
+                                padding-top: 2px;
+                                background: -webkit-gradient(linear,0 0,0 100%,from(#f1f1f1),to(#d4d4d4));
+                                color: #000;
+                                // border:1px solid #e6e6e6
+                            }
+                            select{
+                                border-radius: 5px;
+                                outline: none;
+                            }
+                        }
+                    
+                }
+        }
+
+    /*底部*/
+    footer{
+            margin-top: 0.5rem;   
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background-color: #f2f2f2;
+            .row{
+                padding: 0;
+                >li{
+                    list-style: none;
+                    box-decoration-break:none;
+                    border-right: 1px solid #cfcfcf;
+                    border-bottom: 1px solid #cfcfcf;
+                    border-top: 1px solid #cfcfcf;
+                    text-align: center;
+                    line-height: 30px;
+                    
+                    >a{
+                        color: #000;
+                        text-decoration: none;
+                        -webkit-tap-highlight-color: none;
+                    } 
+                    span{
+                        color: #747474;
+                        font-weight: bold;
+                    }       
+                }
+            }
+            .appdown{
+                margin-top:4px;
+                text-align: center;
+                a{
+                    color: red;
+                    -webkit-tap-highlight-color: none;
+                    &:hover{
+                        text-decoration: none;
+                    }     
+                }
+                span{
+                    color: #000;        
+                }
+                span:last-of-type{
+                    color: #555555;
+                }
+                p{
+                    color: #666466;
+                }
+                
+            }
+
+
+    }
+
+    footer,.appdown,.pagelist {
+            font-size: 0.2rem;
+            a{
+                // 上面的fontsize注释了
+                font-size: 0.2rem;
+            }
+    }
+
+}
+.save_product {
+    background-color: white;
+    margin-bottom: 1.5rem;
+}
+
+
+

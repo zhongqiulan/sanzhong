@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title优惠券</title>
+        <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+        <link rel="stylesheet" href="../../css/couponproduct.css">
+        <link rel='stylesheet' href='../../fonts/style.css' />
+        <link rel='stylesheet' href='../../css/base.css' />
+        <link rel='icon' href='../../images/favicon.ico' type='image/x-icon' />
+</head>
+
+<body>
+    <!--优惠券顶部-->
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header header-logo pull-left">
+                <a class="navbar-brand" href="coupon.html"><span class='glyphicon glyphicon-chevron-left'></span></a>
+                <!--<span>优惠劵</span>-->
+            </div>
+            <div class="navbar-center pull-left">
+               <span>优惠劵</span>
+            </div>
+            <div class="navbar-right app-donwload pull-right">
+                <img src="../../images/header_app.png" alt="">
+            </div>
+        </div>
+    </nav>
+    <!--优惠券选项列表-->
+    <p class='dealcre'>--点餐前出示手机中的优惠券，即可享受优惠--</p>
+    <div class="coupon_list">
+        <!--第一次渲染-->
+
+    </div>
+    <!--模态框-->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog " role="document">
+            <!--轮播图-->
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!--<ol class="carousel-indicators">-->
+                    <!--<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>-->
+                    <!--<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>-->
+                <!--</ol>-->
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <!--第二次渲染-->
+                    
+                </div>
+
+                <!--Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a> 
+            </div>
+        </div>
+    </div>
+
+    <!--底部功能-->
+    <div class="nav">
+        <a href="../../index.html">首页</a> >
+        <a href="coupon-tab.html">优惠劵</a> >
+        <a href="couponproduct.html">优惠选项</a>
+    </div>
+    <!--登录注册-->
+    <div class="foot_bar">
+        <ul class="clearfix">
+            <li><a href="../../login.html">登录</a></li>
+            <li><a href="../../login.html">注册</a></li>
+            <li><a href="#"><i class="icon-top"></i>返回顶部</a></li>
+        </ul>
+    </div>
+    <footer>
+        <div class="foot_top">
+            手机APP下载
+            <a href="javascript:;">慢慢买手机版</a> -- 掌上比价平台
+        </div>
+        <div class="foot_bottom">m.manmanbuy.com</div>
+    </footer>
+
+
+    <script src='../../lib/jquery/jquery.js'></script>
+    <script src='../../lib/bootstrap/js/bootstrap.min.js'></script>
+    <script src='../../lib/artTemplate/template.js'></script>
+    <script type='text/template' id='coupon_list'>
+        {{each result as v i}}
+        <a href='#' class="media lists" data-toggle="modal" data-target="#myModal" data-target="#carousel-example-generic" data-id="{{i}}">
+            <div class="media-left">
+                {{#v.couponProductImg}}
+            </div>
+            <div class="media-body">
+                <h5 class="media-heading">{{v.couponProductName}}</h5>
+                <h4>{{v.couponProductPrice}}</h4>
+                <p>{{v.couponProductTime}}</p>
+            </div>
+            <div class="media-right">
+                <span class='glyphicon glyphicon-menu-right '></span>
+            </div>
+        </a>
+        {{/each}}
+    </script>
+
+
+    <script type='text/template' id='coupon_modle'>
+        {{each result as v i}}
+            {{if i== 0}}
+            <div class="item active">
+            {{#v.couponProductImg}}
+            <div class="carousel-caption">
+                ...
+            </div>
+            </div>
+            {{else}}
+             <div class="item ">
+            {{#v.couponProductImg}}
+            <div class="carousel-caption">
+                ...
+            </div>
+            </div>
+            {{/if}}
+        {{/each}}
+    </script>
+
+    <script src='../../js/coupon/couponproduct.js'></script>
+    <script src='../../js/coupon/utils.js'></script>
+</body>
+
+</html>

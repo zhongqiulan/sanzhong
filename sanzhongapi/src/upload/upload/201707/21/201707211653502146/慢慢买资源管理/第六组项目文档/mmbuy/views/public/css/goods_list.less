@@ -1,0 +1,48 @@
+//导航路径
+   .goods_navs {
+        ol.breadcrumb {
+        
+        padding: 0px 15px;
+        margin-top: 10px;
+        height: 40px;
+        line-height: 40px;
+
+        >li+li:before {
+            content:'';
+        }
+        li {
+            float:left;
+            .btn-group-lg>.btn, .btn-lg {
+                padding: 3px 12px;
+                font-size: 14px;
+            }
+        }
+    }
+   }
+    
+//商品列表
+.goods_list{
+    a{
+        // display:inline;
+        text-decoration:none;
+        &:hover{
+            color:#000;
+        }
+        h4{
+            font-size:14px;
+        }
+        
+    }
+    .goods_list_price{
+        color:red;
+    }
+    .goods_list_comment{
+        font-size:12px;
+        color:#ccc;
+    }
+    .singleGoods + div {
+      
+        padding-top:15px;
+        border-top:1px solid #ccc;
+    }
+}

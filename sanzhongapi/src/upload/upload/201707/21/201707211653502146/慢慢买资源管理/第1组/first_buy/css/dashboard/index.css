@@ -1,0 +1,101 @@
+.view {
+    overflow: hidden;
+}
+
+.menu .thumbnail {
+    border: none;
+    margin-top: 20px;
+}
+
+.menu .thumbnail img {
+    width: 70px;
+}
+
+.menu .col-xs-3 {
+    margin: 0;
+    padding: 0;
+}
+
+.menu .caption {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.menu .col-xs-3 p {
+    margin: 0;
+    text-align: center;
+    font-size: 13px;
+}
+
+.recommend img {
+    width: 100%;
+}
+
+.recommend .recommend_right p {
+    height: 50px;
+}
+
+.recommend .row {
+    margin-bottom: 15px;
+    padding: 15px;
+    border-bottom: 1px solid #f1f1f1;
+}
+
+.recommend .row .price {
+    color: #ff8f31;
+}
+
+.jd_shop span {
+    font-size: 12px;
+}
+
+.jd_shop span i {
+    font-size: 12px;
+}
+
+.tuijian {
+    width: 100%;
+}
+
+.tuijian .navbar {
+    width: 100%;
+    height: 50px;
+    background: #ff9813;
+    padding-top: 11px;
+}
+
+.tuijian .navbar .navbar-brand {
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    opacity: .7;
+    margin-top: -11px;
+}
+
+.tuijian .navbar .navbar-right .iconfont {
+    font-size: 20px;
+    color: #fff;
+    opacity: .7;
+}
+
+.foot_msg {
+    height: 40px;
+    padding: 10px 0 40px 40px;
+    background: #f1f1f1;
+    margin-top: -15px;
+}
+
+.must {
+    display: block;
+    width: 300px;
+    border: 1px solid #ccc;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+.menu #collapseExample a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}

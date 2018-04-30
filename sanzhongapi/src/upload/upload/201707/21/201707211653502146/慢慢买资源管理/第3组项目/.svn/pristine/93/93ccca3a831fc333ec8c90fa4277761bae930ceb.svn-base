@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>慢慢买比价网--手机版</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/index.css"/>
+    <link rel="stylesheet" href="../css/brandTitle.css"/>
+</head>
+<body>
+
+    <div class="layout">
+        <!-- 顶部logo区域 -->
+        <div class="topLogo">
+            <h1 class="logo"><a href="../index.html"><img src="../images/header_logo.png" alt=""/></a></h1>
+            <div class="download"> <a href="javascript:;"><img src="../images/header_app.png" alt=""> </a></div>
+        </div>
+        <!-- 搜索通栏区域 -->
+        <div class="search">
+            <input type="text" class="txt" placeholder="请输入你想比价的商品"/>
+            <input type="button" class="btnsearch" value="搜索"/>
+        </div>
+
+        <!--导航条跳转-->
+
+        <div class="nav">
+            <a href="../index.html">首页 &gt;</a>
+            <a href="javascript:;">品牌大全 &gt;</a>
+        </div>
+
+        <!--热门品牌排行-->
+
+        <div class="Ranking">
+
+            <button class="hotpaih">热门品牌排行</button>
+
+            <ul class="rkList">
+            </ul>
+
+        </div>
+
+
+
+        <!-- 底部功能区域 -->
+        <div class="bottom_info">
+            <div class="title"><a href="javascript:;">品牌排行 <i><img src="../images/more.png" alt=""/></i> </a></div>
+            <div class="footer">
+                <ul class="clearfix">
+                    <li><a href="javascript:;">登录</a></li>
+                    <li><a href="javascript:;">注册</a></li>
+                    <li><a href="javascript:;"><i><img src="../images/top.jpg" alt=""/></i>返回顶部</a></li>
+                </ul>
+                <p class="app-info">
+                    <a href="javascript:;">
+                        <span class="red-app">手机APP下载</span>
+                        <span>慢慢买手机版--掌上手机平台</span> <br/>
+                        <span>m.manmanbuy.com.</span>
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script type="text/html" id="tmpl_rkList">
+
+        {{each result as value index}}
+        <li><a href="./brandDetails.html?brandTitleId={{value.brandTitleId}}">{{value.brandTitle}}<i></i></a></li>
+        {{/each}}
+    </script>
+
+    <script src="../libs/jquery/jquery.js"></script>
+    <script src="../libs/bootstrap/js/bootstrap.js"></script>
+    <script src="../js/template.js"></script>
+    <script src="../js/jquery.cookie.js"></script>
+    <script src="../js/brandTitle.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+~function () {
+    var pageid=o.queryString().pageid?o.queryString().pageid:1;
+    subAjax();
+    // 下拉框选中事件
+    $('main').bind("change", ".isBtn", function () {
+        pageid=$(".isBtn").parent().val();
+        location.href="/pages/getmoneyctrl/list.html?pageid="+pageid;
+    })
+    // 上一页
+    $("main").on("click",".preBtn",function(){
+        if(pageid==1){
+            alert("没有上一页数据了");
+        }else{
+            pageid--;
+            location.href="/pages/getmoneyctrl/list.html?pageid="+pageid;
+        }
+        return false;
+    })
+    // 下一页
+     $("main").on("click",".nextBtn",function(){
+        if(pageid==15){
+            alert("没有下一页数据了");
+        }else{
+            pageid++;
+            location.href="/pages/getmoneyctrl/list.html?pageid="+pageid;
+        }
+        return false;
+    })
+    // 点击商品跳转到相应的详情页
+    $('main').on("click",'li',function(){
+        var productid= $(this).attr("data-id");
+        
+        location.href="/pages/getmoneyctrl/product.html?productid="+productid;
+        return false;
+    })
+
+
+    function subAjax(){
+        $.ajax({
+        url: config.getUrl('/api/getmoneyctrl'),
+        type: 'get',
+        data: { pageid: pageid-1 },
+        success: function (data) {
+            for (var i = 0; i < data.result.length; i++) {
+                var num = data.result[i].productComCount.replace(/[^0-9]/ig, "");
+                data.result[i].productComCount = num;
+            }
+            data.pageid=pageid;
+            data.arr = [];
+            data.count = Math.ceil(data.totalCount / data.pagesize);
+            for (var j = 0; j < data.count; j++) {
+                data.arr[j] = j;
+            }
+            var tplStr = template("gmc_tpl", data);
+            $('main').html(tplStr);
+            $(".isBtn").parent().val(pageid);
+        }
+    })
+    }
+}()

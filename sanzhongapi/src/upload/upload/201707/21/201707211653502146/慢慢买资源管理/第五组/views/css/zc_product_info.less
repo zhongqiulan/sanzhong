@@ -1,0 +1,231 @@
+@import 'inlandiscount.less';
+a:focus,
+a:active {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  /* a标签点击高亮  */
+}
+.views {}
+
+// 内容模块
+.content {
+    // position: relative;
+    .description {
+        // float: left;
+        word-break: break-all;
+        color: #5a5a5a;
+        padding-left: 10px;
+        .title {
+            font-size: 18px;
+            font-weight: 700;
+        }
+        >p {
+            font-size: 16px;
+            line-height: 24px;
+            margin-top: 6px;
+            margin-bottom: 6px;
+        }
+        .price {
+            color: #ff6c00;
+            font-weight: 700;
+            font-size: 15px;
+        }
+        .subtitle {
+            font-size: 12px;
+            color: #999999;
+        }
+        .coupon {
+            a {
+                display: inline-block;
+                color: #4682c5;
+            }
+        }
+    }
+    .pic {
+        float: right;
+        margin-top: 130px;
+        overflow: hidden;
+        >img {
+            width: 120px;
+        }
+    }
+}
+
+// 前往购买
+.btnBuy {
+    margin-top: 50px;
+    padding: 0 15px;
+    a {
+        background-color: #FF9000;
+        color: #fff;
+        padding: 10px 0;
+        border-radius: 4px;
+        text-align: center;
+    }
+}
+
+// 评论区
+// .coments {
+//     padding: 0 15px;
+//     margin-top: 20px;
+//     h4 {}
+//     .content_comment {
+//         border: 2px solid #ECEAE8;
+//         box-sizing: border-box;
+//         border-radius: 5px;
+//         .input_area {
+//             height: 68px;
+//             outline: none;
+//             resize: none;
+//             overflow-x: hidden;
+//             overflow-y: auto;
+//             border: none;
+//             color: #666;
+//             width: 100%;
+//         }
+//         .submitBtn {
+//             width: 100%;
+//             height: 36px;
+//             background-color: #fbfbfb;
+//             border-top: 1px solid #f2f2f2;
+//             .ctlBtn {
+//                 padding: 0px 15px;
+//                 background-color: #ff841d;
+//                 border: none;
+//                 height: 100%;
+//                 float: right;
+//                 color: #fff;
+//             }
+//         }
+//     }
+// }
+// // 最新评论
+// .newcomment {
+// //   display: none;
+//     margin-top: 15px;
+//     >h3 {
+//         font-size: 18px;
+//         padding: 0 15px;
+//     }
+//     .media {
+//         margin-top: 30px;
+//         padding: 0 15px 10px;
+//         border-bottom: 1px solid #ccc;
+//         .media-left {
+//             img.media-object {
+//                 width: 40px;
+//                 border-radius: 20px;
+//             }
+//         }
+//     }
+//     .media-body {
+//         .media-heading {
+//             display: inline-block;
+//             color: #5997c0;
+//             font-size: 13px;
+//         }
+//         .time {
+//             display: inline-block;
+//             float: right;
+//             color: #999999;
+//             font-size: 13px;
+//         }
+//         .user_comment {
+//             font-size: 15px;
+//         }
+//     }
+// }
+.bottom {
+    // padding: 0 15px;
+}
+
+.tit {
+    padding: 0 10px;
+    margin-top: 20px;
+    font-size: 16px;
+    h4 {}
+}
+
+.reply {
+    padding: 0 10px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    .form {
+        border: 2px solid #ECEAE8;
+        border-radius: 5px;
+    }
+    .input_area {
+        height: 68px;
+        outline: none;
+        resize: none;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: none;
+        color: #666;
+        width: 100%;
+    }
+    .ctrl {
+        width: 100%;
+        height: 36px;
+        background-color: #fbfbfb;
+        border-top: 1px solid #f2f2f2;
+        .tjdp {
+            width: 100px;
+            background-color: #ff841d;
+            border: none;
+            height: 100%;
+            float: right;
+            color: #fff;
+            display: inline;
+            font-size: 16px;
+            margin-right: -2px;
+        }
+    }
+}
+
+// 最新评论
+.newcomment_content {
+    //   display: none;
+    margin-top: 15px;
+    color: #606060;
+    >h3 {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .media {
+        // margin-top: 30px;
+        padding: 0 15px 0px;
+        border-bottom: 1px solid #ccc;
+        .media-left {
+            img.media-object {
+                width: 40px;
+                border-radius: 20px;
+            }
+        }
+    }
+    .media-body {
+        .media-heading {
+            display: inline-block;
+            color: #5997c0;
+            font-size: 13px;
+        }
+        .time {
+            display: inline-block;
+            float: right;
+            color: #999999;
+            font-size: 13px;
+        }
+        .user_comment {
+            font-size: 15px;
+            margin-top: 5px;
+        }
+    }
+}
+// loading部分
+.loading {
+    img {
+        width: 32px;
+        margin: 10px auto;
+    }
+}

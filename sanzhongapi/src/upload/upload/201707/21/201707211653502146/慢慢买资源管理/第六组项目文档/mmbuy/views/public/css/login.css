@@ -1,0 +1,82 @@
+.login_input {
+  width: 100%;
+  padding: 15px;
+  background: #f1f1f1;
+  margin-top: 15px;
+}
+.login_input .uinp {
+  width: 100%;
+  padding: 5px 10px;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+}
+.login_input a {
+  display: block;
+  text-decoration: none;
+  margin: 0;
+  height: 40px;
+  border-radius: 5px;
+  background: #ffaf47;
+  font-size: 20px;
+  color: #f6f6f6;
+}
+.login_input a .login_uinp {
+  display: block;
+  margin: 0;
+  height: 40px;
+  border-radius: 5px;
+  background: #ffaf47;
+  font-size: 20px;
+  color: #f6f6f6;
+}
+.login_check {
+  background: #f1f1f1;
+  padding: 10px 15px;
+}
+.login_check span {
+  vertical-align: top;
+}
+.login_check p {
+  margin: 30px 0  ;
+  color: #666;
+}
+.login_foot {
+  background: #888;
+  padding: 15px;
+  position: relative;
+}
+.login_foot span {
+  padding: 10px;
+}
+.login_foot p {
+  display: inline-block;
+  font-size: 18px;
+  color: #ccc;
+}
+.login_foot .p1 {
+  vertical-align: top;
+}
+.login_foot .p2 {
+  position: absolute;
+  top: 35px;
+  left: 94px;
+}
+.login_foot a {
+  display: inline-block;
+  width: 80px;
+  height: 35px;
+  line-height: 35px;
+  border: 1px solid #ffaf47;
+  text-align: center;
+  background: #ffaf47;
+  color: #fff;
+  border-radius: 5px;
+}
+.input_div_red {
+  padding-bottom: 8px;
+  color: red;
+}
+.input_div_green {
+  padding-bottom: 8px;
+  color: green;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../css/index/index.css">
+    <link rel="stylesheet" href="../../css/base.css">
+    <link rel="stylesheet" href="../../css/brand/list.css">
+</head>
+<body>
+
+<div class="views">
+    <header class="clearfix">
+        <div class="logo pull-left">
+            <a href="javascript:;" class="header">
+                <img src="../../images/header_logo.png" alt="">
+            </a>
+        </div>
+        <div class="app-download pull-right">
+            <a href="javascript:;">
+                <img src="../../images/header_app.png" alt="">
+            </a>
+        </div>
+
+    </header>
+    <div class="searchBox">
+        <input type="text" placeholder="请输入你想比价的产品" aria-describedby="basic-addon2">
+        <span class="search_btn">搜索</span>
+    </div>
+</div>
+
+<div class="main">
+    <!-- 导航标题 -->
+    <div class="nav">
+        <a href="../../index.html">首页</a>
+        >
+        <a href="./brandlist.html">品牌大全</a>
+    </div>
+    <!-- 品牌列表 -->
+    <div class="model">
+
+    </div>
+    <!-- 品牌销量排行列表 -->
+    <div class="product">
+
+    </div>
+</div>
+
+
+
+<!-- 品牌列表 -->
+<script type="text/template" id="temp_brand_list">
+    <div class="model-title">
+        <h3>平板电视哪个品牌好</h3>
+    </div>
+    <div class="model-list">
+        <ul>
+            {{each result as v i}}
+            <li>
+                <a href="./productlist.html?id={{v.brandTitleId}}" >
+                    {{if i>2}}
+                    <em>{{i+1}}</em>
+                    {{else}}
+                    <em class="top{{i+1}}">{{i+1}}</em>
+                    {{/if}}
+                    <div class="inner">
+                        <div class="tit">{{v.brandName}}</div>
+                        <p>{{v.brandInfo}}</p>
+                    </div>
+                </a>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+</script>
+
+<!-- 品牌销量排行列表 -->
+<script type="text/template" id="temp_brand_product">
+        <div class="product-title media-middle">
+            <h3><a href="./productlist.html">平板电视产品销量排行</a></h3>
+        </div>
+
+        <ul class="product-list">
+            {{each result as v i}}
+            {{if i<4}}  
+            <li class="media">
+                <div class="media-left pic">
+                    {{#v.productImg}}
+                </div>
+                <div class="media-body info">
+                    <h4 class="media-heading">{{v.productName}}</h4>
+                    <div class="price">
+                        <em>{{v.productPrice}}</em>
+                        <span></span>
+                    </div>
+                    <div class="other">
+                        <span>{{v.productQuote}}</span>
+                        <span>全网{{v.productCom}}</span>
+                    </div>
+                </div>
+            </li>
+            {{/if}}
+            {{/each}}
+        </ul>
+</script>
+
+<!-- 产品评论列表 -->
+<!--<script type="text/template" id="tpl_comment_list">
+        <div class="comment-title">
+            <h3><a href="./commentlist.html">平板电视最有用的用户评论</a></h3>
+        </div>
+        <div class="comment-list">
+            <ul>
+                {{each result as v i}}
+                <li>
+                    <a href="javascript:;">
+                        <img src="../../images/gengduo.png" alt="">
+                        <span>LG 49LF5400 49英寸 全高清 普通LED液晶电视</span>
+                    </a>
+                    <div class="plbox">
+                        <a href="javascript:;">
+                            <div class="username">
+                                8***:
+                                <span></span>
+                                <i>2014/12/20</i>
+                            </div>
+                            <div class="con">
+                                这款液晶电视对比其它品牌电视最喜欢的是采用IPS硬屏液晶面板，屏幕比较坚固，质量应该比其它液晶面板会好，极其突出了这款电视的性价比；色彩使用了1920*1080P的分辨率，三重XD引擎，提高了色质的水准、对比度和清晰度，呈现的画质和性能画面色彩也比较清晰，显示效果也比较细腻自然；外观方面采用生动锐利铜钱纹样设计，简约的白色电视底座搭配银色的窄边框感觉比较简单时尚，也是比较喜欢的；功能使用简单，菜单键进入图像，生意，设置，时间，选项，输入，我的媒体8个功能主题，2组HDMI接口满足了我的DVD设备和网络电视机顶和的使用，1组数字音响输出满足我外接5.1音响系统的需要，画面比例点对点扫描，让我接电脑主机的画面设置更简单；炫亮人声Ⅰ，畅听清晰对话的设计。自动识别和加强电影和电视节目中的人声的功能，使我听到的背景声音更清晰突显，标注.音乐.电影.运动.游戏五个声音模式选择满足了日常视听的需求。LG的国际品牌也是比较让大家信赖的。
+                            </div>
+                        </a>
+                    </div>
+                </li>
+                {{/each}}
+            </ul>
+        </div>
+</script>-->
+
+
+<script src="../../lib/jquery/jquery.min.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="../../lib/artTemplate/template.js"></script>
+
+<script src="../../js/utils.js"></script>
+<script src="../../js/brand/list.js"></script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+
+getUrl()
+
+   var currentPage = 1;
+    var totalPage;
+
+function getUrl(){
+   
+    var arr=[];
+    currentPage = currentPage || 1;
+    var url=config.getUrl('/api/getmoneyctrl');
+    $.ajax({
+        url:url,
+        dataType:'json',
+        type:'get',
+        data:{
+          pageid:currentPage,
+        },
+        success:function(data){
+        //    console.log(data)
+          var str=template('haitao-content-tpl',data);
+           $('.ht-content').html(str); 
+           //总页数=总条数/当前页显示的条数
+           totalPage=Math.ceil(data.totalCount/data.pagesize);
+           for(var i=1;i <= totalPage; i++){
+               arr.push(i);
+           }
+            // 数组强加给后台
+           data.totalPage=arr
+             var str=template('select_tpl',data);
+           $('.form-control').html(str)
+        }
+    })
+
+}
+
+// 上一页
+$(".previous").on('click',function(){
+    // alert('上');
+    if(currentPage > 1){ 
+      currentPage--;
+    }else{
+        alert('已经是第一页了');
+         return false;
+    }
+     getUrl();
+})
+                             
+// 下一页
+$(".next").on('click',function(){
+    // alert('下')
+    if(currentPage >= totalPage){
+        alert('已经是最后一页了')
+        return false;
+    }else{
+        currentPage++;
+    }
+     getUrl();
+})
+
+
+
+// 点击返回顶部
+$('.backft').on('click',function(){
+   $(" body").animate({scrollTop:0},500)
+})
+
+
+
+$('.ht-content').on('click','.media',function(){
+    //   alert(12)
+    var id=$(this).attr('data-id')
+    location.href='./moneyctrlList.html?productid='+id;
+})
+
+

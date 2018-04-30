@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name='viewport' content='width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no'>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>慢慢买-平板电视什么牌子好,平板电视十大品牌排行榜</title>
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="../../lib/bootstrap/css/bootstrap-theme.css">
+  <!---->
+  <link rel="stylesheet" href="../../css/brandZone/ranking.css">
+
+</head>
+
+<body>
+
+  <div class="bz_view">
+    <!--头部-->
+    <header>
+      <div class="logo"></div>
+      <div class="search"></div>
+    </header>
+
+    <!--头部-->
+    <div class="main">
+      <!--路径导航-->
+      <ol class="bz_nav breadcrumb">
+        <li><a href="#">首页</a></li>
+        <li><a href="#">品牌大全</a></li>
+        <li><a href="#" class="active">平板电视哪个牌子好</a></li>
+      </ol>
+      <!--路径导航-->
+
+
+      <!--品牌排行 star-->
+      <!--rk_list_tpl模板xuanr-->
+      <div class="bz bz_brans">
+      </div>
+      <!--品牌排行 end-->
+
+      <!--品牌销量排行star-->
+      <div class="bz bz_sales">
+      </div>
+      <!--品牌销量排行end-->
+
+      <!--用户评论star-->
+      <div class="bz bz_comment">
+       
+      </div>
+      <!--用户评论end-->
+    </div>
+    <!--main-->
+  </div>
+  <!--view-->
+</body>
+<!--品牌排行模板-->
+<script type="text/template" id="rk_list_tpl">
+  <div class="rk_title" name="{{result[0].categoryId}}">平板电视哪个牌子好</div>
+  <div class="rk_list">
+    <ul>
+      {{each result as v i}}
+      <li>
+        <i class="glyphicon glyphicon-menu-right"></i>
+        <a class="clearfix" href="prolist.aspx?id=4&amp;ppid=4" title="海信平板电视">
+            <em class="top{{v.brandId +1}}">{{v.brandId + 1}}</em>
+            <div class="inner">
+              <div class="tit">{{v.brandName}}</div>
+              <p>{{v.brandInfo}}</p>
+            </div>
+         </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</script>
+<!--品牌排行模板-->
+
+<!--品牌销量模板-->
+<script type="text/template" id="bz_sales_tpl">
+  <div class="rk_title">平板电视产品销量排行</div>
+  <div class="sales_content">
+    <ul>
+      {{each result as v i}}
+      <li>
+        <a class="clearfix dataid"  data-id="{{v.productId}}" href="brands.html?productId={{v.productId}}" title="夏普(SHARP) LCD-70SU665A 70英寸 4K超高清智能液晶电视">
+          <div class="pic">
+            {{#v.productImg}}
+          </div>
+          <div class="info">
+            <div class="tit">{{v.productName}}</div>
+            <div class="price">
+              <em>{{v.productPrice}}</em>
+              <span class="star">
+                    <em class="star5 glyphicon glyphicon-star"></em>
+                  </span>
+            </div>
+            <div class="other">
+              <em>{{v.productQuote}}</em>
+              <em>{{v.productCom}}</em>
+            </div>
+          </div>
+        </a>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</script>
+<!--品牌销量模板-->
+
+<!--用户评论模板-->
+<script type="text/template" id="bz_comment_tpl">
+  <div class="rk_title" name="" title="平板电视最有用的用户评论">平板电视最有用的用户评论</div>
+  <div class="comment_list">
+    <ul>
+      {{each result as v i}}
+      <li>
+
+        <a href="bijia.aspx?id=303821">
+          <div class="protit">
+            <div class="pic">
+              <img src="http://pro.zuyushop.com:8015/ProPic/201411/small80/Thumb_2014110008364442033.jpg" width="80" alt="LG 49LF5400 49英寸 全高清 普通LED液晶电视">
+            </div>
+            <div class="tit">{{v.comFrom}}</div>
+          </div>
+        </a>
+        <div class="plbox">
+          <a href="discomment.aspx?id=303821&amp;cid=6259370">
+            <div class="name">{{v.comName}}：
+              <span class="star">
+                    <em class="star5 glyphicon glyphicon-star"></em>
+                    </span>
+              <i>{{v.comTime}}</i>
+            </div>
+            <div class="con">{{v.comContent}}</div>
+          </a>
+        </div>
+      </li>
+      {{/each}}
+    </ul>
+  </div>
+</script>
+<!--用户评论模板-->
+
+
+<script src="../../lib/jquery/jquery.js"></script>
+<script src="../../lib/bootstrap/js/bootstrap.js"></script>
+<script src="../../lib/template/template.js"></script>
+<script src="../../js/common/geturl.js"></script>
+<!-- 获取接口 -->
+<script src="../../js/brandZone/ranking.js"></script>
+
+</html>

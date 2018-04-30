@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!-- <meta http-equiv="X-UA-Compatible" content="ie=edge"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,maximum-scale=1,minimum-scale=1,user-scalable=no">
+    <title>海淘折扣子页详细信息</title>
+    <link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/cxm-haitaolist.css">
+</head>
+
+<body>
+    <div class="view">
+        <!--头部  -->
+        <div class="htlist-header">
+            <a href="./cxm-haitao.html" class='back'>
+                 <i class='glyphicon glyphicon-chevron-left'></i>
+             </a>
+            <h2>海淘折扣</h2>
+            <a href="#" class='app'></a>
+        </div>
+
+        <!--详细信息页  -->
+        <!--在下面有模板渲染  -->
+         <div class="list-content">
+            <!-- <h3>DELL 戴尔 Inspiron i5568 2合1 15.6英寸笔记本电脑（i7-6500U 8GB 1TB） 翻新款</h3>
+            <h4>$519.99（需用码，约￥4000）</h4>
+            <div class='info'>
+                <span class='mall'>京东商城</span>
+                <span class='time'>07-19 09:37</span>
+                <span class='author'>茉莉妈妈 / 慢慢买</span>
+            </div>
+            <div class='pull-right list-small'>
+                <img src="../images/haitao-page1.png" alt="">
+            </div>
+            <div class='conn'>
+                <p>
+                    规格21毫升*1瓶，无香型，可用约40晚，严选日本进口原药，符合国家农业部相关要求，健康安全。能有效地驱除蚊虫。适用于所有雷达电热蚊香液加热器。
+                </p>
+                <p>
+                    京东售价9.9元，日常15.9元，需要可入手。华东地区无货。
+                </p>
+            </div>
+            <div class="feedback">
+                <p>我要举报</p>
+                <p>已涨价</p>
+                <p>已售罄</p>
+                <p>其他举报</p>
+                <p>请选择举报理由：</p>
+                <p>劣质商品</p>
+                <p>信息涉及黄色，反动内容</p>
+                <p>虚假优惠信息</p>
+                <p>其他</p>
+                <a href="#">确认提交</a>
+            </div>
+            <div class="list-big">
+                <img src="../images/haitao-page2.png" alt="">
+            </div>
+            <a href="#" class='shopping'><i class='glyphicon glyphicon-shopping-cart'></i>前往购买</a>
+            <p class='discuss'>发表评论</p>
+            <div class='discuss-list'>
+                <textarea rows="" cols=""></textarea>
+                <div class='discuss-info'>
+                    <button type="" class='pull-right'>发表评论</button>
+                </div>
+            </div>
+            <p class='discuss'>热门评论</p>
+            <p class='discuss'>最新评论</p> -->
+        </div> 
+
+        <!--最后一页  -->
+        <div class='finally'>
+            <p>已经是最后一页！</p>
+        </div>
+
+        <!--跳转页面  -->
+        <div class="htlist-jump">
+            <a href="../index.html">首页</a>&nbsp;>&nbsp;
+            <a href="./cxm-haitao.html">海淘购</a>&nbsp;>&nbsp;
+            <a href="#">KENNETH COLE REACTION 男士真皮商务公文包</a>
+        </div>
+
+        <!--底部  -->
+        <div class="footer">
+            <div class="footer-app">
+                <div class="media">
+                    <div class="media-left">
+                        <a href="#">
+                           <img class="media-object" src="../images/htlist-logo.png" alt="...">
+                        </a>
+                    </div>
+                    <div class="media-body media-app">
+                        <h4 class="media-heading">慢慢买APP</h4>
+                        专注全网比价，每一次购物都在为你省钱！
+                    </div>
+                    <div class="btn">
+                        <a href="#">立即打开</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-login">
+                <div class="row footer-top">
+                    <div class="col-xs-4 footer-nav"><a href="#">登录</a></div>
+                    <div class="col-xs-4 footer-nav"><a href="#">注册</a></div>
+                    <div class="col-xs-4 footer-nav"><a href="#"><img src="../images/haitao-top.jpg" alt="">返回顶部</a></div>
+                </div>
+            </div>
+            <div class="footer-shopping">
+                <div class="row">
+                    <div class="col-xs-4  shopping-left"><a href="#"><i class='glyphicon glyphicon-edit'></i><span>评论</span></a></div>
+                    <div class="col-xs-8  shopping-right"><a href="#" class='shopping'><i class='glyphicon glyphicon-shopping-cart'></i>&nbsp;前往购买</a></div>
+                </div>
+            </div>
+             <div class="footer-img">
+                <a href="#">
+                    <img src="../images/haitao4.png" alt="">
+                </a>
+           </div>
+        </div>
+    </div>
+</body>
+<script src='../lib/jquery/jquery.js'></script>
+<script src='../lib/template/template.js'></script>
+<script src='../lib/bootstrap/js/bootstrap.js'></script>
+<script src='../js/cxm-haitaolist.js'></script>
+
+<script type='text/html' id='haitaolist_tpl'>
+    <!-- <div class="list-content"> -->
+            <h3>{{productName}}</h3>
+            <h4>{{productPinkage}}</h4>
+            <div class='info'>
+                <span class='mall'>{{productFrom}}</span>
+                <span class='time'>{{productTime}}</span>
+                <span class='author'>{{productTips}}</span>
+            </div>
+            <div class='pull-right list-small'>
+                {{#productImgSm}}
+                <!-- <img src="{{#productFromImgSm}}" alt=""> -->
+            </div>
+            <div class='conn'>
+                <p>
+                   {{productInfo1}}
+                </p>
+                <p>
+                   {{productInfo2}}
+                </p>
+            </div>
+            <div class="feedback">
+                <p>我要举报</p>
+                <p>已涨价</p>
+                <p>已售罄</p>
+                <p>其他举报</p>
+                <p>请选择举报理由：</p>
+                <p>劣质商品</p>
+                <p>信息涉及黄色，反动内容</p>
+                <p>虚假优惠信息</p>
+                <p>其他</p>
+                <a href="#">确认提交</a>
+            </div>
+            <div class="list-big">
+                {{#productImg2}}
+                <!-- <img src="{{#productImgLg}}" alt=""> -->
+            </div>
+            <a href="#" class='shopping'><i class='glyphicon glyphicon-shopping-cart'></i>前往购买</a>
+            <p class='discuss'>发表评论</p>
+            <div class='discuss-list'>
+                <textarea rows="" cols=""></textarea>
+                <div class='discuss-info'>
+                    <button type="" class='pull-right'>发表评论</button>
+                </div>
+            </div>
+            <p class='discuss'>热门评论</p>
+            <p class='discuss'>最新评论</p>
+        <!-- </div> -->
+</script>
+</html>

@@ -1,0 +1,145 @@
+body {
+  background-color: #f7f7f7;
+}
+.CDPNav .navbar {
+  background-color: #ff8b00;
+  margin: 0;
+}
+.CDPNav .navbar .CDPNav-er {
+  padding: 0;
+}
+.CDPNav .navbar .CDPNav-er .headText {
+  line-height: 50px;
+  position: relative;
+  margin: 0;
+  width: 100%;
+  text-align: center;
+}
+.CDPNav .navbar .CDPNav-er .headText .headArrows {
+  margin: 0;
+  position: absolute;
+  left: 24px;
+}
+.CDPNav .navbar .CDPNav-er .headText .headArrows span {
+  line-height: 50px;
+  font-size: 28px;
+}
+.CDPNav .navbar .CDPNav-er .headText span {
+  line-height: 50px;
+  margin: 0;
+  padding: 0;
+  font-weight: 900;
+  font-size: 24px;
+  color: #fff;
+  width: 100%;
+}
+.gasNav {
+  position: relative;
+  background-color: #fff;
+  font-size: 16px;
+  padding: 0;
+}
+.gasNav .leftNav .on {
+  display: inline-block;
+  float: left;
+  width: 29%;
+  text-align: center;
+}
+.gasNav .leftNav .on .topNav {
+  padding: 10px 0 10px;
+}
+.gasNav .leftNav .on .topNav span {
+  font-size: 12px;
+}
+.gasNav .search {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  font-size: 28px;
+  font-weight: 100;
+}
+.gasNav .zhtai {
+  position: relative;
+  background-color: #f7f7f7;
+  padding-left: 10px;
+}
+.gasNav .zhtai .src .sc_sp {
+  position: absolute;
+  left: 15px;
+  top: 10px;
+  z-index: 5;
+  color: #ccc;
+}
+.gasNav .list {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 45px;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1;
+  box-shadow: 0px 9px 21px -13px #333;
+}
+.gasNav .list ul {
+  text-align: left;
+  padding-left: 0;
+}
+.gasNav .list ul li {
+  padding: 10px 10px 10px;
+}
+.gasNav .list ul .gasline {
+  padding: 0;
+  border-top: 1px solid #ccc;
+}
+.gasSP {
+  padding-right: 15px;
+  font-family: "微软雅黑";
+}
+.gasSP .splb {
+  float: left;
+  width: 50%;
+  overflow: hidden;
+  padding-top: 15px;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+.gasSP .splb .bj {
+  position: relative;
+  background-color: #fff;
+  padding: 8px;
+}
+.gasSP .splb .bj .SPTop {
+  padding-bottom: 5px;
+}
+.gasSP .splb .bj .SPTop img {
+  width: 100%;
+}
+.gasSP .splb .bj .SPBottom {
+  overflow: hidden;
+}
+.gasSP .splb .bj .SPBottom .bt {
+  width: 1000%;
+  font-size: 16px;
+}
+.gasSP .splb .bj .SPBottom .bb {
+  padding-top: 5px;
+}
+.gasSP .splb .bj .SPBottom .bb .bbl {
+  float: left;
+  color: red;
+}
+.gasSP .splb .bj .SPBottom .bb .bbl em {
+  font-size: 14px;
+}
+.gasSP .splb .bj .SPBottom .bb .bbl i {
+  font-size: 26px;
+}
+.gasSP .splb .bj .SPBottom .bb .bbr {
+  position: absolute;
+  bottom: 10px;
+  right: 8px;
+  background-color: #ff9501;
+  padding: 5px;
+  border-radius: 3px;
+  color: #f7f7f7;
+}

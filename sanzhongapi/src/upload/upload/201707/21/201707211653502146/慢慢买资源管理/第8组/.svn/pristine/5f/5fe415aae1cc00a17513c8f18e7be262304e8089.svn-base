@@ -1,0 +1,15 @@
+    <header>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-xs-4">
+                    <a class="icon iconfont icon-fanhui"></a>
+                </div>
+                <div class="col-xs-4 inlandL">
+                    <p class="inlandD">国内折扣</p>
+                </div>
+                <div class="col-xs-4">
+                    <a class="app_donwload"></a>
+                </div>
+            </div>
+        </div>
+    </header>

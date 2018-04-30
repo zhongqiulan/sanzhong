@@ -1,0 +1,61 @@
+/*
+    页面初始化
+*/
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+}
+.clearfloat:after {
+  content: "";
+  display: block;
+  visibility: hidden;
+  height: 0;
+  line-height: 0;
+  clear: both;
+}
+.clearfloat {
+  zoom: 1;
+}
+img {
+  width: 100%;
+  display: block;
+}
+/* 头部模块*/
+.headers {
+  height: 50px;
+  background: #ff841d;
+  width: 100%;
+  position: relative;
+  padding-left: 8px;
+  box-sizing: border-box;
+}
+.headers a {
+  width: 40px;
+  height: 40px;
+  display: block;
+  box-sizing: border-box;
+  padding-left: 12px;
+  padding-top: 5px;
+  position: absolute;
+  line-height: 40px;
+}
+.headers .app {
+  padding: 0;
+  position: absolute;
+  right: 10px;
+  top: 6px;
+}
+.headers #tit {
+  color: #fff;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  margin: 0;
+}

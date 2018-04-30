@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../libs/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="../css/公共的.css">
+    <link rel='stylesheet' href='../css/inlandiscount.css' />
+</head>
+
+<body>
+    <!--头部-->
+    <div class="mmm_top">
+        <div class="top_conten">
+            <h4 class="header_title">国内折扣</h4>
+            <a href="../index.html">
+                <span class="top_img_left iconback glyphicon glyphicon-menu-left"></span>
+                <span class="top_img_right"></span>
+            </a>
+
+        </div>
+    </div>
+    <!--******************网页主体start****************-->
+    <div class="zhekou_content">
+        <ul class="clearfix">
+
+            <!--<li>
+                <a href="javascript:;">
+                    <img src="../../images/zhekou/zhekou1.jpg" alt="">
+                    <div class="descripton">
+                        <h4 class="product_des">炫龙 炎魔T50  游戏本 ( I7 7700HQ+GTX1050Ti 4G+128G SSD 1T HHD+8G内存 )</h4>
+                        <p class="price">5299 (需用券)</p>
+                        <p class="bottom_des"> 
+                            <span>天猫商城</span>
+                            <span>|</span>
+                            <span>2017/7/18 15:51</span>
+                        </p>
+                    </div>
+                </a>
+            </li>-->
+        </ul>
+    </div>
+    <!--loading部分-->
+    <div class="loading">
+        <img src="../images/inlandiscount/loading.gif" alt="">
+    </div>
+    <!--******************网页主体end****************-->
+
+    <!--搜索框-->
+    <div class="mmm_search clearfix">
+        <div class="mmm_conten">
+            <span>
+            <input type="text" placeholder="请输入你想比较的商品">
+       </span>
+            <span>
+         <a href="javascript:;">按钮</a>
+       </span>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!--底部-->
+    <div class="mmm_bottom clearfix">
+        <ul>
+            <li></li>
+            <li class="clearfix">
+                <a href="#">登录</a>
+                <a href="#">注册</a>
+                <a href="#"><span class="glyphicon glyphicon-arrow-up"></span>返回顶部</a>
+            </li>
+            <li class="clearfix hehe">
+
+                <p>
+                    <span>手机APP下载</span>
+                    <span>慢慢买手机版--</span>
+                    <span>掌上比价平台</span>
+                </p>
+                <h4>m.manmanbuy.com</h4>
+            </li>
+        </ul>
+
+    </div>
+
+    <script type="text/template" id="zhekou_list_tpl">
+
+        {{each result as v i}}
+        <li data-id="{{v.productId}}">
+            <a href="product_info.html?productId={{v.productId}}">
+                <!--<img src="{{v.productImg}}" alt="">-->
+                {{#v.productImg}}
+                <div class="descripton">
+                    <h4 class="product_des">{{v.productName}}</h4>
+                    <p class="price">{{v.productPrice}}</p>
+                    <p class="bottom_des">
+                        <span>{{v.productFrom}}</span>
+                        <span>|</span>
+                        <span>{{v.productTime}}</span>
+                    </p>
+                </div>
+            </a>
+        </li>
+        {{/each}}
+
+    </script>
+    <script src="../libs/jquery/jquery.min.js"></script>
+    <script src="../libs/artTemplate/template.js"></script>
+    <script src="../js/inlandiscount/inlandiscount.js"></script>
+</body>
+
+</html>

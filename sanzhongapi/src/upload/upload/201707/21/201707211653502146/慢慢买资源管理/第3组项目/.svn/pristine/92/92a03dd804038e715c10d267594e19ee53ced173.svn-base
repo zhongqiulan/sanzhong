@@ -1,0 +1,262 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,ol {
+    list-style: none;
+}
+
+img {
+    display: block;
+}
+
+a {
+    display: block;
+    color: initial;
+    text-decoration: none;
+}
+
+input {
+    outline-style: none;
+}
+
+
+/*图标子图部分*/
+@font-face {font-family: "iconfont";
+    src: url('../fonts/iconfont.eot?t=1500372688998'); /* IE9*/
+    src: url('../fonts/iconfont.eot?t=1500372688998#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../fonts/iconfont.woff?t=1500372688998') format('woff'), /* chrome, firefox */
+    url('../fonts/iconfont.ttf?t=1500372688998') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+    url('../fonts/iconfont.svg?t=1500372688998#iconfont') format('svg'); /* iOS 4.1- */
+}
+body {
+    margin:0;
+}
+
+.iconfont {
+    font-family:"iconfont" !important;
+    font-size:16px;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-web-icon-:before { content: "\e6bb"; }
+
+
+/*顶部logo部分*/
+
+
+.topLogo {
+    padding: 16px 47px 12px 205px;
+    background-color: #FF841D;
+    position: relative;
+    height: 50px;
+}
+.topLogo h1 {
+    position: absolute;
+    left: 16px;
+    top: 12px;
+    width: 188px;
+    height: 30px;
+    margin: 0;
+}
+.topLogo h1 a {
+    width: 100%;
+}
+.topLogo h1 a img {
+    width: 100%;
+}
+.topLogo .download {
+    position: absolute;
+    right: 4px;
+    top: 4px;
+    width: 40px;
+    height: 40px;
+    padding: 3px;
+}
+.topLogo .download img {
+    width: 100%;
+}
+
+
+/*搜索框部分*/
+.search {
+    height: 50px;
+    border-bottom: 1px solid #E6E6E6;
+    padding: 10px;
+    position: relative;
+}
+.search .txt {
+    background-color: #F1F1F1;
+    border: none;
+    height: 30px;
+    padding-left: 22px;
+    border-radius: 20px;
+    width: 90%;
+    position: absolute;
+}
+
+.search .btnsearch {
+    border-radius: 20px;
+    font-size:17px;
+    line-height: 34px;
+    color: #fff;
+    background-color: #FF841D;
+    padding: 0px 15px;
+    border: none;
+    height: 30px;
+    position: absolute;
+    right: 10px;
+}
+
+/*控制面板实现跳转区域*/
+.controlpanel {
+    padding-top: 20px;
+}
+.cxs {
+    /*width: 70px;*/
+    height: 90px;
+    text-align: center;
+}
+.cxs img {
+    width: 55px;
+    margin: 0 auto;
+}
+.row {
+    margin:0 0 20px 0;
+}
+.cxs p {
+    font-size: 12px;
+    color: #5A5A5A;
+    margin:5px 0 20px 0;
+}
+
+
+
+/*超值折扣区域*/
+.supyh {
+
+}
+.title {
+    height: 35px;
+    background-color: #ff9000;
+    background: -webkit-gradient(linear,0 0,0 100%,from(#ffaf47),to(#ff9000));
+    color: #fff;
+    line-height: 35px;
+}
+ .title a{
+    display: block;
+    color: inherit;
+    font-weight: 700;
+    padding-left: 10px;
+    font-size: 18px;
+    position: relative;
+    text-decoration: none;
+}
+ .title a i{
+    display: block;
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+ .title a i img {
+    width: 100%;
+}
+
+/*媒体对象模块*/
+
+.supyh .media {
+    padding: 12px 10px 0;
+    margin: 0;
+    /*position: relative;*/
+}
+.supyh .media a{
+    text-decoration: none;
+}
+.supyh .media a img {
+    width: 100px;
+    height: 100px;
+}
+.supyh .media a h4 {
+    font-size: 15px;
+}
+.supyh .media a h4 span {
+    color: #ff6c00;
+    font-size: 14px;
+}
+.supyh .media p {
+    color: #a1a1a1;
+    margin: 20px 0 20px;
+    /*position: absolute;
+    bottom: 20px;*/
+}
+.supyh .media p span {
+    font-size: 12px;
+}
+
+.more_info {
+    border-radius: 5px;
+    display: block;
+    width: 95%;
+    margin: 10px auto 0;
+    height: 30px;
+    background-color: #F9F9F9;
+    border: 1px solid #ccc;
+    text-align: center;
+    line-height: 30px;
+    color: #333;
+    font-size: 12px;
+}
+
+.bottom_info {
+    background-color:#F2F2F2;
+    padding-top: 10px;
+}
+.bottom_info .title {
+    margin: 20px  0 10px 0;
+}
+
+.bottom_info ul {
+    border: 1px solid #c0c0c0;
+    border-left: none;
+    border-right: none;
+    list-style: none;
+    background-color: #F2F2F2;
+}
+.bottom_info ul li {
+    float: left;
+    width: 33.33%;
+    text-align: center;
+    height: 33px;
+    line-height: 33px;
+}
+.bottom_info ul li+li {
+    border-left: 1px solid #c0c0c0;
+}
+.bottom_info ul li i {
+    float: left;
+    margin-left: 35px;
+    margin-top: 8px;
+}
+.bottom_info ul li img {
+    float: left;
+    margin-left: 5px;
+    width: 15px;
+}
+.bottom_info .app-info {
+    text-align: center;
+    font-size: 13px;
+}
+.bottom_info .app-info .red-app {
+    color: red;
+}
+.bottom_info a {
+    text-decoration: none;
+    color: #000;
+}
